@@ -117,7 +117,7 @@ func main() {
 	}
 
 	logrus.Info("启动hook")
-
+	logrus.Info("启动hook:/%s", o)
 	githubClient, err := o.github.GitHubClient(secretAgent, o.dryRun)
 	if err != nil {
 		logrus.WithError(err).Fatal("Error getting GitHub client.")

@@ -82,6 +82,7 @@ func (o *GitHubOptions) GitHubClient(secretAgent *secret.Agent, dryRun bool) (cl
 	if dryRun {
 		return github.NewDryRunClient(*generator, o.endpoint.Strings()...), nil
 	}
+	logrus.Info("启动hook，o.endpoint:/%s", o.endpoint.Strings())
 	return github.NewClient(*generator, o.endpoint.Strings()...), nil
 }
 
