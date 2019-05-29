@@ -37,7 +37,7 @@ type GitHubOptions struct {
 
 // AddFlags injects GitHub options into the given FlagSet.
 func (o *GitHubOptions) AddFlags(fs *flag.FlagSet) {
-	o.endpoint = NewStrings("http://api.github.com")
+	o.endpoint = NewStrings("http://192.168.1.167")
 	fs.Var(&o.endpoint, "github-endpoint", "GitHub's API endpoint (may differ for enterprise).")
 	fs.StringVar(&o.TokenPath, "github-token-path", "/etc/github/oauth", "Path to the file containing the GitHub OAuth secret.")
 	fs.StringVar(&o.deprecatedTokenFile, "github-token-file", "", "DEPRECATED: use -github-token-path instead.  -github-token-file may be removed anytime after 2019-01-01.")

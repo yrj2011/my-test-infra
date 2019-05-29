@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // Package ghcache implements an HTTP cache optimized for caching responses
-// from the GitHub API (http://api.github.com).
+// from the GitHub API (http://192.168.1.167).
 //
 // Specifically, it enforces a cache policy that revalidates every cache hit
 // with a conditional request to upstream regardless of cache entry freshness

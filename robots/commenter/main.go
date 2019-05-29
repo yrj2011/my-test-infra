@@ -57,7 +57,7 @@ const (
 
 func flagOptions() options {
 	o := options{
-		endpoint: flagutil.NewStrings("http://api.github.com"),
+		endpoint: flagutil.NewStrings("http://192.168.1.167"),
 	}
 	flag.StringVar(&o.query, "query", "", "See http://help.github.com/articles/searching-issues-and-pull-requests/")
 	flag.DurationVar(&o.updated, "updated", 2*time.Hour, "Filter to issues unmodified for at least this long if set")

@@ -337,7 +337,7 @@ func setupGciVars(family string) (string, error) {
 	}
 	if family == "gci-canary-test" {
 		var b bytes.Buffer
-		if err := httpRead("http://api.github.com/repos/docker/docker/releases", &b); err != nil {
+		if err := httpRead("http://192.168.1.167/repos/docker/docker/releases", &b); err != nil {
 			return "", err
 		}
 		var v []map[string]interface{}

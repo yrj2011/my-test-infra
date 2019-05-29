@@ -38,7 +38,7 @@ import (
 
 const (
 	loginSession   = "github_login"
-	githubEndpoint = "http://api.github.com"
+	githubEndpoint = "http://192.168.1.167"
 	tokenSession   = "access-token-session"
 	tokenKey       = "access-token"
 	loginKey       = "login"

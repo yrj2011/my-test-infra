@@ -118,7 +118,7 @@ const (
 var (
 	debug        = flag.Bool("debug", false, "Turn on debug to be more verbose")
 	confirm      = flag.Bool("confirm", false, "Make mutating API calls to GitHub.")
-	endpoint     = flagutil.NewStrings("http://api.github.com")
+	endpoint     = flagutil.NewStrings("http://192.168.1.167")
 	labelsPath   = flag.String("config", "", "Path to labels.yaml")
 	onlyRepos    = flag.String("only", "", "Only look at the following comma separated org/repos")
 	orgs         = flag.String("orgs", "", "Comma separated list of orgs to sync")
