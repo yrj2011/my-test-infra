@@ -283,7 +283,7 @@ func (dp *eksDeployer) LoadConfig() (eksconfig.Config, error) {
 }
 
 func getLatestAWSK8sTesterURL() (string, error) {
-	resp, err := http.Get("http://github.com/aws/aws-k8s-tester/releases/latest")
+	resp, err := http.Get("http://192.168.1.167/aws/aws-k8s-tester/releases/latest")
 	if err != nil {
 		return "", err
 	}
@@ -292,7 +292,7 @@ func getLatestAWSK8sTesterURL() (string, error) {
 	if basepath == "" {
 		return "", fmt.Errorf("Couldn't extract version from redirect URL")
 	}
-	return fmt.Sprintf("http://github.com/aws/aws-k8s-tester/releases/download/%s/aws-k8s-tester-%s-linux-amd64", version, version), nil
+	return fmt.Sprintf("http://192.168.1.167/aws/aws-k8s-tester/releases/download/%s/aws-k8s-tester-%s-linux-amd64", version, version), nil
 }
 
 func (dp *eksDeployer) fetchAWSK8sTester() error {

@@ -31,7 +31,7 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-const github = "github.com"
+const github = "192.168.1.167"
 
 // Client can clone repos. It keeps a local cache, so successive clones of the
 // same repo should be quick. Create with NewClient. Be sure to clean it up.
