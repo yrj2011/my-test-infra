@@ -434,6 +434,11 @@ func (c *Client) doRequest(method, path, accept string, body interface{}) (*http
 	logrus.Info("启动hook,path:", path)
 	logrus.Info("启动hook,accept:", accept)
 	logrus.Info("启动hook,body:", body)
+	path = strings.Replace(path, "https://", "http://", -1)
+	logrus.Info("启动hook,method:", method)
+	logrus.Info("启动hook,path:", path)
+	logrus.Info("启动hook,accept:", accept)
+	logrus.Info("启动hook,body:", body)
 	var buf io.Reader
 	if body != nil {
 		b, err := json.Marshal(body)
