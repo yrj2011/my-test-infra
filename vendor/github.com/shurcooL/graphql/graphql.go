@@ -65,10 +65,10 @@ func (c *Client) do(ctx context.Context, op operationType, v interface{}, variab
 	if err != nil {
 		return err
 	}
-	logrus.Info("graphql,ctx:",ctx)
-	logrus.Info("graphql,httpClient:",c.httpClient)
-	logrus.Info("graphql,c.url:",c.url)
-	logrus.Info("graphql,&buf:",&buf)
+	fmt.Printf("graphql,ctx:%s",ctx)
+	fmt.Printf("graphql,httpClient:%s",c.httpClient)
+	lfmt.Printf("graphql,c.url:%s",c.url)
+	fmt.Printf("graphql,&buf:%s",&buf)
 
 	resp, err := ctxhttp.Post(ctx, c.httpClient, c.url, "application/json", &buf)
 	if err != nil {
