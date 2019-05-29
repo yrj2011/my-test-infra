@@ -67,7 +67,7 @@ func (c *Client) do(ctx context.Context, op operationType, v interface{}, variab
 	}
 	fmt.Printf("graphql,ctx:%s",ctx)
 	fmt.Printf("graphql,httpClient:%s",c.httpClient)
-	lfmt.Printf("graphql,c.url:%s",c.url)
+	fmt.Printf("graphql,c.url:%s",c.url)
 	fmt.Printf("graphql,&buf:%s",&buf)
 
 	resp, err := ctxhttp.Post(ctx, c.httpClient, c.url, "application/json", &buf)
