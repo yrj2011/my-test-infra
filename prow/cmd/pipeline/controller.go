@@ -682,7 +682,7 @@ func makePipelineRun(pj prowjobv1.ProwJob, buildID string) (*pipelinev1alpha1.Pi
 	sourceURL := ""
 	revision := ""
 	if pj.Spec.Refs != nil {
-		sourceURL = fmt.Sprintf("http://github.com/%s/%s.git", pj.Spec.Refs.Org, pj.Spec.Refs.Repo)
+		sourceURL = fmt.Sprintf("http://192.168.1.167/%s/%s.git", pj.Spec.Refs.Org, pj.Spec.Refs.Repo)
 
 		// todo lets support batches of PRs
 		if len(pj.Spec.Refs.Pulls) > 0 {

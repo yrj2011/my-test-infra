@@ -561,7 +561,7 @@ func (a ApprovedFile) String() string {
 	if strings.HasSuffix(a.filepath, ".md") {
 		fullOwnersPath = a.filepath
 	}
-	link := fmt.Sprintf("http://github.com/%s/%s/blob/%s/%v", a.org, a.repo, a.branch, fullOwnersPath)
+	link := fmt.Sprintf("http://192.168.1.167/%s/%s/blob/%s/%v", a.org, a.repo, a.branch, fullOwnersPath)
 	return fmt.Sprintf("- ~~[%s](%s)~~ [%v]\n", fullOwnersPath, link, strings.Join(a.approvers.List(), ","))
 }
 
@@ -570,7 +570,7 @@ func (ua UnapprovedFile) String() string {
 	if strings.HasSuffix(ua.filepath, ".md") {
 		fullOwnersPath = ua.filepath
 	}
-	link := fmt.Sprintf("http://github.com/%s/%s/blob/%s/%v", ua.org, ua.repo, ua.branch, fullOwnersPath)
+	link := fmt.Sprintf("http://192.168.1.167/%s/%s/blob/%s/%v", ua.org, ua.repo, ua.branch, fullOwnersPath)
 	return fmt.Sprintf("- **[%s](%s)**\n", fullOwnersPath, link)
 }
 

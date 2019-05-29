@@ -61,7 +61,7 @@ func run() error {
 }
 
 func loadSchema(githubToken string) (schema interface{}, err error) {
-	req, err := http.NewRequest("GET", "http://api.github.com/graphql", nil)
+	req, err := http.NewRequest("GET", "http://192.168.1.167/graphql", nil)
 	if err != nil {
 		return nil, err
 	}

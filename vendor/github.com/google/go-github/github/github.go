@@ -28,8 +28,8 @@ import (
 
 const (
 	libraryVersion = "8"
-	defaultBaseURL = "http://api.github.com/"
-	uploadBaseURL  = "http://uploads.github.com/"
+	defaultBaseURL = "http://192.168.1.167/"
+	uploadBaseURL  = "http://192.168.1.167/"
 	userAgent      = "go-github/" + libraryVersion
 
 	headerRateLimit     = "X-RateLimit-Limit"

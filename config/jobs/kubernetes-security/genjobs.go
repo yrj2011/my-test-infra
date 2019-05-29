@@ -168,7 +168,7 @@ func convertJobToSecurityJob(j *config.Presubmit, dropLabels sets.String, defaul
 
 				// handle --repo substitution for main repo
 			} else if arg == "--repo=k8s.io/kubernetes" || strings.HasPrefix(arg, "--repo=k8s.io/kubernetes=") || arg == "--repo=k8s.io/$(REPO_NAME)" || strings.HasPrefix(arg, "--repo=k8s.io/$(REPO_NAME)=") {
-				container.Args[i] = strings.Replace(arg, "k8s.io/", "github.com/kubernetes-security/", 1)
+				container.Args[i] = strings.Replace(arg, "k8s.io/", "192.168.1.167/kubernetes-security/", 1)
 
 				// handle upload bucket
 			} else if strings.HasPrefix(arg, "--upload=") {

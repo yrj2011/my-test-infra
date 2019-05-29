@@ -44,7 +44,7 @@ func (r *Repo) GitBasePath(ssh bool) string {
 	// replacements instead so that supporting other repos is easier?
 	path := r.Name
 	if strings.HasPrefix(path, "k8s.io/") {
-		path = "github.com/kubernetes/" + strings.TrimPrefix(path, "k8s.io/")
+		path = "192.168.1.167/kubernetes/" + strings.TrimPrefix(path, "k8s.io/")
 	}
 	if ssh {
 		if !refHasSHAs(path) {

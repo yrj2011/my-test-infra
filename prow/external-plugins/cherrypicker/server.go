@@ -173,7 +173,7 @@ func (s *Server) handleIssueComment(l *logrus.Entry, ic github.IssueCommentEvent
 				return err
 			}
 			if !ok {
-				resp := fmt.Sprintf("only [%s](http://github.com/orgs/%s/people) org members may request cherry picks. You can still do the cherry-pick manually.", org, org)
+				resp := fmt.Sprintf("only [%s](http://192.168.1.167/orgs/%s/people) org members may request cherry picks. You can still do the cherry-pick manually.", org, org)
 				s.log.WithFields(l.Data).Info(resp)
 				return s.ghc.CreateComment(org, repo, num, plugins.FormatICResponse(ic.Comment, resp))
 			}
@@ -212,7 +212,7 @@ func (s *Server) handleIssueComment(l *logrus.Entry, ic github.IssueCommentEvent
 			return err
 		}
 		if !ok {
-			resp := fmt.Sprintf("only [%s](http://github.com/orgs/%s/people) org members may request cherry picks. You can still do the cherry-pick manually.", org, org)
+			resp := fmt.Sprintf("only [%s](http://192.168.1.167/orgs/%s/people) org members may request cherry picks. You can still do the cherry-pick manually.", org, org)
 			s.log.WithFields(l.Data).Info(resp)
 			return s.ghc.CreateComment(org, repo, num, plugins.FormatICResponse(ic.Comment, resp))
 		}

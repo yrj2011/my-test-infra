@@ -38,7 +38,7 @@ import (
 )
 
 const (
-	testInfra = "http://github.com/kubernetes/test-infra/issues"
+	testInfra = "http://192.168.1.167/kubernetes/test-infra/issues"
 )
 
 type kubeClient interface {
