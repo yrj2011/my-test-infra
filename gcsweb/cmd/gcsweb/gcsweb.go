@@ -35,11 +35,11 @@ import (
 )
 
 // The base URL for GCS's HTTP API.
-const gcsBaseURL = "https://storage.googleapis.com"
+const gcsBaseURL = "http://storage.googleapis.com"
 const gcsPath = "/gcs" // path for GCS browsing on this server
 
 // The base URL for GCP's GCS browser.
-const gcsBrowserURL = "https://console.cloud.google.com/storage/browser"
+const gcsBrowserURL = "http://console.cloud.google.com/storage/browser"
 
 var flPort = flag.Int("p", 8080, "port number on which to listen")
 var flIcons = flag.String("i", "/icons", "path to the icons directory")
@@ -95,7 +95,7 @@ func main() {
 	// Serve icons and styles.
 	longCacheServer := func(h http.Handler) http.HandlerFunc {
 		return func(w http.ResponseWriter, r *http.Request) {
-			// Mark as never expiring as per https://www.ietf.org/rfc/rfc2616.txt
+			// Mark as never expiring as per http://www.ietf.org/rfc/rfc2616.txt
 			w.Header().Add("Cache-Control", "max-age=31536000")
 			h.ServeHTTP(w, r)
 		}

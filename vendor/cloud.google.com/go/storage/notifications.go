@@ -38,7 +38,7 @@ type Notification struct {
 
 	// Only send notifications about listed event types. If empty, send notifications
 	// for all event types.
-	// See https://cloud.google.com/storage/docs/pubsub-notifications#events.
+	// See http://cloud.google.com/storage/docs/pubsub-notifications#events.
 	EventTypes []string
 
 	// If present, only apply this notification configuration to object names that
@@ -50,7 +50,7 @@ type Notification struct {
 	CustomAttributes map[string]string
 
 	// The contents of the message payload.
-	// See https://cloud.google.com/storage/docs/pubsub-notifications#payload.
+	// See http://cloud.google.com/storage/docs/pubsub-notifications#payload.
 	PayloadFormat string
 }
 

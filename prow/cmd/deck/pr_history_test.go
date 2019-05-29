@@ -88,7 +88,7 @@ func TestUpdateCommitData(t *testing.T) {
 				"d0c3cd182cffb3e722b14322fd1ca854a8bf62b0": {
 					HashPrefix: "d0c3cd1",
 					MaxWidth:   1,
-					Link:       "https://github.com/kubernetes/test-infra/commit/d0c3cd182cffb3e722b14322fd1ca854a8bf62b0",
+					Link:       "http://github.com/kubernetes/test-infra/commit/d0c3cd182cffb3e722b14322fd1ca854a8bf62b0",
 					latest:     time.Unix(1543534799, 0),
 				},
 			},
@@ -102,7 +102,7 @@ func TestUpdateCommitData(t *testing.T) {
 				"d0c3cd182cffb3e722b14322fd1ca854a8bf62b0": {
 					HashPrefix: "d0c3cd1",
 					MaxWidth:   5,
-					Link:       "https://github.com/kubernetes/test-infra/commit/d0c3cd182cffb3e722b14322fd1ca854a8bf62b0",
+					Link:       "http://github.com/kubernetes/test-infra/commit/d0c3cd182cffb3e722b14322fd1ca854a8bf62b0",
 					latest:     time.Unix(0, 0),
 				},
 			},
@@ -110,7 +110,7 @@ func TestUpdateCommitData(t *testing.T) {
 				"d0c3cd182cffb3e722b14322fd1ca854a8bf62b0": {
 					HashPrefix: "d0c3cd1",
 					MaxWidth:   5,
-					Link:       "https://github.com/kubernetes/test-infra/commit/d0c3cd182cffb3e722b14322fd1ca854a8bf62b0",
+					Link:       "http://github.com/kubernetes/test-infra/commit/d0c3cd182cffb3e722b14322fd1ca854a8bf62b0",
 					latest:     time.Unix(320630400, 0),
 				},
 			},

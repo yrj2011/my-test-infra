@@ -160,7 +160,7 @@ func (a strAddr) Network() string {
 	if a != "" {
 		// Per the documentation on net/http.Request.RemoteAddr, if this is
 		// set, it's set to the IP:port of the peer (hence, TCP):
-		// https://golang.org/pkg/net/http/#Request
+		// http://golang.org/pkg/net/http/#Request
 		//
 		// If we want to support Unix sockets later, we can
 		// add our own grpc-specific convention within the
@@ -258,8 +258,8 @@ func (ht *serverHandlerTransport) writeCommonHeaders(s *Stream) {
 	// Predeclare trailers we'll set later in WriteStatus (after the body).
 	// This is a SHOULD in the HTTP RFC, and the way you add (known)
 	// Trailers per the net/http.ResponseWriter contract.
-	// See https://golang.org/pkg/net/http/#ResponseWriter
-	// and https://golang.org/pkg/net/http/#example_ResponseWriter_trailers
+	// See http://golang.org/pkg/net/http/#ResponseWriter
+	// and http://golang.org/pkg/net/http/#example_ResponseWriter_trailers
 	h.Add("Trailer", "Grpc-Status")
 	h.Add("Trailer", "Grpc-Message")
 	h.Add("Trailer", "Grpc-Status-Details-Bin")

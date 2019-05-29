@@ -132,7 +132,7 @@ func problemsInFiles(r *git.Repo, files map[string]string) (map[string][]string,
 			return nil, err
 		}
 		// This is modeled after the logic from buildifier:
-		// https://github.com/bazelbuild/buildtools/blob/8818289/buildifier/buildifier.go#L261
+		// http://github.com/bazelbuild/buildtools/blob/8818289/buildifier/buildifier.go#L261
 		content, err := build.Parse(f, src)
 		if err != nil {
 			return nil, fmt.Errorf("parsing as Bazel file %v", err)

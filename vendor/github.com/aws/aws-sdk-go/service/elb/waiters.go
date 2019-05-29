@@ -23,7 +23,7 @@ func (c *ELB) WaitUntilAnyInstanceInService(input *DescribeInstanceHealthInput) 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *ELB) WaitUntilAnyInstanceInServiceWithContext(ctx aws.Context, input *DescribeInstanceHealthInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -69,7 +69,7 @@ func (c *ELB) WaitUntilInstanceDeregistered(input *DescribeInstanceHealthInput) 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *ELB) WaitUntilInstanceDeregisteredWithContext(ctx aws.Context, input *DescribeInstanceHealthInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -120,7 +120,7 @@ func (c *ELB) WaitUntilInstanceInService(input *DescribeInstanceHealthInput) err
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *ELB) WaitUntilInstanceInServiceWithContext(ctx aws.Context, input *DescribeInstanceHealthInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{

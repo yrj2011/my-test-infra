@@ -31,15 +31,15 @@ import (
 const (
 	// ScopePubSub grants permissions to view and manage Pub/Sub
 	// topics and subscriptions.
-	ScopePubSub = "https://www.googleapis.com/auth/pubsub"
+	ScopePubSub = "http://www.googleapis.com/auth/pubsub"
 
 	// ScopeCloudPlatform grants permissions to view and manage your data
 	// across Google Cloud Platform services.
-	ScopeCloudPlatform = "https://www.googleapis.com/auth/cloud-platform"
+	ScopeCloudPlatform = "http://www.googleapis.com/auth/cloud-platform"
 )
 
 const (
-	prodAddr       = "https://pubsub.googleapis.com/"
+	prodAddr       = "http://pubsub.googleapis.com/"
 	minAckDeadline = 10 * time.Second
 	maxAckDeadline = 10 * time.Minute
 )
@@ -58,7 +58,7 @@ type Client struct {
 func NewClient(ctx context.Context, projectID string, opts ...option.ClientOption) (c *Client, err error) {
 	var o []option.ClientOption
 	// Environment variables for gcloud emulator:
-	// https://cloud.google.com/sdk/gcloud/reference/beta/emulators/pubsub/
+	// http://cloud.google.com/sdk/gcloud/reference/beta/emulators/pubsub/
 	if addr := os.Getenv("PUBSUB_EMULATOR_HOST"); addr != "" {
 		conn, err := grpc.Dial(addr, grpc.WithInsecure())
 		if err != nil {

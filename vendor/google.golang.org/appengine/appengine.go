@@ -5,7 +5,7 @@
 // Package appengine provides basic functionality for Google App Engine.
 //
 // For more information on how to write Go apps for Google App Engine, see:
-// https://cloud.google.com/appengine/docs/go/
+// http://cloud.google.com/appengine/docs/go/
 package appengine // import "google.golang.org/appengine"
 
 import (
@@ -25,7 +25,7 @@ import (
 // already registered, and starts listening on port 8080 (overridden by the
 // $PORT environment variable).
 //
-// See https://cloud.google.com/appengine/docs/flexible/custom-runtimes#health_check_requests
+// See http://cloud.google.com/appengine/docs/flexible/custom-runtimes#health_check_requests
 // for details on how to do your own health checking.
 //
 // Main is not yet supported on App Engine Standard.

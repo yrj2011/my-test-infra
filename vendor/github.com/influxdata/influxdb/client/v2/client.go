@@ -85,7 +85,7 @@ func NewHTTPClient(conf HTTPConfig) (Client, error) {
 		return nil, err
 	} else if u.Scheme != "http" && u.Scheme != "https" {
 		m := fmt.Sprintf("Unsupported protocol scheme: %s, your address"+
-			" must start with http:// or https://", u.Scheme)
+			" must start with http:// or http://", u.Scheme)
 		return nil, errors.New(m)
 	}
 

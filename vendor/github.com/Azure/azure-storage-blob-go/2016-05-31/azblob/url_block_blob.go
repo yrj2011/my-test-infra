@@ -54,7 +54,7 @@ func (bb BlockBlobURL) WithSnapshot(snapshot time.Time) BlockBlobURL {
 // supported with PutBlob; the content of the existing blob is overwritten with the new content. To
 // perform a partial update of a block blob's, use PutBlock and PutBlockList. Note that the http client
 // closes the body stream after the request is sent to the service.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/put-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/put-blob.
 func (bb BlockBlobURL) PutBlob(ctx context.Context, body io.ReadSeeker, h BlobHTTPHeaders, metadata Metadata, ac BlobAccessConditions) (*BlobsPutResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.HTTPAccessConditions.pointers()
 	return bb.blobClient.Put(ctx, BlobBlockBlob, body, nil, nil,
@@ -64,14 +64,14 @@ func (bb BlockBlobURL) PutBlob(ctx context.Context, body io.ReadSeeker, h BlobHT
 }
 
 // GetBlockList returns the list of blocks that have been uploaded as part of a block blob using the specified block list filter.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/get-block-list.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/get-block-list.
 func (bb BlockBlobURL) GetBlockList(ctx context.Context, listType BlockListType, ac LeaseAccessConditions) (*BlockList, error) {
 	return bb.bbClient.GetBlockList(ctx, listType, nil, nil, ac.pointers(), nil)
 }
 
 // PutBlock uploads the specified block to the block blob's "staging area" to be later committed by a call to PutBlockList.
 // Note that the http client closes the body stream after the request is sent to the service.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/put-block.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/put-block.
 func (bb BlockBlobURL) PutBlock(ctx context.Context, base64BlockID string, body io.ReadSeeker, ac LeaseAccessConditions) (*BlockBlobsPutBlockResponse, error) {
 	return bb.bbClient.PutBlock(ctx, base64BlockID, body, nil, ac.pointers(), nil)
 }
@@ -81,7 +81,7 @@ func (bb BlockBlobURL) PutBlock(ctx context.Context, base64BlockID string, body 
 // to the server in a prior PutBlock operation. You can call PutBlockList to update a blob
 // by uploading only those blocks that have changed, then committing the new and existing
 // blocks together. Any blocks not specified in the block list and permanently deleted.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/put-block-list.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/put-block-list.
 func (bb BlockBlobURL) PutBlockList(ctx context.Context, base64BlockIDs []string, h BlobHTTPHeaders,
 	metadata Metadata, ac BlobAccessConditions) (*BlockBlobsPutBlockListResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.HTTPAccessConditions.pointers()

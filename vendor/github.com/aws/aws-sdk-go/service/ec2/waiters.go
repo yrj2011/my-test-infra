@@ -23,7 +23,7 @@ func (c *EC2) WaitUntilBundleTaskComplete(input *DescribeBundleTasksInput) error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilBundleTaskCompleteWithContext(ctx aws.Context, input *DescribeBundleTasksInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -74,7 +74,7 @@ func (c *EC2) WaitUntilConversionTaskCancelled(input *DescribeConversionTasksInp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilConversionTaskCancelledWithContext(ctx aws.Context, input *DescribeConversionTasksInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -120,7 +120,7 @@ func (c *EC2) WaitUntilConversionTaskCompleted(input *DescribeConversionTasksInp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilConversionTaskCompletedWithContext(ctx aws.Context, input *DescribeConversionTasksInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -176,7 +176,7 @@ func (c *EC2) WaitUntilConversionTaskDeleted(input *DescribeConversionTasksInput
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilConversionTaskDeletedWithContext(ctx aws.Context, input *DescribeConversionTasksInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -222,7 +222,7 @@ func (c *EC2) WaitUntilCustomerGatewayAvailable(input *DescribeCustomerGatewaysI
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilCustomerGatewayAvailableWithContext(ctx aws.Context, input *DescribeCustomerGatewaysInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -278,7 +278,7 @@ func (c *EC2) WaitUntilExportTaskCancelled(input *DescribeExportTasksInput) erro
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilExportTaskCancelledWithContext(ctx aws.Context, input *DescribeExportTasksInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -324,7 +324,7 @@ func (c *EC2) WaitUntilExportTaskCompleted(input *DescribeExportTasksInput) erro
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilExportTaskCompletedWithContext(ctx aws.Context, input *DescribeExportTasksInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -370,7 +370,7 @@ func (c *EC2) WaitUntilImageAvailable(input *DescribeImagesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilImageAvailableWithContext(ctx aws.Context, input *DescribeImagesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -421,7 +421,7 @@ func (c *EC2) WaitUntilImageExists(input *DescribeImagesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilImageExistsWithContext(ctx aws.Context, input *DescribeImagesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -472,7 +472,7 @@ func (c *EC2) WaitUntilInstanceExists(input *DescribeInstancesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilInstanceExistsWithContext(ctx aws.Context, input *DescribeInstancesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -523,7 +523,7 @@ func (c *EC2) WaitUntilInstanceRunning(input *DescribeInstancesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilInstanceRunningWithContext(ctx aws.Context, input *DescribeInstancesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -589,7 +589,7 @@ func (c *EC2) WaitUntilInstanceStatusOk(input *DescribeInstanceStatusInput) erro
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilInstanceStatusOkWithContext(ctx aws.Context, input *DescribeInstanceStatusInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -640,7 +640,7 @@ func (c *EC2) WaitUntilInstanceStopped(input *DescribeInstancesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilInstanceStoppedWithContext(ctx aws.Context, input *DescribeInstancesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -696,7 +696,7 @@ func (c *EC2) WaitUntilInstanceTerminated(input *DescribeInstancesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilInstanceTerminatedWithContext(ctx aws.Context, input *DescribeInstancesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -752,7 +752,7 @@ func (c *EC2) WaitUntilKeyPairExists(input *DescribeKeyPairsInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilKeyPairExistsWithContext(ctx aws.Context, input *DescribeKeyPairsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -803,7 +803,7 @@ func (c *EC2) WaitUntilNatGatewayAvailable(input *DescribeNatGatewaysInput) erro
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilNatGatewayAvailableWithContext(ctx aws.Context, input *DescribeNatGatewaysInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -869,7 +869,7 @@ func (c *EC2) WaitUntilNetworkInterfaceAvailable(input *DescribeNetworkInterface
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilNetworkInterfaceAvailableWithContext(ctx aws.Context, input *DescribeNetworkInterfacesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -920,7 +920,7 @@ func (c *EC2) WaitUntilPasswordDataAvailable(input *GetPasswordDataInput) error 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilPasswordDataAvailableWithContext(ctx aws.Context, input *GetPasswordDataInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -966,7 +966,7 @@ func (c *EC2) WaitUntilSnapshotCompleted(input *DescribeSnapshotsInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilSnapshotCompletedWithContext(ctx aws.Context, input *DescribeSnapshotsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1012,7 +1012,7 @@ func (c *EC2) WaitUntilSpotInstanceRequestFulfilled(input *DescribeSpotInstanceR
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilSpotInstanceRequestFulfilledWithContext(ctx aws.Context, input *DescribeSpotInstanceRequestsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1088,7 +1088,7 @@ func (c *EC2) WaitUntilSubnetAvailable(input *DescribeSubnetsInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilSubnetAvailableWithContext(ctx aws.Context, input *DescribeSubnetsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1134,7 +1134,7 @@ func (c *EC2) WaitUntilSystemStatusOk(input *DescribeInstanceStatusInput) error 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilSystemStatusOkWithContext(ctx aws.Context, input *DescribeInstanceStatusInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1180,7 +1180,7 @@ func (c *EC2) WaitUntilVolumeAvailable(input *DescribeVolumesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVolumeAvailableWithContext(ctx aws.Context, input *DescribeVolumesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1231,7 +1231,7 @@ func (c *EC2) WaitUntilVolumeDeleted(input *DescribeVolumesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVolumeDeletedWithContext(ctx aws.Context, input *DescribeVolumesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1282,7 +1282,7 @@ func (c *EC2) WaitUntilVolumeInUse(input *DescribeVolumesInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVolumeInUseWithContext(ctx aws.Context, input *DescribeVolumesInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1333,7 +1333,7 @@ func (c *EC2) WaitUntilVpcAvailable(input *DescribeVpcsInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVpcAvailableWithContext(ctx aws.Context, input *DescribeVpcsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1379,7 +1379,7 @@ func (c *EC2) WaitUntilVpcExists(input *DescribeVpcsInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVpcExistsWithContext(ctx aws.Context, input *DescribeVpcsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1430,7 +1430,7 @@ func (c *EC2) WaitUntilVpcPeeringConnectionDeleted(input *DescribeVpcPeeringConn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVpcPeeringConnectionDeletedWithContext(ctx aws.Context, input *DescribeVpcPeeringConnectionsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1481,7 +1481,7 @@ func (c *EC2) WaitUntilVpcPeeringConnectionExists(input *DescribeVpcPeeringConne
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVpcPeeringConnectionExistsWithContext(ctx aws.Context, input *DescribeVpcPeeringConnectionsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1532,7 +1532,7 @@ func (c *EC2) WaitUntilVpnConnectionAvailable(input *DescribeVpnConnectionsInput
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVpnConnectionAvailableWithContext(ctx aws.Context, input *DescribeVpnConnectionsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -1588,7 +1588,7 @@ func (c *EC2) WaitUntilVpnConnectionDeleted(input *DescribeVpnConnectionsInput) 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) WaitUntilVpnConnectionDeletedWithContext(ctx aws.Context, input *DescribeVpnConnectionsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{

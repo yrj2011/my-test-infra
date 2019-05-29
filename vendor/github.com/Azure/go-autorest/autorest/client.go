@@ -135,7 +135,7 @@ func (li LoggingInspector) ByInspecting() RespondDecorator {
 //
 // Most customization of generated clients is best achieved by supplying a custom Authorizer, custom
 // RequestInspector, and / or custom ResponseInspector. Users may log requests, implement circuit
-// breakers (see https://msdn.microsoft.com/en-us/library/dn589784.aspx) or otherwise influence
+// breakers (see http://msdn.microsoft.com/en-us/library/dn589784.aspx) or otherwise influence
 // sending the request by providing a decorated Sender.
 type Client struct {
 	Authorizer        Authorizer

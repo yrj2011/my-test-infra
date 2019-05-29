@@ -171,7 +171,7 @@ type Resource struct {
 }
 
 // ParseResourceID parses a resource ID into a ResourceDetails struct.
-// See https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-functions-resource#return-value-4.
+// See http://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-functions-resource#return-value-4.
 func ParseResourceID(resourceID string) (Resource, error) {
 
 	const resourceIDPatternText = `(?i)subscriptions/(.+)/resourceGroups/(.+)/providers/(.+?)/(.+?)/(.+)`

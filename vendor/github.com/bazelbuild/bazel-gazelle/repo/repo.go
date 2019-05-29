@@ -127,7 +127,7 @@ func GenerateRule(repo Repo) *rule.Rule {
 // the external repository with the given name. An error is returned if the
 // repository directory cannot be located.
 func FindExternalRepo(repoRoot, name string) (string, error) {
-	// See https://docs.bazel.build/versions/master/output_directories.html
+	// See http://docs.bazel.build/versions/master/output_directories.html
 	// for documentation on Bazel directory layout.
 	// We expect the bazel-out symlink in the workspace root directory to point to
 	// <output-base>/execroot/<workspace-name>/bazel-out

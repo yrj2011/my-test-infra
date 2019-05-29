@@ -50,8 +50,8 @@ type CertificateSigningRequestSpec struct {
 
 	// allowedUsages specifies a set of usage contexts the key will be
 	// valid for.
-	// See: https://tools.ietf.org/html/rfc5280#section-4.2.1.3
-	//      https://tools.ietf.org/html/rfc5280#section-4.2.1.12
+	// See: http://tools.ietf.org/html/rfc5280#section-4.2.1.3
+	//      http://tools.ietf.org/html/rfc5280#section-4.2.1.12
 	Usages []KeyUsage `json:"usages,omitempty" protobuf:"bytes,5,opt,name=usages"`
 
 	// Information about the requesting user.
@@ -124,8 +124,8 @@ type CertificateSigningRequestList struct {
 }
 
 // KeyUsages specifies valid usage contexts for keys.
-// See: https://tools.ietf.org/html/rfc5280#section-4.2.1.3
-//      https://tools.ietf.org/html/rfc5280#section-4.2.1.12
+// See: http://tools.ietf.org/html/rfc5280#section-4.2.1.3
+//      http://tools.ietf.org/html/rfc5280#section-4.2.1.12
 type KeyUsage string
 
 const (

@@ -40,7 +40,7 @@ const (
 	// TestContainerName specifies the primary container name.
 	TestContainerName = "test"
 
-	inClusterBaseURL = "https://kubernetes.default"
+	inClusterBaseURL = "http://kubernetes.default"
 	maxRetries       = 8
 	retryDelay       = 2 * time.Second
 	requestTimeout   = time.Minute
@@ -391,7 +391,7 @@ func ClientMapFromFile(clustersPath, namespace string) (map[string]*Client, erro
 // NewClient returns an authenticated Client using the keys in the Cluster.
 func NewClient(c *Cluster, namespace string) (*Client, error) {
 	// Relies on json encoding/decoding []byte as base64
-	// https://golang.org/pkg/encoding/json/#Marshal
+	// http://golang.org/pkg/encoding/json/#Marshal
 	cc := c.ClientCertificate
 	ck := c.ClientKey
 	ca := c.ClusterCACertificate

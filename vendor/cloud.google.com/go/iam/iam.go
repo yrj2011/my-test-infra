@@ -14,7 +14,7 @@
 
 // Package iam supports the resource-specific operations of Google Cloud
 // IAM (Identity and Access Management) for the Google Cloud Libraries.
-// See https://cloud.google.com/iam for more about IAM.
+// See http://cloud.google.com/iam for more about IAM.
 //
 // Users of the Google Cloud Libraries will typically not use this package
 // directly. Instead they will begin with some resource that supports IAM, like

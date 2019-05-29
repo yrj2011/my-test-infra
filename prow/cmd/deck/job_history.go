@@ -42,7 +42,7 @@ const (
 	latestBuildFile = "latest-build.txt"
 
 	// ** Job history assumes the GCS layout specified here:
-	// https://github.com/kubernetes/test-infra/tree/master/gubernator#gcs-bucket-layout
+	// http://github.com/kubernetes/test-infra/tree/master/gubernator#gcs-bucket-layout
 	logsPrefix     = "logs"
 	symLinkPrefix  = "pr-logs/directory"
 	spyglassPrefix = "/view/gcs"

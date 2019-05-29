@@ -9,7 +9,7 @@
 // It's a copy of "golang.org/x/net/context/ctxhttp" with pre-1.7 support dropped,
 // and "golang.org/x/net/context" import replaced with "context".
 // It exists temporarily until "golang.org/x/net/context/ctxhttp" is updated,
-// which will happen "in a couple releases" according to https://golang.org/cl/24620.
+// which will happen "in a couple releases" according to http://golang.org/cl/24620.
 package ctxhttp
 
 import (

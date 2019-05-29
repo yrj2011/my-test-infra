@@ -790,7 +790,7 @@ func (spt *ServicePrincipalToken) refreshInternal(ctx context.Context, resource 
 			v.Set("grant_type", OAuthGrantTypeRefreshToken)
 			v.Set("refresh_token", spt.inner.Token.RefreshToken)
 			// web apps must specify client_secret when refreshing tokens
-			// see https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#refreshing-the-access-tokens
+			// see http://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#refreshing-the-access-tokens
 			if spt.getGrantType() == OAuthGrantTypeAuthorizationCode {
 				err := spt.inner.Secret.SetAuthenticationValues(spt, &v)
 				if err != nil {
@@ -882,7 +882,7 @@ func retryForIMDS(sender Sender, req *http.Request, maxAttempts int) (resp *http
 		http.StatusNotExtended,
 		http.StatusNetworkAuthenticationRequired)
 
-	// see https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/how-to-use-vm-token#retry-guidance
+	// see http://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/how-to-use-vm-token#retry-guidance
 
 	const maxDelay time.Duration = 60 * time.Second
 

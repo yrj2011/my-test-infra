@@ -34,7 +34,7 @@ const pluginName = "milestonestatus"
 
 var (
 	statusRegex      = regexp.MustCompile(`(?m)^/status\s+(.+)$`)
-	mustBeSigLead    = "You must be a member of the [%s/%s](https://github.com/orgs/%s/teams/%s/members) github team to add status labels."
+	mustBeSigLead    = "You must be a member of the [%s/%s](http://github.com/orgs/%s/teams/%s/members) github team to add status labels."
 	milestoneTeamMsg = "The milestone maintainers team is the Github team %q with ID: %d."
 	statusMap        = map[string]string{
 		"approved-for-milestone": "status/approved-for-milestone",

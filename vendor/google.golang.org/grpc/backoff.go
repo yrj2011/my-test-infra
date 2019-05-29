@@ -26,7 +26,7 @@ import (
 )
 
 // DefaultBackoffConfig uses values specified for backoff in
-// https://github.com/grpc/grpc/blob/master/doc/connection-backoff.md.
+// http://github.com/grpc/grpc/blob/master/doc/connection-backoff.md.
 var DefaultBackoffConfig = BackoffConfig{
 	MaxDelay: 120 * time.Second,
 }

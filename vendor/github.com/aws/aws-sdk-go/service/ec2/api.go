@@ -38,7 +38,7 @@ const opAcceptReservedInstancesExchangeQuote = "AcceptReservedInstancesExchangeQ
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuote
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuote
 func (c *EC2) AcceptReservedInstancesExchangeQuoteRequest(input *AcceptReservedInstancesExchangeQuoteInput) (req *request.Request, output *AcceptReservedInstancesExchangeQuoteOutput) {
 	op := &request.Operation{
 		Name:       opAcceptReservedInstancesExchangeQuote,
@@ -66,7 +66,7 @@ func (c *EC2) AcceptReservedInstancesExchangeQuoteRequest(input *AcceptReservedI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AcceptReservedInstancesExchangeQuote for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuote
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuote
 func (c *EC2) AcceptReservedInstancesExchangeQuote(input *AcceptReservedInstancesExchangeQuoteInput) (*AcceptReservedInstancesExchangeQuoteOutput, error) {
 	req, out := c.AcceptReservedInstancesExchangeQuoteRequest(input)
 	return out, req.Send()
@@ -79,7 +79,7 @@ func (c *EC2) AcceptReservedInstancesExchangeQuote(input *AcceptReservedInstance
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AcceptReservedInstancesExchangeQuoteWithContext(ctx aws.Context, input *AcceptReservedInstancesExchangeQuoteInput, opts ...request.Option) (*AcceptReservedInstancesExchangeQuoteOutput, error) {
 	req, out := c.AcceptReservedInstancesExchangeQuoteRequest(input)
@@ -113,7 +113,7 @@ const opAcceptVpcEndpointConnections = "AcceptVpcEndpointConnections"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnections
 func (c *EC2) AcceptVpcEndpointConnectionsRequest(input *AcceptVpcEndpointConnectionsInput) (req *request.Request, output *AcceptVpcEndpointConnectionsOutput) {
 	op := &request.Operation{
 		Name:       opAcceptVpcEndpointConnections,
@@ -141,7 +141,7 @@ func (c *EC2) AcceptVpcEndpointConnectionsRequest(input *AcceptVpcEndpointConnec
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AcceptVpcEndpointConnections for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnections
 func (c *EC2) AcceptVpcEndpointConnections(input *AcceptVpcEndpointConnectionsInput) (*AcceptVpcEndpointConnectionsOutput, error) {
 	req, out := c.AcceptVpcEndpointConnectionsRequest(input)
 	return out, req.Send()
@@ -154,7 +154,7 @@ func (c *EC2) AcceptVpcEndpointConnections(input *AcceptVpcEndpointConnectionsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AcceptVpcEndpointConnectionsWithContext(ctx aws.Context, input *AcceptVpcEndpointConnectionsInput, opts ...request.Option) (*AcceptVpcEndpointConnectionsOutput, error) {
 	req, out := c.AcceptVpcEndpointConnectionsRequest(input)
@@ -188,7 +188,7 @@ const opAcceptVpcPeeringConnection = "AcceptVpcPeeringConnection"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnection
 func (c *EC2) AcceptVpcPeeringConnectionRequest(input *AcceptVpcPeeringConnectionInput) (req *request.Request, output *AcceptVpcPeeringConnectionOutput) {
 	op := &request.Operation{
 		Name:       opAcceptVpcPeeringConnection,
@@ -221,7 +221,7 @@ func (c *EC2) AcceptVpcPeeringConnectionRequest(input *AcceptVpcPeeringConnectio
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AcceptVpcPeeringConnection for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnection
 func (c *EC2) AcceptVpcPeeringConnection(input *AcceptVpcPeeringConnectionInput) (*AcceptVpcPeeringConnectionOutput, error) {
 	req, out := c.AcceptVpcPeeringConnectionRequest(input)
 	return out, req.Send()
@@ -234,7 +234,7 @@ func (c *EC2) AcceptVpcPeeringConnection(input *AcceptVpcPeeringConnectionInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AcceptVpcPeeringConnectionWithContext(ctx aws.Context, input *AcceptVpcPeeringConnectionInput, opts ...request.Option) (*AcceptVpcPeeringConnectionOutput, error) {
 	req, out := c.AcceptVpcPeeringConnectionRequest(input)
@@ -268,7 +268,7 @@ const opAllocateAddress = "AllocateAddress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddress
 func (c *EC2) AllocateAddressRequest(input *AllocateAddressInput) (req *request.Request, output *AllocateAddressOutput) {
 	op := &request.Operation{
 		Name:       opAllocateAddress,
@@ -307,7 +307,7 @@ func (c *EC2) AllocateAddressRequest(input *AllocateAddressInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AllocateAddress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddress
 func (c *EC2) AllocateAddress(input *AllocateAddressInput) (*AllocateAddressOutput, error) {
 	req, out := c.AllocateAddressRequest(input)
 	return out, req.Send()
@@ -320,7 +320,7 @@ func (c *EC2) AllocateAddress(input *AllocateAddressInput) (*AllocateAddressOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AllocateAddressWithContext(ctx aws.Context, input *AllocateAddressInput, opts ...request.Option) (*AllocateAddressOutput, error) {
 	req, out := c.AllocateAddressRequest(input)
@@ -354,7 +354,7 @@ const opAllocateHosts = "AllocateHosts"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHosts
 func (c *EC2) AllocateHostsRequest(input *AllocateHostsInput) (req *request.Request, output *AllocateHostsOutput) {
 	op := &request.Operation{
 		Name:       opAllocateHosts,
@@ -383,7 +383,7 @@ func (c *EC2) AllocateHostsRequest(input *AllocateHostsInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AllocateHosts for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHosts
 func (c *EC2) AllocateHosts(input *AllocateHostsInput) (*AllocateHostsOutput, error) {
 	req, out := c.AllocateHostsRequest(input)
 	return out, req.Send()
@@ -396,7 +396,7 @@ func (c *EC2) AllocateHosts(input *AllocateHostsInput) (*AllocateHostsOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AllocateHostsWithContext(ctx aws.Context, input *AllocateHostsInput, opts ...request.Option) (*AllocateHostsOutput, error) {
 	req, out := c.AllocateHostsRequest(input)
@@ -430,7 +430,7 @@ const opAssignIpv6Addresses = "AssignIpv6Addresses"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6Addresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6Addresses
 func (c *EC2) AssignIpv6AddressesRequest(input *AssignIpv6AddressesInput) (req *request.Request, output *AssignIpv6AddressesOutput) {
 	op := &request.Operation{
 		Name:       opAssignIpv6Addresses,
@@ -464,7 +464,7 @@ func (c *EC2) AssignIpv6AddressesRequest(input *AssignIpv6AddressesInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssignIpv6Addresses for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6Addresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6Addresses
 func (c *EC2) AssignIpv6Addresses(input *AssignIpv6AddressesInput) (*AssignIpv6AddressesOutput, error) {
 	req, out := c.AssignIpv6AddressesRequest(input)
 	return out, req.Send()
@@ -477,7 +477,7 @@ func (c *EC2) AssignIpv6Addresses(input *AssignIpv6AddressesInput) (*AssignIpv6A
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssignIpv6AddressesWithContext(ctx aws.Context, input *AssignIpv6AddressesInput, opts ...request.Option) (*AssignIpv6AddressesOutput, error) {
 	req, out := c.AssignIpv6AddressesRequest(input)
@@ -511,7 +511,7 @@ const opAssignPrivateIpAddresses = "AssignPrivateIpAddresses"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddresses
 func (c *EC2) AssignPrivateIpAddressesRequest(input *AssignPrivateIpAddressesInput) (req *request.Request, output *AssignPrivateIpAddressesOutput) {
 	op := &request.Operation{
 		Name:       opAssignPrivateIpAddresses,
@@ -550,7 +550,7 @@ func (c *EC2) AssignPrivateIpAddressesRequest(input *AssignPrivateIpAddressesInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssignPrivateIpAddresses for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddresses
 func (c *EC2) AssignPrivateIpAddresses(input *AssignPrivateIpAddressesInput) (*AssignPrivateIpAddressesOutput, error) {
 	req, out := c.AssignPrivateIpAddressesRequest(input)
 	return out, req.Send()
@@ -563,7 +563,7 @@ func (c *EC2) AssignPrivateIpAddresses(input *AssignPrivateIpAddressesInput) (*A
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssignPrivateIpAddressesWithContext(ctx aws.Context, input *AssignPrivateIpAddressesInput, opts ...request.Option) (*AssignPrivateIpAddressesOutput, error) {
 	req, out := c.AssignPrivateIpAddressesRequest(input)
@@ -597,7 +597,7 @@ const opAssociateAddress = "AssociateAddress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddress
 func (c *EC2) AssociateAddressRequest(input *AssociateAddressInput) (req *request.Request, output *AssociateAddressOutput) {
 	op := &request.Operation{
 		Name:       opAssociateAddress,
@@ -647,7 +647,7 @@ func (c *EC2) AssociateAddressRequest(input *AssociateAddressInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssociateAddress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddress
 func (c *EC2) AssociateAddress(input *AssociateAddressInput) (*AssociateAddressOutput, error) {
 	req, out := c.AssociateAddressRequest(input)
 	return out, req.Send()
@@ -660,7 +660,7 @@ func (c *EC2) AssociateAddress(input *AssociateAddressInput) (*AssociateAddressO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssociateAddressWithContext(ctx aws.Context, input *AssociateAddressInput, opts ...request.Option) (*AssociateAddressOutput, error) {
 	req, out := c.AssociateAddressRequest(input)
@@ -694,7 +694,7 @@ const opAssociateDhcpOptions = "AssociateDhcpOptions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptions
 func (c *EC2) AssociateDhcpOptionsRequest(input *AssociateDhcpOptionsInput) (req *request.Request, output *AssociateDhcpOptionsOutput) {
 	op := &request.Operation{
 		Name:       opAssociateDhcpOptions,
@@ -734,7 +734,7 @@ func (c *EC2) AssociateDhcpOptionsRequest(input *AssociateDhcpOptionsInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssociateDhcpOptions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptions
 func (c *EC2) AssociateDhcpOptions(input *AssociateDhcpOptionsInput) (*AssociateDhcpOptionsOutput, error) {
 	req, out := c.AssociateDhcpOptionsRequest(input)
 	return out, req.Send()
@@ -747,7 +747,7 @@ func (c *EC2) AssociateDhcpOptions(input *AssociateDhcpOptionsInput) (*Associate
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssociateDhcpOptionsWithContext(ctx aws.Context, input *AssociateDhcpOptionsInput, opts ...request.Option) (*AssociateDhcpOptionsOutput, error) {
 	req, out := c.AssociateDhcpOptionsRequest(input)
@@ -781,7 +781,7 @@ const opAssociateIamInstanceProfile = "AssociateIamInstanceProfile"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfile
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfile
 func (c *EC2) AssociateIamInstanceProfileRequest(input *AssociateIamInstanceProfileInput) (req *request.Request, output *AssociateIamInstanceProfileOutput) {
 	op := &request.Operation{
 		Name:       opAssociateIamInstanceProfile,
@@ -809,7 +809,7 @@ func (c *EC2) AssociateIamInstanceProfileRequest(input *AssociateIamInstanceProf
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssociateIamInstanceProfile for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfile
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfile
 func (c *EC2) AssociateIamInstanceProfile(input *AssociateIamInstanceProfileInput) (*AssociateIamInstanceProfileOutput, error) {
 	req, out := c.AssociateIamInstanceProfileRequest(input)
 	return out, req.Send()
@@ -822,7 +822,7 @@ func (c *EC2) AssociateIamInstanceProfile(input *AssociateIamInstanceProfileInpu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssociateIamInstanceProfileWithContext(ctx aws.Context, input *AssociateIamInstanceProfileInput, opts ...request.Option) (*AssociateIamInstanceProfileOutput, error) {
 	req, out := c.AssociateIamInstanceProfileRequest(input)
@@ -856,7 +856,7 @@ const opAssociateRouteTable = "AssociateRouteTable"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTable
 func (c *EC2) AssociateRouteTableRequest(input *AssociateRouteTableInput) (req *request.Request, output *AssociateRouteTableOutput) {
 	op := &request.Operation{
 		Name:       opAssociateRouteTable,
@@ -890,7 +890,7 @@ func (c *EC2) AssociateRouteTableRequest(input *AssociateRouteTableInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssociateRouteTable for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTable
 func (c *EC2) AssociateRouteTable(input *AssociateRouteTableInput) (*AssociateRouteTableOutput, error) {
 	req, out := c.AssociateRouteTableRequest(input)
 	return out, req.Send()
@@ -903,7 +903,7 @@ func (c *EC2) AssociateRouteTable(input *AssociateRouteTableInput) (*AssociateRo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssociateRouteTableWithContext(ctx aws.Context, input *AssociateRouteTableInput, opts ...request.Option) (*AssociateRouteTableOutput, error) {
 	req, out := c.AssociateRouteTableRequest(input)
@@ -937,7 +937,7 @@ const opAssociateSubnetCidrBlock = "AssociateSubnetCidrBlock"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlock
 func (c *EC2) AssociateSubnetCidrBlockRequest(input *AssociateSubnetCidrBlockInput) (req *request.Request, output *AssociateSubnetCidrBlockOutput) {
 	op := &request.Operation{
 		Name:       opAssociateSubnetCidrBlock,
@@ -966,7 +966,7 @@ func (c *EC2) AssociateSubnetCidrBlockRequest(input *AssociateSubnetCidrBlockInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssociateSubnetCidrBlock for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlock
 func (c *EC2) AssociateSubnetCidrBlock(input *AssociateSubnetCidrBlockInput) (*AssociateSubnetCidrBlockOutput, error) {
 	req, out := c.AssociateSubnetCidrBlockRequest(input)
 	return out, req.Send()
@@ -979,7 +979,7 @@ func (c *EC2) AssociateSubnetCidrBlock(input *AssociateSubnetCidrBlockInput) (*A
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssociateSubnetCidrBlockWithContext(ctx aws.Context, input *AssociateSubnetCidrBlockInput, opts ...request.Option) (*AssociateSubnetCidrBlockOutput, error) {
 	req, out := c.AssociateSubnetCidrBlockRequest(input)
@@ -1013,7 +1013,7 @@ const opAssociateVpcCidrBlock = "AssociateVpcCidrBlock"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlock
 func (c *EC2) AssociateVpcCidrBlockRequest(input *AssociateVpcCidrBlockInput) (req *request.Request, output *AssociateVpcCidrBlockOutput) {
 	op := &request.Operation{
 		Name:       opAssociateVpcCidrBlock,
@@ -1046,7 +1046,7 @@ func (c *EC2) AssociateVpcCidrBlockRequest(input *AssociateVpcCidrBlockInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AssociateVpcCidrBlock for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlock
 func (c *EC2) AssociateVpcCidrBlock(input *AssociateVpcCidrBlockInput) (*AssociateVpcCidrBlockOutput, error) {
 	req, out := c.AssociateVpcCidrBlockRequest(input)
 	return out, req.Send()
@@ -1059,7 +1059,7 @@ func (c *EC2) AssociateVpcCidrBlock(input *AssociateVpcCidrBlockInput) (*Associa
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AssociateVpcCidrBlockWithContext(ctx aws.Context, input *AssociateVpcCidrBlockInput, opts ...request.Option) (*AssociateVpcCidrBlockOutput, error) {
 	req, out := c.AssociateVpcCidrBlockRequest(input)
@@ -1093,7 +1093,7 @@ const opAttachClassicLinkVpc = "AttachClassicLinkVpc"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpc
 func (c *EC2) AttachClassicLinkVpcRequest(input *AttachClassicLinkVpcInput) (req *request.Request, output *AttachClassicLinkVpcOutput) {
 	op := &request.Operation{
 		Name:       opAttachClassicLinkVpc,
@@ -1131,7 +1131,7 @@ func (c *EC2) AttachClassicLinkVpcRequest(input *AttachClassicLinkVpcInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AttachClassicLinkVpc for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpc
 func (c *EC2) AttachClassicLinkVpc(input *AttachClassicLinkVpcInput) (*AttachClassicLinkVpcOutput, error) {
 	req, out := c.AttachClassicLinkVpcRequest(input)
 	return out, req.Send()
@@ -1144,7 +1144,7 @@ func (c *EC2) AttachClassicLinkVpc(input *AttachClassicLinkVpcInput) (*AttachCla
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AttachClassicLinkVpcWithContext(ctx aws.Context, input *AttachClassicLinkVpcInput, opts ...request.Option) (*AttachClassicLinkVpcOutput, error) {
 	req, out := c.AttachClassicLinkVpcRequest(input)
@@ -1178,7 +1178,7 @@ const opAttachInternetGateway = "AttachInternetGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGateway
 func (c *EC2) AttachInternetGatewayRequest(input *AttachInternetGatewayInput) (req *request.Request, output *AttachInternetGatewayOutput) {
 	op := &request.Operation{
 		Name:       opAttachInternetGateway,
@@ -1209,7 +1209,7 @@ func (c *EC2) AttachInternetGatewayRequest(input *AttachInternetGatewayInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AttachInternetGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGateway
 func (c *EC2) AttachInternetGateway(input *AttachInternetGatewayInput) (*AttachInternetGatewayOutput, error) {
 	req, out := c.AttachInternetGatewayRequest(input)
 	return out, req.Send()
@@ -1222,7 +1222,7 @@ func (c *EC2) AttachInternetGateway(input *AttachInternetGatewayInput) (*AttachI
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AttachInternetGatewayWithContext(ctx aws.Context, input *AttachInternetGatewayInput, opts ...request.Option) (*AttachInternetGatewayOutput, error) {
 	req, out := c.AttachInternetGatewayRequest(input)
@@ -1256,7 +1256,7 @@ const opAttachNetworkInterface = "AttachNetworkInterface"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterface
 func (c *EC2) AttachNetworkInterfaceRequest(input *AttachNetworkInterfaceInput) (req *request.Request, output *AttachNetworkInterfaceOutput) {
 	op := &request.Operation{
 		Name:       opAttachNetworkInterface,
@@ -1283,7 +1283,7 @@ func (c *EC2) AttachNetworkInterfaceRequest(input *AttachNetworkInterfaceInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AttachNetworkInterface for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterface
 func (c *EC2) AttachNetworkInterface(input *AttachNetworkInterfaceInput) (*AttachNetworkInterfaceOutput, error) {
 	req, out := c.AttachNetworkInterfaceRequest(input)
 	return out, req.Send()
@@ -1296,7 +1296,7 @@ func (c *EC2) AttachNetworkInterface(input *AttachNetworkInterfaceInput) (*Attac
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AttachNetworkInterfaceWithContext(ctx aws.Context, input *AttachNetworkInterfaceInput, opts ...request.Option) (*AttachNetworkInterfaceOutput, error) {
 	req, out := c.AttachNetworkInterfaceRequest(input)
@@ -1330,7 +1330,7 @@ const opAttachVolume = "AttachVolume"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVolume
 func (c *EC2) AttachVolumeRequest(input *AttachVolumeInput) (req *request.Request, output *VolumeAttachment) {
 	op := &request.Operation{
 		Name:       opAttachVolume,
@@ -1374,7 +1374,7 @@ func (c *EC2) AttachVolumeRequest(input *AttachVolumeInput) (req *request.Reques
 //    the product. For example, you can't detach a volume from a Windows instance
 //    and attach it to a Linux instance.
 //
-// For an overview of the AWS Marketplace, see Introducing AWS Marketplace (https://aws.amazon.com/marketplace/help/200900000).
+// For an overview of the AWS Marketplace, see Introducing AWS Marketplace (http://aws.amazon.com/marketplace/help/200900000).
 //
 // For more information about EBS volumes, see Attaching Amazon EBS Volumes
 // (http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-attaching-volume.html)
@@ -1386,7 +1386,7 @@ func (c *EC2) AttachVolumeRequest(input *AttachVolumeInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AttachVolume for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVolume
 func (c *EC2) AttachVolume(input *AttachVolumeInput) (*VolumeAttachment, error) {
 	req, out := c.AttachVolumeRequest(input)
 	return out, req.Send()
@@ -1399,7 +1399,7 @@ func (c *EC2) AttachVolume(input *AttachVolumeInput) (*VolumeAttachment, error) 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AttachVolumeWithContext(ctx aws.Context, input *AttachVolumeInput, opts ...request.Option) (*VolumeAttachment, error) {
 	req, out := c.AttachVolumeRequest(input)
@@ -1433,7 +1433,7 @@ const opAttachVpnGateway = "AttachVpnGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGateway
 func (c *EC2) AttachVpnGatewayRequest(input *AttachVpnGatewayInput) (req *request.Request, output *AttachVpnGatewayOutput) {
 	op := &request.Operation{
 		Name:       opAttachVpnGateway,
@@ -1464,7 +1464,7 @@ func (c *EC2) AttachVpnGatewayRequest(input *AttachVpnGatewayInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AttachVpnGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGateway
 func (c *EC2) AttachVpnGateway(input *AttachVpnGatewayInput) (*AttachVpnGatewayOutput, error) {
 	req, out := c.AttachVpnGatewayRequest(input)
 	return out, req.Send()
@@ -1477,7 +1477,7 @@ func (c *EC2) AttachVpnGateway(input *AttachVpnGatewayInput) (*AttachVpnGatewayO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AttachVpnGatewayWithContext(ctx aws.Context, input *AttachVpnGatewayInput, opts ...request.Option) (*AttachVpnGatewayOutput, error) {
 	req, out := c.AttachVpnGatewayRequest(input)
@@ -1511,7 +1511,7 @@ const opAuthorizeSecurityGroupEgress = "AuthorizeSecurityGroupEgress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgress
 func (c *EC2) AuthorizeSecurityGroupEgressRequest(input *AuthorizeSecurityGroupEgressInput) (req *request.Request, output *AuthorizeSecurityGroupEgressOutput) {
 	op := &request.Operation{
 		Name:       opAuthorizeSecurityGroupEgress,
@@ -1557,7 +1557,7 @@ func (c *EC2) AuthorizeSecurityGroupEgressRequest(input *AuthorizeSecurityGroupE
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AuthorizeSecurityGroupEgress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgress
 func (c *EC2) AuthorizeSecurityGroupEgress(input *AuthorizeSecurityGroupEgressInput) (*AuthorizeSecurityGroupEgressOutput, error) {
 	req, out := c.AuthorizeSecurityGroupEgressRequest(input)
 	return out, req.Send()
@@ -1570,7 +1570,7 @@ func (c *EC2) AuthorizeSecurityGroupEgress(input *AuthorizeSecurityGroupEgressIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AuthorizeSecurityGroupEgressWithContext(ctx aws.Context, input *AuthorizeSecurityGroupEgressInput, opts ...request.Option) (*AuthorizeSecurityGroupEgressOutput, error) {
 	req, out := c.AuthorizeSecurityGroupEgressRequest(input)
@@ -1604,7 +1604,7 @@ const opAuthorizeSecurityGroupIngress = "AuthorizeSecurityGroupIngress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngress
 func (c *EC2) AuthorizeSecurityGroupIngressRequest(input *AuthorizeSecurityGroupIngressInput) (req *request.Request, output *AuthorizeSecurityGroupIngressOutput) {
 	op := &request.Operation{
 		Name:       opAuthorizeSecurityGroupIngress,
@@ -1651,7 +1651,7 @@ func (c *EC2) AuthorizeSecurityGroupIngressRequest(input *AuthorizeSecurityGroup
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation AuthorizeSecurityGroupIngress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngress
 func (c *EC2) AuthorizeSecurityGroupIngress(input *AuthorizeSecurityGroupIngressInput) (*AuthorizeSecurityGroupIngressOutput, error) {
 	req, out := c.AuthorizeSecurityGroupIngressRequest(input)
 	return out, req.Send()
@@ -1664,7 +1664,7 @@ func (c *EC2) AuthorizeSecurityGroupIngress(input *AuthorizeSecurityGroupIngress
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) AuthorizeSecurityGroupIngressWithContext(ctx aws.Context, input *AuthorizeSecurityGroupIngressInput, opts ...request.Option) (*AuthorizeSecurityGroupIngressOutput, error) {
 	req, out := c.AuthorizeSecurityGroupIngressRequest(input)
@@ -1698,7 +1698,7 @@ const opBundleInstance = "BundleInstance"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstance
 func (c *EC2) BundleInstanceRequest(input *BundleInstanceInput) (req *request.Request, output *BundleInstanceOutput) {
 	op := &request.Operation{
 		Name:       opBundleInstance,
@@ -1733,7 +1733,7 @@ func (c *EC2) BundleInstanceRequest(input *BundleInstanceInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation BundleInstance for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstance
 func (c *EC2) BundleInstance(input *BundleInstanceInput) (*BundleInstanceOutput, error) {
 	req, out := c.BundleInstanceRequest(input)
 	return out, req.Send()
@@ -1746,7 +1746,7 @@ func (c *EC2) BundleInstance(input *BundleInstanceInput) (*BundleInstanceOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) BundleInstanceWithContext(ctx aws.Context, input *BundleInstanceInput, opts ...request.Option) (*BundleInstanceOutput, error) {
 	req, out := c.BundleInstanceRequest(input)
@@ -1780,7 +1780,7 @@ const opCancelBundleTask = "CancelBundleTask"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTask
 func (c *EC2) CancelBundleTaskRequest(input *CancelBundleTaskInput) (req *request.Request, output *CancelBundleTaskOutput) {
 	op := &request.Operation{
 		Name:       opCancelBundleTask,
@@ -1807,7 +1807,7 @@ func (c *EC2) CancelBundleTaskRequest(input *CancelBundleTaskInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelBundleTask for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTask
 func (c *EC2) CancelBundleTask(input *CancelBundleTaskInput) (*CancelBundleTaskOutput, error) {
 	req, out := c.CancelBundleTaskRequest(input)
 	return out, req.Send()
@@ -1820,7 +1820,7 @@ func (c *EC2) CancelBundleTask(input *CancelBundleTaskInput) (*CancelBundleTaskO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelBundleTaskWithContext(ctx aws.Context, input *CancelBundleTaskInput, opts ...request.Option) (*CancelBundleTaskOutput, error) {
 	req, out := c.CancelBundleTaskRequest(input)
@@ -1854,7 +1854,7 @@ const opCancelConversionTask = "CancelConversionTask"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionTask
 func (c *EC2) CancelConversionTaskRequest(input *CancelConversionTaskInput) (req *request.Request, output *CancelConversionTaskOutput) {
 	op := &request.Operation{
 		Name:       opCancelConversionTask,
@@ -1890,7 +1890,7 @@ func (c *EC2) CancelConversionTaskRequest(input *CancelConversionTaskInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelConversionTask for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionTask
 func (c *EC2) CancelConversionTask(input *CancelConversionTaskInput) (*CancelConversionTaskOutput, error) {
 	req, out := c.CancelConversionTaskRequest(input)
 	return out, req.Send()
@@ -1903,7 +1903,7 @@ func (c *EC2) CancelConversionTask(input *CancelConversionTaskInput) (*CancelCon
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelConversionTaskWithContext(ctx aws.Context, input *CancelConversionTaskInput, opts ...request.Option) (*CancelConversionTaskOutput, error) {
 	req, out := c.CancelConversionTaskRequest(input)
@@ -1937,7 +1937,7 @@ const opCancelExportTask = "CancelExportTask"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTask
 func (c *EC2) CancelExportTaskRequest(input *CancelExportTaskInput) (req *request.Request, output *CancelExportTaskOutput) {
 	op := &request.Operation{
 		Name:       opCancelExportTask,
@@ -1969,7 +1969,7 @@ func (c *EC2) CancelExportTaskRequest(input *CancelExportTaskInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelExportTask for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTask
 func (c *EC2) CancelExportTask(input *CancelExportTaskInput) (*CancelExportTaskOutput, error) {
 	req, out := c.CancelExportTaskRequest(input)
 	return out, req.Send()
@@ -1982,7 +1982,7 @@ func (c *EC2) CancelExportTask(input *CancelExportTaskInput) (*CancelExportTaskO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelExportTaskWithContext(ctx aws.Context, input *CancelExportTaskInput, opts ...request.Option) (*CancelExportTaskOutput, error) {
 	req, out := c.CancelExportTaskRequest(input)
@@ -2016,7 +2016,7 @@ const opCancelImportTask = "CancelImportTask"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTask
 func (c *EC2) CancelImportTaskRequest(input *CancelImportTaskInput) (req *request.Request, output *CancelImportTaskOutput) {
 	op := &request.Operation{
 		Name:       opCancelImportTask,
@@ -2043,7 +2043,7 @@ func (c *EC2) CancelImportTaskRequest(input *CancelImportTaskInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelImportTask for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTask
 func (c *EC2) CancelImportTask(input *CancelImportTaskInput) (*CancelImportTaskOutput, error) {
 	req, out := c.CancelImportTaskRequest(input)
 	return out, req.Send()
@@ -2056,7 +2056,7 @@ func (c *EC2) CancelImportTask(input *CancelImportTaskInput) (*CancelImportTaskO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelImportTaskWithContext(ctx aws.Context, input *CancelImportTaskInput, opts ...request.Option) (*CancelImportTaskOutput, error) {
 	req, out := c.CancelImportTaskRequest(input)
@@ -2090,7 +2090,7 @@ const opCancelReservedInstancesListing = "CancelReservedInstancesListing"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListing
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListing
 func (c *EC2) CancelReservedInstancesListingRequest(input *CancelReservedInstancesListingInput) (req *request.Request, output *CancelReservedInstancesListingOutput) {
 	op := &request.Operation{
 		Name:       opCancelReservedInstancesListing,
@@ -2121,7 +2121,7 @@ func (c *EC2) CancelReservedInstancesListingRequest(input *CancelReservedInstanc
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelReservedInstancesListing for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListing
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListing
 func (c *EC2) CancelReservedInstancesListing(input *CancelReservedInstancesListingInput) (*CancelReservedInstancesListingOutput, error) {
 	req, out := c.CancelReservedInstancesListingRequest(input)
 	return out, req.Send()
@@ -2134,7 +2134,7 @@ func (c *EC2) CancelReservedInstancesListing(input *CancelReservedInstancesListi
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelReservedInstancesListingWithContext(ctx aws.Context, input *CancelReservedInstancesListingInput, opts ...request.Option) (*CancelReservedInstancesListingOutput, error) {
 	req, out := c.CancelReservedInstancesListingRequest(input)
@@ -2168,7 +2168,7 @@ const opCancelSpotFleetRequests = "CancelSpotFleetRequests"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequests
 func (c *EC2) CancelSpotFleetRequestsRequest(input *CancelSpotFleetRequestsInput) (req *request.Request, output *CancelSpotFleetRequestsOutput) {
 	op := &request.Operation{
 		Name:       opCancelSpotFleetRequests,
@@ -2202,7 +2202,7 @@ func (c *EC2) CancelSpotFleetRequestsRequest(input *CancelSpotFleetRequestsInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelSpotFleetRequests for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequests
 func (c *EC2) CancelSpotFleetRequests(input *CancelSpotFleetRequestsInput) (*CancelSpotFleetRequestsOutput, error) {
 	req, out := c.CancelSpotFleetRequestsRequest(input)
 	return out, req.Send()
@@ -2215,7 +2215,7 @@ func (c *EC2) CancelSpotFleetRequests(input *CancelSpotFleetRequestsInput) (*Can
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelSpotFleetRequestsWithContext(ctx aws.Context, input *CancelSpotFleetRequestsInput, opts ...request.Option) (*CancelSpotFleetRequestsOutput, error) {
 	req, out := c.CancelSpotFleetRequestsRequest(input)
@@ -2249,7 +2249,7 @@ const opCancelSpotInstanceRequests = "CancelSpotInstanceRequests"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequests
 func (c *EC2) CancelSpotInstanceRequestsRequest(input *CancelSpotInstanceRequestsInput) (req *request.Request, output *CancelSpotInstanceRequestsOutput) {
 	op := &request.Operation{
 		Name:       opCancelSpotInstanceRequests,
@@ -2283,7 +2283,7 @@ func (c *EC2) CancelSpotInstanceRequestsRequest(input *CancelSpotInstanceRequest
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CancelSpotInstanceRequests for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequests
 func (c *EC2) CancelSpotInstanceRequests(input *CancelSpotInstanceRequestsInput) (*CancelSpotInstanceRequestsOutput, error) {
 	req, out := c.CancelSpotInstanceRequestsRequest(input)
 	return out, req.Send()
@@ -2296,7 +2296,7 @@ func (c *EC2) CancelSpotInstanceRequests(input *CancelSpotInstanceRequestsInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CancelSpotInstanceRequestsWithContext(ctx aws.Context, input *CancelSpotInstanceRequestsInput, opts ...request.Option) (*CancelSpotInstanceRequestsOutput, error) {
 	req, out := c.CancelSpotInstanceRequestsRequest(input)
@@ -2330,7 +2330,7 @@ const opConfirmProductInstance = "ConfirmProductInstance"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstance
 func (c *EC2) ConfirmProductInstanceRequest(input *ConfirmProductInstanceInput) (req *request.Request, output *ConfirmProductInstanceOutput) {
 	op := &request.Operation{
 		Name:       opConfirmProductInstance,
@@ -2359,7 +2359,7 @@ func (c *EC2) ConfirmProductInstanceRequest(input *ConfirmProductInstanceInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ConfirmProductInstance for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstance
 func (c *EC2) ConfirmProductInstance(input *ConfirmProductInstanceInput) (*ConfirmProductInstanceOutput, error) {
 	req, out := c.ConfirmProductInstanceRequest(input)
 	return out, req.Send()
@@ -2372,7 +2372,7 @@ func (c *EC2) ConfirmProductInstance(input *ConfirmProductInstanceInput) (*Confi
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ConfirmProductInstanceWithContext(ctx aws.Context, input *ConfirmProductInstanceInput, opts ...request.Option) (*ConfirmProductInstanceOutput, error) {
 	req, out := c.ConfirmProductInstanceRequest(input)
@@ -2406,7 +2406,7 @@ const opCopyFpgaImage = "CopyFpgaImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImage
 func (c *EC2) CopyFpgaImageRequest(input *CopyFpgaImageInput) (req *request.Request, output *CopyFpgaImageOutput) {
 	op := &request.Operation{
 		Name:       opCopyFpgaImage,
@@ -2433,7 +2433,7 @@ func (c *EC2) CopyFpgaImageRequest(input *CopyFpgaImageInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CopyFpgaImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImage
 func (c *EC2) CopyFpgaImage(input *CopyFpgaImageInput) (*CopyFpgaImageOutput, error) {
 	req, out := c.CopyFpgaImageRequest(input)
 	return out, req.Send()
@@ -2446,7 +2446,7 @@ func (c *EC2) CopyFpgaImage(input *CopyFpgaImageInput) (*CopyFpgaImageOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CopyFpgaImageWithContext(ctx aws.Context, input *CopyFpgaImageInput, opts ...request.Option) (*CopyFpgaImageOutput, error) {
 	req, out := c.CopyFpgaImageRequest(input)
@@ -2480,7 +2480,7 @@ const opCopyImage = "CopyImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImage
 func (c *EC2) CopyImageRequest(input *CopyImageInput) (req *request.Request, output *CopyImageOutput) {
 	op := &request.Operation{
 		Name:       opCopyImage,
@@ -2513,7 +2513,7 @@ func (c *EC2) CopyImageRequest(input *CopyImageInput) (req *request.Request, out
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CopyImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImage
 func (c *EC2) CopyImage(input *CopyImageInput) (*CopyImageOutput, error) {
 	req, out := c.CopyImageRequest(input)
 	return out, req.Send()
@@ -2526,7 +2526,7 @@ func (c *EC2) CopyImage(input *CopyImageInput) (*CopyImageOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CopyImageWithContext(ctx aws.Context, input *CopyImageInput, opts ...request.Option) (*CopyImageOutput, error) {
 	req, out := c.CopyImageRequest(input)
@@ -2560,7 +2560,7 @@ const opCopySnapshot = "CopySnapshot"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshot
 func (c *EC2) CopySnapshotRequest(input *CopySnapshotInput) (req *request.Request, output *CopySnapshotOutput) {
 	op := &request.Operation{
 		Name:       opCopySnapshot,
@@ -2606,7 +2606,7 @@ func (c *EC2) CopySnapshotRequest(input *CopySnapshotInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CopySnapshot for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshot
 func (c *EC2) CopySnapshot(input *CopySnapshotInput) (*CopySnapshotOutput, error) {
 	req, out := c.CopySnapshotRequest(input)
 	return out, req.Send()
@@ -2619,7 +2619,7 @@ func (c *EC2) CopySnapshot(input *CopySnapshotInput) (*CopySnapshotOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CopySnapshotWithContext(ctx aws.Context, input *CopySnapshotInput, opts ...request.Option) (*CopySnapshotOutput, error) {
 	req, out := c.CopySnapshotRequest(input)
@@ -2653,7 +2653,7 @@ const opCreateCustomerGateway = "CreateCustomerGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGateway
 func (c *EC2) CreateCustomerGatewayRequest(input *CreateCustomerGatewayInput) (req *request.Request, output *CreateCustomerGatewayOutput) {
 	op := &request.Operation{
 		Name:       opCreateCustomerGateway,
@@ -2704,7 +2704,7 @@ func (c *EC2) CreateCustomerGatewayRequest(input *CreateCustomerGatewayInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateCustomerGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGateway
 func (c *EC2) CreateCustomerGateway(input *CreateCustomerGatewayInput) (*CreateCustomerGatewayOutput, error) {
 	req, out := c.CreateCustomerGatewayRequest(input)
 	return out, req.Send()
@@ -2717,7 +2717,7 @@ func (c *EC2) CreateCustomerGateway(input *CreateCustomerGatewayInput) (*CreateC
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateCustomerGatewayWithContext(ctx aws.Context, input *CreateCustomerGatewayInput, opts ...request.Option) (*CreateCustomerGatewayOutput, error) {
 	req, out := c.CreateCustomerGatewayRequest(input)
@@ -2751,7 +2751,7 @@ const opCreateDefaultSubnet = "CreateDefaultSubnet"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnet
 func (c *EC2) CreateDefaultSubnetRequest(input *CreateDefaultSubnetInput) (req *request.Request, output *CreateDefaultSubnetOutput) {
 	op := &request.Operation{
 		Name:       opCreateDefaultSubnet,
@@ -2782,7 +2782,7 @@ func (c *EC2) CreateDefaultSubnetRequest(input *CreateDefaultSubnetInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateDefaultSubnet for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnet
 func (c *EC2) CreateDefaultSubnet(input *CreateDefaultSubnetInput) (*CreateDefaultSubnetOutput, error) {
 	req, out := c.CreateDefaultSubnetRequest(input)
 	return out, req.Send()
@@ -2795,7 +2795,7 @@ func (c *EC2) CreateDefaultSubnet(input *CreateDefaultSubnetInput) (*CreateDefau
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateDefaultSubnetWithContext(ctx aws.Context, input *CreateDefaultSubnetInput, opts ...request.Option) (*CreateDefaultSubnetOutput, error) {
 	req, out := c.CreateDefaultSubnetRequest(input)
@@ -2829,7 +2829,7 @@ const opCreateDefaultVpc = "CreateDefaultVpc"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpc
 func (c *EC2) CreateDefaultVpcRequest(input *CreateDefaultVpcInput) (req *request.Request, output *CreateDefaultVpcOutput) {
 	op := &request.Operation{
 		Name:       opCreateDefaultVpc,
@@ -2868,7 +2868,7 @@ func (c *EC2) CreateDefaultVpcRequest(input *CreateDefaultVpcInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateDefaultVpc for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpc
 func (c *EC2) CreateDefaultVpc(input *CreateDefaultVpcInput) (*CreateDefaultVpcOutput, error) {
 	req, out := c.CreateDefaultVpcRequest(input)
 	return out, req.Send()
@@ -2881,7 +2881,7 @@ func (c *EC2) CreateDefaultVpc(input *CreateDefaultVpcInput) (*CreateDefaultVpcO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateDefaultVpcWithContext(ctx aws.Context, input *CreateDefaultVpcInput, opts ...request.Option) (*CreateDefaultVpcOutput, error) {
 	req, out := c.CreateDefaultVpcRequest(input)
@@ -2915,7 +2915,7 @@ const opCreateDhcpOptions = "CreateDhcpOptions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptions
 func (c *EC2) CreateDhcpOptionsRequest(input *CreateDhcpOptionsInput) (req *request.Request, output *CreateDhcpOptionsOutput) {
 	op := &request.Operation{
 		Name:       opCreateDhcpOptions,
@@ -2981,7 +2981,7 @@ func (c *EC2) CreateDhcpOptionsRequest(input *CreateDhcpOptionsInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateDhcpOptions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptions
 func (c *EC2) CreateDhcpOptions(input *CreateDhcpOptionsInput) (*CreateDhcpOptionsOutput, error) {
 	req, out := c.CreateDhcpOptionsRequest(input)
 	return out, req.Send()
@@ -2994,7 +2994,7 @@ func (c *EC2) CreateDhcpOptions(input *CreateDhcpOptionsInput) (*CreateDhcpOptio
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateDhcpOptionsWithContext(ctx aws.Context, input *CreateDhcpOptionsInput, opts ...request.Option) (*CreateDhcpOptionsOutput, error) {
 	req, out := c.CreateDhcpOptionsRequest(input)
@@ -3028,7 +3028,7 @@ const opCreateEgressOnlyInternetGateway = "CreateEgressOnlyInternetGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGateway
 func (c *EC2) CreateEgressOnlyInternetGatewayRequest(input *CreateEgressOnlyInternetGatewayInput) (req *request.Request, output *CreateEgressOnlyInternetGatewayOutput) {
 	op := &request.Operation{
 		Name:       opCreateEgressOnlyInternetGateway,
@@ -3058,7 +3058,7 @@ func (c *EC2) CreateEgressOnlyInternetGatewayRequest(input *CreateEgressOnlyInte
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateEgressOnlyInternetGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGateway
 func (c *EC2) CreateEgressOnlyInternetGateway(input *CreateEgressOnlyInternetGatewayInput) (*CreateEgressOnlyInternetGatewayOutput, error) {
 	req, out := c.CreateEgressOnlyInternetGatewayRequest(input)
 	return out, req.Send()
@@ -3071,7 +3071,7 @@ func (c *EC2) CreateEgressOnlyInternetGateway(input *CreateEgressOnlyInternetGat
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateEgressOnlyInternetGatewayWithContext(ctx aws.Context, input *CreateEgressOnlyInternetGatewayInput, opts ...request.Option) (*CreateEgressOnlyInternetGatewayOutput, error) {
 	req, out := c.CreateEgressOnlyInternetGatewayRequest(input)
@@ -3105,7 +3105,7 @@ const opCreateFlowLogs = "CreateFlowLogs"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogs
 func (c *EC2) CreateFlowLogsRequest(input *CreateFlowLogsInput) (req *request.Request, output *CreateFlowLogsOutput) {
 	op := &request.Operation{
 		Name:       opCreateFlowLogs,
@@ -3141,7 +3141,7 @@ func (c *EC2) CreateFlowLogsRequest(input *CreateFlowLogsInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateFlowLogs for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogs
 func (c *EC2) CreateFlowLogs(input *CreateFlowLogsInput) (*CreateFlowLogsOutput, error) {
 	req, out := c.CreateFlowLogsRequest(input)
 	return out, req.Send()
@@ -3154,7 +3154,7 @@ func (c *EC2) CreateFlowLogs(input *CreateFlowLogsInput) (*CreateFlowLogsOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateFlowLogsWithContext(ctx aws.Context, input *CreateFlowLogsInput, opts ...request.Option) (*CreateFlowLogsOutput, error) {
 	req, out := c.CreateFlowLogsRequest(input)
@@ -3188,7 +3188,7 @@ const opCreateFpgaImage = "CreateFpgaImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImage
 func (c *EC2) CreateFpgaImageRequest(input *CreateFpgaImageInput) (req *request.Request, output *CreateFpgaImageOutput) {
 	op := &request.Operation{
 		Name:       opCreateFpgaImage,
@@ -3214,7 +3214,7 @@ func (c *EC2) CreateFpgaImageRequest(input *CreateFpgaImageInput) (req *request.
 //
 // An AFI contains the FPGA bitstream that is ready to download to an FPGA.
 // You can securely deploy an AFI on one or more FPGA-accelerated instances.
-// For more information, see the AWS FPGA Hardware Development Kit (https://github.com/aws/aws-fpga/).
+// For more information, see the AWS FPGA Hardware Development Kit (http://github.com/aws/aws-fpga/).
 //
 // Returns awserr.Error for service API and SDK errors. Use runtime type assertions
 // with awserr.Error's Code and Message methods to get detailed information about
@@ -3222,7 +3222,7 @@ func (c *EC2) CreateFpgaImageRequest(input *CreateFpgaImageInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateFpgaImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImage
 func (c *EC2) CreateFpgaImage(input *CreateFpgaImageInput) (*CreateFpgaImageOutput, error) {
 	req, out := c.CreateFpgaImageRequest(input)
 	return out, req.Send()
@@ -3235,7 +3235,7 @@ func (c *EC2) CreateFpgaImage(input *CreateFpgaImageInput) (*CreateFpgaImageOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateFpgaImageWithContext(ctx aws.Context, input *CreateFpgaImageInput, opts ...request.Option) (*CreateFpgaImageOutput, error) {
 	req, out := c.CreateFpgaImageRequest(input)
@@ -3269,7 +3269,7 @@ const opCreateImage = "CreateImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImage
 func (c *EC2) CreateImageRequest(input *CreateImageInput) (req *request.Request, output *CreateImageOutput) {
 	op := &request.Operation{
 		Name:       opCreateImage,
@@ -3305,7 +3305,7 @@ func (c *EC2) CreateImageRequest(input *CreateImageInput) (req *request.Request,
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImage
 func (c *EC2) CreateImage(input *CreateImageInput) (*CreateImageOutput, error) {
 	req, out := c.CreateImageRequest(input)
 	return out, req.Send()
@@ -3318,7 +3318,7 @@ func (c *EC2) CreateImage(input *CreateImageInput) (*CreateImageOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateImageWithContext(ctx aws.Context, input *CreateImageInput, opts ...request.Option) (*CreateImageOutput, error) {
 	req, out := c.CreateImageRequest(input)
@@ -3352,7 +3352,7 @@ const opCreateInstanceExportTask = "CreateInstanceExportTask"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTask
 func (c *EC2) CreateInstanceExportTaskRequest(input *CreateInstanceExportTaskInput) (req *request.Request, output *CreateInstanceExportTaskOutput) {
 	op := &request.Operation{
 		Name:       opCreateInstanceExportTask,
@@ -3384,7 +3384,7 @@ func (c *EC2) CreateInstanceExportTaskRequest(input *CreateInstanceExportTaskInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateInstanceExportTask for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTask
 func (c *EC2) CreateInstanceExportTask(input *CreateInstanceExportTaskInput) (*CreateInstanceExportTaskOutput, error) {
 	req, out := c.CreateInstanceExportTaskRequest(input)
 	return out, req.Send()
@@ -3397,7 +3397,7 @@ func (c *EC2) CreateInstanceExportTask(input *CreateInstanceExportTaskInput) (*C
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateInstanceExportTaskWithContext(ctx aws.Context, input *CreateInstanceExportTaskInput, opts ...request.Option) (*CreateInstanceExportTaskOutput, error) {
 	req, out := c.CreateInstanceExportTaskRequest(input)
@@ -3431,7 +3431,7 @@ const opCreateInternetGateway = "CreateInternetGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGateway
 func (c *EC2) CreateInternetGatewayRequest(input *CreateInternetGatewayInput) (req *request.Request, output *CreateInternetGatewayOutput) {
 	op := &request.Operation{
 		Name:       opCreateInternetGateway,
@@ -3462,7 +3462,7 @@ func (c *EC2) CreateInternetGatewayRequest(input *CreateInternetGatewayInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateInternetGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGateway
 func (c *EC2) CreateInternetGateway(input *CreateInternetGatewayInput) (*CreateInternetGatewayOutput, error) {
 	req, out := c.CreateInternetGatewayRequest(input)
 	return out, req.Send()
@@ -3475,7 +3475,7 @@ func (c *EC2) CreateInternetGateway(input *CreateInternetGatewayInput) (*CreateI
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateInternetGatewayWithContext(ctx aws.Context, input *CreateInternetGatewayInput, opts ...request.Option) (*CreateInternetGatewayOutput, error) {
 	req, out := c.CreateInternetGatewayRequest(input)
@@ -3509,7 +3509,7 @@ const opCreateKeyPair = "CreateKeyPair"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateKeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateKeyPair
 func (c *EC2) CreateKeyPairRequest(input *CreateKeyPairInput) (req *request.Request, output *CreateKeyPairOutput) {
 	op := &request.Operation{
 		Name:       opCreateKeyPair,
@@ -3548,7 +3548,7 @@ func (c *EC2) CreateKeyPairRequest(input *CreateKeyPairInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateKeyPair for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateKeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateKeyPair
 func (c *EC2) CreateKeyPair(input *CreateKeyPairInput) (*CreateKeyPairOutput, error) {
 	req, out := c.CreateKeyPairRequest(input)
 	return out, req.Send()
@@ -3561,7 +3561,7 @@ func (c *EC2) CreateKeyPair(input *CreateKeyPairInput) (*CreateKeyPairOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateKeyPairWithContext(ctx aws.Context, input *CreateKeyPairInput, opts ...request.Option) (*CreateKeyPairOutput, error) {
 	req, out := c.CreateKeyPairRequest(input)
@@ -3595,7 +3595,7 @@ const opCreateLaunchTemplate = "CreateLaunchTemplate"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplate
 func (c *EC2) CreateLaunchTemplateRequest(input *CreateLaunchTemplateInput) (req *request.Request, output *CreateLaunchTemplateOutput) {
 	op := &request.Operation{
 		Name:       opCreateLaunchTemplate,
@@ -3624,7 +3624,7 @@ func (c *EC2) CreateLaunchTemplateRequest(input *CreateLaunchTemplateInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateLaunchTemplate for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplate
 func (c *EC2) CreateLaunchTemplate(input *CreateLaunchTemplateInput) (*CreateLaunchTemplateOutput, error) {
 	req, out := c.CreateLaunchTemplateRequest(input)
 	return out, req.Send()
@@ -3637,7 +3637,7 @@ func (c *EC2) CreateLaunchTemplate(input *CreateLaunchTemplateInput) (*CreateLau
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateLaunchTemplateWithContext(ctx aws.Context, input *CreateLaunchTemplateInput, opts ...request.Option) (*CreateLaunchTemplateOutput, error) {
 	req, out := c.CreateLaunchTemplateRequest(input)
@@ -3671,7 +3671,7 @@ const opCreateLaunchTemplateVersion = "CreateLaunchTemplateVersion"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersion
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersion
 func (c *EC2) CreateLaunchTemplateVersionRequest(input *CreateLaunchTemplateVersionInput) (req *request.Request, output *CreateLaunchTemplateVersionOutput) {
 	op := &request.Operation{
 		Name:       opCreateLaunchTemplateVersion,
@@ -3702,7 +3702,7 @@ func (c *EC2) CreateLaunchTemplateVersionRequest(input *CreateLaunchTemplateVers
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateLaunchTemplateVersion for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersion
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersion
 func (c *EC2) CreateLaunchTemplateVersion(input *CreateLaunchTemplateVersionInput) (*CreateLaunchTemplateVersionOutput, error) {
 	req, out := c.CreateLaunchTemplateVersionRequest(input)
 	return out, req.Send()
@@ -3715,7 +3715,7 @@ func (c *EC2) CreateLaunchTemplateVersion(input *CreateLaunchTemplateVersionInpu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateLaunchTemplateVersionWithContext(ctx aws.Context, input *CreateLaunchTemplateVersionInput, opts ...request.Option) (*CreateLaunchTemplateVersionOutput, error) {
 	req, out := c.CreateLaunchTemplateVersionRequest(input)
@@ -3749,7 +3749,7 @@ const opCreateNatGateway = "CreateNatGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGateway
 func (c *EC2) CreateNatGatewayRequest(input *CreateNatGatewayInput) (req *request.Request, output *CreateNatGatewayOutput) {
 	op := &request.Operation{
 		Name:       opCreateNatGateway,
@@ -3781,7 +3781,7 @@ func (c *EC2) CreateNatGatewayRequest(input *CreateNatGatewayInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateNatGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGateway
 func (c *EC2) CreateNatGateway(input *CreateNatGatewayInput) (*CreateNatGatewayOutput, error) {
 	req, out := c.CreateNatGatewayRequest(input)
 	return out, req.Send()
@@ -3794,7 +3794,7 @@ func (c *EC2) CreateNatGateway(input *CreateNatGatewayInput) (*CreateNatGatewayO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateNatGatewayWithContext(ctx aws.Context, input *CreateNatGatewayInput, opts ...request.Option) (*CreateNatGatewayOutput, error) {
 	req, out := c.CreateNatGatewayRequest(input)
@@ -3828,7 +3828,7 @@ const opCreateNetworkAcl = "CreateNetworkAcl"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAcl
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAcl
 func (c *EC2) CreateNetworkAclRequest(input *CreateNetworkAclInput) (req *request.Request, output *CreateNetworkAclOutput) {
 	op := &request.Operation{
 		Name:       opCreateNetworkAcl,
@@ -3859,7 +3859,7 @@ func (c *EC2) CreateNetworkAclRequest(input *CreateNetworkAclInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateNetworkAcl for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAcl
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAcl
 func (c *EC2) CreateNetworkAcl(input *CreateNetworkAclInput) (*CreateNetworkAclOutput, error) {
 	req, out := c.CreateNetworkAclRequest(input)
 	return out, req.Send()
@@ -3872,7 +3872,7 @@ func (c *EC2) CreateNetworkAcl(input *CreateNetworkAclInput) (*CreateNetworkAclO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateNetworkAclWithContext(ctx aws.Context, input *CreateNetworkAclInput, opts ...request.Option) (*CreateNetworkAclOutput, error) {
 	req, out := c.CreateNetworkAclRequest(input)
@@ -3906,7 +3906,7 @@ const opCreateNetworkAclEntry = "CreateNetworkAclEntry"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntry
 func (c *EC2) CreateNetworkAclEntryRequest(input *CreateNetworkAclEntryInput) (req *request.Request, output *CreateNetworkAclEntryOutput) {
 	op := &request.Operation{
 		Name:       opCreateNetworkAclEntry,
@@ -3951,7 +3951,7 @@ func (c *EC2) CreateNetworkAclEntryRequest(input *CreateNetworkAclEntryInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateNetworkAclEntry for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntry
 func (c *EC2) CreateNetworkAclEntry(input *CreateNetworkAclEntryInput) (*CreateNetworkAclEntryOutput, error) {
 	req, out := c.CreateNetworkAclEntryRequest(input)
 	return out, req.Send()
@@ -3964,7 +3964,7 @@ func (c *EC2) CreateNetworkAclEntry(input *CreateNetworkAclEntryInput) (*CreateN
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateNetworkAclEntryWithContext(ctx aws.Context, input *CreateNetworkAclEntryInput, opts ...request.Option) (*CreateNetworkAclEntryOutput, error) {
 	req, out := c.CreateNetworkAclEntryRequest(input)
@@ -3998,7 +3998,7 @@ const opCreateNetworkInterface = "CreateNetworkInterface"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterface
 func (c *EC2) CreateNetworkInterfaceRequest(input *CreateNetworkInterfaceInput) (req *request.Request, output *CreateNetworkInterfaceOutput) {
 	op := &request.Operation{
 		Name:       opCreateNetworkInterface,
@@ -4029,7 +4029,7 @@ func (c *EC2) CreateNetworkInterfaceRequest(input *CreateNetworkInterfaceInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateNetworkInterface for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterface
 func (c *EC2) CreateNetworkInterface(input *CreateNetworkInterfaceInput) (*CreateNetworkInterfaceOutput, error) {
 	req, out := c.CreateNetworkInterfaceRequest(input)
 	return out, req.Send()
@@ -4042,7 +4042,7 @@ func (c *EC2) CreateNetworkInterface(input *CreateNetworkInterfaceInput) (*Creat
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateNetworkInterfaceWithContext(ctx aws.Context, input *CreateNetworkInterfaceInput, opts ...request.Option) (*CreateNetworkInterfaceOutput, error) {
 	req, out := c.CreateNetworkInterfaceRequest(input)
@@ -4076,7 +4076,7 @@ const opCreateNetworkInterfacePermission = "CreateNetworkInterfacePermission"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermission
 func (c *EC2) CreateNetworkInterfacePermissionRequest(input *CreateNetworkInterfacePermissionInput) (req *request.Request, output *CreateNetworkInterfacePermissionOutput) {
 	op := &request.Operation{
 		Name:       opCreateNetworkInterfacePermission,
@@ -4107,7 +4107,7 @@ func (c *EC2) CreateNetworkInterfacePermissionRequest(input *CreateNetworkInterf
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateNetworkInterfacePermission for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermission
 func (c *EC2) CreateNetworkInterfacePermission(input *CreateNetworkInterfacePermissionInput) (*CreateNetworkInterfacePermissionOutput, error) {
 	req, out := c.CreateNetworkInterfacePermissionRequest(input)
 	return out, req.Send()
@@ -4120,7 +4120,7 @@ func (c *EC2) CreateNetworkInterfacePermission(input *CreateNetworkInterfacePerm
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateNetworkInterfacePermissionWithContext(ctx aws.Context, input *CreateNetworkInterfacePermissionInput, opts ...request.Option) (*CreateNetworkInterfacePermissionOutput, error) {
 	req, out := c.CreateNetworkInterfacePermissionRequest(input)
@@ -4154,7 +4154,7 @@ const opCreatePlacementGroup = "CreatePlacementGroup"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroup
 func (c *EC2) CreatePlacementGroupRequest(input *CreatePlacementGroupInput) (req *request.Request, output *CreatePlacementGroupOutput) {
 	op := &request.Operation{
 		Name:       opCreatePlacementGroup,
@@ -4191,7 +4191,7 @@ func (c *EC2) CreatePlacementGroupRequest(input *CreatePlacementGroupInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreatePlacementGroup for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroup
 func (c *EC2) CreatePlacementGroup(input *CreatePlacementGroupInput) (*CreatePlacementGroupOutput, error) {
 	req, out := c.CreatePlacementGroupRequest(input)
 	return out, req.Send()
@@ -4204,7 +4204,7 @@ func (c *EC2) CreatePlacementGroup(input *CreatePlacementGroupInput) (*CreatePla
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreatePlacementGroupWithContext(ctx aws.Context, input *CreatePlacementGroupInput, opts ...request.Option) (*CreatePlacementGroupOutput, error) {
 	req, out := c.CreatePlacementGroupRequest(input)
@@ -4238,7 +4238,7 @@ const opCreateReservedInstancesListing = "CreateReservedInstancesListing"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListing
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListing
 func (c *EC2) CreateReservedInstancesListingRequest(input *CreateReservedInstancesListingInput) (req *request.Request, output *CreateReservedInstancesListingOutput) {
 	op := &request.Operation{
 		Name:       opCreateReservedInstancesListing,
@@ -4288,7 +4288,7 @@ func (c *EC2) CreateReservedInstancesListingRequest(input *CreateReservedInstanc
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateReservedInstancesListing for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListing
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListing
 func (c *EC2) CreateReservedInstancesListing(input *CreateReservedInstancesListingInput) (*CreateReservedInstancesListingOutput, error) {
 	req, out := c.CreateReservedInstancesListingRequest(input)
 	return out, req.Send()
@@ -4301,7 +4301,7 @@ func (c *EC2) CreateReservedInstancesListing(input *CreateReservedInstancesListi
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateReservedInstancesListingWithContext(ctx aws.Context, input *CreateReservedInstancesListingInput, opts ...request.Option) (*CreateReservedInstancesListingOutput, error) {
 	req, out := c.CreateReservedInstancesListingRequest(input)
@@ -4335,7 +4335,7 @@ const opCreateRoute = "CreateRoute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRoute
 func (c *EC2) CreateRouteRequest(input *CreateRouteInput) (req *request.Request, output *CreateRouteOutput) {
 	op := &request.Operation{
 		Name:       opCreateRoute,
@@ -4381,7 +4381,7 @@ func (c *EC2) CreateRouteRequest(input *CreateRouteInput) (req *request.Request,
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateRoute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRoute
 func (c *EC2) CreateRoute(input *CreateRouteInput) (*CreateRouteOutput, error) {
 	req, out := c.CreateRouteRequest(input)
 	return out, req.Send()
@@ -4394,7 +4394,7 @@ func (c *EC2) CreateRoute(input *CreateRouteInput) (*CreateRouteOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateRouteWithContext(ctx aws.Context, input *CreateRouteInput, opts ...request.Option) (*CreateRouteOutput, error) {
 	req, out := c.CreateRouteRequest(input)
@@ -4428,7 +4428,7 @@ const opCreateRouteTable = "CreateRouteTable"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTable
 func (c *EC2) CreateRouteTableRequest(input *CreateRouteTableInput) (req *request.Request, output *CreateRouteTableOutput) {
 	op := &request.Operation{
 		Name:       opCreateRouteTable,
@@ -4459,7 +4459,7 @@ func (c *EC2) CreateRouteTableRequest(input *CreateRouteTableInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateRouteTable for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTable
 func (c *EC2) CreateRouteTable(input *CreateRouteTableInput) (*CreateRouteTableOutput, error) {
 	req, out := c.CreateRouteTableRequest(input)
 	return out, req.Send()
@@ -4472,7 +4472,7 @@ func (c *EC2) CreateRouteTable(input *CreateRouteTableInput) (*CreateRouteTableO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateRouteTableWithContext(ctx aws.Context, input *CreateRouteTableInput, opts ...request.Option) (*CreateRouteTableOutput, error) {
 	req, out := c.CreateRouteTableRequest(input)
@@ -4506,7 +4506,7 @@ const opCreateSecurityGroup = "CreateSecurityGroup"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroup
 func (c *EC2) CreateSecurityGroupRequest(input *CreateSecurityGroupInput) (req *request.Request, output *CreateSecurityGroupOutput) {
 	op := &request.Operation{
 		Name:       opCreateSecurityGroup,
@@ -4559,7 +4559,7 @@ func (c *EC2) CreateSecurityGroupRequest(input *CreateSecurityGroupInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateSecurityGroup for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroup
 func (c *EC2) CreateSecurityGroup(input *CreateSecurityGroupInput) (*CreateSecurityGroupOutput, error) {
 	req, out := c.CreateSecurityGroupRequest(input)
 	return out, req.Send()
@@ -4572,7 +4572,7 @@ func (c *EC2) CreateSecurityGroup(input *CreateSecurityGroupInput) (*CreateSecur
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateSecurityGroupWithContext(ctx aws.Context, input *CreateSecurityGroupInput, opts ...request.Option) (*CreateSecurityGroupOutput, error) {
 	req, out := c.CreateSecurityGroupRequest(input)
@@ -4606,7 +4606,7 @@ const opCreateSnapshot = "CreateSnapshot"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSnapshot
 func (c *EC2) CreateSnapshotRequest(input *CreateSnapshotInput) (req *request.Request, output *Snapshot) {
 	op := &request.Operation{
 		Name:       opCreateSnapshot,
@@ -4660,7 +4660,7 @@ func (c *EC2) CreateSnapshotRequest(input *CreateSnapshotInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateSnapshot for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSnapshot
 func (c *EC2) CreateSnapshot(input *CreateSnapshotInput) (*Snapshot, error) {
 	req, out := c.CreateSnapshotRequest(input)
 	return out, req.Send()
@@ -4673,7 +4673,7 @@ func (c *EC2) CreateSnapshot(input *CreateSnapshotInput) (*Snapshot, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateSnapshotWithContext(ctx aws.Context, input *CreateSnapshotInput, opts ...request.Option) (*Snapshot, error) {
 	req, out := c.CreateSnapshotRequest(input)
@@ -4707,7 +4707,7 @@ const opCreateSpotDatafeedSubscription = "CreateSpotDatafeedSubscription"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscription
 func (c *EC2) CreateSpotDatafeedSubscriptionRequest(input *CreateSpotDatafeedSubscriptionInput) (req *request.Request, output *CreateSpotDatafeedSubscriptionOutput) {
 	op := &request.Operation{
 		Name:       opCreateSpotDatafeedSubscription,
@@ -4737,7 +4737,7 @@ func (c *EC2) CreateSpotDatafeedSubscriptionRequest(input *CreateSpotDatafeedSub
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateSpotDatafeedSubscription for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscription
 func (c *EC2) CreateSpotDatafeedSubscription(input *CreateSpotDatafeedSubscriptionInput) (*CreateSpotDatafeedSubscriptionOutput, error) {
 	req, out := c.CreateSpotDatafeedSubscriptionRequest(input)
 	return out, req.Send()
@@ -4750,7 +4750,7 @@ func (c *EC2) CreateSpotDatafeedSubscription(input *CreateSpotDatafeedSubscripti
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateSpotDatafeedSubscriptionWithContext(ctx aws.Context, input *CreateSpotDatafeedSubscriptionInput, opts ...request.Option) (*CreateSpotDatafeedSubscriptionOutput, error) {
 	req, out := c.CreateSpotDatafeedSubscriptionRequest(input)
@@ -4784,7 +4784,7 @@ const opCreateSubnet = "CreateSubnet"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnet
 func (c *EC2) CreateSubnetRequest(input *CreateSubnetInput) (req *request.Request, output *CreateSubnetOutput) {
 	op := &request.Operation{
 		Name:       opCreateSubnet,
@@ -4837,7 +4837,7 @@ func (c *EC2) CreateSubnetRequest(input *CreateSubnetInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateSubnet for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnet
 func (c *EC2) CreateSubnet(input *CreateSubnetInput) (*CreateSubnetOutput, error) {
 	req, out := c.CreateSubnetRequest(input)
 	return out, req.Send()
@@ -4850,7 +4850,7 @@ func (c *EC2) CreateSubnet(input *CreateSubnetInput) (*CreateSubnetOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateSubnetWithContext(ctx aws.Context, input *CreateSubnetInput, opts ...request.Option) (*CreateSubnetOutput, error) {
 	req, out := c.CreateSubnetRequest(input)
@@ -4884,7 +4884,7 @@ const opCreateTags = "CreateTags"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTags
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTags
 func (c *EC2) CreateTagsRequest(input *CreateTagsInput) (req *request.Request, output *CreateTagsOutput) {
 	op := &request.Operation{
 		Name:       opCreateTags,
@@ -4921,7 +4921,7 @@ func (c *EC2) CreateTagsRequest(input *CreateTagsInput) (req *request.Request, o
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateTags for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTags
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTags
 func (c *EC2) CreateTags(input *CreateTagsInput) (*CreateTagsOutput, error) {
 	req, out := c.CreateTagsRequest(input)
 	return out, req.Send()
@@ -4934,7 +4934,7 @@ func (c *EC2) CreateTags(input *CreateTagsInput) (*CreateTagsOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateTagsWithContext(ctx aws.Context, input *CreateTagsInput, opts ...request.Option) (*CreateTagsOutput, error) {
 	req, out := c.CreateTagsRequest(input)
@@ -4968,7 +4968,7 @@ const opCreateVolume = "CreateVolume"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolume
 func (c *EC2) CreateVolumeRequest(input *CreateVolumeInput) (req *request.Request, output *Volume) {
 	op := &request.Operation{
 		Name:       opCreateVolume,
@@ -5013,7 +5013,7 @@ func (c *EC2) CreateVolumeRequest(input *CreateVolumeInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVolume for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolume
 func (c *EC2) CreateVolume(input *CreateVolumeInput) (*Volume, error) {
 	req, out := c.CreateVolumeRequest(input)
 	return out, req.Send()
@@ -5026,7 +5026,7 @@ func (c *EC2) CreateVolume(input *CreateVolumeInput) (*Volume, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVolumeWithContext(ctx aws.Context, input *CreateVolumeInput, opts ...request.Option) (*Volume, error) {
 	req, out := c.CreateVolumeRequest(input)
@@ -5060,7 +5060,7 @@ const opCreateVpc = "CreateVpc"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpc
 func (c *EC2) CreateVpcRequest(input *CreateVpcInput) (req *request.Request, output *CreateVpcOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpc,
@@ -5105,7 +5105,7 @@ func (c *EC2) CreateVpcRequest(input *CreateVpcInput) (req *request.Request, out
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpc for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpc
 func (c *EC2) CreateVpc(input *CreateVpcInput) (*CreateVpcOutput, error) {
 	req, out := c.CreateVpcRequest(input)
 	return out, req.Send()
@@ -5118,7 +5118,7 @@ func (c *EC2) CreateVpc(input *CreateVpcInput) (*CreateVpcOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpcWithContext(ctx aws.Context, input *CreateVpcInput, opts ...request.Option) (*CreateVpcOutput, error) {
 	req, out := c.CreateVpcRequest(input)
@@ -5152,7 +5152,7 @@ const opCreateVpcEndpoint = "CreateVpcEndpoint"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpoint
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpoint
 func (c *EC2) CreateVpcEndpointRequest(input *CreateVpcEndpointInput) (req *request.Request, output *CreateVpcEndpointOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpcEndpoint,
@@ -5195,7 +5195,7 @@ func (c *EC2) CreateVpcEndpointRequest(input *CreateVpcEndpointInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpcEndpoint for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpoint
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpoint
 func (c *EC2) CreateVpcEndpoint(input *CreateVpcEndpointInput) (*CreateVpcEndpointOutput, error) {
 	req, out := c.CreateVpcEndpointRequest(input)
 	return out, req.Send()
@@ -5208,7 +5208,7 @@ func (c *EC2) CreateVpcEndpoint(input *CreateVpcEndpointInput) (*CreateVpcEndpoi
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpcEndpointWithContext(ctx aws.Context, input *CreateVpcEndpointInput, opts ...request.Option) (*CreateVpcEndpointOutput, error) {
 	req, out := c.CreateVpcEndpointRequest(input)
@@ -5242,7 +5242,7 @@ const opCreateVpcEndpointConnectionNotification = "CreateVpcEndpointConnectionNo
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotification
 func (c *EC2) CreateVpcEndpointConnectionNotificationRequest(input *CreateVpcEndpointConnectionNotificationInput) (req *request.Request, output *CreateVpcEndpointConnectionNotificationOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpcEndpointConnectionNotification,
@@ -5275,7 +5275,7 @@ func (c *EC2) CreateVpcEndpointConnectionNotificationRequest(input *CreateVpcEnd
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpcEndpointConnectionNotification for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotification
 func (c *EC2) CreateVpcEndpointConnectionNotification(input *CreateVpcEndpointConnectionNotificationInput) (*CreateVpcEndpointConnectionNotificationOutput, error) {
 	req, out := c.CreateVpcEndpointConnectionNotificationRequest(input)
 	return out, req.Send()
@@ -5288,7 +5288,7 @@ func (c *EC2) CreateVpcEndpointConnectionNotification(input *CreateVpcEndpointCo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpcEndpointConnectionNotificationWithContext(ctx aws.Context, input *CreateVpcEndpointConnectionNotificationInput, opts ...request.Option) (*CreateVpcEndpointConnectionNotificationOutput, error) {
 	req, out := c.CreateVpcEndpointConnectionNotificationRequest(input)
@@ -5322,7 +5322,7 @@ const opCreateVpcEndpointServiceConfiguration = "CreateVpcEndpointServiceConfigu
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration
 func (c *EC2) CreateVpcEndpointServiceConfigurationRequest(input *CreateVpcEndpointServiceConfigurationInput) (req *request.Request, output *CreateVpcEndpointServiceConfigurationOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpcEndpointServiceConfiguration,
@@ -5356,7 +5356,7 @@ func (c *EC2) CreateVpcEndpointServiceConfigurationRequest(input *CreateVpcEndpo
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpcEndpointServiceConfiguration for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration
 func (c *EC2) CreateVpcEndpointServiceConfiguration(input *CreateVpcEndpointServiceConfigurationInput) (*CreateVpcEndpointServiceConfigurationOutput, error) {
 	req, out := c.CreateVpcEndpointServiceConfigurationRequest(input)
 	return out, req.Send()
@@ -5369,7 +5369,7 @@ func (c *EC2) CreateVpcEndpointServiceConfiguration(input *CreateVpcEndpointServ
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpcEndpointServiceConfigurationWithContext(ctx aws.Context, input *CreateVpcEndpointServiceConfigurationInput, opts ...request.Option) (*CreateVpcEndpointServiceConfigurationOutput, error) {
 	req, out := c.CreateVpcEndpointServiceConfigurationRequest(input)
@@ -5403,7 +5403,7 @@ const opCreateVpcPeeringConnection = "CreateVpcPeeringConnection"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnection
 func (c *EC2) CreateVpcPeeringConnectionRequest(input *CreateVpcPeeringConnectionInput) (req *request.Request, output *CreateVpcPeeringConnectionOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpcPeeringConnection,
@@ -5441,7 +5441,7 @@ func (c *EC2) CreateVpcPeeringConnectionRequest(input *CreateVpcPeeringConnectio
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpcPeeringConnection for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnection
 func (c *EC2) CreateVpcPeeringConnection(input *CreateVpcPeeringConnectionInput) (*CreateVpcPeeringConnectionOutput, error) {
 	req, out := c.CreateVpcPeeringConnectionRequest(input)
 	return out, req.Send()
@@ -5454,7 +5454,7 @@ func (c *EC2) CreateVpcPeeringConnection(input *CreateVpcPeeringConnectionInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpcPeeringConnectionWithContext(ctx aws.Context, input *CreateVpcPeeringConnectionInput, opts ...request.Option) (*CreateVpcPeeringConnectionOutput, error) {
 	req, out := c.CreateVpcPeeringConnectionRequest(input)
@@ -5488,7 +5488,7 @@ const opCreateVpnConnection = "CreateVpnConnection"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnection
 func (c *EC2) CreateVpnConnectionRequest(input *CreateVpnConnectionInput) (req *request.Request, output *CreateVpnConnectionOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpnConnection,
@@ -5533,7 +5533,7 @@ func (c *EC2) CreateVpnConnectionRequest(input *CreateVpnConnectionInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpnConnection for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnection
 func (c *EC2) CreateVpnConnection(input *CreateVpnConnectionInput) (*CreateVpnConnectionOutput, error) {
 	req, out := c.CreateVpnConnectionRequest(input)
 	return out, req.Send()
@@ -5546,7 +5546,7 @@ func (c *EC2) CreateVpnConnection(input *CreateVpnConnectionInput) (*CreateVpnCo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpnConnectionWithContext(ctx aws.Context, input *CreateVpnConnectionInput, opts ...request.Option) (*CreateVpnConnectionOutput, error) {
 	req, out := c.CreateVpnConnectionRequest(input)
@@ -5580,7 +5580,7 @@ const opCreateVpnConnectionRoute = "CreateVpnConnectionRoute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRoute
 func (c *EC2) CreateVpnConnectionRouteRequest(input *CreateVpnConnectionRouteInput) (req *request.Request, output *CreateVpnConnectionRouteOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpnConnectionRoute,
@@ -5616,7 +5616,7 @@ func (c *EC2) CreateVpnConnectionRouteRequest(input *CreateVpnConnectionRouteInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpnConnectionRoute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRoute
 func (c *EC2) CreateVpnConnectionRoute(input *CreateVpnConnectionRouteInput) (*CreateVpnConnectionRouteOutput, error) {
 	req, out := c.CreateVpnConnectionRouteRequest(input)
 	return out, req.Send()
@@ -5629,7 +5629,7 @@ func (c *EC2) CreateVpnConnectionRoute(input *CreateVpnConnectionRouteInput) (*C
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpnConnectionRouteWithContext(ctx aws.Context, input *CreateVpnConnectionRouteInput, opts ...request.Option) (*CreateVpnConnectionRouteOutput, error) {
 	req, out := c.CreateVpnConnectionRouteRequest(input)
@@ -5663,7 +5663,7 @@ const opCreateVpnGateway = "CreateVpnGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGateway
 func (c *EC2) CreateVpnGatewayRequest(input *CreateVpnGatewayInput) (req *request.Request, output *CreateVpnGatewayOutput) {
 	op := &request.Operation{
 		Name:       opCreateVpnGateway,
@@ -5696,7 +5696,7 @@ func (c *EC2) CreateVpnGatewayRequest(input *CreateVpnGatewayInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation CreateVpnGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGateway
 func (c *EC2) CreateVpnGateway(input *CreateVpnGatewayInput) (*CreateVpnGatewayOutput, error) {
 	req, out := c.CreateVpnGatewayRequest(input)
 	return out, req.Send()
@@ -5709,7 +5709,7 @@ func (c *EC2) CreateVpnGateway(input *CreateVpnGatewayInput) (*CreateVpnGatewayO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) CreateVpnGatewayWithContext(ctx aws.Context, input *CreateVpnGatewayInput, opts ...request.Option) (*CreateVpnGatewayOutput, error) {
 	req, out := c.CreateVpnGatewayRequest(input)
@@ -5743,7 +5743,7 @@ const opDeleteCustomerGateway = "DeleteCustomerGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGateway
 func (c *EC2) DeleteCustomerGatewayRequest(input *DeleteCustomerGatewayInput) (req *request.Request, output *DeleteCustomerGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDeleteCustomerGateway,
@@ -5773,7 +5773,7 @@ func (c *EC2) DeleteCustomerGatewayRequest(input *DeleteCustomerGatewayInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteCustomerGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGateway
 func (c *EC2) DeleteCustomerGateway(input *DeleteCustomerGatewayInput) (*DeleteCustomerGatewayOutput, error) {
 	req, out := c.DeleteCustomerGatewayRequest(input)
 	return out, req.Send()
@@ -5786,7 +5786,7 @@ func (c *EC2) DeleteCustomerGateway(input *DeleteCustomerGatewayInput) (*DeleteC
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteCustomerGatewayWithContext(ctx aws.Context, input *DeleteCustomerGatewayInput, opts ...request.Option) (*DeleteCustomerGatewayOutput, error) {
 	req, out := c.DeleteCustomerGatewayRequest(input)
@@ -5820,7 +5820,7 @@ const opDeleteDhcpOptions = "DeleteDhcpOptions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptions
 func (c *EC2) DeleteDhcpOptionsRequest(input *DeleteDhcpOptionsInput) (req *request.Request, output *DeleteDhcpOptionsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteDhcpOptions,
@@ -5852,7 +5852,7 @@ func (c *EC2) DeleteDhcpOptionsRequest(input *DeleteDhcpOptionsInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteDhcpOptions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptions
 func (c *EC2) DeleteDhcpOptions(input *DeleteDhcpOptionsInput) (*DeleteDhcpOptionsOutput, error) {
 	req, out := c.DeleteDhcpOptionsRequest(input)
 	return out, req.Send()
@@ -5865,7 +5865,7 @@ func (c *EC2) DeleteDhcpOptions(input *DeleteDhcpOptionsInput) (*DeleteDhcpOptio
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteDhcpOptionsWithContext(ctx aws.Context, input *DeleteDhcpOptionsInput, opts ...request.Option) (*DeleteDhcpOptionsOutput, error) {
 	req, out := c.DeleteDhcpOptionsRequest(input)
@@ -5899,7 +5899,7 @@ const opDeleteEgressOnlyInternetGateway = "DeleteEgressOnlyInternetGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGateway
 func (c *EC2) DeleteEgressOnlyInternetGatewayRequest(input *DeleteEgressOnlyInternetGatewayInput) (req *request.Request, output *DeleteEgressOnlyInternetGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDeleteEgressOnlyInternetGateway,
@@ -5926,7 +5926,7 @@ func (c *EC2) DeleteEgressOnlyInternetGatewayRequest(input *DeleteEgressOnlyInte
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteEgressOnlyInternetGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGateway
 func (c *EC2) DeleteEgressOnlyInternetGateway(input *DeleteEgressOnlyInternetGatewayInput) (*DeleteEgressOnlyInternetGatewayOutput, error) {
 	req, out := c.DeleteEgressOnlyInternetGatewayRequest(input)
 	return out, req.Send()
@@ -5939,7 +5939,7 @@ func (c *EC2) DeleteEgressOnlyInternetGateway(input *DeleteEgressOnlyInternetGat
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteEgressOnlyInternetGatewayWithContext(ctx aws.Context, input *DeleteEgressOnlyInternetGatewayInput, opts ...request.Option) (*DeleteEgressOnlyInternetGatewayOutput, error) {
 	req, out := c.DeleteEgressOnlyInternetGatewayRequest(input)
@@ -5973,7 +5973,7 @@ const opDeleteFlowLogs = "DeleteFlowLogs"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogs
 func (c *EC2) DeleteFlowLogsRequest(input *DeleteFlowLogsInput) (req *request.Request, output *DeleteFlowLogsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteFlowLogs,
@@ -6000,7 +6000,7 @@ func (c *EC2) DeleteFlowLogsRequest(input *DeleteFlowLogsInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteFlowLogs for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogs
 func (c *EC2) DeleteFlowLogs(input *DeleteFlowLogsInput) (*DeleteFlowLogsOutput, error) {
 	req, out := c.DeleteFlowLogsRequest(input)
 	return out, req.Send()
@@ -6013,7 +6013,7 @@ func (c *EC2) DeleteFlowLogs(input *DeleteFlowLogsInput) (*DeleteFlowLogsOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteFlowLogsWithContext(ctx aws.Context, input *DeleteFlowLogsInput, opts ...request.Option) (*DeleteFlowLogsOutput, error) {
 	req, out := c.DeleteFlowLogsRequest(input)
@@ -6047,7 +6047,7 @@ const opDeleteFpgaImage = "DeleteFpgaImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImage
 func (c *EC2) DeleteFpgaImageRequest(input *DeleteFpgaImageInput) (req *request.Request, output *DeleteFpgaImageOutput) {
 	op := &request.Operation{
 		Name:       opDeleteFpgaImage,
@@ -6074,7 +6074,7 @@ func (c *EC2) DeleteFpgaImageRequest(input *DeleteFpgaImageInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteFpgaImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImage
 func (c *EC2) DeleteFpgaImage(input *DeleteFpgaImageInput) (*DeleteFpgaImageOutput, error) {
 	req, out := c.DeleteFpgaImageRequest(input)
 	return out, req.Send()
@@ -6087,7 +6087,7 @@ func (c *EC2) DeleteFpgaImage(input *DeleteFpgaImageInput) (*DeleteFpgaImageOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteFpgaImageWithContext(ctx aws.Context, input *DeleteFpgaImageInput, opts ...request.Option) (*DeleteFpgaImageOutput, error) {
 	req, out := c.DeleteFpgaImageRequest(input)
@@ -6121,7 +6121,7 @@ const opDeleteInternetGateway = "DeleteInternetGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGateway
 func (c *EC2) DeleteInternetGatewayRequest(input *DeleteInternetGatewayInput) (req *request.Request, output *DeleteInternetGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDeleteInternetGateway,
@@ -6151,7 +6151,7 @@ func (c *EC2) DeleteInternetGatewayRequest(input *DeleteInternetGatewayInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteInternetGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGateway
 func (c *EC2) DeleteInternetGateway(input *DeleteInternetGatewayInput) (*DeleteInternetGatewayOutput, error) {
 	req, out := c.DeleteInternetGatewayRequest(input)
 	return out, req.Send()
@@ -6164,7 +6164,7 @@ func (c *EC2) DeleteInternetGateway(input *DeleteInternetGatewayInput) (*DeleteI
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteInternetGatewayWithContext(ctx aws.Context, input *DeleteInternetGatewayInput, opts ...request.Option) (*DeleteInternetGatewayOutput, error) {
 	req, out := c.DeleteInternetGatewayRequest(input)
@@ -6198,7 +6198,7 @@ const opDeleteKeyPair = "DeleteKeyPair"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPair
 func (c *EC2) DeleteKeyPairRequest(input *DeleteKeyPairInput) (req *request.Request, output *DeleteKeyPairOutput) {
 	op := &request.Operation{
 		Name:       opDeleteKeyPair,
@@ -6227,7 +6227,7 @@ func (c *EC2) DeleteKeyPairRequest(input *DeleteKeyPairInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteKeyPair for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPair
 func (c *EC2) DeleteKeyPair(input *DeleteKeyPairInput) (*DeleteKeyPairOutput, error) {
 	req, out := c.DeleteKeyPairRequest(input)
 	return out, req.Send()
@@ -6240,7 +6240,7 @@ func (c *EC2) DeleteKeyPair(input *DeleteKeyPairInput) (*DeleteKeyPairOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteKeyPairWithContext(ctx aws.Context, input *DeleteKeyPairInput, opts ...request.Option) (*DeleteKeyPairOutput, error) {
 	req, out := c.DeleteKeyPairRequest(input)
@@ -6274,7 +6274,7 @@ const opDeleteLaunchTemplate = "DeleteLaunchTemplate"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplate
 func (c *EC2) DeleteLaunchTemplateRequest(input *DeleteLaunchTemplateInput) (req *request.Request, output *DeleteLaunchTemplateOutput) {
 	op := &request.Operation{
 		Name:       opDeleteLaunchTemplate,
@@ -6302,7 +6302,7 @@ func (c *EC2) DeleteLaunchTemplateRequest(input *DeleteLaunchTemplateInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteLaunchTemplate for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplate
 func (c *EC2) DeleteLaunchTemplate(input *DeleteLaunchTemplateInput) (*DeleteLaunchTemplateOutput, error) {
 	req, out := c.DeleteLaunchTemplateRequest(input)
 	return out, req.Send()
@@ -6315,7 +6315,7 @@ func (c *EC2) DeleteLaunchTemplate(input *DeleteLaunchTemplateInput) (*DeleteLau
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteLaunchTemplateWithContext(ctx aws.Context, input *DeleteLaunchTemplateInput, opts ...request.Option) (*DeleteLaunchTemplateOutput, error) {
 	req, out := c.DeleteLaunchTemplateRequest(input)
@@ -6349,7 +6349,7 @@ const opDeleteLaunchTemplateVersions = "DeleteLaunchTemplateVersions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersions
 func (c *EC2) DeleteLaunchTemplateVersionsRequest(input *DeleteLaunchTemplateVersionsInput) (req *request.Request, output *DeleteLaunchTemplateVersionsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteLaunchTemplateVersions,
@@ -6379,7 +6379,7 @@ func (c *EC2) DeleteLaunchTemplateVersionsRequest(input *DeleteLaunchTemplateVer
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteLaunchTemplateVersions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersions
 func (c *EC2) DeleteLaunchTemplateVersions(input *DeleteLaunchTemplateVersionsInput) (*DeleteLaunchTemplateVersionsOutput, error) {
 	req, out := c.DeleteLaunchTemplateVersionsRequest(input)
 	return out, req.Send()
@@ -6392,7 +6392,7 @@ func (c *EC2) DeleteLaunchTemplateVersions(input *DeleteLaunchTemplateVersionsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteLaunchTemplateVersionsWithContext(ctx aws.Context, input *DeleteLaunchTemplateVersionsInput, opts ...request.Option) (*DeleteLaunchTemplateVersionsOutput, error) {
 	req, out := c.DeleteLaunchTemplateVersionsRequest(input)
@@ -6426,7 +6426,7 @@ const opDeleteNatGateway = "DeleteNatGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGateway
 func (c *EC2) DeleteNatGatewayRequest(input *DeleteNatGatewayInput) (req *request.Request, output *DeleteNatGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDeleteNatGateway,
@@ -6455,7 +6455,7 @@ func (c *EC2) DeleteNatGatewayRequest(input *DeleteNatGatewayInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteNatGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGateway
 func (c *EC2) DeleteNatGateway(input *DeleteNatGatewayInput) (*DeleteNatGatewayOutput, error) {
 	req, out := c.DeleteNatGatewayRequest(input)
 	return out, req.Send()
@@ -6468,7 +6468,7 @@ func (c *EC2) DeleteNatGateway(input *DeleteNatGatewayInput) (*DeleteNatGatewayO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteNatGatewayWithContext(ctx aws.Context, input *DeleteNatGatewayInput, opts ...request.Option) (*DeleteNatGatewayOutput, error) {
 	req, out := c.DeleteNatGatewayRequest(input)
@@ -6502,7 +6502,7 @@ const opDeleteNetworkAcl = "DeleteNetworkAcl"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAcl
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAcl
 func (c *EC2) DeleteNetworkAclRequest(input *DeleteNetworkAclInput) (req *request.Request, output *DeleteNetworkAclOutput) {
 	op := &request.Operation{
 		Name:       opDeleteNetworkAcl,
@@ -6532,7 +6532,7 @@ func (c *EC2) DeleteNetworkAclRequest(input *DeleteNetworkAclInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteNetworkAcl for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAcl
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAcl
 func (c *EC2) DeleteNetworkAcl(input *DeleteNetworkAclInput) (*DeleteNetworkAclOutput, error) {
 	req, out := c.DeleteNetworkAclRequest(input)
 	return out, req.Send()
@@ -6545,7 +6545,7 @@ func (c *EC2) DeleteNetworkAcl(input *DeleteNetworkAclInput) (*DeleteNetworkAclO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteNetworkAclWithContext(ctx aws.Context, input *DeleteNetworkAclInput, opts ...request.Option) (*DeleteNetworkAclOutput, error) {
 	req, out := c.DeleteNetworkAclRequest(input)
@@ -6579,7 +6579,7 @@ const opDeleteNetworkAclEntry = "DeleteNetworkAclEntry"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntry
 func (c *EC2) DeleteNetworkAclEntryRequest(input *DeleteNetworkAclEntryInput) (req *request.Request, output *DeleteNetworkAclEntryOutput) {
 	op := &request.Operation{
 		Name:       opDeleteNetworkAclEntry,
@@ -6609,7 +6609,7 @@ func (c *EC2) DeleteNetworkAclEntryRequest(input *DeleteNetworkAclEntryInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteNetworkAclEntry for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntry
 func (c *EC2) DeleteNetworkAclEntry(input *DeleteNetworkAclEntryInput) (*DeleteNetworkAclEntryOutput, error) {
 	req, out := c.DeleteNetworkAclEntryRequest(input)
 	return out, req.Send()
@@ -6622,7 +6622,7 @@ func (c *EC2) DeleteNetworkAclEntry(input *DeleteNetworkAclEntryInput) (*DeleteN
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteNetworkAclEntryWithContext(ctx aws.Context, input *DeleteNetworkAclEntryInput, opts ...request.Option) (*DeleteNetworkAclEntryOutput, error) {
 	req, out := c.DeleteNetworkAclEntryRequest(input)
@@ -6656,7 +6656,7 @@ const opDeleteNetworkInterface = "DeleteNetworkInterface"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterface
 func (c *EC2) DeleteNetworkInterfaceRequest(input *DeleteNetworkInterfaceInput) (req *request.Request, output *DeleteNetworkInterfaceOutput) {
 	op := &request.Operation{
 		Name:       opDeleteNetworkInterface,
@@ -6686,7 +6686,7 @@ func (c *EC2) DeleteNetworkInterfaceRequest(input *DeleteNetworkInterfaceInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteNetworkInterface for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterface
 func (c *EC2) DeleteNetworkInterface(input *DeleteNetworkInterfaceInput) (*DeleteNetworkInterfaceOutput, error) {
 	req, out := c.DeleteNetworkInterfaceRequest(input)
 	return out, req.Send()
@@ -6699,7 +6699,7 @@ func (c *EC2) DeleteNetworkInterface(input *DeleteNetworkInterfaceInput) (*Delet
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteNetworkInterfaceWithContext(ctx aws.Context, input *DeleteNetworkInterfaceInput, opts ...request.Option) (*DeleteNetworkInterfaceOutput, error) {
 	req, out := c.DeleteNetworkInterfaceRequest(input)
@@ -6733,7 +6733,7 @@ const opDeleteNetworkInterfacePermission = "DeleteNetworkInterfacePermission"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermission
 func (c *EC2) DeleteNetworkInterfacePermissionRequest(input *DeleteNetworkInterfacePermissionInput) (req *request.Request, output *DeleteNetworkInterfacePermissionOutput) {
 	op := &request.Operation{
 		Name:       opDeleteNetworkInterfacePermission,
@@ -6763,7 +6763,7 @@ func (c *EC2) DeleteNetworkInterfacePermissionRequest(input *DeleteNetworkInterf
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteNetworkInterfacePermission for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermission
 func (c *EC2) DeleteNetworkInterfacePermission(input *DeleteNetworkInterfacePermissionInput) (*DeleteNetworkInterfacePermissionOutput, error) {
 	req, out := c.DeleteNetworkInterfacePermissionRequest(input)
 	return out, req.Send()
@@ -6776,7 +6776,7 @@ func (c *EC2) DeleteNetworkInterfacePermission(input *DeleteNetworkInterfacePerm
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteNetworkInterfacePermissionWithContext(ctx aws.Context, input *DeleteNetworkInterfacePermissionInput, opts ...request.Option) (*DeleteNetworkInterfacePermissionOutput, error) {
 	req, out := c.DeleteNetworkInterfacePermissionRequest(input)
@@ -6810,7 +6810,7 @@ const opDeletePlacementGroup = "DeletePlacementGroup"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroup
 func (c *EC2) DeletePlacementGroupRequest(input *DeletePlacementGroupInput) (req *request.Request, output *DeletePlacementGroupOutput) {
 	op := &request.Operation{
 		Name:       opDeletePlacementGroup,
@@ -6842,7 +6842,7 @@ func (c *EC2) DeletePlacementGroupRequest(input *DeletePlacementGroupInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeletePlacementGroup for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroup
 func (c *EC2) DeletePlacementGroup(input *DeletePlacementGroupInput) (*DeletePlacementGroupOutput, error) {
 	req, out := c.DeletePlacementGroupRequest(input)
 	return out, req.Send()
@@ -6855,7 +6855,7 @@ func (c *EC2) DeletePlacementGroup(input *DeletePlacementGroupInput) (*DeletePla
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeletePlacementGroupWithContext(ctx aws.Context, input *DeletePlacementGroupInput, opts ...request.Option) (*DeletePlacementGroupOutput, error) {
 	req, out := c.DeletePlacementGroupRequest(input)
@@ -6889,7 +6889,7 @@ const opDeleteRoute = "DeleteRoute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRoute
 func (c *EC2) DeleteRouteRequest(input *DeleteRouteInput) (req *request.Request, output *DeleteRouteOutput) {
 	op := &request.Operation{
 		Name:       opDeleteRoute,
@@ -6918,7 +6918,7 @@ func (c *EC2) DeleteRouteRequest(input *DeleteRouteInput) (req *request.Request,
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteRoute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRoute
 func (c *EC2) DeleteRoute(input *DeleteRouteInput) (*DeleteRouteOutput, error) {
 	req, out := c.DeleteRouteRequest(input)
 	return out, req.Send()
@@ -6931,7 +6931,7 @@ func (c *EC2) DeleteRoute(input *DeleteRouteInput) (*DeleteRouteOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteRouteWithContext(ctx aws.Context, input *DeleteRouteInput, opts ...request.Option) (*DeleteRouteOutput, error) {
 	req, out := c.DeleteRouteRequest(input)
@@ -6965,7 +6965,7 @@ const opDeleteRouteTable = "DeleteRouteTable"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTable
 func (c *EC2) DeleteRouteTableRequest(input *DeleteRouteTableInput) (req *request.Request, output *DeleteRouteTableOutput) {
 	op := &request.Operation{
 		Name:       opDeleteRouteTable,
@@ -6996,7 +6996,7 @@ func (c *EC2) DeleteRouteTableRequest(input *DeleteRouteTableInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteRouteTable for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTable
 func (c *EC2) DeleteRouteTable(input *DeleteRouteTableInput) (*DeleteRouteTableOutput, error) {
 	req, out := c.DeleteRouteTableRequest(input)
 	return out, req.Send()
@@ -7009,7 +7009,7 @@ func (c *EC2) DeleteRouteTable(input *DeleteRouteTableInput) (*DeleteRouteTableO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteRouteTableWithContext(ctx aws.Context, input *DeleteRouteTableInput, opts ...request.Option) (*DeleteRouteTableOutput, error) {
 	req, out := c.DeleteRouteTableRequest(input)
@@ -7043,7 +7043,7 @@ const opDeleteSecurityGroup = "DeleteSecurityGroup"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroup
 func (c *EC2) DeleteSecurityGroupRequest(input *DeleteSecurityGroupInput) (req *request.Request, output *DeleteSecurityGroupOutput) {
 	op := &request.Operation{
 		Name:       opDeleteSecurityGroup,
@@ -7076,7 +7076,7 @@ func (c *EC2) DeleteSecurityGroupRequest(input *DeleteSecurityGroupInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteSecurityGroup for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroup
 func (c *EC2) DeleteSecurityGroup(input *DeleteSecurityGroupInput) (*DeleteSecurityGroupOutput, error) {
 	req, out := c.DeleteSecurityGroupRequest(input)
 	return out, req.Send()
@@ -7089,7 +7089,7 @@ func (c *EC2) DeleteSecurityGroup(input *DeleteSecurityGroupInput) (*DeleteSecur
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteSecurityGroupWithContext(ctx aws.Context, input *DeleteSecurityGroupInput, opts ...request.Option) (*DeleteSecurityGroupOutput, error) {
 	req, out := c.DeleteSecurityGroupRequest(input)
@@ -7123,7 +7123,7 @@ const opDeleteSnapshot = "DeleteSnapshot"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshot
 func (c *EC2) DeleteSnapshotRequest(input *DeleteSnapshotInput) (req *request.Request, output *DeleteSnapshotOutput) {
 	op := &request.Operation{
 		Name:       opDeleteSnapshot,
@@ -7166,7 +7166,7 @@ func (c *EC2) DeleteSnapshotRequest(input *DeleteSnapshotInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteSnapshot for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshot
 func (c *EC2) DeleteSnapshot(input *DeleteSnapshotInput) (*DeleteSnapshotOutput, error) {
 	req, out := c.DeleteSnapshotRequest(input)
 	return out, req.Send()
@@ -7179,7 +7179,7 @@ func (c *EC2) DeleteSnapshot(input *DeleteSnapshotInput) (*DeleteSnapshotOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteSnapshotWithContext(ctx aws.Context, input *DeleteSnapshotInput, opts ...request.Option) (*DeleteSnapshotOutput, error) {
 	req, out := c.DeleteSnapshotRequest(input)
@@ -7213,7 +7213,7 @@ const opDeleteSpotDatafeedSubscription = "DeleteSpotDatafeedSubscription"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscription
 func (c *EC2) DeleteSpotDatafeedSubscriptionRequest(input *DeleteSpotDatafeedSubscriptionInput) (req *request.Request, output *DeleteSpotDatafeedSubscriptionOutput) {
 	op := &request.Operation{
 		Name:       opDeleteSpotDatafeedSubscription,
@@ -7242,7 +7242,7 @@ func (c *EC2) DeleteSpotDatafeedSubscriptionRequest(input *DeleteSpotDatafeedSub
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteSpotDatafeedSubscription for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscription
 func (c *EC2) DeleteSpotDatafeedSubscription(input *DeleteSpotDatafeedSubscriptionInput) (*DeleteSpotDatafeedSubscriptionOutput, error) {
 	req, out := c.DeleteSpotDatafeedSubscriptionRequest(input)
 	return out, req.Send()
@@ -7255,7 +7255,7 @@ func (c *EC2) DeleteSpotDatafeedSubscription(input *DeleteSpotDatafeedSubscripti
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteSpotDatafeedSubscriptionWithContext(ctx aws.Context, input *DeleteSpotDatafeedSubscriptionInput, opts ...request.Option) (*DeleteSpotDatafeedSubscriptionOutput, error) {
 	req, out := c.DeleteSpotDatafeedSubscriptionRequest(input)
@@ -7289,7 +7289,7 @@ const opDeleteSubnet = "DeleteSubnet"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnet
 func (c *EC2) DeleteSubnetRequest(input *DeleteSubnetInput) (req *request.Request, output *DeleteSubnetOutput) {
 	op := &request.Operation{
 		Name:       opDeleteSubnet,
@@ -7319,7 +7319,7 @@ func (c *EC2) DeleteSubnetRequest(input *DeleteSubnetInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteSubnet for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnet
 func (c *EC2) DeleteSubnet(input *DeleteSubnetInput) (*DeleteSubnetOutput, error) {
 	req, out := c.DeleteSubnetRequest(input)
 	return out, req.Send()
@@ -7332,7 +7332,7 @@ func (c *EC2) DeleteSubnet(input *DeleteSubnetInput) (*DeleteSubnetOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteSubnetWithContext(ctx aws.Context, input *DeleteSubnetInput, opts ...request.Option) (*DeleteSubnetOutput, error) {
 	req, out := c.DeleteSubnetRequest(input)
@@ -7366,7 +7366,7 @@ const opDeleteTags = "DeleteTags"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTags
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTags
 func (c *EC2) DeleteTagsRequest(input *DeleteTagsInput) (req *request.Request, output *DeleteTagsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteTags,
@@ -7399,7 +7399,7 @@ func (c *EC2) DeleteTagsRequest(input *DeleteTagsInput) (req *request.Request, o
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteTags for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTags
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTags
 func (c *EC2) DeleteTags(input *DeleteTagsInput) (*DeleteTagsOutput, error) {
 	req, out := c.DeleteTagsRequest(input)
 	return out, req.Send()
@@ -7412,7 +7412,7 @@ func (c *EC2) DeleteTags(input *DeleteTagsInput) (*DeleteTagsOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteTagsWithContext(ctx aws.Context, input *DeleteTagsInput, opts ...request.Option) (*DeleteTagsOutput, error) {
 	req, out := c.DeleteTagsRequest(input)
@@ -7446,7 +7446,7 @@ const opDeleteVolume = "DeleteVolume"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolume
 func (c *EC2) DeleteVolumeRequest(input *DeleteVolumeInput) (req *request.Request, output *DeleteVolumeOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVolume,
@@ -7481,7 +7481,7 @@ func (c *EC2) DeleteVolumeRequest(input *DeleteVolumeInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVolume for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolume
 func (c *EC2) DeleteVolume(input *DeleteVolumeInput) (*DeleteVolumeOutput, error) {
 	req, out := c.DeleteVolumeRequest(input)
 	return out, req.Send()
@@ -7494,7 +7494,7 @@ func (c *EC2) DeleteVolume(input *DeleteVolumeInput) (*DeleteVolumeOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVolumeWithContext(ctx aws.Context, input *DeleteVolumeInput, opts ...request.Option) (*DeleteVolumeOutput, error) {
 	req, out := c.DeleteVolumeRequest(input)
@@ -7528,7 +7528,7 @@ const opDeleteVpc = "DeleteVpc"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpc
 func (c *EC2) DeleteVpcRequest(input *DeleteVpcInput) (req *request.Request, output *DeleteVpcOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpc,
@@ -7561,7 +7561,7 @@ func (c *EC2) DeleteVpcRequest(input *DeleteVpcInput) (req *request.Request, out
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpc for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpc
 func (c *EC2) DeleteVpc(input *DeleteVpcInput) (*DeleteVpcOutput, error) {
 	req, out := c.DeleteVpcRequest(input)
 	return out, req.Send()
@@ -7574,7 +7574,7 @@ func (c *EC2) DeleteVpc(input *DeleteVpcInput) (*DeleteVpcOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpcWithContext(ctx aws.Context, input *DeleteVpcInput, opts ...request.Option) (*DeleteVpcOutput, error) {
 	req, out := c.DeleteVpcRequest(input)
@@ -7608,7 +7608,7 @@ const opDeleteVpcEndpointConnectionNotifications = "DeleteVpcEndpointConnectionN
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotifications
 func (c *EC2) DeleteVpcEndpointConnectionNotificationsRequest(input *DeleteVpcEndpointConnectionNotificationsInput) (req *request.Request, output *DeleteVpcEndpointConnectionNotificationsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpcEndpointConnectionNotifications,
@@ -7635,7 +7635,7 @@ func (c *EC2) DeleteVpcEndpointConnectionNotificationsRequest(input *DeleteVpcEn
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpcEndpointConnectionNotifications for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotifications
 func (c *EC2) DeleteVpcEndpointConnectionNotifications(input *DeleteVpcEndpointConnectionNotificationsInput) (*DeleteVpcEndpointConnectionNotificationsOutput, error) {
 	req, out := c.DeleteVpcEndpointConnectionNotificationsRequest(input)
 	return out, req.Send()
@@ -7648,7 +7648,7 @@ func (c *EC2) DeleteVpcEndpointConnectionNotifications(input *DeleteVpcEndpointC
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpcEndpointConnectionNotificationsWithContext(ctx aws.Context, input *DeleteVpcEndpointConnectionNotificationsInput, opts ...request.Option) (*DeleteVpcEndpointConnectionNotificationsOutput, error) {
 	req, out := c.DeleteVpcEndpointConnectionNotificationsRequest(input)
@@ -7682,7 +7682,7 @@ const opDeleteVpcEndpointServiceConfigurations = "DeleteVpcEndpointServiceConfig
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurations
 func (c *EC2) DeleteVpcEndpointServiceConfigurationsRequest(input *DeleteVpcEndpointServiceConfigurationsInput) (req *request.Request, output *DeleteVpcEndpointServiceConfigurationsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpcEndpointServiceConfigurations,
@@ -7712,7 +7712,7 @@ func (c *EC2) DeleteVpcEndpointServiceConfigurationsRequest(input *DeleteVpcEndp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpcEndpointServiceConfigurations for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurations
 func (c *EC2) DeleteVpcEndpointServiceConfigurations(input *DeleteVpcEndpointServiceConfigurationsInput) (*DeleteVpcEndpointServiceConfigurationsOutput, error) {
 	req, out := c.DeleteVpcEndpointServiceConfigurationsRequest(input)
 	return out, req.Send()
@@ -7725,7 +7725,7 @@ func (c *EC2) DeleteVpcEndpointServiceConfigurations(input *DeleteVpcEndpointSer
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpcEndpointServiceConfigurationsWithContext(ctx aws.Context, input *DeleteVpcEndpointServiceConfigurationsInput, opts ...request.Option) (*DeleteVpcEndpointServiceConfigurationsOutput, error) {
 	req, out := c.DeleteVpcEndpointServiceConfigurationsRequest(input)
@@ -7759,7 +7759,7 @@ const opDeleteVpcEndpoints = "DeleteVpcEndpoints"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpoints
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpoints
 func (c *EC2) DeleteVpcEndpointsRequest(input *DeleteVpcEndpointsInput) (req *request.Request, output *DeleteVpcEndpointsOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpcEndpoints,
@@ -7789,7 +7789,7 @@ func (c *EC2) DeleteVpcEndpointsRequest(input *DeleteVpcEndpointsInput) (req *re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpcEndpoints for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpoints
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpoints
 func (c *EC2) DeleteVpcEndpoints(input *DeleteVpcEndpointsInput) (*DeleteVpcEndpointsOutput, error) {
 	req, out := c.DeleteVpcEndpointsRequest(input)
 	return out, req.Send()
@@ -7802,7 +7802,7 @@ func (c *EC2) DeleteVpcEndpoints(input *DeleteVpcEndpointsInput) (*DeleteVpcEndp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpcEndpointsWithContext(ctx aws.Context, input *DeleteVpcEndpointsInput, opts ...request.Option) (*DeleteVpcEndpointsOutput, error) {
 	req, out := c.DeleteVpcEndpointsRequest(input)
@@ -7836,7 +7836,7 @@ const opDeleteVpcPeeringConnection = "DeleteVpcPeeringConnection"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnection
 func (c *EC2) DeleteVpcPeeringConnectionRequest(input *DeleteVpcPeeringConnectionInput) (req *request.Request, output *DeleteVpcPeeringConnectionOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpcPeeringConnection,
@@ -7866,7 +7866,7 @@ func (c *EC2) DeleteVpcPeeringConnectionRequest(input *DeleteVpcPeeringConnectio
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpcPeeringConnection for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnection
 func (c *EC2) DeleteVpcPeeringConnection(input *DeleteVpcPeeringConnectionInput) (*DeleteVpcPeeringConnectionOutput, error) {
 	req, out := c.DeleteVpcPeeringConnectionRequest(input)
 	return out, req.Send()
@@ -7879,7 +7879,7 @@ func (c *EC2) DeleteVpcPeeringConnection(input *DeleteVpcPeeringConnectionInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpcPeeringConnectionWithContext(ctx aws.Context, input *DeleteVpcPeeringConnectionInput, opts ...request.Option) (*DeleteVpcPeeringConnectionOutput, error) {
 	req, out := c.DeleteVpcPeeringConnectionRequest(input)
@@ -7913,7 +7913,7 @@ const opDeleteVpnConnection = "DeleteVpnConnection"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnection
 func (c *EC2) DeleteVpnConnectionRequest(input *DeleteVpnConnectionInput) (req *request.Request, output *DeleteVpnConnectionOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpnConnection,
@@ -7951,7 +7951,7 @@ func (c *EC2) DeleteVpnConnectionRequest(input *DeleteVpnConnectionInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpnConnection for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnection
 func (c *EC2) DeleteVpnConnection(input *DeleteVpnConnectionInput) (*DeleteVpnConnectionOutput, error) {
 	req, out := c.DeleteVpnConnectionRequest(input)
 	return out, req.Send()
@@ -7964,7 +7964,7 @@ func (c *EC2) DeleteVpnConnection(input *DeleteVpnConnectionInput) (*DeleteVpnCo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpnConnectionWithContext(ctx aws.Context, input *DeleteVpnConnectionInput, opts ...request.Option) (*DeleteVpnConnectionOutput, error) {
 	req, out := c.DeleteVpnConnectionRequest(input)
@@ -7998,7 +7998,7 @@ const opDeleteVpnConnectionRoute = "DeleteVpnConnectionRoute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRoute
 func (c *EC2) DeleteVpnConnectionRouteRequest(input *DeleteVpnConnectionRouteInput) (req *request.Request, output *DeleteVpnConnectionRouteOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpnConnectionRoute,
@@ -8030,7 +8030,7 @@ func (c *EC2) DeleteVpnConnectionRouteRequest(input *DeleteVpnConnectionRouteInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpnConnectionRoute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRoute
 func (c *EC2) DeleteVpnConnectionRoute(input *DeleteVpnConnectionRouteInput) (*DeleteVpnConnectionRouteOutput, error) {
 	req, out := c.DeleteVpnConnectionRouteRequest(input)
 	return out, req.Send()
@@ -8043,7 +8043,7 @@ func (c *EC2) DeleteVpnConnectionRoute(input *DeleteVpnConnectionRouteInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpnConnectionRouteWithContext(ctx aws.Context, input *DeleteVpnConnectionRouteInput, opts ...request.Option) (*DeleteVpnConnectionRouteOutput, error) {
 	req, out := c.DeleteVpnConnectionRouteRequest(input)
@@ -8077,7 +8077,7 @@ const opDeleteVpnGateway = "DeleteVpnGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGateway
 func (c *EC2) DeleteVpnGatewayRequest(input *DeleteVpnGatewayInput) (req *request.Request, output *DeleteVpnGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDeleteVpnGateway,
@@ -8110,7 +8110,7 @@ func (c *EC2) DeleteVpnGatewayRequest(input *DeleteVpnGatewayInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeleteVpnGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGateway
 func (c *EC2) DeleteVpnGateway(input *DeleteVpnGatewayInput) (*DeleteVpnGatewayOutput, error) {
 	req, out := c.DeleteVpnGatewayRequest(input)
 	return out, req.Send()
@@ -8123,7 +8123,7 @@ func (c *EC2) DeleteVpnGateway(input *DeleteVpnGatewayInput) (*DeleteVpnGatewayO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeleteVpnGatewayWithContext(ctx aws.Context, input *DeleteVpnGatewayInput, opts ...request.Option) (*DeleteVpnGatewayOutput, error) {
 	req, out := c.DeleteVpnGatewayRequest(input)
@@ -8157,7 +8157,7 @@ const opDeregisterImage = "DeregisterImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImage
 func (c *EC2) DeregisterImageRequest(input *DeregisterImageInput) (req *request.Request, output *DeregisterImageOutput) {
 	op := &request.Operation{
 		Name:       opDeregisterImage,
@@ -8194,7 +8194,7 @@ func (c *EC2) DeregisterImageRequest(input *DeregisterImageInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DeregisterImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImage
 func (c *EC2) DeregisterImage(input *DeregisterImageInput) (*DeregisterImageOutput, error) {
 	req, out := c.DeregisterImageRequest(input)
 	return out, req.Send()
@@ -8207,7 +8207,7 @@ func (c *EC2) DeregisterImage(input *DeregisterImageInput) (*DeregisterImageOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DeregisterImageWithContext(ctx aws.Context, input *DeregisterImageInput, opts ...request.Option) (*DeregisterImageOutput, error) {
 	req, out := c.DeregisterImageRequest(input)
@@ -8241,7 +8241,7 @@ const opDescribeAccountAttributes = "DescribeAccountAttributes"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributes
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributes
 func (c *EC2) DescribeAccountAttributesRequest(input *DescribeAccountAttributesInput) (req *request.Request, output *DescribeAccountAttributesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeAccountAttributes,
@@ -8286,7 +8286,7 @@ func (c *EC2) DescribeAccountAttributesRequest(input *DescribeAccountAttributesI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeAccountAttributes for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributes
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributes
 func (c *EC2) DescribeAccountAttributes(input *DescribeAccountAttributesInput) (*DescribeAccountAttributesOutput, error) {
 	req, out := c.DescribeAccountAttributesRequest(input)
 	return out, req.Send()
@@ -8299,7 +8299,7 @@ func (c *EC2) DescribeAccountAttributes(input *DescribeAccountAttributesInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeAccountAttributesWithContext(ctx aws.Context, input *DescribeAccountAttributesInput, opts ...request.Option) (*DescribeAccountAttributesOutput, error) {
 	req, out := c.DescribeAccountAttributesRequest(input)
@@ -8333,7 +8333,7 @@ const opDescribeAddresses = "DescribeAddresses"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddresses
 func (c *EC2) DescribeAddressesRequest(input *DescribeAddressesInput) (req *request.Request, output *DescribeAddressesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeAddresses,
@@ -8364,7 +8364,7 @@ func (c *EC2) DescribeAddressesRequest(input *DescribeAddressesInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeAddresses for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddresses
 func (c *EC2) DescribeAddresses(input *DescribeAddressesInput) (*DescribeAddressesOutput, error) {
 	req, out := c.DescribeAddressesRequest(input)
 	return out, req.Send()
@@ -8377,7 +8377,7 @@ func (c *EC2) DescribeAddresses(input *DescribeAddressesInput) (*DescribeAddress
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeAddressesWithContext(ctx aws.Context, input *DescribeAddressesInput, opts ...request.Option) (*DescribeAddressesOutput, error) {
 	req, out := c.DescribeAddressesRequest(input)
@@ -8411,7 +8411,7 @@ const opDescribeAvailabilityZones = "DescribeAvailabilityZones"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZones
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZones
 func (c *EC2) DescribeAvailabilityZonesRequest(input *DescribeAvailabilityZonesInput) (req *request.Request, output *DescribeAvailabilityZonesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeAvailabilityZones,
@@ -8444,7 +8444,7 @@ func (c *EC2) DescribeAvailabilityZonesRequest(input *DescribeAvailabilityZonesI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeAvailabilityZones for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZones
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZones
 func (c *EC2) DescribeAvailabilityZones(input *DescribeAvailabilityZonesInput) (*DescribeAvailabilityZonesOutput, error) {
 	req, out := c.DescribeAvailabilityZonesRequest(input)
 	return out, req.Send()
@@ -8457,7 +8457,7 @@ func (c *EC2) DescribeAvailabilityZones(input *DescribeAvailabilityZonesInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeAvailabilityZonesWithContext(ctx aws.Context, input *DescribeAvailabilityZonesInput, opts ...request.Option) (*DescribeAvailabilityZonesOutput, error) {
 	req, out := c.DescribeAvailabilityZonesRequest(input)
@@ -8491,7 +8491,7 @@ const opDescribeBundleTasks = "DescribeBundleTasks"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasks
 func (c *EC2) DescribeBundleTasksRequest(input *DescribeBundleTasksInput) (req *request.Request, output *DescribeBundleTasksOutput) {
 	op := &request.Operation{
 		Name:       opDescribeBundleTasks,
@@ -8523,7 +8523,7 @@ func (c *EC2) DescribeBundleTasksRequest(input *DescribeBundleTasksInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeBundleTasks for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasks
 func (c *EC2) DescribeBundleTasks(input *DescribeBundleTasksInput) (*DescribeBundleTasksOutput, error) {
 	req, out := c.DescribeBundleTasksRequest(input)
 	return out, req.Send()
@@ -8536,7 +8536,7 @@ func (c *EC2) DescribeBundleTasks(input *DescribeBundleTasksInput) (*DescribeBun
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeBundleTasksWithContext(ctx aws.Context, input *DescribeBundleTasksInput, opts ...request.Option) (*DescribeBundleTasksOutput, error) {
 	req, out := c.DescribeBundleTasksRequest(input)
@@ -8570,7 +8570,7 @@ const opDescribeClassicLinkInstances = "DescribeClassicLinkInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstances
 func (c *EC2) DescribeClassicLinkInstancesRequest(input *DescribeClassicLinkInstancesInput) (req *request.Request, output *DescribeClassicLinkInstancesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeClassicLinkInstances,
@@ -8600,7 +8600,7 @@ func (c *EC2) DescribeClassicLinkInstancesRequest(input *DescribeClassicLinkInst
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeClassicLinkInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstances
 func (c *EC2) DescribeClassicLinkInstances(input *DescribeClassicLinkInstancesInput) (*DescribeClassicLinkInstancesOutput, error) {
 	req, out := c.DescribeClassicLinkInstancesRequest(input)
 	return out, req.Send()
@@ -8613,7 +8613,7 @@ func (c *EC2) DescribeClassicLinkInstances(input *DescribeClassicLinkInstancesIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeClassicLinkInstancesWithContext(ctx aws.Context, input *DescribeClassicLinkInstancesInput, opts ...request.Option) (*DescribeClassicLinkInstancesOutput, error) {
 	req, out := c.DescribeClassicLinkInstancesRequest(input)
@@ -8647,7 +8647,7 @@ const opDescribeConversionTasks = "DescribeConversionTasks"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasks
 func (c *EC2) DescribeConversionTasksRequest(input *DescribeConversionTasksInput) (req *request.Request, output *DescribeConversionTasksOutput) {
 	op := &request.Operation{
 		Name:       opDescribeConversionTasks,
@@ -8678,7 +8678,7 @@ func (c *EC2) DescribeConversionTasksRequest(input *DescribeConversionTasksInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeConversionTasks for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasks
 func (c *EC2) DescribeConversionTasks(input *DescribeConversionTasksInput) (*DescribeConversionTasksOutput, error) {
 	req, out := c.DescribeConversionTasksRequest(input)
 	return out, req.Send()
@@ -8691,7 +8691,7 @@ func (c *EC2) DescribeConversionTasks(input *DescribeConversionTasksInput) (*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeConversionTasksWithContext(ctx aws.Context, input *DescribeConversionTasksInput, opts ...request.Option) (*DescribeConversionTasksOutput, error) {
 	req, out := c.DescribeConversionTasksRequest(input)
@@ -8725,7 +8725,7 @@ const opDescribeCustomerGateways = "DescribeCustomerGateways"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGateways
 func (c *EC2) DescribeCustomerGatewaysRequest(input *DescribeCustomerGatewaysInput) (req *request.Request, output *DescribeCustomerGatewaysOutput) {
 	op := &request.Operation{
 		Name:       opDescribeCustomerGateways,
@@ -8756,7 +8756,7 @@ func (c *EC2) DescribeCustomerGatewaysRequest(input *DescribeCustomerGatewaysInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeCustomerGateways for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGateways
 func (c *EC2) DescribeCustomerGateways(input *DescribeCustomerGatewaysInput) (*DescribeCustomerGatewaysOutput, error) {
 	req, out := c.DescribeCustomerGatewaysRequest(input)
 	return out, req.Send()
@@ -8769,7 +8769,7 @@ func (c *EC2) DescribeCustomerGateways(input *DescribeCustomerGatewaysInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeCustomerGatewaysWithContext(ctx aws.Context, input *DescribeCustomerGatewaysInput, opts ...request.Option) (*DescribeCustomerGatewaysOutput, error) {
 	req, out := c.DescribeCustomerGatewaysRequest(input)
@@ -8803,7 +8803,7 @@ const opDescribeDhcpOptions = "DescribeDhcpOptions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptions
 func (c *EC2) DescribeDhcpOptionsRequest(input *DescribeDhcpOptionsInput) (req *request.Request, output *DescribeDhcpOptionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeDhcpOptions,
@@ -8833,7 +8833,7 @@ func (c *EC2) DescribeDhcpOptionsRequest(input *DescribeDhcpOptionsInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeDhcpOptions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptions
 func (c *EC2) DescribeDhcpOptions(input *DescribeDhcpOptionsInput) (*DescribeDhcpOptionsOutput, error) {
 	req, out := c.DescribeDhcpOptionsRequest(input)
 	return out, req.Send()
@@ -8846,7 +8846,7 @@ func (c *EC2) DescribeDhcpOptions(input *DescribeDhcpOptionsInput) (*DescribeDhc
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeDhcpOptionsWithContext(ctx aws.Context, input *DescribeDhcpOptionsInput, opts ...request.Option) (*DescribeDhcpOptionsOutput, error) {
 	req, out := c.DescribeDhcpOptionsRequest(input)
@@ -8880,7 +8880,7 @@ const opDescribeEgressOnlyInternetGateways = "DescribeEgressOnlyInternetGateways
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGateways
 func (c *EC2) DescribeEgressOnlyInternetGatewaysRequest(input *DescribeEgressOnlyInternetGatewaysInput) (req *request.Request, output *DescribeEgressOnlyInternetGatewaysOutput) {
 	op := &request.Operation{
 		Name:       opDescribeEgressOnlyInternetGateways,
@@ -8907,7 +8907,7 @@ func (c *EC2) DescribeEgressOnlyInternetGatewaysRequest(input *DescribeEgressOnl
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeEgressOnlyInternetGateways for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGateways
 func (c *EC2) DescribeEgressOnlyInternetGateways(input *DescribeEgressOnlyInternetGatewaysInput) (*DescribeEgressOnlyInternetGatewaysOutput, error) {
 	req, out := c.DescribeEgressOnlyInternetGatewaysRequest(input)
 	return out, req.Send()
@@ -8920,7 +8920,7 @@ func (c *EC2) DescribeEgressOnlyInternetGateways(input *DescribeEgressOnlyIntern
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeEgressOnlyInternetGatewaysWithContext(ctx aws.Context, input *DescribeEgressOnlyInternetGatewaysInput, opts ...request.Option) (*DescribeEgressOnlyInternetGatewaysOutput, error) {
 	req, out := c.DescribeEgressOnlyInternetGatewaysRequest(input)
@@ -8954,7 +8954,7 @@ const opDescribeElasticGpus = "DescribeElasticGpus"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpus
 func (c *EC2) DescribeElasticGpusRequest(input *DescribeElasticGpusInput) (req *request.Request, output *DescribeElasticGpusOutput) {
 	op := &request.Operation{
 		Name:       opDescribeElasticGpus,
@@ -8982,7 +8982,7 @@ func (c *EC2) DescribeElasticGpusRequest(input *DescribeElasticGpusInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeElasticGpus for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpus
 func (c *EC2) DescribeElasticGpus(input *DescribeElasticGpusInput) (*DescribeElasticGpusOutput, error) {
 	req, out := c.DescribeElasticGpusRequest(input)
 	return out, req.Send()
@@ -8995,7 +8995,7 @@ func (c *EC2) DescribeElasticGpus(input *DescribeElasticGpusInput) (*DescribeEla
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeElasticGpusWithContext(ctx aws.Context, input *DescribeElasticGpusInput, opts ...request.Option) (*DescribeElasticGpusOutput, error) {
 	req, out := c.DescribeElasticGpusRequest(input)
@@ -9029,7 +9029,7 @@ const opDescribeExportTasks = "DescribeExportTasks"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasks
 func (c *EC2) DescribeExportTasksRequest(input *DescribeExportTasksInput) (req *request.Request, output *DescribeExportTasksOutput) {
 	op := &request.Operation{
 		Name:       opDescribeExportTasks,
@@ -9056,7 +9056,7 @@ func (c *EC2) DescribeExportTasksRequest(input *DescribeExportTasksInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeExportTasks for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasks
 func (c *EC2) DescribeExportTasks(input *DescribeExportTasksInput) (*DescribeExportTasksOutput, error) {
 	req, out := c.DescribeExportTasksRequest(input)
 	return out, req.Send()
@@ -9069,7 +9069,7 @@ func (c *EC2) DescribeExportTasks(input *DescribeExportTasksInput) (*DescribeExp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeExportTasksWithContext(ctx aws.Context, input *DescribeExportTasksInput, opts ...request.Option) (*DescribeExportTasksOutput, error) {
 	req, out := c.DescribeExportTasksRequest(input)
@@ -9103,7 +9103,7 @@ const opDescribeFlowLogs = "DescribeFlowLogs"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogs
 func (c *EC2) DescribeFlowLogsRequest(input *DescribeFlowLogsInput) (req *request.Request, output *DescribeFlowLogsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeFlowLogs,
@@ -9132,7 +9132,7 @@ func (c *EC2) DescribeFlowLogsRequest(input *DescribeFlowLogsInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeFlowLogs for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogs
 func (c *EC2) DescribeFlowLogs(input *DescribeFlowLogsInput) (*DescribeFlowLogsOutput, error) {
 	req, out := c.DescribeFlowLogsRequest(input)
 	return out, req.Send()
@@ -9145,7 +9145,7 @@ func (c *EC2) DescribeFlowLogs(input *DescribeFlowLogsInput) (*DescribeFlowLogsO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeFlowLogsWithContext(ctx aws.Context, input *DescribeFlowLogsInput, opts ...request.Option) (*DescribeFlowLogsOutput, error) {
 	req, out := c.DescribeFlowLogsRequest(input)
@@ -9179,7 +9179,7 @@ const opDescribeFpgaImageAttribute = "DescribeFpgaImageAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttribute
 func (c *EC2) DescribeFpgaImageAttributeRequest(input *DescribeFpgaImageAttributeInput) (req *request.Request, output *DescribeFpgaImageAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeFpgaImageAttribute,
@@ -9206,7 +9206,7 @@ func (c *EC2) DescribeFpgaImageAttributeRequest(input *DescribeFpgaImageAttribut
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeFpgaImageAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttribute
 func (c *EC2) DescribeFpgaImageAttribute(input *DescribeFpgaImageAttributeInput) (*DescribeFpgaImageAttributeOutput, error) {
 	req, out := c.DescribeFpgaImageAttributeRequest(input)
 	return out, req.Send()
@@ -9219,7 +9219,7 @@ func (c *EC2) DescribeFpgaImageAttribute(input *DescribeFpgaImageAttributeInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeFpgaImageAttributeWithContext(ctx aws.Context, input *DescribeFpgaImageAttributeInput, opts ...request.Option) (*DescribeFpgaImageAttributeOutput, error) {
 	req, out := c.DescribeFpgaImageAttributeRequest(input)
@@ -9253,7 +9253,7 @@ const opDescribeFpgaImages = "DescribeFpgaImages"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImages
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImages
 func (c *EC2) DescribeFpgaImagesRequest(input *DescribeFpgaImagesInput) (req *request.Request, output *DescribeFpgaImagesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeFpgaImages,
@@ -9282,7 +9282,7 @@ func (c *EC2) DescribeFpgaImagesRequest(input *DescribeFpgaImagesInput) (req *re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeFpgaImages for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImages
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImages
 func (c *EC2) DescribeFpgaImages(input *DescribeFpgaImagesInput) (*DescribeFpgaImagesOutput, error) {
 	req, out := c.DescribeFpgaImagesRequest(input)
 	return out, req.Send()
@@ -9295,7 +9295,7 @@ func (c *EC2) DescribeFpgaImages(input *DescribeFpgaImagesInput) (*DescribeFpgaI
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeFpgaImagesWithContext(ctx aws.Context, input *DescribeFpgaImagesInput, opts ...request.Option) (*DescribeFpgaImagesOutput, error) {
 	req, out := c.DescribeFpgaImagesRequest(input)
@@ -9329,7 +9329,7 @@ const opDescribeHostReservationOfferings = "DescribeHostReservationOfferings"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferings
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferings
 func (c *EC2) DescribeHostReservationOfferingsRequest(input *DescribeHostReservationOfferingsInput) (req *request.Request, output *DescribeHostReservationOfferingsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeHostReservationOfferings,
@@ -9364,7 +9364,7 @@ func (c *EC2) DescribeHostReservationOfferingsRequest(input *DescribeHostReserva
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeHostReservationOfferings for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferings
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferings
 func (c *EC2) DescribeHostReservationOfferings(input *DescribeHostReservationOfferingsInput) (*DescribeHostReservationOfferingsOutput, error) {
 	req, out := c.DescribeHostReservationOfferingsRequest(input)
 	return out, req.Send()
@@ -9377,7 +9377,7 @@ func (c *EC2) DescribeHostReservationOfferings(input *DescribeHostReservationOff
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeHostReservationOfferingsWithContext(ctx aws.Context, input *DescribeHostReservationOfferingsInput, opts ...request.Option) (*DescribeHostReservationOfferingsOutput, error) {
 	req, out := c.DescribeHostReservationOfferingsRequest(input)
@@ -9411,7 +9411,7 @@ const opDescribeHostReservations = "DescribeHostReservations"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservations
 func (c *EC2) DescribeHostReservationsRequest(input *DescribeHostReservationsInput) (req *request.Request, output *DescribeHostReservationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeHostReservations,
@@ -9439,7 +9439,7 @@ func (c *EC2) DescribeHostReservationsRequest(input *DescribeHostReservationsInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeHostReservations for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservations
 func (c *EC2) DescribeHostReservations(input *DescribeHostReservationsInput) (*DescribeHostReservationsOutput, error) {
 	req, out := c.DescribeHostReservationsRequest(input)
 	return out, req.Send()
@@ -9452,7 +9452,7 @@ func (c *EC2) DescribeHostReservations(input *DescribeHostReservationsInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeHostReservationsWithContext(ctx aws.Context, input *DescribeHostReservationsInput, opts ...request.Option) (*DescribeHostReservationsOutput, error) {
 	req, out := c.DescribeHostReservationsRequest(input)
@@ -9486,7 +9486,7 @@ const opDescribeHosts = "DescribeHosts"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHosts
 func (c *EC2) DescribeHostsRequest(input *DescribeHostsInput) (req *request.Request, output *DescribeHostsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeHosts,
@@ -9517,7 +9517,7 @@ func (c *EC2) DescribeHostsRequest(input *DescribeHostsInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeHosts for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHosts
 func (c *EC2) DescribeHosts(input *DescribeHostsInput) (*DescribeHostsOutput, error) {
 	req, out := c.DescribeHostsRequest(input)
 	return out, req.Send()
@@ -9530,7 +9530,7 @@ func (c *EC2) DescribeHosts(input *DescribeHostsInput) (*DescribeHostsOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeHostsWithContext(ctx aws.Context, input *DescribeHostsInput, opts ...request.Option) (*DescribeHostsOutput, error) {
 	req, out := c.DescribeHostsRequest(input)
@@ -9564,7 +9564,7 @@ const opDescribeIamInstanceProfileAssociations = "DescribeIamInstanceProfileAsso
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociations
 func (c *EC2) DescribeIamInstanceProfileAssociationsRequest(input *DescribeIamInstanceProfileAssociationsInput) (req *request.Request, output *DescribeIamInstanceProfileAssociationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeIamInstanceProfileAssociations,
@@ -9591,7 +9591,7 @@ func (c *EC2) DescribeIamInstanceProfileAssociationsRequest(input *DescribeIamIn
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeIamInstanceProfileAssociations for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociations
 func (c *EC2) DescribeIamInstanceProfileAssociations(input *DescribeIamInstanceProfileAssociationsInput) (*DescribeIamInstanceProfileAssociationsOutput, error) {
 	req, out := c.DescribeIamInstanceProfileAssociationsRequest(input)
 	return out, req.Send()
@@ -9604,7 +9604,7 @@ func (c *EC2) DescribeIamInstanceProfileAssociations(input *DescribeIamInstanceP
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeIamInstanceProfileAssociationsWithContext(ctx aws.Context, input *DescribeIamInstanceProfileAssociationsInput, opts ...request.Option) (*DescribeIamInstanceProfileAssociationsOutput, error) {
 	req, out := c.DescribeIamInstanceProfileAssociationsRequest(input)
@@ -9638,7 +9638,7 @@ const opDescribeIdFormat = "DescribeIdFormat"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormat
 func (c *EC2) DescribeIdFormatRequest(input *DescribeIdFormatInput) (req *request.Request, output *DescribeIdFormatOutput) {
 	op := &request.Operation{
 		Name:       opDescribeIdFormat,
@@ -9678,7 +9678,7 @@ func (c *EC2) DescribeIdFormatRequest(input *DescribeIdFormatInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeIdFormat for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormat
 func (c *EC2) DescribeIdFormat(input *DescribeIdFormatInput) (*DescribeIdFormatOutput, error) {
 	req, out := c.DescribeIdFormatRequest(input)
 	return out, req.Send()
@@ -9691,7 +9691,7 @@ func (c *EC2) DescribeIdFormat(input *DescribeIdFormatInput) (*DescribeIdFormatO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeIdFormatWithContext(ctx aws.Context, input *DescribeIdFormatInput, opts ...request.Option) (*DescribeIdFormatOutput, error) {
 	req, out := c.DescribeIdFormatRequest(input)
@@ -9725,7 +9725,7 @@ const opDescribeIdentityIdFormat = "DescribeIdentityIdFormat"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormat
 func (c *EC2) DescribeIdentityIdFormatRequest(input *DescribeIdentityIdFormatInput) (req *request.Request, output *DescribeIdentityIdFormatOutput) {
 	op := &request.Operation{
 		Name:       opDescribeIdentityIdFormat,
@@ -9763,7 +9763,7 @@ func (c *EC2) DescribeIdentityIdFormatRequest(input *DescribeIdentityIdFormatInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeIdentityIdFormat for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormat
 func (c *EC2) DescribeIdentityIdFormat(input *DescribeIdentityIdFormatInput) (*DescribeIdentityIdFormatOutput, error) {
 	req, out := c.DescribeIdentityIdFormatRequest(input)
 	return out, req.Send()
@@ -9776,7 +9776,7 @@ func (c *EC2) DescribeIdentityIdFormat(input *DescribeIdentityIdFormatInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeIdentityIdFormatWithContext(ctx aws.Context, input *DescribeIdentityIdFormatInput, opts ...request.Option) (*DescribeIdentityIdFormatOutput, error) {
 	req, out := c.DescribeIdentityIdFormatRequest(input)
@@ -9810,7 +9810,7 @@ const opDescribeImageAttribute = "DescribeImageAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImageAttribute
 func (c *EC2) DescribeImageAttributeRequest(input *DescribeImageAttributeInput) (req *request.Request, output *DescribeImageAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeImageAttribute,
@@ -9838,7 +9838,7 @@ func (c *EC2) DescribeImageAttributeRequest(input *DescribeImageAttributeInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeImageAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImageAttribute
 func (c *EC2) DescribeImageAttribute(input *DescribeImageAttributeInput) (*DescribeImageAttributeOutput, error) {
 	req, out := c.DescribeImageAttributeRequest(input)
 	return out, req.Send()
@@ -9851,7 +9851,7 @@ func (c *EC2) DescribeImageAttribute(input *DescribeImageAttributeInput) (*Descr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeImageAttributeWithContext(ctx aws.Context, input *DescribeImageAttributeInput, opts ...request.Option) (*DescribeImageAttributeOutput, error) {
 	req, out := c.DescribeImageAttributeRequest(input)
@@ -9885,7 +9885,7 @@ const opDescribeImages = "DescribeImages"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImages
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImages
 func (c *EC2) DescribeImagesRequest(input *DescribeImagesInput) (req *request.Request, output *DescribeImagesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeImages,
@@ -9918,7 +9918,7 @@ func (c *EC2) DescribeImagesRequest(input *DescribeImagesInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeImages for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImages
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImages
 func (c *EC2) DescribeImages(input *DescribeImagesInput) (*DescribeImagesOutput, error) {
 	req, out := c.DescribeImagesRequest(input)
 	return out, req.Send()
@@ -9931,7 +9931,7 @@ func (c *EC2) DescribeImages(input *DescribeImagesInput) (*DescribeImagesOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeImagesWithContext(ctx aws.Context, input *DescribeImagesInput, opts ...request.Option) (*DescribeImagesOutput, error) {
 	req, out := c.DescribeImagesRequest(input)
@@ -9965,7 +9965,7 @@ const opDescribeImportImageTasks = "DescribeImportImageTasks"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasks
 func (c *EC2) DescribeImportImageTasksRequest(input *DescribeImportImageTasksInput) (req *request.Request, output *DescribeImportImageTasksOutput) {
 	op := &request.Operation{
 		Name:       opDescribeImportImageTasks,
@@ -9993,7 +9993,7 @@ func (c *EC2) DescribeImportImageTasksRequest(input *DescribeImportImageTasksInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeImportImageTasks for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasks
 func (c *EC2) DescribeImportImageTasks(input *DescribeImportImageTasksInput) (*DescribeImportImageTasksOutput, error) {
 	req, out := c.DescribeImportImageTasksRequest(input)
 	return out, req.Send()
@@ -10006,7 +10006,7 @@ func (c *EC2) DescribeImportImageTasks(input *DescribeImportImageTasksInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeImportImageTasksWithContext(ctx aws.Context, input *DescribeImportImageTasksInput, opts ...request.Option) (*DescribeImportImageTasksOutput, error) {
 	req, out := c.DescribeImportImageTasksRequest(input)
@@ -10040,7 +10040,7 @@ const opDescribeImportSnapshotTasks = "DescribeImportSnapshotTasks"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasks
 func (c *EC2) DescribeImportSnapshotTasksRequest(input *DescribeImportSnapshotTasksInput) (req *request.Request, output *DescribeImportSnapshotTasksOutput) {
 	op := &request.Operation{
 		Name:       opDescribeImportSnapshotTasks,
@@ -10067,7 +10067,7 @@ func (c *EC2) DescribeImportSnapshotTasksRequest(input *DescribeImportSnapshotTa
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeImportSnapshotTasks for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasks
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasks
 func (c *EC2) DescribeImportSnapshotTasks(input *DescribeImportSnapshotTasksInput) (*DescribeImportSnapshotTasksOutput, error) {
 	req, out := c.DescribeImportSnapshotTasksRequest(input)
 	return out, req.Send()
@@ -10080,7 +10080,7 @@ func (c *EC2) DescribeImportSnapshotTasks(input *DescribeImportSnapshotTasksInpu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeImportSnapshotTasksWithContext(ctx aws.Context, input *DescribeImportSnapshotTasksInput, opts ...request.Option) (*DescribeImportSnapshotTasksOutput, error) {
 	req, out := c.DescribeImportSnapshotTasksRequest(input)
@@ -10114,7 +10114,7 @@ const opDescribeInstanceAttribute = "DescribeInstanceAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceAttribute
 func (c *EC2) DescribeInstanceAttributeRequest(input *DescribeInstanceAttributeInput) (req *request.Request, output *DescribeInstanceAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeInstanceAttribute,
@@ -10145,7 +10145,7 @@ func (c *EC2) DescribeInstanceAttributeRequest(input *DescribeInstanceAttributeI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeInstanceAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceAttribute
 func (c *EC2) DescribeInstanceAttribute(input *DescribeInstanceAttributeInput) (*DescribeInstanceAttributeOutput, error) {
 	req, out := c.DescribeInstanceAttributeRequest(input)
 	return out, req.Send()
@@ -10158,7 +10158,7 @@ func (c *EC2) DescribeInstanceAttribute(input *DescribeInstanceAttributeInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInstanceAttributeWithContext(ctx aws.Context, input *DescribeInstanceAttributeInput, opts ...request.Option) (*DescribeInstanceAttributeOutput, error) {
 	req, out := c.DescribeInstanceAttributeRequest(input)
@@ -10192,7 +10192,7 @@ const opDescribeInstanceCreditSpecifications = "DescribeInstanceCreditSpecificat
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecifications
 func (c *EC2) DescribeInstanceCreditSpecificationsRequest(input *DescribeInstanceCreditSpecificationsInput) (req *request.Request, output *DescribeInstanceCreditSpecificationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeInstanceCreditSpecifications,
@@ -10237,7 +10237,7 @@ func (c *EC2) DescribeInstanceCreditSpecificationsRequest(input *DescribeInstanc
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeInstanceCreditSpecifications for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecifications
 func (c *EC2) DescribeInstanceCreditSpecifications(input *DescribeInstanceCreditSpecificationsInput) (*DescribeInstanceCreditSpecificationsOutput, error) {
 	req, out := c.DescribeInstanceCreditSpecificationsRequest(input)
 	return out, req.Send()
@@ -10250,7 +10250,7 @@ func (c *EC2) DescribeInstanceCreditSpecifications(input *DescribeInstanceCredit
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInstanceCreditSpecificationsWithContext(ctx aws.Context, input *DescribeInstanceCreditSpecificationsInput, opts ...request.Option) (*DescribeInstanceCreditSpecificationsOutput, error) {
 	req, out := c.DescribeInstanceCreditSpecificationsRequest(input)
@@ -10284,7 +10284,7 @@ const opDescribeInstanceStatus = "DescribeInstanceStatus"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatus
 func (c *EC2) DescribeInstanceStatusRequest(input *DescribeInstanceStatusInput) (req *request.Request, output *DescribeInstanceStatusOutput) {
 	op := &request.Operation{
 		Name:       opDescribeInstanceStatus,
@@ -10338,7 +10338,7 @@ func (c *EC2) DescribeInstanceStatusRequest(input *DescribeInstanceStatusInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeInstanceStatus for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatus
 func (c *EC2) DescribeInstanceStatus(input *DescribeInstanceStatusInput) (*DescribeInstanceStatusOutput, error) {
 	req, out := c.DescribeInstanceStatusRequest(input)
 	return out, req.Send()
@@ -10351,7 +10351,7 @@ func (c *EC2) DescribeInstanceStatus(input *DescribeInstanceStatusInput) (*Descr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInstanceStatusWithContext(ctx aws.Context, input *DescribeInstanceStatusInput, opts ...request.Option) (*DescribeInstanceStatusOutput, error) {
 	req, out := c.DescribeInstanceStatusRequest(input)
@@ -10386,7 +10386,7 @@ func (c *EC2) DescribeInstanceStatusPages(input *DescribeInstanceStatusInput, fn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInstanceStatusPagesWithContext(ctx aws.Context, input *DescribeInstanceStatusInput, fn func(*DescribeInstanceStatusOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -10435,7 +10435,7 @@ const opDescribeInstances = "DescribeInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstances
 func (c *EC2) DescribeInstancesRequest(input *DescribeInstancesInput) (req *request.Request, output *DescribeInstancesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeInstances,
@@ -10483,7 +10483,7 @@ func (c *EC2) DescribeInstancesRequest(input *DescribeInstancesInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstances
 func (c *EC2) DescribeInstances(input *DescribeInstancesInput) (*DescribeInstancesOutput, error) {
 	req, out := c.DescribeInstancesRequest(input)
 	return out, req.Send()
@@ -10496,7 +10496,7 @@ func (c *EC2) DescribeInstances(input *DescribeInstancesInput) (*DescribeInstanc
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInstancesWithContext(ctx aws.Context, input *DescribeInstancesInput, opts ...request.Option) (*DescribeInstancesOutput, error) {
 	req, out := c.DescribeInstancesRequest(input)
@@ -10531,7 +10531,7 @@ func (c *EC2) DescribeInstancesPages(input *DescribeInstancesInput, fn func(*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInstancesPagesWithContext(ctx aws.Context, input *DescribeInstancesInput, fn func(*DescribeInstancesOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -10580,7 +10580,7 @@ const opDescribeInternetGateways = "DescribeInternetGateways"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGateways
 func (c *EC2) DescribeInternetGatewaysRequest(input *DescribeInternetGatewaysInput) (req *request.Request, output *DescribeInternetGatewaysOutput) {
 	op := &request.Operation{
 		Name:       opDescribeInternetGateways,
@@ -10607,7 +10607,7 @@ func (c *EC2) DescribeInternetGatewaysRequest(input *DescribeInternetGatewaysInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeInternetGateways for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGateways
 func (c *EC2) DescribeInternetGateways(input *DescribeInternetGatewaysInput) (*DescribeInternetGatewaysOutput, error) {
 	req, out := c.DescribeInternetGatewaysRequest(input)
 	return out, req.Send()
@@ -10620,7 +10620,7 @@ func (c *EC2) DescribeInternetGateways(input *DescribeInternetGatewaysInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeInternetGatewaysWithContext(ctx aws.Context, input *DescribeInternetGatewaysInput, opts ...request.Option) (*DescribeInternetGatewaysOutput, error) {
 	req, out := c.DescribeInternetGatewaysRequest(input)
@@ -10654,7 +10654,7 @@ const opDescribeKeyPairs = "DescribeKeyPairs"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairs
 func (c *EC2) DescribeKeyPairsRequest(input *DescribeKeyPairsInput) (req *request.Request, output *DescribeKeyPairsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeKeyPairs,
@@ -10684,7 +10684,7 @@ func (c *EC2) DescribeKeyPairsRequest(input *DescribeKeyPairsInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeKeyPairs for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairs
 func (c *EC2) DescribeKeyPairs(input *DescribeKeyPairsInput) (*DescribeKeyPairsOutput, error) {
 	req, out := c.DescribeKeyPairsRequest(input)
 	return out, req.Send()
@@ -10697,7 +10697,7 @@ func (c *EC2) DescribeKeyPairs(input *DescribeKeyPairsInput) (*DescribeKeyPairsO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeKeyPairsWithContext(ctx aws.Context, input *DescribeKeyPairsInput, opts ...request.Option) (*DescribeKeyPairsOutput, error) {
 	req, out := c.DescribeKeyPairsRequest(input)
@@ -10731,7 +10731,7 @@ const opDescribeLaunchTemplateVersions = "DescribeLaunchTemplateVersions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersions
 func (c *EC2) DescribeLaunchTemplateVersionsRequest(input *DescribeLaunchTemplateVersionsInput) (req *request.Request, output *DescribeLaunchTemplateVersionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeLaunchTemplateVersions,
@@ -10759,7 +10759,7 @@ func (c *EC2) DescribeLaunchTemplateVersionsRequest(input *DescribeLaunchTemplat
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeLaunchTemplateVersions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersions
 func (c *EC2) DescribeLaunchTemplateVersions(input *DescribeLaunchTemplateVersionsInput) (*DescribeLaunchTemplateVersionsOutput, error) {
 	req, out := c.DescribeLaunchTemplateVersionsRequest(input)
 	return out, req.Send()
@@ -10772,7 +10772,7 @@ func (c *EC2) DescribeLaunchTemplateVersions(input *DescribeLaunchTemplateVersio
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeLaunchTemplateVersionsWithContext(ctx aws.Context, input *DescribeLaunchTemplateVersionsInput, opts ...request.Option) (*DescribeLaunchTemplateVersionsOutput, error) {
 	req, out := c.DescribeLaunchTemplateVersionsRequest(input)
@@ -10806,7 +10806,7 @@ const opDescribeLaunchTemplates = "DescribeLaunchTemplates"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplates
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplates
 func (c *EC2) DescribeLaunchTemplatesRequest(input *DescribeLaunchTemplatesInput) (req *request.Request, output *DescribeLaunchTemplatesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeLaunchTemplates,
@@ -10833,7 +10833,7 @@ func (c *EC2) DescribeLaunchTemplatesRequest(input *DescribeLaunchTemplatesInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeLaunchTemplates for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplates
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplates
 func (c *EC2) DescribeLaunchTemplates(input *DescribeLaunchTemplatesInput) (*DescribeLaunchTemplatesOutput, error) {
 	req, out := c.DescribeLaunchTemplatesRequest(input)
 	return out, req.Send()
@@ -10846,7 +10846,7 @@ func (c *EC2) DescribeLaunchTemplates(input *DescribeLaunchTemplatesInput) (*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeLaunchTemplatesWithContext(ctx aws.Context, input *DescribeLaunchTemplatesInput, opts ...request.Option) (*DescribeLaunchTemplatesOutput, error) {
 	req, out := c.DescribeLaunchTemplatesRequest(input)
@@ -10880,7 +10880,7 @@ const opDescribeMovingAddresses = "DescribeMovingAddresses"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddresses
 func (c *EC2) DescribeMovingAddressesRequest(input *DescribeMovingAddressesInput) (req *request.Request, output *DescribeMovingAddressesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeMovingAddresses,
@@ -10909,7 +10909,7 @@ func (c *EC2) DescribeMovingAddressesRequest(input *DescribeMovingAddressesInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeMovingAddresses for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddresses
 func (c *EC2) DescribeMovingAddresses(input *DescribeMovingAddressesInput) (*DescribeMovingAddressesOutput, error) {
 	req, out := c.DescribeMovingAddressesRequest(input)
 	return out, req.Send()
@@ -10922,7 +10922,7 @@ func (c *EC2) DescribeMovingAddresses(input *DescribeMovingAddressesInput) (*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeMovingAddressesWithContext(ctx aws.Context, input *DescribeMovingAddressesInput, opts ...request.Option) (*DescribeMovingAddressesOutput, error) {
 	req, out := c.DescribeMovingAddressesRequest(input)
@@ -10956,7 +10956,7 @@ const opDescribeNatGateways = "DescribeNatGateways"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGateways
 func (c *EC2) DescribeNatGatewaysRequest(input *DescribeNatGatewaysInput) (req *request.Request, output *DescribeNatGatewaysOutput) {
 	op := &request.Operation{
 		Name:       opDescribeNatGateways,
@@ -10989,7 +10989,7 @@ func (c *EC2) DescribeNatGatewaysRequest(input *DescribeNatGatewaysInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeNatGateways for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGateways
 func (c *EC2) DescribeNatGateways(input *DescribeNatGatewaysInput) (*DescribeNatGatewaysOutput, error) {
 	req, out := c.DescribeNatGatewaysRequest(input)
 	return out, req.Send()
@@ -11002,7 +11002,7 @@ func (c *EC2) DescribeNatGateways(input *DescribeNatGatewaysInput) (*DescribeNat
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeNatGatewaysWithContext(ctx aws.Context, input *DescribeNatGatewaysInput, opts ...request.Option) (*DescribeNatGatewaysOutput, error) {
 	req, out := c.DescribeNatGatewaysRequest(input)
@@ -11037,7 +11037,7 @@ func (c *EC2) DescribeNatGatewaysPages(input *DescribeNatGatewaysInput, fn func(
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeNatGatewaysPagesWithContext(ctx aws.Context, input *DescribeNatGatewaysInput, fn func(*DescribeNatGatewaysOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -11086,7 +11086,7 @@ const opDescribeNetworkAcls = "DescribeNetworkAcls"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAcls
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAcls
 func (c *EC2) DescribeNetworkAclsRequest(input *DescribeNetworkAclsInput) (req *request.Request, output *DescribeNetworkAclsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeNetworkAcls,
@@ -11116,7 +11116,7 @@ func (c *EC2) DescribeNetworkAclsRequest(input *DescribeNetworkAclsInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeNetworkAcls for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAcls
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAcls
 func (c *EC2) DescribeNetworkAcls(input *DescribeNetworkAclsInput) (*DescribeNetworkAclsOutput, error) {
 	req, out := c.DescribeNetworkAclsRequest(input)
 	return out, req.Send()
@@ -11129,7 +11129,7 @@ func (c *EC2) DescribeNetworkAcls(input *DescribeNetworkAclsInput) (*DescribeNet
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeNetworkAclsWithContext(ctx aws.Context, input *DescribeNetworkAclsInput, opts ...request.Option) (*DescribeNetworkAclsOutput, error) {
 	req, out := c.DescribeNetworkAclsRequest(input)
@@ -11163,7 +11163,7 @@ const opDescribeNetworkInterfaceAttribute = "DescribeNetworkInterfaceAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttribute
 func (c *EC2) DescribeNetworkInterfaceAttributeRequest(input *DescribeNetworkInterfaceAttributeInput) (req *request.Request, output *DescribeNetworkInterfaceAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeNetworkInterfaceAttribute,
@@ -11191,7 +11191,7 @@ func (c *EC2) DescribeNetworkInterfaceAttributeRequest(input *DescribeNetworkInt
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeNetworkInterfaceAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttribute
 func (c *EC2) DescribeNetworkInterfaceAttribute(input *DescribeNetworkInterfaceAttributeInput) (*DescribeNetworkInterfaceAttributeOutput, error) {
 	req, out := c.DescribeNetworkInterfaceAttributeRequest(input)
 	return out, req.Send()
@@ -11204,7 +11204,7 @@ func (c *EC2) DescribeNetworkInterfaceAttribute(input *DescribeNetworkInterfaceA
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeNetworkInterfaceAttributeWithContext(ctx aws.Context, input *DescribeNetworkInterfaceAttributeInput, opts ...request.Option) (*DescribeNetworkInterfaceAttributeOutput, error) {
 	req, out := c.DescribeNetworkInterfaceAttributeRequest(input)
@@ -11238,7 +11238,7 @@ const opDescribeNetworkInterfacePermissions = "DescribeNetworkInterfacePermissio
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissions
 func (c *EC2) DescribeNetworkInterfacePermissionsRequest(input *DescribeNetworkInterfacePermissionsInput) (req *request.Request, output *DescribeNetworkInterfacePermissionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeNetworkInterfacePermissions,
@@ -11265,7 +11265,7 @@ func (c *EC2) DescribeNetworkInterfacePermissionsRequest(input *DescribeNetworkI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeNetworkInterfacePermissions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissions
 func (c *EC2) DescribeNetworkInterfacePermissions(input *DescribeNetworkInterfacePermissionsInput) (*DescribeNetworkInterfacePermissionsOutput, error) {
 	req, out := c.DescribeNetworkInterfacePermissionsRequest(input)
 	return out, req.Send()
@@ -11278,7 +11278,7 @@ func (c *EC2) DescribeNetworkInterfacePermissions(input *DescribeNetworkInterfac
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeNetworkInterfacePermissionsWithContext(ctx aws.Context, input *DescribeNetworkInterfacePermissionsInput, opts ...request.Option) (*DescribeNetworkInterfacePermissionsOutput, error) {
 	req, out := c.DescribeNetworkInterfacePermissionsRequest(input)
@@ -11312,7 +11312,7 @@ const opDescribeNetworkInterfaces = "DescribeNetworkInterfaces"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaces
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaces
 func (c *EC2) DescribeNetworkInterfacesRequest(input *DescribeNetworkInterfacesInput) (req *request.Request, output *DescribeNetworkInterfacesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeNetworkInterfaces,
@@ -11339,7 +11339,7 @@ func (c *EC2) DescribeNetworkInterfacesRequest(input *DescribeNetworkInterfacesI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeNetworkInterfaces for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaces
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaces
 func (c *EC2) DescribeNetworkInterfaces(input *DescribeNetworkInterfacesInput) (*DescribeNetworkInterfacesOutput, error) {
 	req, out := c.DescribeNetworkInterfacesRequest(input)
 	return out, req.Send()
@@ -11352,7 +11352,7 @@ func (c *EC2) DescribeNetworkInterfaces(input *DescribeNetworkInterfacesInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeNetworkInterfacesWithContext(ctx aws.Context, input *DescribeNetworkInterfacesInput, opts ...request.Option) (*DescribeNetworkInterfacesOutput, error) {
 	req, out := c.DescribeNetworkInterfacesRequest(input)
@@ -11386,7 +11386,7 @@ const opDescribePlacementGroups = "DescribePlacementGroups"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroups
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroups
 func (c *EC2) DescribePlacementGroupsRequest(input *DescribePlacementGroupsInput) (req *request.Request, output *DescribePlacementGroupsOutput) {
 	op := &request.Operation{
 		Name:       opDescribePlacementGroups,
@@ -11415,7 +11415,7 @@ func (c *EC2) DescribePlacementGroupsRequest(input *DescribePlacementGroupsInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribePlacementGroups for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroups
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroups
 func (c *EC2) DescribePlacementGroups(input *DescribePlacementGroupsInput) (*DescribePlacementGroupsOutput, error) {
 	req, out := c.DescribePlacementGroupsRequest(input)
 	return out, req.Send()
@@ -11428,7 +11428,7 @@ func (c *EC2) DescribePlacementGroups(input *DescribePlacementGroupsInput) (*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribePlacementGroupsWithContext(ctx aws.Context, input *DescribePlacementGroupsInput, opts ...request.Option) (*DescribePlacementGroupsOutput, error) {
 	req, out := c.DescribePlacementGroupsRequest(input)
@@ -11462,7 +11462,7 @@ const opDescribePrefixLists = "DescribePrefixLists"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixLists
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixLists
 func (c *EC2) DescribePrefixListsRequest(input *DescribePrefixListsInput) (req *request.Request, output *DescribePrefixListsOutput) {
 	op := &request.Operation{
 		Name:       opDescribePrefixLists,
@@ -11493,7 +11493,7 @@ func (c *EC2) DescribePrefixListsRequest(input *DescribePrefixListsInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribePrefixLists for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixLists
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixLists
 func (c *EC2) DescribePrefixLists(input *DescribePrefixListsInput) (*DescribePrefixListsOutput, error) {
 	req, out := c.DescribePrefixListsRequest(input)
 	return out, req.Send()
@@ -11506,7 +11506,7 @@ func (c *EC2) DescribePrefixLists(input *DescribePrefixListsInput) (*DescribePre
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribePrefixListsWithContext(ctx aws.Context, input *DescribePrefixListsInput, opts ...request.Option) (*DescribePrefixListsOutput, error) {
 	req, out := c.DescribePrefixListsRequest(input)
@@ -11540,7 +11540,7 @@ const opDescribeRegions = "DescribeRegions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegions
 func (c *EC2) DescribeRegionsRequest(input *DescribeRegionsInput) (req *request.Request, output *DescribeRegionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeRegions,
@@ -11570,7 +11570,7 @@ func (c *EC2) DescribeRegionsRequest(input *DescribeRegionsInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeRegions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegions
 func (c *EC2) DescribeRegions(input *DescribeRegionsInput) (*DescribeRegionsOutput, error) {
 	req, out := c.DescribeRegionsRequest(input)
 	return out, req.Send()
@@ -11583,7 +11583,7 @@ func (c *EC2) DescribeRegions(input *DescribeRegionsInput) (*DescribeRegionsOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeRegionsWithContext(ctx aws.Context, input *DescribeRegionsInput, opts ...request.Option) (*DescribeRegionsOutput, error) {
 	req, out := c.DescribeRegionsRequest(input)
@@ -11617,7 +11617,7 @@ const opDescribeReservedInstances = "DescribeReservedInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstances
 func (c *EC2) DescribeReservedInstancesRequest(input *DescribeReservedInstancesInput) (req *request.Request, output *DescribeReservedInstancesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeReservedInstances,
@@ -11647,7 +11647,7 @@ func (c *EC2) DescribeReservedInstancesRequest(input *DescribeReservedInstancesI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeReservedInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstances
 func (c *EC2) DescribeReservedInstances(input *DescribeReservedInstancesInput) (*DescribeReservedInstancesOutput, error) {
 	req, out := c.DescribeReservedInstancesRequest(input)
 	return out, req.Send()
@@ -11660,7 +11660,7 @@ func (c *EC2) DescribeReservedInstances(input *DescribeReservedInstancesInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeReservedInstancesWithContext(ctx aws.Context, input *DescribeReservedInstancesInput, opts ...request.Option) (*DescribeReservedInstancesOutput, error) {
 	req, out := c.DescribeReservedInstancesRequest(input)
@@ -11694,7 +11694,7 @@ const opDescribeReservedInstancesListings = "DescribeReservedInstancesListings"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListings
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListings
 func (c *EC2) DescribeReservedInstancesListingsRequest(input *DescribeReservedInstancesListingsInput) (req *request.Request, output *DescribeReservedInstancesListingsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeReservedInstancesListings,
@@ -11742,7 +11742,7 @@ func (c *EC2) DescribeReservedInstancesListingsRequest(input *DescribeReservedIn
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeReservedInstancesListings for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListings
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListings
 func (c *EC2) DescribeReservedInstancesListings(input *DescribeReservedInstancesListingsInput) (*DescribeReservedInstancesListingsOutput, error) {
 	req, out := c.DescribeReservedInstancesListingsRequest(input)
 	return out, req.Send()
@@ -11755,7 +11755,7 @@ func (c *EC2) DescribeReservedInstancesListings(input *DescribeReservedInstances
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeReservedInstancesListingsWithContext(ctx aws.Context, input *DescribeReservedInstancesListingsInput, opts ...request.Option) (*DescribeReservedInstancesListingsOutput, error) {
 	req, out := c.DescribeReservedInstancesListingsRequest(input)
@@ -11789,7 +11789,7 @@ const opDescribeReservedInstancesModifications = "DescribeReservedInstancesModif
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModifications
 func (c *EC2) DescribeReservedInstancesModificationsRequest(input *DescribeReservedInstancesModificationsInput) (req *request.Request, output *DescribeReservedInstancesModificationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeReservedInstancesModifications,
@@ -11828,7 +11828,7 @@ func (c *EC2) DescribeReservedInstancesModificationsRequest(input *DescribeReser
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeReservedInstancesModifications for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModifications
 func (c *EC2) DescribeReservedInstancesModifications(input *DescribeReservedInstancesModificationsInput) (*DescribeReservedInstancesModificationsOutput, error) {
 	req, out := c.DescribeReservedInstancesModificationsRequest(input)
 	return out, req.Send()
@@ -11841,7 +11841,7 @@ func (c *EC2) DescribeReservedInstancesModifications(input *DescribeReservedInst
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeReservedInstancesModificationsWithContext(ctx aws.Context, input *DescribeReservedInstancesModificationsInput, opts ...request.Option) (*DescribeReservedInstancesModificationsOutput, error) {
 	req, out := c.DescribeReservedInstancesModificationsRequest(input)
@@ -11876,7 +11876,7 @@ func (c *EC2) DescribeReservedInstancesModificationsPages(input *DescribeReserve
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeReservedInstancesModificationsPagesWithContext(ctx aws.Context, input *DescribeReservedInstancesModificationsInput, fn func(*DescribeReservedInstancesModificationsOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -11925,7 +11925,7 @@ const opDescribeReservedInstancesOfferings = "DescribeReservedInstancesOfferings
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferings
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferings
 func (c *EC2) DescribeReservedInstancesOfferingsRequest(input *DescribeReservedInstancesOfferingsInput) (req *request.Request, output *DescribeReservedInstancesOfferingsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeReservedInstancesOfferings,
@@ -11969,7 +11969,7 @@ func (c *EC2) DescribeReservedInstancesOfferingsRequest(input *DescribeReservedI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeReservedInstancesOfferings for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferings
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferings
 func (c *EC2) DescribeReservedInstancesOfferings(input *DescribeReservedInstancesOfferingsInput) (*DescribeReservedInstancesOfferingsOutput, error) {
 	req, out := c.DescribeReservedInstancesOfferingsRequest(input)
 	return out, req.Send()
@@ -11982,7 +11982,7 @@ func (c *EC2) DescribeReservedInstancesOfferings(input *DescribeReservedInstance
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeReservedInstancesOfferingsWithContext(ctx aws.Context, input *DescribeReservedInstancesOfferingsInput, opts ...request.Option) (*DescribeReservedInstancesOfferingsOutput, error) {
 	req, out := c.DescribeReservedInstancesOfferingsRequest(input)
@@ -12017,7 +12017,7 @@ func (c *EC2) DescribeReservedInstancesOfferingsPages(input *DescribeReservedIns
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeReservedInstancesOfferingsPagesWithContext(ctx aws.Context, input *DescribeReservedInstancesOfferingsInput, fn func(*DescribeReservedInstancesOfferingsOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -12066,7 +12066,7 @@ const opDescribeRouteTables = "DescribeRouteTables"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTables
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTables
 func (c *EC2) DescribeRouteTablesRequest(input *DescribeRouteTablesInput) (req *request.Request, output *DescribeRouteTablesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeRouteTables,
@@ -12101,7 +12101,7 @@ func (c *EC2) DescribeRouteTablesRequest(input *DescribeRouteTablesInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeRouteTables for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTables
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTables
 func (c *EC2) DescribeRouteTables(input *DescribeRouteTablesInput) (*DescribeRouteTablesOutput, error) {
 	req, out := c.DescribeRouteTablesRequest(input)
 	return out, req.Send()
@@ -12114,7 +12114,7 @@ func (c *EC2) DescribeRouteTables(input *DescribeRouteTablesInput) (*DescribeRou
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeRouteTablesWithContext(ctx aws.Context, input *DescribeRouteTablesInput, opts ...request.Option) (*DescribeRouteTablesOutput, error) {
 	req, out := c.DescribeRouteTablesRequest(input)
@@ -12148,7 +12148,7 @@ const opDescribeScheduledInstanceAvailability = "DescribeScheduledInstanceAvaila
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailability
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailability
 func (c *EC2) DescribeScheduledInstanceAvailabilityRequest(input *DescribeScheduledInstanceAvailabilityInput) (req *request.Request, output *DescribeScheduledInstanceAvailabilityOutput) {
 	op := &request.Operation{
 		Name:       opDescribeScheduledInstanceAvailability,
@@ -12183,7 +12183,7 @@ func (c *EC2) DescribeScheduledInstanceAvailabilityRequest(input *DescribeSchedu
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeScheduledInstanceAvailability for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailability
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailability
 func (c *EC2) DescribeScheduledInstanceAvailability(input *DescribeScheduledInstanceAvailabilityInput) (*DescribeScheduledInstanceAvailabilityOutput, error) {
 	req, out := c.DescribeScheduledInstanceAvailabilityRequest(input)
 	return out, req.Send()
@@ -12196,7 +12196,7 @@ func (c *EC2) DescribeScheduledInstanceAvailability(input *DescribeScheduledInst
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeScheduledInstanceAvailabilityWithContext(ctx aws.Context, input *DescribeScheduledInstanceAvailabilityInput, opts ...request.Option) (*DescribeScheduledInstanceAvailabilityOutput, error) {
 	req, out := c.DescribeScheduledInstanceAvailabilityRequest(input)
@@ -12230,7 +12230,7 @@ const opDescribeScheduledInstances = "DescribeScheduledInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstances
 func (c *EC2) DescribeScheduledInstancesRequest(input *DescribeScheduledInstancesInput) (req *request.Request, output *DescribeScheduledInstancesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeScheduledInstances,
@@ -12257,7 +12257,7 @@ func (c *EC2) DescribeScheduledInstancesRequest(input *DescribeScheduledInstance
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeScheduledInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstances
 func (c *EC2) DescribeScheduledInstances(input *DescribeScheduledInstancesInput) (*DescribeScheduledInstancesOutput, error) {
 	req, out := c.DescribeScheduledInstancesRequest(input)
 	return out, req.Send()
@@ -12270,7 +12270,7 @@ func (c *EC2) DescribeScheduledInstances(input *DescribeScheduledInstancesInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeScheduledInstancesWithContext(ctx aws.Context, input *DescribeScheduledInstancesInput, opts ...request.Option) (*DescribeScheduledInstancesOutput, error) {
 	req, out := c.DescribeScheduledInstancesRequest(input)
@@ -12304,7 +12304,7 @@ const opDescribeSecurityGroupReferences = "DescribeSecurityGroupReferences"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferences
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferences
 func (c *EC2) DescribeSecurityGroupReferencesRequest(input *DescribeSecurityGroupReferencesInput) (req *request.Request, output *DescribeSecurityGroupReferencesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSecurityGroupReferences,
@@ -12332,7 +12332,7 @@ func (c *EC2) DescribeSecurityGroupReferencesRequest(input *DescribeSecurityGrou
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSecurityGroupReferences for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferences
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferences
 func (c *EC2) DescribeSecurityGroupReferences(input *DescribeSecurityGroupReferencesInput) (*DescribeSecurityGroupReferencesOutput, error) {
 	req, out := c.DescribeSecurityGroupReferencesRequest(input)
 	return out, req.Send()
@@ -12345,7 +12345,7 @@ func (c *EC2) DescribeSecurityGroupReferences(input *DescribeSecurityGroupRefere
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSecurityGroupReferencesWithContext(ctx aws.Context, input *DescribeSecurityGroupReferencesInput, opts ...request.Option) (*DescribeSecurityGroupReferencesOutput, error) {
 	req, out := c.DescribeSecurityGroupReferencesRequest(input)
@@ -12379,7 +12379,7 @@ const opDescribeSecurityGroups = "DescribeSecurityGroups"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroups
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroups
 func (c *EC2) DescribeSecurityGroupsRequest(input *DescribeSecurityGroupsInput) (req *request.Request, output *DescribeSecurityGroupsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSecurityGroups,
@@ -12413,7 +12413,7 @@ func (c *EC2) DescribeSecurityGroupsRequest(input *DescribeSecurityGroupsInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSecurityGroups for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroups
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroups
 func (c *EC2) DescribeSecurityGroups(input *DescribeSecurityGroupsInput) (*DescribeSecurityGroupsOutput, error) {
 	req, out := c.DescribeSecurityGroupsRequest(input)
 	return out, req.Send()
@@ -12426,7 +12426,7 @@ func (c *EC2) DescribeSecurityGroups(input *DescribeSecurityGroupsInput) (*Descr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSecurityGroupsWithContext(ctx aws.Context, input *DescribeSecurityGroupsInput, opts ...request.Option) (*DescribeSecurityGroupsOutput, error) {
 	req, out := c.DescribeSecurityGroupsRequest(input)
@@ -12460,7 +12460,7 @@ const opDescribeSnapshotAttribute = "DescribeSnapshotAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttribute
 func (c *EC2) DescribeSnapshotAttributeRequest(input *DescribeSnapshotAttributeInput) (req *request.Request, output *DescribeSnapshotAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSnapshotAttribute,
@@ -12491,7 +12491,7 @@ func (c *EC2) DescribeSnapshotAttributeRequest(input *DescribeSnapshotAttributeI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSnapshotAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttribute
 func (c *EC2) DescribeSnapshotAttribute(input *DescribeSnapshotAttributeInput) (*DescribeSnapshotAttributeOutput, error) {
 	req, out := c.DescribeSnapshotAttributeRequest(input)
 	return out, req.Send()
@@ -12504,7 +12504,7 @@ func (c *EC2) DescribeSnapshotAttribute(input *DescribeSnapshotAttributeInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSnapshotAttributeWithContext(ctx aws.Context, input *DescribeSnapshotAttributeInput, opts ...request.Option) (*DescribeSnapshotAttributeOutput, error) {
 	req, out := c.DescribeSnapshotAttributeRequest(input)
@@ -12538,7 +12538,7 @@ const opDescribeSnapshots = "DescribeSnapshots"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshots
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshots
 func (c *EC2) DescribeSnapshotsRequest(input *DescribeSnapshotsInput) (req *request.Request, output *DescribeSnapshotsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSnapshots,
@@ -12616,7 +12616,7 @@ func (c *EC2) DescribeSnapshotsRequest(input *DescribeSnapshotsInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSnapshots for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshots
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshots
 func (c *EC2) DescribeSnapshots(input *DescribeSnapshotsInput) (*DescribeSnapshotsOutput, error) {
 	req, out := c.DescribeSnapshotsRequest(input)
 	return out, req.Send()
@@ -12629,7 +12629,7 @@ func (c *EC2) DescribeSnapshots(input *DescribeSnapshotsInput) (*DescribeSnapsho
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSnapshotsWithContext(ctx aws.Context, input *DescribeSnapshotsInput, opts ...request.Option) (*DescribeSnapshotsOutput, error) {
 	req, out := c.DescribeSnapshotsRequest(input)
@@ -12664,7 +12664,7 @@ func (c *EC2) DescribeSnapshotsPages(input *DescribeSnapshotsInput, fn func(*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSnapshotsPagesWithContext(ctx aws.Context, input *DescribeSnapshotsInput, fn func(*DescribeSnapshotsOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -12713,7 +12713,7 @@ const opDescribeSpotDatafeedSubscription = "DescribeSpotDatafeedSubscription"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscription
 func (c *EC2) DescribeSpotDatafeedSubscriptionRequest(input *DescribeSpotDatafeedSubscriptionInput) (req *request.Request, output *DescribeSpotDatafeedSubscriptionOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSpotDatafeedSubscription,
@@ -12742,7 +12742,7 @@ func (c *EC2) DescribeSpotDatafeedSubscriptionRequest(input *DescribeSpotDatafee
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSpotDatafeedSubscription for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscription
 func (c *EC2) DescribeSpotDatafeedSubscription(input *DescribeSpotDatafeedSubscriptionInput) (*DescribeSpotDatafeedSubscriptionOutput, error) {
 	req, out := c.DescribeSpotDatafeedSubscriptionRequest(input)
 	return out, req.Send()
@@ -12755,7 +12755,7 @@ func (c *EC2) DescribeSpotDatafeedSubscription(input *DescribeSpotDatafeedSubscr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotDatafeedSubscriptionWithContext(ctx aws.Context, input *DescribeSpotDatafeedSubscriptionInput, opts ...request.Option) (*DescribeSpotDatafeedSubscriptionOutput, error) {
 	req, out := c.DescribeSpotDatafeedSubscriptionRequest(input)
@@ -12789,7 +12789,7 @@ const opDescribeSpotFleetInstances = "DescribeSpotFleetInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstances
 func (c *EC2) DescribeSpotFleetInstancesRequest(input *DescribeSpotFleetInstancesInput) (req *request.Request, output *DescribeSpotFleetInstancesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSpotFleetInstances,
@@ -12816,7 +12816,7 @@ func (c *EC2) DescribeSpotFleetInstancesRequest(input *DescribeSpotFleetInstance
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSpotFleetInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstances
 func (c *EC2) DescribeSpotFleetInstances(input *DescribeSpotFleetInstancesInput) (*DescribeSpotFleetInstancesOutput, error) {
 	req, out := c.DescribeSpotFleetInstancesRequest(input)
 	return out, req.Send()
@@ -12829,7 +12829,7 @@ func (c *EC2) DescribeSpotFleetInstances(input *DescribeSpotFleetInstancesInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotFleetInstancesWithContext(ctx aws.Context, input *DescribeSpotFleetInstancesInput, opts ...request.Option) (*DescribeSpotFleetInstancesOutput, error) {
 	req, out := c.DescribeSpotFleetInstancesRequest(input)
@@ -12863,7 +12863,7 @@ const opDescribeSpotFleetRequestHistory = "DescribeSpotFleetRequestHistory"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistory
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistory
 func (c *EC2) DescribeSpotFleetRequestHistoryRequest(input *DescribeSpotFleetRequestHistoryInput) (req *request.Request, output *DescribeSpotFleetRequestHistoryOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSpotFleetRequestHistory,
@@ -12895,7 +12895,7 @@ func (c *EC2) DescribeSpotFleetRequestHistoryRequest(input *DescribeSpotFleetReq
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSpotFleetRequestHistory for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistory
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistory
 func (c *EC2) DescribeSpotFleetRequestHistory(input *DescribeSpotFleetRequestHistoryInput) (*DescribeSpotFleetRequestHistoryOutput, error) {
 	req, out := c.DescribeSpotFleetRequestHistoryRequest(input)
 	return out, req.Send()
@@ -12908,7 +12908,7 @@ func (c *EC2) DescribeSpotFleetRequestHistory(input *DescribeSpotFleetRequestHis
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotFleetRequestHistoryWithContext(ctx aws.Context, input *DescribeSpotFleetRequestHistoryInput, opts ...request.Option) (*DescribeSpotFleetRequestHistoryOutput, error) {
 	req, out := c.DescribeSpotFleetRequestHistoryRequest(input)
@@ -12942,7 +12942,7 @@ const opDescribeSpotFleetRequests = "DescribeSpotFleetRequests"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequests
 func (c *EC2) DescribeSpotFleetRequestsRequest(input *DescribeSpotFleetRequestsInput) (req *request.Request, output *DescribeSpotFleetRequestsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSpotFleetRequests,
@@ -12978,7 +12978,7 @@ func (c *EC2) DescribeSpotFleetRequestsRequest(input *DescribeSpotFleetRequestsI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSpotFleetRequests for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequests
 func (c *EC2) DescribeSpotFleetRequests(input *DescribeSpotFleetRequestsInput) (*DescribeSpotFleetRequestsOutput, error) {
 	req, out := c.DescribeSpotFleetRequestsRequest(input)
 	return out, req.Send()
@@ -12991,7 +12991,7 @@ func (c *EC2) DescribeSpotFleetRequests(input *DescribeSpotFleetRequestsInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotFleetRequestsWithContext(ctx aws.Context, input *DescribeSpotFleetRequestsInput, opts ...request.Option) (*DescribeSpotFleetRequestsOutput, error) {
 	req, out := c.DescribeSpotFleetRequestsRequest(input)
@@ -13026,7 +13026,7 @@ func (c *EC2) DescribeSpotFleetRequestsPages(input *DescribeSpotFleetRequestsInp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotFleetRequestsPagesWithContext(ctx aws.Context, input *DescribeSpotFleetRequestsInput, fn func(*DescribeSpotFleetRequestsOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -13075,7 +13075,7 @@ const opDescribeSpotInstanceRequests = "DescribeSpotInstanceRequests"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequests
 func (c *EC2) DescribeSpotInstanceRequestsRequest(input *DescribeSpotInstanceRequestsInput) (req *request.Request, output *DescribeSpotInstanceRequestsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSpotInstanceRequests,
@@ -13115,7 +13115,7 @@ func (c *EC2) DescribeSpotInstanceRequestsRequest(input *DescribeSpotInstanceReq
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSpotInstanceRequests for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequests
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequests
 func (c *EC2) DescribeSpotInstanceRequests(input *DescribeSpotInstanceRequestsInput) (*DescribeSpotInstanceRequestsOutput, error) {
 	req, out := c.DescribeSpotInstanceRequestsRequest(input)
 	return out, req.Send()
@@ -13128,7 +13128,7 @@ func (c *EC2) DescribeSpotInstanceRequests(input *DescribeSpotInstanceRequestsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotInstanceRequestsWithContext(ctx aws.Context, input *DescribeSpotInstanceRequestsInput, opts ...request.Option) (*DescribeSpotInstanceRequestsOutput, error) {
 	req, out := c.DescribeSpotInstanceRequestsRequest(input)
@@ -13162,7 +13162,7 @@ const opDescribeSpotPriceHistory = "DescribeSpotPriceHistory"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistory
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistory
 func (c *EC2) DescribeSpotPriceHistoryRequest(input *DescribeSpotPriceHistoryInput) (req *request.Request, output *DescribeSpotPriceHistoryOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSpotPriceHistory,
@@ -13202,7 +13202,7 @@ func (c *EC2) DescribeSpotPriceHistoryRequest(input *DescribeSpotPriceHistoryInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSpotPriceHistory for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistory
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistory
 func (c *EC2) DescribeSpotPriceHistory(input *DescribeSpotPriceHistoryInput) (*DescribeSpotPriceHistoryOutput, error) {
 	req, out := c.DescribeSpotPriceHistoryRequest(input)
 	return out, req.Send()
@@ -13215,7 +13215,7 @@ func (c *EC2) DescribeSpotPriceHistory(input *DescribeSpotPriceHistoryInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotPriceHistoryWithContext(ctx aws.Context, input *DescribeSpotPriceHistoryInput, opts ...request.Option) (*DescribeSpotPriceHistoryOutput, error) {
 	req, out := c.DescribeSpotPriceHistoryRequest(input)
@@ -13250,7 +13250,7 @@ func (c *EC2) DescribeSpotPriceHistoryPages(input *DescribeSpotPriceHistoryInput
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSpotPriceHistoryPagesWithContext(ctx aws.Context, input *DescribeSpotPriceHistoryInput, fn func(*DescribeSpotPriceHistoryOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -13299,7 +13299,7 @@ const opDescribeStaleSecurityGroups = "DescribeStaleSecurityGroups"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroups
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroups
 func (c *EC2) DescribeStaleSecurityGroupsRequest(input *DescribeStaleSecurityGroupsInput) (req *request.Request, output *DescribeStaleSecurityGroupsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeStaleSecurityGroups,
@@ -13329,7 +13329,7 @@ func (c *EC2) DescribeStaleSecurityGroupsRequest(input *DescribeStaleSecurityGro
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeStaleSecurityGroups for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroups
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroups
 func (c *EC2) DescribeStaleSecurityGroups(input *DescribeStaleSecurityGroupsInput) (*DescribeStaleSecurityGroupsOutput, error) {
 	req, out := c.DescribeStaleSecurityGroupsRequest(input)
 	return out, req.Send()
@@ -13342,7 +13342,7 @@ func (c *EC2) DescribeStaleSecurityGroups(input *DescribeStaleSecurityGroupsInpu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeStaleSecurityGroupsWithContext(ctx aws.Context, input *DescribeStaleSecurityGroupsInput, opts ...request.Option) (*DescribeStaleSecurityGroupsOutput, error) {
 	req, out := c.DescribeStaleSecurityGroupsRequest(input)
@@ -13376,7 +13376,7 @@ const opDescribeSubnets = "DescribeSubnets"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnets
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnets
 func (c *EC2) DescribeSubnetsRequest(input *DescribeSubnetsInput) (req *request.Request, output *DescribeSubnetsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeSubnets,
@@ -13406,7 +13406,7 @@ func (c *EC2) DescribeSubnetsRequest(input *DescribeSubnetsInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeSubnets for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnets
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnets
 func (c *EC2) DescribeSubnets(input *DescribeSubnetsInput) (*DescribeSubnetsOutput, error) {
 	req, out := c.DescribeSubnetsRequest(input)
 	return out, req.Send()
@@ -13419,7 +13419,7 @@ func (c *EC2) DescribeSubnets(input *DescribeSubnetsInput) (*DescribeSubnetsOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeSubnetsWithContext(ctx aws.Context, input *DescribeSubnetsInput, opts ...request.Option) (*DescribeSubnetsOutput, error) {
 	req, out := c.DescribeSubnetsRequest(input)
@@ -13453,7 +13453,7 @@ const opDescribeTags = "DescribeTags"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTags
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTags
 func (c *EC2) DescribeTagsRequest(input *DescribeTagsInput) (req *request.Request, output *DescribeTagsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeTags,
@@ -13489,7 +13489,7 @@ func (c *EC2) DescribeTagsRequest(input *DescribeTagsInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeTags for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTags
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTags
 func (c *EC2) DescribeTags(input *DescribeTagsInput) (*DescribeTagsOutput, error) {
 	req, out := c.DescribeTagsRequest(input)
 	return out, req.Send()
@@ -13502,7 +13502,7 @@ func (c *EC2) DescribeTags(input *DescribeTagsInput) (*DescribeTagsOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeTagsWithContext(ctx aws.Context, input *DescribeTagsInput, opts ...request.Option) (*DescribeTagsOutput, error) {
 	req, out := c.DescribeTagsRequest(input)
@@ -13537,7 +13537,7 @@ func (c *EC2) DescribeTagsPages(input *DescribeTagsInput, fn func(*DescribeTagsO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeTagsPagesWithContext(ctx aws.Context, input *DescribeTagsInput, fn func(*DescribeTagsOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -13586,7 +13586,7 @@ const opDescribeVolumeAttribute = "DescribeVolumeAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttribute
 func (c *EC2) DescribeVolumeAttributeRequest(input *DescribeVolumeAttributeInput) (req *request.Request, output *DescribeVolumeAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVolumeAttribute,
@@ -13617,7 +13617,7 @@ func (c *EC2) DescribeVolumeAttributeRequest(input *DescribeVolumeAttributeInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVolumeAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttribute
 func (c *EC2) DescribeVolumeAttribute(input *DescribeVolumeAttributeInput) (*DescribeVolumeAttributeOutput, error) {
 	req, out := c.DescribeVolumeAttributeRequest(input)
 	return out, req.Send()
@@ -13630,7 +13630,7 @@ func (c *EC2) DescribeVolumeAttribute(input *DescribeVolumeAttributeInput) (*Des
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVolumeAttributeWithContext(ctx aws.Context, input *DescribeVolumeAttributeInput, opts ...request.Option) (*DescribeVolumeAttributeOutput, error) {
 	req, out := c.DescribeVolumeAttributeRequest(input)
@@ -13664,7 +13664,7 @@ const opDescribeVolumeStatus = "DescribeVolumeStatus"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatus
 func (c *EC2) DescribeVolumeStatusRequest(input *DescribeVolumeStatusInput) (req *request.Request, output *DescribeVolumeStatusOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVolumeStatus,
@@ -13731,7 +13731,7 @@ func (c *EC2) DescribeVolumeStatusRequest(input *DescribeVolumeStatusInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVolumeStatus for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatus
 func (c *EC2) DescribeVolumeStatus(input *DescribeVolumeStatusInput) (*DescribeVolumeStatusOutput, error) {
 	req, out := c.DescribeVolumeStatusRequest(input)
 	return out, req.Send()
@@ -13744,7 +13744,7 @@ func (c *EC2) DescribeVolumeStatus(input *DescribeVolumeStatusInput) (*DescribeV
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVolumeStatusWithContext(ctx aws.Context, input *DescribeVolumeStatusInput, opts ...request.Option) (*DescribeVolumeStatusOutput, error) {
 	req, out := c.DescribeVolumeStatusRequest(input)
@@ -13779,7 +13779,7 @@ func (c *EC2) DescribeVolumeStatusPages(input *DescribeVolumeStatusInput, fn fun
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVolumeStatusPagesWithContext(ctx aws.Context, input *DescribeVolumeStatusInput, fn func(*DescribeVolumeStatusOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -13828,7 +13828,7 @@ const opDescribeVolumes = "DescribeVolumes"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumes
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumes
 func (c *EC2) DescribeVolumesRequest(input *DescribeVolumesInput) (req *request.Request, output *DescribeVolumesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVolumes,
@@ -13871,7 +13871,7 @@ func (c *EC2) DescribeVolumesRequest(input *DescribeVolumesInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVolumes for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumes
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumes
 func (c *EC2) DescribeVolumes(input *DescribeVolumesInput) (*DescribeVolumesOutput, error) {
 	req, out := c.DescribeVolumesRequest(input)
 	return out, req.Send()
@@ -13884,7 +13884,7 @@ func (c *EC2) DescribeVolumes(input *DescribeVolumesInput) (*DescribeVolumesOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVolumesWithContext(ctx aws.Context, input *DescribeVolumesInput, opts ...request.Option) (*DescribeVolumesOutput, error) {
 	req, out := c.DescribeVolumesRequest(input)
@@ -13919,7 +13919,7 @@ func (c *EC2) DescribeVolumesPages(input *DescribeVolumesInput, fn func(*Describ
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVolumesPagesWithContext(ctx aws.Context, input *DescribeVolumesInput, fn func(*DescribeVolumesOutput, bool) bool, opts ...request.Option) error {
 	p := request.Pagination{
@@ -13968,7 +13968,7 @@ const opDescribeVolumesModifications = "DescribeVolumesModifications"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModifications
 func (c *EC2) DescribeVolumesModificationsRequest(input *DescribeVolumesModificationsInput) (req *request.Request, output *DescribeVolumesModificationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVolumesModifications,
@@ -14007,7 +14007,7 @@ func (c *EC2) DescribeVolumesModificationsRequest(input *DescribeVolumesModifica
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVolumesModifications for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModifications
 func (c *EC2) DescribeVolumesModifications(input *DescribeVolumesModificationsInput) (*DescribeVolumesModificationsOutput, error) {
 	req, out := c.DescribeVolumesModificationsRequest(input)
 	return out, req.Send()
@@ -14020,7 +14020,7 @@ func (c *EC2) DescribeVolumesModifications(input *DescribeVolumesModificationsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVolumesModificationsWithContext(ctx aws.Context, input *DescribeVolumesModificationsInput, opts ...request.Option) (*DescribeVolumesModificationsOutput, error) {
 	req, out := c.DescribeVolumesModificationsRequest(input)
@@ -14054,7 +14054,7 @@ const opDescribeVpcAttribute = "DescribeVpcAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttribute
 func (c *EC2) DescribeVpcAttributeRequest(input *DescribeVpcAttributeInput) (req *request.Request, output *DescribeVpcAttributeOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcAttribute,
@@ -14082,7 +14082,7 @@ func (c *EC2) DescribeVpcAttributeRequest(input *DescribeVpcAttributeInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttribute
 func (c *EC2) DescribeVpcAttribute(input *DescribeVpcAttributeInput) (*DescribeVpcAttributeOutput, error) {
 	req, out := c.DescribeVpcAttributeRequest(input)
 	return out, req.Send()
@@ -14095,7 +14095,7 @@ func (c *EC2) DescribeVpcAttribute(input *DescribeVpcAttributeInput) (*DescribeV
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcAttributeWithContext(ctx aws.Context, input *DescribeVpcAttributeInput, opts ...request.Option) (*DescribeVpcAttributeOutput, error) {
 	req, out := c.DescribeVpcAttributeRequest(input)
@@ -14129,7 +14129,7 @@ const opDescribeVpcClassicLink = "DescribeVpcClassicLink"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLink
 func (c *EC2) DescribeVpcClassicLinkRequest(input *DescribeVpcClassicLinkInput) (req *request.Request, output *DescribeVpcClassicLinkOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcClassicLink,
@@ -14156,7 +14156,7 @@ func (c *EC2) DescribeVpcClassicLinkRequest(input *DescribeVpcClassicLinkInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcClassicLink for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLink
 func (c *EC2) DescribeVpcClassicLink(input *DescribeVpcClassicLinkInput) (*DescribeVpcClassicLinkOutput, error) {
 	req, out := c.DescribeVpcClassicLinkRequest(input)
 	return out, req.Send()
@@ -14169,7 +14169,7 @@ func (c *EC2) DescribeVpcClassicLink(input *DescribeVpcClassicLinkInput) (*Descr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcClassicLinkWithContext(ctx aws.Context, input *DescribeVpcClassicLinkInput, opts ...request.Option) (*DescribeVpcClassicLinkOutput, error) {
 	req, out := c.DescribeVpcClassicLinkRequest(input)
@@ -14203,7 +14203,7 @@ const opDescribeVpcClassicLinkDnsSupport = "DescribeVpcClassicLinkDnsSupport"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupport
 func (c *EC2) DescribeVpcClassicLinkDnsSupportRequest(input *DescribeVpcClassicLinkDnsSupportInput) (req *request.Request, output *DescribeVpcClassicLinkDnsSupportOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcClassicLinkDnsSupport,
@@ -14236,7 +14236,7 @@ func (c *EC2) DescribeVpcClassicLinkDnsSupportRequest(input *DescribeVpcClassicL
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcClassicLinkDnsSupport for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupport
 func (c *EC2) DescribeVpcClassicLinkDnsSupport(input *DescribeVpcClassicLinkDnsSupportInput) (*DescribeVpcClassicLinkDnsSupportOutput, error) {
 	req, out := c.DescribeVpcClassicLinkDnsSupportRequest(input)
 	return out, req.Send()
@@ -14249,7 +14249,7 @@ func (c *EC2) DescribeVpcClassicLinkDnsSupport(input *DescribeVpcClassicLinkDnsS
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcClassicLinkDnsSupportWithContext(ctx aws.Context, input *DescribeVpcClassicLinkDnsSupportInput, opts ...request.Option) (*DescribeVpcClassicLinkDnsSupportOutput, error) {
 	req, out := c.DescribeVpcClassicLinkDnsSupportRequest(input)
@@ -14283,7 +14283,7 @@ const opDescribeVpcEndpointConnectionNotifications = "DescribeVpcEndpointConnect
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotifications
 func (c *EC2) DescribeVpcEndpointConnectionNotificationsRequest(input *DescribeVpcEndpointConnectionNotificationsInput) (req *request.Request, output *DescribeVpcEndpointConnectionNotificationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcEndpointConnectionNotifications,
@@ -14311,7 +14311,7 @@ func (c *EC2) DescribeVpcEndpointConnectionNotificationsRequest(input *DescribeV
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcEndpointConnectionNotifications for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotifications
 func (c *EC2) DescribeVpcEndpointConnectionNotifications(input *DescribeVpcEndpointConnectionNotificationsInput) (*DescribeVpcEndpointConnectionNotificationsOutput, error) {
 	req, out := c.DescribeVpcEndpointConnectionNotificationsRequest(input)
 	return out, req.Send()
@@ -14324,7 +14324,7 @@ func (c *EC2) DescribeVpcEndpointConnectionNotifications(input *DescribeVpcEndpo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcEndpointConnectionNotificationsWithContext(ctx aws.Context, input *DescribeVpcEndpointConnectionNotificationsInput, opts ...request.Option) (*DescribeVpcEndpointConnectionNotificationsOutput, error) {
 	req, out := c.DescribeVpcEndpointConnectionNotificationsRequest(input)
@@ -14358,7 +14358,7 @@ const opDescribeVpcEndpointConnections = "DescribeVpcEndpointConnections"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnections
 func (c *EC2) DescribeVpcEndpointConnectionsRequest(input *DescribeVpcEndpointConnectionsInput) (req *request.Request, output *DescribeVpcEndpointConnectionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcEndpointConnections,
@@ -14386,7 +14386,7 @@ func (c *EC2) DescribeVpcEndpointConnectionsRequest(input *DescribeVpcEndpointCo
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcEndpointConnections for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnections
 func (c *EC2) DescribeVpcEndpointConnections(input *DescribeVpcEndpointConnectionsInput) (*DescribeVpcEndpointConnectionsOutput, error) {
 	req, out := c.DescribeVpcEndpointConnectionsRequest(input)
 	return out, req.Send()
@@ -14399,7 +14399,7 @@ func (c *EC2) DescribeVpcEndpointConnections(input *DescribeVpcEndpointConnectio
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcEndpointConnectionsWithContext(ctx aws.Context, input *DescribeVpcEndpointConnectionsInput, opts ...request.Option) (*DescribeVpcEndpointConnectionsOutput, error) {
 	req, out := c.DescribeVpcEndpointConnectionsRequest(input)
@@ -14433,7 +14433,7 @@ const opDescribeVpcEndpointServiceConfigurations = "DescribeVpcEndpointServiceCo
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurations
 func (c *EC2) DescribeVpcEndpointServiceConfigurationsRequest(input *DescribeVpcEndpointServiceConfigurationsInput) (req *request.Request, output *DescribeVpcEndpointServiceConfigurationsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcEndpointServiceConfigurations,
@@ -14460,7 +14460,7 @@ func (c *EC2) DescribeVpcEndpointServiceConfigurationsRequest(input *DescribeVpc
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcEndpointServiceConfigurations for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurations
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurations
 func (c *EC2) DescribeVpcEndpointServiceConfigurations(input *DescribeVpcEndpointServiceConfigurationsInput) (*DescribeVpcEndpointServiceConfigurationsOutput, error) {
 	req, out := c.DescribeVpcEndpointServiceConfigurationsRequest(input)
 	return out, req.Send()
@@ -14473,7 +14473,7 @@ func (c *EC2) DescribeVpcEndpointServiceConfigurations(input *DescribeVpcEndpoin
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcEndpointServiceConfigurationsWithContext(ctx aws.Context, input *DescribeVpcEndpointServiceConfigurationsInput, opts ...request.Option) (*DescribeVpcEndpointServiceConfigurationsOutput, error) {
 	req, out := c.DescribeVpcEndpointServiceConfigurationsRequest(input)
@@ -14507,7 +14507,7 @@ const opDescribeVpcEndpointServicePermissions = "DescribeVpcEndpointServicePermi
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissions
 func (c *EC2) DescribeVpcEndpointServicePermissionsRequest(input *DescribeVpcEndpointServicePermissionsInput) (req *request.Request, output *DescribeVpcEndpointServicePermissionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcEndpointServicePermissions,
@@ -14535,7 +14535,7 @@ func (c *EC2) DescribeVpcEndpointServicePermissionsRequest(input *DescribeVpcEnd
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcEndpointServicePermissions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissions
 func (c *EC2) DescribeVpcEndpointServicePermissions(input *DescribeVpcEndpointServicePermissionsInput) (*DescribeVpcEndpointServicePermissionsOutput, error) {
 	req, out := c.DescribeVpcEndpointServicePermissionsRequest(input)
 	return out, req.Send()
@@ -14548,7 +14548,7 @@ func (c *EC2) DescribeVpcEndpointServicePermissions(input *DescribeVpcEndpointSe
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcEndpointServicePermissionsWithContext(ctx aws.Context, input *DescribeVpcEndpointServicePermissionsInput, opts ...request.Option) (*DescribeVpcEndpointServicePermissionsOutput, error) {
 	req, out := c.DescribeVpcEndpointServicePermissionsRequest(input)
@@ -14582,7 +14582,7 @@ const opDescribeVpcEndpointServices = "DescribeVpcEndpointServices"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServices
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServices
 func (c *EC2) DescribeVpcEndpointServicesRequest(input *DescribeVpcEndpointServicesInput) (req *request.Request, output *DescribeVpcEndpointServicesOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcEndpointServices,
@@ -14609,7 +14609,7 @@ func (c *EC2) DescribeVpcEndpointServicesRequest(input *DescribeVpcEndpointServi
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcEndpointServices for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServices
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServices
 func (c *EC2) DescribeVpcEndpointServices(input *DescribeVpcEndpointServicesInput) (*DescribeVpcEndpointServicesOutput, error) {
 	req, out := c.DescribeVpcEndpointServicesRequest(input)
 	return out, req.Send()
@@ -14622,7 +14622,7 @@ func (c *EC2) DescribeVpcEndpointServices(input *DescribeVpcEndpointServicesInpu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcEndpointServicesWithContext(ctx aws.Context, input *DescribeVpcEndpointServicesInput, opts ...request.Option) (*DescribeVpcEndpointServicesOutput, error) {
 	req, out := c.DescribeVpcEndpointServicesRequest(input)
@@ -14656,7 +14656,7 @@ const opDescribeVpcEndpoints = "DescribeVpcEndpoints"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpoints
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpoints
 func (c *EC2) DescribeVpcEndpointsRequest(input *DescribeVpcEndpointsInput) (req *request.Request, output *DescribeVpcEndpointsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcEndpoints,
@@ -14683,7 +14683,7 @@ func (c *EC2) DescribeVpcEndpointsRequest(input *DescribeVpcEndpointsInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcEndpoints for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpoints
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpoints
 func (c *EC2) DescribeVpcEndpoints(input *DescribeVpcEndpointsInput) (*DescribeVpcEndpointsOutput, error) {
 	req, out := c.DescribeVpcEndpointsRequest(input)
 	return out, req.Send()
@@ -14696,7 +14696,7 @@ func (c *EC2) DescribeVpcEndpoints(input *DescribeVpcEndpointsInput) (*DescribeV
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcEndpointsWithContext(ctx aws.Context, input *DescribeVpcEndpointsInput, opts ...request.Option) (*DescribeVpcEndpointsOutput, error) {
 	req, out := c.DescribeVpcEndpointsRequest(input)
@@ -14730,7 +14730,7 @@ const opDescribeVpcPeeringConnections = "DescribeVpcPeeringConnections"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnections
 func (c *EC2) DescribeVpcPeeringConnectionsRequest(input *DescribeVpcPeeringConnectionsInput) (req *request.Request, output *DescribeVpcPeeringConnectionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcPeeringConnections,
@@ -14757,7 +14757,7 @@ func (c *EC2) DescribeVpcPeeringConnectionsRequest(input *DescribeVpcPeeringConn
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcPeeringConnections for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnections
 func (c *EC2) DescribeVpcPeeringConnections(input *DescribeVpcPeeringConnectionsInput) (*DescribeVpcPeeringConnectionsOutput, error) {
 	req, out := c.DescribeVpcPeeringConnectionsRequest(input)
 	return out, req.Send()
@@ -14770,7 +14770,7 @@ func (c *EC2) DescribeVpcPeeringConnections(input *DescribeVpcPeeringConnections
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcPeeringConnectionsWithContext(ctx aws.Context, input *DescribeVpcPeeringConnectionsInput, opts ...request.Option) (*DescribeVpcPeeringConnectionsOutput, error) {
 	req, out := c.DescribeVpcPeeringConnectionsRequest(input)
@@ -14804,7 +14804,7 @@ const opDescribeVpcs = "DescribeVpcs"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcs
 func (c *EC2) DescribeVpcsRequest(input *DescribeVpcsInput) (req *request.Request, output *DescribeVpcsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpcs,
@@ -14831,7 +14831,7 @@ func (c *EC2) DescribeVpcsRequest(input *DescribeVpcsInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpcs for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcs
 func (c *EC2) DescribeVpcs(input *DescribeVpcsInput) (*DescribeVpcsOutput, error) {
 	req, out := c.DescribeVpcsRequest(input)
 	return out, req.Send()
@@ -14844,7 +14844,7 @@ func (c *EC2) DescribeVpcs(input *DescribeVpcsInput) (*DescribeVpcsOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpcsWithContext(ctx aws.Context, input *DescribeVpcsInput, opts ...request.Option) (*DescribeVpcsOutput, error) {
 	req, out := c.DescribeVpcsRequest(input)
@@ -14878,7 +14878,7 @@ const opDescribeVpnConnections = "DescribeVpnConnections"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnections
 func (c *EC2) DescribeVpnConnectionsRequest(input *DescribeVpnConnectionsInput) (req *request.Request, output *DescribeVpnConnectionsOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpnConnections,
@@ -14909,7 +14909,7 @@ func (c *EC2) DescribeVpnConnectionsRequest(input *DescribeVpnConnectionsInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpnConnections for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnections
 func (c *EC2) DescribeVpnConnections(input *DescribeVpnConnectionsInput) (*DescribeVpnConnectionsOutput, error) {
 	req, out := c.DescribeVpnConnectionsRequest(input)
 	return out, req.Send()
@@ -14922,7 +14922,7 @@ func (c *EC2) DescribeVpnConnections(input *DescribeVpnConnectionsInput) (*Descr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpnConnectionsWithContext(ctx aws.Context, input *DescribeVpnConnectionsInput, opts ...request.Option) (*DescribeVpnConnectionsOutput, error) {
 	req, out := c.DescribeVpnConnectionsRequest(input)
@@ -14956,7 +14956,7 @@ const opDescribeVpnGateways = "DescribeVpnGateways"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGateways
 func (c *EC2) DescribeVpnGatewaysRequest(input *DescribeVpnGatewaysInput) (req *request.Request, output *DescribeVpnGatewaysOutput) {
 	op := &request.Operation{
 		Name:       opDescribeVpnGateways,
@@ -14987,7 +14987,7 @@ func (c *EC2) DescribeVpnGatewaysRequest(input *DescribeVpnGatewaysInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DescribeVpnGateways for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGateways
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGateways
 func (c *EC2) DescribeVpnGateways(input *DescribeVpnGatewaysInput) (*DescribeVpnGatewaysOutput, error) {
 	req, out := c.DescribeVpnGatewaysRequest(input)
 	return out, req.Send()
@@ -15000,7 +15000,7 @@ func (c *EC2) DescribeVpnGateways(input *DescribeVpnGatewaysInput) (*DescribeVpn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DescribeVpnGatewaysWithContext(ctx aws.Context, input *DescribeVpnGatewaysInput, opts ...request.Option) (*DescribeVpnGatewaysOutput, error) {
 	req, out := c.DescribeVpnGatewaysRequest(input)
@@ -15034,7 +15034,7 @@ const opDetachClassicLinkVpc = "DetachClassicLinkVpc"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpc
 func (c *EC2) DetachClassicLinkVpcRequest(input *DetachClassicLinkVpcInput) (req *request.Request, output *DetachClassicLinkVpcOutput) {
 	op := &request.Operation{
 		Name:       opDetachClassicLinkVpc,
@@ -15063,7 +15063,7 @@ func (c *EC2) DetachClassicLinkVpcRequest(input *DetachClassicLinkVpcInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DetachClassicLinkVpc for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpc
 func (c *EC2) DetachClassicLinkVpc(input *DetachClassicLinkVpcInput) (*DetachClassicLinkVpcOutput, error) {
 	req, out := c.DetachClassicLinkVpcRequest(input)
 	return out, req.Send()
@@ -15076,7 +15076,7 @@ func (c *EC2) DetachClassicLinkVpc(input *DetachClassicLinkVpcInput) (*DetachCla
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DetachClassicLinkVpcWithContext(ctx aws.Context, input *DetachClassicLinkVpcInput, opts ...request.Option) (*DetachClassicLinkVpcOutput, error) {
 	req, out := c.DetachClassicLinkVpcRequest(input)
@@ -15110,7 +15110,7 @@ const opDetachInternetGateway = "DetachInternetGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGateway
 func (c *EC2) DetachInternetGatewayRequest(input *DetachInternetGatewayInput) (req *request.Request, output *DetachInternetGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDetachInternetGateway,
@@ -15141,7 +15141,7 @@ func (c *EC2) DetachInternetGatewayRequest(input *DetachInternetGatewayInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DetachInternetGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGateway
 func (c *EC2) DetachInternetGateway(input *DetachInternetGatewayInput) (*DetachInternetGatewayOutput, error) {
 	req, out := c.DetachInternetGatewayRequest(input)
 	return out, req.Send()
@@ -15154,7 +15154,7 @@ func (c *EC2) DetachInternetGateway(input *DetachInternetGatewayInput) (*DetachI
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DetachInternetGatewayWithContext(ctx aws.Context, input *DetachInternetGatewayInput, opts ...request.Option) (*DetachInternetGatewayOutput, error) {
 	req, out := c.DetachInternetGatewayRequest(input)
@@ -15188,7 +15188,7 @@ const opDetachNetworkInterface = "DetachNetworkInterface"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterface
 func (c *EC2) DetachNetworkInterfaceRequest(input *DetachNetworkInterfaceInput) (req *request.Request, output *DetachNetworkInterfaceOutput) {
 	op := &request.Operation{
 		Name:       opDetachNetworkInterface,
@@ -15217,7 +15217,7 @@ func (c *EC2) DetachNetworkInterfaceRequest(input *DetachNetworkInterfaceInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DetachNetworkInterface for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterface
 func (c *EC2) DetachNetworkInterface(input *DetachNetworkInterfaceInput) (*DetachNetworkInterfaceOutput, error) {
 	req, out := c.DetachNetworkInterfaceRequest(input)
 	return out, req.Send()
@@ -15230,7 +15230,7 @@ func (c *EC2) DetachNetworkInterface(input *DetachNetworkInterfaceInput) (*Detac
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DetachNetworkInterfaceWithContext(ctx aws.Context, input *DetachNetworkInterfaceInput, opts ...request.Option) (*DetachNetworkInterfaceOutput, error) {
 	req, out := c.DetachNetworkInterfaceRequest(input)
@@ -15264,7 +15264,7 @@ const opDetachVolume = "DetachVolume"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVolume
 func (c *EC2) DetachVolumeRequest(input *DetachVolumeInput) (req *request.Request, output *VolumeAttachment) {
 	op := &request.Operation{
 		Name:       opDetachVolume,
@@ -15304,7 +15304,7 @@ func (c *EC2) DetachVolumeRequest(input *DetachVolumeInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DetachVolume for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVolume
 func (c *EC2) DetachVolume(input *DetachVolumeInput) (*VolumeAttachment, error) {
 	req, out := c.DetachVolumeRequest(input)
 	return out, req.Send()
@@ -15317,7 +15317,7 @@ func (c *EC2) DetachVolume(input *DetachVolumeInput) (*VolumeAttachment, error) 
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DetachVolumeWithContext(ctx aws.Context, input *DetachVolumeInput, opts ...request.Option) (*VolumeAttachment, error) {
 	req, out := c.DetachVolumeRequest(input)
@@ -15351,7 +15351,7 @@ const opDetachVpnGateway = "DetachVpnGateway"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGateway
 func (c *EC2) DetachVpnGatewayRequest(input *DetachVpnGatewayInput) (req *request.Request, output *DetachVpnGatewayOutput) {
 	op := &request.Operation{
 		Name:       opDetachVpnGateway,
@@ -15387,7 +15387,7 @@ func (c *EC2) DetachVpnGatewayRequest(input *DetachVpnGatewayInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DetachVpnGateway for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGateway
 func (c *EC2) DetachVpnGateway(input *DetachVpnGatewayInput) (*DetachVpnGatewayOutput, error) {
 	req, out := c.DetachVpnGatewayRequest(input)
 	return out, req.Send()
@@ -15400,7 +15400,7 @@ func (c *EC2) DetachVpnGateway(input *DetachVpnGatewayInput) (*DetachVpnGatewayO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DetachVpnGatewayWithContext(ctx aws.Context, input *DetachVpnGatewayInput, opts ...request.Option) (*DetachVpnGatewayOutput, error) {
 	req, out := c.DetachVpnGatewayRequest(input)
@@ -15434,7 +15434,7 @@ const opDisableVgwRoutePropagation = "DisableVgwRoutePropagation"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagation
 func (c *EC2) DisableVgwRoutePropagationRequest(input *DisableVgwRoutePropagationInput) (req *request.Request, output *DisableVgwRoutePropagationOutput) {
 	op := &request.Operation{
 		Name:       opDisableVgwRoutePropagation,
@@ -15464,7 +15464,7 @@ func (c *EC2) DisableVgwRoutePropagationRequest(input *DisableVgwRoutePropagatio
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisableVgwRoutePropagation for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagation
 func (c *EC2) DisableVgwRoutePropagation(input *DisableVgwRoutePropagationInput) (*DisableVgwRoutePropagationOutput, error) {
 	req, out := c.DisableVgwRoutePropagationRequest(input)
 	return out, req.Send()
@@ -15477,7 +15477,7 @@ func (c *EC2) DisableVgwRoutePropagation(input *DisableVgwRoutePropagationInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisableVgwRoutePropagationWithContext(ctx aws.Context, input *DisableVgwRoutePropagationInput, opts ...request.Option) (*DisableVgwRoutePropagationOutput, error) {
 	req, out := c.DisableVgwRoutePropagationRequest(input)
@@ -15511,7 +15511,7 @@ const opDisableVpcClassicLink = "DisableVpcClassicLink"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLink
 func (c *EC2) DisableVpcClassicLinkRequest(input *DisableVpcClassicLinkInput) (req *request.Request, output *DisableVpcClassicLinkOutput) {
 	op := &request.Operation{
 		Name:       opDisableVpcClassicLink,
@@ -15539,7 +15539,7 @@ func (c *EC2) DisableVpcClassicLinkRequest(input *DisableVpcClassicLinkInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisableVpcClassicLink for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLink
 func (c *EC2) DisableVpcClassicLink(input *DisableVpcClassicLinkInput) (*DisableVpcClassicLinkOutput, error) {
 	req, out := c.DisableVpcClassicLinkRequest(input)
 	return out, req.Send()
@@ -15552,7 +15552,7 @@ func (c *EC2) DisableVpcClassicLink(input *DisableVpcClassicLinkInput) (*Disable
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisableVpcClassicLinkWithContext(ctx aws.Context, input *DisableVpcClassicLinkInput, opts ...request.Option) (*DisableVpcClassicLinkOutput, error) {
 	req, out := c.DisableVpcClassicLinkRequest(input)
@@ -15586,7 +15586,7 @@ const opDisableVpcClassicLinkDnsSupport = "DisableVpcClassicLinkDnsSupport"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupport
 func (c *EC2) DisableVpcClassicLinkDnsSupportRequest(input *DisableVpcClassicLinkDnsSupportInput) (req *request.Request, output *DisableVpcClassicLinkDnsSupportOutput) {
 	op := &request.Operation{
 		Name:       opDisableVpcClassicLinkDnsSupport,
@@ -15617,7 +15617,7 @@ func (c *EC2) DisableVpcClassicLinkDnsSupportRequest(input *DisableVpcClassicLin
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisableVpcClassicLinkDnsSupport for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupport
 func (c *EC2) DisableVpcClassicLinkDnsSupport(input *DisableVpcClassicLinkDnsSupportInput) (*DisableVpcClassicLinkDnsSupportOutput, error) {
 	req, out := c.DisableVpcClassicLinkDnsSupportRequest(input)
 	return out, req.Send()
@@ -15630,7 +15630,7 @@ func (c *EC2) DisableVpcClassicLinkDnsSupport(input *DisableVpcClassicLinkDnsSup
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisableVpcClassicLinkDnsSupportWithContext(ctx aws.Context, input *DisableVpcClassicLinkDnsSupportInput, opts ...request.Option) (*DisableVpcClassicLinkDnsSupportOutput, error) {
 	req, out := c.DisableVpcClassicLinkDnsSupportRequest(input)
@@ -15664,7 +15664,7 @@ const opDisassociateAddress = "DisassociateAddress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddress
 func (c *EC2) DisassociateAddressRequest(input *DisassociateAddressInput) (req *request.Request, output *DisassociateAddressOutput) {
 	op := &request.Operation{
 		Name:       opDisassociateAddress,
@@ -15701,7 +15701,7 @@ func (c *EC2) DisassociateAddressRequest(input *DisassociateAddressInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisassociateAddress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddress
 func (c *EC2) DisassociateAddress(input *DisassociateAddressInput) (*DisassociateAddressOutput, error) {
 	req, out := c.DisassociateAddressRequest(input)
 	return out, req.Send()
@@ -15714,7 +15714,7 @@ func (c *EC2) DisassociateAddress(input *DisassociateAddressInput) (*Disassociat
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisassociateAddressWithContext(ctx aws.Context, input *DisassociateAddressInput, opts ...request.Option) (*DisassociateAddressOutput, error) {
 	req, out := c.DisassociateAddressRequest(input)
@@ -15748,7 +15748,7 @@ const opDisassociateIamInstanceProfile = "DisassociateIamInstanceProfile"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfile
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfile
 func (c *EC2) DisassociateIamInstanceProfileRequest(input *DisassociateIamInstanceProfileInput) (req *request.Request, output *DisassociateIamInstanceProfileOutput) {
 	op := &request.Operation{
 		Name:       opDisassociateIamInstanceProfile,
@@ -15777,7 +15777,7 @@ func (c *EC2) DisassociateIamInstanceProfileRequest(input *DisassociateIamInstan
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisassociateIamInstanceProfile for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfile
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfile
 func (c *EC2) DisassociateIamInstanceProfile(input *DisassociateIamInstanceProfileInput) (*DisassociateIamInstanceProfileOutput, error) {
 	req, out := c.DisassociateIamInstanceProfileRequest(input)
 	return out, req.Send()
@@ -15790,7 +15790,7 @@ func (c *EC2) DisassociateIamInstanceProfile(input *DisassociateIamInstanceProfi
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisassociateIamInstanceProfileWithContext(ctx aws.Context, input *DisassociateIamInstanceProfileInput, opts ...request.Option) (*DisassociateIamInstanceProfileOutput, error) {
 	req, out := c.DisassociateIamInstanceProfileRequest(input)
@@ -15824,7 +15824,7 @@ const opDisassociateRouteTable = "DisassociateRouteTable"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTable
 func (c *EC2) DisassociateRouteTableRequest(input *DisassociateRouteTableInput) (req *request.Request, output *DisassociateRouteTableOutput) {
 	op := &request.Operation{
 		Name:       opDisassociateRouteTable,
@@ -15858,7 +15858,7 @@ func (c *EC2) DisassociateRouteTableRequest(input *DisassociateRouteTableInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisassociateRouteTable for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTable
 func (c *EC2) DisassociateRouteTable(input *DisassociateRouteTableInput) (*DisassociateRouteTableOutput, error) {
 	req, out := c.DisassociateRouteTableRequest(input)
 	return out, req.Send()
@@ -15871,7 +15871,7 @@ func (c *EC2) DisassociateRouteTable(input *DisassociateRouteTableInput) (*Disas
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisassociateRouteTableWithContext(ctx aws.Context, input *DisassociateRouteTableInput, opts ...request.Option) (*DisassociateRouteTableOutput, error) {
 	req, out := c.DisassociateRouteTableRequest(input)
@@ -15905,7 +15905,7 @@ const opDisassociateSubnetCidrBlock = "DisassociateSubnetCidrBlock"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlock
 func (c *EC2) DisassociateSubnetCidrBlockRequest(input *DisassociateSubnetCidrBlockInput) (req *request.Request, output *DisassociateSubnetCidrBlockOutput) {
 	op := &request.Operation{
 		Name:       opDisassociateSubnetCidrBlock,
@@ -15934,7 +15934,7 @@ func (c *EC2) DisassociateSubnetCidrBlockRequest(input *DisassociateSubnetCidrBl
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisassociateSubnetCidrBlock for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlock
 func (c *EC2) DisassociateSubnetCidrBlock(input *DisassociateSubnetCidrBlockInput) (*DisassociateSubnetCidrBlockOutput, error) {
 	req, out := c.DisassociateSubnetCidrBlockRequest(input)
 	return out, req.Send()
@@ -15947,7 +15947,7 @@ func (c *EC2) DisassociateSubnetCidrBlock(input *DisassociateSubnetCidrBlockInpu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisassociateSubnetCidrBlockWithContext(ctx aws.Context, input *DisassociateSubnetCidrBlockInput, opts ...request.Option) (*DisassociateSubnetCidrBlockOutput, error) {
 	req, out := c.DisassociateSubnetCidrBlockRequest(input)
@@ -15981,7 +15981,7 @@ const opDisassociateVpcCidrBlock = "DisassociateVpcCidrBlock"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlock
 func (c *EC2) DisassociateVpcCidrBlockRequest(input *DisassociateVpcCidrBlockInput) (req *request.Request, output *DisassociateVpcCidrBlockOutput) {
 	op := &request.Operation{
 		Name:       opDisassociateVpcCidrBlock,
@@ -16014,7 +16014,7 @@ func (c *EC2) DisassociateVpcCidrBlockRequest(input *DisassociateVpcCidrBlockInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation DisassociateVpcCidrBlock for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlock
 func (c *EC2) DisassociateVpcCidrBlock(input *DisassociateVpcCidrBlockInput) (*DisassociateVpcCidrBlockOutput, error) {
 	req, out := c.DisassociateVpcCidrBlockRequest(input)
 	return out, req.Send()
@@ -16027,7 +16027,7 @@ func (c *EC2) DisassociateVpcCidrBlock(input *DisassociateVpcCidrBlockInput) (*D
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) DisassociateVpcCidrBlockWithContext(ctx aws.Context, input *DisassociateVpcCidrBlockInput, opts ...request.Option) (*DisassociateVpcCidrBlockOutput, error) {
 	req, out := c.DisassociateVpcCidrBlockRequest(input)
@@ -16061,7 +16061,7 @@ const opEnableVgwRoutePropagation = "EnableVgwRoutePropagation"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagation
 func (c *EC2) EnableVgwRoutePropagationRequest(input *EnableVgwRoutePropagationInput) (req *request.Request, output *EnableVgwRoutePropagationOutput) {
 	op := &request.Operation{
 		Name:       opEnableVgwRoutePropagation,
@@ -16091,7 +16091,7 @@ func (c *EC2) EnableVgwRoutePropagationRequest(input *EnableVgwRoutePropagationI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation EnableVgwRoutePropagation for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagation
 func (c *EC2) EnableVgwRoutePropagation(input *EnableVgwRoutePropagationInput) (*EnableVgwRoutePropagationOutput, error) {
 	req, out := c.EnableVgwRoutePropagationRequest(input)
 	return out, req.Send()
@@ -16104,7 +16104,7 @@ func (c *EC2) EnableVgwRoutePropagation(input *EnableVgwRoutePropagationInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) EnableVgwRoutePropagationWithContext(ctx aws.Context, input *EnableVgwRoutePropagationInput, opts ...request.Option) (*EnableVgwRoutePropagationOutput, error) {
 	req, out := c.EnableVgwRoutePropagationRequest(input)
@@ -16138,7 +16138,7 @@ const opEnableVolumeIO = "EnableVolumeIO"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIO
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIO
 func (c *EC2) EnableVolumeIORequest(input *EnableVolumeIOInput) (req *request.Request, output *EnableVolumeIOOutput) {
 	op := &request.Operation{
 		Name:       opEnableVolumeIO,
@@ -16168,7 +16168,7 @@ func (c *EC2) EnableVolumeIORequest(input *EnableVolumeIOInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation EnableVolumeIO for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIO
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIO
 func (c *EC2) EnableVolumeIO(input *EnableVolumeIOInput) (*EnableVolumeIOOutput, error) {
 	req, out := c.EnableVolumeIORequest(input)
 	return out, req.Send()
@@ -16181,7 +16181,7 @@ func (c *EC2) EnableVolumeIO(input *EnableVolumeIOInput) (*EnableVolumeIOOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) EnableVolumeIOWithContext(ctx aws.Context, input *EnableVolumeIOInput, opts ...request.Option) (*EnableVolumeIOOutput, error) {
 	req, out := c.EnableVolumeIORequest(input)
@@ -16215,7 +16215,7 @@ const opEnableVpcClassicLink = "EnableVpcClassicLink"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLink
 func (c *EC2) EnableVpcClassicLinkRequest(input *EnableVpcClassicLinkInput) (req *request.Request, output *EnableVpcClassicLinkOutput) {
 	op := &request.Operation{
 		Name:       opEnableVpcClassicLink,
@@ -16248,7 +16248,7 @@ func (c *EC2) EnableVpcClassicLinkRequest(input *EnableVpcClassicLinkInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation EnableVpcClassicLink for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLink
 func (c *EC2) EnableVpcClassicLink(input *EnableVpcClassicLinkInput) (*EnableVpcClassicLinkOutput, error) {
 	req, out := c.EnableVpcClassicLinkRequest(input)
 	return out, req.Send()
@@ -16261,7 +16261,7 @@ func (c *EC2) EnableVpcClassicLink(input *EnableVpcClassicLinkInput) (*EnableVpc
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) EnableVpcClassicLinkWithContext(ctx aws.Context, input *EnableVpcClassicLinkInput, opts ...request.Option) (*EnableVpcClassicLinkOutput, error) {
 	req, out := c.EnableVpcClassicLinkRequest(input)
@@ -16295,7 +16295,7 @@ const opEnableVpcClassicLinkDnsSupport = "EnableVpcClassicLinkDnsSupport"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupport
 func (c *EC2) EnableVpcClassicLinkDnsSupportRequest(input *EnableVpcClassicLinkDnsSupportInput) (req *request.Request, output *EnableVpcClassicLinkDnsSupportOutput) {
 	op := &request.Operation{
 		Name:       opEnableVpcClassicLinkDnsSupport,
@@ -16328,7 +16328,7 @@ func (c *EC2) EnableVpcClassicLinkDnsSupportRequest(input *EnableVpcClassicLinkD
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation EnableVpcClassicLinkDnsSupport for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupport
 func (c *EC2) EnableVpcClassicLinkDnsSupport(input *EnableVpcClassicLinkDnsSupportInput) (*EnableVpcClassicLinkDnsSupportOutput, error) {
 	req, out := c.EnableVpcClassicLinkDnsSupportRequest(input)
 	return out, req.Send()
@@ -16341,7 +16341,7 @@ func (c *EC2) EnableVpcClassicLinkDnsSupport(input *EnableVpcClassicLinkDnsSuppo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) EnableVpcClassicLinkDnsSupportWithContext(ctx aws.Context, input *EnableVpcClassicLinkDnsSupportInput, opts ...request.Option) (*EnableVpcClassicLinkDnsSupportOutput, error) {
 	req, out := c.EnableVpcClassicLinkDnsSupportRequest(input)
@@ -16375,7 +16375,7 @@ const opGetConsoleOutput = "GetConsoleOutput"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutput
 func (c *EC2) GetConsoleOutputRequest(input *GetConsoleOutputInput) (req *request.Request, output *GetConsoleOutputOutput) {
 	op := &request.Operation{
 		Name:       opGetConsoleOutput,
@@ -16419,7 +16419,7 @@ func (c *EC2) GetConsoleOutputRequest(input *GetConsoleOutputInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation GetConsoleOutput for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutput
 func (c *EC2) GetConsoleOutput(input *GetConsoleOutputInput) (*GetConsoleOutputOutput, error) {
 	req, out := c.GetConsoleOutputRequest(input)
 	return out, req.Send()
@@ -16432,7 +16432,7 @@ func (c *EC2) GetConsoleOutput(input *GetConsoleOutputInput) (*GetConsoleOutputO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) GetConsoleOutputWithContext(ctx aws.Context, input *GetConsoleOutputInput, opts ...request.Option) (*GetConsoleOutputOutput, error) {
 	req, out := c.GetConsoleOutputRequest(input)
@@ -16466,7 +16466,7 @@ const opGetConsoleScreenshot = "GetConsoleScreenshot"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshot
 func (c *EC2) GetConsoleScreenshotRequest(input *GetConsoleScreenshotInput) (req *request.Request, output *GetConsoleScreenshotOutput) {
 	op := &request.Operation{
 		Name:       opGetConsoleScreenshot,
@@ -16495,7 +16495,7 @@ func (c *EC2) GetConsoleScreenshotRequest(input *GetConsoleScreenshotInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation GetConsoleScreenshot for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshot
 func (c *EC2) GetConsoleScreenshot(input *GetConsoleScreenshotInput) (*GetConsoleScreenshotOutput, error) {
 	req, out := c.GetConsoleScreenshotRequest(input)
 	return out, req.Send()
@@ -16508,7 +16508,7 @@ func (c *EC2) GetConsoleScreenshot(input *GetConsoleScreenshotInput) (*GetConsol
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) GetConsoleScreenshotWithContext(ctx aws.Context, input *GetConsoleScreenshotInput, opts ...request.Option) (*GetConsoleScreenshotOutput, error) {
 	req, out := c.GetConsoleScreenshotRequest(input)
@@ -16542,7 +16542,7 @@ const opGetHostReservationPurchasePreview = "GetHostReservationPurchasePreview"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreview
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreview
 func (c *EC2) GetHostReservationPurchasePreviewRequest(input *GetHostReservationPurchasePreviewInput) (req *request.Request, output *GetHostReservationPurchasePreviewOutput) {
 	op := &request.Operation{
 		Name:       opGetHostReservationPurchasePreview,
@@ -16574,7 +16574,7 @@ func (c *EC2) GetHostReservationPurchasePreviewRequest(input *GetHostReservation
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation GetHostReservationPurchasePreview for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreview
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreview
 func (c *EC2) GetHostReservationPurchasePreview(input *GetHostReservationPurchasePreviewInput) (*GetHostReservationPurchasePreviewOutput, error) {
 	req, out := c.GetHostReservationPurchasePreviewRequest(input)
 	return out, req.Send()
@@ -16587,7 +16587,7 @@ func (c *EC2) GetHostReservationPurchasePreview(input *GetHostReservationPurchas
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) GetHostReservationPurchasePreviewWithContext(ctx aws.Context, input *GetHostReservationPurchasePreviewInput, opts ...request.Option) (*GetHostReservationPurchasePreviewOutput, error) {
 	req, out := c.GetHostReservationPurchasePreviewRequest(input)
@@ -16621,7 +16621,7 @@ const opGetLaunchTemplateData = "GetLaunchTemplateData"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateData
 func (c *EC2) GetLaunchTemplateDataRequest(input *GetLaunchTemplateDataInput) (req *request.Request, output *GetLaunchTemplateDataOutput) {
 	op := &request.Operation{
 		Name:       opGetLaunchTemplateData,
@@ -16649,7 +16649,7 @@ func (c *EC2) GetLaunchTemplateDataRequest(input *GetLaunchTemplateDataInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation GetLaunchTemplateData for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateData
 func (c *EC2) GetLaunchTemplateData(input *GetLaunchTemplateDataInput) (*GetLaunchTemplateDataOutput, error) {
 	req, out := c.GetLaunchTemplateDataRequest(input)
 	return out, req.Send()
@@ -16662,7 +16662,7 @@ func (c *EC2) GetLaunchTemplateData(input *GetLaunchTemplateDataInput) (*GetLaun
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) GetLaunchTemplateDataWithContext(ctx aws.Context, input *GetLaunchTemplateDataInput, opts ...request.Option) (*GetLaunchTemplateDataOutput, error) {
 	req, out := c.GetLaunchTemplateDataRequest(input)
@@ -16696,7 +16696,7 @@ const opGetPasswordData = "GetPasswordData"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordData
 func (c *EC2) GetPasswordDataRequest(input *GetPasswordDataInput) (req *request.Request, output *GetPasswordDataOutput) {
 	op := &request.Operation{
 		Name:       opGetPasswordData,
@@ -16740,7 +16740,7 @@ func (c *EC2) GetPasswordDataRequest(input *GetPasswordDataInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation GetPasswordData for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordData
 func (c *EC2) GetPasswordData(input *GetPasswordDataInput) (*GetPasswordDataOutput, error) {
 	req, out := c.GetPasswordDataRequest(input)
 	return out, req.Send()
@@ -16753,7 +16753,7 @@ func (c *EC2) GetPasswordData(input *GetPasswordDataInput) (*GetPasswordDataOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) GetPasswordDataWithContext(ctx aws.Context, input *GetPasswordDataInput, opts ...request.Option) (*GetPasswordDataOutput, error) {
 	req, out := c.GetPasswordDataRequest(input)
@@ -16787,7 +16787,7 @@ const opGetReservedInstancesExchangeQuote = "GetReservedInstancesExchangeQuote"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuote
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuote
 func (c *EC2) GetReservedInstancesExchangeQuoteRequest(input *GetReservedInstancesExchangeQuoteInput) (req *request.Request, output *GetReservedInstancesExchangeQuoteOutput) {
 	op := &request.Operation{
 		Name:       opGetReservedInstancesExchangeQuote,
@@ -16817,7 +16817,7 @@ func (c *EC2) GetReservedInstancesExchangeQuoteRequest(input *GetReservedInstanc
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation GetReservedInstancesExchangeQuote for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuote
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuote
 func (c *EC2) GetReservedInstancesExchangeQuote(input *GetReservedInstancesExchangeQuoteInput) (*GetReservedInstancesExchangeQuoteOutput, error) {
 	req, out := c.GetReservedInstancesExchangeQuoteRequest(input)
 	return out, req.Send()
@@ -16830,7 +16830,7 @@ func (c *EC2) GetReservedInstancesExchangeQuote(input *GetReservedInstancesExcha
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) GetReservedInstancesExchangeQuoteWithContext(ctx aws.Context, input *GetReservedInstancesExchangeQuoteInput, opts ...request.Option) (*GetReservedInstancesExchangeQuoteOutput, error) {
 	req, out := c.GetReservedInstancesExchangeQuoteRequest(input)
@@ -16864,7 +16864,7 @@ const opImportImage = "ImportImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImage
 func (c *EC2) ImportImageRequest(input *ImportImageInput) (req *request.Request, output *ImportImageOutput) {
 	op := &request.Operation{
 		Name:       opImportImage,
@@ -16894,7 +16894,7 @@ func (c *EC2) ImportImageRequest(input *ImportImageInput) (req *request.Request,
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ImportImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImage
 func (c *EC2) ImportImage(input *ImportImageInput) (*ImportImageOutput, error) {
 	req, out := c.ImportImageRequest(input)
 	return out, req.Send()
@@ -16907,7 +16907,7 @@ func (c *EC2) ImportImage(input *ImportImageInput) (*ImportImageOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ImportImageWithContext(ctx aws.Context, input *ImportImageInput, opts ...request.Option) (*ImportImageOutput, error) {
 	req, out := c.ImportImageRequest(input)
@@ -16941,7 +16941,7 @@ const opImportInstance = "ImportInstance"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstance
 func (c *EC2) ImportInstanceRequest(input *ImportInstanceInput) (req *request.Request, output *ImportInstanceOutput) {
 	op := &request.Operation{
 		Name:       opImportInstance,
@@ -16974,7 +16974,7 @@ func (c *EC2) ImportInstanceRequest(input *ImportInstanceInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ImportInstance for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstance
 func (c *EC2) ImportInstance(input *ImportInstanceInput) (*ImportInstanceOutput, error) {
 	req, out := c.ImportInstanceRequest(input)
 	return out, req.Send()
@@ -16987,7 +16987,7 @@ func (c *EC2) ImportInstance(input *ImportInstanceInput) (*ImportInstanceOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ImportInstanceWithContext(ctx aws.Context, input *ImportInstanceInput, opts ...request.Option) (*ImportInstanceOutput, error) {
 	req, out := c.ImportInstanceRequest(input)
@@ -17021,7 +17021,7 @@ const opImportKeyPair = "ImportKeyPair"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPair
 func (c *EC2) ImportKeyPairRequest(input *ImportKeyPairInput) (req *request.Request, output *ImportKeyPairOutput) {
 	op := &request.Operation{
 		Name:       opImportKeyPair,
@@ -17055,7 +17055,7 @@ func (c *EC2) ImportKeyPairRequest(input *ImportKeyPairInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ImportKeyPair for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPair
 func (c *EC2) ImportKeyPair(input *ImportKeyPairInput) (*ImportKeyPairOutput, error) {
 	req, out := c.ImportKeyPairRequest(input)
 	return out, req.Send()
@@ -17068,7 +17068,7 @@ func (c *EC2) ImportKeyPair(input *ImportKeyPairInput) (*ImportKeyPairOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ImportKeyPairWithContext(ctx aws.Context, input *ImportKeyPairInput, opts ...request.Option) (*ImportKeyPairOutput, error) {
 	req, out := c.ImportKeyPairRequest(input)
@@ -17102,7 +17102,7 @@ const opImportSnapshot = "ImportSnapshot"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshot
 func (c *EC2) ImportSnapshotRequest(input *ImportSnapshotInput) (req *request.Request, output *ImportSnapshotOutput) {
 	op := &request.Operation{
 		Name:       opImportSnapshot,
@@ -17129,7 +17129,7 @@ func (c *EC2) ImportSnapshotRequest(input *ImportSnapshotInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ImportSnapshot for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshot
 func (c *EC2) ImportSnapshot(input *ImportSnapshotInput) (*ImportSnapshotOutput, error) {
 	req, out := c.ImportSnapshotRequest(input)
 	return out, req.Send()
@@ -17142,7 +17142,7 @@ func (c *EC2) ImportSnapshot(input *ImportSnapshotInput) (*ImportSnapshotOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ImportSnapshotWithContext(ctx aws.Context, input *ImportSnapshotInput, opts ...request.Option) (*ImportSnapshotOutput, error) {
 	req, out := c.ImportSnapshotRequest(input)
@@ -17176,7 +17176,7 @@ const opImportVolume = "ImportVolume"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolume
 func (c *EC2) ImportVolumeRequest(input *ImportVolumeInput) (req *request.Request, output *ImportVolumeOutput) {
 	op := &request.Operation{
 		Name:       opImportVolume,
@@ -17207,7 +17207,7 @@ func (c *EC2) ImportVolumeRequest(input *ImportVolumeInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ImportVolume for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolume
 func (c *EC2) ImportVolume(input *ImportVolumeInput) (*ImportVolumeOutput, error) {
 	req, out := c.ImportVolumeRequest(input)
 	return out, req.Send()
@@ -17220,7 +17220,7 @@ func (c *EC2) ImportVolume(input *ImportVolumeInput) (*ImportVolumeOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ImportVolumeWithContext(ctx aws.Context, input *ImportVolumeInput, opts ...request.Option) (*ImportVolumeOutput, error) {
 	req, out := c.ImportVolumeRequest(input)
@@ -17254,7 +17254,7 @@ const opModifyFpgaImageAttribute = "ModifyFpgaImageAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttribute
 func (c *EC2) ModifyFpgaImageAttributeRequest(input *ModifyFpgaImageAttributeInput) (req *request.Request, output *ModifyFpgaImageAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifyFpgaImageAttribute,
@@ -17281,7 +17281,7 @@ func (c *EC2) ModifyFpgaImageAttributeRequest(input *ModifyFpgaImageAttributeInp
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyFpgaImageAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttribute
 func (c *EC2) ModifyFpgaImageAttribute(input *ModifyFpgaImageAttributeInput) (*ModifyFpgaImageAttributeOutput, error) {
 	req, out := c.ModifyFpgaImageAttributeRequest(input)
 	return out, req.Send()
@@ -17294,7 +17294,7 @@ func (c *EC2) ModifyFpgaImageAttribute(input *ModifyFpgaImageAttributeInput) (*M
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyFpgaImageAttributeWithContext(ctx aws.Context, input *ModifyFpgaImageAttributeInput, opts ...request.Option) (*ModifyFpgaImageAttributeOutput, error) {
 	req, out := c.ModifyFpgaImageAttributeRequest(input)
@@ -17328,7 +17328,7 @@ const opModifyHosts = "ModifyHosts"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHosts
 func (c *EC2) ModifyHostsRequest(input *ModifyHostsInput) (req *request.Request, output *ModifyHostsOutput) {
 	op := &request.Operation{
 		Name:       opModifyHosts,
@@ -17361,7 +17361,7 @@ func (c *EC2) ModifyHostsRequest(input *ModifyHostsInput) (req *request.Request,
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyHosts for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHosts
 func (c *EC2) ModifyHosts(input *ModifyHostsInput) (*ModifyHostsOutput, error) {
 	req, out := c.ModifyHostsRequest(input)
 	return out, req.Send()
@@ -17374,7 +17374,7 @@ func (c *EC2) ModifyHosts(input *ModifyHostsInput) (*ModifyHostsOutput, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyHostsWithContext(ctx aws.Context, input *ModifyHostsInput, opts ...request.Option) (*ModifyHostsOutput, error) {
 	req, out := c.ModifyHostsRequest(input)
@@ -17408,7 +17408,7 @@ const opModifyIdFormat = "ModifyIdFormat"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormat
 func (c *EC2) ModifyIdFormatRequest(input *ModifyIdFormatInput) (req *request.Request, output *ModifyIdFormatOutput) {
 	op := &request.Operation{
 		Name:       opModifyIdFormat,
@@ -17451,7 +17451,7 @@ func (c *EC2) ModifyIdFormatRequest(input *ModifyIdFormatInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyIdFormat for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormat
 func (c *EC2) ModifyIdFormat(input *ModifyIdFormatInput) (*ModifyIdFormatOutput, error) {
 	req, out := c.ModifyIdFormatRequest(input)
 	return out, req.Send()
@@ -17464,7 +17464,7 @@ func (c *EC2) ModifyIdFormat(input *ModifyIdFormatInput) (*ModifyIdFormatOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyIdFormatWithContext(ctx aws.Context, input *ModifyIdFormatInput, opts ...request.Option) (*ModifyIdFormatOutput, error) {
 	req, out := c.ModifyIdFormatRequest(input)
@@ -17498,7 +17498,7 @@ const opModifyIdentityIdFormat = "ModifyIdentityIdFormat"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormat
 func (c *EC2) ModifyIdentityIdFormatRequest(input *ModifyIdentityIdFormatInput) (req *request.Request, output *ModifyIdentityIdFormatOutput) {
 	op := &request.Operation{
 		Name:       opModifyIdentityIdFormat,
@@ -17541,7 +17541,7 @@ func (c *EC2) ModifyIdentityIdFormatRequest(input *ModifyIdentityIdFormatInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyIdentityIdFormat for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormat
 func (c *EC2) ModifyIdentityIdFormat(input *ModifyIdentityIdFormatInput) (*ModifyIdentityIdFormatOutput, error) {
 	req, out := c.ModifyIdentityIdFormatRequest(input)
 	return out, req.Send()
@@ -17554,7 +17554,7 @@ func (c *EC2) ModifyIdentityIdFormat(input *ModifyIdentityIdFormatInput) (*Modif
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyIdentityIdFormatWithContext(ctx aws.Context, input *ModifyIdentityIdFormatInput, opts ...request.Option) (*ModifyIdentityIdFormatOutput, error) {
 	req, out := c.ModifyIdentityIdFormatRequest(input)
@@ -17588,7 +17588,7 @@ const opModifyImageAttribute = "ModifyImageAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttribute
 func (c *EC2) ModifyImageAttributeRequest(input *ModifyImageAttributeInput) (req *request.Request, output *ModifyImageAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifyImageAttribute,
@@ -17626,7 +17626,7 @@ func (c *EC2) ModifyImageAttributeRequest(input *ModifyImageAttributeInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyImageAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttribute
 func (c *EC2) ModifyImageAttribute(input *ModifyImageAttributeInput) (*ModifyImageAttributeOutput, error) {
 	req, out := c.ModifyImageAttributeRequest(input)
 	return out, req.Send()
@@ -17639,7 +17639,7 @@ func (c *EC2) ModifyImageAttribute(input *ModifyImageAttributeInput) (*ModifyIma
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyImageAttributeWithContext(ctx aws.Context, input *ModifyImageAttributeInput, opts ...request.Option) (*ModifyImageAttributeOutput, error) {
 	req, out := c.ModifyImageAttributeRequest(input)
@@ -17673,7 +17673,7 @@ const opModifyInstanceAttribute = "ModifyInstanceAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttribute
 func (c *EC2) ModifyInstanceAttributeRequest(input *ModifyInstanceAttributeInput) (req *request.Request, output *ModifyInstanceAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifyInstanceAttribute,
@@ -17707,7 +17707,7 @@ func (c *EC2) ModifyInstanceAttributeRequest(input *ModifyInstanceAttributeInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyInstanceAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttribute
 func (c *EC2) ModifyInstanceAttribute(input *ModifyInstanceAttributeInput) (*ModifyInstanceAttributeOutput, error) {
 	req, out := c.ModifyInstanceAttributeRequest(input)
 	return out, req.Send()
@@ -17720,7 +17720,7 @@ func (c *EC2) ModifyInstanceAttribute(input *ModifyInstanceAttributeInput) (*Mod
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyInstanceAttributeWithContext(ctx aws.Context, input *ModifyInstanceAttributeInput, opts ...request.Option) (*ModifyInstanceAttributeOutput, error) {
 	req, out := c.ModifyInstanceAttributeRequest(input)
@@ -17754,7 +17754,7 @@ const opModifyInstanceCreditSpecification = "ModifyInstanceCreditSpecification"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecification
 func (c *EC2) ModifyInstanceCreditSpecificationRequest(input *ModifyInstanceCreditSpecificationInput) (req *request.Request, output *ModifyInstanceCreditSpecificationOutput) {
 	op := &request.Operation{
 		Name:       opModifyInstanceCreditSpecification,
@@ -17785,7 +17785,7 @@ func (c *EC2) ModifyInstanceCreditSpecificationRequest(input *ModifyInstanceCred
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyInstanceCreditSpecification for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecification
 func (c *EC2) ModifyInstanceCreditSpecification(input *ModifyInstanceCreditSpecificationInput) (*ModifyInstanceCreditSpecificationOutput, error) {
 	req, out := c.ModifyInstanceCreditSpecificationRequest(input)
 	return out, req.Send()
@@ -17798,7 +17798,7 @@ func (c *EC2) ModifyInstanceCreditSpecification(input *ModifyInstanceCreditSpeci
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyInstanceCreditSpecificationWithContext(ctx aws.Context, input *ModifyInstanceCreditSpecificationInput, opts ...request.Option) (*ModifyInstanceCreditSpecificationOutput, error) {
 	req, out := c.ModifyInstanceCreditSpecificationRequest(input)
@@ -17832,7 +17832,7 @@ const opModifyInstancePlacement = "ModifyInstancePlacement"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacement
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacement
 func (c *EC2) ModifyInstancePlacementRequest(input *ModifyInstancePlacementInput) (req *request.Request, output *ModifyInstancePlacementOutput) {
 	op := &request.Operation{
 		Name:       opModifyInstancePlacement,
@@ -17877,7 +17877,7 @@ func (c *EC2) ModifyInstancePlacementRequest(input *ModifyInstancePlacementInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyInstancePlacement for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacement
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacement
 func (c *EC2) ModifyInstancePlacement(input *ModifyInstancePlacementInput) (*ModifyInstancePlacementOutput, error) {
 	req, out := c.ModifyInstancePlacementRequest(input)
 	return out, req.Send()
@@ -17890,7 +17890,7 @@ func (c *EC2) ModifyInstancePlacement(input *ModifyInstancePlacementInput) (*Mod
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyInstancePlacementWithContext(ctx aws.Context, input *ModifyInstancePlacementInput, opts ...request.Option) (*ModifyInstancePlacementOutput, error) {
 	req, out := c.ModifyInstancePlacementRequest(input)
@@ -17924,7 +17924,7 @@ const opModifyLaunchTemplate = "ModifyLaunchTemplate"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplate
 func (c *EC2) ModifyLaunchTemplateRequest(input *ModifyLaunchTemplateInput) (req *request.Request, output *ModifyLaunchTemplateOutput) {
 	op := &request.Operation{
 		Name:       opModifyLaunchTemplate,
@@ -17953,7 +17953,7 @@ func (c *EC2) ModifyLaunchTemplateRequest(input *ModifyLaunchTemplateInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyLaunchTemplate for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplate
 func (c *EC2) ModifyLaunchTemplate(input *ModifyLaunchTemplateInput) (*ModifyLaunchTemplateOutput, error) {
 	req, out := c.ModifyLaunchTemplateRequest(input)
 	return out, req.Send()
@@ -17966,7 +17966,7 @@ func (c *EC2) ModifyLaunchTemplate(input *ModifyLaunchTemplateInput) (*ModifyLau
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyLaunchTemplateWithContext(ctx aws.Context, input *ModifyLaunchTemplateInput, opts ...request.Option) (*ModifyLaunchTemplateOutput, error) {
 	req, out := c.ModifyLaunchTemplateRequest(input)
@@ -18000,7 +18000,7 @@ const opModifyNetworkInterfaceAttribute = "ModifyNetworkInterfaceAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttribute
 func (c *EC2) ModifyNetworkInterfaceAttributeRequest(input *ModifyNetworkInterfaceAttributeInput) (req *request.Request, output *ModifyNetworkInterfaceAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifyNetworkInterfaceAttribute,
@@ -18030,7 +18030,7 @@ func (c *EC2) ModifyNetworkInterfaceAttributeRequest(input *ModifyNetworkInterfa
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyNetworkInterfaceAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttribute
 func (c *EC2) ModifyNetworkInterfaceAttribute(input *ModifyNetworkInterfaceAttributeInput) (*ModifyNetworkInterfaceAttributeOutput, error) {
 	req, out := c.ModifyNetworkInterfaceAttributeRequest(input)
 	return out, req.Send()
@@ -18043,7 +18043,7 @@ func (c *EC2) ModifyNetworkInterfaceAttribute(input *ModifyNetworkInterfaceAttri
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyNetworkInterfaceAttributeWithContext(ctx aws.Context, input *ModifyNetworkInterfaceAttributeInput, opts ...request.Option) (*ModifyNetworkInterfaceAttributeOutput, error) {
 	req, out := c.ModifyNetworkInterfaceAttributeRequest(input)
@@ -18077,7 +18077,7 @@ const opModifyReservedInstances = "ModifyReservedInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstances
 func (c *EC2) ModifyReservedInstancesRequest(input *ModifyReservedInstancesInput) (req *request.Request, output *ModifyReservedInstancesOutput) {
 	op := &request.Operation{
 		Name:       opModifyReservedInstances,
@@ -18110,7 +18110,7 @@ func (c *EC2) ModifyReservedInstancesRequest(input *ModifyReservedInstancesInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyReservedInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstances
 func (c *EC2) ModifyReservedInstances(input *ModifyReservedInstancesInput) (*ModifyReservedInstancesOutput, error) {
 	req, out := c.ModifyReservedInstancesRequest(input)
 	return out, req.Send()
@@ -18123,7 +18123,7 @@ func (c *EC2) ModifyReservedInstances(input *ModifyReservedInstancesInput) (*Mod
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyReservedInstancesWithContext(ctx aws.Context, input *ModifyReservedInstancesInput, opts ...request.Option) (*ModifyReservedInstancesOutput, error) {
 	req, out := c.ModifyReservedInstancesRequest(input)
@@ -18157,7 +18157,7 @@ const opModifySnapshotAttribute = "ModifySnapshotAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttribute
 func (c *EC2) ModifySnapshotAttributeRequest(input *ModifySnapshotAttributeInput) (req *request.Request, output *ModifySnapshotAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifySnapshotAttribute,
@@ -18198,7 +18198,7 @@ func (c *EC2) ModifySnapshotAttributeRequest(input *ModifySnapshotAttributeInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifySnapshotAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttribute
 func (c *EC2) ModifySnapshotAttribute(input *ModifySnapshotAttributeInput) (*ModifySnapshotAttributeOutput, error) {
 	req, out := c.ModifySnapshotAttributeRequest(input)
 	return out, req.Send()
@@ -18211,7 +18211,7 @@ func (c *EC2) ModifySnapshotAttribute(input *ModifySnapshotAttributeInput) (*Mod
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifySnapshotAttributeWithContext(ctx aws.Context, input *ModifySnapshotAttributeInput, opts ...request.Option) (*ModifySnapshotAttributeOutput, error) {
 	req, out := c.ModifySnapshotAttributeRequest(input)
@@ -18245,7 +18245,7 @@ const opModifySpotFleetRequest = "ModifySpotFleetRequest"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequest
 func (c *EC2) ModifySpotFleetRequestRequest(input *ModifySpotFleetRequestInput) (req *request.Request, output *ModifySpotFleetRequestOutput) {
 	op := &request.Operation{
 		Name:       opModifySpotFleetRequest,
@@ -18294,7 +18294,7 @@ func (c *EC2) ModifySpotFleetRequestRequest(input *ModifySpotFleetRequestInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifySpotFleetRequest for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequest
 func (c *EC2) ModifySpotFleetRequest(input *ModifySpotFleetRequestInput) (*ModifySpotFleetRequestOutput, error) {
 	req, out := c.ModifySpotFleetRequestRequest(input)
 	return out, req.Send()
@@ -18307,7 +18307,7 @@ func (c *EC2) ModifySpotFleetRequest(input *ModifySpotFleetRequestInput) (*Modif
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifySpotFleetRequestWithContext(ctx aws.Context, input *ModifySpotFleetRequestInput, opts ...request.Option) (*ModifySpotFleetRequestOutput, error) {
 	req, out := c.ModifySpotFleetRequestRequest(input)
@@ -18341,7 +18341,7 @@ const opModifySubnetAttribute = "ModifySubnetAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttribute
 func (c *EC2) ModifySubnetAttributeRequest(input *ModifySubnetAttributeInput) (req *request.Request, output *ModifySubnetAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifySubnetAttribute,
@@ -18370,7 +18370,7 @@ func (c *EC2) ModifySubnetAttributeRequest(input *ModifySubnetAttributeInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifySubnetAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttribute
 func (c *EC2) ModifySubnetAttribute(input *ModifySubnetAttributeInput) (*ModifySubnetAttributeOutput, error) {
 	req, out := c.ModifySubnetAttributeRequest(input)
 	return out, req.Send()
@@ -18383,7 +18383,7 @@ func (c *EC2) ModifySubnetAttribute(input *ModifySubnetAttributeInput) (*ModifyS
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifySubnetAttributeWithContext(ctx aws.Context, input *ModifySubnetAttributeInput, opts ...request.Option) (*ModifySubnetAttributeOutput, error) {
 	req, out := c.ModifySubnetAttributeRequest(input)
@@ -18417,7 +18417,7 @@ const opModifyVolume = "ModifyVolume"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolume
 func (c *EC2) ModifyVolumeRequest(input *ModifyVolumeInput) (req *request.Request, output *ModifyVolumeOutput) {
 	op := &request.Operation{
 		Name:       opModifyVolume,
@@ -18476,7 +18476,7 @@ func (c *EC2) ModifyVolumeRequest(input *ModifyVolumeInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVolume for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolume
 func (c *EC2) ModifyVolume(input *ModifyVolumeInput) (*ModifyVolumeOutput, error) {
 	req, out := c.ModifyVolumeRequest(input)
 	return out, req.Send()
@@ -18489,7 +18489,7 @@ func (c *EC2) ModifyVolume(input *ModifyVolumeInput) (*ModifyVolumeOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVolumeWithContext(ctx aws.Context, input *ModifyVolumeInput, opts ...request.Option) (*ModifyVolumeOutput, error) {
 	req, out := c.ModifyVolumeRequest(input)
@@ -18523,7 +18523,7 @@ const opModifyVolumeAttribute = "ModifyVolumeAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttribute
 func (c *EC2) ModifyVolumeAttributeRequest(input *ModifyVolumeAttributeInput) (req *request.Request, output *ModifyVolumeAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifyVolumeAttribute,
@@ -18561,7 +18561,7 @@ func (c *EC2) ModifyVolumeAttributeRequest(input *ModifyVolumeAttributeInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVolumeAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttribute
 func (c *EC2) ModifyVolumeAttribute(input *ModifyVolumeAttributeInput) (*ModifyVolumeAttributeOutput, error) {
 	req, out := c.ModifyVolumeAttributeRequest(input)
 	return out, req.Send()
@@ -18574,7 +18574,7 @@ func (c *EC2) ModifyVolumeAttribute(input *ModifyVolumeAttributeInput) (*ModifyV
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVolumeAttributeWithContext(ctx aws.Context, input *ModifyVolumeAttributeInput, opts ...request.Option) (*ModifyVolumeAttributeOutput, error) {
 	req, out := c.ModifyVolumeAttributeRequest(input)
@@ -18608,7 +18608,7 @@ const opModifyVpcAttribute = "ModifyVpcAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttribute
 func (c *EC2) ModifyVpcAttributeRequest(input *ModifyVpcAttributeInput) (req *request.Request, output *ModifyVpcAttributeOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcAttribute,
@@ -18637,7 +18637,7 @@ func (c *EC2) ModifyVpcAttributeRequest(input *ModifyVpcAttributeInput) (req *re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttribute
 func (c *EC2) ModifyVpcAttribute(input *ModifyVpcAttributeInput) (*ModifyVpcAttributeOutput, error) {
 	req, out := c.ModifyVpcAttributeRequest(input)
 	return out, req.Send()
@@ -18650,7 +18650,7 @@ func (c *EC2) ModifyVpcAttribute(input *ModifyVpcAttributeInput) (*ModifyVpcAttr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcAttributeWithContext(ctx aws.Context, input *ModifyVpcAttributeInput, opts ...request.Option) (*ModifyVpcAttributeOutput, error) {
 	req, out := c.ModifyVpcAttributeRequest(input)
@@ -18684,7 +18684,7 @@ const opModifyVpcEndpoint = "ModifyVpcEndpoint"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpoint
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpoint
 func (c *EC2) ModifyVpcEndpointRequest(input *ModifyVpcEndpointInput) (req *request.Request, output *ModifyVpcEndpointOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcEndpoint,
@@ -18714,7 +18714,7 @@ func (c *EC2) ModifyVpcEndpointRequest(input *ModifyVpcEndpointInput) (req *requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcEndpoint for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpoint
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpoint
 func (c *EC2) ModifyVpcEndpoint(input *ModifyVpcEndpointInput) (*ModifyVpcEndpointOutput, error) {
 	req, out := c.ModifyVpcEndpointRequest(input)
 	return out, req.Send()
@@ -18727,7 +18727,7 @@ func (c *EC2) ModifyVpcEndpoint(input *ModifyVpcEndpointInput) (*ModifyVpcEndpoi
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcEndpointWithContext(ctx aws.Context, input *ModifyVpcEndpointInput, opts ...request.Option) (*ModifyVpcEndpointOutput, error) {
 	req, out := c.ModifyVpcEndpointRequest(input)
@@ -18761,7 +18761,7 @@ const opModifyVpcEndpointConnectionNotification = "ModifyVpcEndpointConnectionNo
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotification
 func (c *EC2) ModifyVpcEndpointConnectionNotificationRequest(input *ModifyVpcEndpointConnectionNotificationInput) (req *request.Request, output *ModifyVpcEndpointConnectionNotificationOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcEndpointConnectionNotification,
@@ -18790,7 +18790,7 @@ func (c *EC2) ModifyVpcEndpointConnectionNotificationRequest(input *ModifyVpcEnd
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcEndpointConnectionNotification for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotification
 func (c *EC2) ModifyVpcEndpointConnectionNotification(input *ModifyVpcEndpointConnectionNotificationInput) (*ModifyVpcEndpointConnectionNotificationOutput, error) {
 	req, out := c.ModifyVpcEndpointConnectionNotificationRequest(input)
 	return out, req.Send()
@@ -18803,7 +18803,7 @@ func (c *EC2) ModifyVpcEndpointConnectionNotification(input *ModifyVpcEndpointCo
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcEndpointConnectionNotificationWithContext(ctx aws.Context, input *ModifyVpcEndpointConnectionNotificationInput, opts ...request.Option) (*ModifyVpcEndpointConnectionNotificationOutput, error) {
 	req, out := c.ModifyVpcEndpointConnectionNotificationRequest(input)
@@ -18837,7 +18837,7 @@ const opModifyVpcEndpointServiceConfiguration = "ModifyVpcEndpointServiceConfigu
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfiguration
 func (c *EC2) ModifyVpcEndpointServiceConfigurationRequest(input *ModifyVpcEndpointServiceConfigurationInput) (req *request.Request, output *ModifyVpcEndpointServiceConfigurationOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcEndpointServiceConfiguration,
@@ -18867,7 +18867,7 @@ func (c *EC2) ModifyVpcEndpointServiceConfigurationRequest(input *ModifyVpcEndpo
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcEndpointServiceConfiguration for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfiguration
 func (c *EC2) ModifyVpcEndpointServiceConfiguration(input *ModifyVpcEndpointServiceConfigurationInput) (*ModifyVpcEndpointServiceConfigurationOutput, error) {
 	req, out := c.ModifyVpcEndpointServiceConfigurationRequest(input)
 	return out, req.Send()
@@ -18880,7 +18880,7 @@ func (c *EC2) ModifyVpcEndpointServiceConfiguration(input *ModifyVpcEndpointServ
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcEndpointServiceConfigurationWithContext(ctx aws.Context, input *ModifyVpcEndpointServiceConfigurationInput, opts ...request.Option) (*ModifyVpcEndpointServiceConfigurationOutput, error) {
 	req, out := c.ModifyVpcEndpointServiceConfigurationRequest(input)
@@ -18914,7 +18914,7 @@ const opModifyVpcEndpointServicePermissions = "ModifyVpcEndpointServicePermissio
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissions
 func (c *EC2) ModifyVpcEndpointServicePermissionsRequest(input *ModifyVpcEndpointServicePermissionsInput) (req *request.Request, output *ModifyVpcEndpointServicePermissionsOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcEndpointServicePermissions,
@@ -18943,7 +18943,7 @@ func (c *EC2) ModifyVpcEndpointServicePermissionsRequest(input *ModifyVpcEndpoin
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcEndpointServicePermissions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissions
 func (c *EC2) ModifyVpcEndpointServicePermissions(input *ModifyVpcEndpointServicePermissionsInput) (*ModifyVpcEndpointServicePermissionsOutput, error) {
 	req, out := c.ModifyVpcEndpointServicePermissionsRequest(input)
 	return out, req.Send()
@@ -18956,7 +18956,7 @@ func (c *EC2) ModifyVpcEndpointServicePermissions(input *ModifyVpcEndpointServic
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcEndpointServicePermissionsWithContext(ctx aws.Context, input *ModifyVpcEndpointServicePermissionsInput, opts ...request.Option) (*ModifyVpcEndpointServicePermissionsOutput, error) {
 	req, out := c.ModifyVpcEndpointServicePermissionsRequest(input)
@@ -18990,7 +18990,7 @@ const opModifyVpcPeeringConnectionOptions = "ModifyVpcPeeringConnectionOptions"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptions
 func (c *EC2) ModifyVpcPeeringConnectionOptionsRequest(input *ModifyVpcPeeringConnectionOptionsInput) (req *request.Request, output *ModifyVpcPeeringConnectionOptionsOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcPeeringConnectionOptions,
@@ -19036,7 +19036,7 @@ func (c *EC2) ModifyVpcPeeringConnectionOptionsRequest(input *ModifyVpcPeeringCo
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcPeeringConnectionOptions for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptions
 func (c *EC2) ModifyVpcPeeringConnectionOptions(input *ModifyVpcPeeringConnectionOptionsInput) (*ModifyVpcPeeringConnectionOptionsOutput, error) {
 	req, out := c.ModifyVpcPeeringConnectionOptionsRequest(input)
 	return out, req.Send()
@@ -19049,7 +19049,7 @@ func (c *EC2) ModifyVpcPeeringConnectionOptions(input *ModifyVpcPeeringConnectio
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcPeeringConnectionOptionsWithContext(ctx aws.Context, input *ModifyVpcPeeringConnectionOptionsInput, opts ...request.Option) (*ModifyVpcPeeringConnectionOptionsOutput, error) {
 	req, out := c.ModifyVpcPeeringConnectionOptionsRequest(input)
@@ -19083,7 +19083,7 @@ const opModifyVpcTenancy = "ModifyVpcTenancy"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancy
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancy
 func (c *EC2) ModifyVpcTenancyRequest(input *ModifyVpcTenancyInput) (req *request.Request, output *ModifyVpcTenancyOutput) {
 	op := &request.Operation{
 		Name:       opModifyVpcTenancy,
@@ -19119,7 +19119,7 @@ func (c *EC2) ModifyVpcTenancyRequest(input *ModifyVpcTenancyInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ModifyVpcTenancy for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancy
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancy
 func (c *EC2) ModifyVpcTenancy(input *ModifyVpcTenancyInput) (*ModifyVpcTenancyOutput, error) {
 	req, out := c.ModifyVpcTenancyRequest(input)
 	return out, req.Send()
@@ -19132,7 +19132,7 @@ func (c *EC2) ModifyVpcTenancy(input *ModifyVpcTenancyInput) (*ModifyVpcTenancyO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ModifyVpcTenancyWithContext(ctx aws.Context, input *ModifyVpcTenancyInput, opts ...request.Option) (*ModifyVpcTenancyOutput, error) {
 	req, out := c.ModifyVpcTenancyRequest(input)
@@ -19166,7 +19166,7 @@ const opMonitorInstances = "MonitorInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstances
 func (c *EC2) MonitorInstancesRequest(input *MonitorInstancesInput) (req *request.Request, output *MonitorInstancesOutput) {
 	op := &request.Operation{
 		Name:       opMonitorInstances,
@@ -19198,7 +19198,7 @@ func (c *EC2) MonitorInstancesRequest(input *MonitorInstancesInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation MonitorInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstances
 func (c *EC2) MonitorInstances(input *MonitorInstancesInput) (*MonitorInstancesOutput, error) {
 	req, out := c.MonitorInstancesRequest(input)
 	return out, req.Send()
@@ -19211,7 +19211,7 @@ func (c *EC2) MonitorInstances(input *MonitorInstancesInput) (*MonitorInstancesO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) MonitorInstancesWithContext(ctx aws.Context, input *MonitorInstancesInput, opts ...request.Option) (*MonitorInstancesOutput, error) {
 	req, out := c.MonitorInstancesRequest(input)
@@ -19245,7 +19245,7 @@ const opMoveAddressToVpc = "MoveAddressToVpc"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpc
 func (c *EC2) MoveAddressToVpcRequest(input *MoveAddressToVpcInput) (req *request.Request, output *MoveAddressToVpcOutput) {
 	op := &request.Operation{
 		Name:       opMoveAddressToVpc,
@@ -19278,7 +19278,7 @@ func (c *EC2) MoveAddressToVpcRequest(input *MoveAddressToVpcInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation MoveAddressToVpc for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpc
 func (c *EC2) MoveAddressToVpc(input *MoveAddressToVpcInput) (*MoveAddressToVpcOutput, error) {
 	req, out := c.MoveAddressToVpcRequest(input)
 	return out, req.Send()
@@ -19291,7 +19291,7 @@ func (c *EC2) MoveAddressToVpc(input *MoveAddressToVpcInput) (*MoveAddressToVpcO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) MoveAddressToVpcWithContext(ctx aws.Context, input *MoveAddressToVpcInput, opts ...request.Option) (*MoveAddressToVpcOutput, error) {
 	req, out := c.MoveAddressToVpcRequest(input)
@@ -19325,7 +19325,7 @@ const opPurchaseHostReservation = "PurchaseHostReservation"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservation
 func (c *EC2) PurchaseHostReservationRequest(input *PurchaseHostReservationInput) (req *request.Request, output *PurchaseHostReservationOutput) {
 	op := &request.Operation{
 		Name:       opPurchaseHostReservation,
@@ -19355,7 +19355,7 @@ func (c *EC2) PurchaseHostReservationRequest(input *PurchaseHostReservationInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation PurchaseHostReservation for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservation
 func (c *EC2) PurchaseHostReservation(input *PurchaseHostReservationInput) (*PurchaseHostReservationOutput, error) {
 	req, out := c.PurchaseHostReservationRequest(input)
 	return out, req.Send()
@@ -19368,7 +19368,7 @@ func (c *EC2) PurchaseHostReservation(input *PurchaseHostReservationInput) (*Pur
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) PurchaseHostReservationWithContext(ctx aws.Context, input *PurchaseHostReservationInput, opts ...request.Option) (*PurchaseHostReservationOutput, error) {
 	req, out := c.PurchaseHostReservationRequest(input)
@@ -19402,7 +19402,7 @@ const opPurchaseReservedInstancesOffering = "PurchaseReservedInstancesOffering"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOffering
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOffering
 func (c *EC2) PurchaseReservedInstancesOfferingRequest(input *PurchaseReservedInstancesOfferingInput) (req *request.Request, output *PurchaseReservedInstancesOfferingOutput) {
 	op := &request.Operation{
 		Name:       opPurchaseReservedInstancesOffering,
@@ -19438,7 +19438,7 @@ func (c *EC2) PurchaseReservedInstancesOfferingRequest(input *PurchaseReservedIn
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation PurchaseReservedInstancesOffering for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOffering
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOffering
 func (c *EC2) PurchaseReservedInstancesOffering(input *PurchaseReservedInstancesOfferingInput) (*PurchaseReservedInstancesOfferingOutput, error) {
 	req, out := c.PurchaseReservedInstancesOfferingRequest(input)
 	return out, req.Send()
@@ -19451,7 +19451,7 @@ func (c *EC2) PurchaseReservedInstancesOffering(input *PurchaseReservedInstances
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) PurchaseReservedInstancesOfferingWithContext(ctx aws.Context, input *PurchaseReservedInstancesOfferingInput, opts ...request.Option) (*PurchaseReservedInstancesOfferingOutput, error) {
 	req, out := c.PurchaseReservedInstancesOfferingRequest(input)
@@ -19485,7 +19485,7 @@ const opPurchaseScheduledInstances = "PurchaseScheduledInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstances
 func (c *EC2) PurchaseScheduledInstancesRequest(input *PurchaseScheduledInstancesInput) (req *request.Request, output *PurchaseScheduledInstancesOutput) {
 	op := &request.Operation{
 		Name:       opPurchaseScheduledInstances,
@@ -19521,7 +19521,7 @@ func (c *EC2) PurchaseScheduledInstancesRequest(input *PurchaseScheduledInstance
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation PurchaseScheduledInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstances
 func (c *EC2) PurchaseScheduledInstances(input *PurchaseScheduledInstancesInput) (*PurchaseScheduledInstancesOutput, error) {
 	req, out := c.PurchaseScheduledInstancesRequest(input)
 	return out, req.Send()
@@ -19534,7 +19534,7 @@ func (c *EC2) PurchaseScheduledInstances(input *PurchaseScheduledInstancesInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) PurchaseScheduledInstancesWithContext(ctx aws.Context, input *PurchaseScheduledInstancesInput, opts ...request.Option) (*PurchaseScheduledInstancesOutput, error) {
 	req, out := c.PurchaseScheduledInstancesRequest(input)
@@ -19568,7 +19568,7 @@ const opRebootInstances = "RebootInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstances
 func (c *EC2) RebootInstancesRequest(input *RebootInstancesInput) (req *request.Request, output *RebootInstancesOutput) {
 	op := &request.Operation{
 		Name:       opRebootInstances,
@@ -19607,7 +19607,7 @@ func (c *EC2) RebootInstancesRequest(input *RebootInstancesInput) (req *request.
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RebootInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstances
 func (c *EC2) RebootInstances(input *RebootInstancesInput) (*RebootInstancesOutput, error) {
 	req, out := c.RebootInstancesRequest(input)
 	return out, req.Send()
@@ -19620,7 +19620,7 @@ func (c *EC2) RebootInstances(input *RebootInstancesInput) (*RebootInstancesOutp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RebootInstancesWithContext(ctx aws.Context, input *RebootInstancesInput, opts ...request.Option) (*RebootInstancesOutput, error) {
 	req, out := c.RebootInstancesRequest(input)
@@ -19654,7 +19654,7 @@ const opRegisterImage = "RegisterImage"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImage
 func (c *EC2) RegisterImageRequest(input *RegisterImageInput) (req *request.Request, output *RegisterImageOutput) {
 	op := &request.Operation{
 		Name:       opRegisterImage,
@@ -19709,7 +19709,7 @@ func (c *EC2) RegisterImageRequest(input *RegisterImageInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RegisterImage for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImage
 func (c *EC2) RegisterImage(input *RegisterImageInput) (*RegisterImageOutput, error) {
 	req, out := c.RegisterImageRequest(input)
 	return out, req.Send()
@@ -19722,7 +19722,7 @@ func (c *EC2) RegisterImage(input *RegisterImageInput) (*RegisterImageOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RegisterImageWithContext(ctx aws.Context, input *RegisterImageInput, opts ...request.Option) (*RegisterImageOutput, error) {
 	req, out := c.RegisterImageRequest(input)
@@ -19756,7 +19756,7 @@ const opRejectVpcEndpointConnections = "RejectVpcEndpointConnections"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnections
 func (c *EC2) RejectVpcEndpointConnectionsRequest(input *RejectVpcEndpointConnectionsInput) (req *request.Request, output *RejectVpcEndpointConnectionsOutput) {
 	op := &request.Operation{
 		Name:       opRejectVpcEndpointConnections,
@@ -19784,7 +19784,7 @@ func (c *EC2) RejectVpcEndpointConnectionsRequest(input *RejectVpcEndpointConnec
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RejectVpcEndpointConnections for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnections
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnections
 func (c *EC2) RejectVpcEndpointConnections(input *RejectVpcEndpointConnectionsInput) (*RejectVpcEndpointConnectionsOutput, error) {
 	req, out := c.RejectVpcEndpointConnectionsRequest(input)
 	return out, req.Send()
@@ -19797,7 +19797,7 @@ func (c *EC2) RejectVpcEndpointConnections(input *RejectVpcEndpointConnectionsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RejectVpcEndpointConnectionsWithContext(ctx aws.Context, input *RejectVpcEndpointConnectionsInput, opts ...request.Option) (*RejectVpcEndpointConnectionsOutput, error) {
 	req, out := c.RejectVpcEndpointConnectionsRequest(input)
@@ -19831,7 +19831,7 @@ const opRejectVpcPeeringConnection = "RejectVpcPeeringConnection"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnection
 func (c *EC2) RejectVpcPeeringConnectionRequest(input *RejectVpcPeeringConnectionInput) (req *request.Request, output *RejectVpcPeeringConnectionOutput) {
 	op := &request.Operation{
 		Name:       opRejectVpcPeeringConnection,
@@ -19862,7 +19862,7 @@ func (c *EC2) RejectVpcPeeringConnectionRequest(input *RejectVpcPeeringConnectio
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RejectVpcPeeringConnection for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnection
 func (c *EC2) RejectVpcPeeringConnection(input *RejectVpcPeeringConnectionInput) (*RejectVpcPeeringConnectionOutput, error) {
 	req, out := c.RejectVpcPeeringConnectionRequest(input)
 	return out, req.Send()
@@ -19875,7 +19875,7 @@ func (c *EC2) RejectVpcPeeringConnection(input *RejectVpcPeeringConnectionInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RejectVpcPeeringConnectionWithContext(ctx aws.Context, input *RejectVpcPeeringConnectionInput, opts ...request.Option) (*RejectVpcPeeringConnectionOutput, error) {
 	req, out := c.RejectVpcPeeringConnectionRequest(input)
@@ -19909,7 +19909,7 @@ const opReleaseAddress = "ReleaseAddress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddress
 func (c *EC2) ReleaseAddressRequest(input *ReleaseAddressInput) (req *request.Request, output *ReleaseAddressOutput) {
 	op := &request.Operation{
 		Name:       opReleaseAddress,
@@ -19955,7 +19955,7 @@ func (c *EC2) ReleaseAddressRequest(input *ReleaseAddressInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReleaseAddress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddress
 func (c *EC2) ReleaseAddress(input *ReleaseAddressInput) (*ReleaseAddressOutput, error) {
 	req, out := c.ReleaseAddressRequest(input)
 	return out, req.Send()
@@ -19968,7 +19968,7 @@ func (c *EC2) ReleaseAddress(input *ReleaseAddressInput) (*ReleaseAddressOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReleaseAddressWithContext(ctx aws.Context, input *ReleaseAddressInput, opts ...request.Option) (*ReleaseAddressOutput, error) {
 	req, out := c.ReleaseAddressRequest(input)
@@ -20002,7 +20002,7 @@ const opReleaseHosts = "ReleaseHosts"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHosts
 func (c *EC2) ReleaseHostsRequest(input *ReleaseHostsInput) (req *request.Request, output *ReleaseHostsOutput) {
 	op := &request.Operation{
 		Name:       opReleaseHosts,
@@ -20040,7 +20040,7 @@ func (c *EC2) ReleaseHostsRequest(input *ReleaseHostsInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReleaseHosts for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHosts
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHosts
 func (c *EC2) ReleaseHosts(input *ReleaseHostsInput) (*ReleaseHostsOutput, error) {
 	req, out := c.ReleaseHostsRequest(input)
 	return out, req.Send()
@@ -20053,7 +20053,7 @@ func (c *EC2) ReleaseHosts(input *ReleaseHostsInput) (*ReleaseHostsOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReleaseHostsWithContext(ctx aws.Context, input *ReleaseHostsInput, opts ...request.Option) (*ReleaseHostsOutput, error) {
 	req, out := c.ReleaseHostsRequest(input)
@@ -20087,7 +20087,7 @@ const opReplaceIamInstanceProfileAssociation = "ReplaceIamInstanceProfileAssocia
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociation
 func (c *EC2) ReplaceIamInstanceProfileAssociationRequest(input *ReplaceIamInstanceProfileAssociationInput) (req *request.Request, output *ReplaceIamInstanceProfileAssociationOutput) {
 	op := &request.Operation{
 		Name:       opReplaceIamInstanceProfileAssociation,
@@ -20119,7 +20119,7 @@ func (c *EC2) ReplaceIamInstanceProfileAssociationRequest(input *ReplaceIamInsta
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReplaceIamInstanceProfileAssociation for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociation
 func (c *EC2) ReplaceIamInstanceProfileAssociation(input *ReplaceIamInstanceProfileAssociationInput) (*ReplaceIamInstanceProfileAssociationOutput, error) {
 	req, out := c.ReplaceIamInstanceProfileAssociationRequest(input)
 	return out, req.Send()
@@ -20132,7 +20132,7 @@ func (c *EC2) ReplaceIamInstanceProfileAssociation(input *ReplaceIamInstanceProf
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReplaceIamInstanceProfileAssociationWithContext(ctx aws.Context, input *ReplaceIamInstanceProfileAssociationInput, opts ...request.Option) (*ReplaceIamInstanceProfileAssociationOutput, error) {
 	req, out := c.ReplaceIamInstanceProfileAssociationRequest(input)
@@ -20166,7 +20166,7 @@ const opReplaceNetworkAclAssociation = "ReplaceNetworkAclAssociation"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociation
 func (c *EC2) ReplaceNetworkAclAssociationRequest(input *ReplaceNetworkAclAssociationInput) (req *request.Request, output *ReplaceNetworkAclAssociationOutput) {
 	op := &request.Operation{
 		Name:       opReplaceNetworkAclAssociation,
@@ -20198,7 +20198,7 @@ func (c *EC2) ReplaceNetworkAclAssociationRequest(input *ReplaceNetworkAclAssoci
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReplaceNetworkAclAssociation for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociation
 func (c *EC2) ReplaceNetworkAclAssociation(input *ReplaceNetworkAclAssociationInput) (*ReplaceNetworkAclAssociationOutput, error) {
 	req, out := c.ReplaceNetworkAclAssociationRequest(input)
 	return out, req.Send()
@@ -20211,7 +20211,7 @@ func (c *EC2) ReplaceNetworkAclAssociation(input *ReplaceNetworkAclAssociationIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReplaceNetworkAclAssociationWithContext(ctx aws.Context, input *ReplaceNetworkAclAssociationInput, opts ...request.Option) (*ReplaceNetworkAclAssociationOutput, error) {
 	req, out := c.ReplaceNetworkAclAssociationRequest(input)
@@ -20245,7 +20245,7 @@ const opReplaceNetworkAclEntry = "ReplaceNetworkAclEntry"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntry
 func (c *EC2) ReplaceNetworkAclEntryRequest(input *ReplaceNetworkAclEntryInput) (req *request.Request, output *ReplaceNetworkAclEntryOutput) {
 	op := &request.Operation{
 		Name:       opReplaceNetworkAclEntry,
@@ -20276,7 +20276,7 @@ func (c *EC2) ReplaceNetworkAclEntryRequest(input *ReplaceNetworkAclEntryInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReplaceNetworkAclEntry for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntry
 func (c *EC2) ReplaceNetworkAclEntry(input *ReplaceNetworkAclEntryInput) (*ReplaceNetworkAclEntryOutput, error) {
 	req, out := c.ReplaceNetworkAclEntryRequest(input)
 	return out, req.Send()
@@ -20289,7 +20289,7 @@ func (c *EC2) ReplaceNetworkAclEntry(input *ReplaceNetworkAclEntryInput) (*Repla
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReplaceNetworkAclEntryWithContext(ctx aws.Context, input *ReplaceNetworkAclEntryInput, opts ...request.Option) (*ReplaceNetworkAclEntryOutput, error) {
 	req, out := c.ReplaceNetworkAclEntryRequest(input)
@@ -20323,7 +20323,7 @@ const opReplaceRoute = "ReplaceRoute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRoute
 func (c *EC2) ReplaceRouteRequest(input *ReplaceRouteInput) (req *request.Request, output *ReplaceRouteOutput) {
 	op := &request.Operation{
 		Name:       opReplaceRoute,
@@ -20358,7 +20358,7 @@ func (c *EC2) ReplaceRouteRequest(input *ReplaceRouteInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReplaceRoute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRoute
 func (c *EC2) ReplaceRoute(input *ReplaceRouteInput) (*ReplaceRouteOutput, error) {
 	req, out := c.ReplaceRouteRequest(input)
 	return out, req.Send()
@@ -20371,7 +20371,7 @@ func (c *EC2) ReplaceRoute(input *ReplaceRouteInput) (*ReplaceRouteOutput, error
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReplaceRouteWithContext(ctx aws.Context, input *ReplaceRouteInput, opts ...request.Option) (*ReplaceRouteOutput, error) {
 	req, out := c.ReplaceRouteRequest(input)
@@ -20405,7 +20405,7 @@ const opReplaceRouteTableAssociation = "ReplaceRouteTableAssociation"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociation
 func (c *EC2) ReplaceRouteTableAssociationRequest(input *ReplaceRouteTableAssociationInput) (req *request.Request, output *ReplaceRouteTableAssociationOutput) {
 	op := &request.Operation{
 		Name:       opReplaceRouteTableAssociation,
@@ -20440,7 +20440,7 @@ func (c *EC2) ReplaceRouteTableAssociationRequest(input *ReplaceRouteTableAssoci
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReplaceRouteTableAssociation for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociation
 func (c *EC2) ReplaceRouteTableAssociation(input *ReplaceRouteTableAssociationInput) (*ReplaceRouteTableAssociationOutput, error) {
 	req, out := c.ReplaceRouteTableAssociationRequest(input)
 	return out, req.Send()
@@ -20453,7 +20453,7 @@ func (c *EC2) ReplaceRouteTableAssociation(input *ReplaceRouteTableAssociationIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReplaceRouteTableAssociationWithContext(ctx aws.Context, input *ReplaceRouteTableAssociationInput, opts ...request.Option) (*ReplaceRouteTableAssociationOutput, error) {
 	req, out := c.ReplaceRouteTableAssociationRequest(input)
@@ -20487,7 +20487,7 @@ const opReportInstanceStatus = "ReportInstanceStatus"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatus
 func (c *EC2) ReportInstanceStatusRequest(input *ReportInstanceStatusInput) (req *request.Request, output *ReportInstanceStatusOutput) {
 	op := &request.Operation{
 		Name:       opReportInstanceStatus,
@@ -20522,7 +20522,7 @@ func (c *EC2) ReportInstanceStatusRequest(input *ReportInstanceStatusInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ReportInstanceStatus for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatus
 func (c *EC2) ReportInstanceStatus(input *ReportInstanceStatusInput) (*ReportInstanceStatusOutput, error) {
 	req, out := c.ReportInstanceStatusRequest(input)
 	return out, req.Send()
@@ -20535,7 +20535,7 @@ func (c *EC2) ReportInstanceStatus(input *ReportInstanceStatusInput) (*ReportIns
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ReportInstanceStatusWithContext(ctx aws.Context, input *ReportInstanceStatusInput, opts ...request.Option) (*ReportInstanceStatusOutput, error) {
 	req, out := c.ReportInstanceStatusRequest(input)
@@ -20569,7 +20569,7 @@ const opRequestSpotFleet = "RequestSpotFleet"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleet
 func (c *EC2) RequestSpotFleetRequest(input *RequestSpotFleetInput) (req *request.Request, output *RequestSpotFleetOutput) {
 	op := &request.Operation{
 		Name:       opRequestSpotFleet,
@@ -20615,7 +20615,7 @@ func (c *EC2) RequestSpotFleetRequest(input *RequestSpotFleetInput) (req *reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RequestSpotFleet for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleet
 func (c *EC2) RequestSpotFleet(input *RequestSpotFleetInput) (*RequestSpotFleetOutput, error) {
 	req, out := c.RequestSpotFleetRequest(input)
 	return out, req.Send()
@@ -20628,7 +20628,7 @@ func (c *EC2) RequestSpotFleet(input *RequestSpotFleetInput) (*RequestSpotFleetO
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RequestSpotFleetWithContext(ctx aws.Context, input *RequestSpotFleetInput, opts ...request.Option) (*RequestSpotFleetOutput, error) {
 	req, out := c.RequestSpotFleetRequest(input)
@@ -20662,7 +20662,7 @@ const opRequestSpotInstances = "RequestSpotInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstances
 func (c *EC2) RequestSpotInstancesRequest(input *RequestSpotInstancesInput) (req *request.Request, output *RequestSpotInstancesOutput) {
 	op := &request.Operation{
 		Name:       opRequestSpotInstances,
@@ -20692,7 +20692,7 @@ func (c *EC2) RequestSpotInstancesRequest(input *RequestSpotInstancesInput) (req
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RequestSpotInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstances
 func (c *EC2) RequestSpotInstances(input *RequestSpotInstancesInput) (*RequestSpotInstancesOutput, error) {
 	req, out := c.RequestSpotInstancesRequest(input)
 	return out, req.Send()
@@ -20705,7 +20705,7 @@ func (c *EC2) RequestSpotInstances(input *RequestSpotInstancesInput) (*RequestSp
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RequestSpotInstancesWithContext(ctx aws.Context, input *RequestSpotInstancesInput, opts ...request.Option) (*RequestSpotInstancesOutput, error) {
 	req, out := c.RequestSpotInstancesRequest(input)
@@ -20739,7 +20739,7 @@ const opResetFpgaImageAttribute = "ResetFpgaImageAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttribute
 func (c *EC2) ResetFpgaImageAttributeRequest(input *ResetFpgaImageAttributeInput) (req *request.Request, output *ResetFpgaImageAttributeOutput) {
 	op := &request.Operation{
 		Name:       opResetFpgaImageAttribute,
@@ -20767,7 +20767,7 @@ func (c *EC2) ResetFpgaImageAttributeRequest(input *ResetFpgaImageAttributeInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ResetFpgaImageAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttribute
 func (c *EC2) ResetFpgaImageAttribute(input *ResetFpgaImageAttributeInput) (*ResetFpgaImageAttributeOutput, error) {
 	req, out := c.ResetFpgaImageAttributeRequest(input)
 	return out, req.Send()
@@ -20780,7 +20780,7 @@ func (c *EC2) ResetFpgaImageAttribute(input *ResetFpgaImageAttributeInput) (*Res
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ResetFpgaImageAttributeWithContext(ctx aws.Context, input *ResetFpgaImageAttributeInput, opts ...request.Option) (*ResetFpgaImageAttributeOutput, error) {
 	req, out := c.ResetFpgaImageAttributeRequest(input)
@@ -20814,7 +20814,7 @@ const opResetImageAttribute = "ResetImageAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttribute
 func (c *EC2) ResetImageAttributeRequest(input *ResetImageAttributeInput) (req *request.Request, output *ResetImageAttributeOutput) {
 	op := &request.Operation{
 		Name:       opResetImageAttribute,
@@ -20845,7 +20845,7 @@ func (c *EC2) ResetImageAttributeRequest(input *ResetImageAttributeInput) (req *
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ResetImageAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttribute
 func (c *EC2) ResetImageAttribute(input *ResetImageAttributeInput) (*ResetImageAttributeOutput, error) {
 	req, out := c.ResetImageAttributeRequest(input)
 	return out, req.Send()
@@ -20858,7 +20858,7 @@ func (c *EC2) ResetImageAttribute(input *ResetImageAttributeInput) (*ResetImageA
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ResetImageAttributeWithContext(ctx aws.Context, input *ResetImageAttributeInput, opts ...request.Option) (*ResetImageAttributeOutput, error) {
 	req, out := c.ResetImageAttributeRequest(input)
@@ -20892,7 +20892,7 @@ const opResetInstanceAttribute = "ResetInstanceAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttribute
 func (c *EC2) ResetInstanceAttributeRequest(input *ResetInstanceAttributeInput) (req *request.Request, output *ResetInstanceAttributeOutput) {
 	op := &request.Operation{
 		Name:       opResetInstanceAttribute,
@@ -20929,7 +20929,7 @@ func (c *EC2) ResetInstanceAttributeRequest(input *ResetInstanceAttributeInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ResetInstanceAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttribute
 func (c *EC2) ResetInstanceAttribute(input *ResetInstanceAttributeInput) (*ResetInstanceAttributeOutput, error) {
 	req, out := c.ResetInstanceAttributeRequest(input)
 	return out, req.Send()
@@ -20942,7 +20942,7 @@ func (c *EC2) ResetInstanceAttribute(input *ResetInstanceAttributeInput) (*Reset
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ResetInstanceAttributeWithContext(ctx aws.Context, input *ResetInstanceAttributeInput, opts ...request.Option) (*ResetInstanceAttributeOutput, error) {
 	req, out := c.ResetInstanceAttributeRequest(input)
@@ -20976,7 +20976,7 @@ const opResetNetworkInterfaceAttribute = "ResetNetworkInterfaceAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttribute
 func (c *EC2) ResetNetworkInterfaceAttributeRequest(input *ResetNetworkInterfaceAttributeInput) (req *request.Request, output *ResetNetworkInterfaceAttributeOutput) {
 	op := &request.Operation{
 		Name:       opResetNetworkInterfaceAttribute,
@@ -21006,7 +21006,7 @@ func (c *EC2) ResetNetworkInterfaceAttributeRequest(input *ResetNetworkInterface
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ResetNetworkInterfaceAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttribute
 func (c *EC2) ResetNetworkInterfaceAttribute(input *ResetNetworkInterfaceAttributeInput) (*ResetNetworkInterfaceAttributeOutput, error) {
 	req, out := c.ResetNetworkInterfaceAttributeRequest(input)
 	return out, req.Send()
@@ -21019,7 +21019,7 @@ func (c *EC2) ResetNetworkInterfaceAttribute(input *ResetNetworkInterfaceAttribu
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ResetNetworkInterfaceAttributeWithContext(ctx aws.Context, input *ResetNetworkInterfaceAttributeInput, opts ...request.Option) (*ResetNetworkInterfaceAttributeOutput, error) {
 	req, out := c.ResetNetworkInterfaceAttributeRequest(input)
@@ -21053,7 +21053,7 @@ const opResetSnapshotAttribute = "ResetSnapshotAttribute"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttribute
 func (c *EC2) ResetSnapshotAttributeRequest(input *ResetSnapshotAttributeInput) (req *request.Request, output *ResetSnapshotAttributeOutput) {
 	op := &request.Operation{
 		Name:       opResetSnapshotAttribute,
@@ -21086,7 +21086,7 @@ func (c *EC2) ResetSnapshotAttributeRequest(input *ResetSnapshotAttributeInput) 
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation ResetSnapshotAttribute for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttribute
 func (c *EC2) ResetSnapshotAttribute(input *ResetSnapshotAttributeInput) (*ResetSnapshotAttributeOutput, error) {
 	req, out := c.ResetSnapshotAttributeRequest(input)
 	return out, req.Send()
@@ -21099,7 +21099,7 @@ func (c *EC2) ResetSnapshotAttribute(input *ResetSnapshotAttributeInput) (*Reset
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) ResetSnapshotAttributeWithContext(ctx aws.Context, input *ResetSnapshotAttributeInput, opts ...request.Option) (*ResetSnapshotAttributeOutput, error) {
 	req, out := c.ResetSnapshotAttributeRequest(input)
@@ -21133,7 +21133,7 @@ const opRestoreAddressToClassic = "RestoreAddressToClassic"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassic
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassic
 func (c *EC2) RestoreAddressToClassicRequest(input *RestoreAddressToClassicInput) (req *request.Request, output *RestoreAddressToClassicOutput) {
 	op := &request.Operation{
 		Name:       opRestoreAddressToClassic,
@@ -21163,7 +21163,7 @@ func (c *EC2) RestoreAddressToClassicRequest(input *RestoreAddressToClassicInput
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RestoreAddressToClassic for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassic
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassic
 func (c *EC2) RestoreAddressToClassic(input *RestoreAddressToClassicInput) (*RestoreAddressToClassicOutput, error) {
 	req, out := c.RestoreAddressToClassicRequest(input)
 	return out, req.Send()
@@ -21176,7 +21176,7 @@ func (c *EC2) RestoreAddressToClassic(input *RestoreAddressToClassicInput) (*Res
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RestoreAddressToClassicWithContext(ctx aws.Context, input *RestoreAddressToClassicInput, opts ...request.Option) (*RestoreAddressToClassicOutput, error) {
 	req, out := c.RestoreAddressToClassicRequest(input)
@@ -21210,7 +21210,7 @@ const opRevokeSecurityGroupEgress = "RevokeSecurityGroupEgress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgress
 func (c *EC2) RevokeSecurityGroupEgressRequest(input *RevokeSecurityGroupEgressInput) (req *request.Request, output *RevokeSecurityGroupEgressOutput) {
 	op := &request.Operation{
 		Name:       opRevokeSecurityGroupEgress,
@@ -21251,7 +21251,7 @@ func (c *EC2) RevokeSecurityGroupEgressRequest(input *RevokeSecurityGroupEgressI
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RevokeSecurityGroupEgress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgress
 func (c *EC2) RevokeSecurityGroupEgress(input *RevokeSecurityGroupEgressInput) (*RevokeSecurityGroupEgressOutput, error) {
 	req, out := c.RevokeSecurityGroupEgressRequest(input)
 	return out, req.Send()
@@ -21264,7 +21264,7 @@ func (c *EC2) RevokeSecurityGroupEgress(input *RevokeSecurityGroupEgressInput) (
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RevokeSecurityGroupEgressWithContext(ctx aws.Context, input *RevokeSecurityGroupEgressInput, opts ...request.Option) (*RevokeSecurityGroupEgressOutput, error) {
 	req, out := c.RevokeSecurityGroupEgressRequest(input)
@@ -21298,7 +21298,7 @@ const opRevokeSecurityGroupIngress = "RevokeSecurityGroupIngress"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngress
 func (c *EC2) RevokeSecurityGroupIngressRequest(input *RevokeSecurityGroupIngressInput) (req *request.Request, output *RevokeSecurityGroupIngressOutput) {
 	op := &request.Operation{
 		Name:       opRevokeSecurityGroupIngress,
@@ -21342,7 +21342,7 @@ func (c *EC2) RevokeSecurityGroupIngressRequest(input *RevokeSecurityGroupIngres
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RevokeSecurityGroupIngress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngress
 func (c *EC2) RevokeSecurityGroupIngress(input *RevokeSecurityGroupIngressInput) (*RevokeSecurityGroupIngressOutput, error) {
 	req, out := c.RevokeSecurityGroupIngressRequest(input)
 	return out, req.Send()
@@ -21355,7 +21355,7 @@ func (c *EC2) RevokeSecurityGroupIngress(input *RevokeSecurityGroupIngressInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RevokeSecurityGroupIngressWithContext(ctx aws.Context, input *RevokeSecurityGroupIngressInput, opts ...request.Option) (*RevokeSecurityGroupIngressOutput, error) {
 	req, out := c.RevokeSecurityGroupIngressRequest(input)
@@ -21389,7 +21389,7 @@ const opRunInstances = "RunInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstances
 func (c *EC2) RunInstancesRequest(input *RunInstancesInput) (req *request.Request, output *Reservation) {
 	op := &request.Operation{
 		Name:       opRunInstances,
@@ -21469,7 +21469,7 @@ func (c *EC2) RunInstancesRequest(input *RunInstancesInput) (req *request.Reques
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RunInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstances
 func (c *EC2) RunInstances(input *RunInstancesInput) (*Reservation, error) {
 	req, out := c.RunInstancesRequest(input)
 	return out, req.Send()
@@ -21482,7 +21482,7 @@ func (c *EC2) RunInstances(input *RunInstancesInput) (*Reservation, error) {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RunInstancesWithContext(ctx aws.Context, input *RunInstancesInput, opts ...request.Option) (*Reservation, error) {
 	req, out := c.RunInstancesRequest(input)
@@ -21516,7 +21516,7 @@ const opRunScheduledInstances = "RunScheduledInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstances
 func (c *EC2) RunScheduledInstancesRequest(input *RunScheduledInstancesInput) (req *request.Request, output *RunScheduledInstancesOutput) {
 	op := &request.Operation{
 		Name:       opRunScheduledInstances,
@@ -21553,7 +21553,7 @@ func (c *EC2) RunScheduledInstancesRequest(input *RunScheduledInstancesInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation RunScheduledInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstances
 func (c *EC2) RunScheduledInstances(input *RunScheduledInstancesInput) (*RunScheduledInstancesOutput, error) {
 	req, out := c.RunScheduledInstancesRequest(input)
 	return out, req.Send()
@@ -21566,7 +21566,7 @@ func (c *EC2) RunScheduledInstances(input *RunScheduledInstancesInput) (*RunSche
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) RunScheduledInstancesWithContext(ctx aws.Context, input *RunScheduledInstancesInput, opts ...request.Option) (*RunScheduledInstancesOutput, error) {
 	req, out := c.RunScheduledInstancesRequest(input)
@@ -21600,7 +21600,7 @@ const opStartInstances = "StartInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstances
 func (c *EC2) StartInstancesRequest(input *StartInstancesInput) (req *request.Request, output *StartInstancesOutput) {
 	op := &request.Operation{
 		Name:       opStartInstances,
@@ -21649,7 +21649,7 @@ func (c *EC2) StartInstancesRequest(input *StartInstancesInput) (req *request.Re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation StartInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstances
 func (c *EC2) StartInstances(input *StartInstancesInput) (*StartInstancesOutput, error) {
 	req, out := c.StartInstancesRequest(input)
 	return out, req.Send()
@@ -21662,7 +21662,7 @@ func (c *EC2) StartInstances(input *StartInstancesInput) (*StartInstancesOutput,
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) StartInstancesWithContext(ctx aws.Context, input *StartInstancesInput, opts ...request.Option) (*StartInstancesOutput, error) {
 	req, out := c.StartInstancesRequest(input)
@@ -21696,7 +21696,7 @@ const opStopInstances = "StopInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstances
 func (c *EC2) StopInstancesRequest(input *StopInstancesInput) (req *request.Request, output *StopInstancesOutput) {
 	op := &request.Operation{
 		Name:       opStopInstances,
@@ -21755,7 +21755,7 @@ func (c *EC2) StopInstancesRequest(input *StopInstancesInput) (req *request.Requ
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation StopInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstances
 func (c *EC2) StopInstances(input *StopInstancesInput) (*StopInstancesOutput, error) {
 	req, out := c.StopInstancesRequest(input)
 	return out, req.Send()
@@ -21768,7 +21768,7 @@ func (c *EC2) StopInstances(input *StopInstancesInput) (*StopInstancesOutput, er
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) StopInstancesWithContext(ctx aws.Context, input *StopInstancesInput, opts ...request.Option) (*StopInstancesOutput, error) {
 	req, out := c.StopInstancesRequest(input)
@@ -21802,7 +21802,7 @@ const opTerminateInstances = "TerminateInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstances
 func (c *EC2) TerminateInstancesRequest(input *TerminateInstancesInput) (req *request.Request, output *TerminateInstancesOutput) {
 	op := &request.Operation{
 		Name:       opTerminateInstances,
@@ -21853,7 +21853,7 @@ func (c *EC2) TerminateInstancesRequest(input *TerminateInstancesInput) (req *re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation TerminateInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstances
 func (c *EC2) TerminateInstances(input *TerminateInstancesInput) (*TerminateInstancesOutput, error) {
 	req, out := c.TerminateInstancesRequest(input)
 	return out, req.Send()
@@ -21866,7 +21866,7 @@ func (c *EC2) TerminateInstances(input *TerminateInstancesInput) (*TerminateInst
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) TerminateInstancesWithContext(ctx aws.Context, input *TerminateInstancesInput, opts ...request.Option) (*TerminateInstancesOutput, error) {
 	req, out := c.TerminateInstancesRequest(input)
@@ -21900,7 +21900,7 @@ const opUnassignIpv6Addresses = "UnassignIpv6Addresses"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6Addresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6Addresses
 func (c *EC2) UnassignIpv6AddressesRequest(input *UnassignIpv6AddressesInput) (req *request.Request, output *UnassignIpv6AddressesOutput) {
 	op := &request.Operation{
 		Name:       opUnassignIpv6Addresses,
@@ -21927,7 +21927,7 @@ func (c *EC2) UnassignIpv6AddressesRequest(input *UnassignIpv6AddressesInput) (r
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation UnassignIpv6Addresses for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6Addresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6Addresses
 func (c *EC2) UnassignIpv6Addresses(input *UnassignIpv6AddressesInput) (*UnassignIpv6AddressesOutput, error) {
 	req, out := c.UnassignIpv6AddressesRequest(input)
 	return out, req.Send()
@@ -21940,7 +21940,7 @@ func (c *EC2) UnassignIpv6Addresses(input *UnassignIpv6AddressesInput) (*Unassig
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) UnassignIpv6AddressesWithContext(ctx aws.Context, input *UnassignIpv6AddressesInput, opts ...request.Option) (*UnassignIpv6AddressesOutput, error) {
 	req, out := c.UnassignIpv6AddressesRequest(input)
@@ -21974,7 +21974,7 @@ const opUnassignPrivateIpAddresses = "UnassignPrivateIpAddresses"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddresses
 func (c *EC2) UnassignPrivateIpAddressesRequest(input *UnassignPrivateIpAddressesInput) (req *request.Request, output *UnassignPrivateIpAddressesOutput) {
 	op := &request.Operation{
 		Name:       opUnassignPrivateIpAddresses,
@@ -22003,7 +22003,7 @@ func (c *EC2) UnassignPrivateIpAddressesRequest(input *UnassignPrivateIpAddresse
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation UnassignPrivateIpAddresses for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddresses
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddresses
 func (c *EC2) UnassignPrivateIpAddresses(input *UnassignPrivateIpAddressesInput) (*UnassignPrivateIpAddressesOutput, error) {
 	req, out := c.UnassignPrivateIpAddressesRequest(input)
 	return out, req.Send()
@@ -22016,7 +22016,7 @@ func (c *EC2) UnassignPrivateIpAddresses(input *UnassignPrivateIpAddressesInput)
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) UnassignPrivateIpAddressesWithContext(ctx aws.Context, input *UnassignPrivateIpAddressesInput, opts ...request.Option) (*UnassignPrivateIpAddressesOutput, error) {
 	req, out := c.UnassignPrivateIpAddressesRequest(input)
@@ -22050,7 +22050,7 @@ const opUnmonitorInstances = "UnmonitorInstances"
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstances
 func (c *EC2) UnmonitorInstancesRequest(input *UnmonitorInstancesInput) (req *request.Request, output *UnmonitorInstancesOutput) {
 	op := &request.Operation{
 		Name:       opUnmonitorInstances,
@@ -22079,7 +22079,7 @@ func (c *EC2) UnmonitorInstancesRequest(input *UnmonitorInstancesInput) (req *re
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation UnmonitorInstances for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstances
 func (c *EC2) UnmonitorInstances(input *UnmonitorInstancesInput) (*UnmonitorInstancesOutput, error) {
 	req, out := c.UnmonitorInstancesRequest(input)
 	return out, req.Send()
@@ -22092,7 +22092,7 @@ func (c *EC2) UnmonitorInstances(input *UnmonitorInstancesInput) (*UnmonitorInst
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) UnmonitorInstancesWithContext(ctx aws.Context, input *UnmonitorInstancesInput, opts ...request.Option) (*UnmonitorInstancesOutput, error) {
 	req, out := c.UnmonitorInstancesRequest(input)
@@ -22126,7 +22126,7 @@ const opUpdateSecurityGroupRuleDescriptionsEgress = "UpdateSecurityGroupRuleDesc
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgress
 func (c *EC2) UpdateSecurityGroupRuleDescriptionsEgressRequest(input *UpdateSecurityGroupRuleDescriptionsEgressInput) (req *request.Request, output *UpdateSecurityGroupRuleDescriptionsEgressOutput) {
 	op := &request.Operation{
 		Name:       opUpdateSecurityGroupRuleDescriptionsEgress,
@@ -22159,7 +22159,7 @@ func (c *EC2) UpdateSecurityGroupRuleDescriptionsEgressRequest(input *UpdateSecu
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation UpdateSecurityGroupRuleDescriptionsEgress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgress
 func (c *EC2) UpdateSecurityGroupRuleDescriptionsEgress(input *UpdateSecurityGroupRuleDescriptionsEgressInput) (*UpdateSecurityGroupRuleDescriptionsEgressOutput, error) {
 	req, out := c.UpdateSecurityGroupRuleDescriptionsEgressRequest(input)
 	return out, req.Send()
@@ -22172,7 +22172,7 @@ func (c *EC2) UpdateSecurityGroupRuleDescriptionsEgress(input *UpdateSecurityGro
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) UpdateSecurityGroupRuleDescriptionsEgressWithContext(ctx aws.Context, input *UpdateSecurityGroupRuleDescriptionsEgressInput, opts ...request.Option) (*UpdateSecurityGroupRuleDescriptionsEgressOutput, error) {
 	req, out := c.UpdateSecurityGroupRuleDescriptionsEgressRequest(input)
@@ -22206,7 +22206,7 @@ const opUpdateSecurityGroupRuleDescriptionsIngress = "UpdateSecurityGroupRuleDes
 //        fmt.Println(resp)
 //    }
 //
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngress
 func (c *EC2) UpdateSecurityGroupRuleDescriptionsIngressRequest(input *UpdateSecurityGroupRuleDescriptionsIngressInput) (req *request.Request, output *UpdateSecurityGroupRuleDescriptionsIngressOutput) {
 	op := &request.Operation{
 		Name:       opUpdateSecurityGroupRuleDescriptionsIngress,
@@ -22239,7 +22239,7 @@ func (c *EC2) UpdateSecurityGroupRuleDescriptionsIngressRequest(input *UpdateSec
 //
 // See the AWS API reference guide for Amazon Elastic Compute Cloud's
 // API operation UpdateSecurityGroupRuleDescriptionsIngress for usage and error information.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngress
 func (c *EC2) UpdateSecurityGroupRuleDescriptionsIngress(input *UpdateSecurityGroupRuleDescriptionsIngressInput) (*UpdateSecurityGroupRuleDescriptionsIngressOutput, error) {
 	req, out := c.UpdateSecurityGroupRuleDescriptionsIngressRequest(input)
 	return out, req.Send()
@@ -22252,7 +22252,7 @@ func (c *EC2) UpdateSecurityGroupRuleDescriptionsIngress(input *UpdateSecurityGr
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *EC2) UpdateSecurityGroupRuleDescriptionsIngressWithContext(ctx aws.Context, input *UpdateSecurityGroupRuleDescriptionsIngressInput, opts ...request.Option) (*UpdateSecurityGroupRuleDescriptionsIngressOutput, error) {
 	req, out := c.UpdateSecurityGroupRuleDescriptionsIngressRequest(input)
@@ -22262,7 +22262,7 @@ func (c *EC2) UpdateSecurityGroupRuleDescriptionsIngressWithContext(ctx aws.Cont
 }
 
 // Contains the parameters for accepting the quote.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuoteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuoteRequest
 type AcceptReservedInstancesExchangeQuoteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -22335,7 +22335,7 @@ func (s *AcceptReservedInstancesExchangeQuoteInput) SetTargetConfigurations(v []
 }
 
 // The result of the exchange and whether it was successful.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuoteResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptReservedInstancesExchangeQuoteResult
 type AcceptReservedInstancesExchangeQuoteOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -22359,7 +22359,7 @@ func (s *AcceptReservedInstancesExchangeQuoteOutput) SetExchangeId(v string) *Ac
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnectionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnectionsRequest
 type AcceptVpcEndpointConnectionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -22424,7 +22424,7 @@ func (s *AcceptVpcEndpointConnectionsInput) SetVpcEndpointIds(v []*string) *Acce
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnectionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcEndpointConnectionsResult
 type AcceptVpcEndpointConnectionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -22449,7 +22449,7 @@ func (s *AcceptVpcEndpointConnectionsOutput) SetUnsuccessful(v []*UnsuccessfulIt
 }
 
 // Contains the parameters for AcceptVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnectionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnectionRequest
 type AcceptVpcPeeringConnectionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -22487,7 +22487,7 @@ func (s *AcceptVpcPeeringConnectionInput) SetVpcPeeringConnectionId(v string) *A
 }
 
 // Contains the output of AcceptVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnectionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AcceptVpcPeeringConnectionResult
 type AcceptVpcPeeringConnectionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -22512,7 +22512,7 @@ func (s *AcceptVpcPeeringConnectionOutput) SetVpcPeeringConnection(v *VpcPeering
 }
 
 // Describes an account attribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AccountAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AccountAttribute
 type AccountAttribute struct {
 	_ struct{} `type:"structure"`
 
@@ -22546,7 +22546,7 @@ func (s *AccountAttribute) SetAttributeValues(v []*AccountAttributeValue) *Accou
 }
 
 // Describes a value of an account attribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AccountAttributeValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AccountAttributeValue
 type AccountAttributeValue struct {
 	_ struct{} `type:"structure"`
 
@@ -22571,7 +22571,7 @@ func (s *AccountAttributeValue) SetAttributeValue(v string) *AccountAttributeVal
 }
 
 // Describes a running instance in a Spot Fleet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ActiveInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ActiveInstance
 type ActiveInstance struct {
 	_ struct{} `type:"structure"`
 
@@ -22625,7 +22625,7 @@ func (s *ActiveInstance) SetSpotInstanceRequestId(v string) *ActiveInstance {
 }
 
 // Describes an Elastic IP address.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Address
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Address
 type Address struct {
 	_ struct{} `type:"structure"`
 
@@ -22724,7 +22724,7 @@ func (s *Address) SetTags(v []*Tag) *Address {
 }
 
 // Contains the parameters for AllocateAddress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddressRequest
 type AllocateAddressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -22772,7 +22772,7 @@ func (s *AllocateAddressInput) SetDryRun(v bool) *AllocateAddressInput {
 }
 
 // Contains the output of AllocateAddress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddressResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateAddressResult
 type AllocateAddressOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -22817,7 +22817,7 @@ func (s *AllocateAddressOutput) SetPublicIp(v string) *AllocateAddressOutput {
 }
 
 // Contains the parameters for AllocateHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHostsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHostsRequest
 type AllocateHostsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -22912,7 +22912,7 @@ func (s *AllocateHostsInput) SetQuantity(v int64) *AllocateHostsInput {
 }
 
 // Contains the output of AllocateHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHostsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllocateHostsResult
 type AllocateHostsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -22938,7 +22938,7 @@ func (s *AllocateHostsOutput) SetHostIds(v []*string) *AllocateHostsOutput {
 }
 
 // Describes a principal.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllowedPrincipal
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AllowedPrincipal
 type AllowedPrincipal struct {
 	_ struct{} `type:"structure"`
 
@@ -22971,7 +22971,7 @@ func (s *AllowedPrincipal) SetPrincipalType(v string) *AllowedPrincipal {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6AddressesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6AddressesRequest
 type AssignIpv6AddressesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23031,7 +23031,7 @@ func (s *AssignIpv6AddressesInput) SetNetworkInterfaceId(v string) *AssignIpv6Ad
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6AddressesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignIpv6AddressesResult
 type AssignIpv6AddressesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23065,7 +23065,7 @@ func (s *AssignIpv6AddressesOutput) SetNetworkInterfaceId(v string) *AssignIpv6A
 }
 
 // Contains the parameters for AssignPrivateIpAddresses.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddressesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddressesRequest
 type AssignPrivateIpAddressesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23138,7 +23138,7 @@ func (s *AssignPrivateIpAddressesInput) SetSecondaryPrivateIpAddressCount(v int6
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddressesOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssignPrivateIpAddressesOutput
 type AssignPrivateIpAddressesOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -23154,7 +23154,7 @@ func (s AssignPrivateIpAddressesOutput) GoString() string {
 }
 
 // Contains the parameters for AssociateAddress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddressRequest
 type AssociateAddressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23247,7 +23247,7 @@ func (s *AssociateAddressInput) SetPublicIp(v string) *AssociateAddressInput {
 }
 
 // Contains the output of AssociateAddress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddressResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateAddressResult
 type AssociateAddressOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23273,7 +23273,7 @@ func (s *AssociateAddressOutput) SetAssociationId(v string) *AssociateAddressOut
 }
 
 // Contains the parameters for AssociateDhcpOptions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptionsRequest
 type AssociateDhcpOptionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23339,7 +23339,7 @@ func (s *AssociateDhcpOptionsInput) SetVpcId(v string) *AssociateDhcpOptionsInpu
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptionsOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateDhcpOptionsOutput
 type AssociateDhcpOptionsOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -23354,7 +23354,7 @@ func (s AssociateDhcpOptionsOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfileRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfileRequest
 type AssociateIamInstanceProfileInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23407,7 +23407,7 @@ func (s *AssociateIamInstanceProfileInput) SetInstanceId(v string) *AssociateIam
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfileResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateIamInstanceProfileResult
 type AssociateIamInstanceProfileOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23432,7 +23432,7 @@ func (s *AssociateIamInstanceProfileOutput) SetIamInstanceProfileAssociation(v *
 }
 
 // Contains the parameters for AssociateRouteTable.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTableRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTableRequest
 type AssociateRouteTableInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23498,7 +23498,7 @@ func (s *AssociateRouteTableInput) SetSubnetId(v string) *AssociateRouteTableInp
 }
 
 // Contains the output of AssociateRouteTable.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTableResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateRouteTableResult
 type AssociateRouteTableOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23522,7 +23522,7 @@ func (s *AssociateRouteTableOutput) SetAssociationId(v string) *AssociateRouteTa
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlockRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlockRequest
 type AssociateSubnetCidrBlockInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23575,7 +23575,7 @@ func (s *AssociateSubnetCidrBlockInput) SetSubnetId(v string) *AssociateSubnetCi
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlockResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateSubnetCidrBlockResult
 type AssociateSubnetCidrBlockOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23608,7 +23608,7 @@ func (s *AssociateSubnetCidrBlockOutput) SetSubnetId(v string) *AssociateSubnetC
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlockRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlockRequest
 type AssociateVpcCidrBlockInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23667,7 +23667,7 @@ func (s *AssociateVpcCidrBlockInput) SetVpcId(v string) *AssociateVpcCidrBlockIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlockResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AssociateVpcCidrBlockResult
 type AssociateVpcCidrBlockOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23710,7 +23710,7 @@ func (s *AssociateVpcCidrBlockOutput) SetVpcId(v string) *AssociateVpcCidrBlockO
 }
 
 // Contains the parameters for AttachClassicLinkVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpcRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpcRequest
 type AttachClassicLinkVpcInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23791,7 +23791,7 @@ func (s *AttachClassicLinkVpcInput) SetVpcId(v string) *AttachClassicLinkVpcInpu
 }
 
 // Contains the output of AttachClassicLinkVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpcResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachClassicLinkVpcResult
 type AttachClassicLinkVpcOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -23816,7 +23816,7 @@ func (s *AttachClassicLinkVpcOutput) SetReturn(v bool) *AttachClassicLinkVpcOutp
 }
 
 // Contains the parameters for AttachInternetGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGatewayRequest
 type AttachInternetGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23881,7 +23881,7 @@ func (s *AttachInternetGatewayInput) SetVpcId(v string) *AttachInternetGatewayIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGatewayOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachInternetGatewayOutput
 type AttachInternetGatewayOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -23897,7 +23897,7 @@ func (s AttachInternetGatewayOutput) GoString() string {
 }
 
 // Contains the parameters for AttachNetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterfaceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterfaceRequest
 type AttachNetworkInterfaceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -23977,7 +23977,7 @@ func (s *AttachNetworkInterfaceInput) SetNetworkInterfaceId(v string) *AttachNet
 }
 
 // Contains the output of AttachNetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterfaceResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachNetworkInterfaceResult
 type AttachNetworkInterfaceOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -24002,7 +24002,7 @@ func (s *AttachNetworkInterfaceOutput) SetAttachmentId(v string) *AttachNetworkI
 }
 
 // Contains the parameters for AttachVolume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVolumeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVolumeRequest
 type AttachVolumeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -24083,7 +24083,7 @@ func (s *AttachVolumeInput) SetVolumeId(v string) *AttachVolumeInput {
 }
 
 // Contains the parameters for AttachVpnGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGatewayRequest
 type AttachVpnGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -24149,7 +24149,7 @@ func (s *AttachVpnGatewayInput) SetVpnGatewayId(v string) *AttachVpnGatewayInput
 }
 
 // Contains the output of AttachVpnGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttachVpnGatewayResult
 type AttachVpnGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -24174,7 +24174,7 @@ func (s *AttachVpnGatewayOutput) SetVpcAttachment(v *VpcAttachment) *AttachVpnGa
 }
 
 // Describes a value for a resource attribute that is a Boolean value.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttributeBooleanValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttributeBooleanValue
 type AttributeBooleanValue struct {
 	_ struct{} `type:"structure"`
 
@@ -24199,7 +24199,7 @@ func (s *AttributeBooleanValue) SetValue(v bool) *AttributeBooleanValue {
 }
 
 // Describes a value for a resource attribute that is a String.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttributeValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AttributeValue
 type AttributeValue struct {
 	_ struct{} `type:"structure"`
 
@@ -24224,7 +24224,7 @@ func (s *AttributeValue) SetValue(v string) *AttributeValue {
 }
 
 // Contains the parameters for AuthorizeSecurityGroupEgress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgressRequest
 type AuthorizeSecurityGroupEgressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -24342,7 +24342,7 @@ func (s *AuthorizeSecurityGroupEgressInput) SetToPort(v int64) *AuthorizeSecurit
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgressOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupEgressOutput
 type AuthorizeSecurityGroupEgressOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -24358,7 +24358,7 @@ func (s AuthorizeSecurityGroupEgressOutput) GoString() string {
 }
 
 // Contains the parameters for AuthorizeSecurityGroupIngress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngressRequest
 type AuthorizeSecurityGroupIngressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -24491,7 +24491,7 @@ func (s *AuthorizeSecurityGroupIngressInput) SetToPort(v int64) *AuthorizeSecuri
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngressOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AuthorizeSecurityGroupIngressOutput
 type AuthorizeSecurityGroupIngressOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -24507,7 +24507,7 @@ func (s AuthorizeSecurityGroupIngressOutput) GoString() string {
 }
 
 // Describes an Availability Zone.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AvailabilityZone
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AvailabilityZone
 type AvailabilityZone struct {
 	_ struct{} `type:"structure"`
 
@@ -24559,7 +24559,7 @@ func (s *AvailabilityZone) SetZoneName(v string) *AvailabilityZone {
 }
 
 // Describes a message about an Availability Zone.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AvailabilityZoneMessage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AvailabilityZoneMessage
 type AvailabilityZoneMessage struct {
 	_ struct{} `type:"structure"`
 
@@ -24584,7 +24584,7 @@ func (s *AvailabilityZoneMessage) SetMessage(v string) *AvailabilityZoneMessage 
 }
 
 // The capacity information for instances launched onto the Dedicated Host.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AvailableCapacity
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/AvailableCapacity
 type AvailableCapacity struct {
 	_ struct{} `type:"structure"`
 
@@ -24617,7 +24617,7 @@ func (s *AvailableCapacity) SetAvailableVCpus(v int64) *AvailableCapacity {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BlobAttributeValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BlobAttributeValue
 type BlobAttributeValue struct {
 	_ struct{} `type:"structure"`
 
@@ -24642,7 +24642,7 @@ func (s *BlobAttributeValue) SetValue(v []byte) *BlobAttributeValue {
 }
 
 // Describes a block device mapping.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BlockDeviceMapping
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BlockDeviceMapping
 type BlockDeviceMapping struct {
 	_ struct{} `type:"structure"`
 
@@ -24705,7 +24705,7 @@ func (s *BlockDeviceMapping) SetVirtualName(v string) *BlockDeviceMapping {
 }
 
 // Contains the parameters for BundleInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstanceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstanceRequest
 type BundleInstanceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -24779,7 +24779,7 @@ func (s *BundleInstanceInput) SetStorage(v *Storage) *BundleInstanceInput {
 }
 
 // Contains the output of BundleInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstanceResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleInstanceResult
 type BundleInstanceOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -24804,7 +24804,7 @@ func (s *BundleInstanceOutput) SetBundleTask(v *BundleTask) *BundleInstanceOutpu
 }
 
 // Describes a bundle task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleTask
 type BundleTask struct {
 	_ struct{} `type:"structure"`
 
@@ -24892,7 +24892,7 @@ func (s *BundleTask) SetUpdateTime(v time.Time) *BundleTask {
 }
 
 // Describes an error for BundleInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleTaskError
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/BundleTaskError
 type BundleTaskError struct {
 	_ struct{} `type:"structure"`
 
@@ -24926,7 +24926,7 @@ func (s *BundleTaskError) SetMessage(v string) *BundleTaskError {
 }
 
 // Contains the parameters for CancelBundleTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTaskRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTaskRequest
 type CancelBundleTaskInput struct {
 	_ struct{} `type:"structure"`
 
@@ -24978,7 +24978,7 @@ func (s *CancelBundleTaskInput) SetDryRun(v bool) *CancelBundleTaskInput {
 }
 
 // Contains the output of CancelBundleTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTaskResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelBundleTaskResult
 type CancelBundleTaskOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -25003,7 +25003,7 @@ func (s *CancelBundleTaskOutput) SetBundleTask(v *BundleTask) *CancelBundleTaskO
 }
 
 // Contains the parameters for CancelConversionTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionRequest
 type CancelConversionTaskInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25063,7 +25063,7 @@ func (s *CancelConversionTaskInput) SetReasonMessage(v string) *CancelConversion
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionTaskOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelConversionTaskOutput
 type CancelConversionTaskOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -25079,7 +25079,7 @@ func (s CancelConversionTaskOutput) GoString() string {
 }
 
 // Contains the parameters for CancelExportTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTaskRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTaskRequest
 type CancelExportTaskInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25118,7 +25118,7 @@ func (s *CancelExportTaskInput) SetExportTaskId(v string) *CancelExportTaskInput
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTaskOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelExportTaskOutput
 type CancelExportTaskOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -25134,7 +25134,7 @@ func (s CancelExportTaskOutput) GoString() string {
 }
 
 // Contains the parameters for CancelImportTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTaskRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTaskRequest
 type CancelImportTaskInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25180,7 +25180,7 @@ func (s *CancelImportTaskInput) SetImportTaskId(v string) *CancelImportTaskInput
 }
 
 // Contains the output for CancelImportTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTaskResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelImportTaskResult
 type CancelImportTaskOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -25223,7 +25223,7 @@ func (s *CancelImportTaskOutput) SetState(v string) *CancelImportTaskOutput {
 }
 
 // Contains the parameters for CancelReservedInstancesListing.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListingRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListingRequest
 type CancelReservedInstancesListingInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25263,7 +25263,7 @@ func (s *CancelReservedInstancesListingInput) SetReservedInstancesListingId(v st
 }
 
 // Contains the output of CancelReservedInstancesListing.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListingResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelReservedInstancesListingResult
 type CancelReservedInstancesListingOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -25288,7 +25288,7 @@ func (s *CancelReservedInstancesListingOutput) SetReservedInstancesListings(v []
 }
 
 // Describes a Spot Fleet error.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsError
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsError
 type CancelSpotFleetRequestsError struct {
 	_ struct{} `type:"structure"`
 
@@ -25326,7 +25326,7 @@ func (s *CancelSpotFleetRequestsError) SetMessage(v string) *CancelSpotFleetRequ
 }
 
 // Describes a Spot Fleet request that was not successfully canceled.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsErrorItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsErrorItem
 type CancelSpotFleetRequestsErrorItem struct {
 	_ struct{} `type:"structure"`
 
@@ -25364,7 +25364,7 @@ func (s *CancelSpotFleetRequestsErrorItem) SetSpotFleetRequestId(v string) *Canc
 }
 
 // Contains the parameters for CancelSpotFleetRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsRequest
 type CancelSpotFleetRequestsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25431,7 +25431,7 @@ func (s *CancelSpotFleetRequestsInput) SetTerminateInstances(v bool) *CancelSpot
 }
 
 // Contains the output of CancelSpotFleetRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsResponse
 type CancelSpotFleetRequestsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -25465,7 +25465,7 @@ func (s *CancelSpotFleetRequestsOutput) SetUnsuccessfulFleetRequests(v []*Cancel
 }
 
 // Describes a Spot Fleet request that was successfully canceled.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsSuccessItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotFleetRequestsSuccessItem
 type CancelSpotFleetRequestsSuccessItem struct {
 	_ struct{} `type:"structure"`
 
@@ -25514,7 +25514,7 @@ func (s *CancelSpotFleetRequestsSuccessItem) SetSpotFleetRequestId(v string) *Ca
 }
 
 // Contains the parameters for CancelSpotInstanceRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequestsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequestsRequest
 type CancelSpotInstanceRequestsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25566,7 +25566,7 @@ func (s *CancelSpotInstanceRequestsInput) SetSpotInstanceRequestIds(v []*string)
 }
 
 // Contains the output of CancelSpotInstanceRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequestsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelSpotInstanceRequestsResult
 type CancelSpotInstanceRequestsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -25591,7 +25591,7 @@ func (s *CancelSpotInstanceRequestsOutput) SetCancelledSpotInstanceRequests(v []
 }
 
 // Describes a request to cancel a Spot Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelledSpotInstanceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CancelledSpotInstanceRequest
 type CancelledSpotInstanceRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -25625,7 +25625,7 @@ func (s *CancelledSpotInstanceRequest) SetState(v string) *CancelledSpotInstance
 }
 
 // Describes an IPv4 CIDR block.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CidrBlock
 type CidrBlock struct {
 	_ struct{} `type:"structure"`
 
@@ -25650,7 +25650,7 @@ func (s *CidrBlock) SetCidrBlock(v string) *CidrBlock {
 }
 
 // Describes the ClassicLink DNS support status of a VPC.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLinkDnsSupport
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLinkDnsSupport
 type ClassicLinkDnsSupport struct {
 	_ struct{} `type:"structure"`
 
@@ -25684,7 +25684,7 @@ func (s *ClassicLinkDnsSupport) SetVpcId(v string) *ClassicLinkDnsSupport {
 }
 
 // Describes a linked EC2-Classic instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLinkInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLinkInstance
 type ClassicLinkInstance struct {
 	_ struct{} `type:"structure"`
 
@@ -25736,7 +25736,7 @@ func (s *ClassicLinkInstance) SetVpcId(v string) *ClassicLinkInstance {
 }
 
 // Describes a Classic Load Balancer.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLoadBalancer
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLoadBalancer
 type ClassicLoadBalancer struct {
 	_ struct{} `type:"structure"`
 
@@ -25777,7 +25777,7 @@ func (s *ClassicLoadBalancer) SetName(v string) *ClassicLoadBalancer {
 
 // Describes the Classic Load Balancers to attach to a Spot Fleet. Spot Fleet
 // registers the running Spot Instances with these Classic Load Balancers.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLoadBalancersConfig
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClassicLoadBalancersConfig
 type ClassicLoadBalancersConfig struct {
 	_ struct{} `type:"structure"`
 
@@ -25830,7 +25830,7 @@ func (s *ClassicLoadBalancersConfig) SetClassicLoadBalancers(v []*ClassicLoadBal
 }
 
 // Describes the client-specific data.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClientData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ClientData
 type ClientData struct {
 	_ struct{} `type:"structure"`
 
@@ -25882,7 +25882,7 @@ func (s *ClientData) SetUploadStart(v time.Time) *ClientData {
 }
 
 // Contains the parameters for ConfirmProductInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstanceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstanceRequest
 type ConfirmProductInstanceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -25948,7 +25948,7 @@ func (s *ConfirmProductInstanceInput) SetProductCode(v string) *ConfirmProductIn
 }
 
 // Contains the output of ConfirmProductInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstanceResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConfirmProductInstanceResult
 type ConfirmProductInstanceOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -25984,7 +25984,7 @@ func (s *ConfirmProductInstanceOutput) SetReturn(v bool) *ConfirmProductInstance
 }
 
 // Describes a connection notification for a VPC endpoint or VPC endpoint service.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConnectionNotification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConnectionNotification
 type ConnectionNotification struct {
 	_ struct{} `type:"structure"`
 
@@ -26064,7 +26064,7 @@ func (s *ConnectionNotification) SetVpcEndpointId(v string) *ConnectionNotificat
 }
 
 // Describes a conversion task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConversionTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ConversionTask
 type ConversionTask struct {
 	_ struct{} `type:"structure"`
 
@@ -26149,7 +26149,7 @@ func (s *ConversionTask) SetTags(v []*Tag) *ConversionTask {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImageRequest
 type CopyFpgaImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26242,7 +26242,7 @@ func (s *CopyFpgaImageInput) SetSourceRegion(v string) *CopyFpgaImageInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyFpgaImageResult
 type CopyFpgaImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26267,7 +26267,7 @@ func (s *CopyFpgaImageOutput) SetFpgaImageId(v string) *CopyFpgaImageOutput {
 }
 
 // Contains the parameters for CopyImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImageRequest
 type CopyImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26396,7 +26396,7 @@ func (s *CopyImageInput) SetSourceRegion(v string) *CopyImageInput {
 }
 
 // Contains the output of CopyImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopyImageResult
 type CopyImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26421,7 +26421,7 @@ func (s *CopyImageOutput) SetImageId(v string) *CopyImageOutput {
 }
 
 // Contains the parameters for CopySnapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshotRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshotRequest
 type CopySnapshotInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26563,7 +26563,7 @@ func (s *CopySnapshotInput) SetSourceSnapshotId(v string) *CopySnapshotInput {
 }
 
 // Contains the output of CopySnapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshotResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CopySnapshotResult
 type CopySnapshotOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26588,7 +26588,7 @@ func (s *CopySnapshotOutput) SetSnapshotId(v string) *CopySnapshotOutput {
 }
 
 // Contains the parameters for CreateCustomerGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGatewayRequest
 type CreateCustomerGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26671,7 +26671,7 @@ func (s *CreateCustomerGatewayInput) SetType(v string) *CreateCustomerGatewayInp
 }
 
 // Contains the output of CreateCustomerGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateCustomerGatewayResult
 type CreateCustomerGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26695,7 +26695,7 @@ func (s *CreateCustomerGatewayOutput) SetCustomerGateway(v *CustomerGateway) *Cr
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnetRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnetRequest
 type CreateDefaultSubnetInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26746,7 +26746,7 @@ func (s *CreateDefaultSubnetInput) SetDryRun(v bool) *CreateDefaultSubnetInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnetResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultSubnetResult
 type CreateDefaultSubnetOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26771,7 +26771,7 @@ func (s *CreateDefaultSubnetOutput) SetSubnet(v *Subnet) *CreateDefaultSubnetOut
 }
 
 // Contains the parameters for CreateDefaultVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpcRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpcRequest
 type CreateDefaultVpcInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26799,7 +26799,7 @@ func (s *CreateDefaultVpcInput) SetDryRun(v bool) *CreateDefaultVpcInput {
 }
 
 // Contains the output of CreateDefaultVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpcResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDefaultVpcResult
 type CreateDefaultVpcOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26824,7 +26824,7 @@ func (s *CreateDefaultVpcOutput) SetVpc(v *Vpc) *CreateDefaultVpcOutput {
 }
 
 // Contains the parameters for CreateDhcpOptions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptionsRequest
 type CreateDhcpOptionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26876,7 +26876,7 @@ func (s *CreateDhcpOptionsInput) SetDryRun(v bool) *CreateDhcpOptionsInput {
 }
 
 // Contains the output of CreateDhcpOptions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateDhcpOptionsResult
 type CreateDhcpOptionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26900,7 +26900,7 @@ func (s *CreateDhcpOptionsOutput) SetDhcpOptions(v *DhcpOptions) *CreateDhcpOpti
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGatewayRequest
 type CreateEgressOnlyInternetGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -26961,7 +26961,7 @@ func (s *CreateEgressOnlyInternetGatewayInput) SetVpcId(v string) *CreateEgressO
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateEgressOnlyInternetGatewayResult
 type CreateEgressOnlyInternetGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -26996,7 +26996,7 @@ func (s *CreateEgressOnlyInternetGatewayOutput) SetEgressOnlyInternetGateway(v *
 }
 
 // Contains the parameters for CreateFlowLogs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogsRequest
 type CreateFlowLogsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27105,7 +27105,7 @@ func (s *CreateFlowLogsInput) SetTrafficType(v string) *CreateFlowLogsInput {
 }
 
 // Contains the output of CreateFlowLogs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFlowLogsResult
 type CreateFlowLogsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27148,7 +27148,7 @@ func (s *CreateFlowLogsOutput) SetUnsuccessful(v []*UnsuccessfulItem) *CreateFlo
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImageRequest
 type CreateFpgaImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27237,7 +27237,7 @@ func (s *CreateFpgaImageInput) SetName(v string) *CreateFpgaImageInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateFpgaImageResult
 type CreateFpgaImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27271,7 +27271,7 @@ func (s *CreateFpgaImageOutput) SetFpgaImageId(v string) *CreateFpgaImageOutput 
 }
 
 // Contains the parameters for CreateImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImageRequest
 type CreateImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27371,7 +27371,7 @@ func (s *CreateImageInput) SetNoReboot(v bool) *CreateImageInput {
 }
 
 // Contains the output of CreateImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateImageResult
 type CreateImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27396,7 +27396,7 @@ func (s *CreateImageOutput) SetImageId(v string) *CreateImageOutput {
 }
 
 // Contains the parameters for CreateInstanceExportTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTaskRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTaskRequest
 type CreateInstanceExportTaskInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27464,7 +27464,7 @@ func (s *CreateInstanceExportTaskInput) SetTargetEnvironment(v string) *CreateIn
 }
 
 // Contains the output for CreateInstanceExportTask.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTaskResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInstanceExportTaskResult
 type CreateInstanceExportTaskOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27489,7 +27489,7 @@ func (s *CreateInstanceExportTaskOutput) SetExportTask(v *ExportTask) *CreateIns
 }
 
 // Contains the parameters for CreateInternetGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGatewayRequest
 type CreateInternetGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27517,7 +27517,7 @@ func (s *CreateInternetGatewayInput) SetDryRun(v bool) *CreateInternetGatewayInp
 }
 
 // Contains the output of CreateInternetGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateInternetGatewayResult
 type CreateInternetGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27542,7 +27542,7 @@ func (s *CreateInternetGatewayOutput) SetInternetGateway(v *InternetGateway) *Cr
 }
 
 // Contains the parameters for CreateKeyPair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateKeyPairRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateKeyPairRequest
 type CreateKeyPairInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27596,7 +27596,7 @@ func (s *CreateKeyPairInput) SetKeyName(v string) *CreateKeyPairInput {
 }
 
 // Describes a key pair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/KeyPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/KeyPair
 type CreateKeyPairOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27638,7 +27638,7 @@ func (s *CreateKeyPairOutput) SetKeyName(v string) *CreateKeyPairOutput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateRequest
 type CreateLaunchTemplateInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27730,7 +27730,7 @@ func (s *CreateLaunchTemplateInput) SetVersionDescription(v string) *CreateLaunc
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateResult
 type CreateLaunchTemplateOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27754,7 +27754,7 @@ func (s *CreateLaunchTemplateOutput) SetLaunchTemplate(v *LaunchTemplate) *Creat
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersionRequest
 type CreateLaunchTemplateVersionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27863,7 +27863,7 @@ func (s *CreateLaunchTemplateVersionInput) SetVersionDescription(v string) *Crea
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateLaunchTemplateVersionResult
 type CreateLaunchTemplateVersionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27888,7 +27888,7 @@ func (s *CreateLaunchTemplateVersionOutput) SetLaunchTemplateVersion(v *LaunchTe
 }
 
 // Contains the parameters for CreateNatGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGatewayRequest
 type CreateNatGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -27956,7 +27956,7 @@ func (s *CreateNatGatewayInput) SetSubnetId(v string) *CreateNatGatewayInput {
 }
 
 // Contains the output of CreateNatGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNatGatewayResult
 type CreateNatGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -27991,7 +27991,7 @@ func (s *CreateNatGatewayOutput) SetNatGateway(v *NatGateway) *CreateNatGatewayO
 }
 
 // Contains the parameters for CreateNetworkAclEntry.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntryRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntryRequest
 type CreateNetworkAclEntryInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28146,7 +28146,7 @@ func (s *CreateNetworkAclEntryInput) SetRuleNumber(v int64) *CreateNetworkAclEnt
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntryOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclEntryOutput
 type CreateNetworkAclEntryOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -28162,7 +28162,7 @@ func (s CreateNetworkAclEntryOutput) GoString() string {
 }
 
 // Contains the parameters for CreateNetworkAcl.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclRequest
 type CreateNetworkAclInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28214,7 +28214,7 @@ func (s *CreateNetworkAclInput) SetVpcId(v string) *CreateNetworkAclInput {
 }
 
 // Contains the output of CreateNetworkAcl.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkAclResult
 type CreateNetworkAclOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -28239,7 +28239,7 @@ func (s *CreateNetworkAclOutput) SetNetworkAcl(v *NetworkAcl) *CreateNetworkAclO
 }
 
 // Contains the parameters for CreateNetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfaceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfaceRequest
 type CreateNetworkInterfaceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28381,7 +28381,7 @@ func (s *CreateNetworkInterfaceInput) SetSubnetId(v string) *CreateNetworkInterf
 }
 
 // Contains the output of CreateNetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfaceResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfaceResult
 type CreateNetworkInterfaceOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -28406,7 +28406,7 @@ func (s *CreateNetworkInterfaceOutput) SetNetworkInterface(v *NetworkInterface) 
 }
 
 // Contains the parameters for CreateNetworkInterfacePermission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermissionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermissionRequest
 type CreateNetworkInterfacePermissionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28490,7 +28490,7 @@ func (s *CreateNetworkInterfacePermissionInput) SetPermission(v string) *CreateN
 }
 
 // Contains the output of CreateNetworkInterfacePermission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermissionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateNetworkInterfacePermissionResult
 type CreateNetworkInterfacePermissionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -28515,7 +28515,7 @@ func (s *CreateNetworkInterfacePermissionOutput) SetInterfacePermission(v *Netwo
 }
 
 // Contains the parameters for CreatePlacementGroup.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroupRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroupRequest
 type CreatePlacementGroupInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28583,7 +28583,7 @@ func (s *CreatePlacementGroupInput) SetStrategy(v string) *CreatePlacementGroupI
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroupOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreatePlacementGroupOutput
 type CreatePlacementGroupOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -28599,7 +28599,7 @@ func (s CreatePlacementGroupOutput) GoString() string {
 }
 
 // Contains the parameters for CreateReservedInstancesListing.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListingRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListingRequest
 type CreateReservedInstancesListingInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28687,7 +28687,7 @@ func (s *CreateReservedInstancesListingInput) SetReservedInstancesId(v string) *
 }
 
 // Contains the output of CreateReservedInstancesListing.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListingResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateReservedInstancesListingResult
 type CreateReservedInstancesListingOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -28712,7 +28712,7 @@ func (s *CreateReservedInstancesListingOutput) SetReservedInstancesListings(v []
 }
 
 // Contains the parameters for CreateRoute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteRequest
 type CreateRouteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28840,7 +28840,7 @@ func (s *CreateRouteInput) SetVpcPeeringConnectionId(v string) *CreateRouteInput
 }
 
 // Contains the output of CreateRoute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteResult
 type CreateRouteOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -28865,7 +28865,7 @@ func (s *CreateRouteOutput) SetReturn(v bool) *CreateRouteOutput {
 }
 
 // Contains the parameters for CreateRouteTable.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTableRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTableRequest
 type CreateRouteTableInput struct {
 	_ struct{} `type:"structure"`
 
@@ -28917,7 +28917,7 @@ func (s *CreateRouteTableInput) SetVpcId(v string) *CreateRouteTableInput {
 }
 
 // Contains the output of CreateRouteTable.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTableResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateRouteTableResult
 type CreateRouteTableOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -28942,7 +28942,7 @@ func (s *CreateRouteTableOutput) SetRouteTable(v *RouteTable) *CreateRouteTableO
 }
 
 // Contains the parameters for CreateSecurityGroup.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroupRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroupRequest
 type CreateSecurityGroupInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29029,7 +29029,7 @@ func (s *CreateSecurityGroupInput) SetVpcId(v string) *CreateSecurityGroupInput 
 }
 
 // Contains the output of CreateSecurityGroup.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroupResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSecurityGroupResult
 type CreateSecurityGroupOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -29054,7 +29054,7 @@ func (s *CreateSecurityGroupOutput) SetGroupId(v string) *CreateSecurityGroupOut
 }
 
 // Contains the parameters for CreateSnapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSnapshotRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSnapshotRequest
 type CreateSnapshotInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29115,7 +29115,7 @@ func (s *CreateSnapshotInput) SetVolumeId(v string) *CreateSnapshotInput {
 }
 
 // Contains the parameters for CreateSpotDatafeedSubscription.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscriptionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscriptionRequest
 type CreateSpotDatafeedSubscriptionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29176,7 +29176,7 @@ func (s *CreateSpotDatafeedSubscriptionInput) SetPrefix(v string) *CreateSpotDat
 }
 
 // Contains the output of CreateSpotDatafeedSubscription.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscriptionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSpotDatafeedSubscriptionResult
 type CreateSpotDatafeedSubscriptionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -29201,7 +29201,7 @@ func (s *CreateSpotDatafeedSubscriptionOutput) SetSpotDatafeedSubscription(v *Sp
 }
 
 // Contains the parameters for CreateSubnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnetRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnetRequest
 type CreateSubnetInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29289,7 +29289,7 @@ func (s *CreateSubnetInput) SetVpcId(v string) *CreateSubnetInput {
 }
 
 // Contains the output of CreateSubnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnetResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateSubnetResult
 type CreateSubnetOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -29314,7 +29314,7 @@ func (s *CreateSubnetOutput) SetSubnet(v *Subnet) *CreateSubnetOutput {
 }
 
 // Contains the parameters for CreateTags.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTagsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTagsRequest
 type CreateTagsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29381,7 +29381,7 @@ func (s *CreateTagsInput) SetTags(v []*Tag) *CreateTagsInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTagsOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateTagsOutput
 type CreateTagsOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -29397,7 +29397,7 @@ func (s CreateTagsOutput) GoString() string {
 }
 
 // Contains the parameters for CreateVolume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolumeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolumeRequest
 type CreateVolumeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29541,7 +29541,7 @@ func (s *CreateVolumeInput) SetVolumeType(v string) *CreateVolumeInput {
 
 // Describes the user or group to be added or removed from the permissions for
 // a volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolumePermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolumePermission
 type CreateVolumePermission struct {
 	_ struct{} `type:"structure"`
 
@@ -29577,7 +29577,7 @@ func (s *CreateVolumePermission) SetUserId(v string) *CreateVolumePermission {
 }
 
 // Describes modifications to the permissions for a volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolumePermissionModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVolumePermissionModifications
 type CreateVolumePermissionModifications struct {
 	_ struct{} `type:"structure"`
 
@@ -29612,7 +29612,7 @@ func (s *CreateVolumePermissionModifications) SetRemove(v []*CreateVolumePermiss
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotificationRequest
 type CreateVpcEndpointConnectionNotificationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29706,7 +29706,7 @@ func (s *CreateVpcEndpointConnectionNotificationInput) SetVpcEndpointId(v string
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotificationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointConnectionNotificationResult
 type CreateVpcEndpointConnectionNotificationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -29741,7 +29741,7 @@ func (s *CreateVpcEndpointConnectionNotificationOutput) SetConnectionNotificatio
 }
 
 // Contains the parameters for CreateVpcEndpoint.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointRequest
 type CreateVpcEndpointInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29891,7 +29891,7 @@ func (s *CreateVpcEndpointInput) SetVpcId(v string) *CreateVpcEndpointInput {
 }
 
 // Contains the output of CreateVpcEndpoint.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointResult
 type CreateVpcEndpointOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -29925,7 +29925,7 @@ func (s *CreateVpcEndpointOutput) SetVpcEndpoint(v *VpcEndpoint) *CreateVpcEndpo
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfigurationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfigurationRequest
 type CreateVpcEndpointServiceConfigurationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -29997,7 +29997,7 @@ func (s *CreateVpcEndpointServiceConfigurationInput) SetNetworkLoadBalancerArns(
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfigurationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcEndpointServiceConfigurationResult
 type CreateVpcEndpointServiceConfigurationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30032,7 +30032,7 @@ func (s *CreateVpcEndpointServiceConfigurationOutput) SetServiceConfiguration(v 
 }
 
 // Contains the parameters for CreateVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcRequest
 type CreateVpcInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30113,7 +30113,7 @@ func (s *CreateVpcInput) SetInstanceTenancy(v string) *CreateVpcInput {
 }
 
 // Contains the output of CreateVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcResult
 type CreateVpcOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30138,7 +30138,7 @@ func (s *CreateVpcOutput) SetVpc(v *Vpc) *CreateVpcOutput {
 }
 
 // Contains the parameters for CreateVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnectionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnectionRequest
 type CreateVpcPeeringConnectionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30208,7 +30208,7 @@ func (s *CreateVpcPeeringConnectionInput) SetVpcId(v string) *CreateVpcPeeringCo
 }
 
 // Contains the output of CreateVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnectionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpcPeeringConnectionResult
 type CreateVpcPeeringConnectionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30233,7 +30233,7 @@ func (s *CreateVpcPeeringConnectionOutput) SetVpcPeeringConnection(v *VpcPeering
 }
 
 // Contains the parameters for CreateVpnConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRequest
 type CreateVpnConnectionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30322,7 +30322,7 @@ func (s *CreateVpnConnectionInput) SetVpnGatewayId(v string) *CreateVpnConnectio
 }
 
 // Contains the output of CreateVpnConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionResult
 type CreateVpnConnectionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30347,7 +30347,7 @@ func (s *CreateVpnConnectionOutput) SetVpnConnection(v *VpnConnection) *CreateVp
 }
 
 // Contains the parameters for CreateVpnConnectionRoute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRouteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRouteRequest
 type CreateVpnConnectionRouteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30400,7 +30400,7 @@ func (s *CreateVpnConnectionRouteInput) SetVpnConnectionId(v string) *CreateVpnC
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRouteOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnConnectionRouteOutput
 type CreateVpnConnectionRouteOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -30416,7 +30416,7 @@ func (s CreateVpnConnectionRouteOutput) GoString() string {
 }
 
 // Contains the parameters for CreateVpnGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGatewayRequest
 type CreateVpnGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30490,7 +30490,7 @@ func (s *CreateVpnGatewayInput) SetType(v string) *CreateVpnGatewayInput {
 }
 
 // Contains the output of CreateVpnGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreateVpnGatewayResult
 type CreateVpnGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30515,7 +30515,7 @@ func (s *CreateVpnGatewayOutput) SetVpnGateway(v *VpnGateway) *CreateVpnGatewayO
 }
 
 // Describes the credit option for CPU usage of a T2 instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreditSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreditSpecification
 type CreditSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -30540,7 +30540,7 @@ func (s *CreditSpecification) SetCpuCredits(v string) *CreditSpecification {
 }
 
 // The credit option for CPU usage of a T2 instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreditSpecificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CreditSpecificationRequest
 type CreditSpecificationRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -30581,7 +30581,7 @@ func (s *CreditSpecificationRequest) SetCpuCredits(v string) *CreditSpecificatio
 }
 
 // Describes a customer gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CustomerGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/CustomerGateway
 type CustomerGateway struct {
 	_ struct{} `type:"structure"`
 
@@ -30653,7 +30653,7 @@ func (s *CustomerGateway) SetType(v string) *CustomerGateway {
 }
 
 // Contains the parameters for DeleteCustomerGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGatewayRequest
 type DeleteCustomerGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30704,7 +30704,7 @@ func (s *DeleteCustomerGatewayInput) SetDryRun(v bool) *DeleteCustomerGatewayInp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGatewayOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteCustomerGatewayOutput
 type DeleteCustomerGatewayOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -30720,7 +30720,7 @@ func (s DeleteCustomerGatewayOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteDhcpOptions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptionsRequest
 type DeleteDhcpOptionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30771,7 +30771,7 @@ func (s *DeleteDhcpOptionsInput) SetDryRun(v bool) *DeleteDhcpOptionsInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptionsOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteDhcpOptionsOutput
 type DeleteDhcpOptionsOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -30786,7 +30786,7 @@ func (s DeleteDhcpOptionsOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGatewayRequest
 type DeleteEgressOnlyInternetGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30837,7 +30837,7 @@ func (s *DeleteEgressOnlyInternetGatewayInput) SetEgressOnlyInternetGatewayId(v 
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteEgressOnlyInternetGatewayResult
 type DeleteEgressOnlyInternetGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30862,7 +30862,7 @@ func (s *DeleteEgressOnlyInternetGatewayOutput) SetReturnCode(v bool) *DeleteEgr
 }
 
 // Contains the parameters for DeleteFlowLogs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogsRequest
 type DeleteFlowLogsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30902,7 +30902,7 @@ func (s *DeleteFlowLogsInput) SetFlowLogIds(v []*string) *DeleteFlowLogsInput {
 }
 
 // Contains the output of DeleteFlowLogs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFlowLogsResult
 type DeleteFlowLogsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -30926,7 +30926,7 @@ func (s *DeleteFlowLogsOutput) SetUnsuccessful(v []*UnsuccessfulItem) *DeleteFlo
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImageRequest
 type DeleteFpgaImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -30977,7 +30977,7 @@ func (s *DeleteFpgaImageInput) SetFpgaImageId(v string) *DeleteFpgaImageInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteFpgaImageResult
 type DeleteFpgaImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -31002,7 +31002,7 @@ func (s *DeleteFpgaImageOutput) SetReturn(v bool) *DeleteFpgaImageOutput {
 }
 
 // Contains the parameters for DeleteInternetGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGatewayRequest
 type DeleteInternetGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31053,7 +31053,7 @@ func (s *DeleteInternetGatewayInput) SetInternetGatewayId(v string) *DeleteInter
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGatewayOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteInternetGatewayOutput
 type DeleteInternetGatewayOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31069,7 +31069,7 @@ func (s DeleteInternetGatewayOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteKeyPair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPairRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPairRequest
 type DeleteKeyPairInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31120,7 +31120,7 @@ func (s *DeleteKeyPairInput) SetKeyName(v string) *DeleteKeyPairInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPairOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteKeyPairOutput
 type DeleteKeyPairOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31135,7 +31135,7 @@ func (s DeleteKeyPairOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateRequest
 type DeleteLaunchTemplateInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31195,7 +31195,7 @@ func (s *DeleteLaunchTemplateInput) SetLaunchTemplateName(v string) *DeleteLaunc
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateResult
 type DeleteLaunchTemplateOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -31219,7 +31219,7 @@ func (s *DeleteLaunchTemplateOutput) SetLaunchTemplate(v *LaunchTemplate) *Delet
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsRequest
 type DeleteLaunchTemplateVersionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31293,7 +31293,7 @@ func (s *DeleteLaunchTemplateVersionsInput) SetVersions(v []*string) *DeleteLaun
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsResult
 type DeleteLaunchTemplateVersionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -31327,7 +31327,7 @@ func (s *DeleteLaunchTemplateVersionsOutput) SetUnsuccessfullyDeletedLaunchTempl
 }
 
 // Describes a launch template version that could not be deleted.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseErrorItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseErrorItem
 type DeleteLaunchTemplateVersionsResponseErrorItem struct {
 	_ struct{} `type:"structure"`
 
@@ -31379,7 +31379,7 @@ func (s *DeleteLaunchTemplateVersionsResponseErrorItem) SetVersionNumber(v int64
 }
 
 // Describes a launch template version that was successfully deleted.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseSuccessItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseSuccessItem
 type DeleteLaunchTemplateVersionsResponseSuccessItem struct {
 	_ struct{} `type:"structure"`
 
@@ -31422,7 +31422,7 @@ func (s *DeleteLaunchTemplateVersionsResponseSuccessItem) SetVersionNumber(v int
 }
 
 // Contains the parameters for DeleteNatGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGatewayRequest
 type DeleteNatGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31462,7 +31462,7 @@ func (s *DeleteNatGatewayInput) SetNatGatewayId(v string) *DeleteNatGatewayInput
 }
 
 // Contains the output of DeleteNatGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGatewayResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNatGatewayResult
 type DeleteNatGatewayOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -31487,7 +31487,7 @@ func (s *DeleteNatGatewayOutput) SetNatGatewayId(v string) *DeleteNatGatewayOutp
 }
 
 // Contains the parameters for DeleteNetworkAclEntry.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntryRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntryRequest
 type DeleteNetworkAclEntryInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31566,7 +31566,7 @@ func (s *DeleteNetworkAclEntryInput) SetRuleNumber(v int64) *DeleteNetworkAclEnt
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntryOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclEntryOutput
 type DeleteNetworkAclEntryOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31582,7 +31582,7 @@ func (s DeleteNetworkAclEntryOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteNetworkAcl.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclRequest
 type DeleteNetworkAclInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31633,7 +31633,7 @@ func (s *DeleteNetworkAclInput) SetNetworkAclId(v string) *DeleteNetworkAclInput
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkAclOutput
 type DeleteNetworkAclOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31649,7 +31649,7 @@ func (s DeleteNetworkAclOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteNetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfaceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfaceRequest
 type DeleteNetworkInterfaceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31700,7 +31700,7 @@ func (s *DeleteNetworkInterfaceInput) SetNetworkInterfaceId(v string) *DeleteNet
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfaceOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfaceOutput
 type DeleteNetworkInterfaceOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31716,7 +31716,7 @@ func (s DeleteNetworkInterfaceOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteNetworkInterfacePermission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermissionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermissionRequest
 type DeleteNetworkInterfacePermissionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31778,7 +31778,7 @@ func (s *DeleteNetworkInterfacePermissionInput) SetNetworkInterfacePermissionId(
 }
 
 // Contains the output for DeleteNetworkInterfacePermission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermissionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteNetworkInterfacePermissionResult
 type DeleteNetworkInterfacePermissionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -31803,7 +31803,7 @@ func (s *DeleteNetworkInterfacePermissionOutput) SetReturn(v bool) *DeleteNetwor
 }
 
 // Contains the parameters for DeletePlacementGroup.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroupRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroupRequest
 type DeletePlacementGroupInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31854,7 +31854,7 @@ func (s *DeletePlacementGroupInput) SetGroupName(v string) *DeletePlacementGroup
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroupOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeletePlacementGroupOutput
 type DeletePlacementGroupOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31870,7 +31870,7 @@ func (s DeletePlacementGroupOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteRoute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteRequest
 type DeleteRouteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -31941,7 +31941,7 @@ func (s *DeleteRouteInput) SetRouteTableId(v string) *DeleteRouteInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteOutput
 type DeleteRouteOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -31957,7 +31957,7 @@ func (s DeleteRouteOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteRouteTable.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTableRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTableRequest
 type DeleteRouteTableInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32008,7 +32008,7 @@ func (s *DeleteRouteTableInput) SetRouteTableId(v string) *DeleteRouteTableInput
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTableOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteRouteTableOutput
 type DeleteRouteTableOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32024,7 +32024,7 @@ func (s DeleteRouteTableOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteSecurityGroup.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroupRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroupRequest
 type DeleteSecurityGroupInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32070,7 +32070,7 @@ func (s *DeleteSecurityGroupInput) SetGroupName(v string) *DeleteSecurityGroupIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroupOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSecurityGroupOutput
 type DeleteSecurityGroupOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32086,7 +32086,7 @@ func (s DeleteSecurityGroupOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteSnapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshotRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshotRequest
 type DeleteSnapshotInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32137,7 +32137,7 @@ func (s *DeleteSnapshotInput) SetSnapshotId(v string) *DeleteSnapshotInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshotOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSnapshotOutput
 type DeleteSnapshotOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32153,7 +32153,7 @@ func (s DeleteSnapshotOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteSpotDatafeedSubscription.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscriptionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscriptionRequest
 type DeleteSpotDatafeedSubscriptionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32180,7 +32180,7 @@ func (s *DeleteSpotDatafeedSubscriptionInput) SetDryRun(v bool) *DeleteSpotDataf
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscriptionOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSpotDatafeedSubscriptionOutput
 type DeleteSpotDatafeedSubscriptionOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32196,7 +32196,7 @@ func (s DeleteSpotDatafeedSubscriptionOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteSubnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnetRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnetRequest
 type DeleteSubnetInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32247,7 +32247,7 @@ func (s *DeleteSubnetInput) SetSubnetId(v string) *DeleteSubnetInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnetOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteSubnetOutput
 type DeleteSubnetOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32263,7 +32263,7 @@ func (s DeleteSubnetOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteTags.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTagsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTagsRequest
 type DeleteTagsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32328,7 +32328,7 @@ func (s *DeleteTagsInput) SetTags(v []*Tag) *DeleteTagsInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTagsOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteTagsOutput
 type DeleteTagsOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32344,7 +32344,7 @@ func (s DeleteTagsOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteVolume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolumeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolumeRequest
 type DeleteVolumeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32395,7 +32395,7 @@ func (s *DeleteVolumeInput) SetVolumeId(v string) *DeleteVolumeInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolumeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVolumeOutput
 type DeleteVolumeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32410,7 +32410,7 @@ func (s DeleteVolumeOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotificationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotificationsRequest
 type DeleteVpcEndpointConnectionNotificationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32461,7 +32461,7 @@ func (s *DeleteVpcEndpointConnectionNotificationsInput) SetDryRun(v bool) *Delet
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotificationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointConnectionNotificationsResult
 type DeleteVpcEndpointConnectionNotificationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -32485,7 +32485,7 @@ func (s *DeleteVpcEndpointConnectionNotificationsOutput) SetUnsuccessful(v []*Un
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurationsRequest
 type DeleteVpcEndpointServiceConfigurationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32536,7 +32536,7 @@ func (s *DeleteVpcEndpointServiceConfigurationsInput) SetServiceIds(v []*string)
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointServiceConfigurationsResult
 type DeleteVpcEndpointServiceConfigurationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -32561,7 +32561,7 @@ func (s *DeleteVpcEndpointServiceConfigurationsOutput) SetUnsuccessful(v []*Unsu
 }
 
 // Contains the parameters for DeleteVpcEndpoints.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointsRequest
 type DeleteVpcEndpointsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32613,7 +32613,7 @@ func (s *DeleteVpcEndpointsInput) SetVpcEndpointIds(v []*string) *DeleteVpcEndpo
 }
 
 // Contains the output of DeleteVpcEndpoints.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcEndpointsResult
 type DeleteVpcEndpointsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -32638,7 +32638,7 @@ func (s *DeleteVpcEndpointsOutput) SetUnsuccessful(v []*UnsuccessfulItem) *Delet
 }
 
 // Contains the parameters for DeleteVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcRequest
 type DeleteVpcInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32689,7 +32689,7 @@ func (s *DeleteVpcInput) SetVpcId(v string) *DeleteVpcInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcOutput
 type DeleteVpcOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32705,7 +32705,7 @@ func (s DeleteVpcOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnectionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnectionRequest
 type DeleteVpcPeeringConnectionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32757,7 +32757,7 @@ func (s *DeleteVpcPeeringConnectionInput) SetVpcPeeringConnectionId(v string) *D
 }
 
 // Contains the output of DeleteVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnectionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpcPeeringConnectionResult
 type DeleteVpcPeeringConnectionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -32782,7 +32782,7 @@ func (s *DeleteVpcPeeringConnectionOutput) SetReturn(v bool) *DeleteVpcPeeringCo
 }
 
 // Contains the parameters for DeleteVpnConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRequest
 type DeleteVpnConnectionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32833,7 +32833,7 @@ func (s *DeleteVpnConnectionInput) SetVpnConnectionId(v string) *DeleteVpnConnec
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionOutput
 type DeleteVpnConnectionOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32849,7 +32849,7 @@ func (s DeleteVpnConnectionOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteVpnConnectionRoute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRouteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRouteRequest
 type DeleteVpnConnectionRouteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32902,7 +32902,7 @@ func (s *DeleteVpnConnectionRouteInput) SetVpnConnectionId(v string) *DeleteVpnC
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRouteOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnConnectionRouteOutput
 type DeleteVpnConnectionRouteOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32918,7 +32918,7 @@ func (s DeleteVpnConnectionRouteOutput) GoString() string {
 }
 
 // Contains the parameters for DeleteVpnGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGatewayRequest
 type DeleteVpnGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -32969,7 +32969,7 @@ func (s *DeleteVpnGatewayInput) SetVpnGatewayId(v string) *DeleteVpnGatewayInput
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGatewayOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeleteVpnGatewayOutput
 type DeleteVpnGatewayOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -32985,7 +32985,7 @@ func (s DeleteVpnGatewayOutput) GoString() string {
 }
 
 // Contains the parameters for DeregisterImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImageRequest
 type DeregisterImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33036,7 +33036,7 @@ func (s *DeregisterImageInput) SetImageId(v string) *DeregisterImageInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImageOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DeregisterImageOutput
 type DeregisterImageOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -33052,7 +33052,7 @@ func (s DeregisterImageOutput) GoString() string {
 }
 
 // Contains the parameters for DescribeAccountAttributes.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributesRequest
 type DescribeAccountAttributesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33089,7 +33089,7 @@ func (s *DescribeAccountAttributesInput) SetDryRun(v bool) *DescribeAccountAttri
 }
 
 // Contains the output of DescribeAccountAttributes.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAccountAttributesResult
 type DescribeAccountAttributesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33114,7 +33114,7 @@ func (s *DescribeAccountAttributesOutput) SetAccountAttributes(v []*AccountAttri
 }
 
 // Contains the parameters for DescribeAddresses.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddressesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddressesRequest
 type DescribeAddressesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33193,7 +33193,7 @@ func (s *DescribeAddressesInput) SetPublicIps(v []*string) *DescribeAddressesInp
 }
 
 // Contains the output of DescribeAddresses.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddressesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAddressesResult
 type DescribeAddressesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33218,7 +33218,7 @@ func (s *DescribeAddressesOutput) SetAddresses(v []*Address) *DescribeAddressesO
 }
 
 // Contains the parameters for DescribeAvailabilityZones.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZonesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZonesRequest
 type DescribeAvailabilityZonesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33274,7 +33274,7 @@ func (s *DescribeAvailabilityZonesInput) SetZoneNames(v []*string) *DescribeAvai
 }
 
 // Contains the output of DescribeAvailabiltyZones.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZonesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeAvailabilityZonesResult
 type DescribeAvailabilityZonesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33299,7 +33299,7 @@ func (s *DescribeAvailabilityZonesOutput) SetAvailabilityZones(v []*Availability
 }
 
 // Contains the parameters for DescribeBundleTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasksRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasksRequest
 type DescribeBundleTasksInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33369,7 +33369,7 @@ func (s *DescribeBundleTasksInput) SetFilters(v []*Filter) *DescribeBundleTasksI
 }
 
 // Contains the output of DescribeBundleTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasksResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeBundleTasksResult
 type DescribeBundleTasksOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33394,7 +33394,7 @@ func (s *DescribeBundleTasksOutput) SetBundleTasks(v []*BundleTask) *DescribeBun
 }
 
 // Contains the parameters for DescribeClassicLinkInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstancesRequest
 type DescribeClassicLinkInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33485,7 +33485,7 @@ func (s *DescribeClassicLinkInstancesInput) SetNextToken(v string) *DescribeClas
 }
 
 // Contains the output of DescribeClassicLinkInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeClassicLinkInstancesResult
 type DescribeClassicLinkInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33520,7 +33520,7 @@ func (s *DescribeClassicLinkInstancesOutput) SetNextToken(v string) *DescribeCla
 }
 
 // Contains the parameters for DescribeConversionTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasksRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasksRequest
 type DescribeConversionTasksInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33557,7 +33557,7 @@ func (s *DescribeConversionTasksInput) SetDryRun(v bool) *DescribeConversionTask
 }
 
 // Contains the output for DescribeConversionTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasksResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeConversionTasksResult
 type DescribeConversionTasksOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33582,7 +33582,7 @@ func (s *DescribeConversionTasksOutput) SetConversionTasks(v []*ConversionTask) 
 }
 
 // Contains the parameters for DescribeCustomerGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGatewaysRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGatewaysRequest
 type DescribeCustomerGatewaysInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33660,7 +33660,7 @@ func (s *DescribeCustomerGatewaysInput) SetFilters(v []*Filter) *DescribeCustome
 }
 
 // Contains the output of DescribeCustomerGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGatewaysResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeCustomerGatewaysResult
 type DescribeCustomerGatewaysOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33685,7 +33685,7 @@ func (s *DescribeCustomerGatewaysOutput) SetCustomerGateways(v []*CustomerGatewa
 }
 
 // Contains the parameters for DescribeDhcpOptions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptionsRequest
 type DescribeDhcpOptionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33755,7 +33755,7 @@ func (s *DescribeDhcpOptionsInput) SetFilters(v []*Filter) *DescribeDhcpOptionsI
 }
 
 // Contains the output of DescribeDhcpOptions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeDhcpOptionsResult
 type DescribeDhcpOptionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33779,7 +33779,7 @@ func (s *DescribeDhcpOptionsOutput) SetDhcpOptions(v []*DhcpOptions) *DescribeDh
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGatewaysRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGatewaysRequest
 type DescribeEgressOnlyInternetGatewaysInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33836,7 +33836,7 @@ func (s *DescribeEgressOnlyInternetGatewaysInput) SetNextToken(v string) *Descri
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGatewaysResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeEgressOnlyInternetGatewaysResult
 type DescribeEgressOnlyInternetGatewaysOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33869,7 +33869,7 @@ func (s *DescribeEgressOnlyInternetGatewaysOutput) SetNextToken(v string) *Descr
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpusRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpusRequest
 type DescribeElasticGpusInput struct {
 	_ struct{} `type:"structure"`
 
@@ -33944,7 +33944,7 @@ func (s *DescribeElasticGpusInput) SetNextToken(v string) *DescribeElasticGpusIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpusResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeElasticGpusResult
 type DescribeElasticGpusOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -33990,7 +33990,7 @@ func (s *DescribeElasticGpusOutput) SetNextToken(v string) *DescribeElasticGpusO
 }
 
 // Contains the parameters for DescribeExportTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasksRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasksRequest
 type DescribeExportTasksInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34015,7 +34015,7 @@ func (s *DescribeExportTasksInput) SetExportTaskIds(v []*string) *DescribeExport
 }
 
 // Contains the output for DescribeExportTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasksResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeExportTasksResult
 type DescribeExportTasksOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34040,7 +34040,7 @@ func (s *DescribeExportTasksOutput) SetExportTasks(v []*ExportTask) *DescribeExp
 }
 
 // Contains the parameters for DescribeFlowLogs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogsRequest
 type DescribeFlowLogsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34106,7 +34106,7 @@ func (s *DescribeFlowLogsInput) SetNextToken(v string) *DescribeFlowLogsInput {
 }
 
 // Contains the output of DescribeFlowLogs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFlowLogsResult
 type DescribeFlowLogsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34140,7 +34140,7 @@ func (s *DescribeFlowLogsOutput) SetNextToken(v string) *DescribeFlowLogsOutput 
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttributeRequest
 type DescribeFpgaImageAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34205,7 +34205,7 @@ func (s *DescribeFpgaImageAttributeInput) SetFpgaImageId(v string) *DescribeFpga
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImageAttributeResult
 type DescribeFpgaImageAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34229,7 +34229,7 @@ func (s *DescribeFpgaImageAttributeOutput) SetFpgaImageAttribute(v *FpgaImageAtt
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImagesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImagesRequest
 type DescribeFpgaImagesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34353,7 +34353,7 @@ func (s *DescribeFpgaImagesInput) SetOwners(v []*string) *DescribeFpgaImagesInpu
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImagesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeFpgaImagesResult
 type DescribeFpgaImagesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34387,7 +34387,7 @@ func (s *DescribeFpgaImagesOutput) SetNextToken(v string) *DescribeFpgaImagesOut
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferingsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferingsRequest
 type DescribeHostReservationOfferingsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34471,7 +34471,7 @@ func (s *DescribeHostReservationOfferingsInput) SetOfferingId(v string) *Describ
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferingsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationOfferingsResult
 type DescribeHostReservationOfferingsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34505,7 +34505,7 @@ func (s *DescribeHostReservationOfferingsOutput) SetOfferingSet(v []*HostOfferin
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationsRequest
 type DescribeHostReservationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34566,7 +34566,7 @@ func (s *DescribeHostReservationsInput) SetNextToken(v string) *DescribeHostRese
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostReservationsResult
 type DescribeHostReservationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34601,7 +34601,7 @@ func (s *DescribeHostReservationsOutput) SetNextToken(v string) *DescribeHostRes
 }
 
 // Contains the parameters for DescribeHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostsRequest
 type DescribeHostsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34673,7 +34673,7 @@ func (s *DescribeHostsInput) SetNextToken(v string) *DescribeHostsInput {
 }
 
 // Contains the output of DescribeHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeHostsResult
 type DescribeHostsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34707,7 +34707,7 @@ func (s *DescribeHostsOutput) SetNextToken(v string) *DescribeHostsOutput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociationsRequest
 type DescribeIamInstanceProfileAssociationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34780,7 +34780,7 @@ func (s *DescribeIamInstanceProfileAssociationsInput) SetNextToken(v string) *De
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIamInstanceProfileAssociationsResult
 type DescribeIamInstanceProfileAssociationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34815,7 +34815,7 @@ func (s *DescribeIamInstanceProfileAssociationsOutput) SetNextToken(v string) *D
 }
 
 // Contains the parameters for DescribeIdFormat.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormatRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormatRequest
 type DescribeIdFormatInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34840,7 +34840,7 @@ func (s *DescribeIdFormatInput) SetResource(v string) *DescribeIdFormatInput {
 }
 
 // Contains the output of DescribeIdFormat.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormatResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdFormatResult
 type DescribeIdFormatOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34865,7 +34865,7 @@ func (s *DescribeIdFormatOutput) SetStatuses(v []*IdFormat) *DescribeIdFormatOut
 }
 
 // Contains the parameters for DescribeIdentityIdFormat.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormatRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormatRequest
 type DescribeIdentityIdFormatInput struct {
 	_ struct{} `type:"structure"`
 
@@ -34915,7 +34915,7 @@ func (s *DescribeIdentityIdFormatInput) SetResource(v string) *DescribeIdentityI
 }
 
 // Contains the output of DescribeIdentityIdFormat.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormatResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeIdentityIdFormatResult
 type DescribeIdentityIdFormatOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -34940,7 +34940,7 @@ func (s *DescribeIdentityIdFormatOutput) SetStatuses(v []*IdFormat) *DescribeIde
 }
 
 // Contains the parameters for DescribeImageAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImageAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImageAttributeRequest
 type DescribeImageAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35010,7 +35010,7 @@ func (s *DescribeImageAttributeInput) SetImageId(v string) *DescribeImageAttribu
 }
 
 // Describes an image attribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImageAttribute
 type DescribeImageAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35099,7 +35099,7 @@ func (s *DescribeImageAttributeOutput) SetSriovNetSupport(v *AttributeValue) *De
 }
 
 // Contains the parameters for DescribeImages.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImagesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImagesRequest
 type DescribeImagesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35251,7 +35251,7 @@ func (s *DescribeImagesInput) SetOwners(v []*string) *DescribeImagesInput {
 }
 
 // Contains the output of DescribeImages.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImagesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImagesResult
 type DescribeImagesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35276,7 +35276,7 @@ func (s *DescribeImagesOutput) SetImages(v []*Image) *DescribeImagesOutput {
 }
 
 // Contains the parameters for DescribeImportImageTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasksRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasksRequest
 type DescribeImportImageTasksInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35342,7 +35342,7 @@ func (s *DescribeImportImageTasksInput) SetNextToken(v string) *DescribeImportIm
 }
 
 // Contains the output for DescribeImportImageTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasksResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportImageTasksResult
 type DescribeImportImageTasksOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35378,7 +35378,7 @@ func (s *DescribeImportImageTasksOutput) SetNextToken(v string) *DescribeImportI
 }
 
 // Contains the parameters for DescribeImportSnapshotTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasksRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasksRequest
 type DescribeImportSnapshotTasksInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35443,7 +35443,7 @@ func (s *DescribeImportSnapshotTasksInput) SetNextToken(v string) *DescribeImpor
 }
 
 // Contains the output for DescribeImportSnapshotTasks.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasksResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeImportSnapshotTasksResult
 type DescribeImportSnapshotTasksOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35479,7 +35479,7 @@ func (s *DescribeImportSnapshotTasksOutput) SetNextToken(v string) *DescribeImpo
 }
 
 // Contains the parameters for DescribeInstanceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceAttributeRequest
 type DescribeInstanceAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35547,7 +35547,7 @@ func (s *DescribeInstanceAttributeInput) SetInstanceId(v string) *DescribeInstan
 }
 
 // Describes an instance attribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceAttribute
 type DescribeInstanceAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35702,7 +35702,7 @@ func (s *DescribeInstanceAttributeOutput) SetUserData(v *AttributeValue) *Descri
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecificationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecificationsRequest
 type DescribeInstanceCreditSpecificationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35774,7 +35774,7 @@ func (s *DescribeInstanceCreditSpecificationsInput) SetNextToken(v string) *Desc
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecificationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceCreditSpecificationsResult
 type DescribeInstanceCreditSpecificationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35809,7 +35809,7 @@ func (s *DescribeInstanceCreditSpecificationsOutput) SetNextToken(v string) *Des
 }
 
 // Contains the parameters for DescribeInstanceStatus.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatusRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatusRequest
 type DescribeInstanceStatusInput struct {
 	_ struct{} `type:"structure"`
 
@@ -35926,7 +35926,7 @@ func (s *DescribeInstanceStatusInput) SetNextToken(v string) *DescribeInstanceSt
 }
 
 // Contains the output of DescribeInstanceStatus.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatusResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstanceStatusResult
 type DescribeInstanceStatusOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -35961,7 +35961,7 @@ func (s *DescribeInstanceStatusOutput) SetNextToken(v string) *DescribeInstanceS
 }
 
 // Contains the parameters for DescribeInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstancesRequest
 type DescribeInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36267,7 +36267,7 @@ func (s *DescribeInstancesInput) SetNextToken(v string) *DescribeInstancesInput 
 }
 
 // Contains the output of DescribeInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInstancesResult
 type DescribeInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36302,7 +36302,7 @@ func (s *DescribeInstancesOutput) SetReservations(v []*Reservation) *DescribeIns
 }
 
 // Contains the parameters for DescribeInternetGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGatewaysRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGatewaysRequest
 type DescribeInternetGatewaysInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36373,7 +36373,7 @@ func (s *DescribeInternetGatewaysInput) SetInternetGatewayIds(v []*string) *Desc
 }
 
 // Contains the output of DescribeInternetGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGatewaysResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeInternetGatewaysResult
 type DescribeInternetGatewaysOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36398,7 +36398,7 @@ func (s *DescribeInternetGatewaysOutput) SetInternetGateways(v []*InternetGatewa
 }
 
 // Contains the parameters for DescribeKeyPairs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairsRequest
 type DescribeKeyPairsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36450,7 +36450,7 @@ func (s *DescribeKeyPairsInput) SetKeyNames(v []*string) *DescribeKeyPairsInput 
 }
 
 // Contains the output of DescribeKeyPairs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeKeyPairsResult
 type DescribeKeyPairsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36474,7 +36474,7 @@ func (s *DescribeKeyPairsOutput) SetKeyPairs(v []*KeyPairInfo) *DescribeKeyPairs
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersionsRequest
 type DescribeLaunchTemplateVersionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36608,7 +36608,7 @@ func (s *DescribeLaunchTemplateVersionsInput) SetVersions(v []*string) *Describe
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplateVersionsResult
 type DescribeLaunchTemplateVersionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36642,7 +36642,7 @@ func (s *DescribeLaunchTemplateVersionsOutput) SetNextToken(v string) *DescribeL
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplatesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplatesRequest
 type DescribeLaunchTemplatesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36720,7 +36720,7 @@ func (s *DescribeLaunchTemplatesInput) SetNextToken(v string) *DescribeLaunchTem
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplatesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeLaunchTemplatesResult
 type DescribeLaunchTemplatesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36755,7 +36755,7 @@ func (s *DescribeLaunchTemplatesOutput) SetNextToken(v string) *DescribeLaunchTe
 }
 
 // Contains the parameters for DescribeMovingAddresses.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddressesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddressesRequest
 type DescribeMovingAddressesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36827,7 +36827,7 @@ func (s *DescribeMovingAddressesInput) SetPublicIps(v []*string) *DescribeMoving
 }
 
 // Contains the output of DescribeMovingAddresses.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddressesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeMovingAddressesResult
 type DescribeMovingAddressesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36862,7 +36862,7 @@ func (s *DescribeMovingAddressesOutput) SetNextToken(v string) *DescribeMovingAd
 }
 
 // Contains the parameters for DescribeNatGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGatewaysRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGatewaysRequest
 type DescribeNatGatewaysInput struct {
 	_ struct{} `type:"structure"`
 
@@ -36944,7 +36944,7 @@ func (s *DescribeNatGatewaysInput) SetNextToken(v string) *DescribeNatGatewaysIn
 }
 
 // Contains the output of DescribeNatGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGatewaysResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNatGatewaysResult
 type DescribeNatGatewaysOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -36979,7 +36979,7 @@ func (s *DescribeNatGatewaysOutput) SetNextToken(v string) *DescribeNatGatewaysO
 }
 
 // Contains the parameters for DescribeNetworkAcls.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAclsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAclsRequest
 type DescribeNetworkAclsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37081,7 +37081,7 @@ func (s *DescribeNetworkAclsInput) SetNetworkAclIds(v []*string) *DescribeNetwor
 }
 
 // Contains the output of DescribeNetworkAcls.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAclsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkAclsResult
 type DescribeNetworkAclsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37106,7 +37106,7 @@ func (s *DescribeNetworkAclsOutput) SetNetworkAcls(v []*NetworkAcl) *DescribeNet
 }
 
 // Contains the parameters for DescribeNetworkInterfaceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttributeRequest
 type DescribeNetworkInterfaceAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37167,7 +37167,7 @@ func (s *DescribeNetworkInterfaceAttributeInput) SetNetworkInterfaceId(v string)
 }
 
 // Contains the output of DescribeNetworkInterfaceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfaceAttributeResult
 type DescribeNetworkInterfaceAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37228,7 +37228,7 @@ func (s *DescribeNetworkInterfaceAttributeOutput) SetSourceDestCheck(v *Attribut
 }
 
 // Contains the parameters for DescribeNetworkInterfacePermissions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissionsRequest
 type DescribeNetworkInterfacePermissionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37295,7 +37295,7 @@ func (s *DescribeNetworkInterfacePermissionsInput) SetNextToken(v string) *Descr
 }
 
 // Contains the output for DescribeNetworkInterfacePermissions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacePermissionsResult
 type DescribeNetworkInterfacePermissionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37329,7 +37329,7 @@ func (s *DescribeNetworkInterfacePermissionsOutput) SetNextToken(v string) *Desc
 }
 
 // Contains the parameters for DescribeNetworkInterfaces.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacesRequest
 type DescribeNetworkInterfacesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37487,7 +37487,7 @@ func (s *DescribeNetworkInterfacesInput) SetNetworkInterfaceIds(v []*string) *De
 }
 
 // Contains the output of DescribeNetworkInterfaces.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeNetworkInterfacesResult
 type DescribeNetworkInterfacesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37512,7 +37512,7 @@ func (s *DescribeNetworkInterfacesOutput) SetNetworkInterfaces(v []*NetworkInter
 }
 
 // Contains the parameters for DescribePlacementGroups.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroupsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroupsRequest
 type DescribePlacementGroupsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37567,7 +37567,7 @@ func (s *DescribePlacementGroupsInput) SetGroupNames(v []*string) *DescribePlace
 }
 
 // Contains the output of DescribePlacementGroups.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroupsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePlacementGroupsResult
 type DescribePlacementGroupsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37592,7 +37592,7 @@ func (s *DescribePlacementGroupsOutput) SetPlacementGroups(v []*PlacementGroup) 
 }
 
 // Contains the parameters for DescribePrefixLists.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixListsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixListsRequest
 type DescribePrefixListsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37666,7 +37666,7 @@ func (s *DescribePrefixListsInput) SetPrefixListIds(v []*string) *DescribePrefix
 }
 
 // Contains the output of DescribePrefixLists.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixListsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribePrefixListsResult
 type DescribePrefixListsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37701,7 +37701,7 @@ func (s *DescribePrefixListsOutput) SetPrefixLists(v []*PrefixList) *DescribePre
 }
 
 // Contains the parameters for DescribeRegions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegionsRequest
 type DescribeRegionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37751,7 +37751,7 @@ func (s *DescribeRegionsInput) SetRegionNames(v []*string) *DescribeRegionsInput
 }
 
 // Contains the output of DescribeRegions.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRegionsResult
 type DescribeRegionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37776,7 +37776,7 @@ func (s *DescribeRegionsOutput) SetRegions(v []*Region) *DescribeRegionsOutput {
 }
 
 // Contains the parameters for DescribeReservedInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesRequest
 type DescribeReservedInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37896,7 +37896,7 @@ func (s *DescribeReservedInstancesInput) SetReservedInstancesIds(v []*string) *D
 }
 
 // Contains the parameters for DescribeReservedInstancesListings.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListingsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListingsRequest
 type DescribeReservedInstancesListingsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -37948,7 +37948,7 @@ func (s *DescribeReservedInstancesListingsInput) SetReservedInstancesListingId(v
 }
 
 // Contains the output of DescribeReservedInstancesListings.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListingsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesListingsResult
 type DescribeReservedInstancesListingsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -37973,7 +37973,7 @@ func (s *DescribeReservedInstancesListingsOutput) SetReservedInstancesListings(v
 }
 
 // Contains the parameters for DescribeReservedInstancesModifications.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModificationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModificationsRequest
 type DescribeReservedInstancesModificationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -38049,7 +38049,7 @@ func (s *DescribeReservedInstancesModificationsInput) SetReservedInstancesModifi
 }
 
 // Contains the output of DescribeReservedInstancesModifications.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModificationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesModificationsResult
 type DescribeReservedInstancesModificationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38084,7 +38084,7 @@ func (s *DescribeReservedInstancesModificationsOutput) SetReservedInstancesModif
 }
 
 // Contains the parameters for DescribeReservedInstancesOfferings.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferingsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferingsRequest
 type DescribeReservedInstancesOfferingsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -38294,7 +38294,7 @@ func (s *DescribeReservedInstancesOfferingsInput) SetReservedInstancesOfferingId
 }
 
 // Contains the output of DescribeReservedInstancesOfferings.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferingsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesOfferingsResult
 type DescribeReservedInstancesOfferingsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38329,7 +38329,7 @@ func (s *DescribeReservedInstancesOfferingsOutput) SetReservedInstancesOfferings
 }
 
 // Contains the output for DescribeReservedInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeReservedInstancesResult
 type DescribeReservedInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38354,7 +38354,7 @@ func (s *DescribeReservedInstancesOutput) SetReservedInstances(v []*ReservedInst
 }
 
 // Contains the parameters for DescribeRouteTables.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTablesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTablesRequest
 type DescribeRouteTablesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -38467,7 +38467,7 @@ func (s *DescribeRouteTablesInput) SetRouteTableIds(v []*string) *DescribeRouteT
 }
 
 // Contains the output of DescribeRouteTables.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTablesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeRouteTablesResult
 type DescribeRouteTablesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38492,7 +38492,7 @@ func (s *DescribeRouteTablesOutput) SetRouteTables(v []*RouteTable) *DescribeRou
 }
 
 // Contains the parameters for DescribeScheduledInstanceAvailability.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailabilityRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailabilityRequest
 type DescribeScheduledInstanceAvailabilityInput struct {
 	_ struct{} `type:"structure"`
 
@@ -38622,7 +38622,7 @@ func (s *DescribeScheduledInstanceAvailabilityInput) SetRecurrence(v *ScheduledI
 }
 
 // Contains the output of DescribeScheduledInstanceAvailability.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailabilityResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstanceAvailabilityResult
 type DescribeScheduledInstanceAvailabilityOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38657,7 +38657,7 @@ func (s *DescribeScheduledInstanceAvailabilityOutput) SetScheduledInstanceAvaila
 }
 
 // Contains the parameters for DescribeScheduledInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstancesRequest
 type DescribeScheduledInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -38740,7 +38740,7 @@ func (s *DescribeScheduledInstancesInput) SetSlotStartTimeRange(v *SlotStartTime
 }
 
 // Contains the output of DescribeScheduledInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeScheduledInstancesResult
 type DescribeScheduledInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38774,7 +38774,7 @@ func (s *DescribeScheduledInstancesOutput) SetScheduledInstanceSet(v []*Schedule
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferencesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferencesRequest
 type DescribeSecurityGroupReferencesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -38825,7 +38825,7 @@ func (s *DescribeSecurityGroupReferencesInput) SetGroupId(v []*string) *Describe
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferencesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupReferencesResult
 type DescribeSecurityGroupReferencesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -38850,7 +38850,7 @@ func (s *DescribeSecurityGroupReferencesOutput) SetSecurityGroupReferenceSet(v [
 }
 
 // Contains the parameters for DescribeSecurityGroups.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupsRequest
 type DescribeSecurityGroupsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39003,7 +39003,7 @@ func (s *DescribeSecurityGroupsInput) SetNextToken(v string) *DescribeSecurityGr
 }
 
 // Contains the output of DescribeSecurityGroups.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSecurityGroupsResult
 type DescribeSecurityGroupsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39038,7 +39038,7 @@ func (s *DescribeSecurityGroupsOutput) SetSecurityGroups(v []*SecurityGroup) *De
 }
 
 // Contains the parameters for DescribeSnapshotAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttributeRequest
 type DescribeSnapshotAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39104,7 +39104,7 @@ func (s *DescribeSnapshotAttributeInput) SetSnapshotId(v string) *DescribeSnapsh
 }
 
 // Contains the output of DescribeSnapshotAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotAttributeResult
 type DescribeSnapshotAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39147,7 +39147,7 @@ func (s *DescribeSnapshotAttributeOutput) SetSnapshotId(v string) *DescribeSnaps
 }
 
 // Contains the parameters for DescribeSnapshots.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotsRequest
 type DescribeSnapshotsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39281,7 +39281,7 @@ func (s *DescribeSnapshotsInput) SetSnapshotIds(v []*string) *DescribeSnapshotsI
 }
 
 // Contains the output of DescribeSnapshots.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSnapshotsResult
 type DescribeSnapshotsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39318,7 +39318,7 @@ func (s *DescribeSnapshotsOutput) SetSnapshots(v []*Snapshot) *DescribeSnapshots
 }
 
 // Contains the parameters for DescribeSpotDatafeedSubscription.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscriptionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscriptionRequest
 type DescribeSpotDatafeedSubscriptionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39346,7 +39346,7 @@ func (s *DescribeSpotDatafeedSubscriptionInput) SetDryRun(v bool) *DescribeSpotD
 }
 
 // Contains the output of DescribeSpotDatafeedSubscription.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscriptionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotDatafeedSubscriptionResult
 type DescribeSpotDatafeedSubscriptionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39371,7 +39371,7 @@ func (s *DescribeSpotDatafeedSubscriptionOutput) SetSpotDatafeedSubscription(v *
 }
 
 // Contains the parameters for DescribeSpotFleetInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstancesRequest
 type DescribeSpotFleetInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39443,7 +39443,7 @@ func (s *DescribeSpotFleetInstancesInput) SetSpotFleetRequestId(v string) *Descr
 }
 
 // Contains the output of DescribeSpotFleetInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstancesResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetInstancesResponse
 type DescribeSpotFleetInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39492,7 +39492,7 @@ func (s *DescribeSpotFleetInstancesOutput) SetSpotFleetRequestId(v string) *Desc
 }
 
 // Contains the parameters for DescribeSpotFleetRequestHistory.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistoryRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistoryRequest
 type DescribeSpotFleetRequestHistoryInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39587,7 +39587,7 @@ func (s *DescribeSpotFleetRequestHistoryInput) SetStartTime(v time.Time) *Descri
 }
 
 // Contains the output of DescribeSpotFleetRequestHistory.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistoryResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestHistoryResponse
 type DescribeSpotFleetRequestHistoryOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39660,7 +39660,7 @@ func (s *DescribeSpotFleetRequestHistoryOutput) SetStartTime(v time.Time) *Descr
 }
 
 // Contains the parameters for DescribeSpotFleetRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestsRequest
 type DescribeSpotFleetRequestsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39717,7 +39717,7 @@ func (s *DescribeSpotFleetRequestsInput) SetSpotFleetRequestIds(v []*string) *De
 }
 
 // Contains the output of DescribeSpotFleetRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestsResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotFleetRequestsResponse
 type DescribeSpotFleetRequestsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39754,7 +39754,7 @@ func (s *DescribeSpotFleetRequestsOutput) SetSpotFleetRequestConfigs(v []*SpotFl
 }
 
 // Contains the parameters for DescribeSpotInstanceRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequestsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequestsRequest
 type DescribeSpotInstanceRequestsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -39909,7 +39909,7 @@ func (s *DescribeSpotInstanceRequestsInput) SetSpotInstanceRequestIds(v []*strin
 }
 
 // Contains the output of DescribeSpotInstanceRequests.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequestsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotInstanceRequestsResult
 type DescribeSpotInstanceRequestsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -39934,7 +39934,7 @@ func (s *DescribeSpotInstanceRequestsOutput) SetSpotInstanceRequests(v []*SpotIn
 }
 
 // Contains the parameters for DescribeSpotPriceHistory.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistoryRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistoryRequest
 type DescribeSpotPriceHistoryInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40054,7 +40054,7 @@ func (s *DescribeSpotPriceHistoryInput) SetStartTime(v time.Time) *DescribeSpotP
 }
 
 // Contains the output of DescribeSpotPriceHistory.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistoryResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSpotPriceHistoryResult
 type DescribeSpotPriceHistoryOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40088,7 +40088,7 @@ func (s *DescribeSpotPriceHistoryOutput) SetSpotPriceHistory(v []*SpotPrice) *De
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroupsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroupsRequest
 type DescribeStaleSecurityGroupsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40166,7 +40166,7 @@ func (s *DescribeStaleSecurityGroupsInput) SetVpcId(v string) *DescribeStaleSecu
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroupsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeStaleSecurityGroupsResult
 type DescribeStaleSecurityGroupsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40201,7 +40201,7 @@ func (s *DescribeStaleSecurityGroupsOutput) SetStaleSecurityGroupSet(v []*StaleS
 }
 
 // Contains the parameters for DescribeSubnets.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnetsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnetsRequest
 type DescribeSubnetsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40293,7 +40293,7 @@ func (s *DescribeSubnetsInput) SetSubnetIds(v []*string) *DescribeSubnetsInput {
 }
 
 // Contains the output of DescribeSubnets.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnetsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeSubnetsResult
 type DescribeSubnetsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40318,7 +40318,7 @@ func (s *DescribeSubnetsOutput) SetSubnets(v []*Subnet) *DescribeSubnetsOutput {
 }
 
 // Contains the parameters for DescribeTags.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTagsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTagsRequest
 type DescribeTagsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40386,7 +40386,7 @@ func (s *DescribeTagsInput) SetNextToken(v string) *DescribeTagsInput {
 }
 
 // Contains the output of DescribeTags.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTagsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeTagsResult
 type DescribeTagsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40421,7 +40421,7 @@ func (s *DescribeTagsOutput) SetTags(v []*TagDescription) *DescribeTagsOutput {
 }
 
 // Contains the parameters for DescribeVolumeAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttributeRequest
 type DescribeVolumeAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40482,7 +40482,7 @@ func (s *DescribeVolumeAttributeInput) SetVolumeId(v string) *DescribeVolumeAttr
 }
 
 // Contains the output of DescribeVolumeAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeAttributeResult
 type DescribeVolumeAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40525,7 +40525,7 @@ func (s *DescribeVolumeAttributeOutput) SetVolumeId(v string) *DescribeVolumeAtt
 }
 
 // Contains the parameters for DescribeVolumeStatus.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatusRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatusRequest
 type DescribeVolumeStatusInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40631,7 +40631,7 @@ func (s *DescribeVolumeStatusInput) SetVolumeIds(v []*string) *DescribeVolumeSta
 }
 
 // Contains the output of DescribeVolumeStatus.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatusResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumeStatusResult
 type DescribeVolumeStatusOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40666,7 +40666,7 @@ func (s *DescribeVolumeStatusOutput) SetVolumeStatuses(v []*VolumeStatusItem) *D
 }
 
 // Contains the parameters for DescribeVolumes.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesRequest
 type DescribeVolumesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40789,7 +40789,7 @@ func (s *DescribeVolumesInput) SetVolumeIds(v []*string) *DescribeVolumesInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModificationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModificationsRequest
 type DescribeVolumesModificationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40855,7 +40855,7 @@ func (s *DescribeVolumesModificationsInput) SetVolumeIds(v []*string) *DescribeV
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModificationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesModificationsResult
 type DescribeVolumesModificationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40889,7 +40889,7 @@ func (s *DescribeVolumesModificationsOutput) SetVolumesModifications(v []*Volume
 }
 
 // Contains the output of DescribeVolumes.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVolumesResult
 type DescribeVolumesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -40926,7 +40926,7 @@ func (s *DescribeVolumesOutput) SetVolumes(v []*Volume) *DescribeVolumesOutput {
 }
 
 // Contains the parameters for DescribeVpcAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttributeRequest
 type DescribeVpcAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -40992,7 +40992,7 @@ func (s *DescribeVpcAttributeInput) SetVpcId(v string) *DescribeVpcAttributeInpu
 }
 
 // Contains the output of DescribeVpcAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcAttributeResult
 type DescribeVpcAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41039,7 +41039,7 @@ func (s *DescribeVpcAttributeOutput) SetVpcId(v string) *DescribeVpcAttributeOut
 }
 
 // Contains the parameters for DescribeVpcClassicLinkDnsSupport.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupportRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupportRequest
 type DescribeVpcClassicLinkDnsSupportInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41101,7 +41101,7 @@ func (s *DescribeVpcClassicLinkDnsSupportInput) SetVpcIds(v []*string) *Describe
 }
 
 // Contains the output of DescribeVpcClassicLinkDnsSupport.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupportResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkDnsSupportResult
 type DescribeVpcClassicLinkDnsSupportOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41135,7 +41135,7 @@ func (s *DescribeVpcClassicLinkDnsSupportOutput) SetVpcs(v []*ClassicLinkDnsSupp
 }
 
 // Contains the parameters for DescribeVpcClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkRequest
 type DescribeVpcClassicLinkInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41200,7 +41200,7 @@ func (s *DescribeVpcClassicLinkInput) SetVpcIds(v []*string) *DescribeVpcClassic
 }
 
 // Contains the output of DescribeVpcClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcClassicLinkResult
 type DescribeVpcClassicLinkOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41224,7 +41224,7 @@ func (s *DescribeVpcClassicLinkOutput) SetVpcs(v []*VpcClassicLink) *DescribeVpc
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotificationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotificationsRequest
 type DescribeVpcEndpointConnectionNotificationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41301,7 +41301,7 @@ func (s *DescribeVpcEndpointConnectionNotificationsInput) SetNextToken(v string)
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotificationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionNotificationsResult
 type DescribeVpcEndpointConnectionNotificationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41335,7 +41335,7 @@ func (s *DescribeVpcEndpointConnectionNotificationsOutput) SetNextToken(v string
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionsRequest
 type DescribeVpcEndpointConnectionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41402,7 +41402,7 @@ func (s *DescribeVpcEndpointConnectionsInput) SetNextToken(v string) *DescribeVp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointConnectionsResult
 type DescribeVpcEndpointConnectionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41436,7 +41436,7 @@ func (s *DescribeVpcEndpointConnectionsOutput) SetVpcEndpointConnections(v []*Vp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurationsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurationsRequest
 type DescribeVpcEndpointServiceConfigurationsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41510,7 +41510,7 @@ func (s *DescribeVpcEndpointServiceConfigurationsInput) SetServiceIds(v []*strin
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurationsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServiceConfigurationsResult
 type DescribeVpcEndpointServiceConfigurationsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41544,7 +41544,7 @@ func (s *DescribeVpcEndpointServiceConfigurationsOutput) SetServiceConfiguration
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissionsRequest
 type DescribeVpcEndpointServicePermissionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41631,7 +41631,7 @@ func (s *DescribeVpcEndpointServicePermissionsInput) SetServiceId(v string) *Des
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicePermissionsResult
 type DescribeVpcEndpointServicePermissionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41666,7 +41666,7 @@ func (s *DescribeVpcEndpointServicePermissionsOutput) SetNextToken(v string) *De
 }
 
 // Contains the parameters for DescribeVpcEndpointServices.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicesRequest
 type DescribeVpcEndpointServicesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41737,7 +41737,7 @@ func (s *DescribeVpcEndpointServicesInput) SetServiceNames(v []*string) *Describ
 }
 
 // Contains the output of DescribeVpcEndpointServices.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointServicesResult
 type DescribeVpcEndpointServicesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41781,7 +41781,7 @@ func (s *DescribeVpcEndpointServicesOutput) SetServiceNames(v []*string) *Descri
 }
 
 // Contains the parameters for DescribeVpcEndpoints.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointsRequest
 type DescribeVpcEndpointsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41859,7 +41859,7 @@ func (s *DescribeVpcEndpointsInput) SetVpcEndpointIds(v []*string) *DescribeVpcE
 }
 
 // Contains the output of DescribeVpcEndpoints.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcEndpointsResult
 type DescribeVpcEndpointsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -41894,7 +41894,7 @@ func (s *DescribeVpcEndpointsOutput) SetVpcEndpoints(v []*VpcEndpoint) *Describe
 }
 
 // Contains the parameters for DescribeVpcPeeringConnections.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnectionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnectionsRequest
 type DescribeVpcPeeringConnectionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -41983,7 +41983,7 @@ func (s *DescribeVpcPeeringConnectionsInput) SetVpcPeeringConnectionIds(v []*str
 }
 
 // Contains the output of DescribeVpcPeeringConnections.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnectionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcPeeringConnectionsResult
 type DescribeVpcPeeringConnectionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -42008,7 +42008,7 @@ func (s *DescribeVpcPeeringConnectionsOutput) SetVpcPeeringConnections(v []*VpcP
 }
 
 // Contains the parameters for DescribeVpcs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcsRequest
 type DescribeVpcsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42103,7 +42103,7 @@ func (s *DescribeVpcsInput) SetVpcIds(v []*string) *DescribeVpcsInput {
 }
 
 // Contains the output of DescribeVpcs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpcsResult
 type DescribeVpcsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -42128,7 +42128,7 @@ func (s *DescribeVpcsOutput) SetVpcs(v []*Vpc) *DescribeVpcsOutput {
 }
 
 // Contains the parameters for DescribeVpnConnections.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnectionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnectionsRequest
 type DescribeVpnConnectionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42219,7 +42219,7 @@ func (s *DescribeVpnConnectionsInput) SetVpnConnectionIds(v []*string) *Describe
 }
 
 // Contains the output of DescribeVpnConnections.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnectionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnConnectionsResult
 type DescribeVpnConnectionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -42244,7 +42244,7 @@ func (s *DescribeVpnConnectionsOutput) SetVpnConnections(v []*VpnConnection) *De
 }
 
 // Contains the parameters for DescribeVpnGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGatewaysRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGatewaysRequest
 type DescribeVpnGatewaysInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42327,7 +42327,7 @@ func (s *DescribeVpnGatewaysInput) SetVpnGatewayIds(v []*string) *DescribeVpnGat
 }
 
 // Contains the output of DescribeVpnGateways.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGatewaysResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DescribeVpnGatewaysResult
 type DescribeVpnGatewaysOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -42352,7 +42352,7 @@ func (s *DescribeVpnGatewaysOutput) SetVpnGateways(v []*VpnGateway) *DescribeVpn
 }
 
 // Contains the parameters for DetachClassicLinkVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpcRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpcRequest
 type DetachClassicLinkVpcInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42418,7 +42418,7 @@ func (s *DetachClassicLinkVpcInput) SetVpcId(v string) *DetachClassicLinkVpcInpu
 }
 
 // Contains the output of DetachClassicLinkVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpcResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachClassicLinkVpcResult
 type DetachClassicLinkVpcOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -42443,7 +42443,7 @@ func (s *DetachClassicLinkVpcOutput) SetReturn(v bool) *DetachClassicLinkVpcOutp
 }
 
 // Contains the parameters for DetachInternetGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGatewayRequest
 type DetachInternetGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42508,7 +42508,7 @@ func (s *DetachInternetGatewayInput) SetVpcId(v string) *DetachInternetGatewayIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGatewayOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachInternetGatewayOutput
 type DetachInternetGatewayOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -42524,7 +42524,7 @@ func (s DetachInternetGatewayOutput) GoString() string {
 }
 
 // Contains the parameters for DetachNetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterfaceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterfaceRequest
 type DetachNetworkInterfaceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42584,7 +42584,7 @@ func (s *DetachNetworkInterfaceInput) SetForce(v bool) *DetachNetworkInterfaceIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterfaceOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachNetworkInterfaceOutput
 type DetachNetworkInterfaceOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -42600,7 +42600,7 @@ func (s DetachNetworkInterfaceOutput) GoString() string {
 }
 
 // Contains the parameters for DetachVolume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVolumeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVolumeRequest
 type DetachVolumeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42685,7 +42685,7 @@ func (s *DetachVolumeInput) SetVolumeId(v string) *DetachVolumeInput {
 }
 
 // Contains the parameters for DetachVpnGateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGatewayRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGatewayRequest
 type DetachVpnGatewayInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42750,7 +42750,7 @@ func (s *DetachVpnGatewayInput) SetVpnGatewayId(v string) *DetachVpnGatewayInput
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGatewayOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DetachVpnGatewayOutput
 type DetachVpnGatewayOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -42766,7 +42766,7 @@ func (s DetachVpnGatewayOutput) GoString() string {
 }
 
 // Describes a DHCP configuration option.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DhcpConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DhcpConfiguration
 type DhcpConfiguration struct {
 	_ struct{} `type:"structure"`
 
@@ -42800,7 +42800,7 @@ func (s *DhcpConfiguration) SetValues(v []*AttributeValue) *DhcpConfiguration {
 }
 
 // Describes a set of DHCP options.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DhcpOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DhcpOptions
 type DhcpOptions struct {
 	_ struct{} `type:"structure"`
 
@@ -42843,7 +42843,7 @@ func (s *DhcpOptions) SetTags(v []*Tag) *DhcpOptions {
 }
 
 // Contains the parameters for DisableVgwRoutePropagation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagationRequest
 type DisableVgwRoutePropagationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42896,7 +42896,7 @@ func (s *DisableVgwRoutePropagationInput) SetRouteTableId(v string) *DisableVgwR
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagationOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVgwRoutePropagationOutput
 type DisableVgwRoutePropagationOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -42912,7 +42912,7 @@ func (s DisableVgwRoutePropagationOutput) GoString() string {
 }
 
 // Contains the parameters for DisableVpcClassicLinkDnsSupport.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupportRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupportRequest
 type DisableVpcClassicLinkDnsSupportInput struct {
 	_ struct{} `type:"structure"`
 
@@ -42937,7 +42937,7 @@ func (s *DisableVpcClassicLinkDnsSupportInput) SetVpcId(v string) *DisableVpcCla
 }
 
 // Contains the output of DisableVpcClassicLinkDnsSupport.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupportResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkDnsSupportResult
 type DisableVpcClassicLinkDnsSupportOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -42962,7 +42962,7 @@ func (s *DisableVpcClassicLinkDnsSupportOutput) SetReturn(v bool) *DisableVpcCla
 }
 
 // Contains the parameters for DisableVpcClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkRequest
 type DisableVpcClassicLinkInput struct {
 	_ struct{} `type:"structure"`
 
@@ -43014,7 +43014,7 @@ func (s *DisableVpcClassicLinkInput) SetVpcId(v string) *DisableVpcClassicLinkIn
 }
 
 // Contains the output of DisableVpcClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisableVpcClassicLinkResult
 type DisableVpcClassicLinkOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -43039,7 +43039,7 @@ func (s *DisableVpcClassicLinkOutput) SetReturn(v bool) *DisableVpcClassicLinkOu
 }
 
 // Contains the parameters for DisassociateAddress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddressRequest
 type DisassociateAddressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -43084,7 +43084,7 @@ func (s *DisassociateAddressInput) SetPublicIp(v string) *DisassociateAddressInp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddressOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateAddressOutput
 type DisassociateAddressOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -43099,7 +43099,7 @@ func (s DisassociateAddressOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfileRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfileRequest
 type DisassociateIamInstanceProfileInput struct {
 	_ struct{} `type:"structure"`
 
@@ -43138,7 +43138,7 @@ func (s *DisassociateIamInstanceProfileInput) SetAssociationId(v string) *Disass
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfileResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateIamInstanceProfileResult
 type DisassociateIamInstanceProfileOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -43163,7 +43163,7 @@ func (s *DisassociateIamInstanceProfileOutput) SetIamInstanceProfileAssociation(
 }
 
 // Contains the parameters for DisassociateRouteTable.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTableRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTableRequest
 type DisassociateRouteTableInput struct {
 	_ struct{} `type:"structure"`
 
@@ -43215,7 +43215,7 @@ func (s *DisassociateRouteTableInput) SetDryRun(v bool) *DisassociateRouteTableI
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTableOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateRouteTableOutput
 type DisassociateRouteTableOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -43230,7 +43230,7 @@ func (s DisassociateRouteTableOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlockRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlockRequest
 type DisassociateSubnetCidrBlockInput struct {
 	_ struct{} `type:"structure"`
 
@@ -43269,7 +43269,7 @@ func (s *DisassociateSubnetCidrBlockInput) SetAssociationId(v string) *Disassoci
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlockResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateSubnetCidrBlockResult
 type DisassociateSubnetCidrBlockOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -43302,7 +43302,7 @@ func (s *DisassociateSubnetCidrBlockOutput) SetSubnetId(v string) *DisassociateS
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlockRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlockRequest
 type DisassociateVpcCidrBlockInput struct {
 	_ struct{} `type:"structure"`
 
@@ -43341,7 +43341,7 @@ func (s *DisassociateVpcCidrBlockInput) SetAssociationId(v string) *Disassociate
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlockResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DisassociateVpcCidrBlockResult
 type DisassociateVpcCidrBlockOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -43384,7 +43384,7 @@ func (s *DisassociateVpcCidrBlockOutput) SetVpcId(v string) *DisassociateVpcCidr
 }
 
 // Describes a disk image.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImage
 type DiskImage struct {
 	_ struct{} `type:"structure"`
 
@@ -43447,7 +43447,7 @@ func (s *DiskImage) SetVolume(v *VolumeDetail) *DiskImage {
 }
 
 // Describes a disk image.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImageDescription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImageDescription
 type DiskImageDescription struct {
 	_ struct{} `type:"structure"`
 
@@ -43512,7 +43512,7 @@ func (s *DiskImageDescription) SetSize(v int64) *DiskImageDescription {
 }
 
 // Describes a disk image.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImageDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImageDetail
 type DiskImageDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -43587,7 +43587,7 @@ func (s *DiskImageDetail) SetImportManifestUrl(v string) *DiskImageDetail {
 }
 
 // Describes a disk image volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImageVolumeDescription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DiskImageVolumeDescription
 type DiskImageVolumeDescription struct {
 	_ struct{} `type:"structure"`
 
@@ -43623,7 +43623,7 @@ func (s *DiskImageVolumeDescription) SetSize(v int64) *DiskImageVolumeDescriptio
 }
 
 // Describes a DNS entry.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DnsEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/DnsEntry
 type DnsEntry struct {
 	_ struct{} `type:"structure"`
 
@@ -43657,7 +43657,7 @@ func (s *DnsEntry) SetHostedZoneId(v string) *DnsEntry {
 }
 
 // Describes a block device for an EBS volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsBlockDevice
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsBlockDevice
 type EbsBlockDevice struct {
 	_ struct{} `type:"structure"`
 
@@ -43767,7 +43767,7 @@ func (s *EbsBlockDevice) SetVolumeType(v string) *EbsBlockDevice {
 }
 
 // Describes a parameter used to set up an EBS volume in a block device mapping.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsInstanceBlockDevice
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsInstanceBlockDevice
 type EbsInstanceBlockDevice struct {
 	_ struct{} `type:"structure"`
 
@@ -43820,7 +43820,7 @@ func (s *EbsInstanceBlockDevice) SetVolumeId(v string) *EbsInstanceBlockDevice {
 
 // Describes information used to set up an EBS volume specified in a block device
 // mapping.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsInstanceBlockDeviceSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsInstanceBlockDeviceSpecification
 type EbsInstanceBlockDeviceSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -43854,7 +43854,7 @@ func (s *EbsInstanceBlockDeviceSpecification) SetVolumeId(v string) *EbsInstance
 }
 
 // Describes an egress-only Internet gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EgressOnlyInternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EgressOnlyInternetGateway
 type EgressOnlyInternetGateway struct {
 	_ struct{} `type:"structure"`
 
@@ -43888,7 +43888,7 @@ func (s *EgressOnlyInternetGateway) SetEgressOnlyInternetGatewayId(v string) *Eg
 }
 
 // Describes the association between an instance and an Elastic GPU.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuAssociation
 type ElasticGpuAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -43940,7 +43940,7 @@ func (s *ElasticGpuAssociation) SetElasticGpuId(v string) *ElasticGpuAssociation
 }
 
 // Describes the status of an Elastic GPU.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuHealth
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuHealth
 type ElasticGpuHealth struct {
 	_ struct{} `type:"structure"`
 
@@ -43965,7 +43965,7 @@ func (s *ElasticGpuHealth) SetStatus(v string) *ElasticGpuHealth {
 }
 
 // A specification for an Elastic GPU.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuSpecification
 type ElasticGpuSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -44005,7 +44005,7 @@ func (s *ElasticGpuSpecification) SetType(v string) *ElasticGpuSpecification {
 }
 
 // Describes an elastic GPU.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuSpecificationResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpuSpecificationResponse
 type ElasticGpuSpecificationResponse struct {
 	_ struct{} `type:"structure"`
 
@@ -44030,7 +44030,7 @@ func (s *ElasticGpuSpecificationResponse) SetType(v string) *ElasticGpuSpecifica
 }
 
 // Describes an Elastic GPU.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ElasticGpus
 type ElasticGpus struct {
 	_ struct{} `type:"structure"`
 
@@ -44100,7 +44100,7 @@ func (s *ElasticGpus) SetInstanceId(v string) *ElasticGpus {
 }
 
 // Contains the parameters for EnableVgwRoutePropagation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagationRequest
 type EnableVgwRoutePropagationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -44153,7 +44153,7 @@ func (s *EnableVgwRoutePropagationInput) SetRouteTableId(v string) *EnableVgwRou
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagationOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVgwRoutePropagationOutput
 type EnableVgwRoutePropagationOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -44169,7 +44169,7 @@ func (s EnableVgwRoutePropagationOutput) GoString() string {
 }
 
 // Contains the parameters for EnableVolumeIO.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIORequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIORequest
 type EnableVolumeIOInput struct {
 	_ struct{} `type:"structure"`
 
@@ -44220,7 +44220,7 @@ func (s *EnableVolumeIOInput) SetVolumeId(v string) *EnableVolumeIOInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIOOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVolumeIOOutput
 type EnableVolumeIOOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -44236,7 +44236,7 @@ func (s EnableVolumeIOOutput) GoString() string {
 }
 
 // Contains the parameters for EnableVpcClassicLinkDnsSupport.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupportRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupportRequest
 type EnableVpcClassicLinkDnsSupportInput struct {
 	_ struct{} `type:"structure"`
 
@@ -44261,7 +44261,7 @@ func (s *EnableVpcClassicLinkDnsSupportInput) SetVpcId(v string) *EnableVpcClass
 }
 
 // Contains the output of EnableVpcClassicLinkDnsSupport.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupportResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkDnsSupportResult
 type EnableVpcClassicLinkDnsSupportOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -44286,7 +44286,7 @@ func (s *EnableVpcClassicLinkDnsSupportOutput) SetReturn(v bool) *EnableVpcClass
 }
 
 // Contains the parameters for EnableVpcClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkRequest
 type EnableVpcClassicLinkInput struct {
 	_ struct{} `type:"structure"`
 
@@ -44338,7 +44338,7 @@ func (s *EnableVpcClassicLinkInput) SetVpcId(v string) *EnableVpcClassicLinkInpu
 }
 
 // Contains the output of EnableVpcClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableVpcClassicLinkResult
 type EnableVpcClassicLinkOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -44363,7 +44363,7 @@ func (s *EnableVpcClassicLinkOutput) SetReturn(v bool) *EnableVpcClassicLinkOutp
 }
 
 // Describes a Spot Fleet event.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EventInformation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EventInformation
 type EventInformation struct {
 	_ struct{} `type:"structure"`
 
@@ -44467,7 +44467,7 @@ func (s *EventInformation) SetInstanceId(v string) *EventInformation {
 }
 
 // Describes an instance export task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ExportTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ExportTask
 type ExportTask struct {
 	_ struct{} `type:"structure"`
 
@@ -44537,7 +44537,7 @@ func (s *ExportTask) SetStatusMessage(v string) *ExportTask {
 }
 
 // Describes the format and location for an instance export task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ExportToS3Task
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ExportToS3Task
 type ExportToS3Task struct {
 	_ struct{} `type:"structure"`
 
@@ -44591,7 +44591,7 @@ func (s *ExportToS3Task) SetS3Key(v string) *ExportToS3Task {
 }
 
 // Describes an instance export task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ExportToS3TaskSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ExportToS3TaskSpecification
 type ExportToS3TaskSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -44648,7 +44648,7 @@ func (s *ExportToS3TaskSpecification) SetS3Prefix(v string) *ExportToS3TaskSpeci
 // A filter name and value pair that is used to return a more specific list
 // of results. Filters can be used to match a set of resources by various criteria,
 // such as tags, attributes, or IDs.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Filter
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Filter
 type Filter struct {
 	_ struct{} `type:"structure"`
 
@@ -44682,7 +44682,7 @@ func (s *Filter) SetValues(v []*string) *Filter {
 }
 
 // Describes a launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FleetLaunchTemplateSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FleetLaunchTemplateSpecification
 type FleetLaunchTemplateSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -44741,7 +44741,7 @@ func (s *FleetLaunchTemplateSpecification) SetVersion(v string) *FleetLaunchTemp
 }
 
 // Describes a flow log.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FlowLog
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FlowLog
 type FlowLog struct {
 	_ struct{} `type:"structure"`
 
@@ -44843,7 +44843,7 @@ func (s *FlowLog) SetTrafficType(v string) *FlowLog {
 }
 
 // Describes an Amazon FPGA image (AFI).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FpgaImage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FpgaImage
 type FpgaImage struct {
 	_ struct{} `type:"structure"`
 
@@ -44985,7 +44985,7 @@ func (s *FpgaImage) SetUpdateTime(v time.Time) *FpgaImage {
 }
 
 // Describes an Amazon FPGA image (AFI) attribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FpgaImageAttribute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FpgaImageAttribute
 type FpgaImageAttribute struct {
 	_ struct{} `type:"structure"`
 
@@ -45047,7 +45047,7 @@ func (s *FpgaImageAttribute) SetProductCodes(v []*ProductCode) *FpgaImageAttribu
 
 // Describes the state of the bitstream generation process for an Amazon FPGA
 // image (AFI).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FpgaImageState
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/FpgaImageState
 type FpgaImageState struct {
 	_ struct{} `type:"structure"`
 
@@ -45089,7 +45089,7 @@ func (s *FpgaImageState) SetMessage(v string) *FpgaImageState {
 }
 
 // Contains the parameters for GetConsoleOutput.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutputRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutputRequest
 type GetConsoleOutputInput struct {
 	_ struct{} `type:"structure"`
 
@@ -45141,7 +45141,7 @@ func (s *GetConsoleOutputInput) SetInstanceId(v string) *GetConsoleOutputInput {
 }
 
 // Contains the output of GetConsoleOutput.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutputResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleOutputResult
 type GetConsoleOutputOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -45185,7 +45185,7 @@ func (s *GetConsoleOutputOutput) SetTimestamp(v time.Time) *GetConsoleOutputOutp
 }
 
 // Contains the parameters for the request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshotRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshotRequest
 type GetConsoleScreenshotInput struct {
 	_ struct{} `type:"structure"`
 
@@ -45247,7 +45247,7 @@ func (s *GetConsoleScreenshotInput) SetWakeUp(v bool) *GetConsoleScreenshotInput
 }
 
 // Contains the output of the request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshotResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetConsoleScreenshotResult
 type GetConsoleScreenshotOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -45280,7 +45280,7 @@ func (s *GetConsoleScreenshotOutput) SetInstanceId(v string) *GetConsoleScreensh
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreviewRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreviewRequest
 type GetHostReservationPurchasePreviewInput struct {
 	_ struct{} `type:"structure"`
 
@@ -45334,7 +45334,7 @@ func (s *GetHostReservationPurchasePreviewInput) SetOfferingId(v string) *GetHos
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreviewResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetHostReservationPurchasePreviewResult
 type GetHostReservationPurchasePreviewOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -45387,7 +45387,7 @@ func (s *GetHostReservationPurchasePreviewOutput) SetTotalUpfrontPrice(v string)
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateDataRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateDataRequest
 type GetLaunchTemplateDataInput struct {
 	_ struct{} `type:"structure"`
 
@@ -45438,7 +45438,7 @@ func (s *GetLaunchTemplateDataInput) SetInstanceId(v string) *GetLaunchTemplateD
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateDataResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetLaunchTemplateDataResult
 type GetLaunchTemplateDataOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -45463,7 +45463,7 @@ func (s *GetLaunchTemplateDataOutput) SetLaunchTemplateData(v *ResponseLaunchTem
 }
 
 // Contains the parameters for GetPasswordData.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordDataRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordDataRequest
 type GetPasswordDataInput struct {
 	_ struct{} `type:"structure"`
 
@@ -45515,7 +45515,7 @@ func (s *GetPasswordDataInput) SetInstanceId(v string) *GetPasswordDataInput {
 }
 
 // Contains the output of GetPasswordData.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordDataResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetPasswordDataResult
 type GetPasswordDataOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -45559,7 +45559,7 @@ func (s *GetPasswordDataOutput) SetTimestamp(v time.Time) *GetPasswordDataOutput
 }
 
 // Contains the parameters for GetReservedInstanceExchangeQuote.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuoteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuoteRequest
 type GetReservedInstancesExchangeQuoteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -45631,7 +45631,7 @@ func (s *GetReservedInstancesExchangeQuoteInput) SetTargetConfigurations(v []*Ta
 }
 
 // Contains the output of GetReservedInstancesExchangeQuote.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuoteResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GetReservedInstancesExchangeQuoteResult
 type GetReservedInstancesExchangeQuoteOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -45728,7 +45728,7 @@ func (s *GetReservedInstancesExchangeQuoteOutput) SetValidationFailureReason(v s
 }
 
 // Describes a security group.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GroupIdentifier
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/GroupIdentifier
 type GroupIdentifier struct {
 	_ struct{} `type:"structure"`
 
@@ -45762,7 +45762,7 @@ func (s *GroupIdentifier) SetGroupName(v string) *GroupIdentifier {
 }
 
 // Describes an event in the history of the Spot Fleet request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HistoryRecord
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HistoryRecord
 type HistoryRecord struct {
 	_ struct{} `type:"structure"`
 
@@ -45820,7 +45820,7 @@ func (s *HistoryRecord) SetTimestamp(v time.Time) *HistoryRecord {
 }
 
 // Describes the properties of the Dedicated Host.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Host
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Host
 type Host struct {
 	_ struct{} `type:"structure"`
 
@@ -45920,7 +45920,7 @@ func (s *Host) SetState(v string) *Host {
 }
 
 // Describes an instance running on a Dedicated Host.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostInstance
 type HostInstance struct {
 	_ struct{} `type:"structure"`
 
@@ -45954,7 +45954,7 @@ func (s *HostInstance) SetInstanceType(v string) *HostInstance {
 }
 
 // Details about the Dedicated Host Reservation offering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostOffering
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostOffering
 type HostOffering struct {
 	_ struct{} `type:"structure"`
 
@@ -46033,7 +46033,7 @@ func (s *HostOffering) SetUpfrontPrice(v string) *HostOffering {
 }
 
 // Describes properties of a Dedicated Host.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostProperties
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostProperties
 type HostProperties struct {
 	_ struct{} `type:"structure"`
 
@@ -46085,7 +46085,7 @@ func (s *HostProperties) SetTotalVCpus(v int64) *HostProperties {
 }
 
 // Details about the Dedicated Host Reservation and associated Dedicated Hosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostReservation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/HostReservation
 type HostReservation struct {
 	_ struct{} `type:"structure"`
 
@@ -46223,7 +46223,7 @@ func (s *HostReservation) SetUpfrontPrice(v string) *HostReservation {
 }
 
 // Describes an IAM instance profile.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IamInstanceProfile
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IamInstanceProfile
 type IamInstanceProfile struct {
 	_ struct{} `type:"structure"`
 
@@ -46257,7 +46257,7 @@ func (s *IamInstanceProfile) SetId(v string) *IamInstanceProfile {
 }
 
 // Describes an association between an IAM instance profile and an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IamInstanceProfileAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IamInstanceProfileAssociation
 type IamInstanceProfileAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -46318,7 +46318,7 @@ func (s *IamInstanceProfileAssociation) SetTimestamp(v time.Time) *IamInstancePr
 }
 
 // Describes an IAM instance profile.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IamInstanceProfileSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IamInstanceProfileSpecification
 type IamInstanceProfileSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -46352,7 +46352,7 @@ func (s *IamInstanceProfileSpecification) SetName(v string) *IamInstanceProfileS
 }
 
 // Describes the ICMP type and code.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IcmpTypeCode
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IcmpTypeCode
 type IcmpTypeCode struct {
 	_ struct{} `type:"structure"`
 
@@ -46386,7 +46386,7 @@ func (s *IcmpTypeCode) SetType(v int64) *IcmpTypeCode {
 }
 
 // Describes the ID format for a resource.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IdFormat
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IdFormat
 type IdFormat struct {
 	_ struct{} `type:"structure"`
 
@@ -46431,7 +46431,7 @@ func (s *IdFormat) SetUseLongIds(v bool) *IdFormat {
 }
 
 // Describes an image.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Image
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Image
 type Image struct {
 	_ struct{} `type:"structure"`
 
@@ -46671,7 +46671,7 @@ func (s *Image) SetVirtualizationType(v string) *Image {
 }
 
 // Describes the disk container object for an import image task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImageDiskContainer
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImageDiskContainer
 type ImageDiskContainer struct {
 	_ struct{} `type:"structure"`
 
@@ -46690,7 +46690,7 @@ type ImageDiskContainer struct {
 	SnapshotId *string `type:"string"`
 
 	// The URL to the Amazon S3-based disk image being imported. The URL can either
-	// be a https URL (https://..) or an Amazon S3 URL (s3://..)
+	// be a https URL (http://..) or an Amazon S3 URL (s3://..)
 	Url *string `type:"string"`
 
 	// The S3 bucket for the disk image.
@@ -46744,7 +46744,7 @@ func (s *ImageDiskContainer) SetUserBucket(v *UserBucket) *ImageDiskContainer {
 }
 
 // Contains the parameters for ImportImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImageRequest
 type ImportImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -46866,7 +46866,7 @@ func (s *ImportImageInput) SetRoleName(v string) *ImportImageInput {
 }
 
 // Contains the output for ImportImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImageResult
 type ImportImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -46981,7 +46981,7 @@ func (s *ImportImageOutput) SetStatusMessage(v string) *ImportImageOutput {
 }
 
 // Describes an import image task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImageTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportImageTask
 type ImportImageTask struct {
 	_ struct{} `type:"structure"`
 
@@ -47100,7 +47100,7 @@ func (s *ImportImageTask) SetStatusMessage(v string) *ImportImageTask {
 }
 
 // Contains the parameters for ImportInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceRequest
 type ImportInstanceInput struct {
 	_ struct{} `type:"structure"`
 
@@ -47189,7 +47189,7 @@ func (s *ImportInstanceInput) SetPlatform(v string) *ImportInstanceInput {
 }
 
 // Describes the launch specification for VM import.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceLaunchSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceLaunchSpecification
 type ImportInstanceLaunchSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -47309,7 +47309,7 @@ func (s *ImportInstanceLaunchSpecification) SetUserData(v *UserData) *ImportInst
 }
 
 // Contains the output for ImportInstance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceResult
 type ImportInstanceOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -47334,7 +47334,7 @@ func (s *ImportInstanceOutput) SetConversionTask(v *ConversionTask) *ImportInsta
 }
 
 // Describes an import instance task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceTaskDetails
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceTaskDetails
 type ImportInstanceTaskDetails struct {
 	_ struct{} `type:"structure"`
 
@@ -47388,7 +47388,7 @@ func (s *ImportInstanceTaskDetails) SetVolumes(v []*ImportInstanceVolumeDetailIt
 }
 
 // Describes an import volume task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceVolumeDetailItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportInstanceVolumeDetailItem
 type ImportInstanceVolumeDetailItem struct {
 	_ struct{} `type:"structure"`
 
@@ -47477,7 +47477,7 @@ func (s *ImportInstanceVolumeDetailItem) SetVolume(v *DiskImageVolumeDescription
 }
 
 // Contains the parameters for ImportKeyPair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPairRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPairRequest
 type ImportKeyPairInput struct {
 	_ struct{} `type:"structure"`
 
@@ -47546,7 +47546,7 @@ func (s *ImportKeyPairInput) SetPublicKeyMaterial(v []byte) *ImportKeyPairInput 
 }
 
 // Contains the output of ImportKeyPair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPairResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportKeyPairResult
 type ImportKeyPairOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -47580,7 +47580,7 @@ func (s *ImportKeyPairOutput) SetKeyName(v string) *ImportKeyPairOutput {
 }
 
 // Contains the parameters for ImportSnapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshotRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshotRequest
 type ImportSnapshotInput struct {
 	_ struct{} `type:"structure"`
 
@@ -47653,7 +47653,7 @@ func (s *ImportSnapshotInput) SetRoleName(v string) *ImportSnapshotInput {
 }
 
 // Contains the output for ImportSnapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshotResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshotResult
 type ImportSnapshotOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -47696,7 +47696,7 @@ func (s *ImportSnapshotOutput) SetSnapshotTaskDetail(v *SnapshotTaskDetail) *Imp
 }
 
 // Describes an import snapshot task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshotTask
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportSnapshotTask
 type ImportSnapshotTask struct {
 	_ struct{} `type:"structure"`
 
@@ -47739,7 +47739,7 @@ func (s *ImportSnapshotTask) SetSnapshotTaskDetail(v *SnapshotTaskDetail) *Impor
 }
 
 // Contains the parameters for ImportVolume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolumeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolumeRequest
 type ImportVolumeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -47838,7 +47838,7 @@ func (s *ImportVolumeInput) SetVolume(v *VolumeDetail) *ImportVolumeInput {
 }
 
 // Contains the output for ImportVolume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolumeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolumeResult
 type ImportVolumeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -47863,7 +47863,7 @@ func (s *ImportVolumeOutput) SetConversionTask(v *ConversionTask) *ImportVolumeO
 }
 
 // Describes an import volume task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolumeTaskDetails
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ImportVolumeTaskDetails
 type ImportVolumeTaskDetails struct {
 	_ struct{} `type:"structure"`
 
@@ -47932,7 +47932,7 @@ func (s *ImportVolumeTaskDetails) SetVolume(v *DiskImageVolumeDescription) *Impo
 }
 
 // Describes an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Instance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Instance
 type Instance struct {
 	_ struct{} `type:"structure"`
 
@@ -48321,7 +48321,7 @@ func (s *Instance) SetVpcId(v string) *Instance {
 }
 
 // Describes a block device mapping.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceBlockDeviceMapping
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceBlockDeviceMapping
 type InstanceBlockDeviceMapping struct {
 	_ struct{} `type:"structure"`
 
@@ -48356,7 +48356,7 @@ func (s *InstanceBlockDeviceMapping) SetEbs(v *EbsInstanceBlockDevice) *Instance
 }
 
 // Describes a block device mapping entry.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceBlockDeviceMappingSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceBlockDeviceMappingSpecification
 type InstanceBlockDeviceMappingSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -48409,7 +48409,7 @@ func (s *InstanceBlockDeviceMappingSpecification) SetVirtualName(v string) *Inst
 }
 
 // Information about the instance type that the Dedicated Host supports.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCapacity
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCapacity
 type InstanceCapacity struct {
 	_ struct{} `type:"structure"`
 
@@ -48452,7 +48452,7 @@ func (s *InstanceCapacity) SetTotalCapacity(v int64) *InstanceCapacity {
 }
 
 // Describes a Reserved Instance listing state.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCount
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCount
 type InstanceCount struct {
 	_ struct{} `type:"structure"`
 
@@ -48486,7 +48486,7 @@ func (s *InstanceCount) SetState(v string) *InstanceCount {
 }
 
 // Describes the credit option for CPU usage of a T2 instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCreditSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCreditSpecification
 type InstanceCreditSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -48521,7 +48521,7 @@ func (s *InstanceCreditSpecification) SetInstanceId(v string) *InstanceCreditSpe
 }
 
 // Describes the credit option for CPU usage of a T2 instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCreditSpecificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceCreditSpecificationRequest
 type InstanceCreditSpecificationRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -48556,7 +48556,7 @@ func (s *InstanceCreditSpecificationRequest) SetInstanceId(v string) *InstanceCr
 }
 
 // Describes an instance to export.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceExportDetails
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceExportDetails
 type InstanceExportDetails struct {
 	_ struct{} `type:"structure"`
 
@@ -48590,7 +48590,7 @@ func (s *InstanceExportDetails) SetTargetEnvironment(v string) *InstanceExportDe
 }
 
 // Describes an IPv6 address.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceIpv6Address
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceIpv6Address
 type InstanceIpv6Address struct {
 	_ struct{} `type:"structure"`
 
@@ -48615,7 +48615,7 @@ func (s *InstanceIpv6Address) SetIpv6Address(v string) *InstanceIpv6Address {
 }
 
 // Describes an IPv6 address.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceIpv6AddressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceIpv6AddressRequest
 type InstanceIpv6AddressRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -48640,7 +48640,7 @@ func (s *InstanceIpv6AddressRequest) SetIpv6Address(v string) *InstanceIpv6Addre
 }
 
 // Describes the market (purchasing) option for the instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceMarketOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceMarketOptionsRequest
 type InstanceMarketOptionsRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -48674,7 +48674,7 @@ func (s *InstanceMarketOptionsRequest) SetSpotOptions(v *SpotMarketOptions) *Ins
 }
 
 // Describes the monitoring of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceMonitoring
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceMonitoring
 type InstanceMonitoring struct {
 	_ struct{} `type:"structure"`
 
@@ -48708,7 +48708,7 @@ func (s *InstanceMonitoring) SetMonitoring(v *Monitoring) *InstanceMonitoring {
 }
 
 // Describes a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterface
 type InstanceNetworkInterface struct {
 	_ struct{} `type:"structure"`
 
@@ -48860,7 +48860,7 @@ func (s *InstanceNetworkInterface) SetVpcId(v string) *InstanceNetworkInterface 
 }
 
 // Describes association information for an Elastic IP address (IPv4).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterfaceAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterfaceAssociation
 type InstanceNetworkInterfaceAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -48903,7 +48903,7 @@ func (s *InstanceNetworkInterfaceAssociation) SetPublicIp(v string) *InstanceNet
 }
 
 // Describes a network interface attachment.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterfaceAttachment
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterfaceAttachment
 type InstanceNetworkInterfaceAttachment struct {
 	_ struct{} `type:"structure"`
 
@@ -48964,7 +48964,7 @@ func (s *InstanceNetworkInterfaceAttachment) SetStatus(v string) *InstanceNetwor
 }
 
 // Describes a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterfaceSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceNetworkInterfaceSpecification
 type InstanceNetworkInterfaceSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -49134,7 +49134,7 @@ func (s *InstanceNetworkInterfaceSpecification) SetSubnetId(v string) *InstanceN
 }
 
 // Describes a private IPv4 address.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstancePrivateIpAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstancePrivateIpAddress
 type InstancePrivateIpAddress struct {
 	_ struct{} `type:"structure"`
 
@@ -49187,7 +49187,7 @@ func (s *InstancePrivateIpAddress) SetPrivateIpAddress(v string) *InstancePrivat
 }
 
 // Describes the current state of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceState
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceState
 type InstanceState struct {
 	_ struct{} `type:"structure"`
 
@@ -49234,7 +49234,7 @@ func (s *InstanceState) SetName(v string) *InstanceState {
 }
 
 // Describes an instance state change.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStateChange
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStateChange
 type InstanceStateChange struct {
 	_ struct{} `type:"structure"`
 
@@ -49277,7 +49277,7 @@ func (s *InstanceStateChange) SetPreviousState(v *InstanceState) *InstanceStateC
 }
 
 // Describes the status of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatus
 type InstanceStatus struct {
 	_ struct{} `type:"structure"`
 
@@ -49351,7 +49351,7 @@ func (s *InstanceStatus) SetSystemStatus(v *InstanceStatusSummary) *InstanceStat
 }
 
 // Describes the instance status.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatusDetails
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatusDetails
 type InstanceStatusDetails struct {
 	_ struct{} `type:"structure"`
 
@@ -49395,7 +49395,7 @@ func (s *InstanceStatusDetails) SetStatus(v string) *InstanceStatusDetails {
 }
 
 // Describes a scheduled event for an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatusEvent
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatusEvent
 type InstanceStatusEvent struct {
 	_ struct{} `type:"structure"`
 
@@ -49451,7 +49451,7 @@ func (s *InstanceStatusEvent) SetNotBefore(v time.Time) *InstanceStatusEvent {
 }
 
 // Describes the status of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatusSummary
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InstanceStatusSummary
 type InstanceStatusSummary struct {
 	_ struct{} `type:"structure"`
 
@@ -49485,7 +49485,7 @@ func (s *InstanceStatusSummary) SetStatus(v string) *InstanceStatusSummary {
 }
 
 // Describes an Internet gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InternetGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InternetGateway
 type InternetGateway struct {
 	_ struct{} `type:"structure"`
 
@@ -49529,7 +49529,7 @@ func (s *InternetGateway) SetTags(v []*Tag) *InternetGateway {
 
 // Describes the attachment of a VPC to an Internet gateway or an egress-only
 // Internet gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InternetGatewayAttachment
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/InternetGatewayAttachment
 type InternetGatewayAttachment struct {
 	_ struct{} `type:"structure"`
 
@@ -49563,7 +49563,7 @@ func (s *InternetGatewayAttachment) SetVpcId(v string) *InternetGatewayAttachmen
 }
 
 // Describes a set of permissions for a security group rule.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IpPermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IpPermission
 type IpPermission struct {
 	_ struct{} `type:"structure"`
 
@@ -49657,7 +49657,7 @@ func (s *IpPermission) SetUserIdGroupPairs(v []*UserIdGroupPair) *IpPermission {
 }
 
 // Describes an IPv4 range.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IpRange
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/IpRange
 type IpRange struct {
 	_ struct{} `type:"structure"`
 
@@ -49696,7 +49696,7 @@ func (s *IpRange) SetDescription(v string) *IpRange {
 }
 
 // Describes an IPv6 CIDR block.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Ipv6CidrBlock
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Ipv6CidrBlock
 type Ipv6CidrBlock struct {
 	_ struct{} `type:"structure"`
 
@@ -49721,7 +49721,7 @@ func (s *Ipv6CidrBlock) SetIpv6CidrBlock(v string) *Ipv6CidrBlock {
 }
 
 // [EC2-VPC only] Describes an IPv6 range.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Ipv6Range
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Ipv6Range
 type Ipv6Range struct {
 	_ struct{} `type:"structure"`
 
@@ -49760,7 +49760,7 @@ func (s *Ipv6Range) SetDescription(v string) *Ipv6Range {
 }
 
 // Describes a key pair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/KeyPairInfo
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/KeyPairInfo
 type KeyPairInfo struct {
 	_ struct{} `type:"structure"`
 
@@ -49797,7 +49797,7 @@ func (s *KeyPairInfo) SetKeyName(v string) *KeyPairInfo {
 }
 
 // Describes a launch permission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchPermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchPermission
 type LaunchPermission struct {
 	_ struct{} `type:"structure"`
 
@@ -49831,7 +49831,7 @@ func (s *LaunchPermission) SetUserId(v string) *LaunchPermission {
 }
 
 // Describes a launch permission modification.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchPermissionModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchPermissionModifications
 type LaunchPermissionModifications struct {
 	_ struct{} `type:"structure"`
 
@@ -49866,7 +49866,7 @@ func (s *LaunchPermissionModifications) SetRemove(v []*LaunchPermission) *Launch
 }
 
 // Describes the launch specification for an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchSpecification
 type LaunchSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -50028,7 +50028,7 @@ func (s *LaunchSpecification) SetUserData(v string) *LaunchSpecification {
 }
 
 // Describes a launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplate
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplate
 type LaunchTemplate struct {
 	_ struct{} `type:"structure"`
 
@@ -50107,7 +50107,7 @@ func (s *LaunchTemplate) SetTags(v []*Tag) *LaunchTemplate {
 }
 
 // Describes a block device mapping.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateBlockDeviceMapping
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateBlockDeviceMapping
 type LaunchTemplateBlockDeviceMapping struct {
 	_ struct{} `type:"structure"`
 
@@ -50160,7 +50160,7 @@ func (s *LaunchTemplateBlockDeviceMapping) SetVirtualName(v string) *LaunchTempl
 }
 
 // Describes a block device mapping.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateBlockDeviceMappingRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateBlockDeviceMappingRequest
 type LaunchTemplateBlockDeviceMappingRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -50218,7 +50218,7 @@ func (s *LaunchTemplateBlockDeviceMappingRequest) SetVirtualName(v string) *Laun
 }
 
 // Describes a launch template and overrides.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateConfig
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateConfig
 type LaunchTemplateConfig struct {
 	_ struct{} `type:"structure"`
 
@@ -50268,7 +50268,7 @@ func (s *LaunchTemplateConfig) SetOverrides(v []*LaunchTemplateOverrides) *Launc
 }
 
 // Describes a block device for an EBS volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateEbsBlockDevice
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateEbsBlockDevice
 type LaunchTemplateEbsBlockDevice struct {
 	_ struct{} `type:"structure"`
 
@@ -50347,7 +50347,7 @@ func (s *LaunchTemplateEbsBlockDevice) SetVolumeType(v string) *LaunchTemplateEb
 }
 
 // The parameters for a block device for an EBS volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateEbsBlockDeviceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateEbsBlockDeviceRequest
 type LaunchTemplateEbsBlockDeviceRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -50440,7 +50440,7 @@ func (s *LaunchTemplateEbsBlockDeviceRequest) SetVolumeType(v string) *LaunchTem
 }
 
 // Describes an IAM instance profile.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateIamInstanceProfileSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateIamInstanceProfileSpecification
 type LaunchTemplateIamInstanceProfileSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -50474,7 +50474,7 @@ func (s *LaunchTemplateIamInstanceProfileSpecification) SetName(v string) *Launc
 }
 
 // An IAM instance profile.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateIamInstanceProfileSpecificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateIamInstanceProfileSpecificationRequest
 type LaunchTemplateIamInstanceProfileSpecificationRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -50508,7 +50508,7 @@ func (s *LaunchTemplateIamInstanceProfileSpecificationRequest) SetName(v string)
 }
 
 // The market (purchasing) option for the instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceMarketOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceMarketOptions
 type LaunchTemplateInstanceMarketOptions struct {
 	_ struct{} `type:"structure"`
 
@@ -50542,7 +50542,7 @@ func (s *LaunchTemplateInstanceMarketOptions) SetSpotOptions(v *LaunchTemplateSp
 }
 
 // The market (purchasing) option for the instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceMarketOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceMarketOptionsRequest
 type LaunchTemplateInstanceMarketOptionsRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -50576,7 +50576,7 @@ func (s *LaunchTemplateInstanceMarketOptionsRequest) SetSpotOptions(v *LaunchTem
 }
 
 // Describes a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceNetworkInterfaceSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceNetworkInterfaceSpecification
 type LaunchTemplateInstanceNetworkInterfaceSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -50701,7 +50701,7 @@ func (s *LaunchTemplateInstanceNetworkInterfaceSpecification) SetSubnetId(v stri
 }
 
 // The parameters for a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceNetworkInterfaceSpecificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateInstanceNetworkInterfaceSpecificationRequest
 type LaunchTemplateInstanceNetworkInterfaceSpecificationRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -50848,7 +50848,7 @@ func (s *LaunchTemplateInstanceNetworkInterfaceSpecificationRequest) SetSubnetId
 }
 
 // Describes overrides for a launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateOverrides
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateOverrides
 type LaunchTemplateOverrides struct {
 	_ struct{} `type:"structure"`
 
@@ -50909,7 +50909,7 @@ func (s *LaunchTemplateOverrides) SetWeightedCapacity(v float64) *LaunchTemplate
 }
 
 // Describes the placement of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatePlacement
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatePlacement
 type LaunchTemplatePlacement struct {
 	_ struct{} `type:"structure"`
 
@@ -50980,7 +50980,7 @@ func (s *LaunchTemplatePlacement) SetTenancy(v string) *LaunchTemplatePlacement 
 }
 
 // The placement for the instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatePlacementRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatePlacementRequest
 type LaunchTemplatePlacementRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -51052,7 +51052,7 @@ func (s *LaunchTemplatePlacementRequest) SetTenancy(v string) *LaunchTemplatePla
 
 // The launch template to use. You must specify either the launch template ID
 // or launch template name in the request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateSpecification
 type LaunchTemplateSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -51097,7 +51097,7 @@ func (s *LaunchTemplateSpecification) SetVersion(v string) *LaunchTemplateSpecif
 }
 
 // The options for Spot Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateSpotMarketOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateSpotMarketOptions
 type LaunchTemplateSpotMarketOptions struct {
 	_ struct{} `type:"structure"`
 
@@ -51163,7 +51163,7 @@ func (s *LaunchTemplateSpotMarketOptions) SetValidUntil(v time.Time) *LaunchTemp
 }
 
 // The options for Spot Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateSpotMarketOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateSpotMarketOptionsRequest
 type LaunchTemplateSpotMarketOptionsRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -51230,7 +51230,7 @@ func (s *LaunchTemplateSpotMarketOptionsRequest) SetValidUntil(v time.Time) *Lau
 }
 
 // The tag specification for the launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateTagSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateTagSpecification
 type LaunchTemplateTagSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -51264,7 +51264,7 @@ func (s *LaunchTemplateTagSpecification) SetTags(v []*Tag) *LaunchTemplateTagSpe
 }
 
 // The tags specification for the launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateTagSpecificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateTagSpecificationRequest
 type LaunchTemplateTagSpecificationRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -51299,7 +51299,7 @@ func (s *LaunchTemplateTagSpecificationRequest) SetTags(v []*Tag) *LaunchTemplat
 }
 
 // Describes a launch template version.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateVersion
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplateVersion
 type LaunchTemplateVersion struct {
 	_ struct{} `type:"structure"`
 
@@ -51387,7 +51387,7 @@ func (s *LaunchTemplateVersion) SetVersionNumber(v int64) *LaunchTemplateVersion
 }
 
 // Describes the monitoring for the instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatesMonitoring
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatesMonitoring
 type LaunchTemplatesMonitoring struct {
 	_ struct{} `type:"structure"`
 
@@ -51413,7 +51413,7 @@ func (s *LaunchTemplatesMonitoring) SetEnabled(v bool) *LaunchTemplatesMonitorin
 }
 
 // Describes the monitoring for the instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatesMonitoringRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LaunchTemplatesMonitoringRequest
 type LaunchTemplatesMonitoringRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -51440,7 +51440,7 @@ func (s *LaunchTemplatesMonitoringRequest) SetEnabled(v bool) *LaunchTemplatesMo
 
 // Describes the Classic Load Balancers and target groups to attach to a Spot
 // Fleet request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadBalancersConfig
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadBalancersConfig
 type LoadBalancersConfig struct {
 	_ struct{} `type:"structure"`
 
@@ -51494,7 +51494,7 @@ func (s *LoadBalancersConfig) SetTargetGroupsConfig(v *TargetGroupsConfig) *Load
 }
 
 // Describes a load permission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadPermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadPermission
 type LoadPermission struct {
 	_ struct{} `type:"structure"`
 
@@ -51528,7 +51528,7 @@ func (s *LoadPermission) SetUserId(v string) *LoadPermission {
 }
 
 // Describes modifications to the load permissions of an Amazon FPGA image (AFI).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadPermissionModifications
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadPermissionModifications
 type LoadPermissionModifications struct {
 	_ struct{} `type:"structure"`
 
@@ -51562,7 +51562,7 @@ func (s *LoadPermissionModifications) SetRemove(v []*LoadPermissionRequest) *Loa
 }
 
 // Describes a load permission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadPermissionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/LoadPermissionRequest
 type LoadPermissionRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -51595,7 +51595,7 @@ func (s *LoadPermissionRequest) SetUserId(v string) *LoadPermissionRequest {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttributeRequest
 type ModifyFpgaImageAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -51722,7 +51722,7 @@ func (s *ModifyFpgaImageAttributeInput) SetUserIds(v []*string) *ModifyFpgaImage
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyFpgaImageAttributeResult
 type ModifyFpgaImageAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -51747,7 +51747,7 @@ func (s *ModifyFpgaImageAttributeOutput) SetFpgaImageAttribute(v *FpgaImageAttri
 }
 
 // Contains the parameters for ModifyHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHostsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHostsRequest
 type ModifyHostsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -51801,7 +51801,7 @@ func (s *ModifyHostsInput) SetHostIds(v []*string) *ModifyHostsInput {
 }
 
 // Contains the output of ModifyHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHostsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyHostsResult
 type ModifyHostsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -51836,7 +51836,7 @@ func (s *ModifyHostsOutput) SetUnsuccessful(v []*UnsuccessfulItem) *ModifyHostsO
 }
 
 // Contains the parameters of ModifyIdFormat.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormatRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormatRequest
 type ModifyIdFormatInput struct {
 	_ struct{} `type:"structure"`
 
@@ -51889,7 +51889,7 @@ func (s *ModifyIdFormatInput) SetUseLongIds(v bool) *ModifyIdFormatInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormatOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdFormatOutput
 type ModifyIdFormatOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -51905,7 +51905,7 @@ func (s ModifyIdFormatOutput) GoString() string {
 }
 
 // Contains the parameters of ModifyIdentityIdFormat.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormatRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormatRequest
 type ModifyIdentityIdFormatInput struct {
 	_ struct{} `type:"structure"`
 
@@ -51974,7 +51974,7 @@ func (s *ModifyIdentityIdFormatInput) SetUseLongIds(v bool) *ModifyIdentityIdFor
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormatOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyIdentityIdFormatOutput
 type ModifyIdentityIdFormatOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -51990,7 +51990,7 @@ func (s ModifyIdentityIdFormatOutput) GoString() string {
 }
 
 // Contains the parameters for ModifyImageAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttributeRequest
 type ModifyImageAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52119,7 +52119,7 @@ func (s *ModifyImageAttributeInput) SetValue(v string) *ModifyImageAttributeInpu
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyImageAttributeOutput
 type ModifyImageAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -52135,7 +52135,7 @@ func (s ModifyImageAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ModifyInstanceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttributeRequest
 type ModifyInstanceAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52351,7 +52351,7 @@ func (s *ModifyInstanceAttributeInput) SetValue(v string) *ModifyInstanceAttribu
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceAttributeOutput
 type ModifyInstanceAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -52366,7 +52366,7 @@ func (s ModifyInstanceAttributeOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecificationRequest
 type ModifyInstanceCreditSpecificationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52428,7 +52428,7 @@ func (s *ModifyInstanceCreditSpecificationInput) SetInstanceCreditSpecifications
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecificationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstanceCreditSpecificationResult
 type ModifyInstanceCreditSpecificationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -52464,7 +52464,7 @@ func (s *ModifyInstanceCreditSpecificationOutput) SetUnsuccessfulInstanceCreditS
 }
 
 // Contains the parameters for ModifyInstancePlacement.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacementRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacementRequest
 type ModifyInstancePlacementInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52531,7 +52531,7 @@ func (s *ModifyInstancePlacementInput) SetTenancy(v string) *ModifyInstancePlace
 }
 
 // Contains the output of ModifyInstancePlacement.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacementResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyInstancePlacementResult
 type ModifyInstancePlacementOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -52555,7 +52555,7 @@ func (s *ModifyInstancePlacementOutput) SetReturn(v bool) *ModifyInstancePlaceme
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplateRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplateRequest
 type ModifyLaunchTemplateInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52634,7 +52634,7 @@ func (s *ModifyLaunchTemplateInput) SetLaunchTemplateName(v string) *ModifyLaunc
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplateResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyLaunchTemplateResult
 type ModifyLaunchTemplateOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -52659,7 +52659,7 @@ func (s *ModifyLaunchTemplateOutput) SetLaunchTemplate(v *LaunchTemplate) *Modif
 }
 
 // Contains the parameters for ModifyNetworkInterfaceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttributeRequest
 type ModifyNetworkInterfaceAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52754,7 +52754,7 @@ func (s *ModifyNetworkInterfaceAttributeInput) SetSourceDestCheck(v *AttributeBo
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyNetworkInterfaceAttributeOutput
 type ModifyNetworkInterfaceAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -52770,7 +52770,7 @@ func (s ModifyNetworkInterfaceAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ModifyReservedInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstancesRequest
 type ModifyReservedInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52834,7 +52834,7 @@ func (s *ModifyReservedInstancesInput) SetTargetConfigurations(v []*ReservedInst
 }
 
 // Contains the output of ModifyReservedInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyReservedInstancesResult
 type ModifyReservedInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -52859,7 +52859,7 @@ func (s *ModifyReservedInstancesOutput) SetReservedInstancesModificationId(v str
 }
 
 // Contains the parameters for ModifySnapshotAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttributeRequest
 type ModifySnapshotAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -52957,7 +52957,7 @@ func (s *ModifySnapshotAttributeInput) SetUserIds(v []*string) *ModifySnapshotAt
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySnapshotAttributeOutput
 type ModifySnapshotAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -52973,7 +52973,7 @@ func (s ModifySnapshotAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ModifySpotFleetRequest.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequestRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequestRequest
 type ModifySpotFleetRequestInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53033,7 +53033,7 @@ func (s *ModifySpotFleetRequestInput) SetTargetCapacity(v int64) *ModifySpotFlee
 }
 
 // Contains the output of ModifySpotFleetRequest.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequestResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySpotFleetRequestResponse
 type ModifySpotFleetRequestOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53058,7 +53058,7 @@ func (s *ModifySpotFleetRequestOutput) SetReturn(v bool) *ModifySpotFleetRequest
 }
 
 // Contains the parameters for ModifySubnetAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttributeRequest
 type ModifySubnetAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53125,7 +53125,7 @@ func (s *ModifySubnetAttributeInput) SetSubnetId(v string) *ModifySubnetAttribut
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifySubnetAttributeOutput
 type ModifySubnetAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -53141,7 +53141,7 @@ func (s ModifySubnetAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ModifyVolumeAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttributeRequest
 type ModifyVolumeAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53201,7 +53201,7 @@ func (s *ModifyVolumeAttributeInput) SetVolumeId(v string) *ModifyVolumeAttribut
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeAttributeOutput
 type ModifyVolumeAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -53216,7 +53216,7 @@ func (s ModifyVolumeAttributeOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeRequest
 type ModifyVolumeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53308,7 +53308,7 @@ func (s *ModifyVolumeInput) SetVolumeType(v string) *ModifyVolumeInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVolumeResult
 type ModifyVolumeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53333,7 +53333,7 @@ func (s *ModifyVolumeOutput) SetVolumeModification(v *VolumeModification) *Modif
 }
 
 // Contains the parameters for ModifyVpcAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttributeRequest
 type ModifyVpcAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53402,7 +53402,7 @@ func (s *ModifyVpcAttributeInput) SetVpcId(v string) *ModifyVpcAttributeInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcAttributeOutput
 type ModifyVpcAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -53417,7 +53417,7 @@ func (s ModifyVpcAttributeOutput) GoString() string {
 	return s.String()
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotificationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotificationRequest
 type ModifyVpcEndpointConnectionNotificationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53487,7 +53487,7 @@ func (s *ModifyVpcEndpointConnectionNotificationInput) SetDryRun(v bool) *Modify
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotificationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointConnectionNotificationResult
 type ModifyVpcEndpointConnectionNotificationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53512,7 +53512,7 @@ func (s *ModifyVpcEndpointConnectionNotificationOutput) SetReturnValue(v bool) *
 }
 
 // Contains the parameters for ModifyVpcEndpoint.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointRequest
 type ModifyVpcEndpointInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53649,7 +53649,7 @@ func (s *ModifyVpcEndpointInput) SetVpcEndpointId(v string) *ModifyVpcEndpointIn
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointResult
 type ModifyVpcEndpointOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53673,7 +53673,7 @@ func (s *ModifyVpcEndpointOutput) SetReturn(v bool) *ModifyVpcEndpointOutput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfigurationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfigurationRequest
 type ModifyVpcEndpointServiceConfigurationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53753,7 +53753,7 @@ func (s *ModifyVpcEndpointServiceConfigurationInput) SetServiceId(v string) *Mod
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfigurationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServiceConfigurationResult
 type ModifyVpcEndpointServiceConfigurationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53777,7 +53777,7 @@ func (s *ModifyVpcEndpointServiceConfigurationOutput) SetReturn(v bool) *ModifyV
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissionsRequest
 type ModifyVpcEndpointServicePermissionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53848,7 +53848,7 @@ func (s *ModifyVpcEndpointServicePermissionsInput) SetServiceId(v string) *Modif
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcEndpointServicePermissionsResult
 type ModifyVpcEndpointServicePermissionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53872,7 +53872,7 @@ func (s *ModifyVpcEndpointServicePermissionsOutput) SetReturnValue(v bool) *Modi
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptionsRequest
 type ModifyVpcPeeringConnectionOptionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -53941,7 +53941,7 @@ func (s *ModifyVpcPeeringConnectionOptionsInput) SetVpcPeeringConnectionId(v str
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcPeeringConnectionOptionsResult
 type ModifyVpcPeeringConnectionOptionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -53975,7 +53975,7 @@ func (s *ModifyVpcPeeringConnectionOptionsOutput) SetRequesterPeeringConnectionO
 }
 
 // Contains the parameters for ModifyVpcTenancy.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancyRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancyRequest
 type ModifyVpcTenancyInput struct {
 	_ struct{} `type:"structure"`
 
@@ -54041,7 +54041,7 @@ func (s *ModifyVpcTenancyInput) SetVpcId(v string) *ModifyVpcTenancyInput {
 }
 
 // Contains the output of ModifyVpcTenancy.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancyResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ModifyVpcTenancyResult
 type ModifyVpcTenancyOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -54066,7 +54066,7 @@ func (s *ModifyVpcTenancyOutput) SetReturnValue(v bool) *ModifyVpcTenancyOutput 
 }
 
 // Contains the parameters for MonitorInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstancesRequest
 type MonitorInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -54118,7 +54118,7 @@ func (s *MonitorInstancesInput) SetInstanceIds(v []*string) *MonitorInstancesInp
 }
 
 // Contains the output of MonitorInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MonitorInstancesResult
 type MonitorInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -54143,7 +54143,7 @@ func (s *MonitorInstancesOutput) SetInstanceMonitorings(v []*InstanceMonitoring)
 }
 
 // Describes the monitoring of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Monitoring
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Monitoring
 type Monitoring struct {
 	_ struct{} `type:"structure"`
 
@@ -54169,7 +54169,7 @@ func (s *Monitoring) SetState(v string) *Monitoring {
 }
 
 // Contains the parameters for MoveAddressToVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpcRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpcRequest
 type MoveAddressToVpcInput struct {
 	_ struct{} `type:"structure"`
 
@@ -54221,7 +54221,7 @@ func (s *MoveAddressToVpcInput) SetPublicIp(v string) *MoveAddressToVpcInput {
 }
 
 // Contains the output of MoveAddressToVpc.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpcResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MoveAddressToVpcResult
 type MoveAddressToVpcOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -54255,7 +54255,7 @@ func (s *MoveAddressToVpcOutput) SetStatus(v string) *MoveAddressToVpcOutput {
 }
 
 // Describes the status of a moving Elastic IP address.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MovingAddressStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MovingAddressStatus
 type MovingAddressStatus struct {
 	_ struct{} `type:"structure"`
 
@@ -54290,7 +54290,7 @@ func (s *MovingAddressStatus) SetPublicIp(v string) *MovingAddressStatus {
 }
 
 // Describes a NAT gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NatGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NatGateway
 type NatGateway struct {
 	_ struct{} `type:"structure"`
 
@@ -54336,7 +54336,7 @@ type NatGateway struct {
 
 	// Reserved. If you need to sustain traffic greater than the documented limits
 	// (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-	// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
+	// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
 	ProvisionedBandwidth *ProvisionedBandwidth `locationName:"provisionedBandwidth" type:"structure"`
 
 	// The state of the NAT gateway.
@@ -54445,7 +54445,7 @@ func (s *NatGateway) SetVpcId(v string) *NatGateway {
 }
 
 // Describes the IP addresses and network interface associated with a NAT gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NatGatewayAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NatGatewayAddress
 type NatGatewayAddress struct {
 	_ struct{} `type:"structure"`
 
@@ -54498,7 +54498,7 @@ func (s *NatGatewayAddress) SetPublicIp(v string) *NatGatewayAddress {
 }
 
 // Describes a network ACL.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkAcl
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkAcl
 type NetworkAcl struct {
 	_ struct{} `type:"structure"`
 
@@ -54568,7 +54568,7 @@ func (s *NetworkAcl) SetVpcId(v string) *NetworkAcl {
 }
 
 // Describes an association between a network ACL and a subnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkAclAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkAclAssociation
 type NetworkAclAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -54611,7 +54611,7 @@ func (s *NetworkAclAssociation) SetSubnetId(v string) *NetworkAclAssociation {
 }
 
 // Describes an entry in a network ACL.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkAclEntry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkAclEntry
 type NetworkAclEntry struct {
 	_ struct{} `type:"structure"`
 
@@ -54701,7 +54701,7 @@ func (s *NetworkAclEntry) SetRuleNumber(v int64) *NetworkAclEntry {
 }
 
 // Describes a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterface
 type NetworkInterface struct {
 	_ struct{} `type:"structure"`
 
@@ -54899,7 +54899,7 @@ func (s *NetworkInterface) SetVpcId(v string) *NetworkInterface {
 }
 
 // Describes association information for an Elastic IP address (IPv4 only).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceAssociation
 type NetworkInterfaceAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -54960,7 +54960,7 @@ func (s *NetworkInterfaceAssociation) SetPublicIp(v string) *NetworkInterfaceAss
 }
 
 // Describes a network interface attachment.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceAttachment
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceAttachment
 type NetworkInterfaceAttachment struct {
 	_ struct{} `type:"structure"`
 
@@ -55039,7 +55039,7 @@ func (s *NetworkInterfaceAttachment) SetStatus(v string) *NetworkInterfaceAttach
 }
 
 // Describes an attachment change.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceAttachmentChanges
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceAttachmentChanges
 type NetworkInterfaceAttachmentChanges struct {
 	_ struct{} `type:"structure"`
 
@@ -55073,7 +55073,7 @@ func (s *NetworkInterfaceAttachmentChanges) SetDeleteOnTermination(v bool) *Netw
 }
 
 // Describes an IPv6 address associated with a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceIpv6Address
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfaceIpv6Address
 type NetworkInterfaceIpv6Address struct {
 	_ struct{} `type:"structure"`
 
@@ -55098,7 +55098,7 @@ func (s *NetworkInterfaceIpv6Address) SetIpv6Address(v string) *NetworkInterface
 }
 
 // Describes a permission for a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfacePermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfacePermission
 type NetworkInterfacePermission struct {
 	_ struct{} `type:"structure"`
 
@@ -55168,7 +55168,7 @@ func (s *NetworkInterfacePermission) SetPermissionState(v *NetworkInterfacePermi
 }
 
 // Describes the state of a network interface permission.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfacePermissionState
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfacePermissionState
 type NetworkInterfacePermissionState struct {
 	_ struct{} `type:"structure"`
 
@@ -55202,7 +55202,7 @@ func (s *NetworkInterfacePermissionState) SetStatusMessage(v string) *NetworkInt
 }
 
 // Describes the private IPv4 address of a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfacePrivateIpAddress
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NetworkInterfacePrivateIpAddress
 type NetworkInterfacePrivateIpAddress struct {
 	_ struct{} `type:"structure"`
 
@@ -55255,7 +55255,7 @@ func (s *NetworkInterfacePrivateIpAddress) SetPrivateIpAddress(v string) *Networ
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NewDhcpConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/NewDhcpConfiguration
 type NewDhcpConfiguration struct {
 	_ struct{} `type:"structure"`
 
@@ -55288,7 +55288,7 @@ func (s *NewDhcpConfiguration) SetValues(v []*string) *NewDhcpConfiguration {
 
 // Describes the data that identifies an Amazon FPGA image (AFI) on the PCI
 // bus.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PciId
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PciId
 type PciId struct {
 	_ struct{} `type:"structure"`
 
@@ -55340,7 +55340,7 @@ func (s *PciId) SetVendorId(v string) *PciId {
 }
 
 // Describes the VPC peering connection options.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PeeringConnectionOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PeeringConnectionOptions
 type PeeringConnectionOptions struct {
 	_ struct{} `type:"structure"`
 
@@ -55386,7 +55386,7 @@ func (s *PeeringConnectionOptions) SetAllowEgressFromLocalVpcToRemoteClassicLink
 }
 
 // The VPC peering connection options.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PeeringConnectionOptionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PeeringConnectionOptionsRequest
 type PeeringConnectionOptionsRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -55432,7 +55432,7 @@ func (s *PeeringConnectionOptionsRequest) SetAllowEgressFromLocalVpcToRemoteClas
 }
 
 // Describes the placement of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Placement
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Placement
 type Placement struct {
 	_ struct{} `type:"structure"`
 
@@ -55506,7 +55506,7 @@ func (s *Placement) SetTenancy(v string) *Placement {
 }
 
 // Describes a placement group.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PlacementGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PlacementGroup
 type PlacementGroup struct {
 	_ struct{} `type:"structure"`
 
@@ -55549,7 +55549,7 @@ func (s *PlacementGroup) SetStrategy(v string) *PlacementGroup {
 }
 
 // Describes a range of ports.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PortRange
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PortRange
 type PortRange struct {
 	_ struct{} `type:"structure"`
 
@@ -55583,7 +55583,7 @@ func (s *PortRange) SetTo(v int64) *PortRange {
 }
 
 // Describes prefixes for AWS services.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PrefixList
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PrefixList
 type PrefixList struct {
 	_ struct{} `type:"structure"`
 
@@ -55626,7 +55626,7 @@ func (s *PrefixList) SetPrefixListName(v string) *PrefixList {
 }
 
 // [EC2-VPC only] The ID of the prefix.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PrefixListId
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PrefixListId
 type PrefixListId struct {
 	_ struct{} `type:"structure"`
 
@@ -55664,7 +55664,7 @@ func (s *PrefixListId) SetPrefixListId(v string) *PrefixListId {
 }
 
 // Describes the price for a Reserved Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PriceSchedule
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PriceSchedule
 type PriceSchedule struct {
 	_ struct{} `type:"structure"`
 
@@ -55727,7 +55727,7 @@ func (s *PriceSchedule) SetTerm(v int64) *PriceSchedule {
 }
 
 // Describes the price for a Reserved Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PriceScheduleSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PriceScheduleSpecification
 type PriceScheduleSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -55772,7 +55772,7 @@ func (s *PriceScheduleSpecification) SetTerm(v int64) *PriceScheduleSpecificatio
 }
 
 // Describes a Reserved Instance offering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PricingDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PricingDetail
 type PricingDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -55806,7 +55806,7 @@ func (s *PricingDetail) SetPrice(v float64) *PricingDetail {
 }
 
 // Describes a secondary private IPv4 address for a network interface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PrivateIpAddressSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PrivateIpAddressSpecification
 type PrivateIpAddressSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -55856,7 +55856,7 @@ func (s *PrivateIpAddressSpecification) SetPrivateIpAddress(v string) *PrivateIp
 }
 
 // Describes a product code.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ProductCode
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ProductCode
 type ProductCode struct {
 	_ struct{} `type:"structure"`
 
@@ -55890,7 +55890,7 @@ func (s *ProductCode) SetProductCodeType(v string) *ProductCode {
 }
 
 // Describes a virtual private gateway propagating route.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PropagatingVgw
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PropagatingVgw
 type PropagatingVgw struct {
 	_ struct{} `type:"structure"`
 
@@ -55916,34 +55916,34 @@ func (s *PropagatingVgw) SetGatewayId(v string) *PropagatingVgw {
 
 // Reserved. If you need to sustain traffic greater than the documented limits
 // (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ProvisionedBandwidth
+// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ProvisionedBandwidth
 type ProvisionedBandwidth struct {
 	_ struct{} `type:"structure"`
 
 	// Reserved. If you need to sustain traffic greater than the documented limits
 	// (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-	// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
+	// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
 	ProvisionTime *time.Time `locationName:"provisionTime" type:"timestamp" timestampFormat:"iso8601"`
 
 	// Reserved. If you need to sustain traffic greater than the documented limits
 	// (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-	// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
+	// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
 	Provisioned *string `locationName:"provisioned" type:"string"`
 
 	// Reserved. If you need to sustain traffic greater than the documented limits
 	// (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-	// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
+	// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
 	RequestTime *time.Time `locationName:"requestTime" type:"timestamp" timestampFormat:"iso8601"`
 
 	// Reserved. If you need to sustain traffic greater than the documented limits
 	// (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-	// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
+	// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
 	Requested *string `locationName:"requested" type:"string"`
 
 	// Reserved. If you need to sustain traffic greater than the documented limits
 	// (http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html),
-	// contact us through the Support Center (https://console.aws.amazon.com/support/home?).
+	// contact us through the Support Center (http://console.aws.amazon.com/support/home?).
 	Status *string `locationName:"status" type:"string"`
 }
 
@@ -55988,7 +55988,7 @@ func (s *ProvisionedBandwidth) SetStatus(v string) *ProvisionedBandwidth {
 }
 
 // Describes the result of the purchase.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Purchase
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Purchase
 type Purchase struct {
 	_ struct{} `type:"structure"`
 
@@ -56077,7 +56077,7 @@ func (s *Purchase) SetUpfrontPrice(v string) *Purchase {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservationRequest
 type PurchaseHostReservationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56167,7 +56167,7 @@ func (s *PurchaseHostReservationInput) SetOfferingId(v string) *PurchaseHostRese
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseHostReservationResult
 type PurchaseHostReservationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -56232,7 +56232,7 @@ func (s *PurchaseHostReservationOutput) SetTotalUpfrontPrice(v string) *Purchase
 }
 
 // Describes a request to purchase Scheduled Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseRequest
 type PurchaseRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -56286,7 +56286,7 @@ func (s *PurchaseRequest) SetPurchaseToken(v string) *PurchaseRequest {
 }
 
 // Contains the parameters for PurchaseReservedInstancesOffering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOfferingRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOfferingRequest
 type PurchaseReservedInstancesOfferingInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56363,7 +56363,7 @@ func (s *PurchaseReservedInstancesOfferingInput) SetReservedInstancesOfferingId(
 }
 
 // Contains the output of PurchaseReservedInstancesOffering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOfferingResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseReservedInstancesOfferingResult
 type PurchaseReservedInstancesOfferingOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -56388,7 +56388,7 @@ func (s *PurchaseReservedInstancesOfferingOutput) SetReservedInstancesId(v strin
 }
 
 // Contains the parameters for PurchaseScheduledInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstancesRequest
 type PurchaseScheduledInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56463,7 +56463,7 @@ func (s *PurchaseScheduledInstancesInput) SetPurchaseRequests(v []*PurchaseReque
 }
 
 // Contains the output of PurchaseScheduledInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/PurchaseScheduledInstancesResult
 type PurchaseScheduledInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -56488,7 +56488,7 @@ func (s *PurchaseScheduledInstancesOutput) SetScheduledInstanceSet(v []*Schedule
 }
 
 // Contains the parameters for RebootInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstancesRequest
 type RebootInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56539,7 +56539,7 @@ func (s *RebootInstancesInput) SetInstanceIds(v []*string) *RebootInstancesInput
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstancesOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RebootInstancesOutput
 type RebootInstancesOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -56555,7 +56555,7 @@ func (s RebootInstancesOutput) GoString() string {
 }
 
 // Describes a recurring charge.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RecurringCharge
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RecurringCharge
 type RecurringCharge struct {
 	_ struct{} `type:"structure"`
 
@@ -56589,7 +56589,7 @@ func (s *RecurringCharge) SetFrequency(v string) *RecurringCharge {
 }
 
 // Describes a region.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Region
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Region
 type Region struct {
 	_ struct{} `type:"structure"`
 
@@ -56623,7 +56623,7 @@ func (s *Region) SetRegionName(v string) *Region {
 }
 
 // Contains the parameters for RegisterImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImageRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImageRequest
 type RegisterImageInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56796,7 +56796,7 @@ func (s *RegisterImageInput) SetVirtualizationType(v string) *RegisterImageInput
 }
 
 // Contains the output of RegisterImage.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImageResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RegisterImageResult
 type RegisterImageOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -56820,7 +56820,7 @@ func (s *RegisterImageOutput) SetImageId(v string) *RegisterImageOutput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnectionsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnectionsRequest
 type RejectVpcEndpointConnectionsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56885,7 +56885,7 @@ func (s *RejectVpcEndpointConnectionsInput) SetVpcEndpointIds(v []*string) *Reje
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnectionsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcEndpointConnectionsResult
 type RejectVpcEndpointConnectionsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -56910,7 +56910,7 @@ func (s *RejectVpcEndpointConnectionsOutput) SetUnsuccessful(v []*UnsuccessfulIt
 }
 
 // Contains the parameters for RejectVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnectionRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnectionRequest
 type RejectVpcPeeringConnectionInput struct {
 	_ struct{} `type:"structure"`
 
@@ -56962,7 +56962,7 @@ func (s *RejectVpcPeeringConnectionInput) SetVpcPeeringConnectionId(v string) *R
 }
 
 // Contains the output of RejectVpcPeeringConnection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnectionResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RejectVpcPeeringConnectionResult
 type RejectVpcPeeringConnectionOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -56987,7 +56987,7 @@ func (s *RejectVpcPeeringConnectionOutput) SetReturn(v bool) *RejectVpcPeeringCo
 }
 
 // Contains the parameters for ReleaseAddress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddressRequest
 type ReleaseAddressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57032,7 +57032,7 @@ func (s *ReleaseAddressInput) SetPublicIp(v string) *ReleaseAddressInput {
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddressOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseAddressOutput
 type ReleaseAddressOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -57048,7 +57048,7 @@ func (s ReleaseAddressOutput) GoString() string {
 }
 
 // Contains the parameters for ReleaseHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHostsRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHostsRequest
 type ReleaseHostsInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57088,7 +57088,7 @@ func (s *ReleaseHostsInput) SetHostIds(v []*string) *ReleaseHostsInput {
 }
 
 // Contains the output of ReleaseHosts.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHostsResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReleaseHostsResult
 type ReleaseHostsOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -57122,7 +57122,7 @@ func (s *ReleaseHostsOutput) SetUnsuccessful(v []*UnsuccessfulItem) *ReleaseHost
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociationRequest
 type ReplaceIamInstanceProfileAssociationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57175,7 +57175,7 @@ func (s *ReplaceIamInstanceProfileAssociationInput) SetIamInstanceProfile(v *Iam
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceIamInstanceProfileAssociationResult
 type ReplaceIamInstanceProfileAssociationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -57200,7 +57200,7 @@ func (s *ReplaceIamInstanceProfileAssociationOutput) SetIamInstanceProfileAssoci
 }
 
 // Contains the parameters for ReplaceNetworkAclAssociation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociationRequest
 type ReplaceNetworkAclAssociationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57267,7 +57267,7 @@ func (s *ReplaceNetworkAclAssociationInput) SetNetworkAclId(v string) *ReplaceNe
 }
 
 // Contains the output of ReplaceNetworkAclAssociation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclAssociationResult
 type ReplaceNetworkAclAssociationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -57292,7 +57292,7 @@ func (s *ReplaceNetworkAclAssociationOutput) SetNewAssociationId(v string) *Repl
 }
 
 // Contains the parameters for ReplaceNetworkAclEntry.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntryRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntryRequest
 type ReplaceNetworkAclEntryInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57445,7 +57445,7 @@ func (s *ReplaceNetworkAclEntryInput) SetRuleNumber(v int64) *ReplaceNetworkAclE
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntryOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceNetworkAclEntryOutput
 type ReplaceNetworkAclEntryOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -57461,7 +57461,7 @@ func (s ReplaceNetworkAclEntryOutput) GoString() string {
 }
 
 // Contains the parameters for ReplaceRoute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteRequest
 type ReplaceRouteInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57586,7 +57586,7 @@ func (s *ReplaceRouteInput) SetVpcPeeringConnectionId(v string) *ReplaceRouteInp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteOutput
 type ReplaceRouteOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -57602,7 +57602,7 @@ func (s ReplaceRouteOutput) GoString() string {
 }
 
 // Contains the parameters for ReplaceRouteTableAssociation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociationRequest
 type ReplaceRouteTableAssociationInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57668,7 +57668,7 @@ func (s *ReplaceRouteTableAssociationInput) SetRouteTableId(v string) *ReplaceRo
 }
 
 // Contains the output of ReplaceRouteTableAssociation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReplaceRouteTableAssociationResult
 type ReplaceRouteTableAssociationOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -57693,7 +57693,7 @@ func (s *ReplaceRouteTableAssociationOutput) SetNewAssociationId(v string) *Repl
 }
 
 // Contains the parameters for ReportInstanceStatus.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatusRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatusRequest
 type ReportInstanceStatusInput struct {
 	_ struct{} `type:"structure"`
 
@@ -57820,7 +57820,7 @@ func (s *ReportInstanceStatusInput) SetStatus(v string) *ReportInstanceStatusInp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatusOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReportInstanceStatusOutput
 type ReportInstanceStatusOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -57836,7 +57836,7 @@ func (s ReportInstanceStatusOutput) GoString() string {
 }
 
 // The information to include in the launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestLaunchTemplateData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestLaunchTemplateData
 type RequestLaunchTemplateData struct {
 	_ struct{} `type:"structure"`
 
@@ -58105,7 +58105,7 @@ func (s *RequestLaunchTemplateData) SetUserData(v string) *RequestLaunchTemplate
 }
 
 // Contains the parameters for RequestSpotFleet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleetRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleetRequest
 type RequestSpotFleetInput struct {
 	_ struct{} `type:"structure"`
 
@@ -58162,7 +58162,7 @@ func (s *RequestSpotFleetInput) SetSpotFleetRequestConfig(v *SpotFleetRequestCon
 }
 
 // Contains the output of RequestSpotFleet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleetResponse
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotFleetResponse
 type RequestSpotFleetOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -58189,7 +58189,7 @@ func (s *RequestSpotFleetOutput) SetSpotFleetRequestId(v string) *RequestSpotFle
 }
 
 // Contains the parameters for RequestSpotInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstancesRequest
 type RequestSpotInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -58377,7 +58377,7 @@ func (s *RequestSpotInstancesInput) SetValidUntil(v time.Time) *RequestSpotInsta
 }
 
 // Contains the output of RequestSpotInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotInstancesResult
 type RequestSpotInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -58402,7 +58402,7 @@ func (s *RequestSpotInstancesOutput) SetSpotInstanceRequests(v []*SpotInstanceRe
 }
 
 // Describes the launch specification for an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotLaunchSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RequestSpotLaunchSpecification
 type RequestSpotLaunchSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -58603,7 +58603,7 @@ func (s *RequestSpotLaunchSpecification) SetUserData(v string) *RequestSpotLaunc
 }
 
 // Describes a reservation.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Reservation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Reservation
 type Reservation struct {
 	_ struct{} `type:"structure"`
 
@@ -58665,7 +58665,7 @@ func (s *Reservation) SetReservationId(v string) *Reservation {
 }
 
 // The cost associated with the Reserved Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservationValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservationValue
 type ReservationValue struct {
 	_ struct{} `type:"structure"`
 
@@ -58709,7 +58709,7 @@ func (s *ReservationValue) SetRemainingUpfrontValue(v string) *ReservationValue 
 }
 
 // Describes the limit price of a Reserved Instance offering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstanceLimitPrice
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstanceLimitPrice
 type ReservedInstanceLimitPrice struct {
 	_ struct{} `type:"structure"`
 
@@ -58745,7 +58745,7 @@ func (s *ReservedInstanceLimitPrice) SetCurrencyCode(v string) *ReservedInstance
 }
 
 // The total value of the Convertible Reserved Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstanceReservationValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstanceReservationValue
 type ReservedInstanceReservationValue struct {
 	_ struct{} `type:"structure"`
 
@@ -58779,7 +58779,7 @@ func (s *ReservedInstanceReservationValue) SetReservedInstanceId(v string) *Rese
 }
 
 // Describes a Reserved Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstances
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstances
 type ReservedInstances struct {
 	_ struct{} `type:"structure"`
 
@@ -58958,7 +58958,7 @@ func (s *ReservedInstances) SetUsagePrice(v float64) *ReservedInstances {
 }
 
 // Describes the configuration settings for the modified Reserved Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesConfiguration
 type ReservedInstancesConfiguration struct {
 	_ struct{} `type:"structure"`
 
@@ -59021,7 +59021,7 @@ func (s *ReservedInstancesConfiguration) SetScope(v string) *ReservedInstancesCo
 }
 
 // Describes the ID of a Reserved Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesId
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesId
 type ReservedInstancesId struct {
 	_ struct{} `type:"structure"`
 
@@ -59046,7 +59046,7 @@ func (s *ReservedInstancesId) SetReservedInstancesId(v string) *ReservedInstance
 }
 
 // Describes a Reserved Instance listing.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesListing
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesListing
 type ReservedInstancesListing struct {
 	_ struct{} `type:"structure"`
 
@@ -59154,7 +59154,7 @@ func (s *ReservedInstancesListing) SetUpdateDate(v time.Time) *ReservedInstances
 }
 
 // Describes a Reserved Instance modification.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesModification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesModification
 type ReservedInstancesModification struct {
 	_ struct{} `type:"structure"`
 
@@ -59253,7 +59253,7 @@ func (s *ReservedInstancesModification) SetUpdateDate(v time.Time) *ReservedInst
 }
 
 // Describes the modification request/s.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesModificationResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesModificationResult
 type ReservedInstancesModificationResult struct {
 	_ struct{} `type:"structure"`
 
@@ -59289,7 +59289,7 @@ func (s *ReservedInstancesModificationResult) SetTargetConfiguration(v *Reserved
 }
 
 // Describes a Reserved Instance offering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesOffering
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ReservedInstancesOffering
 type ReservedInstancesOffering struct {
 	_ struct{} `type:"structure"`
 
@@ -59447,7 +59447,7 @@ func (s *ReservedInstancesOffering) SetUsagePrice(v float64) *ReservedInstancesO
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttributeRequest
 type ResetFpgaImageAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -59507,7 +59507,7 @@ func (s *ResetFpgaImageAttributeInput) SetFpgaImageId(v string) *ResetFpgaImageA
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttributeResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetFpgaImageAttributeResult
 type ResetFpgaImageAttributeOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -59532,7 +59532,7 @@ func (s *ResetFpgaImageAttributeOutput) SetReturn(v bool) *ResetFpgaImageAttribu
 }
 
 // Contains the parameters for ResetImageAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttributeRequest
 type ResetImageAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -59598,7 +59598,7 @@ func (s *ResetImageAttributeInput) SetImageId(v string) *ResetImageAttributeInpu
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetImageAttributeOutput
 type ResetImageAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -59614,7 +59614,7 @@ func (s ResetImageAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ResetInstanceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttributeRequest
 type ResetInstanceAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -59682,7 +59682,7 @@ func (s *ResetInstanceAttributeInput) SetInstanceId(v string) *ResetInstanceAttr
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetInstanceAttributeOutput
 type ResetInstanceAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -59698,7 +59698,7 @@ func (s ResetInstanceAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ResetNetworkInterfaceAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttributeRequest
 type ResetNetworkInterfaceAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -59758,7 +59758,7 @@ func (s *ResetNetworkInterfaceAttributeInput) SetSourceDestCheck(v string) *Rese
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetNetworkInterfaceAttributeOutput
 type ResetNetworkInterfaceAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -59774,7 +59774,7 @@ func (s ResetNetworkInterfaceAttributeOutput) GoString() string {
 }
 
 // Contains the parameters for ResetSnapshotAttribute.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttributeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttributeRequest
 type ResetSnapshotAttributeInput struct {
 	_ struct{} `type:"structure"`
 
@@ -59840,7 +59840,7 @@ func (s *ResetSnapshotAttributeInput) SetSnapshotId(v string) *ResetSnapshotAttr
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttributeOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResetSnapshotAttributeOutput
 type ResetSnapshotAttributeOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -59857,7 +59857,7 @@ func (s ResetSnapshotAttributeOutput) GoString() string {
 
 // Describes the error that's returned when you cannot delete a launch template
 // version.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResponseError
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResponseError
 type ResponseError struct {
 	_ struct{} `type:"structure"`
 
@@ -59891,7 +59891,7 @@ func (s *ResponseError) SetMessage(v string) *ResponseError {
 }
 
 // The information for a launch template.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResponseLaunchTemplateData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ResponseLaunchTemplateData
 type ResponseLaunchTemplateData struct {
 	_ struct{} `type:"structure"`
 
@@ -60089,7 +60089,7 @@ func (s *ResponseLaunchTemplateData) SetUserData(v string) *ResponseLaunchTempla
 }
 
 // Contains the parameters for RestoreAddressToClassic.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassicRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassicRequest
 type RestoreAddressToClassicInput struct {
 	_ struct{} `type:"structure"`
 
@@ -60141,7 +60141,7 @@ func (s *RestoreAddressToClassicInput) SetPublicIp(v string) *RestoreAddressToCl
 }
 
 // Contains the output of RestoreAddressToClassic.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassicResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RestoreAddressToClassicResult
 type RestoreAddressToClassicOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -60175,7 +60175,7 @@ func (s *RestoreAddressToClassicOutput) SetStatus(v string) *RestoreAddressToCla
 }
 
 // Contains the parameters for RevokeSecurityGroupEgress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgressRequest
 type RevokeSecurityGroupEgressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -60293,7 +60293,7 @@ func (s *RevokeSecurityGroupEgressInput) SetToPort(v int64) *RevokeSecurityGroup
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgressOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupEgressOutput
 type RevokeSecurityGroupEgressOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -60309,7 +60309,7 @@ func (s RevokeSecurityGroupEgressOutput) GoString() string {
 }
 
 // Contains the parameters for RevokeSecurityGroupIngress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngressRequest
 type RevokeSecurityGroupIngressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -60435,7 +60435,7 @@ func (s *RevokeSecurityGroupIngressInput) SetToPort(v int64) *RevokeSecurityGrou
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngressOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RevokeSecurityGroupIngressOutput
 type RevokeSecurityGroupIngressOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -60451,7 +60451,7 @@ func (s RevokeSecurityGroupIngressOutput) GoString() string {
 }
 
 // Describes a route in a route table.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Route
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Route
 type Route struct {
 	_ struct{} `type:"structure"`
 
@@ -60584,7 +60584,7 @@ func (s *Route) SetVpcPeeringConnectionId(v string) *Route {
 }
 
 // Describes a route table.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RouteTable
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RouteTable
 type RouteTable struct {
 	_ struct{} `type:"structure"`
 
@@ -60654,7 +60654,7 @@ func (s *RouteTable) SetVpcId(v string) *RouteTable {
 }
 
 // Describes an association between a route table and a subnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RouteTableAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RouteTableAssociation
 type RouteTableAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -60706,7 +60706,7 @@ func (s *RouteTableAssociation) SetSubnetId(v string) *RouteTableAssociation {
 }
 
 // Contains the parameters for RunInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstancesRequest
 type RunInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -61127,7 +61127,7 @@ func (s *RunInstancesInput) SetUserData(v string) *RunInstancesInput {
 }
 
 // Describes the monitoring of an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstancesMonitoringEnabled
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunInstancesMonitoringEnabled
 type RunInstancesMonitoringEnabled struct {
 	_ struct{} `type:"structure"`
 
@@ -61168,7 +61168,7 @@ func (s *RunInstancesMonitoringEnabled) SetEnabled(v bool) *RunInstancesMonitori
 }
 
 // Contains the parameters for RunScheduledInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstancesRequest
 type RunScheduledInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -61261,7 +61261,7 @@ func (s *RunScheduledInstancesInput) SetScheduledInstanceId(v string) *RunSchedu
 }
 
 // Contains the output of RunScheduledInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/RunScheduledInstancesResult
 type RunScheduledInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -61287,7 +61287,7 @@ func (s *RunScheduledInstancesOutput) SetInstanceIdSet(v []*string) *RunSchedule
 
 // Describes the storage parameters for S3 and S3 buckets for an instance store-backed
 // AMI.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/S3Storage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/S3Storage
 type S3Storage struct {
 	_ struct{} `type:"structure"`
 
@@ -61355,7 +61355,7 @@ func (s *S3Storage) SetUploadPolicySignature(v string) *S3Storage {
 }
 
 // Describes a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstance
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstance
 type ScheduledInstance struct {
 	_ struct{} `type:"structure"`
 
@@ -61506,7 +61506,7 @@ func (s *ScheduledInstance) SetTotalScheduledInstanceHours(v int64) *ScheduledIn
 }
 
 // Describes a schedule that is available for your Scheduled Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstanceAvailability
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstanceAvailability
 type ScheduledInstanceAvailability struct {
 	_ struct{} `type:"structure"`
 
@@ -61640,7 +61640,7 @@ func (s *ScheduledInstanceAvailability) SetTotalScheduledInstanceHours(v int64) 
 }
 
 // Describes the recurring schedule for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstanceRecurrence
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstanceRecurrence
 type ScheduledInstanceRecurrence struct {
 	_ struct{} `type:"structure"`
 
@@ -61705,7 +61705,7 @@ func (s *ScheduledInstanceRecurrence) SetOccurrenceUnit(v string) *ScheduledInst
 }
 
 // Describes the recurring schedule for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstanceRecurrenceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstanceRecurrenceRequest
 type ScheduledInstanceRecurrenceRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -61773,7 +61773,7 @@ func (s *ScheduledInstanceRecurrenceRequest) SetOccurrenceUnit(v string) *Schedu
 }
 
 // Describes a block device mapping for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesBlockDeviceMapping
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesBlockDeviceMapping
 type ScheduledInstancesBlockDeviceMapping struct {
 	_ struct{} `type:"structure"`
 
@@ -61836,7 +61836,7 @@ func (s *ScheduledInstancesBlockDeviceMapping) SetVirtualName(v string) *Schedul
 }
 
 // Describes an EBS volume for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesEbs
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesEbs
 type ScheduledInstancesEbs struct {
 	_ struct{} `type:"structure"`
 
@@ -61925,7 +61925,7 @@ func (s *ScheduledInstancesEbs) SetVolumeType(v string) *ScheduledInstancesEbs {
 }
 
 // Describes an IAM instance profile for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesIamInstanceProfile
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesIamInstanceProfile
 type ScheduledInstancesIamInstanceProfile struct {
 	_ struct{} `type:"structure"`
 
@@ -61959,7 +61959,7 @@ func (s *ScheduledInstancesIamInstanceProfile) SetName(v string) *ScheduledInsta
 }
 
 // Describes an IPv6 address.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesIpv6Address
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesIpv6Address
 type ScheduledInstancesIpv6Address struct {
 	_ struct{} `type:"structure"`
 
@@ -61988,7 +61988,7 @@ func (s *ScheduledInstancesIpv6Address) SetIpv6Address(v string) *ScheduledInsta
 // If you are launching the Scheduled Instance in EC2-VPC, you must specify
 // the ID of the subnet. You can specify the subnet using either SubnetId or
 // NetworkInterface.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesLaunchSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesLaunchSpecification
 type ScheduledInstancesLaunchSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -62151,7 +62151,7 @@ func (s *ScheduledInstancesLaunchSpecification) SetUserData(v string) *Scheduled
 }
 
 // Describes whether monitoring is enabled for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesMonitoring
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesMonitoring
 type ScheduledInstancesMonitoring struct {
 	_ struct{} `type:"structure"`
 
@@ -62176,7 +62176,7 @@ func (s *ScheduledInstancesMonitoring) SetEnabled(v bool) *ScheduledInstancesMon
 }
 
 // Describes a network interface for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesNetworkInterface
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesNetworkInterface
 type ScheduledInstancesNetworkInterface struct {
 	_ struct{} `type:"structure"`
 
@@ -62305,7 +62305,7 @@ func (s *ScheduledInstancesNetworkInterface) SetSubnetId(v string) *ScheduledIns
 }
 
 // Describes the placement for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesPlacement
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesPlacement
 type ScheduledInstancesPlacement struct {
 	_ struct{} `type:"structure"`
 
@@ -62339,7 +62339,7 @@ func (s *ScheduledInstancesPlacement) SetGroupName(v string) *ScheduledInstances
 }
 
 // Describes a private IPv4 address for a Scheduled Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesPrivateIpAddressConfig
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ScheduledInstancesPrivateIpAddressConfig
 type ScheduledInstancesPrivateIpAddressConfig struct {
 	_ struct{} `type:"structure"`
 
@@ -62374,7 +62374,7 @@ func (s *ScheduledInstancesPrivateIpAddressConfig) SetPrivateIpAddress(v string)
 }
 
 // Describes a security group
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SecurityGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SecurityGroup
 type SecurityGroup struct {
 	_ struct{} `type:"structure"`
 
@@ -62462,7 +62462,7 @@ func (s *SecurityGroup) SetVpcId(v string) *SecurityGroup {
 }
 
 // Describes a security group.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SecurityGroupIdentifier
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SecurityGroupIdentifier
 type SecurityGroupIdentifier struct {
 	_ struct{} `type:"structure"`
 
@@ -62496,7 +62496,7 @@ func (s *SecurityGroupIdentifier) SetGroupName(v string) *SecurityGroupIdentifie
 }
 
 // Describes a VPC with a security group that references your security group.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SecurityGroupReference
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SecurityGroupReference
 type SecurityGroupReference struct {
 	_ struct{} `type:"structure"`
 
@@ -62543,7 +62543,7 @@ func (s *SecurityGroupReference) SetVpcPeeringConnectionId(v string) *SecurityGr
 }
 
 // Describes a service configuration for a VPC endpoint service.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ServiceConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ServiceConfiguration
 type ServiceConfiguration struct {
 	_ struct{} `type:"structure"`
 
@@ -62641,7 +62641,7 @@ func (s *ServiceConfiguration) SetServiceType(v []*ServiceTypeDetail) *ServiceCo
 }
 
 // Describes a VPC endpoint service.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ServiceDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ServiceDetail
 type ServiceDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -62730,7 +62730,7 @@ func (s *ServiceDetail) SetVpcEndpointPolicySupported(v bool) *ServiceDetail {
 }
 
 // Describes the type of service for a VPC endpoint.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ServiceTypeDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/ServiceTypeDetail
 type ServiceTypeDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -62756,7 +62756,7 @@ func (s *ServiceTypeDetail) SetServiceType(v string) *ServiceTypeDetail {
 
 // Describes the time period for a Scheduled Instance to start its first schedule.
 // The time period must span less than one day.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SlotDateTimeRangeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SlotDateTimeRangeRequest
 type SlotDateTimeRangeRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -62812,7 +62812,7 @@ func (s *SlotDateTimeRangeRequest) SetLatestTime(v time.Time) *SlotDateTimeRange
 }
 
 // Describes the time period for a Scheduled Instance to start its first schedule.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SlotStartTimeRangeRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SlotStartTimeRangeRequest
 type SlotStartTimeRangeRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -62846,7 +62846,7 @@ func (s *SlotStartTimeRangeRequest) SetLatestTime(v time.Time) *SlotStartTimeRan
 }
 
 // Describes a snapshot.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Snapshot
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Snapshot
 type Snapshot struct {
 	_ struct{} `type:"structure"`
 
@@ -63004,7 +63004,7 @@ func (s *Snapshot) SetVolumeSize(v int64) *Snapshot {
 }
 
 // Describes the snapshot created from the imported disk.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SnapshotDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SnapshotDetail
 type SnapshotDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -63110,7 +63110,7 @@ func (s *SnapshotDetail) SetUserBucket(v *UserBucketDetails) *SnapshotDetail {
 }
 
 // The disk container object for the import snapshot request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SnapshotDiskContainer
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SnapshotDiskContainer
 type SnapshotDiskContainer struct {
 	_ struct{} `type:"structure"`
 
@@ -63123,7 +63123,7 @@ type SnapshotDiskContainer struct {
 	Format *string `type:"string"`
 
 	// The URL to the Amazon S3-based disk image being imported. It can either be
-	// a https URL (https://..) or an Amazon S3 URL (s3://..).
+	// a https URL (http://..) or an Amazon S3 URL (s3://..).
 	Url *string `type:"string"`
 
 	// The S3 bucket for the disk image.
@@ -63165,7 +63165,7 @@ func (s *SnapshotDiskContainer) SetUserBucket(v *UserBucket) *SnapshotDiskContai
 }
 
 // Details about the import snapshot task.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SnapshotTaskDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SnapshotTaskDetail
 type SnapshotTaskDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -63262,7 +63262,7 @@ func (s *SnapshotTaskDetail) SetUserBucket(v *UserBucketDetails) *SnapshotTaskDe
 }
 
 // Describes the data feed for a Spot Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotDatafeedSubscription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotDatafeedSubscription
 type SpotDatafeedSubscription struct {
 	_ struct{} `type:"structure"`
 
@@ -63323,7 +63323,7 @@ func (s *SpotDatafeedSubscription) SetState(v string) *SpotDatafeedSubscription 
 }
 
 // Describes the launch specification for one or more Spot Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetLaunchSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetLaunchSpecification
 type SpotFleetLaunchSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -63545,7 +63545,7 @@ func (s *SpotFleetLaunchSpecification) SetWeightedCapacity(v float64) *SpotFleet
 }
 
 // Describes whether monitoring is enabled.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetMonitoring
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetMonitoring
 type SpotFleetMonitoring struct {
 	_ struct{} `type:"structure"`
 
@@ -63572,7 +63572,7 @@ func (s *SpotFleetMonitoring) SetEnabled(v bool) *SpotFleetMonitoring {
 }
 
 // Describes a Spot Fleet request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetRequestConfig
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetRequestConfig
 type SpotFleetRequestConfig struct {
 	_ struct{} `type:"structure"`
 
@@ -63645,7 +63645,7 @@ func (s *SpotFleetRequestConfig) SetSpotFleetRequestState(v string) *SpotFleetRe
 }
 
 // Describes the configuration of a Spot Fleet request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetRequestConfigData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetRequestConfigData
 type SpotFleetRequestConfigData struct {
 	_ struct{} `type:"structure"`
 
@@ -63880,7 +63880,7 @@ func (s *SpotFleetRequestConfigData) SetValidUntil(v time.Time) *SpotFleetReques
 }
 
 // The tags for a Spot Fleet resource.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetTagSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotFleetTagSpecification
 type SpotFleetTagSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -63915,7 +63915,7 @@ func (s *SpotFleetTagSpecification) SetTags(v []*Tag) *SpotFleetTagSpecification
 }
 
 // Describes a Spot Instance request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotInstanceRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotInstanceRequest
 type SpotInstanceRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -64116,7 +64116,7 @@ func (s *SpotInstanceRequest) SetValidUntil(v time.Time) *SpotInstanceRequest {
 }
 
 // Describes a Spot Instance state change.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotInstanceStateFault
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotInstanceStateFault
 type SpotInstanceStateFault struct {
 	_ struct{} `type:"structure"`
 
@@ -64150,7 +64150,7 @@ func (s *SpotInstanceStateFault) SetMessage(v string) *SpotInstanceStateFault {
 }
 
 // Describes the status of a Spot Instance request.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotInstanceStatus
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotInstanceStatus
 type SpotInstanceStatus struct {
 	_ struct{} `type:"structure"`
 
@@ -64195,7 +64195,7 @@ func (s *SpotInstanceStatus) SetUpdateTime(v time.Time) *SpotInstanceStatus {
 }
 
 // The options for Spot Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotMarketOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotMarketOptions
 type SpotMarketOptions struct {
 	_ struct{} `type:"structure"`
 
@@ -64263,7 +64263,7 @@ func (s *SpotMarketOptions) SetValidUntil(v time.Time) *SpotMarketOptions {
 }
 
 // Describes Spot Instance placement.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotPlacement
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotPlacement
 type SpotPlacement struct {
 	_ struct{} `type:"structure"`
 
@@ -64312,7 +64312,7 @@ func (s *SpotPlacement) SetTenancy(v string) *SpotPlacement {
 
 // Describes the maximum price per hour that you are willing to pay for a Spot
 // Instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotPrice
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SpotPrice
 type SpotPrice struct {
 	_ struct{} `type:"structure"`
 
@@ -64373,7 +64373,7 @@ func (s *SpotPrice) SetTimestamp(v time.Time) *SpotPrice {
 }
 
 // Describes a stale rule in a security group.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StaleIpPermission
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StaleIpPermission
 type StaleIpPermission struct {
 	_ struct{} `type:"structure"`
 
@@ -64448,7 +64448,7 @@ func (s *StaleIpPermission) SetUserIdGroupPairs(v []*UserIdGroupPair) *StaleIpPe
 }
 
 // Describes a stale security group (a security group that contains stale rules).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StaleSecurityGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StaleSecurityGroup
 type StaleSecurityGroup struct {
 	_ struct{} `type:"structure"`
 
@@ -64520,7 +64520,7 @@ func (s *StaleSecurityGroup) SetVpcId(v string) *StaleSecurityGroup {
 }
 
 // Contains the parameters for StartInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstancesRequest
 type StartInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -64581,7 +64581,7 @@ func (s *StartInstancesInput) SetInstanceIds(v []*string) *StartInstancesInput {
 }
 
 // Contains the output of StartInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StartInstancesResult
 type StartInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -64606,7 +64606,7 @@ func (s *StartInstancesOutput) SetStartingInstances(v []*InstanceStateChange) *S
 }
 
 // Describes a state change.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StateReason
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StateReason
 type StateReason struct {
 	_ struct{} `type:"structure"`
 
@@ -64669,7 +64669,7 @@ func (s *StateReason) SetMessage(v string) *StateReason {
 }
 
 // Contains the parameters for StopInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstancesRequest
 type StopInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -64735,7 +64735,7 @@ func (s *StopInstancesInput) SetInstanceIds(v []*string) *StopInstancesInput {
 }
 
 // Contains the output of StopInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StopInstancesResult
 type StopInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -64760,7 +64760,7 @@ func (s *StopInstancesOutput) SetStoppingInstances(v []*InstanceStateChange) *St
 }
 
 // Describes the storage location for an instance store-backed AMI.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Storage
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Storage
 type Storage struct {
 	_ struct{} `type:"structure"`
 
@@ -64785,7 +64785,7 @@ func (s *Storage) SetS3(v *S3Storage) *Storage {
 }
 
 // Describes a storage location in Amazon S3.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StorageLocation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/StorageLocation
 type StorageLocation struct {
 	_ struct{} `type:"structure"`
 
@@ -64819,7 +64819,7 @@ func (s *StorageLocation) SetKey(v string) *StorageLocation {
 }
 
 // Describes a subnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Subnet
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Subnet
 type Subnet struct {
 	_ struct{} `type:"structure"`
 
@@ -64937,7 +64937,7 @@ func (s *Subnet) SetVpcId(v string) *Subnet {
 }
 
 // Describes the state of a CIDR block.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SubnetCidrBlockState
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SubnetCidrBlockState
 type SubnetCidrBlockState struct {
 	_ struct{} `type:"structure"`
 
@@ -64971,7 +64971,7 @@ func (s *SubnetCidrBlockState) SetStatusMessage(v string) *SubnetCidrBlockState 
 }
 
 // Describes an IPv6 CIDR block associated with a subnet.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SubnetIpv6CidrBlockAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SubnetIpv6CidrBlockAssociation
 type SubnetIpv6CidrBlockAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -65015,7 +65015,7 @@ func (s *SubnetIpv6CidrBlockAssociation) SetIpv6CidrBlockState(v *SubnetCidrBloc
 
 // Describes the T2 instance whose credit option for CPU usage was successfully
 // modified.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SuccessfulInstanceCreditSpecificationItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/SuccessfulInstanceCreditSpecificationItem
 type SuccessfulInstanceCreditSpecificationItem struct {
 	_ struct{} `type:"structure"`
 
@@ -65040,7 +65040,7 @@ func (s *SuccessfulInstanceCreditSpecificationItem) SetInstanceId(v string) *Suc
 }
 
 // Describes a tag.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Tag
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Tag
 type Tag struct {
 	_ struct{} `type:"structure"`
 
@@ -65080,7 +65080,7 @@ func (s *Tag) SetValue(v string) *Tag {
 }
 
 // Describes a tag.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TagDescription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TagDescription
 type TagDescription struct {
 	_ struct{} `type:"structure"`
 
@@ -65132,7 +65132,7 @@ func (s *TagDescription) SetValue(v string) *TagDescription {
 }
 
 // The tags to apply to a resource when the resource is being created.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TagSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TagSpecification
 type TagSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -65167,7 +65167,7 @@ func (s *TagSpecification) SetTags(v []*Tag) *TagSpecification {
 }
 
 // Information about the Convertible Reserved Instance offering.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetConfiguration
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetConfiguration
 type TargetConfiguration struct {
 	_ struct{} `type:"structure"`
 
@@ -65202,7 +65202,7 @@ func (s *TargetConfiguration) SetOfferingId(v string) *TargetConfiguration {
 }
 
 // Details about the target configuration.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetConfigurationRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetConfigurationRequest
 type TargetConfigurationRequest struct {
 	_ struct{} `type:"structure"`
 
@@ -65252,7 +65252,7 @@ func (s *TargetConfigurationRequest) SetOfferingId(v string) *TargetConfiguratio
 }
 
 // Describes a load balancer target group.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetGroup
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetGroup
 type TargetGroup struct {
 	_ struct{} `type:"structure"`
 
@@ -65293,7 +65293,7 @@ func (s *TargetGroup) SetArn(v string) *TargetGroup {
 
 // Describes the target groups to attach to a Spot Fleet. Spot Fleet registers
 // the running Spot Instances with these target groups.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetGroupsConfig
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetGroupsConfig
 type TargetGroupsConfig struct {
 	_ struct{} `type:"structure"`
 
@@ -65346,7 +65346,7 @@ func (s *TargetGroupsConfig) SetTargetGroups(v []*TargetGroup) *TargetGroupsConf
 }
 
 // The total value of the new Convertible Reserved Instances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetReservationValue
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TargetReservationValue
 type TargetReservationValue struct {
 	_ struct{} `type:"structure"`
 
@@ -65383,7 +65383,7 @@ func (s *TargetReservationValue) SetTargetConfiguration(v *TargetConfiguration) 
 }
 
 // Contains the parameters for TerminateInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstancesRequest
 type TerminateInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -65438,7 +65438,7 @@ func (s *TerminateInstancesInput) SetInstanceIds(v []*string) *TerminateInstance
 }
 
 // Contains the output of TerminateInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/TerminateInstancesResult
 type TerminateInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -65462,7 +65462,7 @@ func (s *TerminateInstancesOutput) SetTerminatingInstances(v []*InstanceStateCha
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6AddressesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6AddressesRequest
 type UnassignIpv6AddressesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -65515,7 +65515,7 @@ func (s *UnassignIpv6AddressesInput) SetNetworkInterfaceId(v string) *UnassignIp
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6AddressesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignIpv6AddressesResult
 type UnassignIpv6AddressesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -65549,7 +65549,7 @@ func (s *UnassignIpv6AddressesOutput) SetUnassignedIpv6Addresses(v []*string) *U
 }
 
 // Contains the parameters for UnassignPrivateIpAddresses.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddressesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddressesRequest
 type UnassignPrivateIpAddressesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -65603,7 +65603,7 @@ func (s *UnassignPrivateIpAddressesInput) SetPrivateIpAddresses(v []*string) *Un
 	return s
 }
 
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddressesOutput
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnassignPrivateIpAddressesOutput
 type UnassignPrivateIpAddressesOutput struct {
 	_ struct{} `type:"structure"`
 }
@@ -65619,7 +65619,7 @@ func (s UnassignPrivateIpAddressesOutput) GoString() string {
 }
 
 // Contains the parameters for UnmonitorInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstancesRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstancesRequest
 type UnmonitorInstancesInput struct {
 	_ struct{} `type:"structure"`
 
@@ -65671,7 +65671,7 @@ func (s *UnmonitorInstancesInput) SetInstanceIds(v []*string) *UnmonitorInstance
 }
 
 // Contains the output of UnmonitorInstances.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstancesResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnmonitorInstancesResult
 type UnmonitorInstancesOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -65696,7 +65696,7 @@ func (s *UnmonitorInstancesOutput) SetInstanceMonitorings(v []*InstanceMonitorin
 }
 
 // Describes the T2 instance whose credit option for CPU usage was not modified.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulInstanceCreditSpecificationItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulInstanceCreditSpecificationItem
 type UnsuccessfulInstanceCreditSpecificationItem struct {
 	_ struct{} `type:"structure"`
 
@@ -65732,7 +65732,7 @@ func (s *UnsuccessfulInstanceCreditSpecificationItem) SetInstanceId(v string) *U
 
 // Information about the error for the T2 instance whose credit option for CPU
 // usage was not modified.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulInstanceCreditSpecificationItemError
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulInstanceCreditSpecificationItemError
 type UnsuccessfulInstanceCreditSpecificationItemError struct {
 	_ struct{} `type:"structure"`
 
@@ -65766,7 +65766,7 @@ func (s *UnsuccessfulInstanceCreditSpecificationItemError) SetMessage(v string) 
 }
 
 // Information about items that were not successfully processed in a batch call.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulItem
 type UnsuccessfulItem struct {
 	_ struct{} `type:"structure"`
 
@@ -65803,7 +65803,7 @@ func (s *UnsuccessfulItem) SetResourceId(v string) *UnsuccessfulItem {
 
 // Information about the error that occurred. For more information about errors,
 // see Error Codes (http://docs.aws.amazon.com/AWSEC2/latest/APIReference/errors-overview.html).
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulItemError
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UnsuccessfulItemError
 type UnsuccessfulItemError struct {
 	_ struct{} `type:"structure"`
 
@@ -65841,7 +65841,7 @@ func (s *UnsuccessfulItemError) SetMessage(v string) *UnsuccessfulItemError {
 }
 
 // Contains the parameters for UpdateSecurityGroupRuleDescriptionsEgress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgressRequest
 type UpdateSecurityGroupRuleDescriptionsEgressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -65914,7 +65914,7 @@ func (s *UpdateSecurityGroupRuleDescriptionsEgressInput) SetIpPermissions(v []*I
 }
 
 // Contains the output of UpdateSecurityGroupRuleDescriptionsEgress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgressResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsEgressResult
 type UpdateSecurityGroupRuleDescriptionsEgressOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -65939,7 +65939,7 @@ func (s *UpdateSecurityGroupRuleDescriptionsEgressOutput) SetReturn(v bool) *Upd
 }
 
 // Contains the parameters for UpdateSecurityGroupRuleDescriptionsIngress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngressRequest
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngressRequest
 type UpdateSecurityGroupRuleDescriptionsIngressInput struct {
 	_ struct{} `type:"structure"`
 
@@ -66012,7 +66012,7 @@ func (s *UpdateSecurityGroupRuleDescriptionsIngressInput) SetIpPermissions(v []*
 }
 
 // Contains the output of UpdateSecurityGroupRuleDescriptionsIngress.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngressResult
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UpdateSecurityGroupRuleDescriptionsIngressResult
 type UpdateSecurityGroupRuleDescriptionsIngressOutput struct {
 	_ struct{} `type:"structure"`
 
@@ -66037,7 +66037,7 @@ func (s *UpdateSecurityGroupRuleDescriptionsIngressOutput) SetReturn(v bool) *Up
 }
 
 // Describes the S3 bucket for the disk image.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserBucket
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserBucket
 type UserBucket struct {
 	_ struct{} `type:"structure"`
 
@@ -66071,7 +66071,7 @@ func (s *UserBucket) SetS3Key(v string) *UserBucket {
 }
 
 // Describes the S3 bucket for the disk image.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserBucketDetails
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserBucketDetails
 type UserBucketDetails struct {
 	_ struct{} `type:"structure"`
 
@@ -66105,7 +66105,7 @@ func (s *UserBucketDetails) SetS3Key(v string) *UserBucketDetails {
 }
 
 // Describes the user data for an instance.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserData
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserData
 type UserData struct {
 	_ struct{} `type:"structure"`
 
@@ -66132,7 +66132,7 @@ func (s *UserData) SetData(v string) *UserData {
 }
 
 // Describes a security group and AWS account ID pair.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserIdGroupPair
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/UserIdGroupPair
 type UserIdGroupPair struct {
 	_ struct{} `type:"structure"`
 
@@ -66221,7 +66221,7 @@ func (s *UserIdGroupPair) SetVpcPeeringConnectionId(v string) *UserIdGroupPair {
 }
 
 // Describes telemetry for a VPN tunnel.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VgwTelemetry
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VgwTelemetry
 type VgwTelemetry struct {
 	_ struct{} `type:"structure"`
 
@@ -66283,7 +66283,7 @@ func (s *VgwTelemetry) SetStatusMessage(v string) *VgwTelemetry {
 }
 
 // Describes a volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Volume
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Volume
 type Volume struct {
 	_ struct{} `type:"structure"`
 
@@ -66422,7 +66422,7 @@ func (s *Volume) SetVolumeType(v string) *Volume {
 }
 
 // Describes volume attachment details.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeAttachment
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeAttachment
 type VolumeAttachment struct {
 	_ struct{} `type:"structure"`
 
@@ -66492,7 +66492,7 @@ func (s *VolumeAttachment) SetVolumeId(v string) *VolumeAttachment {
 }
 
 // Describes an EBS volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeDetail
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeDetail
 type VolumeDetail struct {
 	_ struct{} `type:"structure"`
 
@@ -66534,7 +66534,7 @@ func (s *VolumeDetail) SetSize(v int64) *VolumeDetail {
 // Describes the modification status of an EBS volume.
 //
 // If the volume has never been modified, some element values will be null.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeModification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeModification
 type VolumeModification struct {
 	_ struct{} `type:"structure"`
 
@@ -66659,7 +66659,7 @@ func (s *VolumeModification) SetVolumeId(v string) *VolumeModification {
 }
 
 // Describes a volume status operation code.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusAction
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusAction
 type VolumeStatusAction struct {
 	_ struct{} `type:"structure"`
 
@@ -66711,7 +66711,7 @@ func (s *VolumeStatusAction) SetEventType(v string) *VolumeStatusAction {
 }
 
 // Describes a volume status.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusDetails
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusDetails
 type VolumeStatusDetails struct {
 	_ struct{} `type:"structure"`
 
@@ -66745,7 +66745,7 @@ func (s *VolumeStatusDetails) SetStatus(v string) *VolumeStatusDetails {
 }
 
 // Describes a volume status event.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusEvent
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusEvent
 type VolumeStatusEvent struct {
 	_ struct{} `type:"structure"`
 
@@ -66806,7 +66806,7 @@ func (s *VolumeStatusEvent) SetNotBefore(v time.Time) *VolumeStatusEvent {
 }
 
 // Describes the status of a volume.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusInfo
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusInfo
 type VolumeStatusInfo struct {
 	_ struct{} `type:"structure"`
 
@@ -66840,7 +66840,7 @@ func (s *VolumeStatusInfo) SetStatus(v string) *VolumeStatusInfo {
 }
 
 // Describes the volume status.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusItem
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VolumeStatusItem
 type VolumeStatusItem struct {
 	_ struct{} `type:"structure"`
 
@@ -66901,7 +66901,7 @@ func (s *VolumeStatusItem) SetVolumeStatus(v *VolumeStatusInfo) *VolumeStatusIte
 }
 
 // Describes a VPC.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Vpc
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/Vpc
 type Vpc struct {
 	_ struct{} `type:"structure"`
 
@@ -66999,7 +66999,7 @@ func (s *Vpc) SetVpcId(v string) *Vpc {
 }
 
 // Describes an attachment between a virtual private gateway and a VPC.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcAttachment
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcAttachment
 type VpcAttachment struct {
 	_ struct{} `type:"structure"`
 
@@ -67033,7 +67033,7 @@ func (s *VpcAttachment) SetVpcId(v string) *VpcAttachment {
 }
 
 // Describes an IPv4 CIDR block associated with a VPC.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcCidrBlockAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcCidrBlockAssociation
 type VpcCidrBlockAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -67076,7 +67076,7 @@ func (s *VpcCidrBlockAssociation) SetCidrBlockState(v *VpcCidrBlockState) *VpcCi
 }
 
 // Describes the state of a CIDR block.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcCidrBlockState
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcCidrBlockState
 type VpcCidrBlockState struct {
 	_ struct{} `type:"structure"`
 
@@ -67110,7 +67110,7 @@ func (s *VpcCidrBlockState) SetStatusMessage(v string) *VpcCidrBlockState {
 }
 
 // Describes whether a VPC is enabled for ClassicLink.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcClassicLink
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcClassicLink
 type VpcClassicLink struct {
 	_ struct{} `type:"structure"`
 
@@ -67153,7 +67153,7 @@ func (s *VpcClassicLink) SetVpcId(v string) *VpcClassicLink {
 }
 
 // Describes a VPC endpoint.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcEndpoint
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcEndpoint
 type VpcEndpoint struct {
 	_ struct{} `type:"structure"`
 
@@ -67288,7 +67288,7 @@ func (s *VpcEndpoint) SetVpcId(v string) *VpcEndpoint {
 }
 
 // Describes a VPC endpoint connection to a service.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcEndpointConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcEndpointConnection
 type VpcEndpointConnection struct {
 	_ struct{} `type:"structure"`
 
@@ -67349,7 +67349,7 @@ func (s *VpcEndpointConnection) SetVpcEndpointState(v string) *VpcEndpointConnec
 }
 
 // Describes an IPv6 CIDR block associated with a VPC.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcIpv6CidrBlockAssociation
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcIpv6CidrBlockAssociation
 type VpcIpv6CidrBlockAssociation struct {
 	_ struct{} `type:"structure"`
 
@@ -67392,7 +67392,7 @@ func (s *VpcIpv6CidrBlockAssociation) SetIpv6CidrBlockState(v *VpcCidrBlockState
 }
 
 // Describes a VPC peering connection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnection
 type VpcPeeringConnection struct {
 	_ struct{} `type:"structure"`
 
@@ -67464,7 +67464,7 @@ func (s *VpcPeeringConnection) SetVpcPeeringConnectionId(v string) *VpcPeeringCo
 }
 
 // Describes the VPC peering connection options.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnectionOptionsDescription
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnectionOptionsDescription
 type VpcPeeringConnectionOptionsDescription struct {
 	_ struct{} `type:"structure"`
 
@@ -67510,7 +67510,7 @@ func (s *VpcPeeringConnectionOptionsDescription) SetAllowEgressFromLocalVpcToRem
 }
 
 // Describes the status of a VPC peering connection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnectionStateReason
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnectionStateReason
 type VpcPeeringConnectionStateReason struct {
 	_ struct{} `type:"structure"`
 
@@ -67544,7 +67544,7 @@ func (s *VpcPeeringConnectionStateReason) SetMessage(v string) *VpcPeeringConnec
 }
 
 // Describes a VPC in a VPC peering connection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnectionVpcInfo
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpcPeeringConnectionVpcInfo
 type VpcPeeringConnectionVpcInfo struct {
 	_ struct{} `type:"structure"`
 
@@ -67624,7 +67624,7 @@ func (s *VpcPeeringConnectionVpcInfo) SetVpcId(v string) *VpcPeeringConnectionVp
 }
 
 // Describes a VPN connection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnConnection
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnConnection
 type VpnConnection struct {
 	_ struct{} `type:"structure"`
 
@@ -67745,7 +67745,7 @@ func (s *VpnConnection) SetVpnGatewayId(v string) *VpnConnection {
 }
 
 // Describes VPN connection options.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnConnectionOptions
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnConnectionOptions
 type VpnConnectionOptions struct {
 	_ struct{} `type:"structure"`
 
@@ -67771,7 +67771,7 @@ func (s *VpnConnectionOptions) SetStaticRoutesOnly(v bool) *VpnConnectionOptions
 }
 
 // Describes VPN connection options.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnConnectionOptionsSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnConnectionOptionsSpecification
 type VpnConnectionOptionsSpecification struct {
 	_ struct{} `type:"structure"`
 
@@ -67809,7 +67809,7 @@ func (s *VpnConnectionOptionsSpecification) SetTunnelOptions(v []*VpnTunnelOptio
 }
 
 // Describes a virtual private gateway.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnGateway
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnGateway
 type VpnGateway struct {
 	_ struct{} `type:"structure"`
 
@@ -67889,7 +67889,7 @@ func (s *VpnGateway) SetVpnGatewayId(v string) *VpnGateway {
 }
 
 // Describes a static route for a VPN connection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnStaticRoute
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnStaticRoute
 type VpnStaticRoute struct {
 	_ struct{} `type:"structure"`
 
@@ -67932,7 +67932,7 @@ func (s *VpnStaticRoute) SetState(v string) *VpnStaticRoute {
 }
 
 // The tunnel options for a VPN connection.
-// See also, https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnTunnelOptionsSpecification
+// See also, http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/VpnTunnelOptionsSpecification
 type VpnTunnelOptionsSpecification struct {
 	_ struct{} `type:"structure"`
 

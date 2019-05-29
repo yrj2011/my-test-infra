@@ -193,7 +193,7 @@ var emptyBody = ioutil.NopCloser(strings.NewReader(""))
 //
 // Typically, a Reader computes the CRC of the downloaded content and compares it to
 // the stored CRC, returning an error from Read if there is a mismatch. This integrity check
-// is skipped if transcoding occurs. See https://cloud.google.com/storage/docs/transcoding.
+// is skipped if transcoding occurs. See http://cloud.google.com/storage/docs/transcoding.
 type Reader struct {
 	body               io.ReadCloser
 	seen, remain, size int64

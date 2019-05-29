@@ -27,7 +27,7 @@ type ListOutsideCollaboratorsOptions struct {
 // Warning: The API may change without advance notice during the preview period.
 // Preview features are not supported for production use.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/outside_collaborators/#list-outside-collaborators
+// GitHub API docs: http://developer.github.com/v3/orgs/outside_collaborators/#list-outside-collaborators
 func (s *OrganizationsService) ListOutsideCollaborators(ctx context.Context, org string, opt *ListOutsideCollaboratorsOptions) ([]*User, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/outside_collaborators", org)
 	u, err := addOptions(u, opt)

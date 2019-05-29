@@ -21,8 +21,8 @@ import (
 	"regexp"
 	"time"
 
-	buildv1alpha1 "github.com/knative/build/pkg/apis/build/v1alpha1"
 	pipelinev1alpha1 "github.com/knative/build-pipeline/pkg/apis/pipeline/v1alpha1"
+	buildv1alpha1 "github.com/knative/build/pkg/apis/build/v1alpha1"
 
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
@@ -321,7 +321,7 @@ type UtilityConfig struct {
 	PathAlias string `json:"path_alias,omitempty"`
 	// CloneURI is the URI that is used to clone the
 	// repository. If unset, will default to
-	// `https://github.com/org/repo.git`.
+	// `http://github.com/org/repo.git`.
 	CloneURI string `json:"clone_uri,omitempty"`
 	// SkipSubmodules determines if submodules should be
 	// cloned when the job is run. Defaults to true.

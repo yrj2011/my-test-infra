@@ -23,7 +23,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// AutoScalingGroups: https://docs.aws.amazon.com/sdk-for-go/api/service/autoscaling/#AutoScaling.DescribeAutoScalingGroups
+// AutoScalingGroups: http://docs.aws.amazon.com/sdk-for-go/api/service/autoscaling/#AutoScaling.DescribeAutoScalingGroups
 
 type AutoScalingGroups struct{}
 

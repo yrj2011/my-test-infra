@@ -291,7 +291,7 @@ func numProblems(ps map[string]map[int]lint.Problem) int {
 
 // AddedLines returns line numbers that were added in the patch, along with
 // their line in the patch itself as a map from line to patch line.
-// https://www.gnu.org/software/diffutils/manual/diffutils.html#Detailed-Unified
+// http://www.gnu.org/software/diffutils/manual/diffutils.html#Detailed-Unified
 // GitHub omits the ---/+++ lines since that information is in the
 // PullRequestChange object.
 func AddedLines(patch string) (map[int]int, error) {
@@ -336,7 +336,7 @@ func AddedLines(patch string) (map[int]int, error) {
 // Matches the hunk line in unified diffs. These are of the form:
 // @@ -l,s +l,s @@ section head
 // We need to extract the four numbers, but the command and s is optional.
-// See https://en.wikipedia.org/wiki/Diff_utility#Unified_format
+// See http://en.wikipedia.org/wiki/Diff_utility#Unified_format
 var hunkRe = regexp.MustCompile(`^@@ -(\d+),?(\d+)? \+(\d+),?(\d+)? @@.*`)
 
 func parseHunkLine(hunk string) (oldLine, oldLength, newLine, newLength int, err error) {

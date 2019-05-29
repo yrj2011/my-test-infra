@@ -219,7 +219,7 @@ func checkElem(elem string, fileName bool) error {
 	}
 
 	// Windows disallows a bunch of path elements, sadly.
-	// See https://docs.microsoft.com/en-us/windows/desktop/fileio/naming-a-file
+	// See http://docs.microsoft.com/en-us/windows/desktop/fileio/naming-a-file
 	short := elem
 	if i := strings.Index(short, "."); i >= 0 {
 		short = short[:i]
@@ -241,7 +241,7 @@ func CheckFilePath(path string) error {
 }
 
 // badWindowsNames are the reserved file path elements on Windows.
-// See https://docs.microsoft.com/en-us/windows/desktop/fileio/naming-a-file
+// See http://docs.microsoft.com/en-us/windows/desktop/fileio/naming-a-file
 var badWindowsNames = []string{
 	"CON",
 	"PRN",

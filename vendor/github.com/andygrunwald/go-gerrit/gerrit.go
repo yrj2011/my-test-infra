@@ -18,7 +18,7 @@ import (
 
 // TODO Try to reduce the code duplications of a std API req
 // Maybe with http://play.golang.org/p/j-667shCCB
-// and https://groups.google.com/forum/#!topic/golang-nuts/D-gIr24k5uY
+// and http://groups.google.com/forum/#!topic/golang-nuts/D-gIr24k5uY
 
 // A Client manages communication with the Gerrit API.
 type Client struct {
@@ -239,13 +239,13 @@ func (c *Client) NewRequest(method, urlStr string, body interface{}) (*http.Requ
 	}
 
 	// Request compact JSON
-	// See https://gerrit-review.googlesource.com/Documentation/rest-api.html#output
+	// See http://gerrit-review.googlesource.com/Documentation/rest-api.html#output
 	req.Header.Add("Accept", "application/json")
 	req.Header.Add("Content-Type", "application/json")
 
 	// TODO: Add gzip encoding
 	// Accept-Encoding request header is set to gzip
-	// See https://gerrit-review.googlesource.com/Documentation/rest-api.html#output
+	// See http://gerrit-review.googlesource.com/Documentation/rest-api.html#output
 
 	return req, nil
 }
@@ -271,13 +271,13 @@ func (c *Client) NewRawPutRequest(urlStr string, body string) (*http.Request, er
 	}
 
 	// Request compact JSON
-	// See https://gerrit-review.googlesource.com/Documentation/rest-api.html#output
+	// See http://gerrit-review.googlesource.com/Documentation/rest-api.html#output
 	req.Header.Add("Accept", "application/json")
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 
 	// TODO: Add gzip encoding
 	// Accept-Encoding request header is set to gzip
-	// See https://gerrit-review.googlesource.com/Documentation/rest-api.html#output
+	// See http://gerrit-review.googlesource.com/Documentation/rest-api.html#output
 
 	return req, nil
 }
@@ -294,7 +294,7 @@ func (c *Client) NewRawPutRequest(urlStr string, body string) (*http.Request, er
 // body is the HTTP body.
 // v is the HTTP response.
 //
-// For more information read https://github.com/google/go-github/issues/234
+// For more information read http://github.com/google/go-github/issues/234
 func (c *Client) Call(method, u string, body interface{}, v interface{}) (*Response, error) {
 	req, err := c.NewRequest(method, u, body)
 	if err != nil {
@@ -468,7 +468,7 @@ func (c *Client) DeleteRequest(urlStr string, body interface{}) (*Response, erro
 // Inclusion (XSSI) attacks.  By default all standard Gerrit APIs include this
 // prefix line though some plugins may not.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api.html#output
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api.html#output
 func RemoveMagicPrefixLine(body []byte) []byte {
 	if bytes.HasPrefix(body, magicPrefix) {
 		return body[5:]
@@ -482,7 +482,7 @@ var magicPrefix = []byte(")]}'\n")
 // A response is considered an error if it has a status code outside the 200 range.
 // API error responses are expected to have no response body.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api.html#response-codes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api.html#response-codes
 func CheckResponse(r *http.Response) error {
 	if c := r.StatusCode; 200 <= c && c <= 299 {
 		return nil
@@ -490,7 +490,7 @@ func CheckResponse(r *http.Response) error {
 
 	// Some calls require an authentification
 	// In such cases errors like:
-	// 		API call to https://review.typo3.org/accounts/self failed: 403 Forbidden
+	// 		API call to http://review.typo3.org/accounts/self failed: 403 Forbidden
 	// will be thrown.
 
 	err := fmt.Errorf("API call to %s failed: %s", r.Request.URL.String(), r.Status)
@@ -529,7 +529,7 @@ func addOptions(s string, opt interface{}) (string, error) {
 	// they'll be passed along to Gerrit as raw ascii. Without this Gerrit
 	// could return 400 Bad Request depending on the query parameters. For
 	// more complete information see this issue on GitHub:
-	//   https://github.com/andygrunwald/go-gerrit/issues/18
+	//   http://github.com/andygrunwald/go-gerrit/issues/18
 	_, hasQuery := qs["q"]
 	if hasQuery {
 		values := []string{}

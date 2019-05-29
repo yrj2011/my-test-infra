@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// http://github.com/golang/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -845,7 +845,7 @@ func mapKeys(vs []reflect.Value) sort.Interface {
 		},
 	}
 
-	// Type specialization per https://developers.google.com/protocol-buffers/docs/proto#maps;
+	// Type specialization per http://developers.google.com/protocol-buffers/docs/proto#maps;
 	// numeric keys are sorted numerically.
 	if len(vs) == 0 {
 		return s

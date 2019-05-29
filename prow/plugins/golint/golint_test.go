@@ -239,7 +239,7 @@ func TestLintCodeSuggestion(t *testing.T) {
 			pullFiles: map[string][]byte{
 				"qux.go": []byte("// Package bar comment\npackage bar\n\n// QUX_FUNC comment\nfunc QUX_FUNC() error {\n       return nil\n}\n"),
 			},
-			comment: "```suggestion\nfunc QuxFunc() error {\n```\nGolint naming: don't use ALL_CAPS in Go names; use CamelCase. [More info](https://golang.org/wiki/CodeReviewComments#mixed-caps). <!-- golint -->",
+			comment: "```suggestion\nfunc QuxFunc() error {\n```\nGolint naming: don't use ALL_CAPS in Go names; use CamelCase. [More info](http://golang.org/wiki/CodeReviewComments#mixed-caps). <!-- golint -->",
 		},
 		{
 			name:       "Correct function name",
@@ -255,7 +255,7 @@ func TestLintCodeSuggestion(t *testing.T) {
 			pullFiles: map[string][]byte{
 				"qux.go": []byte("/*\nPackage bar comment\n*/\npackage bar\n\n// BarFunc comment\nfunc BarFunc() error {\n   return nil\n}"),
 			},
-			comment: "```suggestion\nfunc Func() error {\n```\nGolint naming: func name will be used as bar.BarFunc by other packages, and that stutters; consider calling this Func. [More info](https://golang.org/wiki/CodeReviewComments#package-names). <!-- golint -->",
+			comment: "```suggestion\nfunc Func() error {\n```\nGolint naming: func name will be used as bar.BarFunc by other packages, and that stutters; consider calling this Func. [More info](http://golang.org/wiki/CodeReviewComments#package-names). <!-- golint -->",
 		},
 		{
 			name:       "Check stutter in type names",
@@ -263,7 +263,7 @@ func TestLintCodeSuggestion(t *testing.T) {
 			pullFiles: map[string][]byte{
 				"qux.go": []byte("/*\nPackage bar comment\n*/\npackage bar\n\n// BarMaker comment\ntype BarMaker struct{}\n"),
 			},
-			comment: "```suggestion\ntype Maker struct{}\n```\nGolint naming: type name will be used as bar.BarMaker by other packages, and that stutters; consider calling this Maker. [More info](https://golang.org/wiki/CodeReviewComments#package-names). <!-- golint -->",
+			comment: "```suggestion\ntype Maker struct{}\n```\nGolint naming: type name will be used as bar.BarMaker by other packages, and that stutters; consider calling this Maker. [More info](http://golang.org/wiki/CodeReviewComments#package-names). <!-- golint -->",
 		},
 		{
 			name:       "Check stutter: no stutter",

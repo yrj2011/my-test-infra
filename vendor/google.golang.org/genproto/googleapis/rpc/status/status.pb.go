@@ -30,7 +30,7 @@ const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 
 // The `Status` type defines a logical error model that is suitable for different
 // programming environments, including REST APIs and RPC APIs. It is used by
-// [gRPC](https://github.com/grpc). The error model is designed to be:
+// [gRPC](http://github.com/grpc). The error model is designed to be:
 //
 // - Simple to use and understand for most users
 // - Flexible enough to meet unexpected needs

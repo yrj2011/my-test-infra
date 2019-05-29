@@ -1,5 +1,5 @@
 // This file contains code adapted from the Go standard library
-// https://github.com/golang/go/blob/39ad0fd0789872f9469167be7fe9578625ff246e/src/net/http/lex.go
+// http://github.com/golang/go/blob/39ad0fd0789872f9469167be7fe9578625ff246e/src/net/http/lex.go
 
 package sessions
 

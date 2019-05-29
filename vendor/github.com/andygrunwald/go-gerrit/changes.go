@@ -9,14 +9,14 @@ import (
 
 // ChangesService contains Change related REST endpoints
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html
 type ChangesService struct {
 	client *Client
 }
 
 // WebLinkInfo entity describes a link to an external site.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#web-link-info
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#web-link-info
 type WebLinkInfo struct {
 	Name     string `json:"name"`
 	URL      string `json:"url"`
@@ -337,13 +337,13 @@ type CommentInfo struct {
 
 // QueryOptions specifies global parameters to query changes / reviewers.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
 type QueryOptions struct {
 	// Query parameter
 	// Clients are allowed to specify more than one query by setting the q parameter multiple times.
 	// In this case the result is an array of arrays, one per query in the same order the queries were given in.
 	//
-	// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/user-search.html#_search_operators
+	// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/user-search.html#_search_operators
 	Query []string `url:"q,omitempty"`
 
 	// The n parameter can be used to limit the returned results.
@@ -353,7 +353,7 @@ type QueryOptions struct {
 
 // QueryChangeOptions specifies the parameters to the ChangesService.QueryChanges.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
 type QueryChangeOptions struct {
 	QueryOptions
 
@@ -366,11 +366,11 @@ type QueryChangeOptions struct {
 
 // ChangeOptions specifies the parameters for Query changes.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
 type ChangeOptions struct {
 	// Additional fields can be obtained by adding o parameters, each option requires more database lookups and slows down the query response time to the client so they are generally disabled by default.
 	//
-	// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
+	// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
 	AdditionalFields []string `url:"o,omitempty"`
 }
 
@@ -380,7 +380,7 @@ type ChangeOptions struct {
 //
 // The change output is sorted by the last update time, most recently updated to oldest updated.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
 func (s *ChangesService) QueryChanges(opt *QueryChangeOptions) (*[]ChangeInfo, *Response, error) {
 	u := "changes/"
 
@@ -406,7 +406,7 @@ func (s *ChangesService) QueryChanges(opt *QueryChangeOptions) (*[]ChangeInfo, *
 // GetChange retrieves a change.
 // Additional fields can be obtained by adding o parameters, each option requires more database lookups and slows down the query response time to the client so they are generally disabled by default.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-change
 func (s *ChangesService) GetChange(changeID string, opt *ChangeOptions) (*ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s", changeID)
 	return s.getChangeInfoResponse(u, opt)
@@ -418,7 +418,7 @@ func (s *ChangesService) GetChange(changeID string, opt *ChangeOptions) (*Change
 // This response will contain all votes for each label and include one combined vote.
 // The combined label vote is calculated in the following order (from highest to lowest): REJECTED > APPROVED > DISLIKED > RECOMMENDED.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-change-detail
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-change-detail
 func (s *ChangesService) GetChangeDetail(changeID string, opt *ChangeOptions) (*ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/detail", changeID)
 	return s.getChangeInfoResponse(u, opt)
@@ -447,7 +447,7 @@ func (s *ChangesService) getChangeInfoResponse(u string, opt *ChangeOptions) (*C
 
 // GetTopic retrieves the topic of a change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-topic
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-topic
 func (s *ChangesService) GetTopic(changeID string) (string, *Response, error) {
 	u := fmt.Sprintf("changes/%s/topic", changeID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -456,7 +456,7 @@ func (s *ChangesService) GetTopic(changeID string) (string, *Response, error) {
 // ChangesSubmittedTogether returns a list of all changes which are submitted when {submit} is called for this change, including the current change itself.
 // An empty list is returned if this change will be submitted by itself (no other changes).
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#submitted_together
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#submitted_together
 func (s *ChangesService) ChangesSubmittedTogether(changeID string) (*[]ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/submitted_together", changeID)
 
@@ -476,7 +476,7 @@ func (s *ChangesService) ChangesSubmittedTogether(changeID string) (*[]ChangeInf
 
 // GetIncludedIn retrieves the branches and tags in which a change is included.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-included-in
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-included-in
 func (s *ChangesService) GetIncludedIn(changeID string) (*IncludedInInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/in", changeID)
 
@@ -498,7 +498,7 @@ func (s *ChangesService) GetIncludedIn(changeID string) (*IncludedInInfo, *Respo
 // The entries in the map are sorted by file path, and the comments for each path are sorted by patch set number.
 // Each comment has the patch_set and author fields set.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-change-comments
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-change-comments
 func (s *ChangesService) ListChangeComments(changeID string) (*map[string][]CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/comments", changeID)
 	return s.getCommentInfoMapResponse(u)
@@ -508,7 +508,7 @@ func (s *ChangesService) ListChangeComments(changeID string) (*map[string][]Comm
 // The entries in the map are sorted by file path, and the comments for each path are sorted by patch set number.
 // Each comment has the patch_set field set, and no author.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-change-drafts
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-change-drafts
 func (s *ChangesService) ListChangeDrafts(changeID string) (*map[string][]CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/drafts", changeID)
 	return s.getCommentInfoMapResponse(u)
@@ -534,7 +534,7 @@ func (s *ChangesService) getCommentInfoMapResponse(u string) (*map[string][]Comm
 // Depending on the type of problem, some fields not marked optional may be missing from the result.
 // At least id, project, branch, and _number will be present.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#check-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#check-change
 func (s *ChangesService) CheckChange(changeID string) (*ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/check", changeID)
 	return s.getChangeInfoResponse(u, nil)
@@ -580,7 +580,7 @@ func (s *ChangesService) getCommentInfoMapSliceResponse(u string) (*map[string][
 //
 // As response a ChangeInfo entity is returned that describes the resulting change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#create-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#create-change
 func (s *ChangesService) CreateChange(input *ChangeInfo) (*ChangeInfo, *Response, error) {
 	u := "changes/"
 
@@ -601,7 +601,7 @@ func (s *ChangesService) CreateChange(input *ChangeInfo) (*ChangeInfo, *Response
 // SetTopic sets the topic of a change.
 // The new topic must be provided in the request body inside a TopicInput entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#set-topic
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#set-topic
 func (s *ChangesService) SetTopic(changeID string, input *TopicInput) (*string, *Response, error) {
 	u := fmt.Sprintf("changes/%s/topic", changeID)
 
@@ -625,7 +625,7 @@ func (s *ChangesService) SetTopic(changeID string, input *TopicInput) (*string, 
 // Please note that some proxies prohibit request bodies for DELETE requests.
 // In this case, if you want to specify a commit message, use PUT to delete the topic.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-topic
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-topic
 func (s *ChangesService) DeleteTopic(changeID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/topic", changeID)
 	return s.client.DeleteRequest(u, nil)
@@ -633,7 +633,7 @@ func (s *ChangesService) DeleteTopic(changeID string) (*Response, error) {
 
 // DeleteDraftChange deletes a draft change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-draft-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-draft-change
 func (s *ChangesService) DeleteDraftChange(changeID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s", changeID)
 	return s.client.DeleteRequest(u, nil)
@@ -641,7 +641,7 @@ func (s *ChangesService) DeleteDraftChange(changeID string) (*Response, error) {
 
 // PublishDraftChange publishes a draft change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#publish-draft-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#publish-draft-change
 func (s *ChangesService) PublishDraftChange(changeID, notify string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/publish", changeID)
 
@@ -656,7 +656,7 @@ func (s *ChangesService) PublishDraftChange(changeID, notify string) (*Response,
 
 // IndexChange adds or updates the change in the secondary index.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#index-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#index-change
 func (s *ChangesService) IndexChange(changeID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/index", changeID)
 
@@ -673,7 +673,7 @@ func (s *ChangesService) IndexChange(changeID string) (*Response, error) {
 // Some fixes have options controlling their behavior, which can be set in the FixInput entity body.
 // Only the change owner, a project owner, or an administrator may fix changes.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#fix-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#fix-change
 func (s *ChangesService) FixChange(changeID string, input *FixInput) (*ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/check", changeID)
 
@@ -713,7 +713,7 @@ func (s *ChangesService) change(tail string, changeID string, input interface{})
 //
 // The request body only needs to include a SubmitInput entity if submitting on behalf of another user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#submit-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#submit-change
 func (s *ChangesService) SubmitChange(changeID string, input *SubmitInput) (*ChangeInfo, *Response, error) {
 	return s.change("submit", changeID, input)
 }
@@ -723,7 +723,7 @@ func (s *ChangesService) SubmitChange(changeID string, input *SubmitInput) (*Cha
 // The request body does not need to include a AbandonInput entity if no review
 // comment is added.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#abandon-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#abandon-change
 func (s *ChangesService) AbandonChange(changeID string, input *AbandonInput) (*ChangeInfo, *Response, error) {
 	return s.change("abandon", changeID, input)
 }
@@ -733,7 +733,7 @@ func (s *ChangesService) AbandonChange(changeID string, input *AbandonInput) (*C
 // Optionally, the parent revision can be changed to another patch set through
 // the RebaseInput entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#rebase-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#rebase-change
 func (s *ChangesService) RebaseChange(changeID string, input *RebaseInput) (*ChangeInfo, *Response, error) {
 	return s.change("rebase", changeID, input)
 }
@@ -743,7 +743,7 @@ func (s *ChangesService) RebaseChange(changeID string, input *RebaseInput) (*Cha
 // The request body does not need to include a RestoreInput entity if no review
 // comment is added.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#restore-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#restore-change
 func (s *ChangesService) RestoreChange(changeID string, input *RestoreInput) (*ChangeInfo, *Response, error) {
 	return s.change("restore", changeID, input)
 }
@@ -753,7 +753,7 @@ func (s *ChangesService) RestoreChange(changeID string, input *RestoreInput) (*C
 // The request body does not need to include a RevertInput entity if no
 // review comment is added.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#revert-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#revert-change
 func (s *ChangesService) RevertChange(changeID string, input *RevertInput) (*ChangeInfo, *Response, error) {
 	return s.change("revert", changeID, input)
 }

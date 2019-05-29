@@ -117,7 +117,7 @@ func (s *Spyglass) JobPath(src string) (string, error) {
 		if len(split) < 4 {
 			return "", fmt.Errorf("invalid key %s: expected <bucket-name>/<log-type>/.../<job-name>/<build-id>", key)
 		}
-		// see https://github.com/kubernetes/test-infra/tree/master/gubernator
+		// see http://github.com/kubernetes/test-infra/tree/master/gubernator
 		bktName := split[0]
 		logType := split[1]
 		jobName := split[len(split)-2]

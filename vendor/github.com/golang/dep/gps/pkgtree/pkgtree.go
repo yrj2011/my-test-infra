@@ -804,11 +804,11 @@ func wmToReach(workmap map[string]wm, backprop bool) (ReachMap, map[string]*Prob
 
 		fromErr, exists := errmap[from]
 		// FIXME: It should not be possible for fromErr to not exist,
-		// See issue https://github.com/golang/dep/issues/351
+		// See issue http://github.com/golang/dep/issues/351
 		// This is a temporary solution to avoid a panic.
 		if !exists {
 			fromErr = &ProblemImportError{
-				Err: fmt.Errorf("unknown error for %q, if you get this error see https://github.com/golang/dep/issues/351", from),
+				Err: fmt.Errorf("unknown error for %q, if you get this error see http://github.com/golang/dep/issues/351", from),
 			}
 		}
 		err := &ProblemImportError{

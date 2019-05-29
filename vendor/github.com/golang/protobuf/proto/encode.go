@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// http://github.com/golang/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -1228,7 +1228,7 @@ func (o *Buffer) enc_struct(prop *StructProperties, base structPointer) error {
 	var state errorState
 	// Encode fields in tag order so that decoders may use optimizations
 	// that depend on the ordering.
-	// https://developers.google.com/protocol-buffers/docs/encoding#order
+	// http://developers.google.com/protocol-buffers/docs/encoding#order
 	for _, i := range prop.order {
 		p := prop.Prop[i]
 		if p.enc != nil {

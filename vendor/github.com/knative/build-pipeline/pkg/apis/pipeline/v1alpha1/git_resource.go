@@ -41,7 +41,7 @@ type GitResource struct {
 	Type PipelineResourceType `json:"type"`
 	URL  string               `json:"url"`
 	// Git revision (branch, tag, commit SHA or ref) to clone.  See
-	// https://git-scm.com/docs/gitrevisions#_specifying_revisions for more
+	// http://git-scm.com/docs/gitrevisions#_specifying_revisions for more
 	// information.
 	Revision   string `json:"revision"`
 	TargetPath string

@@ -78,7 +78,7 @@ var stackCreator = regexp.MustCompile(`(?m)^created by (.*)\n\s+(.*):(\d+) \+0x[
 
 // extractStackCreator retrieves the goroutine file and line that launched this stack. Returns false
 // if the creator cannot be located.
-// TODO: Go does not expose this via runtime https://github.com/golang/go/issues/11440
+// TODO: Go does not expose this via runtime http://github.com/golang/go/issues/11440
 func extractStackCreator() (string, int, bool) {
 	stack := debug.Stack()
 	matches := stackCreator.FindStringSubmatch(string(stack))

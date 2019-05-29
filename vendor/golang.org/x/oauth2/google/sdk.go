@@ -50,7 +50,7 @@ type SDKConfig struct {
 // Google Cloud SDK properties is used.
 // Google Cloud SDK credentials must be created by running `gcloud auth`
 // before using this function.
-// The Google Cloud SDK is available at https://cloud.google.com/sdk/.
+// The Google Cloud SDK is available at http://cloud.google.com/sdk/.
 func NewSDKConfig(account string) (*SDKConfig, error) {
 	configPath, err := sdkConfigPath()
 	if err != nil {

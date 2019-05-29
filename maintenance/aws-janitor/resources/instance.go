@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// Instances: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeInstances
+// Instances: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeInstances
 
 type Instances struct{}
 

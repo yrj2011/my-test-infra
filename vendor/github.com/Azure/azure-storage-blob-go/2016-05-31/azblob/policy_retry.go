@@ -51,7 +51,7 @@ type RetryOptions struct {
 	// RetryReadsFromSecondaryHost specifies whether the retry policy should retry a read operation against another host.
 	// If RetryReadsFromSecondaryHost is "" (the default) then operations are not retried against another host.
 	// NOTE: Before setting this field, make sure you understand the issues around reading stale & potentially-inconsistent
-	// data at this webpage: https://docs.microsoft.com/en-us/azure/storage/common/storage-designing-ha-apps-with-ragrs
+	// data at this webpage: http://docs.microsoft.com/en-us/azure/storage/common/storage-designing-ha-apps-with-ragrs
 	RetryReadsFromSecondaryHost string
 }
 
@@ -243,7 +243,7 @@ func NewRetryPolicyFactory(o RetryOptions) pipeline.Factory {
 	})
 }
 
-// According to https://github.com/golang/go/wiki/CompilerOptimizations, the compiler will inline this method and hopefully optimize all calls to it away
+// According to http://github.com/golang/go/wiki/CompilerOptimizations, the compiler will inline this method and hopefully optimize all calls to it away
 var logf = func(format string, a ...interface{}) {}
 
 // Use this version to see the retry method's code path (import "fmt")

@@ -406,7 +406,7 @@ func init() {
 
 // curve25519sha256 implements the curve25519-sha256@libssh.org key
 // agreement protocol, as described in
-// https://git.libssh.org/projects/libssh.git/tree/doc/curve25519-sha256@libssh.org.txt
+// http://git.libssh.org/projects/libssh.git/tree/doc/curve25519-sha256@libssh.org.txt
 type curve25519sha256 struct{}
 
 type curve25519KeyPair struct {

@@ -18,7 +18,7 @@ type BackoffStrategy interface {
 	Reset()
 }
 
-// ExponentialBackoff performs exponential backoff as per https://en.wikipedia.org/wiki/Exponential_backoff.
+// ExponentialBackoff performs exponential backoff as per http://en.wikipedia.org/wiki/Exponential_backoff.
 // The initial pause time is given by Base.
 // Once the total pause time exceeds Max, Pause will indicate no further retries.
 type ExponentialBackoff struct {

@@ -336,7 +336,7 @@ func MillisecondsTimeValue(v *int64) time.Time {
 // This utility is useful for service API's such as CloudWatch Logs which require
 // their unix time values to be in milliseconds.
 //
-// See Go stdlib https://golang.org/pkg/time/#Time.UnixNano for more information.
+// See Go stdlib http://golang.org/pkg/time/#Time.UnixNano for more information.
 func TimeUnixMilli(t time.Time) int64 {
 	return t.UnixNano() / int64(time.Millisecond/time.Nanosecond)
 }

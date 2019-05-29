@@ -6,7 +6,7 @@ import (
 
 // PluginsService contains Plugin related REST endpoints
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html
 type PluginsService struct {
 	client *Client
 }
@@ -26,7 +26,7 @@ type PluginInput struct {
 
 // PluginOptions specifies the different options for the ListPlugins call.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#list-plugins
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#list-plugins
 type PluginOptions struct {
 	// All enabled that all plugins are returned (enabled and disabled).
 	All bool `url:"all,omitempty"`
@@ -38,7 +38,7 @@ type PluginOptions struct {
 // To be allowed to see the installed plugins, a user must be a member of a group that is granted the 'View Plugins' capability or the 'Administrate Server' capability.
 // The entries in the map are sorted by plugin ID.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#list-plugins
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#list-plugins
 func (s *PluginsService) ListPlugins(opt *PluginOptions) (*map[string]PluginInfo, *Response, error) {
 	u := "plugins/"
 
@@ -63,7 +63,7 @@ func (s *PluginsService) ListPlugins(opt *PluginOptions) (*map[string]PluginInfo
 
 // GetPluginStatus retrieves the status of a plugin on the Gerrit server.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#get-plugin-status
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#get-plugin-status
 func (s *PluginsService) GetPluginStatus(pluginID string) (*PluginInfo, *Response, error) {
 	u := fmt.Sprintf("plugins/%s/gerrit~status", pluginID)
 	return s.requestWithPluginInfoResponse("GET", u, nil)
@@ -79,7 +79,7 @@ func (s *PluginsService) GetPluginStatus(pluginID string) (*PluginInfo, *Respons
 // As response a PluginInfo entity is returned that describes the plugin.
 // If an existing plugin was overwritten the response is “200 OK”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#set-dashboard
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#set-dashboard
 func (s *PluginsService) InstallPlugin(pluginID string, input *PluginInput) (*PluginInfo, *Response, error) {
 	u := fmt.Sprintf("plugins/%s", pluginID)
 	return s.requestWithPluginInfoResponse("PUT", u, input)
@@ -89,7 +89,7 @@ func (s *PluginsService) InstallPlugin(pluginID string, input *PluginInput) (*Pl
 //
 // As response a PluginInfo entity is returned that describes the plugin.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#enable-plugin
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#enable-plugin
 func (s *PluginsService) EnablePlugin(pluginID string) (*PluginInfo, *Response, error) {
 	u := fmt.Sprintf("plugins/%s/gerrit~enable", pluginID)
 	return s.requestWithPluginInfoResponse("POST", u, nil)
@@ -99,7 +99,7 @@ func (s *PluginsService) EnablePlugin(pluginID string) (*PluginInfo, *Response, 
 //
 // As response a PluginInfo entity is returned that describes the plugin.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#disable-plugin
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#disable-plugin
 func (s *PluginsService) DisablePlugin(pluginID string) (*PluginInfo, *Response, error) {
 	u := fmt.Sprintf("plugins/%s/gerrit~disable", pluginID)
 	return s.requestWithPluginInfoResponse("POST", u, nil)
@@ -109,7 +109,7 @@ func (s *PluginsService) DisablePlugin(pluginID string) (*PluginInfo, *Response,
 //
 // As response a PluginInfo entity is returned that describes the plugin.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#disable-plugin
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-plugins.html#disable-plugin
 func (s *PluginsService) ReloadPlugin(pluginID string) (*PluginInfo, *Response, error) {
 	u := fmt.Sprintf("plugins/%s/gerrit~reload", pluginID)
 	return s.requestWithPluginInfoResponse("POST", u, nil)

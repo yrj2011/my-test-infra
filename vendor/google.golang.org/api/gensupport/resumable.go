@@ -19,7 +19,7 @@ const (
 	// statusTooManyRequests is returned by the storage API if the
 	// per-project limits have been temporarily exceeded. The request
 	// should be retried.
-	// https://cloud.google.com/storage/docs/json_api/v1/status-codes#standardcodes
+	// http://cloud.google.com/storage/docs/json_api/v1/status-codes#standardcodes
 	statusTooManyRequests = 429
 )
 

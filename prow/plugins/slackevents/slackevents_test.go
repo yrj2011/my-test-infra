@@ -44,17 +44,17 @@ func TestPush(t *testing.T) {
   "created": false,
   "deleted": false,
   "forced": false,
-  "compare": "https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784",
+  "compare": "http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784",
   "commits": [
     {
       "id": "8427d5a27478c80167fd66affe1bd7cd01d3f9a8",
       "message": "Decrease fluentd cpu request",
-      "url": "https://github.com/kubernetes/kubernetes/commit/8427d5a27478c80167fd66affe1bd7cd01d3f9a8"
+      "url": "http://github.com/kubernetes/kubernetes/commit/8427d5a27478c80167fd66affe1bd7cd01d3f9a8"
     },
     {
       "id": "045a6dca07840efaf3311450b615e19b5c75f787",
       "message": "Merge pull request #47906 from gmarek/fluentd\n\nDecrese fluentd cpu request\n\nFix #47905\r\n\r\ncc @piosz - this should fix your tests.\r\ncc @dchen1107",
-      "url": "https://github.com/kubernetes/kubernetes/commit/045a6dca07840efaf3311450b615e19b5c75f787"
+      "url": "http://github.com/kubernetes/kubernetes/commit/045a6dca07840efaf3311450b615e19b5c75f787"
     }
   ],
   "repository": {
@@ -64,7 +64,7 @@ func TestPush(t *testing.T) {
 	"name": "kubernetes",
 	"login": "kubernetes"
     },
-    "url": "https://github.com/kubernetes/kubernetes"
+    "url": "http://github.com/kubernetes/kubernetes"
   },
   "pusher": {
     "name": "k8s-merge-robot",
@@ -96,32 +96,32 @@ func TestPush(t *testing.T) {
 	pushEvManualCreated := pushEvManual
 	pushEvManualCreated.Created = true
 	pushEvManualCreated.Ref = "refs/head/release-1.99"
-	pushEvManualCreated.Compare = "https://github.com/kubernetes/kubernetes/compare/045a6dca0784"
+	pushEvManualCreated.Compare = "http://github.com/kubernetes/kubernetes/compare/045a6dca0784"
 
 	pushEvManualDeleted := pushEvManual
 	pushEvManualDeleted.Deleted = true
 	pushEvManualDeleted.Ref = "refs/head/release-1.99"
-	pushEvManualDeleted.Compare = "https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...000000000000"
+	pushEvManualDeleted.Compare = "http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...000000000000"
 
 	pushEvManualForced := pushEvManual
 	pushEvManualForced.Forced = true
 
 	noMessages := map[string][]string{}
 	stdWarningMessages := map[string][]string{
-		"sig-contribex":  {"*Warning:* tester (<@tester>) manually merged 2 commit(s) into master: https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"},
-		"kubernetes-dev": {"*Warning:* tester (<@tester>) manually merged 2 commit(s) into master: https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"}}
+		"sig-contribex":  {"*Warning:* tester (<@tester>) manually merged 2 commit(s) into master: http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"},
+		"kubernetes-dev": {"*Warning:* tester (<@tester>) manually merged 2 commit(s) into master: http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"}}
 
 	createdWarningMessages := map[string][]string{
-		"sig-contribex":  {"*Warning:* tester (<@tester>) pushed a new branch (release-1.99): https://github.com/kubernetes/kubernetes/compare/045a6dca0784"},
-		"kubernetes-dev": {"*Warning:* tester (<@tester>) pushed a new branch (release-1.99): https://github.com/kubernetes/kubernetes/compare/045a6dca0784"}}
+		"sig-contribex":  {"*Warning:* tester (<@tester>) pushed a new branch (release-1.99): http://github.com/kubernetes/kubernetes/compare/045a6dca0784"},
+		"kubernetes-dev": {"*Warning:* tester (<@tester>) pushed a new branch (release-1.99): http://github.com/kubernetes/kubernetes/compare/045a6dca0784"}}
 
 	deletedWarningMessages := map[string][]string{
-		"sig-contribex":  {"*Warning:* tester (<@tester>) deleted a branch (release-1.99): https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...000000000000"},
-		"kubernetes-dev": {"*Warning:* tester (<@tester>) deleted a branch (release-1.99): https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...000000000000"}}
+		"sig-contribex":  {"*Warning:* tester (<@tester>) deleted a branch (release-1.99): http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...000000000000"},
+		"kubernetes-dev": {"*Warning:* tester (<@tester>) deleted a branch (release-1.99): http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...000000000000"}}
 
 	forcedWarningMessages := map[string][]string{
-		"sig-contribex":  {"*Warning:* tester (<@tester>) *force* merged 2 commit(s) into master: https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"},
-		"kubernetes-dev": {"*Warning:* tester (<@tester>) *force* merged 2 commit(s) into master: https://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"}}
+		"sig-contribex":  {"*Warning:* tester (<@tester>) *force* merged 2 commit(s) into master: http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"},
+		"kubernetes-dev": {"*Warning:* tester (<@tester>) *force* merged 2 commit(s) into master: http://github.com/kubernetes/kubernetes/compare/d73a75b4b1dd...045a6dca0784"}}
 
 	type testCase struct {
 		name             string

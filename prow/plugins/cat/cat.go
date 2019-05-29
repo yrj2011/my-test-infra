@@ -39,7 +39,7 @@ import (
 var (
 	match = regexp.MustCompile(`(?mi)^/meow(vie)?(?: (.+))?\s*$`)
 	meow  = &realClowder{
-		url: "https://api.thecatapi.com/api/images/get?format=json&results_per_page=1",
+		url: "http://api.thecatapi.com/api/images/get?format=json&results_per_page=1",
 	}
 )
 
@@ -217,9 +217,9 @@ func handle(gc githubClient, log *logrus.Entry, e *github.GenericCommentEvent, c
 
 	var msg string
 	if category != "" {
-		msg = "Bad category. Please see https://api.thecatapi.com/api/categories/list"
+		msg = "Bad category. Please see http://api.thecatapi.com/api/categories/list"
 	} else {
-		msg = "https://thecatapi.com appears to be down"
+		msg = "http://thecatapi.com appears to be down"
 	}
 	if err := gc.CreateComment(org, repo, number, plugins.FormatResponseRaw(e.Body, e.HTMLURL, e.User.Login, msg)); err != nil {
 		log.WithError(err).Error("Failed to leave comment")

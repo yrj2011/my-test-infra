@@ -475,7 +475,7 @@ func (r *Request) GetBody() io.ReadSeeker {
 // reads or getting the connection.
 //
 // readLoop() and getConn(req *Request, cm connectMethod)
-// https://github.com/golang/go/blob/master/src/net/http/transport.go
+// http://github.com/golang/go/blob/master/src/net/http/transport.go
 //
 // Send will not close the request.Request's body.
 func (r *Request) Send() error {

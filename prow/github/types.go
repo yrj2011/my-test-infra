@@ -71,7 +71,7 @@ const (
 
 // PullRequestMergeType enumerates the types of merges the GitHub API can
 // perform
-// https://developer.github.com/v3/pulls/#merge-a-pull-request-merge-button
+// http://developer.github.com/v3/pulls/#merge-a-pull-request-merge-button
 type PullRequestMergeType string
 
 // Possible types of merges for the GitHub merge API
@@ -98,7 +98,7 @@ func unmarshalClientError(b []byte) error {
 	return errorutil.NewAggregate(errors...)
 }
 
-// ClientError represents https://developer.github.com/v3/#client-errors
+// ClientError represents http://developer.github.com/v3/#client-errors
 type ClientError struct {
 	Message string `json:"message"`
 	Errors  []struct {
@@ -113,7 +113,7 @@ func (r ClientError) Error() string {
 	return r.Message
 }
 
-// AlternativeClientError represents an alternative format for https://developer.github.com/v3/#client-errors
+// AlternativeClientError represents an alternative format for http://developer.github.com/v3/#client-errors
 // This is probably a GitHub bug, as documentation_url should appear only in custom errors
 type AlternativeClientError struct {
 	Message          string   `json:"message"`
@@ -157,7 +157,7 @@ var NormLogin = strings.ToLower
 
 // PullRequestEventAction enumerates the triggers for this
 // webhook payload type. See also:
-// https://developer.github.com/v3/activity/events/types/#pullrequestevent
+// http://developer.github.com/v3/activity/events/types/#pullrequestevent
 type PullRequestEventAction string
 
 const (
@@ -217,12 +217,12 @@ type PullRequest struct {
 	Merged             bool              `json:"merged"`
 	CreatedAt          time.Time         `json:"created_at,omitempty"`
 	UpdatedAt          time.Time         `json:"updated_at,omitempty"`
-	// ref https://developer.github.com/v3/pulls/#get-a-single-pull-request
+	// ref http://developer.github.com/v3/pulls/#get-a-single-pull-request
 	// If Merged is true, MergeSHA is the SHA of the merge commit, or squashed commit
 	// If Merged is false, MergeSHA is a commit SHA that github created to test if
 	// the PR can be merged automatically.
 	MergeSHA *string `json:"merge_commit_sha"`
-	// ref https://developer.github.com/v3/pulls/#response-1
+	// ref http://developer.github.com/v3/pulls/#response-1
 	// The value of the mergeable attribute can be true, false, or null. If the value
 	// is null, this means that the mergeability hasn't been computed yet, and a
 	// background job was started to compute it. When the job is complete, the response
@@ -273,7 +273,7 @@ type PullRequestChange struct {
 }
 
 // Repo contains general repository information.
-// See also https://developer.github.com/v3/repos/#get
+// See also http://developer.github.com/v3/repos/#get
 type Repo struct {
 	Owner         User   `json:"owner"`
 	Name          string `json:"name"`
@@ -293,7 +293,7 @@ type Branch struct {
 
 // BranchProtectionRequest represents
 // protections in place for a branch.
-// See also: https://developer.github.com/v3/repos/branches/#update-branch-protection
+// See also: http://developer.github.com/v3/repos/branches/#update-branch-protection
 type BranchProtectionRequest struct {
 	RequiredStatusChecks       *RequiredStatusChecks       `json:"required_status_checks"`
 	EnforceAdmins              *bool                       `json:"enforce_admins"`
@@ -362,12 +362,12 @@ type HookRequest struct {
 }
 
 // AllHookEvents causes github to send all events.
-// https://developer.github.com/v3/activity/events/types/
+// http://developer.github.com/v3/activity/events/types/
 var AllHookEvents = []string{"*"}
 
 // IssueEventAction enumerates the triggers for this
 // webhook payload type. See also:
-// https://developer.github.com/v3/activity/events/types/#issuesevent
+// http://developer.github.com/v3/activity/events/types/#issuesevent
 type IssueEventAction string
 
 const (
@@ -406,7 +406,7 @@ type IssueEvent struct {
 }
 
 // ListedIssueEvent represents an issue event from the events API (not from a webhook payload).
-// https://developer.github.com/v3/issues/events/
+// http://developer.github.com/v3/issues/events/
 type ListedIssueEvent struct {
 	Event     IssueEventAction `json:"event"` // This is the same as IssueEvent.Action.
 	Actor     User             `json:"actor"`
@@ -416,7 +416,7 @@ type ListedIssueEvent struct {
 
 // IssueCommentEventAction enumerates the triggers for this
 // webhook payload type. See also:
-// https://developer.github.com/v3/activity/events/types/#issuecommentevent
+// http://developer.github.com/v3/activity/events/types/#issuecommentevent
 type IssueCommentEventAction string
 
 const (
@@ -499,7 +499,7 @@ type IssueComment struct {
 
 // StatusEvent fires whenever a git commit changes.
 //
-// See https://developer.github.com/v3/activity/events/types/#statusevent
+// See http://developer.github.com/v3/activity/events/types/#statusevent
 type StatusEvent struct {
 	SHA         string `json:"sha,omitempty"`
 	State       string `json:"state,omitempty"`
@@ -557,7 +557,7 @@ type Commit struct {
 }
 
 // SingleCommit is the commit part received when requesting a single commit
-// https://developer.github.com/v3/repos/commits/#get-a-single-commit
+// http://developer.github.com/v3/repos/commits/#get-a-single-commit
 type SingleCommit struct {
 	Commit struct {
 		Tree struct {
@@ -568,7 +568,7 @@ type SingleCommit struct {
 
 // ReviewEventAction enumerates the triggers for this
 // webhook payload type. See also:
-// https://developer.github.com/v3/activity/events/types/#pullrequestreviewevent
+// http://developer.github.com/v3/activity/events/types/#pullrequestreviewevent
 type ReviewEventAction string
 
 const (
@@ -615,7 +615,7 @@ type Review struct {
 
 // ReviewCommentEventAction enumerates the triggers for this
 // webhook payload type. See also:
-// https://developer.github.com/v3/activity/events/types/#pullrequestreviewcommentevent
+// http://developer.github.com/v3/activity/events/types/#pullrequestreviewcommentevent
 type ReviewCommentEventAction string
 
 const (

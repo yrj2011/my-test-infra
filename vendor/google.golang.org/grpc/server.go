@@ -889,7 +889,7 @@ func (s *Server) processUnaryRPC(t transport.ServerTransport, stream *transport.
 	// If cp is set, use it.  Otherwise, attempt to compress the response using
 	// the incoming message compression method.
 	//
-	// NOTE: this needs to be ahead of all handling, https://github.com/grpc/grpc-go/issues/686.
+	// NOTE: this needs to be ahead of all handling, http://github.com/grpc/grpc-go/issues/686.
 	if s.opts.cp != nil {
 		cp = s.opts.cp
 		stream.SetSendCompress(cp.Type())
@@ -1090,7 +1090,7 @@ func (s *Server) processStreamingRPC(t transport.ServerTransport, stream *transp
 	// If cp is set, use it.  Otherwise, attempt to compress the response using
 	// the incoming message compression method.
 	//
-	// NOTE: this needs to be ahead of all handling, https://github.com/grpc/grpc-go/issues/686.
+	// NOTE: this needs to be ahead of all handling, http://github.com/grpc/grpc-go/issues/686.
 	if s.opts.cp != nil {
 		ss.cp = s.opts.cp
 		stream.SetSendCompress(s.opts.cp.Type())

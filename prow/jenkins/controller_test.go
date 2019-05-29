@@ -474,7 +474,7 @@ func TestSyncPendingJobs(t *testing.T) {
 			builds: map[string]Build{
 				"other": {enqueued: false, Number: 10},
 			},
-			expectedURL:      "https://github.com/kubernetes/test-infra/issues",
+			expectedURL:      "http://github.com/kubernetes/test-infra/issues",
 			expectedState:    kube.ErrorState,
 			expectedError:    true,
 			expectedComplete: true,

@@ -29,7 +29,7 @@ func newContainerClient(url url.URL, p pipeline.Pipeline) containerClient {
 // operation fails
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> metadata is optional. Specifies a user-defined name-value pair associated
 // with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or
 // file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with
@@ -99,7 +99,7 @@ func (client containerClient) createResponder(resp pipeline.Response) (pipeline.
 // later deleted during garbage collection
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. ifModifiedSince is specify this header value to operate only on a blob if it
 // has been modified since the specified date/time. ifUnmodifiedSince is specify this header value to operate only on a
@@ -171,7 +171,7 @@ func (client containerClient) deleteResponder(resp pipeline.Response) (pipeline.
 // GetACL sends the get acl request.
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. requestID is provides a client-generated, opaque value with a 1 KB character
 // limit that is recorded in the analytics logs when storage analytics logging is enabled.
@@ -243,7 +243,7 @@ func (client containerClient) getACLResponder(resp pipeline.Response) (pipeline.
 // GetMetadata returns all user-defined metadata for the container
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. requestID is provides a client-generated, opaque value with a 1 KB character
 // limit that is recorded in the analytics logs when storage analytics logging is enabled.
@@ -301,7 +301,7 @@ func (client containerClient) getMetadataResponder(resp pipeline.Response) (pipe
 // does not include the container's list of blobs
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. requestID is provides a client-generated, opaque value with a 1 KB character
 // limit that is recorded in the analytics logs when storage analytics logging is enabled.
@@ -359,7 +359,7 @@ func (client containerClient) getPropertiesResponder(resp pipeline.Response) (pi
 //
 // action is describes what lease action to take. timeout is the timeout parameter is expressed in seconds. For more
 // information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. breakPeriod is for a break operation, proposed duration the lease should
 // continue before it is broken, in seconds, between 0 and 60. This break period is only used if it is shorter than the
@@ -457,7 +457,7 @@ func (client containerClient) leaseResponder(resp pipeline.Response) (pipeline.R
 // service will return fewer results than specified by maxresults, or than the default of 5000. include is include this
 // parameter to specify one or more datasets to include in the response. timeout is the timeout parameter is expressed
 // in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> requestID is provides a client-generated, opaque value with a 1 KB
 // character limit that is recorded in the analytics logs when storage analytics logging is enabled.
 func (client containerClient) ListBlobs(ctx context.Context, prefix *string, delimiter *string, marker *string, maxresults *int32, include ListBlobsIncludeType, timeout *int32, requestID *string) (*ListBlobsResponse, error) {
@@ -544,7 +544,7 @@ func (client containerClient) listBlobsResponder(resp pipeline.Response) (pipeli
 //
 // containerACL is the acls for the container timeout is the timeout parameter is expressed in seconds. For more
 // information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. access is specifies whether data in the container may be accessed publicly and
 // the level of access ifModifiedSince is specify this header value to operate only on a blob if it has been modified
@@ -630,7 +630,7 @@ func (client containerClient) setACLResponder(resp pipeline.Response) (pipeline.
 // SetMetadata operation sets one or more user-defined name-value pairs for the specified container.
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. metadata is optional. Specifies a user-defined name-value pair associated with
 // the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or file to

@@ -46,7 +46,7 @@ const (
 var (
 	gkeAdditionalZones             = flag.String("gke-additional-zones", "", "(gke only) List of additional Google Compute Engine zones to use. Clusters are created symmetrically across zones by default, see --gke-shape for details.")
 	gkeNodeLocations               = flag.String("gke-node-locations", "", "(gke only) List of Google Compute Engine zones to use.")
-	gkeEnvironment                 = flag.String("gke-environment", "", "(gke only) Container API endpoint to use, one of 'test', 'staging', 'prod', or a custom https:// URL")
+	gkeEnvironment                 = flag.String("gke-environment", "", "(gke only) Container API endpoint to use, one of 'test', 'staging', 'prod', or a custom http:// URL")
 	gkeShape                       = flag.String("gke-shape", `{"default":{"Nodes":3,"MachineType":"n1-standard-2"}}`, `(gke only) A JSON description of node pools to create. The node pool 'default' is required and used for initial cluster creation. All node pools are symmetric across zones, so the cluster total node count is {total nodes in --gke-shape} * {1 + (length of --gke-additional-zones)}. Example: '{"default":{"Nodes":999,"MachineType:":"n1-standard-1"},"heapster":{"Nodes":1, "MachineType":"n1-standard-8", "ExtraArgs": []}}`)
 	gkeCreateArgs                  = flag.String("gke-create-args", "", "(gke only) (deprecated, use a modified --gke-create-command') Additional arguments passed directly to 'gcloud container clusters create'")
 	gkeCommandGroup                = flag.String("gke-command-group", "", "(gke only) Use a different gcloud track (e.g. 'alpha') for all 'gcloud container' commands. Note: This is added to --gke-create-command on create. You should only use --gke-command-group if you need to change the gcloud track for *every* gcloud container command.")
@@ -54,14 +54,14 @@ var (
 	gkeCustomSubnet                = flag.String("gke-custom-subnet", "", "(gke only) if specified, we create a custom subnet with the specified options and use it for the gke cluster. The format should be '<subnet-name> --region=<subnet-gcp-region> --range=<subnet-cidr> <any other optional params>'.")
 	gkeSingleZoneNodeInstanceGroup = flag.Bool("gke-single-zone-node-instance-group", true, "(gke only) Add instance groups from a single zone to the NODE_INSTANCE_GROUP env variable.")
 
-	// poolRe matches instance group URLs of the form `https://www.googleapis.com/compute/v1/projects/some-project/zones/a-zone/instanceGroupManagers/gke-some-cluster-some-pool-90fcb815-grp`. Match meaning:
+	// poolRe matches instance group URLs of the form `http://www.googleapis.com/compute/v1/projects/some-project/zones/a-zone/instanceGroupManagers/gke-some-cluster-some-pool-90fcb815-grp`. Match meaning:
 	// m[0]: path starting with zones/
 	// m[1]: zone
 	// m[2]: pool name (passed to e2es)
 	// m[3]: unique hash (used as nonce for firewall rules)
 	poolRe = regexp.MustCompile(`zones/([^/]+)/instanceGroupManagers/(gke-.*-([0-9a-f]{8})-grp)$`)
 
-	urlRe = regexp.MustCompile(`https://.*/`)
+	urlRe = regexp.MustCompile(`http://.*/`)
 )
 
 type gkeNodePool struct {
@@ -181,11 +181,11 @@ func newGKE(provider, project, zone, region, network, image, imageFamily, imageP
 	var endpoint string
 	switch env := *gkeEnvironment; {
 	case env == "test":
-		endpoint = "https://test-container.sandbox.googleapis.com/"
+		endpoint = "http://test-container.sandbox.googleapis.com/"
 	case env == "staging":
-		endpoint = "https://staging-container.sandbox.googleapis.com/"
+		endpoint = "http://staging-container.sandbox.googleapis.com/"
 	case env == "prod":
-		endpoint = "https://container.googleapis.com/"
+		endpoint = "http://container.googleapis.com/"
 	case urlRe.MatchString(env):
 		endpoint = env
 	default:
@@ -242,7 +242,7 @@ func newGKE(provider, project, zone, region, network, image, imageFamily, imageP
 
 	if *upgradeArgs != "" {
 		// --upgrade-target will be passed to e2e upgrade framework to get a valid update version.
-		// See usage from https://github.com/kubernetes/kubernetes/blob/master/hack/get-build.sh for supported targets.
+		// See usage from http://github.com/kubernetes/kubernetes/blob/master/hack/get-build.sh for supported targets.
 		// Here we special case for gke-latest and will extract an actual valid gke version.
 		// - gke-latest will be resolved to the latest gke version, and
 		// - gke-latest-1.7 will be resolved to the latest 1.7 patch version supported on gke.

@@ -1,6 +1,6 @@
 // Package storage provides access to the Cloud Storage JSON API.
 //
-// See https://developers.google.com/storage/docs/json_api/
+// See http://developers.google.com/storage/docs/json_api/
 //
 // Usage example:
 //
@@ -43,24 +43,24 @@ var _ = ctxhttp.Do
 const apiId = "storage:v1"
 const apiName = "storage"
 const apiVersion = "v1"
-const basePath = "https://www.googleapis.com/storage/v1/"
+const basePath = "http://www.googleapis.com/storage/v1/"
 
 // OAuth2 scopes used by this API.
 const (
 	// View and manage your data across Google Cloud Platform services
-	CloudPlatformScope = "https://www.googleapis.com/auth/cloud-platform"
+	CloudPlatformScope = "http://www.googleapis.com/auth/cloud-platform"
 
 	// View your data across Google Cloud Platform services
-	CloudPlatformReadOnlyScope = "https://www.googleapis.com/auth/cloud-platform.read-only"
+	CloudPlatformReadOnlyScope = "http://www.googleapis.com/auth/cloud-platform.read-only"
 
 	// Manage your data and permissions in Google Cloud Storage
-	DevstorageFullControlScope = "https://www.googleapis.com/auth/devstorage.full_control"
+	DevstorageFullControlScope = "http://www.googleapis.com/auth/devstorage.full_control"
 
 	// View your data in Google Cloud Storage
-	DevstorageReadOnlyScope = "https://www.googleapis.com/auth/devstorage.read_only"
+	DevstorageReadOnlyScope = "http://www.googleapis.com/auth/devstorage.read_only"
 
 	// Manage your data in Google Cloud Storage
-	DevstorageReadWriteScope = "https://www.googleapis.com/auth/devstorage.read_write"
+	DevstorageReadWriteScope = "http://www.googleapis.com/auth/devstorage.read_write"
 )
 
 func New(client *http.Client) (*Service, error) {
@@ -1953,7 +1953,7 @@ func (c *BucketAccessControlsDeleteCall) UserProject(userProject string) *Bucket
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketAccessControlsDeleteCall) Fields(s ...googleapi.Field) *BucketAccessControlsDeleteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2037,8 +2037,8 @@ func (c *BucketAccessControlsDeleteCall) Do(opts ...googleapi.CallOption) error 
 	//   },
 	//   "path": "b/{bucket}/acl/{entity}",
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -2073,7 +2073,7 @@ func (c *BucketAccessControlsGetCall) UserProject(userProject string) *BucketAcc
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketAccessControlsGetCall) Fields(s ...googleapi.Field) *BucketAccessControlsGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2198,8 +2198,8 @@ func (c *BucketAccessControlsGetCall) Do(opts ...googleapi.CallOption) (*BucketA
 	//     "$ref": "BucketAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -2232,7 +2232,7 @@ func (c *BucketAccessControlsInsertCall) UserProject(userProject string) *Bucket
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketAccessControlsInsertCall) Fields(s ...googleapi.Field) *BucketAccessControlsInsertCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2344,8 +2344,8 @@ func (c *BucketAccessControlsInsertCall) Do(opts ...googleapi.CallOption) (*Buck
 	//     "$ref": "BucketAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -2377,7 +2377,7 @@ func (c *BucketAccessControlsListCall) UserProject(userProject string) *BucketAc
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketAccessControlsListCall) Fields(s ...googleapi.Field) *BucketAccessControlsListCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2494,8 +2494,8 @@ func (c *BucketAccessControlsListCall) Do(opts ...googleapi.CallOption) (*Bucket
 	//     "$ref": "BucketAccessControls"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -2531,7 +2531,7 @@ func (c *BucketAccessControlsPatchCall) UserProject(userProject string) *BucketA
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketAccessControlsPatchCall) Fields(s ...googleapi.Field) *BucketAccessControlsPatchCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2651,8 +2651,8 @@ func (c *BucketAccessControlsPatchCall) Do(opts ...googleapi.CallOption) (*Bucke
 	//     "$ref": "BucketAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -2687,7 +2687,7 @@ func (c *BucketAccessControlsUpdateCall) UserProject(userProject string) *Bucket
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketAccessControlsUpdateCall) Fields(s ...googleapi.Field) *BucketAccessControlsUpdateCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2807,8 +2807,8 @@ func (c *BucketAccessControlsUpdateCall) Do(opts ...googleapi.CallOption) (*Buck
 	//     "$ref": "BucketAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -2855,7 +2855,7 @@ func (c *BucketsDeleteCall) UserProject(userProject string) *BucketsDeleteCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsDeleteCall) Fields(s ...googleapi.Field) *BucketsDeleteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -2943,9 +2943,9 @@ func (c *BucketsDeleteCall) Do(opts ...googleapi.CallOption) error {
 	//   },
 	//   "path": "b/{bucket}",
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -3006,7 +3006,7 @@ func (c *BucketsGetCall) UserProject(userProject string) *BucketsGetCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsGetCall) Fields(s ...googleapi.Field) *BucketsGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -3148,11 +3148,11 @@ func (c *BucketsGetCall) Do(opts ...googleapi.CallOption) (*Bucket, error) {
 	//     "$ref": "Bucket"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -3184,7 +3184,7 @@ func (c *BucketsGetIamPolicyCall) UserProject(userProject string) *BucketsGetIam
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsGetIamPolicyCall) Fields(s ...googleapi.Field) *BucketsGetIamPolicyCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -3301,11 +3301,11 @@ func (c *BucketsGetIamPolicyCall) Do(opts ...googleapi.CallOption) (*Policy, err
 	//     "$ref": "Policy"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -3389,7 +3389,7 @@ func (c *BucketsInsertCall) UserProject(userProject string) *BucketsInsertCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsInsertCall) Fields(s ...googleapi.Field) *BucketsInsertCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -3551,9 +3551,9 @@ func (c *BucketsInsertCall) Do(opts ...googleapi.CallOption) (*Bucket, error) {
 	//     "$ref": "Bucket"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -3618,7 +3618,7 @@ func (c *BucketsListCall) UserProject(userProject string) *BucketsListCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsListCall) Fields(s ...googleapi.Field) *BucketsListCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -3763,11 +3763,11 @@ func (c *BucketsListCall) Do(opts ...googleapi.CallOption) (*Buckets, error) {
 	//     "$ref": "Buckets"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -3820,7 +3820,7 @@ func (c *BucketsLockRetentionPolicyCall) UserProject(userProject string) *Bucket
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsLockRetentionPolicyCall) Fields(s ...googleapi.Field) *BucketsLockRetentionPolicyCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -3932,9 +3932,9 @@ func (c *BucketsLockRetentionPolicyCall) Do(opts ...googleapi.CallOption) (*Buck
 	//     "$ref": "Bucket"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -4037,7 +4037,7 @@ func (c *BucketsPatchCall) UserProject(userProject string) *BucketsPatchCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsPatchCall) Fields(s ...googleapi.Field) *BucketsPatchCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -4214,8 +4214,8 @@ func (c *BucketsPatchCall) Do(opts ...googleapi.CallOption) (*Bucket, error) {
 	//     "$ref": "Bucket"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -4248,7 +4248,7 @@ func (c *BucketsSetIamPolicyCall) UserProject(userProject string) *BucketsSetIam
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsSetIamPolicyCall) Fields(s ...googleapi.Field) *BucketsSetIamPolicyCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -4360,9 +4360,9 @@ func (c *BucketsSetIamPolicyCall) Do(opts ...googleapi.CallOption) (*Policy, err
 	//     "$ref": "Policy"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -4396,7 +4396,7 @@ func (c *BucketsTestIamPermissionsCall) UserProject(userProject string) *Buckets
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsTestIamPermissionsCall) Fields(s ...googleapi.Field) *BucketsTestIamPermissionsCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -4521,11 +4521,11 @@ func (c *BucketsTestIamPermissionsCall) Do(opts ...googleapi.CallOption) (*TestI
 	//     "$ref": "TestIamPermissionsResponse"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -4628,7 +4628,7 @@ func (c *BucketsUpdateCall) UserProject(userProject string) *BucketsUpdateCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *BucketsUpdateCall) Fields(s ...googleapi.Field) *BucketsUpdateCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -4805,8 +4805,8 @@ func (c *BucketsUpdateCall) Do(opts ...googleapi.CallOption) (*Bucket, error) {
 	//     "$ref": "Bucket"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -4830,7 +4830,7 @@ func (r *ChannelsService) Stop(channel *Channel) *ChannelsStopCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ChannelsStopCall) Fields(s ...googleapi.Field) *ChannelsStopCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -4896,11 +4896,11 @@ func (c *ChannelsStopCall) Do(opts ...googleapi.CallOption) error {
 	//     "parameterName": "resource"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -4934,7 +4934,7 @@ func (c *DefaultObjectAccessControlsDeleteCall) UserProject(userProject string) 
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *DefaultObjectAccessControlsDeleteCall) Fields(s ...googleapi.Field) *DefaultObjectAccessControlsDeleteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5018,8 +5018,8 @@ func (c *DefaultObjectAccessControlsDeleteCall) Do(opts ...googleapi.CallOption)
 	//   },
 	//   "path": "b/{bucket}/defaultObjectAcl/{entity}",
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -5054,7 +5054,7 @@ func (c *DefaultObjectAccessControlsGetCall) UserProject(userProject string) *De
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *DefaultObjectAccessControlsGetCall) Fields(s ...googleapi.Field) *DefaultObjectAccessControlsGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5179,8 +5179,8 @@ func (c *DefaultObjectAccessControlsGetCall) Do(opts ...googleapi.CallOption) (*
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -5214,7 +5214,7 @@ func (c *DefaultObjectAccessControlsInsertCall) UserProject(userProject string) 
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *DefaultObjectAccessControlsInsertCall) Fields(s ...googleapi.Field) *DefaultObjectAccessControlsInsertCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5326,8 +5326,8 @@ func (c *DefaultObjectAccessControlsInsertCall) Do(opts ...googleapi.CallOption)
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -5376,7 +5376,7 @@ func (c *DefaultObjectAccessControlsListCall) UserProject(userProject string) *D
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *DefaultObjectAccessControlsListCall) Fields(s ...googleapi.Field) *DefaultObjectAccessControlsListCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5505,8 +5505,8 @@ func (c *DefaultObjectAccessControlsListCall) Do(opts ...googleapi.CallOption) (
 	//     "$ref": "ObjectAccessControls"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -5542,7 +5542,7 @@ func (c *DefaultObjectAccessControlsPatchCall) UserProject(userProject string) *
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *DefaultObjectAccessControlsPatchCall) Fields(s ...googleapi.Field) *DefaultObjectAccessControlsPatchCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5662,8 +5662,8 @@ func (c *DefaultObjectAccessControlsPatchCall) Do(opts ...googleapi.CallOption) 
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -5698,7 +5698,7 @@ func (c *DefaultObjectAccessControlsUpdateCall) UserProject(userProject string) 
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *DefaultObjectAccessControlsUpdateCall) Fields(s ...googleapi.Field) *DefaultObjectAccessControlsUpdateCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5818,8 +5818,8 @@ func (c *DefaultObjectAccessControlsUpdateCall) Do(opts ...googleapi.CallOption)
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -5852,7 +5852,7 @@ func (c *NotificationsDeleteCall) UserProject(userProject string) *Notifications
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *NotificationsDeleteCall) Fields(s ...googleapi.Field) *NotificationsDeleteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -5936,9 +5936,9 @@ func (c *NotificationsDeleteCall) Do(opts ...googleapi.CallOption) error {
 	//   },
 	//   "path": "b/{bucket}/notificationConfigs/{notification}",
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -5972,7 +5972,7 @@ func (c *NotificationsGetCall) UserProject(userProject string) *NotificationsGet
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *NotificationsGetCall) Fields(s ...googleapi.Field) *NotificationsGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -6097,11 +6097,11 @@ func (c *NotificationsGetCall) Do(opts ...googleapi.CallOption) (*Notification, 
 	//     "$ref": "Notification"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -6134,7 +6134,7 @@ func (c *NotificationsInsertCall) UserProject(userProject string) *Notifications
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *NotificationsInsertCall) Fields(s ...googleapi.Field) *NotificationsInsertCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -6246,9 +6246,9 @@ func (c *NotificationsInsertCall) Do(opts ...googleapi.CallOption) (*Notificatio
 	//     "$ref": "Notification"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -6281,7 +6281,7 @@ func (c *NotificationsListCall) UserProject(userProject string) *NotificationsLi
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *NotificationsListCall) Fields(s ...googleapi.Field) *NotificationsListCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -6398,11 +6398,11 @@ func (c *NotificationsListCall) Do(opts ...googleapi.CallOption) (*Notifications
 	//     "$ref": "Notifications"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -6446,7 +6446,7 @@ func (c *ObjectAccessControlsDeleteCall) UserProject(userProject string) *Object
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectAccessControlsDeleteCall) Fields(s ...googleapi.Field) *ObjectAccessControlsDeleteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -6544,8 +6544,8 @@ func (c *ObjectAccessControlsDeleteCall) Do(opts ...googleapi.CallOption) error 
 	//   },
 	//   "path": "b/{bucket}/o/{object}/acl/{entity}",
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -6590,7 +6590,7 @@ func (c *ObjectAccessControlsGetCall) UserProject(userProject string) *ObjectAcc
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectAccessControlsGetCall) Fields(s ...googleapi.Field) *ObjectAccessControlsGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -6729,8 +6729,8 @@ func (c *ObjectAccessControlsGetCall) Do(opts ...googleapi.CallOption) (*ObjectA
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -6773,7 +6773,7 @@ func (c *ObjectAccessControlsInsertCall) UserProject(userProject string) *Object
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectAccessControlsInsertCall) Fields(s ...googleapi.Field) *ObjectAccessControlsInsertCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -6899,8 +6899,8 @@ func (c *ObjectAccessControlsInsertCall) Do(opts ...googleapi.CallOption) (*Obje
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -6942,7 +6942,7 @@ func (c *ObjectAccessControlsListCall) UserProject(userProject string) *ObjectAc
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectAccessControlsListCall) Fields(s ...googleapi.Field) *ObjectAccessControlsListCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -7073,8 +7073,8 @@ func (c *ObjectAccessControlsListCall) Do(opts ...googleapi.CallOption) (*Object
 	//     "$ref": "ObjectAccessControls"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -7120,7 +7120,7 @@ func (c *ObjectAccessControlsPatchCall) UserProject(userProject string) *ObjectA
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectAccessControlsPatchCall) Fields(s ...googleapi.Field) *ObjectAccessControlsPatchCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -7254,8 +7254,8 @@ func (c *ObjectAccessControlsPatchCall) Do(opts ...googleapi.CallOption) (*Objec
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -7300,7 +7300,7 @@ func (c *ObjectAccessControlsUpdateCall) UserProject(userProject string) *Object
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectAccessControlsUpdateCall) Fields(s ...googleapi.Field) *ObjectAccessControlsUpdateCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -7434,8 +7434,8 @@ func (c *ObjectAccessControlsUpdateCall) Do(opts ...googleapi.CallOption) (*Obje
 	//     "$ref": "ObjectAccessControl"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -7519,7 +7519,7 @@ func (c *ObjectsComposeCall) UserProject(userProject string) *ObjectsComposeCall
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsComposeCall) Fields(s ...googleapi.Field) *ObjectsComposeCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -7677,9 +7677,9 @@ func (c *ObjectsComposeCall) Do(opts ...googleapi.CallOption) (*Object, error) {
 	//     "$ref": "Object"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -7833,7 +7833,7 @@ func (c *ObjectsCopyCall) UserProject(userProject string) *ObjectsCopyCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsCopyCall) Fields(s ...googleapi.Field) *ObjectsCopyCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -8057,9 +8057,9 @@ func (c *ObjectsCopyCall) Do(opts ...googleapi.CallOption) (*Object, error) {
 	//     "$ref": "Object"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -8138,7 +8138,7 @@ func (c *ObjectsDeleteCall) UserProject(userProject string) *ObjectsDeleteCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsDeleteCall) Fields(s ...googleapi.Field) *ObjectsDeleteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -8252,9 +8252,9 @@ func (c *ObjectsDeleteCall) Do(opts ...googleapi.CallOption) error {
 	//   },
 	//   "path": "b/{bucket}/o/{object}",
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -8343,7 +8343,7 @@ func (c *ObjectsGetCall) UserProject(userProject string) *ObjectsGetCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsGetCall) Fields(s ...googleapi.Field) *ObjectsGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -8527,11 +8527,11 @@ func (c *ObjectsGetCall) Do(opts ...googleapi.CallOption) (*Object, error) {
 	//     "$ref": "Object"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ],
 	//   "supportsMediaDownload": true,
 	//   "useMediaDownloadService": true
@@ -8575,7 +8575,7 @@ func (c *ObjectsGetIamPolicyCall) UserProject(userProject string) *ObjectsGetIam
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsGetIamPolicyCall) Fields(s ...googleapi.Field) *ObjectsGetIamPolicyCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -8706,11 +8706,11 @@ func (c *ObjectsGetIamPolicyCall) Do(opts ...googleapi.CallOption) (*Policy, err
 	//     "$ref": "Policy"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -8883,7 +8883,7 @@ func (c *ObjectsInsertCall) ProgressUpdater(pu googleapi.ProgressUpdater) *Objec
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsInsertCall) Fields(s ...googleapi.Field) *ObjectsInsertCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -8924,7 +8924,7 @@ func (c *ObjectsInsertCall) doRequest(alt string) (*http.Response, error) {
 	c.urlParams_.Set("alt", alt)
 	urls := googleapi.ResolveRelative(c.s.BasePath, "b/{bucket}/o")
 	if c.mediaInfo_ != nil {
-		urls = strings.Replace(urls, "https://www.googleapis.com/", "https://www.googleapis.com/upload/", 1)
+		urls = strings.Replace(urls, "http://www.googleapis.com/", "http://www.googleapis.com/upload/", 1)
 		c.urlParams_.Set("uploadType", c.mediaInfo_.UploadType())
 	}
 	if body == nil {
@@ -9112,9 +9112,9 @@ func (c *ObjectsInsertCall) Do(opts ...googleapi.CallOption) (*Object, error) {
 	//     "$ref": "Object"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ],
 	//   "supportsMediaUpload": true
 	// }
@@ -9202,7 +9202,7 @@ func (c *ObjectsListCall) Versions(versions bool) *ObjectsListCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsListCall) Fields(s ...googleapi.Field) *ObjectsListCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -9360,11 +9360,11 @@ func (c *ObjectsListCall) Do(opts ...googleapi.CallOption) (*Objects, error) {
 	//     "$ref": "Objects"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ],
 	//   "supportsSubscription": true
 	// }
@@ -9496,7 +9496,7 @@ func (c *ObjectsPatchCall) UserProject(userProject string) *ObjectsPatchCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsPatchCall) Fields(s ...googleapi.Field) *ObjectsPatchCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -9680,8 +9680,8 @@ func (c *ObjectsPatchCall) Do(opts ...googleapi.CallOption) (*Object, error) {
 	//     "$ref": "Object"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -9870,7 +9870,7 @@ func (c *ObjectsRewriteCall) UserProject(userProject string) *ObjectsRewriteCall
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsRewriteCall) Fields(s ...googleapi.Field) *ObjectsRewriteCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -10110,9 +10110,9 @@ func (c *ObjectsRewriteCall) Do(opts ...googleapi.CallOption) (*RewriteResponse,
 	//     "$ref": "RewriteResponse"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -10155,7 +10155,7 @@ func (c *ObjectsSetIamPolicyCall) UserProject(userProject string) *ObjectsSetIam
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsSetIamPolicyCall) Fields(s ...googleapi.Field) *ObjectsSetIamPolicyCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -10281,9 +10281,9 @@ func (c *ObjectsSetIamPolicyCall) Do(opts ...googleapi.CallOption) (*Policy, err
 	//     "$ref": "Policy"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -10327,7 +10327,7 @@ func (c *ObjectsTestIamPermissionsCall) UserProject(userProject string) *Objects
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsTestIamPermissionsCall) Fields(s ...googleapi.Field) *ObjectsTestIamPermissionsCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -10466,11 +10466,11 @@ func (c *ObjectsTestIamPermissionsCall) Do(opts ...googleapi.CallOption) (*TestI
 	//     "$ref": "TestIamPermissionsResponse"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 
@@ -10580,7 +10580,7 @@ func (c *ObjectsUpdateCall) UserProject(userProject string) *ObjectsUpdateCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsUpdateCall) Fields(s ...googleapi.Field) *ObjectsUpdateCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -10764,8 +10764,8 @@ func (c *ObjectsUpdateCall) Do(opts ...googleapi.CallOption) (*Object, error) {
 	//     "$ref": "Object"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/devstorage.full_control"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/devstorage.full_control"
 	//   ]
 	// }
 
@@ -10853,7 +10853,7 @@ func (c *ObjectsWatchAllCall) Versions(versions bool) *ObjectsWatchAllCall {
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ObjectsWatchAllCall) Fields(s ...googleapi.Field) *ObjectsWatchAllCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -11007,11 +11007,11 @@ func (c *ObjectsWatchAllCall) Do(opts ...googleapi.CallOption) (*Channel, error)
 	//     "$ref": "Channel"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ],
 	//   "supportsSubscription": true
 	// }
@@ -11045,7 +11045,7 @@ func (c *ProjectsServiceAccountGetCall) UserProject(userProject string) *Project
 }
 
 // Fields allows partial responses to be retrieved. See
-// https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 // for more information.
 func (c *ProjectsServiceAccountGetCall) Fields(s ...googleapi.Field) *ProjectsServiceAccountGetCall {
 	c.urlParams_.Set("fields", googleapi.CombineFields(s))
@@ -11162,11 +11162,11 @@ func (c *ProjectsServiceAccountGetCall) Do(opts ...googleapi.CallOption) (*Servi
 	//     "$ref": "ServiceAccount"
 	//   },
 	//   "scopes": [
-	//     "https://www.googleapis.com/auth/cloud-platform",
-	//     "https://www.googleapis.com/auth/cloud-platform.read-only",
-	//     "https://www.googleapis.com/auth/devstorage.full_control",
-	//     "https://www.googleapis.com/auth/devstorage.read_only",
-	//     "https://www.googleapis.com/auth/devstorage.read_write"
+	//     "http://www.googleapis.com/auth/cloud-platform",
+	//     "http://www.googleapis.com/auth/cloud-platform.read-only",
+	//     "http://www.googleapis.com/auth/devstorage.full_control",
+	//     "http://www.googleapis.com/auth/devstorage.read_only",
+	//     "http://www.googleapis.com/auth/devstorage.read_write"
 	//   ]
 	// }
 

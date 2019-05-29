@@ -32,7 +32,7 @@ func renameFallback(err error, src, dst string) error {
 		noerr, ok := terr.Err.(syscall.Errno)
 
 		// 0x11 (ERROR_NOT_SAME_DEVICE) is the windows error.
-		// See https://msdn.microsoft.com/en-us/library/cc231199.aspx
+		// See http://msdn.microsoft.com/en-us/library/cc231199.aspx
 		if ok && noerr != 0x11 {
 			return errors.Wrapf(terr, "link error: cannot rename %s to %s", src, dst)
 		}

@@ -29,7 +29,7 @@ func newBlobsClient(url url.URL, p pipeline.Pipeline) blobsClient {
 // copyID is the copy identifier provided in the x-ms-copy-id header of the original Copy Blob operation.
 // copyActionAbortConstant is dummy (constant parameter) timeout is the timeout parameter is expressed in seconds. For
 // more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. requestID is provides a client-generated, opaque value with a 1 KB character
 // limit that is recorded in the analytics logs when storage analytics logging is enabled.
@@ -90,7 +90,7 @@ func (client blobsClient) abortCopyResponder(resp pipeline.Response) (pipeline.R
 // specifies a page blob snapshot. The value should be URL-encoded as it would appear in a request URI. The source blob
 // must either be public or must be authenticated via a shared access signature. timeout is the timeout parameter is
 // expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> metadata is optional. Specifies a user-defined name-value pair associated
 // with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or
 // file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with
@@ -198,9 +198,9 @@ func (client blobsClient) copyResponder(resp pipeline.Response) (pipeline.Respon
 //
 // snapshot is the snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to
 // retrieve. For more information on working with blob snapshots, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
 // a Snapshot of a Blob.</a> timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. deleteSnapshots is required if the blob has associated snapshots. Specify one
 // of the following two options: include: Delete the base blob and all of its snapshots. only: Delete only the blob's
@@ -281,9 +281,9 @@ func (client blobsClient) deleteResponder(resp pipeline.Response) (pipeline.Resp
 //
 // snapshot is the snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to
 // retrieve. For more information on working with blob snapshots, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
 // a Snapshot of a Blob.</a> timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> rangeParameter is return only the bytes of the blob in the specified
 // range. leaseID is if specified, the operation only succeeds if the container's lease is active and matches this ID.
 // rangeGetContentMD5 is when set to true and specified together with the Range, the service returns the MD5 hash for
@@ -366,9 +366,9 @@ func (client blobsClient) getResponder(resp pipeline.Response) (pipeline.Respons
 //
 // snapshot is the snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to
 // retrieve. For more information on working with blob snapshots, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
 // a Snapshot of a Blob.</a> timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. ifModifiedSince is specify this header value to operate only on a blob if it
 // has been modified since the specified date/time. ifUnmodifiedSince is specify this header value to operate only on a
@@ -445,9 +445,9 @@ func (client blobsClient) getMetadataResponder(resp pipeline.Response) (pipeline
 //
 // snapshot is the snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to
 // retrieve. For more information on working with blob snapshots, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
 // a Snapshot of a Blob.</a> timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. ifModifiedSince is specify this header value to operate only on a blob if it
 // has been modified since the specified date/time. ifUnmodifiedSince is specify this header value to operate only on a
@@ -522,7 +522,7 @@ func (client blobsClient) getPropertiesResponder(resp pipeline.Response) (pipeli
 //
 // action is describes what lease action to take. timeout is the timeout parameter is expressed in seconds. For more
 // information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. breakPeriod is for a break operation, proposed duration the lease should
 // continue before it is broken, in seconds, between 0 and 60. This break period is only used if it is shorter than the
@@ -618,7 +618,7 @@ func (client blobsClient) leaseResponder(resp pipeline.Response) (pipeline.Respo
 // blobType is specifies the type of blob to create: block blob, page blob, or append blob. optionalbody is initial
 // data optionalbody will be closed upon successful return. Callers should ensure closure when receiving an
 // error.timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> cacheControl is cache control for given resource blobContentType is
 // optional. Sets the blob's content type. If specified, this property is stored with the blob and returned with a read
 // request. blobContentEncoding is optional. Sets the blob's content encoding. If specified, this property is stored
@@ -742,7 +742,7 @@ func (client blobsClient) putResponder(resp pipeline.Response) (pipeline.Respons
 // name-value pairs
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> metadata is optional. Specifies a user-defined name-value pair associated
 // with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or
 // file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with
@@ -827,7 +827,7 @@ func (client blobsClient) setMetadataResponder(resp pipeline.Response) (pipeline
 // SetProperties the Set Blob Properties operation sets system properties on the blob
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> blobCacheControl is optional. Sets the blob's cache control. If specified,
 // this property is stored with the blob and returned with a read request. blobContentType is optional. Sets the blob's
 // content type. If specified, this property is stored with the blob and returned with a read request. blobContentMD5
@@ -939,7 +939,7 @@ func (client blobsClient) setPropertiesResponder(resp pipeline.Response) (pipeli
 // TakeSnapshot the Snapshot Blob operation creates a read-only snapshot of a blob
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> metadata is optional. Specifies a user-defined name-value pair associated
 // with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or
 // file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with

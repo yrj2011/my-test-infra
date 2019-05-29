@@ -35,7 +35,7 @@ func RegisterHook(h Hook) {
 // ctxhttp.Do, then calls any functions returned by the hooks in reverse order.
 func SendRequest(ctx context.Context, client *http.Client, req *http.Request) (*http.Response, error) {
 	// Disallow Accept-Encoding because it interferes with the automatic gzip handling
-	// done by the default http.Transport. See https://github.com/google/google-api-go-client/issues/219.
+	// done by the default http.Transport. See http://github.com/google/google-api-go-client/issues/219.
 	if _, ok := req.Header["Accept-Encoding"]; ok {
 		return nil, errors.New("google api: custom Accept-Encoding headers not allowed")
 	}

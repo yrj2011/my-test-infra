@@ -27,7 +27,7 @@ func ByteEqualFold(a, b byte) bool {
 // StringEqualFold ASCII case-insensitive comparison
 // golang toUpper/toLower for both bytes and strings
 // appears to be Unicode based which is super slow
-// based from https://codereview.appspot.com/5180044/patch/14007/21002
+// based from http://codereview.appspot.com/5180044/patch/14007/21002
 func StringEqualFold(s1, s2 string) bool {
 	if len(s1) != len(s2) {
 		return false

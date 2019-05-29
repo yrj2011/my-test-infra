@@ -71,7 +71,7 @@ func (BindingDelta_Action) EnumDescriptor() ([]byte, []int) { return fileDescrip
 //     }
 //
 // For a description of IAM and its features, see the
-// [IAM developer's guide](https://cloud.google.com/iam).
+// [IAM developer's guide](http://cloud.google.com/iam).
 type Policy struct {
 	// Version of the `Policy`. The default version is 0.
 	Version int32 `protobuf:"varint,1,opt,name=version" json:"version,omitempty"`

@@ -513,7 +513,7 @@ func (m *Subscription) GetLabels() map[string]string {
 // Configuration for a push delivery endpoint.
 type PushConfig struct {
 	// A URL locating the endpoint to which messages should be pushed.
-	// For example, a Webhook endpoint might use "https://example.com/push".
+	// For example, a Webhook endpoint might use "http://example.com/push".
 	PushEndpoint string `protobuf:"bytes,1,opt,name=push_endpoint,json=pushEndpoint" json:"push_endpoint,omitempty"`
 	// Endpoint configuration attributes.
 	//
@@ -1383,7 +1383,7 @@ type SubscriberClient interface {
 	// If the name is not provided in the request, the server will assign a random
 	// name for this subscription on the same project as the topic, conforming
 	// to the
-	// [resource name format](https://cloud.google.com/pubsub/docs/overview#names).
+	// [resource name format](http://cloud.google.com/pubsub/docs/overview#names).
 	// The generated name is populated in the returned Subscription object.
 	// Note that for REST API requests, you must specify a name in the request.
 	CreateSubscription(ctx context.Context, in *Subscription, opts ...grpc.CallOption) (*Subscription, error)
@@ -1394,7 +1394,7 @@ type SubscriberClient interface {
 	// NOTE:  The style guide requires body: "subscription" instead of body: "*".
 	// Keeping the latter for internal consistency in V1, however it should be
 	// corrected in V2.  See
-	// https://cloud.google.com/apis/design/standard_methods#update for details.
+	// http://cloud.google.com/apis/design/standard_methods#update for details.
 	UpdateSubscription(ctx context.Context, in *UpdateSubscriptionRequest, opts ...grpc.CallOption) (*Subscription, error)
 	// Lists matching subscriptions.
 	ListSubscriptions(ctx context.Context, in *ListSubscriptionsRequest, opts ...grpc.CallOption) (*ListSubscriptionsResponse, error)
@@ -1452,7 +1452,7 @@ type SubscriberClient interface {
 	// If the name is not provided in the request, the server will assign a random
 	// name for this snapshot on the same project as the subscription, conforming
 	// to the
-	// [resource name format](https://cloud.google.com/pubsub/docs/overview#names).
+	// [resource name format](http://cloud.google.com/pubsub/docs/overview#names).
 	// The generated name is populated in the returned Snapshot object.
 	// Note that for REST API requests, you must specify a name in the request.
 	CreateSnapshot(ctx context.Context, in *CreateSnapshotRequest, opts ...grpc.CallOption) (*Snapshot, error)
@@ -1461,7 +1461,7 @@ type SubscriberClient interface {
 	// NOTE:  The style guide requires body: "snapshot" instead of body: "*".
 	// Keeping the latter for internal consistency in V1, however it should be
 	// corrected in V2.  See
-	// https://cloud.google.com/apis/design/standard_methods#update for details.
+	// http://cloud.google.com/apis/design/standard_methods#update for details.
 	UpdateSnapshot(ctx context.Context, in *UpdateSnapshotRequest, opts ...grpc.CallOption) (*Snapshot, error)
 	// Removes an existing snapshot. All messages retained in the snapshot
 	// are immediately dropped. After a snapshot is deleted, a new one may be
@@ -1648,7 +1648,7 @@ type SubscriberServer interface {
 	// If the name is not provided in the request, the server will assign a random
 	// name for this subscription on the same project as the topic, conforming
 	// to the
-	// [resource name format](https://cloud.google.com/pubsub/docs/overview#names).
+	// [resource name format](http://cloud.google.com/pubsub/docs/overview#names).
 	// The generated name is populated in the returned Subscription object.
 	// Note that for REST API requests, you must specify a name in the request.
 	CreateSubscription(context.Context, *Subscription) (*Subscription, error)
@@ -1659,7 +1659,7 @@ type SubscriberServer interface {
 	// NOTE:  The style guide requires body: "subscription" instead of body: "*".
 	// Keeping the latter for internal consistency in V1, however it should be
 	// corrected in V2.  See
-	// https://cloud.google.com/apis/design/standard_methods#update for details.
+	// http://cloud.google.com/apis/design/standard_methods#update for details.
 	UpdateSubscription(context.Context, *UpdateSubscriptionRequest) (*Subscription, error)
 	// Lists matching subscriptions.
 	ListSubscriptions(context.Context, *ListSubscriptionsRequest) (*ListSubscriptionsResponse, error)
@@ -1717,7 +1717,7 @@ type SubscriberServer interface {
 	// If the name is not provided in the request, the server will assign a random
 	// name for this snapshot on the same project as the subscription, conforming
 	// to the
-	// [resource name format](https://cloud.google.com/pubsub/docs/overview#names).
+	// [resource name format](http://cloud.google.com/pubsub/docs/overview#names).
 	// The generated name is populated in the returned Snapshot object.
 	// Note that for REST API requests, you must specify a name in the request.
 	CreateSnapshot(context.Context, *CreateSnapshotRequest) (*Snapshot, error)
@@ -1726,7 +1726,7 @@ type SubscriberServer interface {
 	// NOTE:  The style guide requires body: "snapshot" instead of body: "*".
 	// Keeping the latter for internal consistency in V1, however it should be
 	// corrected in V2.  See
-	// https://cloud.google.com/apis/design/standard_methods#update for details.
+	// http://cloud.google.com/apis/design/standard_methods#update for details.
 	UpdateSnapshot(context.Context, *UpdateSnapshotRequest) (*Snapshot, error)
 	// Removes an existing snapshot. All messages retained in the snapshot
 	// are immediately dropped. After a snapshot is deleted, a new one may be
@@ -2102,7 +2102,7 @@ type PublisherClient interface {
 	// NOTE:  The style guide requires body: "topic" instead of body: "*".
 	// Keeping the latter for internal consistency in V1, however it should be
 	// corrected in V2.  See
-	// https://cloud.google.com/apis/design/standard_methods#update for details.
+	// http://cloud.google.com/apis/design/standard_methods#update for details.
 	UpdateTopic(ctx context.Context, in *UpdateTopicRequest, opts ...grpc.CallOption) (*Topic, error)
 	// Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic
 	// does not exist. The message payload must not be empty; it must contain
@@ -2203,7 +2203,7 @@ type PublisherServer interface {
 	// NOTE:  The style guide requires body: "topic" instead of body: "*".
 	// Keeping the latter for internal consistency in V1, however it should be
 	// corrected in V2.  See
-	// https://cloud.google.com/apis/design/standard_methods#update for details.
+	// http://cloud.google.com/apis/design/standard_methods#update for details.
 	UpdateTopic(context.Context, *UpdateTopicRequest) (*Topic, error)
 	// Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic
 	// does not exist. The message payload must not be empty; it must contain

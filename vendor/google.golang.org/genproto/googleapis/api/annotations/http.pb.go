@@ -257,7 +257,7 @@ func (m *Http) GetFullyDecodeReservedExpansion() bool {
 // show up in the Discovery Document as `{+var}`.
 //
 // NOTE: While the single segment variable matches the semantics of
-// [RFC 6570](https://tools.ietf.org/html/rfc6570) Section 3.2.2
+// [RFC 6570](http://tools.ietf.org/html/rfc6570) Section 3.2.2
 // Simple String Expansion, the multi segment variable **does not** match
 // RFC 6570 Reserved Expansion. The reason is that the Reserved Expansion
 // does not expand special characters like `?` and `#`, which would lead

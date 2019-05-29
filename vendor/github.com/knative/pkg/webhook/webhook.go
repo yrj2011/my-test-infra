@@ -563,7 +563,7 @@ func (ac *AdmissionController) mutate(ctx context.Context, kind metav1.GroupVers
 // if there's an old object and spec has changed, set generation to oldGeneration + 1
 // appends the patch to patches if changes are necessary.
 // TODO: Generation does not work correctly with CRD. They are scrubbed
-// by the APIserver (https://github.com/kubernetes/kubernetes/issues/58778)
+// by the APIserver (http://github.com/kubernetes/kubernetes/issues/58778)
 // So, we add Generation here. Once that gets fixed, remove this and use
 // ObjectMeta.Generation instead.
 func updateGeneration(ctx context.Context, patches *[]jsonpatch.JsonPatchOperation, old GenericCRD, new GenericCRD) error {

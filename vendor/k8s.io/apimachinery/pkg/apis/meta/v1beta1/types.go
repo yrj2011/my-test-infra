@@ -32,7 +32,7 @@ import (
 type Table struct {
 	v1.TypeMeta `json:",inline"`
 	// Standard list metadata.
-	// More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+	// More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
 	// +optional
 	v1.ListMeta `json:"metadata,omitempty"`
 
@@ -49,11 +49,11 @@ type TableColumnDefinition struct {
 	// name is a human readable name for the column.
 	Name string `json:"name"`
 	// type is an OpenAPI type definition for this column.
-	// See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
+	// See http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
 	Type string `json:"type"`
 	// format is an optional OpenAPI type definition for this column. The 'name' format is applied
 	// to the primary identifier column to assist in clients identifying column is the resource name.
-	// See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
+	// See http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
 	Format string `json:"format"`
 	// description is a human readable description of this column.
 	Description string `json:"description"`
@@ -146,7 +146,7 @@ type TableOptions struct {
 type PartialObjectMetadata struct {
 	v1.TypeMeta `json:",inline"`
 	// Standard object's metadata.
-	// More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+	// More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
 	// +optional
 	v1.ObjectMeta `json:"metadata,omitempty" protobuf:"bytes,1,opt,name=metadata"`
 }

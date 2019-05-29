@@ -78,7 +78,7 @@ func isSCMPath(s string) bool {
 	// but COMMIT_EDITMSG and TAG_EDITMSG are used as
 	// temp files for git commits.  Allowing misspell to inspect
 	// these files allows for commit-msg hooks
-	// https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+	// http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 	if strings.Contains(filepath.Base(s), "EDITMSG") {
 		return false
 	}
@@ -108,11 +108,11 @@ var magicHeaders = [][]byte{
 	{0x25, 0x50, 0x44, 0x46},
 
 	// Java class file
-	// https://en.wikipedia.org/wiki/Java_class_file
+	// http://en.wikipedia.org/wiki/Java_class_file
 	{0xCA, 0xFE, 0xBA, 0xBE},
 
 	// PNG
-	// https://en.wikipedia.org/wiki/Portable_Network_Graphics
+	// http://en.wikipedia.org/wiki/Portable_Network_Graphics
 	{0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a},
 
 	// ZIP, JAR, ODF, OOXML

@@ -6,7 +6,7 @@ import (
 
 // AccountsService contains Account related REST endpoints
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html
 type AccountsService struct {
 	client *Client
 }
@@ -206,7 +206,7 @@ type PreferencesInput struct {
 
 // CapabilityOptions specifies the parameters to filter for capabilities.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-account-capabilities
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-account-capabilities
 type CapabilityOptions struct {
 	// To filter the set of global capabilities the q parameter can be used.
 	// Filtering may decrease the response time by avoiding looking at every possible alternative for the caller.
@@ -216,7 +216,7 @@ type CapabilityOptions struct {
 // GetAccount returns an account as an AccountInfo entity.
 // If account is "self" the current authenticated account will be returned.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-account
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-account
 func (s *AccountsService) GetAccount(account string) (*AccountInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s", account)
 
@@ -236,7 +236,7 @@ func (s *AccountsService) GetAccount(account string) (*AccountInfo, *Response, e
 
 // GetAccountDetails retrieves the details of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-detail
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-detail
 func (s *AccountsService) GetAccountDetails(accountID string) (*AccountDetailInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/detail", accountID)
 
@@ -256,7 +256,7 @@ func (s *AccountsService) GetAccountDetails(accountID string) (*AccountDetailInf
 
 // GetAccountName retrieves the full name of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-account-name
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-account-name
 func (s *AccountsService) GetAccountName(accountID string) (string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/name", accountID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -264,7 +264,7 @@ func (s *AccountsService) GetAccountName(accountID string) (string, *Response, e
 
 // GetUsername retrieves the username of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-username
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-username
 func (s *AccountsService) GetUsername(accountID string) (string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/username", accountID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -272,7 +272,7 @@ func (s *AccountsService) GetUsername(accountID string) (string, *Response, erro
 
 // GetHTTPPassword retrieves the HTTP password of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-http-password
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-http-password
 func (s *AccountsService) GetHTTPPassword(accountID string) (string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/password.http", accountID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -280,7 +280,7 @@ func (s *AccountsService) GetHTTPPassword(accountID string) (string, *Response, 
 
 // ListAccountEmails returns the email addresses that are configured for the specified user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-account-emails
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-account-emails
 func (s *AccountsService) ListAccountEmails(accountID string) (*[]EmailInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/emails", accountID)
 
@@ -300,7 +300,7 @@ func (s *AccountsService) ListAccountEmails(accountID string) (*[]EmailInfo, *Re
 
 // GetAccountEmail retrieves an email address of a user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-account-email
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-account-email
 func (s *AccountsService) GetAccountEmail(accountID, emailID string) (*EmailInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/emails/%s", accountID, emailID)
 
@@ -320,7 +320,7 @@ func (s *AccountsService) GetAccountEmail(accountID, emailID string) (*EmailInfo
 
 // ListSSHKeys returns the SSH keys of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-ssh-keys
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-ssh-keys
 func (s *AccountsService) ListSSHKeys(accountID string) (*[]SSHKeyInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/sshkeys", accountID)
 
@@ -340,7 +340,7 @@ func (s *AccountsService) ListSSHKeys(accountID string) (*[]SSHKeyInfo, *Respons
 
 // GetSSHKey retrieves an SSH key of a user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-ssh-key
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-ssh-key
 func (s *AccountsService) GetSSHKey(accountID, sshKeyID string) (*SSHKeyInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/sshkeys/%s", accountID, sshKeyID)
 
@@ -360,7 +360,7 @@ func (s *AccountsService) GetSSHKey(accountID, sshKeyID string) (*SSHKeyInfo, *R
 
 // ListGPGKeys returns the GPG keys of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-gpg-keys
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-gpg-keys
 func (s *AccountsService) ListGPGKeys(accountID string) (*map[string]GpgKeyInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/gpgkeys", accountID)
 
@@ -380,7 +380,7 @@ func (s *AccountsService) ListGPGKeys(accountID string) (*map[string]GpgKeyInfo,
 
 // GetGPGKey retrieves a GPG key of a user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-gpg-key
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-gpg-key
 func (s *AccountsService) GetGPGKey(accountID, gpgKeyID string) (*GpgKeyInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/gpgkeys/%s", accountID, gpgKeyID)
 
@@ -402,7 +402,7 @@ func (s *AccountsService) GetGPGKey(accountID, gpgKeyID string) (*GpgKeyInfo, *R
 // If the global capabilities for the calling user should be listed, self can be used as account-id.
 // This can be used by UI tools to discover if administrative features are available to the caller, so they can hide (or show) relevant UI actions.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-account-capabilities
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-account-capabilities
 func (s *AccountsService) ListAccountCapabilities(accountID string, opt *CapabilityOptions) (*AccountCapabilityInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/capabilities", accountID)
 
@@ -427,7 +427,7 @@ func (s *AccountsService) ListAccountCapabilities(accountID string, opt *Capabil
 
 // ListGroups lists all groups that contain the specified user as a member.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-groups
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#list-groups
 func (s *AccountsService) ListGroups(accountID string) (*[]GroupInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/groups", accountID)
 
@@ -447,7 +447,7 @@ func (s *AccountsService) ListGroups(accountID string) (*[]GroupInfo, *Response,
 
 // GetUserPreferences retrieves the user’s preferences.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-user-preferences
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-user-preferences
 func (s *AccountsService) GetUserPreferences(accountID string) (*PreferencesInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/preferences", accountID)
 
@@ -467,7 +467,7 @@ func (s *AccountsService) GetUserPreferences(accountID string) (*PreferencesInfo
 
 // GetDiffPreferences retrieves the diff preferences of a user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-diff-preferences
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-diff-preferences
 func (s *AccountsService) GetDiffPreferences(accountID string) (*DiffPreferencesInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/preferences.diff", accountID)
 
@@ -488,7 +488,7 @@ func (s *AccountsService) GetDiffPreferences(accountID string) (*DiffPreferences
 // GetStarredChanges gets the changes starred by the identified user account.
 // This URL endpoint is functionally identical to the changes query GET /changes/?q=is:starred.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-starred-changes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-starred-changes
 func (s *AccountsService) GetStarredChanges(accountID string) (*[]ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/starred.changes", accountID)
 
@@ -510,7 +510,7 @@ func (s *AccountsService) GetStarredChanges(accountID string) (*[]ChangeInfo, *R
 // If result limit is not passed, then the default 10 is used.
 // Returns a list of matching AccountInfo entities.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#query-account
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#query-account
 func (s *AccountsService) SuggestAccount(opt *QueryOptions) (*[]AccountInfo, *Response, error) {
 	u := "accounts/"
 
@@ -536,7 +536,7 @@ func (s *AccountsService) SuggestAccount(opt *QueryOptions) (*[]AccountInfo, *Re
 // CreateAccount creates a new account.
 // In the request body additional data for the account can be provided as AccountInput.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#create-account
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#create-account
 func (s *AccountsService) CreateAccount(username string, input *AccountInput) (*AccountInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s", username)
 
@@ -562,7 +562,7 @@ func (s *AccountsService) CreateAccount(username string, input *AccountInput) (*
 // Some realms may not allow to modify the account name.
 // In this case the request is rejected with “405 Method Not Allowed”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-account-name
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-account-name
 func (s *AccountsService) SetAccountName(accountID string, input *AccountNameInput) (*string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/name", accountID)
 
@@ -584,7 +584,7 @@ func (s *AccountsService) SetAccountName(accountID string, input *AccountNameInp
 
 // DeleteAccountName deletes the name of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-account-name
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-account-name
 func (s *AccountsService) DeleteAccountName(accountID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/name", accountID)
 	return s.client.DeleteRequest(u, nil)
@@ -593,7 +593,7 @@ func (s *AccountsService) DeleteAccountName(accountID string) (*Response, error)
 // DeleteActive sets the account state to inactive.
 // If the account was already inactive the response is “404 Not Found”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-active
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-active
 func (s *AccountsService) DeleteActive(accountID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/active", accountID)
 	return s.client.DeleteRequest(u, nil)
@@ -601,7 +601,7 @@ func (s *AccountsService) DeleteActive(accountID string) (*Response, error) {
 
 // DeleteHTTPPassword deletes the HTTP password of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-http-password
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-http-password
 func (s *AccountsService) DeleteHTTPPassword(accountID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/password.http", accountID)
 	return s.client.DeleteRequest(u, nil)
@@ -609,7 +609,7 @@ func (s *AccountsService) DeleteHTTPPassword(accountID string) (*Response, error
 
 // DeleteAccountEmail deletes an email address of an account.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-account-email
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-account-email
 func (s *AccountsService) DeleteAccountEmail(accountID, emailID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/emails/%s", accountID, emailID)
 	return s.client.DeleteRequest(u, nil)
@@ -617,7 +617,7 @@ func (s *AccountsService) DeleteAccountEmail(accountID, emailID string) (*Respon
 
 // DeleteSSHKey deletes an SSH key of a user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-ssh-key
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-ssh-key
 func (s *AccountsService) DeleteSSHKey(accountID, sshKeyID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/sshkeys/%s", accountID, sshKeyID)
 	return s.client.DeleteRequest(u, nil)
@@ -625,7 +625,7 @@ func (s *AccountsService) DeleteSSHKey(accountID, sshKeyID string) (*Response, e
 
 // DeleteGPGKey deletes a GPG key of a user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-gpg-key
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#delete-gpg-key
 func (s *AccountsService) DeleteGPGKey(accountID, gpgKeyID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/gpgkeys/%s", accountID, gpgKeyID)
 	return s.client.DeleteRequest(u, nil)
@@ -638,7 +638,7 @@ func (s *AccountsService) DeleteGPGKey(accountID, gpgKeyID string) (*Response, e
 //
 // As response the new username is returned.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-username
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-username
 func (s *AccountsService) SetUsername(accountID string, input *UsernameInput) (*string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/username", accountID)
 
@@ -661,7 +661,7 @@ func (s *AccountsService) SetUsername(accountID string, input *UsernameInput) (*
 // If the account is active the string ok is returned.
 // If the account is inactive the response is “204 No Content”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-active
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-active
 func (s *AccountsService) GetActive(accountID string) (string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/active", accountID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -671,7 +671,7 @@ func (s *AccountsService) GetActive(accountID string) (string, *Response, error)
 //
 // If the account was already active the response is “200 OK”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-active
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-active
 func (s *AccountsService) SetActive(accountID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/active", accountID)
 
@@ -688,7 +688,7 @@ func (s *AccountsService) SetActive(accountID string) (*Response, error) {
 // As response the new HTTP password is returned.
 // If the HTTP password was deleted the response is “204 No Content”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-http-password
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-http-password
 func (s *AccountsService) SetHTTPPassword(accountID string, input *HTTPPasswordInput) (*string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/password.http", accountID)
 
@@ -714,7 +714,7 @@ func (s *AccountsService) SetHTTPPassword(accountID string, input *HTTPPasswordI
 //
 // As response the new email address is returned as EmailInfo entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#create-account-email
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#create-account-email
 func (s *AccountsService) CreateAccountEmail(accountID, emailID string, input *EmailInput) (*EmailInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/emails/%s", accountID, emailID)
 
@@ -736,7 +736,7 @@ func (s *AccountsService) CreateAccountEmail(accountID, emailID string, input *E
 //
 // If the email address was already the preferred email address of the account the response is “200 OK”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-preferred-email
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-preferred-email
 func (s *AccountsService) SetPreferredEmail(accountID, emailID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/emails/%s/preferred", accountID, emailID)
 
@@ -749,7 +749,7 @@ func (s *AccountsService) SetPreferredEmail(accountID, emailID string) (*Respons
 
 // GetAvatarChangeURL retrieves the URL where the user can change the avatar image.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-avatar-change-url
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#get-avatar-change-url
 func (s *AccountsService) GetAvatarChangeURL(accountID string) (string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/avatar.change.url", accountID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -761,7 +761,7 @@ func (s *AccountsService) GetAvatarChangeURL(accountID string) (string, *Respons
 //
 // As a response, the modified GPG keys are returned as a map of GpgKeyInfo entities, keyed by ID. Deleted keys are represented by an empty object.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#add-delete-gpg-keys
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#add-delete-gpg-keys
 func (s *AccountsService) AddGPGKeys(accountID string, input *GpgKeysInput) (*map[string]GpgKeyInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/gpgkeys", accountID)
 
@@ -784,7 +784,7 @@ func (s *AccountsService) AddGPGKeys(accountID string, input *GpgKeysInput) (*ma
 // If the user has the global capability the string ok is returned.
 // If the user doesn’t have the global capability the response is “404 Not Found”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#check-account-capability
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#check-account-capability
 func (s *AccountsService) CheckAccountCapability(accountID, capabilityID string) (string, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/capabilities/%s", accountID, capabilityID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -795,7 +795,7 @@ func (s *AccountsService) CheckAccountCapability(accountID, capabilityID string)
 //
 // As result the new preferences of the user are returned as a PreferencesInfo entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-user-preferences
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-user-preferences
 func (s *AccountsService) SetUserPreferences(accountID string, input *PreferencesInput) (*PreferencesInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/preferences", accountID)
 
@@ -818,7 +818,7 @@ func (s *AccountsService) SetUserPreferences(accountID string, input *Preference
 //
 // As result the new diff preferences of the user are returned as a DiffPreferencesInfo entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-diff-preferences
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#set-diff-preferences
 func (s *AccountsService) SetDiffPreferences(accountID string, input *DiffPreferencesInput) (*DiffPreferencesInfo, *Response, error) {
 	u := fmt.Sprintf("accounts/%s/preferences.diff", accountID)
 
@@ -839,7 +839,7 @@ func (s *AccountsService) SetDiffPreferences(accountID string, input *DiffPrefer
 // StarChange star a change.
 // Starred changes are returned for the search query is:starred or starredby:USER and automatically notify the user whenever updates are made to the change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#star-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#star-change
 func (s *AccountsService) StarChange(accountID, changeID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/starred.changes/%s", accountID, changeID)
 
@@ -854,7 +854,7 @@ func (s *AccountsService) StarChange(accountID, changeID string) (*Response, err
 // UnstarChange nstar a change.
 // Removes the starred flag, stopping notifications.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#unstar-change
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-accounts.html#unstar-change
 func (s *AccountsService) UnstarChange(accountID, changeID string) (*Response, error) {
 	u := fmt.Sprintf("accounts/%s/starred.changes/%s", accountID, changeID)
 	return s.client.DeleteRequest(u, nil)

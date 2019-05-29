@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package iterator provides support for standard Google API iterators.
-// See https://github.com/GoogleCloudPlatform/gcloud-golang/wiki/Iterator-Guidelines.
+// See http://github.com/GoogleCloudPlatform/gcloud-golang/wiki/Iterator-Guidelines.
 package iterator
 
 import (

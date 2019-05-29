@@ -92,7 +92,7 @@ var registeredCodecs = make(map[string]Codec)
 // is case-insensitive, and is stored and looked up as lowercase.  If the
 // result of calling Name() is an empty string, RegisterCodec will panic. See
 // Content-Type on
-// https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md#requests for
+// http://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md#requests for
 // more details.
 //
 // NOTE: this function must only be called during initialization time (i.e. in

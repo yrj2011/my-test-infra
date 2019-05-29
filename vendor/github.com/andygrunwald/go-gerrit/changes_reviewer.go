@@ -27,7 +27,7 @@ type AddReviewerResult struct {
 
 // DeleteVoteInput entity contains options for the deletion of a vote.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-vote-input
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-vote-input
 type DeleteVoteInput struct {
 	Label         string                `json:"label,omitempty"`
 	Notify        string                `json:"notify,omitempty"`
@@ -36,7 +36,7 @@ type DeleteVoteInput struct {
 
 // ListReviewers lists the reviewers of a change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-reviewers
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-reviewers
 func (s *ChangesService) ListReviewers(changeID string) (*[]ReviewerInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/reviewers/", changeID)
 
@@ -57,7 +57,7 @@ func (s *ChangesService) ListReviewers(changeID string) (*[]ReviewerInfo, *Respo
 // SuggestReviewers suggest the reviewers for a given query q and result limit n.
 // If result limit is not passed, then the default 10 is used.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#suggest-reviewers
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#suggest-reviewers
 func (s *ChangesService) SuggestReviewers(changeID string, opt *QueryOptions) (*[]SuggestedReviewerInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/suggest_reviewers", changeID)
 
@@ -82,7 +82,7 @@ func (s *ChangesService) SuggestReviewers(changeID string, opt *QueryOptions) (*
 
 // GetReviewer retrieves a reviewer of a change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-reviewer
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-reviewer
 func (s *ChangesService) GetReviewer(changeID, accountID string) (*ReviewerInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/reviewers/%s", changeID, accountID)
 
@@ -108,7 +108,7 @@ func (s *ChangesService) GetReviewer(changeID, accountID string) (*ReviewerInfo,
 // This means if an error is returned, none of the members are added as reviewer.
 // If a group with many members is added as reviewer a confirmation may be required.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#add-reviewer
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#add-reviewer
 func (s *ChangesService) AddReviewer(changeID string, input *ReviewerInput) (*AddReviewerResult, *Response, error) {
 	u := fmt.Sprintf("changes/%s/reviewers", changeID)
 
@@ -128,7 +128,7 @@ func (s *ChangesService) AddReviewer(changeID string, input *ReviewerInput) (*Ad
 
 // DeleteReviewer deletes a reviewer from a change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-reviewer
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-reviewer
 func (s *ChangesService) DeleteReviewer(changeID, accountID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/reviewers/%s", changeID, accountID)
 	return s.client.DeleteRequest(u, nil)
@@ -136,7 +136,7 @@ func (s *ChangesService) DeleteReviewer(changeID, accountID string) (*Response, 
 
 // ListVotes lists the votes for a specific reviewer of the change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-votes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-votes
 func (s *ChangesService) ListVotes(changeID string, accountID string) (map[string]int, *Response, error) {
 	u := fmt.Sprintf("changes/%s/reviewers/%s/votes/", changeID, accountID)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -156,7 +156,7 @@ func (s *ChangesService) ListVotes(changeID string, accountID string) (map[strin
 // last vote of a reviewer is removed the reviewer itself is still listed on
 // the change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-vote
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-vote
 func (s *ChangesService) DeleteVote(changeID string, accountID string, label string, input *DeleteVoteInput) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/reviewers/%s/votes/%s", changeID, accountID, label)
 	return s.client.DeleteRequest(u, input)

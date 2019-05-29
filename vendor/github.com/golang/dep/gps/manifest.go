@@ -17,7 +17,7 @@ import "github.com/golang/dep/gps/pkgtree"
 //
 // This does entail that manifests can express constraints on projects they do
 // not themselves import. This is by design, but its implications are complex.
-// See the gps docs for more information: https://github.com/sdboyer/gps/wiki
+// See the gps docs for more information: http://github.com/sdboyer/gps/wiki
 type Manifest interface {
 	// Returns a list of project-level constraints.
 	DependencyConstraints() ProjectConstraints

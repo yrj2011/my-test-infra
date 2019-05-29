@@ -74,7 +74,7 @@ func (ts *TaskSpec) Validate() *apis.FieldError {
 			return &apis.FieldError{
 				Message: fmt.Sprintf("invalid value %q", step.Name),
 				Paths:   []string{"taskspec.steps.name"},
-				Details: "Task step name must be a valid DNS Label, For more info refer to https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+				Details: "Task step name must be a valid DNS Label, For more info refer to http://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
 			}
 		}
 	}

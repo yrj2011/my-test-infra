@@ -135,7 +135,7 @@ type Config struct {
 	//
 	// 100-Continue is only enabled for Go 1.6 and above. See `http.Transport`'s
 	// `ExpectContinueTimeout` for information on adjusting the continue wait
-	// timeout. https://golang.org/pkg/net/http/#Transport
+	// timeout. http://golang.org/pkg/net/http/#Transport
 	//
 	// You should use this flag to disble 100-Continue if you experience issues
 	// with proxies or third party S3 compatible services.

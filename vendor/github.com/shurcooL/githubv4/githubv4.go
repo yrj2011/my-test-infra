@@ -19,7 +19,7 @@ type Client struct {
 // the provided http.Client is expected to take care of that.
 func NewClient(httpClient *http.Client) *Client {
 	return &Client{
-		client: graphql.NewClient("https://api.github.com/graphql", httpClient),
+		client: graphql.NewClient("http://api.github.com/graphql", httpClient),
 	}
 }
 

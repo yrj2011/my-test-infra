@@ -18,7 +18,7 @@ package v1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -29,7 +29,7 @@ package v1
 // AUTO-GENERATED FUNCTIONS START HERE. DO NOT EDIT.
 var map_StorageClass = map[string]string{
 	"":                     "StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.\n\nStorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.",
-	"metadata":             "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata":             "Standard object's metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"provisioner":          "Provisioner indicates the type of the provisioner.",
 	"parameters":           "Parameters holds the parameters for the provisioner that should create volumes of this storage class.",
 	"reclaimPolicy":        "Dynamically provisioned PersistentVolumes of this storage class are created with this reclaimPolicy. Defaults to Delete.",
@@ -45,7 +45,7 @@ func (StorageClass) SwaggerDoc() map[string]string {
 
 var map_StorageClassList = map[string]string{
 	"":         "StorageClassList is a collection of storage classes.",
-	"metadata": "Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard list metadata More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"items":    "Items is the list of StorageClasses",
 }
 

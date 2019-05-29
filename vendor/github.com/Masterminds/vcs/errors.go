@@ -40,7 +40,7 @@ import (
 //     }
 //
 // For more information on using type switches to detect error types you can
-// read the Go wiki at https://github.com/golang/go/wiki/Errors
+// read the Go wiki at http://github.com/golang/go/wiki/Errors
 
 var (
 	// ErrWrongVCS is returned when an action is tried on the wrong VCS.

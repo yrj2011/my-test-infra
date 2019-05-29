@@ -114,7 +114,7 @@ type CommitsListOptions struct {
 
 // ListCommits lists the commits of a repository.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/commits/#list
+// GitHub API docs: http://developer.github.com/v3/repos/commits/#list
 func (s *RepositoriesService) ListCommits(ctx context.Context, owner, repo string, opt *CommitsListOptions) ([]*RepositoryCommit, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/commits", owner, repo)
 	u, err := addOptions(u, opt)
@@ -137,10 +137,10 @@ func (s *RepositoriesService) ListCommits(ctx context.Context, owner, repo strin
 }
 
 // GetCommit fetches the specified commit, including all details about it.
-// todo: support media formats - https://github.com/google/go-github/issues/6
+// todo: support media formats - http://github.com/google/go-github/issues/6
 //
-// GitHub API docs: https://developer.github.com/v3/repos/commits/#get-a-single-commit
-// See also: https://developer.github.com//v3/git/commits/#get-a-single-commit provides the same functionality
+// GitHub API docs: http://developer.github.com/v3/repos/commits/#get-a-single-commit
+// See also: http://developer.github.com//v3/git/commits/#get-a-single-commit provides the same functionality
 func (s *RepositoriesService) GetCommit(ctx context.Context, owner, repo, sha string) (*RepositoryCommit, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/commits/%v", owner, repo, sha)
 
@@ -164,7 +164,7 @@ func (s *RepositoriesService) GetCommit(ctx context.Context, owner, repo, sha st
 // GetCommitSHA1 gets the SHA-1 of a commit reference. If a last-known SHA1 is
 // supplied and no new commits have occurred, a 304 Unmodified response is returned.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/commits/#get-the-sha-1-of-a-commit-reference
+// GitHub API docs: http://developer.github.com/v3/repos/commits/#get-the-sha-1-of-a-commit-reference
 func (s *RepositoriesService) GetCommitSHA1(ctx context.Context, owner, repo, ref, lastSHA string) (string, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/commits/%v", owner, repo, ref)
 
@@ -188,9 +188,9 @@ func (s *RepositoriesService) GetCommitSHA1(ctx context.Context, owner, repo, re
 }
 
 // CompareCommits compares a range of commits with each other.
-// todo: support media formats - https://github.com/google/go-github/issues/6
+// todo: support media formats - http://github.com/google/go-github/issues/6
 //
-// GitHub API docs: https://developer.github.com/v3/repos/commits/index.html#compare-two-commits
+// GitHub API docs: http://developer.github.com/v3/repos/commits/index.html#compare-two-commits
 func (s *RepositoriesService) CompareCommits(ctx context.Context, owner, repo string, base, head string) (*CommitsComparison, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/compare/%v...%v", owner, repo, base, head)
 

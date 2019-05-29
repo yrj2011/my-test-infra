@@ -26,7 +26,7 @@ import (
 
 const (
 	// DefaultBaseURI is the default URI used for the service Resources
-	DefaultBaseURI = "https://management.azure.com"
+	DefaultBaseURI = "http://management.azure.com"
 )
 
 // BaseClient is the base client for Resources.

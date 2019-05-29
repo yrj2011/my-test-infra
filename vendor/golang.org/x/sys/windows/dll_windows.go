@@ -315,7 +315,7 @@ var canDoSearchSystem32Once struct {
 }
 
 func initCanDoSearchSystem32() {
-	// https://msdn.microsoft.com/en-us/library/ms684179(v=vs.85).aspx says:
+	// http://msdn.microsoft.com/en-us/library/ms684179(v=vs.85).aspx says:
 	// "Windows 7, Windows Server 2008 R2, Windows Vista, and Windows
 	// Server 2008: The LOAD_LIBRARY_SEARCH_* flags are available on
 	// systems that have KB2533623 installed. To determine whether the
@@ -342,11 +342,11 @@ func isBaseName(name string) bool {
 
 // loadLibraryEx wraps the Windows LoadLibraryEx function.
 //
-// See https://msdn.microsoft.com/en-us/library/windows/desktop/ms684179(v=vs.85).aspx
+// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms684179(v=vs.85).aspx
 //
 // If name is not an absolute path, LoadLibraryEx searches for the DLL
 // in a variety of automatic locations unless constrained by flags.
-// See: https://msdn.microsoft.com/en-us/library/ff919712%28VS.85%29.aspx
+// See: http://msdn.microsoft.com/en-us/library/ff919712%28VS.85%29.aspx
 func loadLibraryEx(name string, system bool) (*DLL, error) {
 	loadDLL := name
 	var flags uintptr

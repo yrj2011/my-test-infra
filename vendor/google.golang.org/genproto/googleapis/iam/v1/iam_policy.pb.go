@@ -102,7 +102,7 @@ type TestIamPermissionsRequest struct {
 	// The set of permissions to check for the `resource`. Permissions with
 	// wildcards (such as '*' or 'storage.*') are not allowed. For more
 	// information see
-	// [IAM Overview](https://cloud.google.com/iam/docs/overview#permissions).
+	// [IAM Overview](http://cloud.google.com/iam/docs/overview#permissions).
 	Permissions []string `protobuf:"bytes,2,rep,name=permissions" json:"permissions,omitempty"`
 }
 

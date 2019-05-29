@@ -100,7 +100,7 @@ func (c *Client) do(ctx context.Context, op operationType, v interface{}, variab
 // errors represents the "errors" array in a response from a GraphQL server.
 // If returned via error interface, the slice is expected to contain at least 1 element.
 //
-// Specification: https://facebook.github.io/graphql/#sec-Errors.
+// Specification: http://facebook.github.io/graphql/#sec-Errors.
 type errors []struct {
 	Message   string
 	Locations []struct {

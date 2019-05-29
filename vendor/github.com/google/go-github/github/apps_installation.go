@@ -22,7 +22,7 @@ func (i Installation) String() string {
 
 // ListRepos lists the repositories that are accessible to the authenticated installation.
 //
-// GitHub API docs: https://developer.github.com/v3/apps/installations/#list-repositories
+// GitHub API docs: http://developer.github.com/v3/apps/installations/#list-repositories
 func (s *AppsService) ListRepos(ctx context.Context, opt *ListOptions) ([]*Repository, *Response, error) {
 	u, err := addOptions("installation/repositories", opt)
 	if err != nil {

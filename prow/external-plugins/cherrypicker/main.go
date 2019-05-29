@@ -126,7 +126,7 @@ func main() {
 		allowAll:        o.allowAll,
 
 		bare:     &http.Client{},
-		patchURL: "https://patch-diff.githubusercontent.com",
+		patchURL: "http://patch-diff.githubusercontent.com",
 
 		repos: repos,
 	}

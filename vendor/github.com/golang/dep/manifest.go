@@ -468,7 +468,7 @@ func fromRawPruneOptions(prunemap map[string]interface{}) gps.CascadingPruneOpti
 // toRawPruneOptions converts a gps.RootPruneOption's PruneOptions to rawPruneOptions
 //
 // Will panic if gps.RootPruneOption includes ProjectPruneOptions
-// See https://github.com/golang/dep/pull/1460#discussion_r158128740 for more information
+// See http://github.com/golang/dep/pull/1460#discussion_r158128740 for more information
 func toRawPruneOptions(co gps.CascadingPruneOptions) rawPruneOptions {
 	if len(co.PerProjectOptions) != 0 {
 		panic("toRawPruneOptions cannot convert ProjectOptions to rawPruneOptions")

@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// InternetGateways: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeInternetGateways
+// InternetGateways: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeInternetGateways
 
 type InternetGateways struct{}
 

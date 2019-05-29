@@ -82,17 +82,17 @@ func TestHandlePullRequest(t *testing.T) {
 			expectedStatus: github.StatusFailure,
 			addedComment: `/#3:Thanks for your pull request. Before we can look at it, you'll need to add a 'DCO signoff' to your commits.
 
-:memo: **Please follow instructions in the [contributing guide](https://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
+:memo: **Please follow instructions in the [contributing guide](http://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
 
 Full details of the Developer Certificate of Origin can be found at [developercertificate.org](http://developercertificate.org/).
 
 **The list of commits missing DCO signoff**:
 
-- [sha](https://github.com///commits/sha) not a sign off
+- [sha](http://github.com///commits/sha) not a sign off
 
 <details>
 
-Instructions for interacting with me using PR comments are available [here](https://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](https://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](https://go.k8s.io/bot-commands).
+Instructions for interacting with me using PR comments are available [here](http://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](http://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](http://go.k8s.io/bot-commands).
 </details>
 `,
 		},
@@ -114,17 +114,17 @@ Instructions for interacting with me using PR comments are available [here](http
 			expectedStatus: github.StatusFailure,
 			addedComment: `/#3:Thanks for your pull request. Before we can look at it, you'll need to add a 'DCO signoff' to your commits.
 
-:memo: **Please follow instructions in the [contributing guide](https://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
+:memo: **Please follow instructions in the [contributing guide](http://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
 
 Full details of the Developer Certificate of Origin can be found at [developercertificate.org](http://developercertificate.org/).
 
 **The list of commits missing DCO signoff**:
 
-- [sha](https://github.com///commits/sha) not a sign off
+- [sha](http://github.com///commits/sha) not a sign off
 
 <details>
 
-Instructions for interacting with me using PR comments are available [here](https://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](https://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](https://go.k8s.io/bot-commands).
+Instructions for interacting with me using PR comments are available [here](http://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](http://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](http://go.k8s.io/bot-commands).
 </details>
 `,
 		},
@@ -145,17 +145,17 @@ Instructions for interacting with me using PR comments are available [here](http
 			expectedStatus: github.StatusFailure,
 			addedComment: `/#3:Thanks for your pull request. Before we can look at it, you'll need to add a 'DCO signoff' to your commits.
 
-:memo: **Please follow instructions in the [contributing guide](https://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
+:memo: **Please follow instructions in the [contributing guide](http://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
 
 Full details of the Developer Certificate of Origin can be found at [developercertificate.org](http://developercertificate.org/).
 
 **The list of commits missing DCO signoff**:
 
-- [sha](https://github.com///commits/sha) not a sign off
+- [sha](http://github.com///commits/sha) not a sign off
 
 <details>
 
-Instructions for interacting with me using PR comments are available [here](https://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](https://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](https://go.k8s.io/bot-commands).
+Instructions for interacting with me using PR comments are available [here](http://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](http://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](http://go.k8s.io/bot-commands).
 </details>
 `,
 		},
@@ -178,17 +178,17 @@ Instructions for interacting with me using PR comments are available [here](http
 			expectedStatus: github.StatusFailure,
 			addedComment: `/#3:Thanks for your pull request. Before we can look at it, you'll need to add a 'DCO signoff' to your commits.
 
-:memo: **Please follow instructions in the [contributing guide](https://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
+:memo: **Please follow instructions in the [contributing guide](http://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
 
 Full details of the Developer Certificate of Origin can be found at [developercertificate.org](http://developercertificate.org/).
 
 **The list of commits missing DCO signoff**:
 
-- [sha](https://github.com///commits/sha) not signed off
+- [sha](http://github.com///commits/sha) not signed off
 
 <details>
 
-Instructions for interacting with me using PR comments are available [here](https://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](https://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](https://go.k8s.io/bot-commands).
+Instructions for interacting with me using PR comments are available [here](http://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](http://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](http://go.k8s.io/bot-commands).
 </details>
 `,
 		},
@@ -367,17 +367,17 @@ func TestHandleComment(t *testing.T) {
 			expectedStatus: github.StatusFailure,
 			addedComment: `/#3:Thanks for your pull request. Before we can look at it, you'll need to add a 'DCO signoff' to your commits.
 
-:memo: **Please follow instructions in the [contributing guide](https://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
+:memo: **Please follow instructions in the [contributing guide](http://github.com///blob/master/CONTRIBUTING.md) to update your commits with the DCO**
 
-Full details of the Developer Certificate of Origin can be found at [developercertificate.org](https://developercertificate.org/).
+Full details of the Developer Certificate of Origin can be found at [developercertificate.org](http://developercertificate.org/).
 
 **The list of commits missing DCO signoff**:
 
-- [sha](https://github.com///commits/sha) not a sign off
+- [sha](http://github.com///commits/sha) not a sign off
 
 <details>
 
-Instructions for interacting with me using PR comments are available [here](https://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](https://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](https://go.k8s.io/bot-commands).
+Instructions for interacting with me using PR comments are available [here](http://git.k8s.io/community/contributors/guide/pull-requests.md).  If you have questions or suggestions related to my behavior, please file an issue against the [kubernetes/test-infra](http://github.com/kubernetes/test-infra/issues/new?title=Prow%20issue:) repository. I understand the commands that are listed [here](http://go.k8s.io/bot-commands).
 </details>
 `,
 		},

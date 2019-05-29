@@ -41,7 +41,7 @@ type Finished struct {
 	JobVersion string `json:"job-version"`
 	// Revision identifies the revision of the code the build tested.
 	// Revision can be either a SHA or a ref.
-	// TODO: resolve https://github.com/kubernetes/test-infra/issues/10359
+	// TODO: resolve http://github.com/kubernetes/test-infra/issues/10359
 	Revision string `json:"revision,omitempty"`
 	// Passed is true when the job has passed, else false.
 	Passed bool `json:"passed"`

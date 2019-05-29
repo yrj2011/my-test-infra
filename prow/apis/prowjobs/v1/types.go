@@ -143,12 +143,12 @@ type ProwJobSpec struct {
 
 	// BuildSpec provides the basis for running the test as
 	// a build-crd resource
-	// https://github.com/knative/build
+	// http://github.com/knative/build
 	BuildSpec *buildv1alpha1.BuildSpec `json:"build_spec,omitempty"`
 
 	// PipelineRunSpec provides the basis for running the test as
 	// a build-pipeline-crd resource
-	// https://github.com/knative/build-pipeline
+	// http://github.com/knative/build-pipeline
 	PipelineRunSpec *pipelinev1alpha1.PipelineRunSpec `json:"pipeline_run_spec,omitempty"`
 
 	// DecorationConfig holds configuration options for
@@ -469,7 +469,7 @@ type Refs struct {
 	PathAlias string `json:"path_alias,omitempty"`
 	// CloneURI is the URI that is used to clone the
 	// repository. If unset, will default to
-	// `https://github.com/org/repo.git`.
+	// `http://github.com/org/repo.git`.
 	CloneURI string `json:"clone_uri,omitempty"`
 	// SkipSubmodules determines if submodules should be
 	// cloned when the job is run. Defaults to true.

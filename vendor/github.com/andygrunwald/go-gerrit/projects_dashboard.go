@@ -34,7 +34,7 @@ type DashboardInfo struct {
 
 // ListDashboards list custom dashboards for a project.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-dashboards
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-dashboards
 func (s *ProjectsService) ListDashboards(projectName string) (*[]DashboardInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/dashboards/", url.QueryEscape(projectName))
 
@@ -54,7 +54,7 @@ func (s *ProjectsService) ListDashboards(projectName string) (*[]DashboardInfo, 
 
 // GetDashboard list custom dashboards for a project.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-dashboard
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-dashboard
 func (s *ProjectsService) GetDashboard(projectName, dashboardName string) (*DashboardInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/dashboards/%s", url.QueryEscape(projectName), url.QueryEscape(dashboardName))
 
@@ -77,7 +77,7 @@ func (s *ProjectsService) GetDashboard(projectName, dashboardName string) (*Dash
 //
 // The creation/update information for the dashboard must be provided in the request body as a DashboardInput entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#set-dashboard
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#set-dashboard
 func (s *ProjectsService) SetDashboard(projectName, dashboardID string, input *DashboardInput) (*DashboardInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/dashboards/%s", url.QueryEscape(projectName), url.QueryEscape(dashboardID))
 
@@ -101,7 +101,7 @@ func (s *ProjectsService) SetDashboard(projectName, dashboardID string, input *D
 // The request body does not need to include a DashboardInput entity if no commit message is specified.
 // Please note that some proxies prohibit request bodies for DELETE requests.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#delete-dashboard
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#delete-dashboard
 func (s *ProjectsService) DeleteDashboard(projectName, dashboardID string, input *DashboardInput) (*Response, error) {
 	u := fmt.Sprintf("projects/%s/dashboards/%s", url.QueryEscape(projectName), url.QueryEscape(dashboardID))
 	return s.client.DeleteRequest(u, input)

@@ -64,7 +64,7 @@ func TestParseRepos(t *testing.T) {
 		{
 			Name: "expect-to-fail (invalid repo)",
 			Repos: []string{
-				"k8s.io/kubernetes=master:42e2ca8c18c93ba25eb0e5bd02ecba2eaa05e871,52057:b4f63https://github.com/googlecartographer/point_cloud_viewer9f57ae0a89cdf1b43d1810b617c76f4b1b3",
+				"k8s.io/kubernetes=master:42e2ca8c18c93ba25eb0e5bd02ecba2eaa05e871,52057:b4f63http://github.com/googlecartographer/point_cloud_viewer9f57ae0a89cdf1b43d1810b617c76f4b1b3",
 				"k8s.io/release",
 				"foobar=,=",
 			},
@@ -106,7 +106,7 @@ func TestRepoGitBasePath(t *testing.T) {
 				Pull:   "",
 			},
 			SSH:      false,
-			Expected: "https://github.com/kubernetes/kubernetes",
+			Expected: "http://github.com/kubernetes/kubernetes",
 		},
 		{
 			Name: "k8s.io,ssh",
@@ -126,7 +126,7 @@ func TestRepoGitBasePath(t *testing.T) {
 				Pull:   "",
 			},
 			SSH:      false,
-			Expected: "https://github.com/kubernetes/test-infra",
+			Expected: "http://github.com/kubernetes/test-infra",
 		},
 		{
 			Name: "kubernetes/test-infra,ssh",

@@ -124,10 +124,10 @@ func (g *Importer) convert(pr gps.ProjectRoot) (*dep.Manifest, *dep.Lock) {
 		// 2. build tags - any string without a slash (/) in it
 		// 3. path and path prefix - any string with a slash (/) in it.
 		//   The path case could be a full path or just a prefix.
-		// Dep doesn't support build tags right now: https://github.com/golang/dep/issues/120
+		// Dep doesn't support build tags right now: http://github.com/golang/dep/issues/120
 		for _, i := range strings.Split(g.file.Ignore, " ") {
 			if !strings.Contains(i, "/") {
-				g.Logger.Printf("  Govendor was configured to ignore the %s build tag, but that isn't supported by dep yet, and will be ignored. See https://github.com/golang/dep/issues/291.", i)
+				g.Logger.Printf("  Govendor was configured to ignore the %s build tag, but that isn't supported by dep yet, and will be ignored. See http://github.com/golang/dep/issues/291.", i)
 				continue
 			}
 

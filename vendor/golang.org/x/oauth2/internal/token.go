@@ -91,39 +91,39 @@ func (e *expirationTime) UnmarshalJSON(b []byte) error {
 }
 
 var brokenAuthHeaderProviders = []string{
-	"https://accounts.google.com/",
-	"https://api.codeswholesale.com/oauth/token",
-	"https://api.dropbox.com/",
-	"https://api.dropboxapi.com/",
-	"https://api.instagram.com/",
-	"https://api.netatmo.net/",
-	"https://api.odnoklassniki.ru/",
-	"https://api.pushbullet.com/",
-	"https://api.soundcloud.com/",
-	"https://api.twitch.tv/",
-	"https://app.box.com/",
-	"https://connect.stripe.com/",
-	"https://graph.facebook.com", // see https://github.com/golang/oauth2/issues/214
-	"https://login.microsoftonline.com/",
-	"https://login.salesforce.com/",
-	"https://login.windows.net",
-	"https://login.live.com/",
-	"https://oauth.sandbox.trainingpeaks.com/",
-	"https://oauth.trainingpeaks.com/",
-	"https://oauth.vk.com/",
-	"https://openapi.baidu.com/",
-	"https://slack.com/",
-	"https://test-sandbox.auth.corp.google.com",
-	"https://test.salesforce.com/",
-	"https://user.gini.net/",
-	"https://www.douban.com/",
-	"https://www.googleapis.com/",
-	"https://www.linkedin.com/",
-	"https://www.strava.com/oauth/",
-	"https://www.wunderlist.com/oauth/",
-	"https://api.patreon.com/",
-	"https://sandbox.codeswholesale.com/oauth/token",
-	"https://api.sipgate.com/v1/authorization/oauth",
+	"http://accounts.google.com/",
+	"http://api.codeswholesale.com/oauth/token",
+	"http://api.dropbox.com/",
+	"http://api.dropboxapi.com/",
+	"http://api.instagram.com/",
+	"http://api.netatmo.net/",
+	"http://api.odnoklassniki.ru/",
+	"http://api.pushbullet.com/",
+	"http://api.soundcloud.com/",
+	"http://api.twitch.tv/",
+	"http://app.box.com/",
+	"http://connect.stripe.com/",
+	"http://graph.facebook.com", // see http://github.com/golang/oauth2/issues/214
+	"http://login.microsoftonline.com/",
+	"http://login.salesforce.com/",
+	"http://login.windows.net",
+	"http://login.live.com/",
+	"http://oauth.sandbox.trainingpeaks.com/",
+	"http://oauth.trainingpeaks.com/",
+	"http://oauth.vk.com/",
+	"http://openapi.baidu.com/",
+	"http://slack.com/",
+	"http://test-sandbox.auth.corp.google.com",
+	"http://test.salesforce.com/",
+	"http://user.gini.net/",
+	"http://www.douban.com/",
+	"http://www.googleapis.com/",
+	"http://www.linkedin.com/",
+	"http://www.strava.com/oauth/",
+	"http://www.wunderlist.com/oauth/",
+	"http://api.patreon.com/",
+	"http://sandbox.codeswholesale.com/oauth/token",
+	"http://api.sipgate.com/v1/authorization/oauth",
 }
 
 // brokenAuthHeaderDomains lists broken providers that issue dynamic endpoints.
@@ -141,7 +141,7 @@ func RegisterBrokenAuthHeaderProvider(tokenURL string) {
 
 // providerAuthHeaderWorks reports whether the OAuth2 server identified by the tokenURL
 // implements the OAuth2 spec correctly
-// See https://code.google.com/p/goauth2/issues/detail?id=31 for background.
+// See http://code.google.com/p/goauth2/issues/detail?id=31 for background.
 // In summary:
 // - Reddit only accepts client secret in the Authorization header
 // - Dropbox accepts either it in URL param or Auth header, but not both.

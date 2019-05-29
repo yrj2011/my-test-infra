@@ -10,7 +10,7 @@ import (
 
 // PatchSet contains detailed information about a specific patch set.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/json.html#patchSet
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/json.html#patchSet
 type PatchSet struct {
 	Number    Number      `json:"number"`
 	Revision  string      `json:"revision"`
@@ -25,7 +25,7 @@ type PatchSet struct {
 
 // RefUpdate contains data about a reference update.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/json.html#refUpdate
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/json.html#refUpdate
 type RefUpdate struct {
 	OldRev  string `json:"oldRev"`
 	NewRev  string `json:"newRev"`
@@ -37,7 +37,7 @@ type RefUpdate struct {
 // structure can be used either when parsing streamed events or when reading
 // the output of the events-log plugin.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/cmd-stream-events.html#events
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/cmd-stream-events.html#events
 type EventInfo struct {
 	Type           string        `json:"type"`
 	Change         ChangeInfo    `json:"change,omitempty"`
@@ -119,7 +119,7 @@ func (events *EventsLogService) getURL(options *EventsLogOptions) (string, error
 // with the Gerrit version which in turn produced events which can't be transformed
 // unmarshalled into EventInfo.
 //
-// Gerrit API docs: https://<yourserver>/plugins/events-log/Documentation/rest-api-events.html
+// Gerrit API docs: http://<yourserver>/plugins/events-log/Documentation/rest-api-events.html
 func (events *EventsLogService) GetEvents(options *EventsLogOptions) ([]EventInfo, *Response, [][]byte, error) {
 	info := []EventInfo{}
 	failures := [][]byte{}

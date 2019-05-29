@@ -546,7 +546,7 @@ func (sa *SockaddrRFCOMM) sockaddr() (unsafe.Pointer, _Socklen, error) {
 //      Read(fd, frame)
 //
 // The full SocketCAN documentation can be found in the linux kernel
-// archives at: https://www.kernel.org/doc/Documentation/networking/can.txt
+// archives at: http://www.kernel.org/doc/Documentation/networking/can.txt
 type SockaddrCAN struct {
 	Ifindex int
 	RxID    uint32
@@ -1424,7 +1424,7 @@ func Faccessat(dirfd int, path string, mode uint32, flags int) (err error) {
 
 	// The Linux kernel faccessat system call does not take any flags.
 	// The glibc faccessat implements the flags itself; see
-	// https://sourceware.org/git/?p=glibc.git;a=blob;f=sysdeps/unix/sysv/linux/faccessat.c;hb=HEAD
+	// http://sourceware.org/git/?p=glibc.git;a=blob;f=sysdeps/unix/sysv/linux/faccessat.c;hb=HEAD
 	// Because people naturally expect syscall.Faccessat to act
 	// like C faccessat, we do the same.
 

@@ -116,7 +116,7 @@ type ClientConn interface {
 }
 
 // Target represents a target for gRPC, as specified in:
-// https://github.com/grpc/grpc/blob/master/doc/naming.md.
+// http://github.com/grpc/grpc/blob/master/doc/naming.md.
 type Target struct {
 	Scheme    string
 	Authority string
@@ -131,7 +131,7 @@ type Builder interface {
 	// not nil.
 	Build(target Target, cc ClientConn, opts BuildOption) (Resolver, error)
 	// Scheme returns the scheme supported by this resolver.
-	// Scheme is defined at https://github.com/grpc/grpc/blob/master/doc/naming.md.
+	// Scheme is defined at http://github.com/grpc/grpc/blob/master/doc/naming.md.
 	Scheme() string
 }
 

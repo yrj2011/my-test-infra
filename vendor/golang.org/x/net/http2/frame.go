@@ -612,7 +612,7 @@ func parseDataFrame(fc *frameCache, fh FrameHeader, payload []byte) (Frame, erro
 		// If the length of the padding is greater than the
 		// length of the frame payload, the recipient MUST
 		// treat this as a connection error.
-		// Filed: https://github.com/http2/http2-spec/issues/610
+		// Filed: http://github.com/http2/http2-spec/issues/610
 		return nil, connError{ErrCodeProtocol, "pad size larger than data payload"}
 	}
 	f.data = payload[:len(payload)-int(padSize)]

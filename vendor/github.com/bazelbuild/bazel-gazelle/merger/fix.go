@@ -177,7 +177,7 @@ func CheckGazelleLoaded(f *rule.File) error {
 	}
 	return fmt.Errorf(`%s: error: bazel_gazelle is not declared in WORKSPACE.
 Without this repository, Gazelle cannot safely modify the WORKSPACE file.
-See the instructions at https://github.com/bazelbuild/bazel-gazelle.
+See the instructions at http://github.com/bazelbuild/bazel-gazelle.
 If the bazel_gazelle is declared inside a macro, you can suppress this error
 by adding a comment like this to WORKSPACE:
     # gazelle:repo bazel_gazelle

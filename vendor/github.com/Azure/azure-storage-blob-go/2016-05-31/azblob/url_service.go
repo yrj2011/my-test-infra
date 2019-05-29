@@ -105,7 +105,7 @@ func (s ServiceURL) NewRootContainerURL() ContainerURL {
 
 // appendToURLPath appends a string to the end of a URL's path (prefixing the string with a '/' if required)
 func appendToURLPath(u url.URL, name string) url.URL {
-	// e.g. "https://ms.com/a/b/?k1=v1&k2=v2#f"
+	// e.g. "http://ms.com/a/b/?k1=v1&k2=v2#f"
 	// When you call url.Parse() this is what you'll get:
 	//     Scheme: "https"
 	//     Opaque: ""
@@ -127,7 +127,7 @@ func appendToURLPath(u url.URL, name string) url.URL {
 // Marker to start enumeration from the beginning. Container names are returned in lexicographic order.
 // After getting a segment, process it, and then call ListContainers again (passing the the previously-returned
 // Marker) to get the next segment. For more information, see
-// https://docs.microsoft.com/rest/api/storageservices/list-containers2.
+// http://docs.microsoft.com/rest/api/storageservices/list-containers2.
 func (s ServiceURL) ListContainers(ctx context.Context, marker Marker, o ListContainersOptions) (*ListContainersResponse, error) {
 	prefix, include, maxResults := o.pointers()
 	return s.client.ListContainers(ctx, prefix, marker.val, maxResults, include, nil, nil)

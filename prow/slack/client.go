@@ -43,7 +43,7 @@ type Client struct {
 }
 
 const (
-	chatPostMessage = "https://slack.com/api/chat.postMessage"
+	chatPostMessage = "http://slack.com/api/chat.postMessage"
 
 	botName      = "prow"
 	botIconEmoji = ":prow:"

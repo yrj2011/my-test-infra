@@ -113,7 +113,7 @@ type PushConfig struct {
 	// A URL locating the endpoint to which messages should be pushed.
 	Endpoint string
 
-	// Endpoint configuration attributes. See https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions#pushconfig for more details.
+	// Endpoint configuration attributes. See http://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions#pushconfig for more details.
 	Attributes map[string]string
 }
 
@@ -201,7 +201,7 @@ type ReceiveSettings struct {
 	//
 	// Connections may be terminated if they last longer than 30m, which
 	// effectively makes that the ceiling for this value. For longer message
-	// processing, see the example at https://godoc.org/cloud.google.com/go/pubsub/apiv1#example_SubscriberClient_Pull_lengthyClientProcessing
+	// processing, see the example at http://godoc.org/cloud.google.com/go/pubsub/apiv1#example_SubscriberClient_Pull_lengthyClientProcessing
 	MaxExtension time.Duration
 
 	// MaxOutstandingMessages is the maximum number of unprocessed messages

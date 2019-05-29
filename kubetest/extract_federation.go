@@ -242,15 +242,15 @@ func (e extractFederationStrategy) Extract(project, zone string) error {
 		var url string
 		release := e.option
 		if strings.Contains(release, "+") {
-			url = "https://storage.googleapis.com/kubernetes-federation-dev/ci"
+			url = "http://storage.googleapis.com/kubernetes-federation-dev/ci"
 		} else {
-			url = "https://storage.googleapis.com/kubernetes-federation-release/release"
+			url = "http://storage.googleapis.com/kubernetes-federation-release/release"
 		}
 		return getFederation(url, release)
 	case gcs:
 		// strip gs://foo -> /foo
 		withoutGS := strings.TrimPrefix(e.option, "gs://")
-		url := "https://storage.googleapis.com" + path.Dir(withoutGS)
+		url := "http://storage.googleapis.com" + path.Dir(withoutGS)
 		return getFederation(url, path.Base(withoutGS))
 	case bazel:
 		return getFederation("", e.option)

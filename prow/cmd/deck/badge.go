@@ -55,7 +55,7 @@ var svgTemplate = template.Must(template.New("svg").Parse(svg))
 func makeShield(subject, status, color string) []byte {
 	// TODO(rmmh): Use better font-size metrics for prettier badges-- estimating
 	// character widths as 6px isn't very accurate.
-	// See also: https://github.com/badges/shields/blob/master/measure-text.js
+	// See also: http://github.com/badges/shields/blob/master/measure-text.js
 	p := struct {
 		Width, RightStart, RightWidth int
 		XposLeft, XposRight           float64

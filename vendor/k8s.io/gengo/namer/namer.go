@@ -29,8 +29,8 @@ const (
 	// only universally-accepted path delimiter and the only delimiter not
 	// potentially forbidden by Go compilers. (In particular gc does not allow
 	// the use of backslashes in import paths.)
-	// See https://golang.org/ref/spec#Import_declarations.
-	// See also https://github.com/kubernetes/gengo/issues/83#issuecomment-367040772.
+	// See http://golang.org/ref/spec#Import_declarations.
+	// See also http://github.com/kubernetes/gengo/issues/83#issuecomment-367040772.
 	GoSeperator = "/"
 )
 

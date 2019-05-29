@@ -40,7 +40,7 @@ type Configuration struct {
 	// Plugins is a map of repositories (eg "k/k") to lists of
 	// plugin names.
 	// TODO: Link to the list of supported plugins.
-	// https://github.com/kubernetes/test-infra/issues/3476
+	// http://github.com/kubernetes/test-infra/issues/3476
 	Plugins map[string][]string `json:"plugins,omitempty"`
 
 	// ExternalPlugins is a map of repositories (eg "k/k") to lists of
@@ -361,7 +361,7 @@ type Milestone struct {
 	// ID of the github team for the milestone maintainers (used for setting status labels)
 	// You can curl the following endpoint in order to determine the github ID of your team
 	// responsible for maintaining the milestones:
-	// curl -H "Authorization: token <token>" https://api.github.com/orgs/<org-name>/teams
+	// curl -H "Authorization: token <token>" http://api.github.com/orgs/<org-name>/teams
 	MaintainersID   int    `json:"maintainers_id,omitempty"`
 	MaintainersTeam string `json:"maintainers_team,omitempty"`
 }
@@ -660,7 +660,7 @@ func (c *Configuration) setDefaults() {
 		if trigger.TrustedOrg == "" || trigger.JoinOrgURL != "" {
 			continue
 		}
-		c.Triggers[i].JoinOrgURL = fmt.Sprintf("https://github.com/orgs/%s/people", trigger.TrustedOrg)
+		c.Triggers[i].JoinOrgURL = fmt.Sprintf("http://github.com/orgs/%s/people", trigger.TrustedOrg)
 	}
 	if c.SigMention.Regexp == "" {
 		c.SigMention.Regexp = `(?m)@kubernetes/sig-([\w-]*)-(misc|test-failures|bugs|feature-requests|proposals|pr-reviews|api-reviews)`
@@ -676,7 +676,7 @@ func (c *Configuration) setDefaults() {
 
 To approve the cherry-pick, please assign the patch release manager for the release branch by writing ` + "`/assign @username`" + ` in a comment when ready.
 
-The list of patch release managers for each release can be found [here](https://git.k8s.io/sig-release/release-managers.md).`
+The list of patch release managers for each release can be found [here](http://git.k8s.io/sig-release/release-managers.md).`
 	}
 
 	for i, rml := range c.RequireMatchingLabel {

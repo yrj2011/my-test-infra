@@ -48,7 +48,7 @@ const (
 )
 
 // Exponential implements exponential backoff algorithm as defined in
-// https://github.com/grpc/grpc/blob/master/doc/connection-backoff.md.
+// http://github.com/grpc/grpc/blob/master/doc/connection-backoff.md.
 type Exponential struct {
 	// MaxDelay is the upper bound of backoff delay.
 	MaxDelay time.Duration

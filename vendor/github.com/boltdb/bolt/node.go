@@ -229,7 +229,7 @@ func (n *node) write(p *page) {
 		// If the length of key+value is larger than the max allocation size
 		// then we need to reallocate the byte array pointer.
 		//
-		// See: https://github.com/boltdb/bolt/pull/335
+		// See: http://github.com/boltdb/bolt/pull/335
 		klen, vlen := len(item.key), len(item.value)
 		if len(b) < klen+vlen {
 			b = (*[maxAllocSize]byte)(unsafe.Pointer(&b[0]))[:]

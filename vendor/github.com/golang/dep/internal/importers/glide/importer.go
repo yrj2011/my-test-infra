@@ -161,10 +161,10 @@ func (g *Importer) convert(pr gps.ProjectRoot) (*dep.Manifest, *dep.Lock) {
 		// Warn
 		if g.Verbose {
 			if pkg.OS != "" {
-				g.Logger.Printf("  The %s package specified an os, but that isn't supported by dep yet, and will be ignored. See https://github.com/golang/dep/issues/291.\n", pkg.Name)
+				g.Logger.Printf("  The %s package specified an os, but that isn't supported by dep yet, and will be ignored. See http://github.com/golang/dep/issues/291.\n", pkg.Name)
 			}
 			if pkg.Arch != "" {
-				g.Logger.Printf("  The %s package specified an arch, but that isn't supported by dep yet, and will be ignored. See https://github.com/golang/dep/issues/291.\n", pkg.Name)
+				g.Logger.Printf("  The %s package specified an arch, but that isn't supported by dep yet, and will be ignored. See http://github.com/golang/dep/issues/291.\n", pkg.Name)
 			}
 		}
 

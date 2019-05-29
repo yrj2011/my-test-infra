@@ -84,7 +84,7 @@ func migrateEKSOptions() error {
 
 // eksDeployer implements EKS deployer interface using "aws-k8s-tester" binary.
 // Satisfies "k8s.io/test-infra/kubetest/main.go" 'deployer' and 'publisher" interfaces.
-// Reference https://github.com/kubernetes/test-infra/blob/master/kubetest/main.go.
+// Reference http://github.com/kubernetes/test-infra/blob/master/kubetest/main.go.
 type eksDeployer struct {
 	stopc chan struct{}
 	cfg   *eksconfig.Config
@@ -232,7 +232,7 @@ func (dp *eksDeployer) GetWorkerNodeLogs() (err error) {
 
 // DumpClusterLogs dumps all logs to artifact directory.
 // Let default kubetest log dumper handle all artifact uploads.
-// See https://github.com/kubernetes/test-infra/pull/9811/files#r225776067.
+// See http://github.com/kubernetes/test-infra/pull/9811/files#r225776067.
 func (dp *eksDeployer) DumpClusterLogs(artifactDir, _ string) (err error) {
 	// reload configuration from disk to read the latest configuration
 	if _, err = dp.LoadConfig(); err != nil {
@@ -283,7 +283,7 @@ func (dp *eksDeployer) LoadConfig() (eksconfig.Config, error) {
 }
 
 func getLatestAWSK8sTesterURL() (string, error) {
-	resp, err := http.Get("https://github.com/aws/aws-k8s-tester/releases/latest")
+	resp, err := http.Get("http://github.com/aws/aws-k8s-tester/releases/latest")
 	if err != nil {
 		return "", err
 	}
@@ -292,7 +292,7 @@ func getLatestAWSK8sTesterURL() (string, error) {
 	if basepath == "" {
 		return "", fmt.Errorf("Couldn't extract version from redirect URL")
 	}
-	return fmt.Sprintf("https://github.com/aws/aws-k8s-tester/releases/download/%s/aws-k8s-tester-%s-linux-amd64", version, version), nil
+	return fmt.Sprintf("http://github.com/aws/aws-k8s-tester/releases/download/%s/aws-k8s-tester-%s-linux-amd64", version, version), nil
 }
 
 func (dp *eksDeployer) fetchAWSK8sTester() error {

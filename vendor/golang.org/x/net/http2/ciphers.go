@@ -5,7 +5,7 @@
 package http2
 
 // A list of the possible cipher suite ids. Taken from
-// https://www.iana.org/assignments/tls-parameters/tls-parameters.txt
+// http://www.iana.org/assignments/tls-parameters/tls-parameters.txt
 
 const (
 	cipher_TLS_NULL_WITH_NULL_NULL               uint16 = 0x0000
@@ -351,7 +351,7 @@ const (
 
 // isBadCipher reports whether the cipher is blacklisted by the HTTP/2 spec.
 // References:
-// https://tools.ietf.org/html/rfc7540#appendix-A
+// http://tools.ietf.org/html/rfc7540#appendix-A
 // Reject cipher suites from Appendix A.
 // "This list includes those cipher suites that do not
 // offer an ephemeral key exchange and those that are

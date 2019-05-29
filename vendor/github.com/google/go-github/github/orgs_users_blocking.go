@@ -12,7 +12,7 @@ import (
 
 // ListBlockedUsers lists all the users blocked by an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/blocking/#list-blocked-users
+// GitHub API docs: http://developer.github.com/v3/orgs/blocking/#list-blocked-users
 func (s *OrganizationsService) ListBlockedUsers(ctx context.Context, org string, opt *ListOptions) ([]*User, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/blocks", org)
 	u, err := addOptions(u, opt)
@@ -39,7 +39,7 @@ func (s *OrganizationsService) ListBlockedUsers(ctx context.Context, org string,
 
 // IsBlocked reports whether specified user is blocked from an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/blocking/#check-whether-a-user-is-blocked-from-an-organization
+// GitHub API docs: http://developer.github.com/v3/orgs/blocking/#check-whether-a-user-is-blocked-from-an-organization
 func (s *OrganizationsService) IsBlocked(ctx context.Context, org string, user string) (bool, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/blocks/%v", org, user)
 
@@ -58,7 +58,7 @@ func (s *OrganizationsService) IsBlocked(ctx context.Context, org string, user s
 
 // BlockUser blocks specified user from an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/blocking/#block-a-user
+// GitHub API docs: http://developer.github.com/v3/orgs/blocking/#block-a-user
 func (s *OrganizationsService) BlockUser(ctx context.Context, org string, user string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/blocks/%v", org, user)
 
@@ -75,7 +75,7 @@ func (s *OrganizationsService) BlockUser(ctx context.Context, org string, user s
 
 // UnblockUser unblocks specified user from an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/blocking/#unblock-a-user
+// GitHub API docs: http://developer.github.com/v3/orgs/blocking/#unblock-a-user
 func (s *OrganizationsService) UnblockUser(ctx context.Context, org string, user string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/blocks/%v", org, user)
 

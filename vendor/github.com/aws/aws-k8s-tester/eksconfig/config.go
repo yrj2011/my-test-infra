@@ -120,7 +120,7 @@ type Config struct {
 	// MAKE SURE PRIVATE KEY NEVER GETS UPLOADED TO CLOUD STORAGE AND DLETE AFTER USE!!!
 	WorkerNodePrivateKeyPath string `json:"worker-node-private-key-path,omitempty"`
 	// WorkerNodeAMI is the Amazon EKS worker node AMI ID for the specified Region.
-	// Reference https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html.
+	// Reference http://docs.aws.amazon.com/eks/latest/userguide/getting-started.html.
 	WorkerNodeAMI string `json:"worker-node-ami,omitempty"`
 	// WorkerNodeInstanceType is the EC2 instance type for worker nodes.
 	WorkerNodeInstanceType string `json:"worker-node-instance-type,omitempty"`
@@ -144,7 +144,7 @@ type Config struct {
 	// LogOutputs is a list of log outputs. Valid values are 'default', 'stderr', 'stdout', or file names.
 	// Logs are appended to the existing file, if any.
 	// Multiple values are accepted. If empty, it sets to 'default', which outputs to stderr.
-	// See https://godoc.org/go.uber.org/zap#Open and https://godoc.org/go.uber.org/zap#Config for more details.
+	// See http://godoc.org/go.uber.org/zap#Open and http://godoc.org/go.uber.org/zap#Config for more details.
 	LogOutputs []string `json:"log-outputs,omitempty"`
 	// LogOutputToUploadPath is the aws-k8s-tester log file path to upload to cloud storage.
 	// Must be left empty.
@@ -155,8 +155,8 @@ type Config struct {
 
 	// LogAccess is true to enable AWS API access logs (e.g. ALB access logs).
 	// Automatically uploaded to S3 bucket named by cluster name.
-	// https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
-	// https://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/ingress-resources.md
+	// http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html
+	// http://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/ingress-resources.md
 	LogAccess bool `json:"log-access"`
 
 	// UploadTesterLogs is true to auto-upload log files.
@@ -190,7 +190,7 @@ type Config struct {
 type ClusterState struct {
 	// Status is the cluster status from EKS API.
 	// It's either CREATING, ACTIVE, DELETING, FAILED, "DELETE_COMPLETE".
-	// Reference: https://docs.aws.amazon.com/eks/latest/APIReference/API_Cluster.html#AmazonEKS-Type-Cluster-status.
+	// Reference: http://docs.aws.amazon.com/eks/latest/APIReference/API_Cluster.html#AmazonEKS-Type-Cluster-status.
 	Status string `json:"status,omitempty"` // read-only to user
 
 	StatusRoleCreated       bool `json:"status-role-created"`        // read-only to user
@@ -274,7 +274,7 @@ type ALBIngressController struct {
 	// With instance the Target Group targets are <ec2 instance id>:<node port>,
 	// for ip the targets are <pod ip>:<pod port>.
 	// ip is to be used when the pod network is routable and can be reached by the ALB.
-	// https://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/ingress-resources.md
+	// http://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/ingress-resources.md
 	TargetType string `json:"target-type,omitempty"`
 	// TestMode is either "ingress-test-server" or "nginx".
 	TestMode string `json:"test-mode,omitempty"`
@@ -282,7 +282,7 @@ type ALBIngressController struct {
 	// TestScalability is true to run scalability tests.
 	TestScalability bool `json:"test-scalability"`
 	// TestScalabilityMinutes is the number of minutes to send scalability test workloads.
-	// Reference: https://github.com/wg/wrk#command-line-options.
+	// Reference: http://github.com/wg/wrk#command-line-options.
 	TestScalabilityMinutes int `json:"test-scalability-minutes"`
 	// TestMetrics is true to run metrics tests.
 	TestMetrics bool `json:"test-metrics"`
@@ -415,12 +415,12 @@ func genTag() string {
 var defaultConfig = Config{
 	TestMode: "embedded",
 
-	AWSK8sTesterDownloadURL:        "https://github.com/aws/aws-k8s-tester/releases/download/0.2.0/aws-k8s-tester-0.2.0-linux-amd64",
+	AWSK8sTesterDownloadURL:        "http://github.com/aws/aws-k8s-tester/releases/download/0.2.0/aws-k8s-tester-0.2.0-linux-amd64",
 	AWSK8sTesterPath:               "/tmp/aws-k8s-tester/aws-k8s-tester",
-	KubectlDownloadURL:             "https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/kubectl",
+	KubectlDownloadURL:             "http://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/kubectl",
 	KubectlPath:                    "/tmp/aws-k8s-tester/kubectl",
 	KubeConfigPath:                 "/tmp/aws-k8s-tester/kubeconfig",
-	AWSIAMAuthenticatorDownloadURL: "https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator",
+	AWSIAMAuthenticatorDownloadURL: "http://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator",
 	AWSIAMAuthenticatorPath:        "/tmp/aws-k8s-tester/aws-iam-authenticator",
 
 	// enough time for ALB access log
@@ -437,10 +437,10 @@ var defaultConfig = Config{
 	EnableWorkerNodeSSH:                  true,
 	EnableWorkerNodePrivilegedPortAccess: true,
 
-	// keep in-sync with the default value in https://godoc.org/k8s.io/kubernetes/test/e2e/framework#GetSigner
+	// keep in-sync with the default value in http://godoc.org/k8s.io/kubernetes/test/e2e/framework#GetSigner
 	WorkerNodePrivateKeyPath: filepath.Join(homedir.HomeDir(), ".ssh", "kube_aws_rsa"),
 
-	// Amazon EKS-optimized AMI, https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
+	// Amazon EKS-optimized AMI, http://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 	WorkerNodeAMI:          "ami-0a2abab4107669c1b",
 	WorkerNodeInstanceType: "m3.xlarge",
 	WorkerNodeASGMin:       1,
@@ -1018,7 +1018,7 @@ func checkRegion(s string) (ok bool) {
 }
 
 // supportedRegions is a list of currently EKS supported AWS regions.
-// See https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services.
+// See http://aws.amazon.com/about-aws/global-infrastructure/regional-product-services.
 var supportedRegions = map[string]struct{}{
 	"us-west-2":      {},
 	"us-east-1":      {},
@@ -1090,8 +1090,8 @@ var (
 	// supportedEKSEps maps each test environments to EKS endpoint.
 	supportedEKSEps = map[string]struct{}{
 		// TODO: support EKS testing endpoint
-		// https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#custom-endpoint
-		// "https://test.us-west-2.amazonaws.com" : struct{}{},
+		// http://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#custom-endpoint
+		// "http://test.us-west-2.amazonaws.com" : struct{}{},
 	}
 
 	allEKSEps = []string{}
@@ -1114,7 +1114,7 @@ func checkEKSEp(s string) (ok bool) {
 }
 
 // defaultWorkderNodeVolumeSizeGB is the default EKS worker node volume size in gigabytes.
-// https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
+// http://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 const defaultWorkderNodeVolumeSizeGB = 20
 
 func exist(name string) bool {

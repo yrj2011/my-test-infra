@@ -56,7 +56,7 @@ type options struct {
 	totURL          string
 
 	// Create these values by following:
-	//   https://github.com/kelseyhightower/grafeas-tutorial/blob/master/pki/gen-certs.sh
+	//   http://github.com/kelseyhightower/grafeas-tutorial/blob/master/pki/gen-certs.sh
 	cert       string
 	privateKey string
 }

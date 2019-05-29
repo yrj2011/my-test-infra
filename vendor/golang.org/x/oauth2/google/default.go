@@ -20,7 +20,7 @@ import (
 
 // DefaultCredentials holds "Application Default Credentials".
 // For more details, see:
-// https://developers.google.com/accounts/docs/application-default-credentials
+// http://developers.google.com/accounts/docs/application-default-credentials
 type DefaultCredentials struct {
 	ProjectID   string // may be empty
 	TokenSource oauth2.TokenSource
@@ -104,7 +104,7 @@ func FindDefaultCredentials(ctx context.Context, scope ...string) (*DefaultCrede
 	}
 
 	// None are found; return helpful error.
-	const url = "https://developers.google.com/accounts/docs/application-default-credentials"
+	const url = "http://developers.google.com/accounts/docs/application-default-credentials"
 	return nil, fmt.Errorf("google: could not find default credentials. See %v for more information.", url)
 }
 

@@ -1,6 +1,6 @@
 package azblob
 
-// https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-error-codes
+// http://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-error-codes
 
 // ServiceCode values indicate a service failure.
 const (

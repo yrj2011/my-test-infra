@@ -215,7 +215,7 @@ func (w *CodeWriter) WriteString(s string) {
 	// When starting on its own line, go fmt indents line 2+ an extra level.
 	n, max := maxWidth, maxWidth-4
 
-	// As per https://golang.org/issue/18078, the compiler has trouble
+	// As per http://golang.org/issue/18078, the compiler has trouble
 	// compiling the concatenation of many strings, s0 + s1 + s2 + ... + sN,
 	// for large N. We insert redundant, explicit parentheses to work around
 	// that, lowering the N at any given step: (s0 + s1 + ... + s63) + (s64 +
@@ -223,7 +223,7 @@ func (w *CodeWriter) WriteString(s string) {
 	explicitParens, extraComment := len(s) > 128*1024, ""
 	if explicitParens {
 		w.printf(`(`)
-		extraComment = "; the redundant, explicit parens are for https://golang.org/issue/18078"
+		extraComment = "; the redundant, explicit parens are for http://golang.org/issue/18078"
 	}
 
 	// Print "" +\n, if a string does not start on its own line.

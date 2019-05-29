@@ -16,7 +16,7 @@ func URLHostname(url *url.URL) string {
 }
 
 // stripPort is copy of Go 1.8 url#URL.Hostname functionality.
-// https://golang.org/src/net/url/url.go
+// http://golang.org/src/net/url/url.go
 func stripPort(hostport string) string {
 	colon := strings.IndexByte(hostport, ':')
 	if colon == -1 {

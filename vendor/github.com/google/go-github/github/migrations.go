@@ -16,7 +16,7 @@ import (
 // MigrationService provides access to the migration related functions
 // in the GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/
+// GitHub API docs: http://developer.github.com/v3/migration/
 type MigrationService service
 
 // Migration represents a GitHub migration (archival).
@@ -74,7 +74,7 @@ type startMigration struct {
 // StartMigration starts the generation of a migration archive.
 // repos is a slice of repository names to migrate.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/migrations/#start-a-migration
+// GitHub API docs: http://developer.github.com/v3/migration/migrations/#start-a-migration
 func (s *MigrationService) StartMigration(ctx context.Context, org string, repos []string, opt *MigrationOptions) (*Migration, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/migrations", org)
 
@@ -103,7 +103,7 @@ func (s *MigrationService) StartMigration(ctx context.Context, org string, repos
 
 // ListMigrations lists the most recent migrations.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/migrations/#get-a-list-of-migrations
+// GitHub API docs: http://developer.github.com/v3/migration/migrations/#get-a-list-of-migrations
 func (s *MigrationService) ListMigrations(ctx context.Context, org string) ([]*Migration, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/migrations", org)
 
@@ -127,7 +127,7 @@ func (s *MigrationService) ListMigrations(ctx context.Context, org string) ([]*M
 // MigrationStatus gets the status of a specific migration archive.
 // id is the migration ID.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/migrations/#get-the-status-of-a-migration
+// GitHub API docs: http://developer.github.com/v3/migration/migrations/#get-the-status-of-a-migration
 func (s *MigrationService) MigrationStatus(ctx context.Context, org string, id int) (*Migration, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/migrations/%v", org, id)
 
@@ -151,7 +151,7 @@ func (s *MigrationService) MigrationStatus(ctx context.Context, org string, id i
 // MigrationArchiveURL fetches a migration archive URL.
 // id is the migration ID.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/migrations/#download-a-migration-archive
+// GitHub API docs: http://developer.github.com/v3/migration/migrations/#download-a-migration-archive
 func (s *MigrationService) MigrationArchiveURL(ctx context.Context, org string, id int) (url string, err error) {
 	u := fmt.Sprintf("orgs/%v/migrations/%v/archive", org, id)
 
@@ -188,7 +188,7 @@ func (s *MigrationService) MigrationArchiveURL(ctx context.Context, org string, 
 // DeleteMigration deletes a previous migration archive.
 // id is the migration ID.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/migrations/#delete-a-migration-archive
+// GitHub API docs: http://developer.github.com/v3/migration/migrations/#delete-a-migration-archive
 func (s *MigrationService) DeleteMigration(ctx context.Context, org string, id int) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/migrations/%v/archive", org, id)
 
@@ -208,7 +208,7 @@ func (s *MigrationService) DeleteMigration(ctx context.Context, org string, id i
 // You should unlock each migrated repository and delete them when the migration
 // is complete and you no longer need the source data.
 //
-// GitHub API docs: https://developer.github.com/v3/migration/migrations/#unlock-a-repository
+// GitHub API docs: http://developer.github.com/v3/migration/migrations/#unlock-a-repository
 func (s *MigrationService) UnlockRepo(ctx context.Context, org string, id int, repo string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/migrations/%v/repos/%v/lock", org, id, repo)
 

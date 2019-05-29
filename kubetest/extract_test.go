@@ -104,37 +104,37 @@ func TestExtractStrategies(t *testing.T) {
 		},
 		{
 			"gs://kubernetes-release-dev/bazel/v1.8.0-alpha.3.389+eab2f8f6c19fcb",
-			"https://storage.googleapis.com/kubernetes-release-dev/bazel",
+			"http://storage.googleapis.com/kubernetes-release-dev/bazel",
 			"v1.8.0-alpha.3.389+eab2f8f6c19fcb",
 		},
 		{
 			"v1.8.0-alpha.1",
-			"https://storage.googleapis.com/kubernetes-release/release",
+			"http://storage.googleapis.com/kubernetes-release/release",
 			"v1.8.0-alpha.1",
 		},
 		{
 			"v1.8.0-alpha.2.899+2c624e590f5670",
-			"https://storage.googleapis.com/kubernetes-release-dev/ci",
+			"http://storage.googleapis.com/kubernetes-release-dev/ci",
 			"v1.8.0-alpha.2.899+2c624e590f5670",
 		},
 		{
 			"v1.8.0-gke.0",
-			"https://storage.googleapis.com/kubernetes-release-gke/release",
+			"http://storage.googleapis.com/kubernetes-release-gke/release",
 			"v1.8.0-gke.0",
 		},
 		{
 			"ci/latest",
-			"https://storage.googleapis.com/kubernetes-release-dev/ci",
+			"http://storage.googleapis.com/kubernetes-release-dev/ci",
 			"v1.2.3+abcde",
 		},
 		{
 			"ci/gke-staging-latest",
-			"https://storage.googleapis.com/kubernetes-release-gke/release",
+			"http://storage.googleapis.com/kubernetes-release-gke/release",
 			"v1.2.3+abcde",
 		},
 		{
 			"gs://whatever-bucket/ci/latest.txt",
-			"https://storage.googleapis.com/whatever-bucket/ci",
+			"http://storage.googleapis.com/whatever-bucket/ci",
 			"v1.2.3+abcde",
 		},
 	}

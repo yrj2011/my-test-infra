@@ -32,9 +32,9 @@ func newBlockBlobsClient(url url.URL, p pipeline.Pipeline) blockBlobsClient {
 // listType is specifies whether to return the list of committed blocks, the list of uncommitted blocks, or both lists
 // together. snapshot is the snapshot parameter is an opaque DateTime value that, when present, specifies the blob
 // snapshot to retrieve. For more information on working with blob snapshots, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
 // a Snapshot of a Blob.</a> timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. requestID is provides a client-generated, opaque value with a 1 KB character
 // limit that is recorded in the analytics logs when storage analytics logging is enabled.
@@ -113,7 +113,7 @@ func (client blockBlobsClient) getBlockListResponder(resp pipeline.Response) (pi
 // same size for each block. body is initial data body will be closed upon successful return. Callers should ensure
 // closure when receiving an error.timeout is the timeout parameter is expressed in seconds. For more information, see
 // <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. requestID is provides a client-generated, opaque value with a 1 KB character
 // limit that is recorded in the analytics logs when storage analytics logging is enabled.
@@ -177,7 +177,7 @@ func (client blockBlobsClient) putBlockResponder(resp pipeline.Response) (pipeli
 // block, whichever list it may belong to.
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> blobCacheControl is optional. Sets the blob's cache control. If specified,
 // this property is stored with the blob and returned with a read request. blobContentType is optional. Sets the blob's
 // content type. If specified, this property is stored with the blob and returned with a read request.

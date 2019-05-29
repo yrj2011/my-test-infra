@@ -35,14 +35,14 @@ const (
 	claContextName         = "cla/linuxfoundation"
 	cncfclaNotFoundMessage = `Thanks for your pull request. Before we can look at your pull request, you'll need to sign a Contributor License Agreement (CLA).
 
-:memo: **Please follow instructions at <https://git.k8s.io/community/CLA.md#the-contributor-license-agreement> to sign the CLA.**
+:memo: **Please follow instructions at <http://git.k8s.io/community/CLA.md#the-contributor-license-agreement> to sign the CLA.**
 
 It may take a couple minutes for the CLA signature to be fully registered; after that, please reply here with a new comment and we'll verify.  Thanks.
 
 ---
 
-- If you've already signed a CLA, it's possible we don't have your GitHub username or you're using a different email address.  Check your existing CLA data and verify that your [email is set on your git commits](https://help.github.com/articles/setting-your-email-in-git/).
-- If you signed the CLA as a corporation, please sign in with your organization's credentials at <https://identity.linuxfoundation.org/projects/cncf> to be authorized.
+- If you've already signed a CLA, it's possible we don't have your GitHub username or you're using a different email address.  Check your existing CLA data and verify that your [email is set on your git commits](http://help.github.com/articles/setting-your-email-in-git/).
+- If you signed the CLA as a corporation, please sign in with your organization's credentials at <http://identity.linuxfoundation.org/projects/cncf> to be authorized.
 - If you have done the above and are still having issues with the CLA being reported as unsigned, please email the CNCF helpdesk: helpdesk@rt.linuxfoundation.org
 
 <!-- need_sender_cla -->

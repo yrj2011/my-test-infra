@@ -23,7 +23,7 @@ func (c *AutoScaling) WaitUntilGroupExists(input *DescribeAutoScalingGroupsInput
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *AutoScaling) WaitUntilGroupExistsWithContext(ctx aws.Context, input *DescribeAutoScalingGroupsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -74,7 +74,7 @@ func (c *AutoScaling) WaitUntilGroupInService(input *DescribeAutoScalingGroupsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *AutoScaling) WaitUntilGroupInServiceWithContext(ctx aws.Context, input *DescribeAutoScalingGroupsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -125,7 +125,7 @@ func (c *AutoScaling) WaitUntilGroupNotExists(input *DescribeAutoScalingGroupsIn
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *AutoScaling) WaitUntilGroupNotExistsWithContext(ctx aws.Context, input *DescribeAutoScalingGroupsInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{

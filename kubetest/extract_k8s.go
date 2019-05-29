@@ -171,7 +171,7 @@ func ensureKube() (string, error) {
 		return "", err
 	}
 	defer f.Close()
-	if err := httpRead("https://get.k8s.io", f); err != nil {
+	if err := httpRead("http://get.k8s.io", f); err != nil {
 		return "", err
 	}
 	i, err = f.Stat()
@@ -305,7 +305,7 @@ var gsutilCat = func(url string) ([]byte, error) {
 }
 
 func setReleaseFromGcs(prefix, suffix string, getSrc bool) error {
-	url := fmt.Sprintf("https://storage.googleapis.com/%v", prefix)
+	url := fmt.Sprintf("http://storage.googleapis.com/%v", prefix)
 	release, err := gsutilCat(fmt.Sprintf("gs://%v/%v.txt", prefix, suffix))
 	if err != nil {
 		return err
@@ -337,7 +337,7 @@ func setupGciVars(family string) (string, error) {
 	}
 	if family == "gci-canary-test" {
 		var b bytes.Buffer
-		if err := httpRead("https://api.github.com/repos/docker/docker/releases", &b); err != nil {
+		if err := httpRead("http://api.github.com/repos/docker/docker/releases", &b); err != nil {
 			return "", err
 		}
 		var v []map[string]interface{}
@@ -362,7 +362,7 @@ func setReleaseFromGci(image string, getSrc bool) error {
 		return err
 	}
 	r := fmt.Sprintf("v%s", b)
-	return getKube("https://storage.googleapis.com/kubernetes-release/release", strings.TrimSpace(r), getSrc)
+	return getKube("http://storage.googleapis.com/kubernetes-release/release", strings.TrimSpace(r), getSrc)
 }
 
 func (e extractStrategy) Extract(project, zone, region string, extractSrc bool) error {
@@ -411,7 +411,7 @@ func (e extractStrategy) Extract(project, zone, region string, extractSrc bool) 
 			if err != nil {
 				return fmt.Errorf("failed to get latest gke version: %s", err)
 			}
-			return getKube("https://storage.googleapis.com/kubernetes-release-gke/release", version, extractSrc)
+			return getKube("http://storage.googleapis.com/kubernetes-release-gke/release", version, extractSrc)
 		}
 
 		// TODO(krzyzacy): clean up gke-default logic
@@ -450,11 +450,11 @@ func (e extractStrategy) Extract(project, zone, region string, extractSrc bool) 
 		release := e.option
 		re := regexp.MustCompile(`(v\d+\.\d+\.\d+-gke.\d+)$`) // v1.8.0-gke.0
 		if re.FindStringSubmatch(release) != nil {
-			url = "https://storage.googleapis.com/kubernetes-release-gke/release"
+			url = "http://storage.googleapis.com/kubernetes-release-gke/release"
 		} else if strings.Contains(release, "+") {
-			url = "https://storage.googleapis.com/kubernetes-release-dev/ci"
+			url = "http://storage.googleapis.com/kubernetes-release-dev/ci"
 		} else {
-			url = "https://storage.googleapis.com/kubernetes-release/release"
+			url = "http://storage.googleapis.com/kubernetes-release/release"
 		}
 		return getKube(url, release, extractSrc)
 	case gcs:
@@ -465,7 +465,7 @@ func (e extractStrategy) Extract(project, zone, region string, extractSrc bool) 
 			suffix := strings.TrimSuffix(path.Base(withoutGS), filepath.Ext(withoutGS))
 			return setReleaseFromGcs(path.Dir(withoutGS), suffix, extractSrc)
 		}
-		url := "https://storage.googleapis.com" + "/" + path.Dir(withoutGS)
+		url := "http://storage.googleapis.com" + "/" + path.Dir(withoutGS)
 		return getKube(url, path.Base(withoutGS), extractSrc)
 	case load:
 		return loadState(e.option, extractSrc)

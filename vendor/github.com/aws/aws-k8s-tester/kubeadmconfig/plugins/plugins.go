@@ -22,7 +22,7 @@ type kubeadmInfo struct {
 	KubeletPath string
 }
 
-// https://kubernetes.io/docs/setup/independent/install-kubeadm/
+// http://kubernetes.io/docs/setup/independent/install-kubeadm/
 const installKubeadmAmazonLinux2Template = `
 
 ################################## install kubeadm on Amazon Linux 2
@@ -30,11 +30,11 @@ const installKubeadmAmazonLinux2Template = `
 cat <<EOF > /tmp/kubernetes.repo
 [kubernetes]
 name=Kubernetes
-baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+baseurl=http://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
 enabled=1
 gpgcheck=1
 repo_gpgcheck=0
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+gpgkey=http://packages.cloud.google.com/yum/doc/yum-key.gpg http://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 exclude=kube*
 EOF
 sudo cp /tmp/kubernetes.repo /etc/yum.repos.d/kubernetes.repo
@@ -58,7 +58,7 @@ RELEASE=v{{ .Version }}
 cd /usr/bin
 sudo rm -f /usr/bin/{kubeadm,kubelet,kubectl}
 
-sudo curl -L --remote-name-all https://storage.googleapis.com/kubernetes-release/release/${RELEASE}/bin/linux/amd64/{kubeadm,kubelet,kubectl}
+sudo curl -L --remote-name-all http://storage.googleapis.com/kubernetes-release/release/${RELEASE}/bin/linux/amd64/{kubeadm,kubelet,kubectl}
 sudo chmod +x {kubeadm,kubelet,kubectl}
 
 sudo systemctl stop kubelet.service || true

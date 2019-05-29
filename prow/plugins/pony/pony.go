@@ -46,7 +46,7 @@ type ponyRepresentations struct {
 }
 
 const (
-	ponyURL    = realHerd("https://theponyapi.com/api/v1/pony/random")
+	ponyURL    = realHerd("http://theponyapi.com/api/v1/pony/random")
 	pluginName = "pony"
 )
 
@@ -148,7 +148,7 @@ func handle(gc githubClient, log *logrus.Entry, e *github.GenericCommentEvent, p
 	if tag != "" {
 		msg = "Couldn't find a pony matching that query."
 	} else {
-		msg = "https://theponyapi.com appears to be down"
+		msg = "http://theponyapi.com appears to be down"
 	}
 	if err := gc.CreateComment(org, repo, number, plugins.FormatResponseRaw(e.Body, e.HTMLURL, e.User.Login, msg)); err != nil {
 		log.WithError(err).Error("Failed to leave comment")

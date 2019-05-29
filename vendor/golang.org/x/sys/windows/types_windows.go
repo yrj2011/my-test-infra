@@ -1420,7 +1420,7 @@ const (
 )
 
 // Console related constants used for the mode parameter to SetConsoleMode. See
-// https://docs.microsoft.com/en-us/windows/console/setconsolemode for details.
+// http://docs.microsoft.com/en-us/windows/console/setconsolemode for details.
 
 const (
 	ENABLE_PROCESSED_INPUT        = 0x1
@@ -1455,7 +1455,7 @@ type SmallRect struct {
 
 // Used with GetConsoleScreenBuffer to retrieve information about a console
 // screen buffer. See
-// https://docs.microsoft.com/en-us/windows/console/console-screen-buffer-info-str
+// http://docs.microsoft.com/en-us/windows/console/console-screen-buffer-info-str
 // for details.
 
 type ConsoleScreenBufferInfo struct {

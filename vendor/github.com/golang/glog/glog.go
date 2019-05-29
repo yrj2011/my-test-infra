@@ -1,4 +1,4 @@
-// Go support for leveled logs, analogous to https://code.google.com/p/google-glog/
+// Go support for leveled logs, analogous to http://code.google.com/p/google-glog/
 //
 // Copyright 2013 Google Inc. All Rights Reserved.
 //

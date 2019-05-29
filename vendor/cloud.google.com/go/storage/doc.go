@@ -17,14 +17,14 @@ Package storage provides an easy way to work with Google Cloud Storage.
 Google Cloud Storage stores data in named objects, which are grouped into buckets.
 
 More information about Google Cloud Storage is available at
-https://cloud.google.com/storage/docs.
+http://cloud.google.com/storage/docs.
 
-See https://godoc.org/cloud.google.com/go for authentication, timeouts,
+See http://godoc.org/cloud.google.com/go for authentication, timeouts,
 connection pooling and similar aspects of this package.
 
 All of the methods of this package use exponential backoff to retry calls
 that fail with certain errors, as described in
-https://cloud.google.com/storage/docs/exponential-backoff.
+http://cloud.google.com/storage/docs/exponential-backoff.
 
 
 Creating a Client
@@ -121,7 +121,7 @@ Both objects and buckets have ACLs (Access Control Lists). An ACL is a list of
 ACLRules, each of which specifies the role of a user, group or project. ACLs
 are suitable for fine-grained control, but you may prefer using IAM to control
 access at the project level (see
-https://cloud.google.com/storage/docs/access-control/iam).
+http://cloud.google.com/storage/docs/access-control/iam).
 
 To list the ACLs of a bucket or object, obtain an ACLHandle and call its List method:
 

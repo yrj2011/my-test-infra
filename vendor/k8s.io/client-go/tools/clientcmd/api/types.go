@@ -63,7 +63,7 @@ type Preferences struct {
 type Cluster struct {
 	// LocationOfOrigin indicates where this object came from.  It is used for round tripping config post-merge, but never serialized.
 	LocationOfOrigin string
-	// Server is the address of the kubernetes cluster (https://hostname:port).
+	// Server is the address of the kubernetes cluster (http://hostname:port).
 	Server string `json:"server"`
 	// InsecureSkipTLSVerify skips the validity check for the server's certificate. This will make your HTTPS connections insecure.
 	// +optional

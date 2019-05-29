@@ -23,11 +23,11 @@ import (
 
 // JSONFloat64 is a float64 that supports proper unmarshaling of special float
 // values in JSON, according to
-// https://developers.google.com/protocol-buffers/docs/proto3#json. Although
+// http://developers.google.com/protocol-buffers/docs/proto3#json. Although
 // that is a proto-to-JSON spec, it applies to all Google APIs.
 //
 // The jsonpb package
-// (https://github.com/golang/protobuf/blob/master/jsonpb/jsonpb.go) has
+// (http://github.com/golang/protobuf/blob/master/jsonpb/jsonpb.go) has
 // similar functionality, but only for direct translation from proto messages
 // to JSON.
 type JSONFloat64 float64

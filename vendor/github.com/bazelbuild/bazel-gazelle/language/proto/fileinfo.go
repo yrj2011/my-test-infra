@@ -94,7 +94,7 @@ const (
 	serviceSubexpIndex = 5
 )
 
-// Based on https://developers.google.com/protocol-buffers/docs/reference/proto3-spec
+// Based on http://developers.google.com/protocol-buffers/docs/reference/proto3-spec
 func buildProtoRegexp() *regexp.Regexp {
 	hexEscape := `\\[xX][0-9a-fA-f]{2}`
 	octEscape := `\\[0-7]{3}`

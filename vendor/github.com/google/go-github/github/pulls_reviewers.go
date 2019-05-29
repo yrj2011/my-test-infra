@@ -12,7 +12,7 @@ import (
 
 // RequestReviewers creates a review request for the provided GitHub users for the specified pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/review_requests/#create-a-review-request
+// GitHub API docs: http://developer.github.com/v3/pulls/review_requests/#create-a-review-request
 func (s *PullRequestsService) RequestReviewers(ctx context.Context, owner, repo string, number int, logins []string) (*PullRequest, *Response, error) {
 	u := fmt.Sprintf("repos/%s/%s/pulls/%d/requested_reviewers", owner, repo, number)
 
@@ -37,7 +37,7 @@ func (s *PullRequestsService) RequestReviewers(ctx context.Context, owner, repo 
 
 // ListReviewers lists users whose reviews have been requested on the specified pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/review_requests/#list-review-requests
+// GitHub API docs: http://developer.github.com/v3/pulls/review_requests/#list-review-requests
 func (s *PullRequestsService) ListReviewers(ctx context.Context, owner, repo string, number int, opt *ListOptions) ([]*User, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/%d/requested_reviewers", owner, repo, number)
 	u, err := addOptions(u, opt)
@@ -61,7 +61,7 @@ func (s *PullRequestsService) ListReviewers(ctx context.Context, owner, repo str
 
 // RemoveReviewers removes the review request for the provided GitHub users for the specified pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/review_requests/#delete-a-review-request
+// GitHub API docs: http://developer.github.com/v3/pulls/review_requests/#delete-a-review-request
 func (s *PullRequestsService) RemoveReviewers(ctx context.Context, owner, repo string, number int, logins []string) (*Response, error) {
 	u := fmt.Sprintf("repos/%s/%s/pulls/%d/requested_reviewers", owner, repo, number)
 

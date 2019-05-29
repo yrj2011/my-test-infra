@@ -76,7 +76,7 @@
 // Above, you have already touched the Counter and the Gauge. There are two more
 // advanced metric types: the Summary and Histogram. A more thorough description
 // of those four metric types can be found in the Prometheus docs:
-// https://prometheus.io/docs/concepts/metric_types/
+// http://prometheus.io/docs/concepts/metric_types/
 //
 // A fifth "type" of metric is Untyped. It behaves like a Gauge, but signals the
 // Prometheus server not to assume anything about its type.

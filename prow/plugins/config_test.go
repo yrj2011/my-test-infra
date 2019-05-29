@@ -200,25 +200,25 @@ func TestSetTriggerDefaults(t *testing.T) {
 			joinOrgURL: "",
 
 			expectedTrustedOrg: "kubernetes",
-			expectedJoinOrgURL: "https://github.com/orgs/kubernetes/people",
+			expectedJoinOrgURL: "http://github.com/orgs/kubernetes/people",
 		},
 		{
 			name: "both org and url are set",
 
 			trustedOrg: "kubernetes",
-			joinOrgURL: "https://git.k8s.io/community/community-membership.md#member",
+			joinOrgURL: "http://git.k8s.io/community/community-membership.md#member",
 
 			expectedTrustedOrg: "kubernetes",
-			expectedJoinOrgURL: "https://git.k8s.io/community/community-membership.md#member",
+			expectedJoinOrgURL: "http://git.k8s.io/community/community-membership.md#member",
 		},
 		{
 			name: "only url is set",
 
 			trustedOrg: "",
-			joinOrgURL: "https://git.k8s.io/community/community-membership.md#member",
+			joinOrgURL: "http://git.k8s.io/community/community-membership.md#member",
 
 			expectedTrustedOrg: "",
-			expectedJoinOrgURL: "https://git.k8s.io/community/community-membership.md#member",
+			expectedJoinOrgURL: "http://git.k8s.io/community/community-membership.md#member",
 		},
 		{
 			name: "nothing is set",
@@ -258,7 +258,7 @@ func TestSetCherryPickUnapprovedDefaults(t *testing.T) {
 
 To approve the cherry-pick, please assign the patch release manager for the release branch by writing ` + "`/assign @username`" + ` in a comment when ready.
 
-The list of patch release managers for each release can be found [here](https://git.k8s.io/sig-release/release-managers.md).`
+The list of patch release managers for each release can be found [here](http://git.k8s.io/sig-release/release-managers.md).`
 
 	testcases := []struct {
 		name string

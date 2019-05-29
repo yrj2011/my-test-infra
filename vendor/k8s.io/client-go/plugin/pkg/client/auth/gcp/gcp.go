@@ -51,8 +51,8 @@ var (
 	// - userinfo.email is used to authenticate to GKE APIs with gserviceaccount
 	//   email instead of numeric uniqueID.
 	defaultScopes = []string{
-		"https://www.googleapis.com/auth/cloud-platform",
-		"https://www.googleapis.com/auth/userinfo.email"}
+		"http://www.googleapis.com/auth/cloud-platform",
+		"http://www.googleapis.com/auth/userinfo.email"}
 )
 
 // gcpAuthProvider is an auth provider plugin that uses GCP credentials to provide
@@ -69,9 +69,9 @@ var (
 //       # These options are used while getting a token.
 //
 //       # comma-separated list of GCP API scopes. default value of this field
-//       # is "https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/userinfo.email".
+//       # is "http://www.googleapis.com/auth/cloud-platform,http://www.googleapis.com/auth/userinfo.email".
 // 		 # to override the API scopes, specify this field explicitly.
-//       "scopes": "https://www.googleapis.com/auth/cloud-platform"
+//       "scopes": "http://www.googleapis.com/auth/cloud-platform"
 //
 //       # Caching options
 //

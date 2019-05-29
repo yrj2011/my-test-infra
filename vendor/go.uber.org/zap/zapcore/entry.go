@@ -108,8 +108,8 @@ func (ec EntryCaller) TrimmedPath() string {
 	// runtime.Caller() which (as of Mar/17) returns forward slashes even on
 	// Windows.
 	//
-	// See https://github.com/golang/go/issues/3335
-	// and https://github.com/golang/go/issues/18151
+	// See http://github.com/golang/go/issues/3335
+	// and http://github.com/golang/go/issues/18151
 	//
 	// for discussion on the issue on Go side.
 	//

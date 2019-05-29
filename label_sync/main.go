@@ -118,7 +118,7 @@ const (
 var (
 	debug        = flag.Bool("debug", false, "Turn on debug to be more verbose")
 	confirm      = flag.Bool("confirm", false, "Make mutating API calls to GitHub.")
-	endpoint     = flagutil.NewStrings("https://api.github.com")
+	endpoint     = flagutil.NewStrings("http://api.github.com")
 	labelsPath   = flag.String("config", "", "Path to labels.yaml")
 	onlyRepos    = flag.String("only", "", "Only look at the following comma separated org/repos")
 	orgs         = flag.String("orgs", "", "Comma separated list of orgs to sync")
@@ -863,7 +863,7 @@ type labelCSSData struct {
 }
 
 // Returns the CSS escaped label name. Escaped method based on
-// https://www.w3.org/International/questions/qa-escapes#cssescapes
+// http://www.w3.org/International/questions/qa-escapes#cssescapes
 func cssEscape(s string) (escaped string) {
 	var IsAlpha = regexp.MustCompile(`^[a-zA-Z]+$`).MatchString
 	for i, c := range s {
@@ -877,7 +877,7 @@ func cssEscape(s string) (escaped string) {
 }
 
 // Returns the text color (whether black or white) given the background color.
-// Details: https://www.w3.org/TR/WCAG20/#contrastratio
+// Details: http://www.w3.org/TR/WCAG20/#contrastratio
 func getTextColor(backgroundColor string) (string, error) {
 	d, err := hex.DecodeString(backgroundColor)
 	if err != nil || len(d) != 3 {
@@ -886,7 +886,7 @@ func getTextColor(backgroundColor string) (string, error) {
 
 	// Calculate the relative luminance (L) of a color
 	// L = 0.2126 * R + 0.7152 * G + 0.0722 * B
-	// Formula details at: https://www.w3.org/TR/WCAG20/#relativeluminancedef
+	// Formula details at: http://www.w3.org/TR/WCAG20/#relativeluminancedef
 	color := [3]float64{}
 	for i, v := range d {
 		color[i] = float64(v) / 255.0

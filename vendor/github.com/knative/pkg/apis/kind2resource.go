@@ -37,7 +37,7 @@ func KindToResource(gvk schema.GroupVersionKind) schema.GroupVersionResource {
 // not aware of a generic way to do this.
 // I am not alone in thinking this and I haven't found a better solution:
 // This seems relevant:
-// https://github.com/kubernetes/kubernetes/issues/18622
+// http://github.com/kubernetes/kubernetes/issues/18622
 func pluralizeKind(kind string) string {
 	ret := strings.ToLower(kind)
 	if strings.HasSuffix(ret, "s") {

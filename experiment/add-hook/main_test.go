@@ -30,7 +30,7 @@ import (
 func TestGetOptions(t *testing.T) {
 	defArgs := map[string][]string{
 		"--hmac-path":         {"/fake/hmac-file"},
-		"--hook-url":          {"https://not-a-url"},
+		"--hook-url":          {"http://not-a-url"},
 		"--repo":              {"fake-org/fake-repo"},
 		"--github-token-path": {"/fake/github-token"},
 	}
@@ -103,7 +103,7 @@ func TestGetOptions(t *testing.T) {
 
 			expected := options{
 				hmacPath: "/fake/hmac-file",
-				hookURL:  "https://not-a-url",
+				hookURL:  "http://not-a-url",
 				events:   flagutil.NewStrings(github.AllHookEvents...),
 			}
 			expected.repo.Set("fake-org/fake-repo")

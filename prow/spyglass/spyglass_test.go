@@ -467,7 +467,7 @@ func TestProwToGCS(t *testing.T) {
 				Job: "gubernator-job",
 			},
 			Status: kube.ProwJobStatus{
-				URL:     "https://gubernator.example.com/build/some-bucket/gubernator-job/1111/",
+				URL:     "http://gubernator.example.com/build/some-bucket/gubernator-job/1111/",
 				BuildID: "1111",
 			},
 		},
@@ -476,7 +476,7 @@ func TestProwToGCS(t *testing.T) {
 				Job: "spyglass-job",
 			},
 			Status: kube.ProwJobStatus{
-				URL:     "https://prow.example.com/view/gcs/some-bucket/spyglass-job/2222/",
+				URL:     "http://prow.example.com/view/gcs/some-bucket/spyglass-job/2222/",
 				BuildID: "2222",
 			},
 		},
@@ -494,21 +494,21 @@ func TestProwToGCS(t *testing.T) {
 		{
 			name:         "extraction from gubernator-like URL",
 			key:          "gubernator-job/1111",
-			configPrefix: "https://gubernator.example.com/build/",
+			configPrefix: "http://gubernator.example.com/build/",
 			expectedPath: "some-bucket/gubernator-job/1111/",
 			expectError:  false,
 		},
 		{
 			name:         "extraction from spyglass-like URL",
 			key:          "spyglass-job/2222",
-			configPrefix: "https://prow.example.com/view/gcs/",
+			configPrefix: "http://prow.example.com/view/gcs/",
 			expectedPath: "some-bucket/spyglass-job/2222/",
 			expectError:  false,
 		},
 		{
 			name:         "failed extraction from wrong URL",
 			key:          "spyglass-job/1111",
-			configPrefix: "https://gubernator.example.com/build/",
+			configPrefix: "http://gubernator.example.com/build/",
 			expectedPath: "",
 			expectError:  true,
 		},
@@ -558,7 +558,7 @@ func TestFetchArtifactsPodLog(t *testing.T) {
 			Status: kube.ProwJobStatus{
 				PodName: "wowowow",
 				BuildID: "123",
-				URL:     "https://gubernator.example.com/build/job/123",
+				URL:     "http://gubernator.example.com/build/job/123",
 			},
 		},
 	}
@@ -566,7 +566,7 @@ func TestFetchArtifactsPodLog(t *testing.T) {
 		c: config.Config{
 			ProwConfig: config.ProwConfig{
 				Plank: config.Plank{
-					JobURLPrefix: "https://gubernator.example.com/build/",
+					JobURLPrefix: "http://gubernator.example.com/build/",
 				},
 			},
 		},

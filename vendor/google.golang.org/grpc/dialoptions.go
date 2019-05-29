@@ -233,7 +233,7 @@ func withResolverBuilder(b resolver.Builder) DialOption {
 //
 // Deprecated: service config should be received through name resolver, as
 // specified here.
-// https://github.com/grpc/grpc/blob/master/doc/service_config.md
+// http://github.com/grpc/grpc/blob/master/doc/service_config.md
 func WithServiceConfig(c <-chan ServiceConfig) DialOption {
 	return newFuncDialOption(func(o *dialOptions) {
 		o.scChan = c

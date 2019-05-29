@@ -31,7 +31,7 @@ that Gopkg.lock is in sync with Gopkg.toml and the imports in your project's .go
 files, and that the vendor directory is in sync with Gopkg.lock. These checks
 can be disabled with -skip-lock and -skip-vendor, respectively.
 
-(See https://golang.github.io/dep/docs/ensure-mechanics.html#staying-in-sync for
+(See http://golang.github.io/dep/docs/ensure-mechanics.html#staying-in-sync for
 more information on what it means to be "in sync.")
 
 If your workflow necessitates that you modify the contents of vendor, you can

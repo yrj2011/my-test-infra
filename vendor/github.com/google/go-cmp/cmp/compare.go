@@ -39,7 +39,7 @@ import (
 // the reflection package's inability to retrieve such entries. Equal will panic
 // anytime it comes across a NaN key, but this behavior may change.
 //
-// See https://golang.org/issue/11104 for more details.
+// See http://golang.org/issue/11104 for more details.
 
 var nothing = reflect.Value{}
 
@@ -381,7 +381,7 @@ func detectRaces(c chan<- reflect.Value, f reflect.Value, vs ...reflect.Value) {
 // Otherwise, it returns the input value as is.
 func sanitizeValue(v reflect.Value, t reflect.Type) reflect.Value {
 	// TODO(dsnet): Remove this hacky workaround.
-	// See https://golang.org/issue/22143
+	// See http://golang.org/issue/22143
 	if v.Kind() == reflect.Interface && v.IsNil() && v.Type() != t {
 		return reflect.New(t).Elem()
 	}
@@ -466,7 +466,7 @@ func (s *state) compareMap(vx, vy reflect.Value, t reflect.Type) {
 			// It is possible for both vvx and vvy to be invalid if the
 			// key contained a NaN value in it. There is no way in
 			// reflection to be able to retrieve these values.
-			// See https://golang.org/issue/11104
+			// See http://golang.org/issue/11104
 			panic(fmt.Sprintf("%#v has map key with NaNs", s.curPath))
 		}
 	}
@@ -526,7 +526,7 @@ type dynChecker struct{ curr, next int }
 //
 // Checks occur every Nth function call, where N is a triangular number:
 //	0 1 3 6 10 15 21 28 36 45 55 66 78 91 105 120 136 153 171 190 ...
-// See https://en.wikipedia.org/wiki/Triangular_number
+// See http://en.wikipedia.org/wiki/Triangular_number
 //
 // This sequence ensures that the cost of checks drops significantly as
 // the number of functions calls grows larger.

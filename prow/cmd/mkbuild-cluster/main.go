@@ -126,7 +126,7 @@ func getCredentials(o options) error {
 	}
 
 	// TODO(fejta): we ought to update kube.Client to support modern auth methods.
-	// More info: https://github.com/kubernetes/kubernetes/issues/30617
+	// More info: http://github.com/kubernetes/kubernetes/issues/30617
 	old, set := os.LookupEnv(useClientCertEnv)
 	if set {
 		defer os.Setenv(useClientCertEnv, old)

@@ -30,7 +30,7 @@ import (
 )
 
 var (
-	selector  = flag.String("label-selector", "", "Label selector to select prow pods for log tracing. See https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors for constructing a label selector.")
+	selector  = flag.String("label-selector", "", "Label selector to select prow pods for log tracing. See http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors for constructing a label selector.")
 	namespace = flag.String("namespace", "", "Namespace where prow runs")
 	headless  = flag.Bool("headless", false, "Run on headless mode")
 )

@@ -5,7 +5,7 @@
 // Package jwt implements the OAuth 2.0 JSON Web Token flow, commonly
 // known as "two-legged OAuth 2.0".
 //
-// See: https://tools.ietf.org/html/draft-ietf-oauth-jwt-bearer-12
+// See: http://tools.ietf.org/html/draft-ietf-oauth-jwt-bearer-12
 package jwt
 
 import (

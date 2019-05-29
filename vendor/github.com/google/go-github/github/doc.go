@@ -28,7 +28,7 @@ Some API methods have optional parameters that can be passed. For example:
 
 The services of a client divide the API into logical chunks and correspond to
 the structure of the GitHub API documentation at
-https://developer.github.com/v3/.
+http://developer.github.com/v3/.
 
 Authentication
 
@@ -64,7 +64,7 @@ For API methods that require HTTP Basic Authentication, use the
 BasicAuthTransport.
 
 GitHub Apps authentication can be provided by the
-https://github.com/bradleyfalzon/ghinstallation package.
+http://github.com/bradleyfalzon/ghinstallation package.
 
 	import "github.com/bradleyfalzon/ghinstallation"
 
@@ -102,7 +102,7 @@ To detect an API rate limit error, you can check if its type is *github.RateLimi
 	}
 
 Learn more about GitHub rate limiting at
-https://developer.github.com/v3/#rate-limiting.
+http://developer.github.com/v3/#rate-limiting.
 
 Accepted Status
 
@@ -125,10 +125,10 @@ The GitHub API has good support for conditional requests which will help
 prevent you from burning through your rate limit, as well as help speed up your
 application. go-github does not handle conditional requests directly, but is
 instead designed to work with a caching http.Transport. We recommend using
-https://github.com/gregjones/httpcache for that.
+http://github.com/gregjones/httpcache for that.
 
 Learn more about GitHub conditional requests at
-https://developer.github.com/v3/#conditional-requests.
+http://developer.github.com/v3/#conditional-requests.
 
 Creating and Updating Resources
 

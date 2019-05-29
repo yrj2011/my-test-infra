@@ -177,43 +177,43 @@ func TestGetURL(t *testing.T) {
 			name: "fallback template",
 
 			jobName:  "pull-community-verify",
-			template: "https://storage.googleapis.com/kubernetes-jenkins/logs/%s/latest-build.txt",
+			template: "http://storage.googleapis.com/kubernetes-jenkins/logs/%s/latest-build.txt",
 
-			expected: "https://storage.googleapis.com/kubernetes-jenkins/logs/pull-community-verify/latest-build.txt",
+			expected: "http://storage.googleapis.com/kubernetes-jenkins/logs/pull-community-verify/latest-build.txt",
 		},
 		{
 			name: "fallback bucket - presubmit",
 
 			jobName: "pull-community-verify",
 			c:       c,
-			bucket:  "https://storage.googleapis.com/kubernetes-jenkins",
+			bucket:  "http://storage.googleapis.com/kubernetes-jenkins",
 
-			expected: "https://storage.googleapis.com/kubernetes-jenkins/pr-logs/directory/pull-community-verify/latest-build.txt",
+			expected: "http://storage.googleapis.com/kubernetes-jenkins/pr-logs/directory/pull-community-verify/latest-build.txt",
 		},
 		{
 			name: "fallback bucket - postsubmit",
 
 			jobName: "ci-test-infra-bazel",
 			c:       c,
-			bucket:  "https://storage.googleapis.com/kubernetes-jenkins",
+			bucket:  "http://storage.googleapis.com/kubernetes-jenkins",
 
-			expected: "https://storage.googleapis.com/kubernetes-jenkins/logs/ci-test-infra-bazel/latest-build.txt",
+			expected: "http://storage.googleapis.com/kubernetes-jenkins/logs/ci-test-infra-bazel/latest-build.txt",
 		},
 		{
 			name: "fallback bucket - periodic",
 
 			jobName: "ci-kubernetes-cross-build",
 			c:       c,
-			bucket:  "https://storage.googleapis.com/kubernetes-jenkins",
+			bucket:  "http://storage.googleapis.com/kubernetes-jenkins",
 
-			expected: "https://storage.googleapis.com/kubernetes-jenkins/logs/ci-kubernetes-cross-build/latest-build.txt",
+			expected: "http://storage.googleapis.com/kubernetes-jenkins/logs/ci-kubernetes-cross-build/latest-build.txt",
 		},
 		{
 			name: "fallback bucket - unknown",
 
 			jobName: "a-name-that-is-what-it-is",
 			c:       c,
-			bucket:  "https://storage.googleapis.com/kubernetes-jenkins",
+			bucket:  "http://storage.googleapis.com/kubernetes-jenkins",
 
 			expected: "",
 		},
@@ -222,9 +222,9 @@ func TestGetURL(t *testing.T) {
 
 			jobName: "pull-community-verify",
 			c:       c,
-			bucket:  "https://storage.googleapis.com/kubernetes-jenkins/",
+			bucket:  "http://storage.googleapis.com/kubernetes-jenkins/",
 
-			expected: "https://storage.googleapis.com/kubernetes-jenkins/pr-logs/directory/pull-community-verify/latest-build.txt",
+			expected: "http://storage.googleapis.com/kubernetes-jenkins/pr-logs/directory/pull-community-verify/latest-build.txt",
 		},
 	}
 

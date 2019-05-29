@@ -112,7 +112,7 @@ func (r *Replacer) recheckLine(s string, lineNum int, buf io.Writer, next func(D
 		}
 
 		// ignore camelCase words
-		// https://github.com/client9/misspell/issues/113
+		// http://github.com/client9/misspell/issues/113
 		if CaseStyle(word) == CaseUnknown {
 			continue
 		}

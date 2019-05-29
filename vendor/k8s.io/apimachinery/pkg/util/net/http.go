@@ -381,7 +381,7 @@ redirectLoop:
 		}
 
 		// Redirected requests switch to "GET" according to the HTTP spec:
-		// https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3
+		// http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3
 		method = "GET"
 		// don't send a body when following redirects
 		body = nil

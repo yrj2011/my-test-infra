@@ -40,7 +40,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "minimal ok with jenkins bearer token",
 			input: options{
-				jenkinsURL:             "https://example.com",
+				jenkinsURL:             "http://example.com",
 				jenkinsBearerTokenFile: "secret",
 				github:                 flagutil.GitHubOptions{TokenPath: "token"},
 			},

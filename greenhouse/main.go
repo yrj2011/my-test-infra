@@ -23,8 +23,8 @@ limitations under the License.
 //
 // nursery assumes you are using SHA256
 //
-// [1] https://docs.bazel.build/versions/master/remote-caching.html
-// [2] https://docs.bazel.build/versions/master/remote-caching.html#http-caching-protocol
+// [1] http://docs.bazel.build/versions/master/remote-caching.html
+// [2] http://docs.bazel.build/versions/master/remote-caching.html#http-caching-protocol
 package main
 
 import (

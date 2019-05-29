@@ -219,7 +219,7 @@ func (c *Controller) ProcessChange(instance string, change client.ChangeInfo) er
 		Repo:     change.Project, // Something like platform/build
 		BaseRef:  change.Branch,
 		BaseSHA:  baseSHA,
-		CloneURI: cloneURI.String(), // Something like https://android.googlesource.com/platform/build
+		CloneURI: cloneURI.String(), // Something like http://android.googlesource.com/platform/build
 		Pulls: []kube.Pull{
 			{
 				Number: change.Number,

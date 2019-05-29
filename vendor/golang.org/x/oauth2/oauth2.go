@@ -20,7 +20,7 @@ import (
 )
 
 // NoContext is the default context you should supply if not using
-// your own context.Context (see https://golang.org/x/net/context).
+// your own context.Context (see http://golang.org/x/net/context).
 //
 // Deprecated: Use context.Background() or context.TODO() instead.
 var NoContext = context.TODO()
@@ -32,7 +32,7 @@ var NoContext = context.TODO()
 // Once a server is registered, credentials (client_id and client_secret)
 // will be passed as query parameters rather than being present
 // in the Authorization header.
-// See https://code.google.com/p/goauth2/issues/detail?id=31 for background.
+// See http://code.google.com/p/goauth2/issues/detail?id=31 for background.
 func RegisterBrokenAuthHeaderProvider(tokenURL string) {
 	internal.RegisterBrokenAuthHeaderProvider(tokenURL)
 }
@@ -40,7 +40,7 @@ func RegisterBrokenAuthHeaderProvider(tokenURL string) {
 // Config describes a typical 3-legged OAuth2 flow, with both the
 // client application information and the server's endpoint URLs.
 // For the client credentials 2-legged OAuth2 flow, see the clientcredentials
-// package (https://golang.org/x/oauth2/clientcredentials).
+// package (http://golang.org/x/oauth2/clientcredentials).
 type Config struct {
 	// ClientID is the application's ID.
 	ClientID string
@@ -159,7 +159,7 @@ func (c *Config) AuthCodeURL(state string, opts ...AuthCodeOption) string {
 // degree of trust between the resource owner and the client (e.g., the client
 // is part of the device operating system or a highly privileged application),
 // and when other authorization grant types are not available."
-// See https://tools.ietf.org/html/rfc6749#section-4.3 for more info.
+// See http://tools.ietf.org/html/rfc6749#section-4.3 for more info.
 //
 // The HTTP client to use is derived from the context.
 // If nil, http.DefaultClient is used.

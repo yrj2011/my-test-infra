@@ -91,11 +91,11 @@ func NewMultiWriteSyncer(ws ...WriteSyncer) WriteSyncer {
 	if len(ws) == 1 {
 		return ws[0]
 	}
-	// Copy to protect against https://github.com/golang/go/issues/7809
+	// Copy to protect against http://github.com/golang/go/issues/7809
 	return multiWriteSyncer(append([]WriteSyncer(nil), ws...))
 }
 
-// See https://golang.org/src/io/multi.go
+// See http://golang.org/src/io/multi.go
 // When not all underlying syncers write the same number of bytes,
 // the smallest number is returned even though Write() is called on
 // all of them.

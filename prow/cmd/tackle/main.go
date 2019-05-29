@@ -61,7 +61,7 @@ func ensureKubectl() error {
 
 // ensureGcloud ensures gcloud on path or prints a note of how to install.
 func ensureGcloud() error {
-	return ensure("gcloud", "https://cloud.google.com/sdk/gcloud")
+	return ensure("gcloud", "http://cloud.google.com/sdk/gcloud")
 }
 
 // output returns the trimmed output of running args, or an err on non-zero exit.
@@ -122,7 +122,7 @@ func selectProject(choice string) (string, error) {
 			return "", fmt.Errorf("list projects: %v", err)
 		}
 		if len(projs) == 0 {
-			fmt.Println("Create a project at https://console.cloud.google.com/")
+			fmt.Println("Create a project at http://console.cloud.google.com/")
 			return "", errors.New("no projects")
 		}
 		if len(projs) == max {
@@ -454,9 +454,9 @@ func githubClient(tokenPath string, dry bool) (*github.Client, error) {
 
 	gen := secretAgent.GetTokenGenerator(tokenPath)
 	if dry {
-		return github.NewDryRunClient(gen, "https://api.github.com"), nil
+		return github.NewDryRunClient(gen, "http://api.github.com"), nil
 	}
-	return github.NewClient(gen, "https://api.github.com"), nil
+	return github.NewClient(gen, "http://api.github.com"), nil
 }
 
 func applySecret(ctx, name, key, path string) error {
@@ -469,7 +469,7 @@ func applyStarter(kc *kubernetes.Clientset, ns, choice, ctx string, overwrite bo
 		fmt.Scanln(&choice)
 	}
 	if choice == "" || choice == "github" || choice == "upstream" || choice == "github upstream" {
-		choice = "https://raw.githubusercontent.com/kubernetes/test-infra/master/prow/cluster/starter.yaml"
+		choice = "http://raw.githubusercontent.com/kubernetes/test-infra/master/prow/cluster/starter.yaml"
 		fmt.Println("Loading from", choice)
 	}
 	_, err := kc.AppsV1().Deployments(ns).Get("plank", metav1.GetOptions{})

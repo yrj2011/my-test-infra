@@ -18,7 +18,7 @@ package v1alpha1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -39,7 +39,7 @@ func (Initializer) SwaggerDoc() map[string]string {
 
 var map_InitializerConfiguration = map[string]string{
 	"":             "InitializerConfiguration describes the configuration of initializers.",
-	"metadata":     "Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.",
+	"metadata":     "Standard object metadata; More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.",
 	"initializers": "Initializers is a list of resources and their default initializers Order-sensitive. When merging multiple InitializerConfigurations, we sort the initializers from different InitializerConfigurations by the name of the InitializerConfigurations; the order of the initializers from the same InitializerConfiguration is preserved.",
 }
 
@@ -49,7 +49,7 @@ func (InitializerConfiguration) SwaggerDoc() map[string]string {
 
 var map_InitializerConfigurationList = map[string]string{
 	"":         "InitializerConfigurationList is a list of InitializerConfiguration.",
-	"metadata": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+	"metadata": "Standard list metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
 	"items":    "List of InitializerConfiguration.",
 }
 

@@ -347,7 +347,7 @@ func TestReplaceConfigMap(t *testing.T) {
 // that our cert handling is done properly. We create root and client keys,
 // then server and client certificates, then ensure that the client can talk
 // to the server.
-// See https://ericchiang.github.io/post/go-tls/ for implementation details.
+// See http://ericchiang.github.io/post/go-tls/ for implementation details.
 func TestNewClient(t *testing.T) {
 	r := rand.New(rand.NewSource(42))
 	rootKey, err := rsa.GenerateKey(r, 2048)

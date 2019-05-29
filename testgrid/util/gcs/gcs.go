@@ -116,7 +116,7 @@ func Upload(ctx context.Context, client *storage.Client, path Path, buf []byte) 
 	w.SendCRC32C = true
 	// Send our CRC32 to ensure google received the same data we sent.
 	// See checksum example at:
-	// https://godoc.org/cloud.google.com/go/storage#Writer.Write
+	// http://godoc.org/cloud.google.com/go/storage#Writer.Write
 	w.ObjectAttrs.CRC32C = crc
 	w.ProgressFunc = func(bytes int64) {
 		log.Printf("Uploading %s: %d/%d...", path, bytes, len(buf))

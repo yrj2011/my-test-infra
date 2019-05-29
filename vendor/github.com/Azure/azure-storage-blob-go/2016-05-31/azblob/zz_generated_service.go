@@ -28,7 +28,7 @@ func newServiceClient(url url.URL, p pipeline.Pipeline) serviceClient {
 // and CORS (Cross-Origin Resource Sharing) rules.
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> requestID is provides a client-generated, opaque value with a 1 KB
 // character limit that is recorded in the analytics logs when storage analytics logging is enabled.
 func (client serviceClient) GetProperties(ctx context.Context, timeout *int32, requestID *string) (*StorageServiceProperties, error) {
@@ -97,7 +97,7 @@ func (client serviceClient) getPropertiesResponder(resp pipeline.Response) (pipe
 // location endpoint when read-access geo-redundant replication is enabled for the storage account.
 //
 // timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> requestID is provides a client-generated, opaque value with a 1 KB
 // character limit that is recorded in the analytics logs when storage analytics logging is enabled.
 func (client serviceClient) GetStats(ctx context.Context, timeout *int32, requestID *string) (*StorageServiceStats, error) {
@@ -176,7 +176,7 @@ func (client serviceClient) getStatsResponder(resp pipeline.Response) (pipeline.
 // by maxresults, or than the default of 5000. include is include this parameter to specify that the container's
 // metadata be returned as part of the response body. timeout is the timeout parameter is expressed in seconds. For
 // more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> requestID is provides a client-generated, opaque value with a 1 KB
 // character limit that is recorded in the analytics logs when storage analytics logging is enabled.
 func (client serviceClient) ListContainers(ctx context.Context, prefix *string, marker *string, maxresults *int32, include ListContainersIncludeType, timeout *int32, requestID *string) (*ListContainersResponse, error) {
@@ -260,7 +260,7 @@ func (client serviceClient) listContainersResponder(resp pipeline.Response) (pip
 //
 // storageServiceProperties is the StorageService properties. timeout is the timeout parameter is expressed in seconds.
 // For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> requestID is provides a client-generated, opaque value with a 1 KB
 // character limit that is recorded in the analytics logs when storage analytics logging is enabled.
 func (client serviceClient) SetProperties(ctx context.Context, storageServiceProperties StorageServiceProperties, timeout *int32, requestID *string) (*ServiceSetPropertiesResponse, error) {

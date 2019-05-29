@@ -317,7 +317,7 @@ func TestPushServer_ServeHTTP(t *testing.T) {
 		{
 			name:   "WrongToken",
 			secret: "wrongToken",
-			url:    "https://prow.k8s.io/push",
+			url:    "http://prow.k8s.io/push",
 			pushRequest: pushRequest{
 				Message: message{
 					ID: "runid",
@@ -327,7 +327,7 @@ func TestPushServer_ServeHTTP(t *testing.T) {
 		},
 		{
 			name: "NoToken",
-			url:  "https://prow.k8s.io/push",
+			url:  "http://prow.k8s.io/push",
 			pushRequest: pushRequest{
 				Message: message{
 					ID: "runid",
@@ -338,7 +338,7 @@ func TestPushServer_ServeHTTP(t *testing.T) {
 		{
 			name:   "RightToken",
 			secret: "secret",
-			url:    "https://prow.k8s.io/push?token=secret",
+			url:    "http://prow.k8s.io/push?token=secret",
 			pushRequest: pushRequest{
 				Message: message{
 					ID: "runid",
@@ -349,14 +349,14 @@ func TestPushServer_ServeHTTP(t *testing.T) {
 		{
 			name:         "InvalidPushRequest",
 			secret:       "secret",
-			url:          "https://prow.k8s.io/push?token=secret",
+			url:          "http://prow.k8s.io/push?token=secret",
 			pushRequest:  "invalid",
 			expectedCode: http.StatusBadRequest,
 		},
 		{
 			name:        "SuccessToken",
 			secret:      "secret",
-			url:         "https://prow.k8s.io/push?token=secret",
+			url:         "http://prow.k8s.io/push?token=secret",
 			pushRequest: pushRequest{},
 			pe: &PeriodicProwJobEvent{
 				Name: "test",
@@ -365,7 +365,7 @@ func TestPushServer_ServeHTTP(t *testing.T) {
 		},
 		{
 			name:        "SuccessNoToken",
-			url:         "https://prow.k8s.io/push",
+			url:         "http://prow.k8s.io/push",
 			pushRequest: pushRequest{},
 			pe: &PeriodicProwJobEvent{
 				Name: "test",

@@ -13,7 +13,7 @@ provider.
 An example of manually providing authentication information:
 
   opts := gophercloud.AuthOptions{
-    IdentityEndpoint: "https://openstack.example.com:5000/v2.0",
+    IdentityEndpoint: "http://openstack.example.com:5000/v2.0",
     Username: "{username}",
     Password: "{password}",
     TenantID: "{tenant_id}",
@@ -75,7 +75,7 @@ type AuthOptions struct {
 	// HTTP client to the provider client and provide a transport that implements
 	// the RoundTripper interface and stores the number of failed retries. For an
 	// example of this, see here:
-	// https://github.com/rackspace/rack/blob/1.0.0/auth/clients.go#L311
+	// http://github.com/rackspace/rack/blob/1.0.0/auth/clients.go#L311
 	AllowReauth bool `json:"-"`
 
 	// TokenID allows users to authenticate (possibly as another user) with an
@@ -212,7 +212,7 @@ func (opts *AuthOptions) ToTokenV3CreateMap(scope map[string]interface{}) (map[s
 
 		} else if opts.ApplicationCredentialID != "" {
 			// Configure the request for ApplicationCredentialID authentication.
-			// https://github.com/openstack/keystoneauth/blob/stable/rocky/keystoneauth1/identity/v3/application_credential.py#L48-L67
+			// http://github.com/openstack/keystoneauth/blob/stable/rocky/keystoneauth1/identity/v3/application_credential.py#L48-L67
 			// There are three kinds of possible application_credential requests
 			// 1. application_credential id + secret
 			// 2. application_credential name + secret + user_id

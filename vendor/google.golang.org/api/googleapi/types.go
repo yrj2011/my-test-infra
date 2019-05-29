@@ -152,7 +152,7 @@ func (s Float64s) MarshalJSON() ([]byte, error) {
 
 // RawMessage is a raw encoded JSON value.
 // It is identical to json.RawMessage, except it does not suffer from
-// https://golang.org/issue/14493.
+// http://golang.org/issue/14493.
 type RawMessage []byte
 
 // MarshalJSON returns m.

@@ -48,7 +48,7 @@ type Copier struct {
 	// ProgressFunc can be used to monitor the progress of a multi-RPC copy
 	// operation. If ProgressFunc is not nil and copying requires multiple
 	// calls to the underlying service (see
-	// https://cloud.google.com/storage/docs/json_api/v1/objects/rewrite), then
+	// http://cloud.google.com/storage/docs/json_api/v1/objects/rewrite), then
 	// ProgressFunc will be invoked after each call with the number of bytes of
 	// content copied so far and the total size in bytes of the source object.
 	//

@@ -47,7 +47,7 @@ const (
 2. specifying the label manually: ` + "`/sig <group-name>`" + `
     e.g., ` + "`/sig scalability`" + ` to apply the ` + "`sig/scalability`" + ` label
 
-Note: Method 1 will trigger an email to the group. See the [group list](https://git.k8s.io/community/sig-list.md).
+Note: Method 1 will trigger an email to the group. See the [group list](http://git.k8s.io/community/sig-list.md).
 The ` + "`<group-suffix>`" + ` in method 1 has to be replaced with one of these: _**bugs, feature-requests, pr-reviews, test-failures, proposals**_`
 )
 

@@ -22,7 +22,7 @@ type RequestLogOptions struct {
 
 func (o RequestLogOptions) defaults() RequestLogOptions {
 	if o.LogWarningIfTryOverThreshold == 0 {
-		// It would be good to relate this to https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_2/
+		// It would be good to relate this to http://azure.microsoft.com/en-us/support/legal/sla/storage/v1_2/
 		// But this monitors the time to get the HTTP response; NOT the time to download the response body.
 		o.LogWarningIfTryOverThreshold = 3 * time.Second // Default to 3 seconds
 	}

@@ -15,7 +15,7 @@ import (
 // PullRequestsService handles communication with the pull request related
 // methods of the GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/
+// GitHub API docs: http://developer.github.com/v3/pulls/
 type PullRequestsService service
 
 // PullRequest represents a GitHub pull request on a repository.
@@ -97,7 +97,7 @@ type PullRequestListOptions struct {
 
 // List the pull requests for the specified repository.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#list-pull-requests
+// GitHub API docs: http://developer.github.com/v3/pulls/#list-pull-requests
 func (s *PullRequestsService) List(ctx context.Context, owner string, repo string, opt *PullRequestListOptions) ([]*PullRequest, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls", owner, repo)
 	u, err := addOptions(u, opt)
@@ -121,7 +121,7 @@ func (s *PullRequestsService) List(ctx context.Context, owner string, repo strin
 
 // Get a single pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#get-a-single-pull-request
+// GitHub API docs: http://developer.github.com/v3/pulls/#get-a-single-pull-request
 func (s *PullRequestsService) Get(ctx context.Context, owner string, repo string, number int) (*PullRequest, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/%d", owner, repo, number)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -176,7 +176,7 @@ type NewPullRequest struct {
 
 // Create a new pull request on the specified repository.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#create-a-pull-request
+// GitHub API docs: http://developer.github.com/v3/pulls/#create-a-pull-request
 func (s *PullRequestsService) Create(ctx context.Context, owner string, repo string, pull *NewPullRequest) (*PullRequest, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls", owner, repo)
 	req, err := s.client.NewRequest("POST", u, pull)
@@ -207,7 +207,7 @@ type pullRequestUpdate struct {
 // The following fields are editable: Title, Body, State, Base.Ref and MaintainerCanModify.
 // Base.Ref updates the base branch of the pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#update-a-pull-request
+// GitHub API docs: http://developer.github.com/v3/pulls/#update-a-pull-request
 func (s *PullRequestsService) Edit(ctx context.Context, owner string, repo string, number int, pull *PullRequest) (*PullRequest, *Response, error) {
 	if pull == nil {
 		return nil, nil, fmt.Errorf("pull must be provided")
@@ -241,7 +241,7 @@ func (s *PullRequestsService) Edit(ctx context.Context, owner string, repo strin
 
 // ListCommits lists the commits in a pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#list-commits-on-a-pull-request
+// GitHub API docs: http://developer.github.com/v3/pulls/#list-commits-on-a-pull-request
 func (s *PullRequestsService) ListCommits(ctx context.Context, owner string, repo string, number int, opt *ListOptions) ([]*RepositoryCommit, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/%d/commits", owner, repo, number)
 	u, err := addOptions(u, opt)
@@ -265,7 +265,7 @@ func (s *PullRequestsService) ListCommits(ctx context.Context, owner string, rep
 
 // ListFiles lists the files in a pull request.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#list-pull-requests-files
+// GitHub API docs: http://developer.github.com/v3/pulls/#list-pull-requests-files
 func (s *PullRequestsService) ListFiles(ctx context.Context, owner string, repo string, number int, opt *ListOptions) ([]*CommitFile, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/%d/files", owner, repo, number)
 	u, err := addOptions(u, opt)
@@ -289,7 +289,7 @@ func (s *PullRequestsService) ListFiles(ctx context.Context, owner string, repo 
 
 // IsMerged checks if a pull request has been merged.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#get-if-a-pull-request-has-been-merged
+// GitHub API docs: http://developer.github.com/v3/pulls/#get-if-a-pull-request-has-been-merged
 func (s *PullRequestsService) IsMerged(ctx context.Context, owner string, repo string, number int) (bool, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/%d/merge", owner, repo, number)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -328,7 +328,7 @@ type pullRequestMergeRequest struct {
 // Merge a pull request (Merge Button™).
 // commitMessage is the title for the automatic commit message.
 //
-// GitHub API docs: https://developer.github.com/v3/pulls/#merge-a-pull-request-merge-buttontrade
+// GitHub API docs: http://developer.github.com/v3/pulls/#merge-a-pull-request-merge-buttontrade
 func (s *PullRequestsService) Merge(ctx context.Context, owner string, repo string, number int, commitMessage string, options *PullRequestOptions) (*PullRequestMergeResult, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/%d/merge", owner, repo, number)
 

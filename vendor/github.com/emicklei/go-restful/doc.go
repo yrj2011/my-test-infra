@@ -28,13 +28,13 @@ This package has the logic to find the best matching Route and if found, call it
 
 The (*Request, *Response) arguments provide functions for reading information from the request and writing information back to the response.
 
-See the example https://github.com/emicklei/go-restful/blob/master/examples/restful-user-resource.go with a full implementation.
+See the example http://github.com/emicklei/go-restful/blob/master/examples/restful-user-resource.go with a full implementation.
 
 Regular expression matching Routes
 
 A Route parameter can be specified using the format "uri/{var[:regexp]}" or the special version "uri/{var:*}" for matching the tail of the path.
 For example, /persons/{name:[A-Z][A-Z]} can be used to restrict values for the parameter "name" to only contain capital alphabetic characters.
-Regular expressions must use the standard Go syntax as described in the regexp package. (https://code.google.com/p/re2/wiki/Syntax)
+Regular expressions must use the standard Go syntax as described in the regexp package. (http://code.google.com/p/re2/wiki/Syntax)
 This feature requires the use of a CurlyRouter.
 
 Containers
@@ -82,7 +82,7 @@ These are processed before calling the function associated with the Route.
 	// install 2 chained route filters (processed before calling findUser)
 	ws.Route(ws.GET("/{user-id}").Filter(routeLogging).Filter(NewCountFilter().routeCounter).To(findUser))
 
-See the example https://github.com/emicklei/go-restful/blob/master/examples/restful-filters.go with full implementations.
+See the example http://github.com/emicklei/go-restful/blob/master/examples/restful-filters.go with full implementations.
 
 Response Encoding
 
@@ -93,7 +93,7 @@ Two encodings are supported: gzip and deflate. To enable this for all responses:
 If a Http request includes the Accept-Encoding header then the response content will be compressed using the specified encoding.
 Alternatively, you can create a Filter that performs the encoding and install it per WebService or Route.
 
-See the example https://github.com/emicklei/go-restful/blob/master/examples/restful-encoding-filter.go
+See the example http://github.com/emicklei/go-restful/blob/master/examples/restful-encoding-filter.go
 
 OPTIONS support
 
@@ -172,13 +172,13 @@ preferred package is simple.
 
 Resources
 
-[project]: https://github.com/emicklei/go-restful
+[project]: http://github.com/emicklei/go-restful
 
-[examples]: https://github.com/emicklei/go-restful/blob/master/examples
+[examples]: http://github.com/emicklei/go-restful/blob/master/examples
 
 [design]:  http://ernestmicklei.com/2012/11/11/go-restful-api-design/
 
-[showcases]: https://github.com/emicklei/mora, https://github.com/emicklei/landskape
+[showcases]: http://github.com/emicklei/mora, http://github.com/emicklei/landskape
 
 (c) 2012-2015, http://ernestmicklei.com. MIT License
 */

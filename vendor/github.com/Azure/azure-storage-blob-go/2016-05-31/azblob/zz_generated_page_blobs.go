@@ -30,9 +30,9 @@ func newPageBlobsClient(url url.URL, p pipeline.Pipeline) pageBlobsClient {
 //
 // snapshot is the snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to
 // retrieve. For more information on working with blob snapshots, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
 // a Snapshot of a Blob.</a> timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> prevsnapshot is optional in version 2015-07-08 and newer. The prevsnapshot
 // parameter is a DateTime value that specifies that the response will contain only pages that were changed between
 // target blob and previous snapshot. Changed pages include both updated and cleared pages. The target blob may be a
@@ -139,7 +139,7 @@ func (client pageBlobsClient) getPageRangesResponder(resp pipeline.Response) (pi
 // specifies a page blob snapshot. The value should be URL-encoded as it would appear in a request URI. The source blob
 // must either be public or must be authenticated via a shared access signature. timeout is the timeout parameter is
 // expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> metadata is optional. Specifies a user-defined name-value pair associated
 // with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or
 // file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with
@@ -227,7 +227,7 @@ func (client pageBlobsClient) incrementalCopyResponder(resp pipeline.Response) (
 // Content-Length header to zero, and the Range header to a value that indicates the range to clear, up to maximum blob
 // size. optionalbody is initial data optionalbody will be closed upon successful return. Callers should ensure closure
 // when receiving an error.timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> rangeParameter is return only the bytes of the blob in the specified
 // range. leaseID is if specified, the operation only succeeds if the container's lease is active and matches this ID.
 // ifSequenceNumberLessThanOrEqualTo is specify this header value to operate only on a blob if it has a sequence number

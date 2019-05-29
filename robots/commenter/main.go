@@ -57,9 +57,9 @@ const (
 
 func flagOptions() options {
 	o := options{
-		endpoint: flagutil.NewStrings("https://api.github.com"),
+		endpoint: flagutil.NewStrings("http://api.github.com"),
 	}
-	flag.StringVar(&o.query, "query", "", "See https://help.github.com/articles/searching-issues-and-pull-requests/")
+	flag.StringVar(&o.query, "query", "", "See http://help.github.com/articles/searching-issues-and-pull-requests/")
 	flag.DurationVar(&o.updated, "updated", 2*time.Hour, "Filter to issues unmodified for at least this long if set")
 	flag.BoolVar(&o.includeClosed, "include-closed", false, "Match closed issues if set")
 	flag.BoolVar(&o.confirm, "confirm", false, "Mutate github if set")
@@ -94,7 +94,7 @@ type options struct {
 }
 
 func parseHTMLURL(url string) (string, string, int, error) {
-	// Example: https://github.com/batterseapower/pinyin-toolkit/issues/132
+	// Example: http://github.com/batterseapower/pinyin-toolkit/issues/132
 	re := regexp.MustCompile(`.+/(.+)/(.+)/(issues|pull)/(\d+)$`)
 	mat := re.FindStringSubmatch(url)
 	if mat == nil {

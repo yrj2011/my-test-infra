@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // Tot vends (rations) incrementing numbers for use in builds.
-// https://en.wikipedia.org/wiki/Rum_ration
+// http://en.wikipedia.org/wiki/Rum_ration
 package main
 
 import (
@@ -66,7 +66,7 @@ func gatherOptions() options {
 	flag.StringVar(&o.configPath, "config-path", "", "Path to prow config.")
 	flag.StringVar(&o.jobConfigPath, "job-config-path", "", "Path to prow job configs.")
 	flag.StringVar(&o.fallbackBucket, "fallback-bucket", "",
-		"Fallback to top-level bucket for jobs that lack a last vended build number. The bucket layout is expected to follow https://github.com/kubernetes/test-infra/tree/master/gubernator#gcs-bucket-layout",
+		"Fallback to top-level bucket for jobs that lack a last vended build number. The bucket layout is expected to follow http://github.com/kubernetes/test-infra/tree/master/gubernator#gcs-bucket-layout",
 	)
 
 	flag.Parse()

@@ -16,7 +16,7 @@ TenantID or TenantName as project_id and project_name. Credentials are
 specified like so:
 
   opts := gophercloud.AuthOptions{
-    IdentityEndpoint: "https://openstack.example.com:5000/v2.0",
+    IdentityEndpoint: "http://openstack.example.com:5000/v2.0",
     Username: "{username}",
     Password: "{password}",
     TenantID: "{tenant_id}",

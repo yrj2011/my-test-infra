@@ -442,7 +442,7 @@ func getFreshness(respHeaders, reqHeaders http.Header) (freshness int) {
 }
 
 // Returns true if either the request or the response includes the stale-if-error
-// cache control extension: https://tools.ietf.org/html/rfc5861
+// cache control extension: http://tools.ietf.org/html/rfc5861
 func canStaleOnError(respHeaders, reqHeaders http.Header) bool {
 	respCacheControl := parseCacheControl(respHeaders)
 	reqCacheControl := parseCacheControl(reqHeaders)
@@ -535,7 +535,7 @@ func newGatewayTimeoutResponse(req *http.Request) *http.Response {
 
 // cloneRequest returns a clone of the provided *http.Request.
 // The clone is a shallow copy of the struct and its Header map.
-// (This function copyright goauth2 authors: https://code.google.com/p/goauth2)
+// (This function copyright goauth2 authors: http://code.google.com/p/goauth2)
 func cloneRequest(r *http.Request) *http.Request {
 	// shallow copy of the struct
 	r2 := new(http.Request)

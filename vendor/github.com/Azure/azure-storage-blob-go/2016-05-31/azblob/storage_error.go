@@ -16,7 +16,7 @@ func init() {
 }
 
 // ServiceCodeType is a string identifying a specific container or blob error.
-// For more information, see https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-error-codes
+// For more information, see http://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-error-codes
 type ServiceCodeType string
 
 // StorageError identifies a responder-generated network or response parsing error.

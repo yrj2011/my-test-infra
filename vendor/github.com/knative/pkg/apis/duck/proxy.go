@@ -23,7 +23,7 @@ import (
 )
 
 // NewProxyWatcher is based on the same concept from Kubernetes apimachinery in 1.12 here:
-//    https://github.com/kubernetes/apimachinery/blob/c6dd271be/pkg/watch/watch.go#L272
+//    http://github.com/kubernetes/apimachinery/blob/c6dd271be/pkg/watch/watch.go#L272
 // Replace this copy once we've update our client libraries.
 
 // proxyWatcher lets you wrap your channel in watch.Interface. Threadsafe.

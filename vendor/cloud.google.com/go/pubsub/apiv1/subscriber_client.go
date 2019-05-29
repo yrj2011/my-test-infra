@@ -4,7 +4,7 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//     https://www.apache.org/licenses/LICENSE-2.0
+//     http://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -192,7 +192,7 @@ func (c *SubscriberClient) TopicIAM(topic *pubsubpb.Topic) *iam.Handle {
 // If the name is not provided in the request, the server will assign a random
 // name for this subscription on the same project as the topic, conforming
 // to the
-// resource name format (at https://cloud.google.com/pubsub/docs/overview#names).
+// resource name format (at http://cloud.google.com/pubsub/docs/overview#names).
 // The generated name is populated in the returned Subscription object.
 // Note that for REST API requests, you must specify a name in the request.
 func (c *SubscriberClient) CreateSubscription(ctx context.Context, req *pubsubpb.Subscription, opts ...gax.CallOption) (*pubsubpb.Subscription, error) {
@@ -231,7 +231,7 @@ func (c *SubscriberClient) GetSubscription(ctx context.Context, req *pubsubpb.Ge
 // NOTE:  The style guide requires body: "subscription" instead of body: "*".
 // Keeping the latter for internal consistency in V1, however it should be
 // corrected in V2.  See
-// https://cloud.google.com/apis/design/standard_methods#update for details.
+// http://cloud.google.com/apis/design/standard_methods#update for details.
 func (c *SubscriberClient) UpdateSubscription(ctx context.Context, req *pubsubpb.UpdateSubscriptionRequest, opts ...gax.CallOption) (*pubsubpb.Subscription, error) {
 	ctx = insertMetadata(ctx, c.xGoogMetadata)
 	opts = append(c.CallOptions.UpdateSubscription[0:len(c.CallOptions.UpdateSubscription):len(c.CallOptions.UpdateSubscription)], opts...)
@@ -437,7 +437,7 @@ func (c *SubscriberClient) ListSnapshots(ctx context.Context, req *pubsubpb.List
 // If the name is not provided in the request, the server will assign a random
 // name for this snapshot on the same project as the subscription, conforming
 // to the
-// resource name format (at https://cloud.google.com/pubsub/docs/overview#names).
+// resource name format (at http://cloud.google.com/pubsub/docs/overview#names).
 // The generated name is populated in the returned Snapshot object.
 // Note that for REST API requests, you must specify a name in the request.
 func (c *SubscriberClient) CreateSnapshot(ctx context.Context, req *pubsubpb.CreateSnapshotRequest, opts ...gax.CallOption) (*pubsubpb.Snapshot, error) {
@@ -460,7 +460,7 @@ func (c *SubscriberClient) CreateSnapshot(ctx context.Context, req *pubsubpb.Cre
 // NOTE:  The style guide requires body: "snapshot" instead of body: "*".
 // Keeping the latter for internal consistency in V1, however it should be
 // corrected in V2.  See
-// https://cloud.google.com/apis/design/standard_methods#update for details.
+// http://cloud.google.com/apis/design/standard_methods#update for details.
 func (c *SubscriberClient) UpdateSnapshot(ctx context.Context, req *pubsubpb.UpdateSnapshotRequest, opts ...gax.CallOption) (*pubsubpb.Snapshot, error) {
 	ctx = insertMetadata(ctx, c.xGoogMetadata)
 	opts = append(c.CallOptions.UpdateSnapshot[0:len(c.CallOptions.UpdateSnapshot):len(c.CallOptions.UpdateSnapshot)], opts...)

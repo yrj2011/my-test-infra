@@ -112,7 +112,7 @@ type PipelineRunResponse struct {
 type ObjectReference struct {
 	APIVersion string `json:"apiVersion" protobuf:"bytes,5,opt,name=apiVersion"`
 	// Kind of the referent.
-	// More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+	// More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
 	Kind string `json:"kind" protobuf:"bytes,1,opt,name=kind"`
 	// Name of the referent.
 	// More info: http://kubernetes.io/docs/user-guide/identifiers#names
@@ -682,7 +682,7 @@ func makePipelineRun(pj prowjobv1.ProwJob, buildID string) (*pipelinev1alpha1.Pi
 	sourceURL := ""
 	revision := ""
 	if pj.Spec.Refs != nil {
-		sourceURL = fmt.Sprintf("https://github.com/%s/%s.git", pj.Spec.Refs.Org, pj.Spec.Refs.Repo)
+		sourceURL = fmt.Sprintf("http://github.com/%s/%s.git", pj.Spec.Refs.Org, pj.Spec.Refs.Repo)
 
 		// todo lets support batches of PRs
 		if len(pj.Spec.Refs.Pulls) > 0 {

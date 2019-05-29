@@ -3,10 +3,10 @@
 // Package s3 provides the client and types for making API
 // requests to Amazon Simple Storage Service.
 //
-// See https://docs.aws.amazon.com/goto/WebAPI/s3-2006-03-01 for more information on this service.
+// See http://docs.aws.amazon.com/goto/WebAPI/s3-2006-03-01 for more information on this service.
 //
 // See s3 package documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/s3/
+// http://docs.aws.amazon.com/sdk-for-go/api/service/s3/
 //
 // Using the Client
 //
@@ -15,12 +15,12 @@
 // These clients are safe to use concurrently.
 //
 // See the SDK's documentation for more information on how to use the SDK.
-// https://docs.aws.amazon.com/sdk-for-go/api/
+// http://docs.aws.amazon.com/sdk-for-go/api/
 //
 // See aws.Config documentation for more information on configuring SDK clients.
-// https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
+// http://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
 //
 // See the Amazon Simple Storage Service client S3 for more
 // information on creating client for this service.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#New
+// http://docs.aws.amazon.com/sdk-for-go/api/service/s3/#New
 package s3

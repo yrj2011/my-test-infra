@@ -37,14 +37,14 @@ func TestParseHTMLURL(t *testing.T) {
 	}{
 		{
 			name: "normal issue",
-			url:  "https://github.com/org/repo/issues/1234",
+			url:  "http://github.com/org/repo/issues/1234",
 			org:  "org",
 			repo: "repo",
 			num:  1234,
 		},
 		{
 			name: "normal pull",
-			url:  "https://github.com/pull-org/pull-repo/pull/5555",
+			url:  "http://github.com/pull-org/pull-repo/pull/5555",
 			org:  "pull-org",
 			repo: "pull-repo",
 			num:  5555,
@@ -58,12 +58,12 @@ func TestParseHTMLURL(t *testing.T) {
 		},
 		{
 			name: "string issue",
-			url:  "https://github.com/org/repo/issues/future",
+			url:  "http://github.com/org/repo/issues/future",
 			fail: true,
 		},
 		{
 			name: "weird issue",
-			url:  "https://gubernator.k8s.io/build/kubernetes-jenkins/logs/ci-kubernetes-e2e-gci-gce/11947/",
+			url:  "http://gubernator.k8s.io/build/kubernetes-jenkins/logs/ci-kubernetes-e2e-gci-gce/11947/",
 			fail: true,
 		},
 	}
@@ -253,7 +253,7 @@ func TestRun(t *testing.T) {
 			name:     "template comment",
 			query:    "67",
 			client:   fakeClient{issues: manyIssues},
-			comment:  "https://gubernator.k8s.io/pr/{{.Org}}/{{.Repo}}/{{.Number}}",
+			comment:  "http://gubernator.k8s.io/pr/{{.Org}}/{{.Repo}}/{{.Number}}",
 			template: true,
 			expected: []int{67},
 		},

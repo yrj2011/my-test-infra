@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// Volumes: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeVolumes
+// Volumes: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeVolumes
 type Volumes struct{}
 
 func (Volumes) MarkAndSweep(sess *session.Session, acct string, region string, set *Set) error {

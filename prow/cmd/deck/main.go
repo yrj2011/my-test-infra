@@ -372,7 +372,7 @@ func loadToken(file string) ([]byte, error) {
 }
 
 // copy a http.Request
-// see: https://go-review.googlesource.com/c/go/+/36483/3/src/net/http/server.go
+// see: http://go-review.googlesource.com/c/go/+/36483/3/src/net/http/server.go
 func dupeRequest(original *http.Request) *http.Request {
 	r2 := new(http.Request)
 	*r2 = *original
@@ -387,7 +387,7 @@ func handleCached(next http.Handler) http.Handler {
 		// "max-age=0" just means there is no time in which it can skip
 		// revalidation. We also need to set must-revalidate because no-cache
 		// doesn't imply must-revalidate when using the back button
-		// https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.1
+		// http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.1
 		// TODO(bentheelder): consider setting a longer max-age
 		// setting it this way means the content is always revalidated
 		w.Header().Set("Cache-Control", "public, max-age=0, no-cache, must-revalidate")
@@ -399,7 +399,7 @@ func setHeadersNoCaching(w http.ResponseWriter) {
 	// Note that we need to set both no-cache and no-store because only some
 	// browsers decided to (incorrectly) treat no-cache as "never store"
 	// IE "no-store". for good measure to cover older browsers we also set
-	// expires and pragma: https://stackoverflow.com/a/2068407
+	// expires and pragma: http://stackoverflow.com/a/2068407
 	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
 	w.Header().Set("Pragma", "no-cache")
 	w.Header().Set("Expires", "0")

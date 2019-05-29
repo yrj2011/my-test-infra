@@ -31,7 +31,7 @@ func CreateInstallScript(ver string) (s string, err error) {
 	return createInstallGit(gitInfo{
 		GitRepo:      "etcd",
 		GitClonePath: "${GOPATH}/src/go.etcd.io",
-		GitCloneURL:  "https://github.com/etcd-io/etcd.git",
+		GitCloneURL:  "http://github.com/etcd-io/etcd.git",
 		IsPR:         isPR,
 		GitBranch:    ver,
 		InstallScript: `./build
@@ -65,8 +65,8 @@ sudo systemctl stop etcd.service || true
 ETCD_VER=v{{ .Version }}
 
 # choose either URL
-GOOGLE_URL=https://storage.googleapis.com/etcd
-GITHUB_URL=https://github.com/etcd-io/etcd/releases/download
+GOOGLE_URL=http://storage.googleapis.com/etcd
+GITHUB_URL=http://github.com/etcd-io/etcd/releases/download
 DOWNLOAD_URL=${GOOGLE_URL}
 
 rm -f /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz

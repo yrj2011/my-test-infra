@@ -29,7 +29,7 @@ func newAppendBlobsClient(url url.URL, p pipeline.Pipeline) appendBlobsClient {
 //
 // body is initial data body will be closed upon successful return. Callers should ensure closure when receiving an
 // error.timeout is the timeout parameter is expressed in seconds. For more information, see <a
-// href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+// href="http://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
 // Timeouts for Blob Service Operations.</a> leaseID is if specified, the operation only succeeds if the container's
 // lease is active and matches this ID. maxSize is optional conditional header. The max length in bytes permitted for
 // the append blob. If the Append Block operation would cause the blob to exceed that limit or if the blob size is

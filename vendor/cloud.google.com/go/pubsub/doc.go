@@ -21,9 +21,9 @@ and receivers.
 Note: This package is in beta. Some backwards-incompatible changes may occur.
 
 More information about Google Cloud Pub/Sub is available at
-https://cloud.google.com/pubsub/docs
+http://cloud.google.com/pubsub/docs
 
-See https://godoc.org/cloud.google.com/go for authentication, timeouts,
+See http://godoc.org/cloud.google.com/go for authentication, timeouts,
 connection pooling and similar aspects of this package.
 
 
@@ -120,6 +120,6 @@ Slow Message Processing
 
 For use cases where message processing exceeds 30 minutes, we recommend using
 the base client in a pull model, since long-lived streams are periodically killed
-by firewalls. See the example at https://godoc.org/cloud.google.com/go/pubsub/apiv1#example-SubscriberClient-Pull-LengthyClientProcessing
+by firewalls. See the example at http://godoc.org/cloud.google.com/go/pubsub/apiv1#example-SubscriberClient-Pull-LengthyClientProcessing
 */
 package pubsub // import "cloud.google.com/go/pubsub"

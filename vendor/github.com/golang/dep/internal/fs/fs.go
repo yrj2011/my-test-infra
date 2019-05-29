@@ -419,7 +419,7 @@ func copyFile(src, dst string) (err error) {
 				// fall back to copying the file contents.
 				//
 				// ERROR_PRIVILEGE_NOT_HELD is 1314 (0x522):
-				// https://msdn.microsoft.com/en-us/library/windows/desktop/ms681385(v=vs.85).aspx
+				// http://msdn.microsoft.com/en-us/library/windows/desktop/ms681385(v=vs.85).aspx
 				if lerr, ok := err.(*os.LinkError); ok && lerr.Err != syscall.Errno(1314) {
 					return err
 				}
@@ -459,8 +459,8 @@ func copyFile(src, dst string) (err error) {
 
 	// Temporary fix for Go < 1.9
 	//
-	// See: https://github.com/golang/dep/issues/774
-	// and https://github.com/golang/go/issues/20829
+	// See: http://github.com/golang/dep/issues/774
+	// and http://github.com/golang/go/issues/20829
 	if runtime.GOOS == "windows" {
 		dst = fixLongPath(dst)
 	}
@@ -570,7 +570,7 @@ func IsSymlink(path string) (bool, error) {
 // or contains .. elements), or is short enough, fixLongPath returns
 // path unmodified.
 //
-// See https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx#maxpath
+// See http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx#maxpath
 func fixLongPath(path string) string {
 	// Do nothing (and don't allocate) if the path is "short".
 	// Empirically (at least on the Windows Server 2013 builder),

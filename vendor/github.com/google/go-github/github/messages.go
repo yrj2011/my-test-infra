@@ -4,7 +4,7 @@
 // license that can be found in the LICENSE file.
 
 // This file provides functions for validating payloads from GitHub Webhooks.
-// GitHub API docs: https://developer.github.com/webhooks/securing/#validating-payloads-from-github
+// GitHub API docs: http://developer.github.com/webhooks/securing/#validating-payloads-from-github
 
 package github
 
@@ -150,7 +150,7 @@ func ValidatePayload(r *http.Request, secretKey []byte) (payload []byte, err err
 // payload is the JSON payload sent by GitHub Webhooks.
 // secretKey is the GitHub Webhook secret message.
 //
-// GitHub API docs: https://developer.github.com/webhooks/securing/#validating-payloads-from-github
+// GitHub API docs: http://developer.github.com/webhooks/securing/#validating-payloads-from-github
 func validateSignature(signature string, payload, secretKey []byte) error {
 	messageMAC, hashFunc, err := messageMAC(signature)
 	if err != nil {
@@ -164,14 +164,14 @@ func validateSignature(signature string, payload, secretKey []byte) error {
 
 // WebHookType returns the event type of webhook request r.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#webhook-headers
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#webhook-headers
 func WebHookType(r *http.Request) string {
 	return r.Header.Get(eventTypeHeader)
 }
 
 // DeliveryID returns the unique delivery ID of webhook request r.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#webhook-headers
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#webhook-headers
 func DeliveryID(r *http.Request) string {
 	return r.Header.Get(deliveryIDHeader)
 }

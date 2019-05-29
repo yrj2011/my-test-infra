@@ -97,9 +97,9 @@ func (r Result) extractIntoPtr(to interface{}, label string) error {
 						// are reused and not overwritten when the same copy of the
 						// struct is used:
 						//
-						// https://github.com/golang/go/issues/21092
-						// https://github.com/golang/go/issues/24155
-						// https://play.golang.org/p/NHo3ywlPZli
+						// http://github.com/golang/go/issues/21092
+						// http://github.com/golang/go/issues/24155
+						// http://play.golang.org/p/NHo3ywlPZli
 						newType := reflect.New(typeOfV).Elem()
 
 						b, err := json.Marshal(v)

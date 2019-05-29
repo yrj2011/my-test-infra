@@ -715,15 +715,15 @@ If they are not already assigned, you can assign the PR to them by writing ` + "
 
 *No associated issue*. Update pull-request body to add a reference to an issue, or get approval with ` + "`/approve no-issue`" + `
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=org%2Frepo).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo=org%2Frepo).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details open>
 Needs approval from an approver in each of these files:
 
-- **[a/OWNERS](https://github.com/org/repo/blob/dev/a/OWNERS)**
-- ~~[b/OWNERS](https://github.com/org/repo/blob/dev/b/OWNERS)~~ [Bill]
+- **[a/OWNERS](http://github.com/org/repo/blob/dev/a/OWNERS)**
+- ~~[b/OWNERS](http://github.com/org/repo/blob/dev/b/OWNERS)~~ [Bill]
 
 Approvers can indicate their approval by writing ` + "`/approve`" + ` in a comment
 Approvers can cancel approval by writing ` + "`/approve cancel`" + ` in a comment
@@ -757,15 +757,15 @@ This pull-request has been approved by: *<a href="REFERENCE" title="Approved">Al
 
 *No associated issue*. Update pull-request body to add a reference to an issue, or get approval with ` + "`/approve no-issue`" + `
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=org%2Frepo).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo=org%2Frepo).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details >
 Needs approval from an approver in each of these files:
 
-- ~~[a/OWNERS](https://github.com/org/repo/blob/master/a/OWNERS)~~ [Alice]
-- ~~[b/OWNERS](https://github.com/org/repo/blob/master/b/OWNERS)~~ [Bill]
+- ~~[a/OWNERS](http://github.com/org/repo/blob/master/a/OWNERS)~~ [Alice]
+- ~~[b/OWNERS](http://github.com/org/repo/blob/master/b/OWNERS)~~ [Bill]
 
 Approvers can indicate their approval by writing ` + "`/approve`" + ` in a comment
 Approvers can cancel approval by writing ` + "`/approve cancel`" + ` in a comment
@@ -801,15 +801,15 @@ If they are not already assigned, you can assign the PR to them by writing ` + "
 
 *No associated issue*. Update pull-request body to add a reference to an issue, or get approval with ` + "`/approve no-issue`" + `
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=org%2Frepo).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo=org%2Frepo).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details open>
 Needs approval from an approver in each of these files:
 
-- **[a/OWNERS](https://github.com/org/repo/blob/master/a/OWNERS)**
-- **[b/OWNERS](https://github.com/org/repo/blob/master/b/OWNERS)**
+- **[a/OWNERS](http://github.com/org/repo/blob/master/a/OWNERS)**
+- **[b/OWNERS](http://github.com/org/repo/blob/master/b/OWNERS)**
 
 Approvers can indicate their approval by writing ` + "`/approve`" + ` in a comment
 Approvers can cancel approval by writing ` + "`/approve cancel`" + ` in a comment
@@ -845,15 +845,15 @@ This pull-request has been approved by: *<a href="REFERENCE" title="Approved">Al
 
 Associated issue: *#12345*
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=org%2Frepo).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo=org%2Frepo).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details >
 Needs approval from an approver in each of these files:
 
-- ~~[a/OWNERS](https://github.com/org/repo/blob/master/a/OWNERS)~~ [Alice]
-- ~~[b/OWNERS](https://github.com/org/repo/blob/master/b/OWNERS)~~ [Bill]
+- ~~[a/OWNERS](http://github.com/org/repo/blob/master/a/OWNERS)~~ [Alice]
+- ~~[b/OWNERS](http://github.com/org/repo/blob/master/b/OWNERS)~~ [Bill]
 
 Approvers can indicate their approval by writing ` + "`/approve`" + ` in a comment
 Approvers can cancel approval by writing ` + "`/approve cancel`" + ` in a comment
@@ -888,15 +888,15 @@ This pull-request has been approved by: *<a href="REFERENCE" title="Approved">Al
 
 Associated issue requirement bypassed by: *<a href="REFERENCE" title="Approved">Alice</a>*, *<a href="REFERENCE" title="Approved">Bill</a>*
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=org%2Frepo).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo=org%2Frepo).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details >
 Needs approval from an approver in each of these files:
 
-- ~~[a/OWNERS](https://github.com/org/repo/blob/master/a/OWNERS)~~ [Alice]
-- ~~[b/OWNERS](https://github.com/org/repo/blob/master/b/OWNERS)~~ [Bill]
+- ~~[a/OWNERS](http://github.com/org/repo/blob/master/a/OWNERS)~~ [Alice]
+- ~~[b/OWNERS](http://github.com/org/repo/blob/master/b/OWNERS)~~ [Bill]
 
 Approvers can indicate their approval by writing ` + "`/approve`" + ` in a comment
 Approvers can cancel approval by writing ` + "`/approve cancel`" + ` in a comment
@@ -933,15 +933,15 @@ If they are not already assigned, you can assign the PR to them by writing ` + "
 
 *No associated issue*. Update pull-request body to add a reference to an issue, or get approval with ` + "`/approve no-issue`" + `
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo=org%2Frepo).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo=org%2Frepo).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details open>
 Needs approval from an approver in each of these files:
 
-- **[a/OWNERS](https://github.com/org/repo/blob/master/a/OWNERS)**
-- **[b/README.md](https://github.com/org/repo/blob/master/b/README.md)**
+- **[a/OWNERS](http://github.com/org/repo/blob/master/a/OWNERS)**
+- **[b/README.md](http://github.com/org/repo/blob/master/b/README.md)**
 
 Approvers can indicate their approval by writing ` + "`/approve`" + ` in a comment
 Approvers can cancel approval by writing ` + "`/approve cancel`" + ` in a comment

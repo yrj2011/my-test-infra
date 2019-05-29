@@ -14,7 +14,7 @@ const (
 // existing URL into its parts by calling NewBlobURLParts(). You construct a URL from parts by calling URL().
 // NOTE: Changing any SAS-related field requires computing a new SAS signature.
 type BlobURLParts struct {
-	Scheme         string    // Ex: "https://"
+	Scheme         string    // Ex: "http://"
 	Host           string    // Ex: "account.blob.core.windows.net"
 	ContainerName  string    // "" if no container
 	BlobName       string    // "" if no blob

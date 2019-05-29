@@ -13,7 +13,7 @@ import (
 // ReactionsService provides access to the reactions-related functions in the
 // GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/
+// GitHub API docs: http://developer.github.com/v3/reactions/
 type ReactionsService service
 
 // Reaction represents a GitHub reaction.
@@ -45,7 +45,7 @@ func (r Reaction) String() string {
 
 // ListCommentReactions lists the reactions for a commit comment.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#list-reactions-for-a-commit-comment
+// GitHub API docs: http://developer.github.com/v3/reactions/#list-reactions-for-a-commit-comment
 func (s *ReactionsService) ListCommentReactions(ctx context.Context, owner, repo string, id int, opt *ListOptions) ([]*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/comments/%v/reactions", owner, repo, id)
 	u, err := addOptions(u, opt)
@@ -74,7 +74,7 @@ func (s *ReactionsService) ListCommentReactions(ctx context.Context, owner, repo
 // Note that if you have already created a reaction of type content, the
 // previously created reaction will be returned with Status: 200 OK.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#create-reaction-for-a-commit-comment
+// GitHub API docs: http://developer.github.com/v3/reactions/#create-reaction-for-a-commit-comment
 func (s ReactionsService) CreateCommentReaction(ctx context.Context, owner, repo string, id int, content string) (*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/comments/%v/reactions", owner, repo, id)
 
@@ -98,7 +98,7 @@ func (s ReactionsService) CreateCommentReaction(ctx context.Context, owner, repo
 
 // ListIssueReactions lists the reactions for an issue.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#list-reactions-for-an-issue
+// GitHub API docs: http://developer.github.com/v3/reactions/#list-reactions-for-an-issue
 func (s *ReactionsService) ListIssueReactions(ctx context.Context, owner, repo string, number int, opt *ListOptions) ([]*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/issues/%v/reactions", owner, repo, number)
 	u, err := addOptions(u, opt)
@@ -127,7 +127,7 @@ func (s *ReactionsService) ListIssueReactions(ctx context.Context, owner, repo s
 // Note that if you have already created a reaction of type content, the
 // previously created reaction will be returned with Status: 200 OK.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#create-reaction-for-an-issue
+// GitHub API docs: http://developer.github.com/v3/reactions/#create-reaction-for-an-issue
 func (s ReactionsService) CreateIssueReaction(ctx context.Context, owner, repo string, number int, content string) (*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/issues/%v/reactions", owner, repo, number)
 
@@ -151,7 +151,7 @@ func (s ReactionsService) CreateIssueReaction(ctx context.Context, owner, repo s
 
 // ListIssueCommentReactions lists the reactions for an issue comment.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#list-reactions-for-an-issue-comment
+// GitHub API docs: http://developer.github.com/v3/reactions/#list-reactions-for-an-issue-comment
 func (s *ReactionsService) ListIssueCommentReactions(ctx context.Context, owner, repo string, id int, opt *ListOptions) ([]*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/issues/comments/%v/reactions", owner, repo, id)
 	u, err := addOptions(u, opt)
@@ -180,7 +180,7 @@ func (s *ReactionsService) ListIssueCommentReactions(ctx context.Context, owner,
 // Note that if you have already created a reaction of type content, the
 // previously created reaction will be returned with Status: 200 OK.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#create-reaction-for-an-issue-comment
+// GitHub API docs: http://developer.github.com/v3/reactions/#create-reaction-for-an-issue-comment
 func (s ReactionsService) CreateIssueCommentReaction(ctx context.Context, owner, repo string, id int, content string) (*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/issues/comments/%v/reactions", owner, repo, id)
 
@@ -204,7 +204,7 @@ func (s ReactionsService) CreateIssueCommentReaction(ctx context.Context, owner,
 
 // ListPullRequestCommentReactions lists the reactions for a pull request review comment.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#list-reactions-for-an-issue-comment
+// GitHub API docs: http://developer.github.com/v3/reactions/#list-reactions-for-an-issue-comment
 func (s *ReactionsService) ListPullRequestCommentReactions(ctx context.Context, owner, repo string, id int, opt *ListOptions) ([]*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/comments/%v/reactions", owner, repo, id)
 	u, err := addOptions(u, opt)
@@ -233,7 +233,7 @@ func (s *ReactionsService) ListPullRequestCommentReactions(ctx context.Context, 
 // Note that if you have already created a reaction of type content, the
 // previously created reaction will be returned with Status: 200 OK.
 //
-// GitHub API docs: https://developer.github.com/v3/reactions/#create-reaction-for-an-issue-comment
+// GitHub API docs: http://developer.github.com/v3/reactions/#create-reaction-for-an-issue-comment
 func (s ReactionsService) CreatePullRequestCommentReaction(ctx context.Context, owner, repo string, id int, content string) (*Reaction, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/pulls/comments/%v/reactions", owner, repo, id)
 
@@ -257,7 +257,7 @@ func (s ReactionsService) CreatePullRequestCommentReaction(ctx context.Context, 
 
 // DeleteReaction deletes a reaction.
 //
-// GitHub API docs: https://developer.github.com/v3/reaction/reactions/#delete-a-reaction-archive
+// GitHub API docs: http://developer.github.com/v3/reaction/reactions/#delete-a-reaction-archive
 func (s *ReactionsService) DeleteReaction(ctx context.Context, id int) (*Response, error) {
 	u := fmt.Sprintf("reactions/%v", id)
 

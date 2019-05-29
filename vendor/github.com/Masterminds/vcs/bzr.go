@@ -34,7 +34,7 @@ func NewBzrRepo(remote, local string) (*BzrRepo, error) {
 
 	// With the other VCS we can check if the endpoint locally is different
 	// from the one configured internally. But, with Bzr you can't. For example,
-	// if you do `bzr branch https://launchpad.net/govcstestbzrrepo` and then
+	// if you do `bzr branch http://launchpad.net/govcstestbzrrepo` and then
 	// use `bzr info` to get the parent branch you'll find it set to
 	// http://bazaar.launchpad.net/~mattfarina/govcstestbzrrepo/trunk/. Notice
 	// the change from https to http and the path chance.
@@ -303,7 +303,7 @@ func (s *BzrRepo) Ping() bool {
 			// get returns the body and an err. If the status code is not a 200
 			// an error is returned. Launchpad returns a 404 for a codebase that
 			// does not exist. Otherwise it returns a JSON object describing it.
-			_, er := get("https://api.launchpad.net/1.0/" + try)
+			_, er := get("http://api.launchpad.net/1.0/" + try)
 			return er == nil
 		}
 	}
@@ -326,7 +326,7 @@ func (s *BzrRepo) ExportDir(dir string) error {
 }
 
 // Multi-lingual manner check for the VCS error that it couldn't create directory.
-// https://bazaar.launchpad.net/~bzr-pqm/bzr/bzr.dev/files/head:/po/
+// http://bazaar.launchpad.net/~bzr-pqm/bzr/bzr.dev/files/head:/po/
 func (s *BzrRepo) isUnableToCreateDir(err error) bool {
 	msg := err.Error()
 

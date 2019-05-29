@@ -28,7 +28,7 @@ type OwnerRefable interface {
 
 	// GetGroupVersionKind returns a GroupVersionKind. The name is chosen
 	// to avoid collision with TypeMeta's GroupVersionKind() method.
-	// See: https://issues.k8s.io/3030
+	// See: http://issues.k8s.io/3030
 	GetGroupVersionKind() schema.GroupVersionKind
 }
 

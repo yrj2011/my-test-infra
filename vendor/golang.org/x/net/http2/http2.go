@@ -10,9 +10,9 @@
 // For use in earlier Go versions see ConfigureServer. (Transport support
 // requires Go 1.6 or later)
 //
-// See https://http2.github.io/ for more information on HTTP/2.
+// See http://http2.github.io/ for more information on HTTP/2.
 //
-// See https://http2.golang.org/ for a test server running this code.
+// See http://http2.golang.org/ for a test server running this code.
 //
 package http2 // import "golang.org/x/net/http2"
 
@@ -86,7 +86,7 @@ type streamState int
 // "half-closed (remote)". This is one less state transition to track.
 // The only downside is that we send PUSH_PROMISEs slightly less
 // liberally than allowable. More discussion here:
-// https://lists.w3.org/Archives/Public/ietf-http-wg/2016JulSep/0599.html
+// http://lists.w3.org/Archives/Public/ietf-http-wg/2016JulSep/0599.html
 //
 // "reserved (remote)" is omitted since the client code does not
 // support server push.

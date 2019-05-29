@@ -281,9 +281,9 @@ func (it *streamingMessageIterator) handleKeepAlives() {
 	for id, expiry := range it.keepAliveDeadlines {
 		if expiry.Before(now) {
 			// This delete will not result in skipping any map items, as implied by
-			// the spec at https://golang.org/ref/spec#For_statements, "For
+			// the spec at http://golang.org/ref/spec#For_statements, "For
 			// statements with range clause", note 3, and stated explicitly at
-			// https://groups.google.com/forum/#!msg/golang-nuts/UciASUb03Js/pzSq5iVFAQAJ.
+			// http://groups.google.com/forum/#!msg/golang-nuts/UciASUb03Js/pzSq5iVFAQAJ.
 			delete(it.keepAliveDeadlines, id)
 		} else {
 			// This will not overwrite a nack, because nacking removes the ID from keepAliveDeadlines.

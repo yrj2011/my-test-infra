@@ -133,7 +133,7 @@ const (
 )
 
 // Predefined domain-relative RIDs for local groups.
-// See https://msdn.microsoft.com/en-us/library/windows/desktop/aa379649(v=vs.85).aspx
+// See http://msdn.microsoft.com/en-us/library/windows/desktop/aa379649(v=vs.85).aspx
 const (
 	DOMAIN_ALIAS_RID_ADMINS                         = 0x220
 	DOMAIN_ALIAS_RID_USERS                          = 0x221

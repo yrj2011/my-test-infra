@@ -10,7 +10,7 @@ import "context"
 // ActivityService handles communication with the activity related
 // methods of the GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/activity/
+// GitHub API docs: http://developer.github.com/v3/activity/
 type ActivityService service
 
 // FeedLink represents a link to a related resource.

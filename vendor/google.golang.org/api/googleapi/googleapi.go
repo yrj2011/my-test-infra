@@ -300,8 +300,8 @@ func CloseBody(res *http.Response) {
 	// Justification for 3 byte reads: two for up to "\r\n" after
 	// a JSON/XML document, and then 1 to see EOF if we haven't yet.
 	// TODO(bradfitz): detect Go 1.3+ and skip these reads.
-	// See https://codereview.appspot.com/58240043
-	// and https://codereview.appspot.com/49570044
+	// See http://codereview.appspot.com/58240043
+	// and http://codereview.appspot.com/49570044
 	buf := make([]byte, 1)
 	for i := 0; i < 3; i++ {
 		_, err := res.Body.Read(buf)
@@ -334,7 +334,7 @@ func ConvertVariant(v map[string]interface{}, dst interface{}) bool {
 }
 
 // A Field names a field to be retrieved with a partial response.
-// See https://developers.google.com/gdata/docs/2.0/basics#PartialResponse
+// See http://developers.google.com/gdata/docs/2.0/basics#PartialResponse
 //
 // Partial responses can dramatically reduce the amount of data that must be sent to your application.
 // In order to request partial responses, you can specify the full list of fields
@@ -352,10 +352,10 @@ func ConvertVariant(v map[string]interface{}, dst interface{}) bool {
 //     svc.Events.List().Fields("nextPageToken", "items(id,updated)").Do()
 //
 // More information about field formatting can be found here:
-// https://developers.google.com/+/api/#fields-syntax
+// http://developers.google.com/+/api/#fields-syntax
 //
 // Another way to find field names is through the Google API explorer:
-// https://developers.google.com/apis-explorer/#p/
+// http://developers.google.com/apis-explorer/#p/
 type Field string
 
 // CombineFields combines fields into a single string.

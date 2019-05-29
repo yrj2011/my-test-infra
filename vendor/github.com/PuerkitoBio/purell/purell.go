@@ -41,7 +41,7 @@ const (
 	// Unsafe normalizations
 	FlagRemoveDirectoryIndex   // http://host/path/index.html -> http://host/path/
 	FlagRemoveFragment         // http://host/path#fragment -> http://host/path
-	FlagForceHTTP              // https://host -> http://host
+	FlagForceHTTP              // http://host -> http://host
 	FlagRemoveDuplicateSlashes // http://host/path//a///b -> http://host/path/a/b
 	FlagRemoveWWW              // http://www.host/ -> http://host/
 	FlagAddWWW                 // http://host/ -> http://www.host/ (should choose only one of these add/remove WWW flags)
@@ -160,7 +160,7 @@ func NormalizeURLString(u string, f NormalizationFlags) (string, error) {
 	}
 
 	// The idna package doesn't fully conform to RFC 5895
-	// (https://tools.ietf.org/html/rfc5895), so we do it here.
+	// (http://tools.ietf.org/html/rfc5895), so we do it here.
 	// Taken from Go 1.8 cycle source, courtesy of bradfitz.
 	// TODO: Remove when (if?) idna package conforms to RFC 5895.
 	parsed.Host = width.Fold.String(parsed.Host)

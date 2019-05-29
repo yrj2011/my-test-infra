@@ -71,7 +71,7 @@ type MemoryStats struct {
 	Limit   uint64 `json:"limit,omitempty"`
 
 	// Windows Memory Stats
-	// See https://technet.microsoft.com/en-us/magazine/ff382715.aspx
+	// See http://technet.microsoft.com/en-us/magazine/ff382715.aspx
 
 	// committed bytes
 	Commit uint64 `json:"commitbytes,omitempty"`

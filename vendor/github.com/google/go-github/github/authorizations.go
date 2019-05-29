@@ -12,7 +12,7 @@ import (
 
 // Scope models a GitHub authorization scope.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth/#scopes
+// GitHub API docs: http://developer.github.com/v3/oauth/#scopes
 type Scope string
 
 // This is the set of scopes for GitHub API V3
@@ -49,7 +49,7 @@ const (
 // This service requires HTTP Basic Authentication; it cannot be accessed using
 // an OAuth token.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/
 type AuthorizationsService service
 
 // Authorization represents an individual GitHub authorization.
@@ -120,7 +120,7 @@ func (a AuthorizationRequest) String() string {
 // fields. That is, you may provide only one of "Scopes", or "AddScopes", or
 // "RemoveScopes".
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#update-an-existing-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#update-an-existing-authorization
 type AuthorizationUpdateRequest struct {
 	Scopes       []string `json:"scopes,omitempty"`
 	AddScopes    []string `json:"add_scopes,omitempty"`
@@ -136,7 +136,7 @@ func (a AuthorizationUpdateRequest) String() string {
 
 // List the authorizations for the authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#list-your-authorizations
 func (s *AuthorizationsService) List(ctx context.Context, opt *ListOptions) ([]*Authorization, *Response, error) {
 	u := "authorizations"
 	u, err := addOptions(u, opt)
@@ -159,7 +159,7 @@ func (s *AuthorizationsService) List(ctx context.Context, opt *ListOptions) ([]*
 
 // Get a single authorization.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#get-a-single-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#get-a-single-authorization
 func (s *AuthorizationsService) Get(ctx context.Context, id int) (*Authorization, *Response, error) {
 	u := fmt.Sprintf("authorizations/%d", id)
 
@@ -178,7 +178,7 @@ func (s *AuthorizationsService) Get(ctx context.Context, id int) (*Authorization
 
 // Create a new authorization for the specified OAuth application.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization
 func (s *AuthorizationsService) Create(ctx context.Context, auth *AuthorizationRequest) (*Authorization, *Response, error) {
 	u := "authorizations"
 
@@ -207,8 +207,8 @@ func (s *AuthorizationsService) Create(ctx context.Context, auth *AuthorizationR
 // clientID is the OAuth Client ID with which to create the token.
 //
 // GitHub API docs:
-// https://developer.github.com/v3/oauth_authorizations/#get-or-create-an-authorization-for-a-specific-app
-// https://developer.github.com/v3/oauth_authorizations/#get-or-create-an-authorization-for-a-specific-app-and-fingerprint
+// http://developer.github.com/v3/oauth_authorizations/#get-or-create-an-authorization-for-a-specific-app
+// http://developer.github.com/v3/oauth_authorizations/#get-or-create-an-authorization-for-a-specific-app-and-fingerprint
 func (s *AuthorizationsService) GetOrCreateForApp(ctx context.Context, clientID string, auth *AuthorizationRequest) (*Authorization, *Response, error) {
 	var u string
 	if auth.Fingerprint == nil || *auth.Fingerprint == "" {
@@ -233,7 +233,7 @@ func (s *AuthorizationsService) GetOrCreateForApp(ctx context.Context, clientID 
 
 // Edit a single authorization.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#update-an-existing-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#update-an-existing-authorization
 func (s *AuthorizationsService) Edit(ctx context.Context, id int, auth *AuthorizationUpdateRequest) (*Authorization, *Response, error) {
 	u := fmt.Sprintf("authorizations/%d", id)
 
@@ -253,7 +253,7 @@ func (s *AuthorizationsService) Edit(ctx context.Context, id int, auth *Authoriz
 
 // Delete a single authorization.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#delete-an-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#delete-an-authorization
 func (s *AuthorizationsService) Delete(ctx context.Context, id int) (*Response, error) {
 	u := fmt.Sprintf("authorizations/%d", id)
 
@@ -273,7 +273,7 @@ func (s *AuthorizationsService) Delete(ctx context.Context, id int) (*Response, 
 //
 // The returned Authorization.User field will be populated.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#check-an-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#check-an-authorization
 func (s *AuthorizationsService) Check(ctx context.Context, clientID string, token string) (*Authorization, *Response, error) {
 	u := fmt.Sprintf("applications/%v/tokens/%v", clientID, token)
 
@@ -301,7 +301,7 @@ func (s *AuthorizationsService) Check(ctx context.Context, clientID string, toke
 //
 // The returned Authorization.User field will be populated.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#reset-an-authorization
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#reset-an-authorization
 func (s *AuthorizationsService) Reset(ctx context.Context, clientID string, token string) (*Authorization, *Response, error) {
 	u := fmt.Sprintf("applications/%v/tokens/%v", clientID, token)
 
@@ -325,7 +325,7 @@ func (s *AuthorizationsService) Reset(ctx context.Context, clientID string, toke
 // username is the OAuth application clientID, and the password is its
 // clientSecret. Invalid tokens will return a 404 Not Found.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#revoke-an-authorization-for-an-application
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#revoke-an-authorization-for-an-application
 func (s *AuthorizationsService) Revoke(ctx context.Context, clientID string, token string) (*Response, error) {
 	u := fmt.Sprintf("applications/%v/tokens/%v", clientID, token)
 
@@ -342,7 +342,7 @@ func (s *AuthorizationsService) Revoke(ctx context.Context, clientID string, tok
 // that has been granted access to the account, regardless of the number of
 // tokens an application has generated for the user.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#list-your-grants
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#list-your-grants
 func (s *AuthorizationsService) ListGrants(ctx context.Context, opt *ListOptions) ([]*Grant, *Response, error) {
 	u, err := addOptions("applications/grants", opt)
 	if err != nil {
@@ -365,7 +365,7 @@ func (s *AuthorizationsService) ListGrants(ctx context.Context, opt *ListOptions
 
 // GetGrant gets a single OAuth application grant.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#get-a-single-grant
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#get-a-single-grant
 func (s *AuthorizationsService) GetGrant(ctx context.Context, id int) (*Grant, *Response, error) {
 	u := fmt.Sprintf("applications/grants/%d", id)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -386,7 +386,7 @@ func (s *AuthorizationsService) GetGrant(ctx context.Context, id int) (*Grant, *
 // grant will also delete all OAuth tokens associated with the application for
 // the user.
 //
-// GitHub API docs: https://developer.github.com/v3/oauth_authorizations/#delete-a-grant
+// GitHub API docs: http://developer.github.com/v3/oauth_authorizations/#delete-a-grant
 func (s *AuthorizationsService) DeleteGrant(ctx context.Context, id int) (*Response, error) {
 	u := fmt.Sprintf("applications/grants/%d", id)
 	req, err := s.client.NewRequest("DELETE", u, nil)
@@ -403,7 +403,7 @@ func (s *AuthorizationsService) DeleteGrant(ctx context.Context, id int) (*Respo
 // you can e.g. create or delete a user's public SSH key. NOTE: creating a
 // new token automatically revokes an existing one.
 //
-// GitHub API docs: https://developer.github.com/enterprise/2.5/v3/users/administration/#create-an-impersonation-oauth-token
+// GitHub API docs: http://developer.github.com/enterprise/2.5/v3/users/administration/#create-an-impersonation-oauth-token
 func (s *AuthorizationsService) CreateImpersonation(ctx context.Context, username string, authReq *AuthorizationRequest) (*Authorization, *Response, error) {
 	u := fmt.Sprintf("admin/users/%v/authorizations", username)
 	req, err := s.client.NewRequest("POST", u, authReq)
@@ -423,7 +423,7 @@ func (s *AuthorizationsService) CreateImpersonation(ctx context.Context, usernam
 //
 // NOTE: there can be only one at a time.
 //
-// GitHub API docs: https://developer.github.com/enterprise/2.5/v3/users/administration/#delete-an-impersonation-oauth-token
+// GitHub API docs: http://developer.github.com/enterprise/2.5/v3/users/administration/#delete-an-impersonation-oauth-token
 func (s *AuthorizationsService) DeleteImpersonation(ctx context.Context, username string) (*Response, error) {
 	u := fmt.Sprintf("admin/users/%v/authorizations", username)
 	req, err := s.client.NewRequest("DELETE", u, nil)

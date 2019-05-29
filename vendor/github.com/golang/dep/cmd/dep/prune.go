@@ -45,7 +45,7 @@ func (cmd *pruneCommand) Run(ctx *dep.Ctx, args []string) error {
 	ctx.Err.Printf("\nThis command currently still prunes as it always has, to ease the transition.\n")
 	ctx.Err.Printf("However, it will be removed in a future version of dep.\n")
 	ctx.Err.Printf("\nNow is the time to update your Gopkg.toml and remove `dep prune` from any scripts.\n")
-	ctx.Err.Printf("\nFor more information, see: https://golang.github.io/dep/docs/Gopkg.toml.html#prune\n")
+	ctx.Err.Printf("\nFor more information, see: http://golang.github.io/dep/docs/Gopkg.toml.html#prune\n")
 
 	p, err := ctx.LoadProject()
 	if err != nil {

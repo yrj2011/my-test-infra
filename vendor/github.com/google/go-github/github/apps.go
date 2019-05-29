@@ -10,12 +10,12 @@ import "context"
 // AppsService provides access to the installation related functions
 // in the GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/apps/
+// GitHub API docs: http://developer.github.com/v3/apps/
 type AppsService service
 
 // ListInstallations lists the installations that the current GitHub App has.
 //
-// GitHub API docs: https://developer.github.com/v3/apps/#find-installations
+// GitHub API docs: http://developer.github.com/v3/apps/#find-installations
 func (s *AppsService) ListInstallations(ctx context.Context, opt *ListOptions) ([]*Installation, *Response, error) {
 	u, err := addOptions("app/installations", opt)
 	if err != nil {

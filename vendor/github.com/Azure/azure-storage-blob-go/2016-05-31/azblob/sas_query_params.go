@@ -37,7 +37,7 @@ func FormatTimesForSASSigning(startTime, expiryTime time.Time) (string, string) 
 // SASTimeFormat represents the format of a SAS start or expiry time. Use it when formatting/parsing a time.Time.
 const SASTimeFormat = "2006-01-02T15:04:05Z" //"2017-07-27T00:00:00Z" // ISO 8601
 
-// https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas
+// http://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas
 
 // A SASQueryParameters object represents the components that make up an Azure Storage SAS' query parameters.
 // You parse a map of query parameters into its fields by calling NewSASQueryParameters(). You add the components

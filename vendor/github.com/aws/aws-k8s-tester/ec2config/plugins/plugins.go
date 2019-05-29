@@ -90,7 +90,7 @@ func convertToScript(userName, plugin string) (script, error) {
 		s, err := createInstallGit(gitInfo{
 			GitRepo:       "aws-ebs-csi-driver",
 			GitClonePath:  "${GOPATH}/src/github.com/kubernetes-sigs",
-			GitCloneURL:   "https://github.com/kubernetes-sigs/aws-ebs-csi-driver.git",
+			GitCloneURL:   "http://github.com/kubernetes-sigs/aws-ebs-csi-driver.git",
 			IsPR:          true,
 			GitBranch:     prNum,
 			InstallScript: `make aws-ebs-csi-driver && sudo cp ./bin/aws-ebs-csi-driver /usr/bin/aws-ebs-csi-driver`,
@@ -112,7 +112,7 @@ func convertToScript(userName, plugin string) (script, error) {
 		s, err := createInstallGit(gitInfo{
 			GitRepo:       "aws-k8s-tester",
 			GitClonePath:  "${GOPATH}/src/github.com/aws",
-			GitCloneURL:   "https://github.com/aws/aws-k8s-tester.git",
+			GitCloneURL:   "http://github.com/aws/aws-k8s-tester.git",
 			IsPR:          false,
 			GitBranch:     "master",
 			InstallScript: `go build -v ./cmd/aws-k8s-tester && sudo cp ./aws-k8s-tester /usr/bin/aws-k8s-tester`,
@@ -135,7 +135,7 @@ func convertToScript(userName, plugin string) (script, error) {
 		s, err := createInstallGit(gitInfo{
 			GitRepo:      "aws-alb-ingress-controller",
 			GitClonePath: "${GOPATH}/src/github.com/kubernetes-sigs",
-			GitCloneURL:  "https://github.com/kubernetes-sigs/aws-alb-ingress-controller.git",
+			GitCloneURL:  "http://github.com/kubernetes-sigs/aws-alb-ingress-controller.git",
 			IsPR:         isPR,
 			GitBranch:    gitBranch,
 			InstallScript: `GO111MODULE=on go mod vendor -v
@@ -336,7 +336,7 @@ const installGoLinuxTemplate = `
 export HOME=/home/{{ .UserName }}
 
 GO_VERSION={{ .GoVersion }}
-GOOGLE_URL=https://storage.googleapis.com/golang
+GOOGLE_URL=http://storage.googleapis.com/golang
 DOWNLOAD_URL=${GOOGLE_URL}
 
 sudo curl -s ${DOWNLOAD_URL}/go$GO_VERSION.linux-amd64.tar.gz | sudo tar -v -C /usr/local/ -xz
@@ -388,8 +388,8 @@ const installEtcdTemplate = `
 ETCD_VER=v{{ .Version }}
 
 # choose either URL
-GOOGLE_URL=https://storage.googleapis.com/etcd
-GITHUB_URL=https://github.com/etcd-io/etcd/releases/download
+GOOGLE_URL=http://storage.googleapis.com/etcd
+GITHUB_URL=http://github.com/etcd-io/etcd/releases/download
 DOWNLOAD_URL=${GOOGLE_URL}
 
 rm -f /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz
@@ -420,7 +420,7 @@ DELAY=10
 COUNT=1
 while [[ ${COUNT} -lt ${RETRIES} ]]; do
   rm -rf ./wrk
-  git clone https://github.com/wg/wrk.git
+  git clone http://github.com/wg/wrk.git
   if [[ $? -eq 0 ]]; then
     RETRIES=0
     echo "Successfully git cloned!"
@@ -511,8 +511,8 @@ pwd
 
 `
 
-// https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
-// https://kubernetes.io/docs/setup/cri/#docker
+// http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+// http://kubernetes.io/docs/setup/cri/#docker
 const installStartDockerAmazonLinux2 = `
 
 ################################## install Docker on Amazon Linux 2
@@ -544,7 +544,7 @@ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 
 sudo yum-config-manager \
   --add-repo \
-  https://download.docker.com/linux/centos/docker-ce.repo
+  http://download.docker.com/linux/centos/docker-ce.repo
 
 sudo yum update && sudo yum install -y docker-ce-18.06.1.ce
 sudo mkdir -p /etc/docker

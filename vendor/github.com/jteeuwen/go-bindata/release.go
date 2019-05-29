@@ -85,7 +85,7 @@ func writeReleaseAsset(w io.Writer, c *Config, asset *Asset) error {
 }
 
 // sanitize prepares a valid UTF-8 string as a raw string constant.
-// Based on https://code.google.com/p/go/source/browse/godoc/static/makestatic.go?repo=tools
+// Based on http://code.google.com/p/go/source/browse/godoc/static/makestatic.go?repo=tools
 func sanitize(b []byte) []byte {
 	// Replace ` with `+"`"+`
 	b = bytes.Replace(b, []byte("`"), []byte("`+\"`\"+`"), -1)

@@ -116,7 +116,7 @@ func Dial(target string, opts ...DialOption) (*ClientConn, error) {
 // pending operations after this function returns.
 //
 // The target name syntax is defined in
-// https://github.com/grpc/grpc/blob/master/doc/naming.md.
+// http://github.com/grpc/grpc/blob/master/doc/naming.md.
 // e.g. to use dns resolver, a "dns:///" prefix should be applied to the target.
 func DialContext(ctx context.Context, target string, opts ...DialOption) (conn *ClientConn, err error) {
 	cc := &ClientConn{
@@ -961,7 +961,7 @@ func (ac *addrConn) createTransport(connectRetryNum, ridx int, backoffDeadline, 
 			ac.mu.Unlock()
 		}
 		// Do not cancel in the success path because of
-		// this issue in Go1.6: https://github.com/golang/go/issues/15078.
+		// this issue in Go1.6: http://github.com/golang/go/issues/15078.
 		connectCtx, cancel := context.WithDeadline(ac.ctx, connectDeadline)
 		if channelz.IsOn() {
 			copts.ChannelzParentID = ac.channelzID

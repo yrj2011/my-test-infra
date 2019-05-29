@@ -1,4 +1,4 @@
-// Copyright 2013 sigu-399 ( https://github.com/sigu-399 )
+// Copyright 2013 sigu-399 ( http://github.com/sigu-399 )
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // author       sigu-399
-// author-github  https://github.com/sigu-399
+// author-github  http://github.com/sigu-399
 // author-mail    sigu.399@gmail.com
 //
 // repository-name  jsonreference

@@ -8,7 +8,7 @@
 // user-preferred languages to a list of supported languages.
 // It alleviates the developer of dealing with the complexity of this process
 // and provides the user with the best experience
-// (see https://blog.golang.org/matchlang).
+// (see http://blog.golang.org/matchlang).
 //
 //
 // Matching preferred against supported languages

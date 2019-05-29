@@ -196,7 +196,7 @@ type JenkinsOperator struct {
 	// invalid when provided with a single jenkins-operator config.
 	//
 	// For label selector syntax, see below:
-	// https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+	// http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
 	LabelSelectorString string `json:"label_selector,omitempty"`
 	// LabelSelector is used so different jenkins-operator replicas
 	// can use their own configuration.
@@ -265,7 +265,7 @@ type ExternalAgentLog struct {
 	SelectorString string `json:"selector,omitempty"`
 	// Selector can be used in prow deployments where the workload has
 	// been sharded between controllers of the same agent. For more info
-	// see https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+	// see http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
 	Selector labels.Selector `json:"-"`
 	// URLTemplateString compiles into URLTemplate at load time.
 	URLTemplateString string `json:"url_template,omitempty"`

@@ -74,9 +74,9 @@ func TestMakeCloneURI(t *testing.T) {
 	}{
 		{
 			name:     "happy case",
-			instance: "https://android.googlesource.com",
+			instance: "http://android.googlesource.com",
 			project:  "platform/build",
-			expected: "https://android.googlesource.com/platform/build",
+			expected: "http://android.googlesource.com/platform/build",
 		},
 		{
 			name:     "reject non urls",
@@ -92,7 +92,7 @@ func TestMakeCloneURI(t *testing.T) {
 		},
 		{
 			name:     "reject instances with paths",
-			instance: "https://android.googlesource.com/platform",
+			instance: "http://android.googlesource.com/platform",
 			project:  "build",
 			err:      true,
 		},
@@ -282,7 +282,7 @@ func TestProcessChange(t *testing.T) {
 				JobConfig: config.JobConfig{
 					Presubmits: map[string][]config.Presubmit{
 						"gerrit/test-infra": testInfraPresubmits,
-						"https://gerrit/other-repo": {
+						"http://gerrit/other-repo": {
 							{
 								JobBase: config.JobBase{
 									Name: "other-test",
@@ -311,7 +311,7 @@ func TestProcessChange(t *testing.T) {
 			gc: &fgc{},
 		}
 
-		err := c.ProcessChange("https://gerrit", tc.change)
+		err := c.ProcessChange("http://gerrit", tc.change)
 		if err != nil && !tc.shouldError {
 			t.Errorf("tc %s, expect no error, but got %v", tc.name, err)
 			continue

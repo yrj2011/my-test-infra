@@ -18,7 +18,7 @@ package v1beta1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -51,7 +51,7 @@ func (Event) SwaggerDoc() map[string]string {
 
 var map_EventList = map[string]string{
 	"":         "EventList is a list of Event objects.",
-	"metadata": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard list metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"items":    "Items is a list of schema objects.",
 }
 

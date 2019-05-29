@@ -8,7 +8,7 @@ import (
 // It is represented as a SDK interface to enable you to use the "WithContext"
 // API methods with Go v1.6 and a Context type such as golang.org/x/net/context.
 //
-// See https://golang.org/pkg/context on how to use contexts.
+// See http://golang.org/pkg/context on how to use contexts.
 type Context interface {
 	// Deadline returns the time when work done on behalf of this context
 	// should be canceled. Deadline returns ok==false when no deadline is
@@ -46,7 +46,7 @@ type Context interface {
 // Go 1.7 and later:
 // The context returned will be the value returned by context.Background()
 //
-// See https://golang.org/pkg/context for more information on Contexts.
+// See http://golang.org/pkg/context for more information on Contexts.
 func BackgroundContext() Context {
 	return backgroundCtx
 }

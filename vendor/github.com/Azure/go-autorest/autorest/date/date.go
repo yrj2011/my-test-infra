@@ -1,5 +1,5 @@
 /*
-Package date provides time.Time derivatives that conform to the Swagger.io (https://swagger.io/)
+Package date provides time.Time derivatives that conform to the Swagger.io (http://swagger.io/)
 defined date   formats: Date and DateTime. Both types may, in most cases, be used in lieu of
 time.Time types. And both convert to time.Time through a ToTime method.
 */

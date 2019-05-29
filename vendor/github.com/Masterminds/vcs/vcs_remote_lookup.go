@@ -86,7 +86,7 @@ func detectVcsFromRemote(vcsURL string) (Type, string, error) {
 		return NoVCS, "", e
 	}
 
-	// Pages like https://golang.org/x/net provide an html document with
+	// Pages like http://golang.org/x/net provide an html document with
 	// meta tags containing a location to work with. The go tool uses
 	// a meta tag with the name go-import which is what we use here.
 	// godoc.org also has one call go-source that we do not need to use.
@@ -252,7 +252,7 @@ func checkBitbucket(i map[string]string, ul *url.URL) (Type, error) {
 		SCM Type `json:"scm"`
 	}
 
-	u := expand(i, "https://api.bitbucket.org/1.0/repositories/{name}")
+	u := expand(i, "http://api.bitbucket.org/1.0/repositories/{name}")
 	data, err := get(u)
 	if err != nil {
 		return "", err

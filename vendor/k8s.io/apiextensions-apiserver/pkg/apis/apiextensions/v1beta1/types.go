@@ -73,11 +73,11 @@ type CustomResourceColumnDefinition struct {
 	// name is a human readable name for the column.
 	Name string `json:"name" protobuf:"bytes,1,opt,name=name"`
 	// type is an OpenAPI type definition for this column.
-	// See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
+	// See http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
 	Type string `json:"type" protobuf:"bytes,2,opt,name=type"`
 	// format is an optional OpenAPI type definition for this column. The 'name' format is applied
 	// to the primary identifier column to assist in clients identifying column is the resource name.
-	// See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
+	// See http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.
 	// +optional
 	Format string `json:"format,omitempty" protobuf:"bytes,3,opt,name=format"`
 	// description is a human readable description of this column.

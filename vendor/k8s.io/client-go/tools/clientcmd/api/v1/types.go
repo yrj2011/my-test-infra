@@ -59,7 +59,7 @@ type Preferences struct {
 
 // Cluster contains information about how to communicate with a kubernetes cluster
 type Cluster struct {
-	// Server is the address of the kubernetes cluster (https://hostname:port).
+	// Server is the address of the kubernetes cluster (http://hostname:port).
 	Server string `json:"server"`
 	// InsecureSkipTLSVerify skips the validity check for the server's certificate. This will make your HTTPS connections insecure.
 	// +optional

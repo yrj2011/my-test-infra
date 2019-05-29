@@ -65,13 +65,13 @@ func reportStatus(ghc GithubClient, pj kube.ProwJob, childDescription string) er
 		//	  for logs run: kubectl -n jx logs d4865a2d-c68a-11e8-a85e-0a580a142233-fsmh6
 		//	  -c build-step-unnamed-2'
 		description := pj.Status.Description
-		if len(description) > 140 && strings.IndexByte(description, '(') > 0{
+		if len(description) > 140 && strings.IndexByte(description, '(') > 0 {
 			description = description[:strings.IndexByte(description, '(')]
 		}
 
 		if err := ghc.CreateStatus(refs.Org, refs.Repo, refs.Pulls[0].SHA, github.Status{
 			// The state of the status. Can be one of error, failure, pending, or success.
-			// https://developer.github.com/v3/repos/statuses/#create-a-status
+			// http://developer.github.com/v3/repos/statuses/#create-a-status
 			State:       string(contextState),
 			Description: pj.Status.Description,
 			Context:     pj.Spec.Context,

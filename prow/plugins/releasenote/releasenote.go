@@ -42,7 +42,7 @@ const (
 	releaseNoteNone           = "release-note-none"
 	releaseNoteActionRequired = "release-note-action-required"
 
-	releaseNoteFormat       = `Adding the "%s" label because no release-note block was detected, please follow our [release note process](https://git.k8s.io/community/contributors/guide/release-notes.md) to remove it.`
+	releaseNoteFormat       = `Adding the "%s" label because no release-note block was detected, please follow our [release note process](http://git.k8s.io/community/contributors/guide/release-notes.md) to remove it.`
 	parentReleaseNoteFormat = `All 'parent' PRs of a cherry-pick PR must have one of the %q or %q labels, or this PR must follow the standard/parent release note labeling requirement.`
 
 	actionRequiredNote = "action required"
@@ -85,7 +85,7 @@ func helpProvider(config *plugins.Configuration, enabledRepos []string) (*plugin
 	// NOTE: the other two commands re deprecated, so we're not documenting them
 	pluginHelp.AddCommand(pluginhelp.Command{
 		Usage:       "/release-note-none",
-		Description: "Adds the '" + releaseNoteNone + `' label to indicate that the PR does not warrant a release note. This is deprecated and ideally <a href="https://git.k8s.io/community/contributors/guide/release-notes.md">the release note process</a> should be followed in the PR body instead.`,
+		Description: "Adds the '" + releaseNoteNone + `' label to indicate that the PR does not warrant a release note. This is deprecated and ideally <a href="http://git.k8s.io/community/contributors/guide/release-notes.md">the release note process</a> should be followed in the PR body instead.`,
 		WhoCanUse:   "PR Authors and Org Members.",
 		Examples:    []string{"/release-note-none"},
 	})

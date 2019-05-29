@@ -21,7 +21,7 @@ limitations under the License.
 // Go rules support the flags -build_tags, -go_prefix, and -external.
 // They also support the directives # gazelle:build_tags, # gazelle:prefix,
 // and # gazelle:importmap_prefix. See
-// https://github.com/bazelbuild/bazel-gazelle/blob/master/README.rst#directives
+// http://github.com/bazelbuild/bazel-gazelle/blob/master/README.rst#directives
 // for information on these.
 //
 // Rule generation

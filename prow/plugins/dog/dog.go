@@ -41,10 +41,10 @@ var (
 )
 
 const (
-	dogURL        = realPack("https://random.dog/woof.json")
-	fineURL       = "https://storage.googleapis.com/this-is-fine-images/this_is_fine.png"
-	notFineURL    = "https://storage.googleapis.com/this-is-fine-images/this_is_not_fine.png"
-	unbearableURL = "https://storage.googleapis.com/this-is-fine-images/this_is_unbearable.jpg"
+	dogURL        = realPack("http://random.dog/woof.json")
+	fineURL       = "http://storage.googleapis.com/this-is-fine-images/this_is_fine.png"
+	notFineURL    = "http://storage.googleapis.com/this-is-fine-images/this_is_not_fine.png"
+	unbearableURL = "http://storage.googleapis.com/this-is-fine-images/this_is_unbearable.jpg"
 	pluginName    = "dog"
 )
 

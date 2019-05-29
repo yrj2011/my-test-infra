@@ -67,7 +67,7 @@ func (b BlobURL) ToPageBlobURL() PageBlobURL {
 }
 
 // StartCopy copies the data at the source URL to a blob.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/copy-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/copy-blob.
 func (b BlobURL) StartCopy(ctx context.Context, source url.URL, metadata Metadata, srcac BlobAccessConditions, dstac BlobAccessConditions) (*BlobsCopyResponse, error) {
 	srcIfModifiedSince, srcIfUnmodifiedSince, srcIfMatchETag, srcIfNoneMatchETag := srcac.HTTPAccessConditions.pointers()
 	dstIfModifiedSince, dstIfUnmodifiedSince, dstIfMatchETag, dstIfNoneMatchETag := dstac.HTTPAccessConditions.pointers()
@@ -83,7 +83,7 @@ func (b BlobURL) StartCopy(ctx context.Context, source url.URL, metadata Metadat
 }
 
 // AbortCopy stops a pending copy that was previously started and leaves a destination blob with 0 length and metadata.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/abort-copy-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/abort-copy-blob.
 func (b BlobURL) AbortCopy(ctx context.Context, copyID string, ac LeaseAccessConditions) (*BlobsAbortCopyResponse, error) {
 	return b.blobClient.AbortCopy(ctx, copyID, "abort", nil, ac.pointers(), nil)
 }
@@ -114,7 +114,7 @@ func (dr *BlobRange) pointers() *string {
 }
 
 // GetBlob reads a range of bytes from a blob. The response also includes the blob's properties and metadata.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/get-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/get-blob.
 func (b BlobURL) GetBlob(ctx context.Context, blobRange BlobRange, ac BlobAccessConditions, rangeGetContentMD5 bool) (*GetResponse, error) {
 	var xRangeGetContentMD5 *bool
 	if rangeGetContentMD5 {
@@ -127,7 +127,7 @@ func (b BlobURL) GetBlob(ctx context.Context, blobRange BlobRange, ac BlobAccess
 
 // Delete marks the specified blob or snapshot for deletion. The blob is later deleted during garbage collection.
 // Note that deleting a blob also deletes all its snapshots.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/delete-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/delete-blob.
 func (b BlobURL) Delete(ctx context.Context, deleteOptions DeleteSnapshotsOptionType, ac BlobAccessConditions) (*BlobsDeleteResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.HTTPAccessConditions.pointers()
 	return b.blobClient.Delete(ctx, nil, nil, ac.LeaseAccessConditions.pointers(), deleteOptions,
@@ -135,7 +135,7 @@ func (b BlobURL) Delete(ctx context.Context, deleteOptions DeleteSnapshotsOption
 }
 
 // GetPropertiesAndMetadata returns the blob's metadata and properties.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/get-blob-properties.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/get-blob-properties.
 func (b BlobURL) GetPropertiesAndMetadata(ctx context.Context, ac BlobAccessConditions) (*BlobsGetPropertiesResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.HTTPAccessConditions.pointers()
 	return b.blobClient.GetProperties(ctx, nil, nil, ac.LeaseAccessConditions.pointers(),
@@ -144,7 +144,7 @@ func (b BlobURL) GetPropertiesAndMetadata(ctx context.Context, ac BlobAccessCond
 }
 
 // SetProperties changes a blob's HTTP header properties.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/set-blob-properties.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/set-blob-properties.
 func (b BlobURL) SetProperties(ctx context.Context, h BlobHTTPHeaders, ac BlobAccessConditions) (*BlobsSetPropertiesResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.HTTPAccessConditions.pointers()
 	return b.blobClient.SetProperties(ctx, nil,
@@ -154,7 +154,7 @@ func (b BlobURL) SetProperties(ctx context.Context, h BlobHTTPHeaders, ac BlobAc
 }
 
 // SetMetadata changes a blob's metadata.
-// https://docs.microsoft.com/rest/api/storageservices/set-blob-metadata.
+// http://docs.microsoft.com/rest/api/storageservices/set-blob-metadata.
 func (b BlobURL) SetMetadata(ctx context.Context, metadata Metadata, ac BlobAccessConditions) (*BlobsSetMetadataResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.HTTPAccessConditions.pointers()
 	return b.blobClient.SetMetadata(ctx, nil, metadata, ac.LeaseAccessConditions.pointers(),
@@ -162,7 +162,7 @@ func (b BlobURL) SetMetadata(ctx context.Context, metadata Metadata, ac BlobAcce
 }
 
 // CreateSnapshot creates a read-only snapshot of a blob.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/snapshot-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/snapshot-blob.
 func (b BlobURL) CreateSnapshot(ctx context.Context, metadata Metadata, ac BlobAccessConditions) (*BlobsTakeSnapshotResponse, error) {
 	// CreateSnapshot does NOT panic if the user tries to create a snapshot using a URL that already has a snapshot query parameter
 	// because checking this would be a performance hit for a VERY unusual path and I don't think the common case should suffer this
@@ -173,7 +173,7 @@ func (b BlobURL) CreateSnapshot(ctx context.Context, metadata Metadata, ac BlobA
 
 // AcquireLease acquires a lease on the blob for write and delete operations. The lease duration must be between
 // 15 to 60 seconds, or infinite (-1).
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-blob.
 func (b BlobURL) AcquireLease(ctx context.Context, proposedID string, duration int32, ac HTTPAccessConditions) (*BlobsLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.pointers()
 	return b.blobClient.Lease(ctx, LeaseActionAcquire, nil, nil, nil, &duration, &proposedID,
@@ -181,7 +181,7 @@ func (b BlobURL) AcquireLease(ctx context.Context, proposedID string, duration i
 }
 
 // RenewLease renews the blob's previously-acquired lease.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-blob.
 func (b BlobURL) RenewLease(ctx context.Context, leaseID string, ac HTTPAccessConditions) (*BlobsLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.pointers()
 	return b.blobClient.Lease(ctx, LeaseActionRenew, nil, &leaseID, nil, nil, nil,
@@ -189,7 +189,7 @@ func (b BlobURL) RenewLease(ctx context.Context, leaseID string, ac HTTPAccessCo
 }
 
 // ReleaseLease releases the blob's previously-acquired lease.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-blob.
 func (b BlobURL) ReleaseLease(ctx context.Context, leaseID string, ac HTTPAccessConditions) (*BlobsLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.pointers()
 	return b.blobClient.Lease(ctx, LeaseActionRelease, nil, &leaseID, nil, nil, nil,
@@ -198,7 +198,7 @@ func (b BlobURL) ReleaseLease(ctx context.Context, leaseID string, ac HTTPAccess
 
 // BreakLease breaks the blob's previously-acquired lease (if it exists). Pass the LeaseBreakDefault (-1)
 // constant to break a fixed-duration lease when it expires or an infinite lease immediately.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-blob.
 func (b BlobURL) BreakLease(ctx context.Context, breakPeriodInSeconds int32, ac HTTPAccessConditions) (*BlobsLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.pointers()
 	return b.blobClient.Lease(ctx, LeaseActionBreak, nil, nil, leasePeriodPointer(breakPeriodInSeconds), nil, nil,
@@ -206,7 +206,7 @@ func (b BlobURL) BreakLease(ctx context.Context, breakPeriodInSeconds int32, ac 
 }
 
 // ChangeLease changes the blob's lease ID.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-blob.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-blob.
 func (b BlobURL) ChangeLease(ctx context.Context, leaseID string, proposedID string, ac HTTPAccessConditions) (*BlobsLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, ifMatchETag, ifNoneMatchETag := ac.pointers()
 	return b.blobClient.Lease(ctx, LeaseActionChange, nil, &leaseID, nil, nil, &proposedID,

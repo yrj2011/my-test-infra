@@ -119,7 +119,7 @@ func EnvironmentFromURL(resourceManagerEndpoint string, properties ...OverridePr
 		environment.KeyVaultDNSSuffix = fmt.Sprintf("%s.%s", "vault", stampDNSSuffix)
 	}
 	if environment.KeyVaultEndpoint == "" {
-		environment.KeyVaultEndpoint = fmt.Sprintf("%s%s", "https://", environment.KeyVaultDNSSuffix)
+		environment.KeyVaultEndpoint = fmt.Sprintf("%s%s", "http://", environment.KeyVaultDNSSuffix)
 	}
 	if environment.TokenAudience == "" {
 		environment.TokenAudience = metadataEnvProperties.Authentication.Audiences[0]

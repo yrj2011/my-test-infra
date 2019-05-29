@@ -24,7 +24,7 @@ const (
 	iERR         byte = 0xff
 )
 
-// https://dev.mysql.com/doc/internals/en/capability-flags.html#packet-Protocol::CapabilityFlags
+// http://dev.mysql.com/doc/internals/en/capability-flags.html#packet-Protocol::CapabilityFlags
 type clientFlag uint32
 
 const (
@@ -86,7 +86,7 @@ const (
 	comStmtFetch
 )
 
-// https://dev.mysql.com/doc/internals/en/com-query-response.html#packet-Protocol::ColumnType
+// http://dev.mysql.com/doc/internals/en/com-query-response.html#packet-Protocol::ColumnType
 const (
 	fieldTypeDecimal byte = iota
 	fieldTypeTiny

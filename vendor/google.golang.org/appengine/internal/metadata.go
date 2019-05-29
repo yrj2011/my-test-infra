@@ -7,7 +7,7 @@ package internal
 // This file has code for accessing metadata.
 //
 // References:
-//	https://cloud.google.com/compute/docs/metadata
+//	http://cloud.google.com/compute/docs/metadata
 
 import (
 	"fmt"

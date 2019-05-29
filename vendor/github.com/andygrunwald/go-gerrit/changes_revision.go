@@ -78,7 +78,7 @@ type DiffOptions struct {
 
 // CommitOptions specifies the parameters for GetCommit call.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-commit
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-commit
 type CommitOptions struct {
 	// Adding query parameter links (for example /changes/.../commit?links) returns a CommitInfo with the additional field web_links.
 	Weblinks bool `url:"links,omitempty"`
@@ -86,7 +86,7 @@ type CommitOptions struct {
 
 // MergableOptions specifies the parameters for GetMergable call.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-mergeable
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-mergeable
 type MergableOptions struct {
 	// If the other-branches parameter is specified, the mergeability will also be checked for all other branches.
 	OtherBranches bool `url:"other-branches,omitempty"`
@@ -94,7 +94,7 @@ type MergableOptions struct {
 
 // PatchOptions specifies the parameters for GetPatch call.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-patch
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-patch
 type PatchOptions struct {
 	// Adding query parameter zip (for example /changes/.../patch?zip) returns the patch as a single file inside of a ZIP archive.
 	// Clients can expand the ZIP to obtain the plain text patch, avoiding the need for a base64 decoding step.
@@ -107,7 +107,7 @@ type PatchOptions struct {
 
 // GetDiff gets the diff of a file from a certain revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-diff
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-diff
 func (s *ChangesService) GetDiff(changeID, revisionID, fileID string, opt *DiffOptions) (*DiffInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/files/%s/diff", changeID, revisionID, fileID)
 
@@ -133,7 +133,7 @@ func (s *ChangesService) GetDiff(changeID, revisionID, fileID string, opt *DiffO
 // GetRelatedChanges retrieves related changes of a revision.
 // Related changes are changes that either depend on, or are dependencies of the revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-related-changes
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-related-changes
 func (s *ChangesService) GetRelatedChanges(changeID, revisionID string) (*RelatedChangesInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/related", changeID, revisionID)
 
@@ -153,7 +153,7 @@ func (s *ChangesService) GetRelatedChanges(changeID, revisionID string) (*Relate
 
 // GetDraft retrieves a draft comment of a revision that belongs to the calling user.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-draft
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-draft
 func (s *ChangesService) GetDraft(changeID, revisionID, draftID string) (*CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/drafts/%s", changeID, revisionID, draftID)
 	return s.getCommentInfoResponse(u)
@@ -161,7 +161,7 @@ func (s *ChangesService) GetDraft(changeID, revisionID, draftID string) (*Commen
 
 // GetComment retrieves a published comment of a revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-comment
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-comment
 func (s *ChangesService) GetComment(changeID, revisionID, commentID string) (*CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s//comments/%s", changeID, revisionID, commentID)
 	return s.getCommentInfoResponse(u)
@@ -169,7 +169,7 @@ func (s *ChangesService) GetComment(changeID, revisionID, commentID string) (*Co
 
 // GetSubmitType gets the method the server will use to submit (merge) the change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-submit-type
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-submit-type
 func (s *ChangesService) GetSubmitType(changeID, revisionID string) (string, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/submit_type", changeID, revisionID)
 	return getStringResponseWithoutOptions(s.client, u)
@@ -177,7 +177,7 @@ func (s *ChangesService) GetSubmitType(changeID, revisionID string) (string, *Re
 
 // GetRevisionActions retrieves revision actions of the revision of a change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-revision-actions
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-revision-actions
 func (s *ChangesService) GetRevisionActions(changeID, revisionID string) (*map[string]ActionInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/actions", changeID, revisionID)
 
@@ -197,7 +197,7 @@ func (s *ChangesService) GetRevisionActions(changeID, revisionID string) (*map[s
 
 // GetCommit retrieves a parsed commit of a revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-commit
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-commit
 func (s *ChangesService) GetCommit(changeID, revisionID string, opt *CommitOptions) (*CommitInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/commit", changeID, revisionID)
 
@@ -227,7 +227,7 @@ func (s *ChangesService) GetCommit(changeID, revisionID string, opt *CommitOptio
 // In addition the current_revision field is set if the revision for which the review is retrieved is the current revision of the change.
 // Please note that the returned labels are always for the current patch set.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-review
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-review
 func (s *ChangesService) GetReview(changeID, revisionID string) (*ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/review", changeID, revisionID)
 	return s.getChangeInfoResponse(u, nil)
@@ -235,7 +235,7 @@ func (s *ChangesService) GetReview(changeID, revisionID string) (*ChangeInfo, *R
 
 // GetMergeable gets the method the server will use to submit (merge) the change and an indicator if the change is currently mergeable.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-mergeable
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-mergeable
 func (s *ChangesService) GetMergeable(changeID, revisionID string, opt *MergableOptions) (*MergeableInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/mergeable", changeID, revisionID)
 
@@ -262,7 +262,7 @@ func (s *ChangesService) GetMergeable(changeID, revisionID string, opt *Mergable
 // Returns a map of file paths to lists of CommentInfo entries.
 // The entries in the map are sorted by file path.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-drafts
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-drafts
 func (s *ChangesService) ListRevisionDrafts(changeID, revisionID string) (*map[string][]CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/drafts/", changeID, revisionID)
 	return s.getCommentInfoMapSliceResponse(u)
@@ -273,7 +273,7 @@ func (s *ChangesService) ListRevisionDrafts(changeID, revisionID string) (*map[s
 // The entries in the map are sorted by file path and only include file (or inline) comments.
 // Use the Get Change Detail endpoint to retrieve the general change message (or comment).
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-comments
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-comments
 func (s *ChangesService) ListRevisionComments(changeID, revisionID string) (*map[string][]CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/comments/", changeID, revisionID)
 	return s.getCommentInfoMapSliceResponse(u)
@@ -283,7 +283,7 @@ func (s *ChangesService) ListRevisionComments(changeID, revisionID string) (*map
 // As result a map is returned that maps the file path to a list of FileInfo entries.
 // The entries in the map are sorted by file path.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-files
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-files
 func (s *ChangesService) ListFiles(changeID, revisionID string) (*map[string]FileInfo, *Response, error) {
 	// TODO: Missing q parameter
 	// The request parameter q changes the response to return a list of all files (modified or unmodified) that contain that substring in the path name. This is useful to implement suggestion services finding a file by partial name.
@@ -307,7 +307,7 @@ func (s *ChangesService) ListFiles(changeID, revisionID string) (*map[string]Fil
 // The difference between ListFiles and ListFilesReviewed is that the caller has marked these files as reviewed.
 // Clients that also need the FileInfo should make two requests.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-files
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-files
 func (s *ChangesService) ListFilesReviewed(changeID, revisionID string) (*[]FileInfo, *Response, error) {
 	// TODO: Missing q parameter
 	// The request parameter q changes the response to return a list of all files (modified or unmodified) that contain that substring in the path name. This is useful to implement suggestion services finding a file by partial name.
@@ -342,7 +342,7 @@ func (s *ChangesService) ListFilesReviewed(changeID, revisionID string) (*[]File
 // SetReview sets a review on a revision.
 // The review must be provided in the request body as a ReviewInput entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#set-review
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#set-review
 func (s *ChangesService) SetReview(changeID, revisionID string, input *ReviewInput) (*ReviewResult, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/review", changeID, revisionID)
 
@@ -362,7 +362,7 @@ func (s *ChangesService) SetReview(changeID, revisionID string, input *ReviewInp
 
 // PublishDraftRevision publishes a draft revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#publish-draft-revision
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#publish-draft-revision
 func (s *ChangesService) PublishDraftRevision(changeID, revisionID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/publish", changeID, revisionID)
 
@@ -376,7 +376,7 @@ func (s *ChangesService) PublishDraftRevision(changeID, revisionID string) (*Res
 
 // DeleteDraftRevision deletes a draft revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-draft-revision
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-draft-revision
 func (s *ChangesService) DeleteDraftRevision(changeID, revisionID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s", changeID, revisionID)
 	return s.client.DeleteRequest(u, nil)
@@ -391,7 +391,7 @@ func (s *ChangesService) DeleteDraftRevision(changeID, revisionID string) (*Resp
 //
 // Query parameter download (e.g. /changes/.../patch?download) will suggest the browser save the patch as commitsha1.diff.base64, for later processing by command line tools.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-patch
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-patch
 func (s *ChangesService) GetPatch(changeID, revisionID string, opt *PatchOptions) (*string, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/patch", changeID, revisionID)
 
@@ -419,7 +419,7 @@ func (s *ChangesService) GetPatch(changeID, revisionID string, opt *PatchOptions
 // Request body may be either the Prolog code as text/plain or a RuleInput object.
 // The query parameter filters may be set to SKIP to bypass parent project filters while testing a project-specific rule.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#test-submit-type
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#test-submit-type
 func (s *ChangesService) TestSubmitType(changeID, revisionID string, input *RuleInput) (*string, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/test.submit_type", changeID, revisionID)
 
@@ -444,7 +444,7 @@ func (s *ChangesService) TestSubmitType(changeID, revisionID string, input *Rule
 //
 // The response is a list of SubmitRecord entries describing the permutations that satisfy the tested submit rule.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#test-submit-rule
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#test-submit-rule
 func (s *ChangesService) TestSubmitRule(changeID, revisionID string, input *RuleInput) (*[]SubmitRecord, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/test.submit_rule", changeID, revisionID)
 
@@ -467,7 +467,7 @@ func (s *ChangesService) TestSubmitRule(changeID, revisionID string, input *Rule
 //
 // As response a CommentInfo entity is returned that describes the draft comment.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#create-draft
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#create-draft
 func (s *ChangesService) CreateDraft(changeID, revisionID string, input *CommentInput) (*CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/drafts", changeID, revisionID)
 
@@ -490,7 +490,7 @@ func (s *ChangesService) CreateDraft(changeID, revisionID string, input *Comment
 //
 // As response a CommentInfo entity is returned that describes the draft comment.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#update-draft
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#update-draft
 func (s *ChangesService) UpdateDraft(changeID, revisionID, draftID string, input *CommentInput) (*CommentInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/drafts/%s", changeID, revisionID, draftID)
 
@@ -510,7 +510,7 @@ func (s *ChangesService) UpdateDraft(changeID, revisionID, draftID string, input
 
 // DeleteDraft deletes a draft comment from a revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-draft
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-draft
 func (s *ChangesService) DeleteDraft(changeID, revisionID, draftID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/drafts/%s", changeID, revisionID, draftID)
 	return s.client.DeleteRequest(u, nil)
@@ -518,7 +518,7 @@ func (s *ChangesService) DeleteDraft(changeID, revisionID, draftID string) (*Res
 
 // DeleteReviewed deletes the reviewed flag of the calling user from a file of a revision.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-reviewed
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#delete-reviewed
 func (s *ChangesService) DeleteReviewed(changeID, revisionID, fileID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/files/%s/reviewed", changeID, revisionID, fileID)
 	return s.client.DeleteRequest(u, nil)
@@ -529,7 +529,7 @@ func (s *ChangesService) DeleteReviewed(changeID, revisionID, fileID string) (*R
 // The HTTP response Content-Type is always text/plain, reflecting the base64 wrapping.
 // A Gerrit-specific X-FYI-Content-Type header is returned describing the server detected content type of the file.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-content
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-content
 func (s *ChangesService) GetContent(changeID, revisionID, fileID string) (*string, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/files/%s/content", changeID, revisionID, fileID)
 
@@ -553,7 +553,7 @@ func (s *ChangesService) GetContent(changeID, revisionID, fileID string) (*strin
 //
 // For further documentation see GetContent.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-content
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-content
 func (s *ChangesService) GetContentType(changeID, revisionID, fileID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/files/%s/content", changeID, revisionID, fileID)
 
@@ -569,7 +569,7 @@ func (s *ChangesService) GetContentType(changeID, revisionID, fileID string) (*R
 //
 // If the file was already marked as reviewed by the calling user the response is “200 OK”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#set-reviewed
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#set-reviewed
 func (s *ChangesService) SetReviewed(changeID, revisionID, fileID string) (*Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/files/%s/reviewed", changeID, revisionID, fileID)
 
@@ -586,7 +586,7 @@ func (s *ChangesService) SetReviewed(changeID, revisionID, fileID string) (*Resp
 //
 // As response a ChangeInfo entity is returned that describes the resulting cherry picked change.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#cherry-pick
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#cherry-pick
 func (s *ChangesService) CherryPickRevision(changeID, revisionID string, input *CherryPickInput) (*ChangeInfo, *Response, error) {
 	u := fmt.Sprintf("changes/%s/revisions/%s/cherrypick", changeID, revisionID)
 
@@ -608,5 +608,5 @@ func (s *ChangesService) CherryPickRevision(changeID, revisionID string, input *
 TODO: Missing Revision Endpoints
 	Rebase Revision
 	Submit Revision
-	DownloadContent (https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-safe-content)
+	DownloadContent (http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#get-safe-content)
 */

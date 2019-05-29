@@ -24,7 +24,7 @@
 // See the documentation of the Pushgateway to understand the meaning of the
 // grouping parameters and the differences between push.Registry and
 // push.Collectors on the one hand and push.AddRegistry and push.AddCollectors
-// on the other hand: https://github.com/prometheus/pushgateway
+// on the other hand: http://github.com/prometheus/pushgateway
 package push
 
 import (

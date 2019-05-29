@@ -29,7 +29,7 @@
 //   fmt.Printf("file uploaded to, %s\n", aws.StringValue(result.Location))
 //
 // See the s3manager package's Uploader type documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#Uploader
+// http://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#Uploader
 //
 // Download Manager
 //
@@ -61,7 +61,7 @@
 //   fmt.Printf("file downloaded, %d bytes\n", n)
 //
 // See the s3manager package's Downloader type documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#Downloader
+// http://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#Downloader
 //
 // Get Bucket Region
 //
@@ -82,7 +82,7 @@
 //   fmt.Printf("Bucket %s is in %s region\n", bucket, region)
 //
 // See the s3manager package's GetBucketRegion function documentation for more information
-// https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#GetBucketRegion
+// http://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#GetBucketRegion
 //
 // S3 Crypto Client
 //
@@ -104,6 +104,6 @@
 //    })
 //
 // See the s3crypto package documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/
+// http://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3crypto/
 //
 package s3

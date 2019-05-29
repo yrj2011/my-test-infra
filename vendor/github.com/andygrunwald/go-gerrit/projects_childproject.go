@@ -7,7 +7,7 @@ import (
 
 // ChildProjectOptions specifies the parameters to the Child Project API endpoints.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-child-projects
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-child-projects
 type ChildProjectOptions struct {
 	// Recursive resolve the child projects of a project recursively.
 	// Child projects that are not visible to the calling user are ignored and are not resolved further.
@@ -16,7 +16,7 @@ type ChildProjectOptions struct {
 
 // ListChildProjects lists the direct child projects of a project.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-child-projects
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-child-projects
 func (s *ProjectsService) ListChildProjects(projectName string, opt *ChildProjectOptions) (*[]ProjectInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/children/", url.QueryEscape(projectName))
 
@@ -42,7 +42,7 @@ func (s *ProjectsService) ListChildProjects(projectName string, opt *ChildProjec
 // GetChildProject retrieves a child project.
 // If a non-direct child project should be retrieved the parameter recursive must be set.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-child-project
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-child-project
 func (s *ProjectsService) GetChildProject(projectName, childProjectName string, opt *ChildProjectOptions) (*ProjectInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/children/%s", url.QueryEscape(projectName), url.QueryEscape(childProjectName))
 

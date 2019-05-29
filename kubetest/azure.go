@@ -60,7 +60,7 @@ var (
 	acsHyperKubeURL        = flag.String("acsengine-hyperkube-url", "", "Path to get the kyberkube image for the deployment")
 	acsCredentialsFile     = flag.String("acsengine-creds", "", "Path to credential file for Azure")
 	acsOrchestratorRelease = flag.String("acsengine-orchestratorRelease", "1.11", "Orchestrator Profile for acs-engine")
-	acsWinZipBuildScript   = flag.String("acsengine-winZipBuildScript", "https://raw.githubusercontent.com/Azure/acs-engine/master/scripts/build-windows-k8s.sh", "Build script to create custom zip containing win binaries for acs-engine")
+	acsWinZipBuildScript   = flag.String("acsengine-winZipBuildScript", "http://raw.githubusercontent.com/Azure/acs-engine/master/scripts/build-windows-k8s.sh", "Build script to create custom zip containing win binaries for acs-engine")
 	acsNetworkPlugin       = flag.String("acsengine-networkPlugin", "azure", "Network pluging to use with acs-engine")
 )
 
@@ -247,11 +247,11 @@ func (c *Cluster) generateTemplate() error {
 					   tests expect
 
 					   Extension source:
-					   https://github.com/e2e-win/e2e-win-prow-deployment/blob/master/extensions/agent_preprovision_extension/node_setup.ps1
+					   http://github.com/e2e-win/e2e-win-prow-deployment/blob/master/extensions/agent_preprovision_extension/node_setup.ps1
 					*/
 					"name":    "node_setup",
 					"version": "v1",
-					"rootURL": "https://k8swin.blob.core.windows.net/k8s-windows/preprovision_extensions/",
+					"rootURL": "http://k8swin.blob.core.windows.net/k8s-windows/preprovision_extensions/",
 					"script":  "node_setup.ps1",
 				},
 				{
@@ -270,12 +270,12 @@ func (c *Cluster) generateTemplate() error {
 						start before tainting master
 
 						Extension source:
-						https://github.com/e2e-win/e2e-win-prow-deployment/blob/master/extensions/master_extension/win-e2e-master-extension.sh
+						http://github.com/e2e-win/e2e-win-prow-deployment/blob/master/extensions/master_extension/win-e2e-master-extension.sh
 					*/
 					"name":                "win-e2e-master-extension",
 					"version":             "v1",
 					"extensionParameters": "parameters",
-					"rootURL":             "https://k8swin.blob.core.windows.net/k8s-windows/extensions/",
+					"rootURL":             "http://k8swin.blob.core.windows.net/k8s-windows/extensions/",
 					"script":              "win-e2e-master-extension.sh",
 				},
 			},
@@ -452,7 +452,7 @@ func (c *Cluster) uploadZip(zipPath string) error {
 	var containerName string = os.Getenv("AZ_STORAGE_CONTAINER_NAME")
 
 	URL, _ := url.Parse(
-		fmt.Sprintf("https://%s.blob.core.windows.net/%s", c.credentials.StorageAccountName, containerName))
+		fmt.Sprintf("http://%s.blob.core.windows.net/%s", c.credentials.StorageAccountName, containerName))
 
 	containerURL := azblob.NewContainerURL(*URL, p)
 	file, err := os.Open(zipPath)

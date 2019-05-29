@@ -14,7 +14,7 @@ import (
 
 // ListKeys lists the deploy keys for a repository.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/keys/#list
+// GitHub API docs: http://developer.github.com/v3/repos/keys/#list
 func (s *RepositoriesService) ListKeys(ctx context.Context, owner string, repo string, opt *ListOptions) ([]*Key, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/keys", owner, repo)
 	u, err := addOptions(u, opt)
@@ -38,7 +38,7 @@ func (s *RepositoriesService) ListKeys(ctx context.Context, owner string, repo s
 
 // GetKey fetches a single deploy key.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/keys/#get
+// GitHub API docs: http://developer.github.com/v3/repos/keys/#get
 func (s *RepositoriesService) GetKey(ctx context.Context, owner string, repo string, id int) (*Key, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/keys/%v", owner, repo, id)
 
@@ -58,7 +58,7 @@ func (s *RepositoriesService) GetKey(ctx context.Context, owner string, repo str
 
 // CreateKey adds a deploy key for a repository.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/keys/#create
+// GitHub API docs: http://developer.github.com/v3/repos/keys/#create
 func (s *RepositoriesService) CreateKey(ctx context.Context, owner string, repo string, key *Key) (*Key, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/keys", owner, repo)
 
@@ -78,7 +78,7 @@ func (s *RepositoriesService) CreateKey(ctx context.Context, owner string, repo 
 
 // EditKey edits a deploy key.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/keys/#edit
+// GitHub API docs: http://developer.github.com/v3/repos/keys/#edit
 func (s *RepositoriesService) EditKey(ctx context.Context, owner string, repo string, id int, key *Key) (*Key, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/keys/%v", owner, repo, id)
 
@@ -98,7 +98,7 @@ func (s *RepositoriesService) EditKey(ctx context.Context, owner string, repo st
 
 // DeleteKey deletes a deploy key.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/keys/#delete
+// GitHub API docs: http://developer.github.com/v3/repos/keys/#delete
 func (s *RepositoriesService) DeleteKey(ctx context.Context, owner string, repo string, id int) (*Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/keys/%v", owner, repo, id)
 

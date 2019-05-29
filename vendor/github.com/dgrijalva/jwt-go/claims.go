@@ -13,7 +13,7 @@ type Claims interface {
 }
 
 // Structured version of Claims Section, as referenced at
-// https://tools.ietf.org/html/rfc7519#section-4.1
+// http://tools.ietf.org/html/rfc7519#section-4.1
 // See examples for how to use this with your own claim types
 type StandardClaims struct {
 	Audience  string `json:"aud,omitempty"`

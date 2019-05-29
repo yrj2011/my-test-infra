@@ -7,16 +7,16 @@ Execept where noted below, the source code for misspell is
 copyright Nick Galbreath and distribution is allowed under a
 MIT license.  See the following for details:
 
-* https://github.com/client9/misspell/blob/master/LICENSE
-* https://tldrlegal.com/license/mit-license 
+* http://github.com/client9/misspell/blob/master/LICENSE
+* http://tldrlegal.com/license/mit-license 
 
 Misspell makes uses of the Golang standard library and 
 contains a modified version of Golang's strings.Replacer
 which are covered under a BSD License.
 
-* https://golang.org/pkg/strings/#Replacer
-* https://golang.org/src/strings/replace.go
-* https://github.com/golang/go/blob/master/LICENSE
+* http://golang.org/pkg/strings/#Replacer
+* http://golang.org/src/strings/replace.go
+* http://github.com/golang/go/blob/master/LICENSE
 
 Copyright (c) 2009 The Go Authors. All rights reserved.
 

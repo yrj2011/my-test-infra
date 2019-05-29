@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// Elastic IPs: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeAddresses
+// Elastic IPs: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeAddresses
 
 type Addresses struct{}
 

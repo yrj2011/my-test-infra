@@ -115,7 +115,7 @@ func scramblePassword(scramble, password []byte) []byte {
 }
 
 // Encrypt password using pre 4.1 (old password) method
-// https://github.com/atcurtis/mariadb/blob/master/mysys/my_rnd.c
+// http://github.com/atcurtis/mariadb/blob/master/mysys/my_rnd.c
 type myRnd struct {
 	seed1, seed2 uint32
 }
@@ -607,7 +607,7 @@ func reserveBuffer(buf []byte, appendSize int) []byte {
 // This escapes the contents of a string (provided as []byte) by adding backslashes before special
 // characters, and turning others into specific escape sequences, such as
 // turning newlines into \n and null bytes into \0.
-// https://github.com/mysql/mysql-server/blob/mysql-5.7.5/mysys/charset.c#L823-L932
+// http://github.com/mysql/mysql-server/blob/mysql-5.7.5/mysys/charset.c#L823-L932
 func escapeBytesBackslash(buf, v []byte) []byte {
 	pos := len(buf)
 	buf = reserveBuffer(buf, len(v)*2)
@@ -700,7 +700,7 @@ func escapeStringBackslash(buf []byte, v string) []byte {
 // This escapes the contents of a string by doubling up any apostrophes that
 // it contains. This is used when the NO_BACKSLASH_ESCAPES SQL_MODE is in
 // effect on the server.
-// https://github.com/mysql/mysql-server/blob/mysql-5.7.5/mysys/charset.c#L963-L1038
+// http://github.com/mysql/mysql-server/blob/mysql-5.7.5/mysys/charset.c#L963-L1038
 func escapeBytesQuotes(buf, v []byte) []byte {
 	pos := len(buf)
 	buf = reserveBuffer(buf, len(v)*2)

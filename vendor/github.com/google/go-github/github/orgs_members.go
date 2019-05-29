@@ -71,7 +71,7 @@ type ListMembersOptions struct {
 // user is an owner of the organization, this will return both concealed and
 // public members, otherwise it will only return public members.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#members-list
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#members-list
 func (s *OrganizationsService) ListMembers(ctx context.Context, org string, opt *ListMembersOptions) ([]*User, *Response, error) {
 	var u string
 	if opt != nil && opt.PublicOnly {
@@ -100,7 +100,7 @@ func (s *OrganizationsService) ListMembers(ctx context.Context, org string, opt 
 
 // IsMember checks if a user is a member of an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#check-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#check-membership
 func (s *OrganizationsService) IsMember(ctx context.Context, org, user string) (bool, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/members/%v", org, user)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -115,7 +115,7 @@ func (s *OrganizationsService) IsMember(ctx context.Context, org, user string) (
 
 // IsPublicMember checks if a user is a public member of an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#check-public-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#check-public-membership
 func (s *OrganizationsService) IsPublicMember(ctx context.Context, org, user string) (bool, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/public_members/%v", org, user)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -130,7 +130,7 @@ func (s *OrganizationsService) IsPublicMember(ctx context.Context, org, user str
 
 // RemoveMember removes a user from all teams of an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#remove-a-member
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#remove-a-member
 func (s *OrganizationsService) RemoveMember(ctx context.Context, org, user string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/members/%v", org, user)
 	req, err := s.client.NewRequest("DELETE", u, nil)
@@ -144,7 +144,7 @@ func (s *OrganizationsService) RemoveMember(ctx context.Context, org, user strin
 // PublicizeMembership publicizes a user's membership in an organization. (A
 // user cannot publicize the membership for another user.)
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#publicize-a-users-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#publicize-a-users-membership
 func (s *OrganizationsService) PublicizeMembership(ctx context.Context, org, user string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/public_members/%v", org, user)
 	req, err := s.client.NewRequest("PUT", u, nil)
@@ -157,7 +157,7 @@ func (s *OrganizationsService) PublicizeMembership(ctx context.Context, org, use
 
 // ConcealMembership conceals a user's membership in an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#conceal-a-users-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#conceal-a-users-membership
 func (s *OrganizationsService) ConcealMembership(ctx context.Context, org, user string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/public_members/%v", org, user)
 	req, err := s.client.NewRequest("DELETE", u, nil)
@@ -180,7 +180,7 @@ type ListOrgMembershipsOptions struct {
 
 // ListOrgMemberships lists the organization memberships for the authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#list-your-organization-memberships
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#list-your-organization-memberships
 func (s *OrganizationsService) ListOrgMemberships(ctx context.Context, opt *ListOrgMembershipsOptions) ([]*Membership, *Response, error) {
 	u := "user/memberships/orgs"
 	u, err := addOptions(u, opt)
@@ -207,8 +207,8 @@ func (s *OrganizationsService) ListOrgMemberships(ctx context.Context, opt *List
 // authenticated user.
 //
 // GitHub API docs:
-// https://developer.github.com/v3/orgs/members/#get-organization-membership
-// https://developer.github.com/v3/orgs/members/#get-your-organization-membership
+// http://developer.github.com/v3/orgs/members/#get-organization-membership
+// http://developer.github.com/v3/orgs/members/#get-your-organization-membership
 func (s *OrganizationsService) GetOrgMembership(ctx context.Context, user, org string) (*Membership, *Response, error) {
 	var u string
 	if user != "" {
@@ -235,8 +235,8 @@ func (s *OrganizationsService) GetOrgMembership(ctx context.Context, user, org s
 // Passing an empty string for user will edit the membership for the
 // authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#add-or-update-organization-membership
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#edit-your-organization-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#add-or-update-organization-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#edit-your-organization-membership
 func (s *OrganizationsService) EditOrgMembership(ctx context.Context, user, org string, membership *Membership) (*Membership, *Response, error) {
 	var u, method string
 	if user != "" {
@@ -264,7 +264,7 @@ func (s *OrganizationsService) EditOrgMembership(ctx context.Context, user, org 
 // RemoveOrgMembership removes user from the specified organization. If the
 // user has been invited to the organization, this will cancel their invitation.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#remove-organization-membership
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#remove-organization-membership
 func (s *OrganizationsService) RemoveOrgMembership(ctx context.Context, user, org string) (*Response, error) {
 	u := fmt.Sprintf("orgs/%v/memberships/%v", org, user)
 	req, err := s.client.NewRequest("DELETE", u, nil)
@@ -277,7 +277,7 @@ func (s *OrganizationsService) RemoveOrgMembership(ctx context.Context, user, or
 
 // ListPendingOrgInvitations returns a list of pending invitations.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/members/#list-pending-organization-invitations
+// GitHub API docs: http://developer.github.com/v3/orgs/members/#list-pending-organization-invitations
 func (s *OrganizationsService) ListPendingOrgInvitations(ctx context.Context, org int, opt *ListOptions) ([]*Invitation, *Response, error) {
 	u := fmt.Sprintf("orgs/%v/invitations", org)
 	u, err := addOptions(u, opt)

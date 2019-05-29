@@ -536,7 +536,7 @@ func validateNeedsOkToTestLabel(cfg *config.Config) error {
 							"the tide query at position %d"+
 								"forbids the %q label and requires the %q label, "+
 								"which is not recommended; "+
-								"see https://github.com/kubernetes/test-infra/blob/master/prow/cmd/tide/maintainers.md#best-practices "+
+								"see http://github.com/kubernetes/test-infra/blob/master/prow/cmd/tide/maintainers.md#best-practices "+
 								"for more information",
 							i, labels.NeedsOkToTest, lgtm.LGTMLabel),
 						)

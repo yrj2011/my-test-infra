@@ -706,7 +706,7 @@ func kubemarkTest(testArgs []string, dump string, o options, deploy deployer) er
 			os.Environ(),
 			"KUBERNETES_PROVIDER=kubemark",
 			"KUBE_CONFIG_FILE=config-default.sh",
-			"KUBE_MASTER_URL=https://"+os.Getenv("KUBE_MASTER_IP"),
+			"KUBE_MASTER_URL=http://"+os.Getenv("KUBE_MASTER_IP"),
 		)
 
 		return control.FinishRunning(cmd)

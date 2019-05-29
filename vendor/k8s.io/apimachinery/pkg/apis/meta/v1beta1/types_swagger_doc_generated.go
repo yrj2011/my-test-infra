@@ -18,7 +18,7 @@ package v1beta1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -29,7 +29,7 @@ package v1beta1
 // AUTO-GENERATED FUNCTIONS START HERE. DO NOT EDIT.
 var map_PartialObjectMetadata = map[string]string{
 	"":         "PartialObjectMetadata is a generic representation of any object with ObjectMeta. It allows clients to get access to a particular ObjectMeta schema without knowing the details of the version.",
-	"metadata": "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard object's metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 }
 
 func (PartialObjectMetadata) SwaggerDoc() map[string]string {
@@ -47,7 +47,7 @@ func (PartialObjectMetadataList) SwaggerDoc() map[string]string {
 
 var map_Table = map[string]string{
 	"":                  "Table is a tabular representation of a set of API resources. The server transforms the object into a set of preferred columns for quickly reviewing the objects.",
-	"metadata":          "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+	"metadata":          "Standard list metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
 	"columnDefinitions": "columnDefinitions describes each column in the returned items array. The number of cells per row will always match the number of column definitions.",
 	"rows":              "rows is the list of items in the table.",
 }
@@ -59,8 +59,8 @@ func (Table) SwaggerDoc() map[string]string {
 var map_TableColumnDefinition = map[string]string{
 	"":            "TableColumnDefinition contains information about a column returned in the Table.",
 	"name":        "name is a human readable name for the column.",
-	"type":        "type is an OpenAPI type definition for this column. See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.",
-	"format":      "format is an optional OpenAPI type definition for this column. The 'name' format is applied to the primary identifier column to assist in clients identifying column is the resource name. See https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.",
+	"type":        "type is an OpenAPI type definition for this column. See http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.",
+	"format":      "format is an optional OpenAPI type definition for this column. The 'name' format is applied to the primary identifier column to assist in clients identifying column is the resource name. See http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for more.",
 	"description": "description is a human readable description of this column.",
 	"priority":    "priority is an integer defining the relative importance of this column compared to others. Lower numbers are considered higher priority. Columns that may be omitted in limited space scenarios should be given a higher priority.",
 }

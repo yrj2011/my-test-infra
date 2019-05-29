@@ -16,7 +16,7 @@ type TagInfo struct {
 
 // ListTags list the tags of a project.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-tags
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#list-tags
 func (s *ProjectsService) ListTags(projectName string, opt *ProjectBaseOptions) (*[]TagInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/tags/", url.QueryEscape(projectName))
 	u, err := addOptions(u, opt)
@@ -40,7 +40,7 @@ func (s *ProjectsService) ListTags(projectName string, opt *ProjectBaseOptions) 
 
 // GetTag retrieves a tag of a project.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-tag
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-tag
 func (s *ProjectsService) GetTag(projectName, tagName string) (*TagInfo, *Response, error) {
 	u := fmt.Sprintf("projects/%s/tags/%s", url.QueryEscape(projectName), url.QueryEscape(tagName))
 

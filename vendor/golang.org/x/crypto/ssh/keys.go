@@ -872,7 +872,7 @@ func ParseDSAPrivateKey(der []byte) (*dsa.PrivateKey, error) {
 }
 
 // Implemented based on the documentation at
-// https://github.com/openssh/openssh-portable/blob/master/PROTOCOL.key
+// http://github.com/openssh/openssh-portable/blob/master/PROTOCOL.key
 func parseOpenSSHPrivateKey(key []byte) (crypto.PrivateKey, error) {
 	magic := append([]byte("openssh-key-v1"), 0)
 	if !bytes.Equal(magic, key[0:len(magic)]) {
@@ -915,7 +915,7 @@ func parseOpenSSHPrivateKey(key []byte) (crypto.PrivateKey, error) {
 	// we only handle ed25519 and rsa keys currently
 	switch pk1.Keytype {
 	case KeyAlgoRSA:
-		// https://github.com/openssh/openssh-portable/blob/master/sshkey.c#L2760-L2773
+		// http://github.com/openssh/openssh-portable/blob/master/sshkey.c#L2760-L2773
 		key := struct {
 			N       *big.Int
 			E       *big.Int
@@ -997,8 +997,8 @@ func FingerprintLegacyMD5(pubKey PublicKey) string {
 // FingerprintSHA256 returns the user presentation of the key's
 // fingerprint as unpadded base64 encoded sha256 hash.
 // This format was introduced from OpenSSH 6.8.
-// https://www.openssh.com/txt/release-6.8
-// https://tools.ietf.org/html/rfc4648#section-3.2 (unpadded base64 encoding)
+// http://www.openssh.com/txt/release-6.8
+// http://tools.ietf.org/html/rfc4648#section-3.2 (unpadded base64 encoding)
 func FingerprintSHA256(pubKey PublicKey) string {
 	sha256sum := sha256.Sum256(pubKey.Marshal())
 	hash := base64.RawStdEncoding.EncodeToString(sha256sum[:])

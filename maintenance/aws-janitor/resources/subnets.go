@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// Subnets: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeSubnets
+// Subnets: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeSubnets
 type Subnets struct{}
 
 func (Subnets) MarkAndSweep(sess *session.Session, acct string, region string, set *Set) error {

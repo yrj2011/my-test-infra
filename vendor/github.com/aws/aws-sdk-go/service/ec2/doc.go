@@ -8,10 +8,10 @@
 // need to invest in hardware up front, so you can develop and deploy applications
 // faster.
 //
-// See https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15 for more information on this service.
+// See http://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15 for more information on this service.
 //
 // See ec2 package documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/
+// http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/
 //
 // Using the Client
 //
@@ -20,12 +20,12 @@
 // These clients are safe to use concurrently.
 //
 // See the SDK's documentation for more information on how to use the SDK.
-// https://docs.aws.amazon.com/sdk-for-go/api/
+// http://docs.aws.amazon.com/sdk-for-go/api/
 //
 // See aws.Config documentation for more information on configuring SDK clients.
-// https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
+// http://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
 //
 // See the Amazon Elastic Compute Cloud client EC2 for more
 // information on creating client for this service.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#New
+// http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#New
 package ec2

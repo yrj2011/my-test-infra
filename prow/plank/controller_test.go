@@ -1515,7 +1515,7 @@ func TestJobURL(t *testing.T) {
 		{
 			name: "decorated job with prefix uses gcslib",
 			plank: config.Plank{
-				JobURLPrefix: "https://gubernator.com/build",
+				JobURLPrefix: "http://gubernator.com/build",
 			},
 			pj: kube.ProwJob{Spec: kube.ProwJobSpec{
 				Type: kube.PresubmitJob,

@@ -595,7 +595,7 @@ var vcsPaths = []*vcsPath{
 		prefix: "go.googlesource.com",
 		re:     `^(?P<root>go\.googlesource\.com/[A-Za-z0-9_.\-]+/?)$`,
 		vcs:    "git",
-		repo:   "https://{root}",
+		repo:   "http://{root}",
 		check:  noVCSSuffix,
 	},
 
@@ -604,7 +604,7 @@ var vcsPaths = []*vcsPath{
 		prefix: "github.com/",
 		re:     `^(?P<root>github\.com/[A-Za-z0-9_.\-]+/[A-Za-z0-9_.\-]+)(/[A-Za-z0-9_.\-]+)*$`,
 		vcs:    "git",
-		repo:   "https://{root}",
+		repo:   "http://{root}",
 		check:  noVCSSuffix,
 	},
 
@@ -612,7 +612,7 @@ var vcsPaths = []*vcsPath{
 	{
 		prefix: "bitbucket.org/",
 		re:     `^(?P<root>bitbucket\.org/(?P<bitname>[A-Za-z0-9_.\-]+/[A-Za-z0-9_.\-]+))(/[A-Za-z0-9_.\-]+)*$`,
-		repo:   "https://{root}",
+		repo:   "http://{root}",
 		check:  bitbucketVCS,
 	},
 
@@ -621,7 +621,7 @@ var vcsPaths = []*vcsPath{
 		prefix: "launchpad.net/",
 		re:     `^(?P<root>launchpad\.net/((?P<project>[A-Za-z0-9_.\-]+)(?P<series>/[A-Za-z0-9_.\-]+)?|~[A-Za-z0-9_.\-]+/(\+junk|[A-Za-z0-9_.\-]+)/[A-Za-z0-9_.\-]+))(/[A-Za-z0-9_.\-]+)*$`,
 		vcs:    "bzr",
-		repo:   "https://{root}",
+		repo:   "http://{root}",
 		check:  launchpadVCS,
 	},
 
@@ -630,7 +630,7 @@ var vcsPaths = []*vcsPath{
 		prefix: "git.openstack.org",
 		re:     `^(?P<root>git\.openstack\.org/[A-Za-z0-9_.\-]+/[A-Za-z0-9_.\-]+)(\.git)?(/[A-Za-z0-9_.\-]+)*$`,
 		vcs:    "git",
-		repo:   "https://{root}",
+		repo:   "http://{root}",
 		check:  noVCSSuffix,
 	},
 
@@ -673,7 +673,7 @@ func bitbucketVCS(match map[string]string) error {
 	var resp struct {
 		SCM string `json:"scm"`
 	}
-	url := expand(match, "https://api.bitbucket.org/1.0/repositories/{bitname}")
+	url := expand(match, "http://api.bitbucket.org/1.0/repositories/{bitname}")
 	data, err := httpGET(url)
 	if err != nil {
 		return err
@@ -701,10 +701,10 @@ func launchpadVCS(match map[string]string) error {
 	if match["project"] == "" || match["series"] == "" {
 		return nil
 	}
-	_, err := httpGET(expand(match, "https://code.launchpad.net/{project}{series}/.bzr/branch-format"))
+	_, err := httpGET(expand(match, "http://code.launchpad.net/{project}{series}/.bzr/branch-format"))
 	if err != nil {
 		match["root"] = expand(match, "launchpad.net/{project}")
-		match["repo"] = expand(match, "https://{root}")
+		match["repo"] = expand(match, "http://{root}")
 	}
 	return nil
 }

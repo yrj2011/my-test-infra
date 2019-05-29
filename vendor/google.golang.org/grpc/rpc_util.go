@@ -260,7 +260,7 @@ func (o PeerCallOption) after(c *callInfo) {
 // retry the call if it fails due to a transient error.  gRPC will not retry if
 // data was written to the wire unless the server indicates it did not process
 // the data.  Please refer to
-// https://github.com/grpc/grpc/blob/master/doc/wait-for-ready.md.
+// http://github.com/grpc/grpc/blob/master/doc/wait-for-ready.md.
 //
 // By default, RPCs are "Fail Fast".
 func FailFast(failFast bool) CallOption {
@@ -360,7 +360,7 @@ func (o CompressorCallOption) after(c *callInfo) {}
 // for a call. For example, if content-subtype is "json", the Content-Type over
 // the wire will be "application/grpc+json". The content-subtype is converted
 // to lowercase before being included in Content-Type. See Content-Type on
-// https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md#requests for
+// http://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md#requests for
 // more details.
 //
 // If CallCustomCodec is not also used, the content-subtype will be used to
@@ -394,7 +394,7 @@ func (o ContentSubtypeCallOption) after(c *callInfo) {}
 // String() will be used as the content-subtype in a case-insensitive manner.
 //
 // See Content-Type on
-// https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md#requests for
+// http://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md#requests for
 // more details. Also see the documentation on RegisterCodec and
 // CallContentSubtype for more details on the interaction between Codec and
 // content-subtype.
@@ -455,7 +455,7 @@ type parser struct {
 	r io.Reader
 
 	// The header of a gRPC message. Find more detail at
-	// https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md
+	// http://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md
 	header [5]byte
 }
 

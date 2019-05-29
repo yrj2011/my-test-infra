@@ -63,7 +63,7 @@ func (s filesystemState) setup() error {
 		// and do absolute links, assuming they are relative to the directory of
 		// link.path.
 		//
-		// Reference: https://github.com/golang/go/issues/17540
+		// Reference: http://github.com/golang/go/issues/17540
 		//
 		// TODO(ibrasho): This was fixed in Go 1.9. Remove this when support for
 		// 1.8 is dropped.

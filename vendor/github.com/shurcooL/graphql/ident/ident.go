@@ -181,7 +181,7 @@ func isTwoInitialisms(word string) (string, string, bool) {
 // For instance, "ID" is fine (Freudian code is rare), but "AND" is not.
 var initialisms = map[string]struct{}{
 	// These are the common initialisms from golint. Keep them in sync
-	// with https://gotools.org/github.com/golang/lint#commonInitialisms.
+	// with http://gotools.org/github.com/golang/lint#commonInitialisms.
 	"ACL":   {},
 	"API":   {},
 	"ASCII": {},
@@ -232,7 +232,7 @@ func isBrand(word string) (string, bool) {
 }
 
 // brands is the map of brands in the MixedCaps naming convention;
-// see https://dmitri.shuralyov.com/idiomatic-go#for-brands-or-words-with-more-than-1-capital-letter-lowercase-all-letters.
+// see http://dmitri.shuralyov.com/idiomatic-go#for-brands-or-words-with-more-than-1-capital-letter-lowercase-all-letters.
 // Key is the lower case version of the brand, value is the canonical brand spelling.
 // Only add entries that are highly unlikely to be non-brands.
 var brands = map[string]string{

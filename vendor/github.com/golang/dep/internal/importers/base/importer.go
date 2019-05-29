@@ -314,9 +314,9 @@ func (i *Importer) convertToConstraint(v gps.Version) gps.Constraint {
 
 func (i *Importer) isDefaultSource(projectRoot gps.ProjectRoot, sourceURL string) (bool, error) {
 	// this condition is mainly for gopkg.in imports,
-	// as some importers specify the repository url as https://gopkg.in/...,
-	// but SourceManager.SourceURLsForPath() returns https://github.com/... urls for gopkg.in
-	if sourceURL == "https://"+string(projectRoot) {
+	// as some importers specify the repository url as http://gopkg.in/...,
+	// but SourceManager.SourceURLsForPath() returns http://github.com/... urls for gopkg.in
+	if sourceURL == "http://"+string(projectRoot) {
 		return true, nil
 	}
 
@@ -324,7 +324,7 @@ func (i *Importer) isDefaultSource(projectRoot gps.ProjectRoot, sourceURL string
 	if err != nil {
 		return false, err
 	}
-	// The first url in the slice will be the default one (usually https://...)
+	// The first url in the slice will be the default one (usually http://...)
 	if len(sourceURLs) > 0 && sourceURL == sourceURLs[0].String() {
 		return true, nil
 	}

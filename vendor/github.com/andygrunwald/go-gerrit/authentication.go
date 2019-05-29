@@ -33,7 +33,7 @@ const (
 
 // AuthenticationService contains Authentication related functions.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api.html#authentication
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api.html#authentication
 type AuthenticationService struct {
 	client *Client
 

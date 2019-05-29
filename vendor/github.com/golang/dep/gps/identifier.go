@@ -26,7 +26,7 @@ import (
 //  actual directories:
 //	/home/sdboyer/go/src/github.com/sdboyer/gps/example
 //  URLs:
-//	https://github.com/sdboyer/gps
+//	http://github.com/sdboyer/gps
 //  import paths:
 //	github.com/sdboyer/gps/example
 //  portions of import paths that refer to a package:
@@ -56,7 +56,7 @@ type ProjectRoot string
 //  github.com/sdboyer/gps
 //  github.com/fork/gps
 //  git@github.com:sdboyer/gps
-//  https://github.com/sdboyer/gps
+//  http://github.com/sdboyer/gps
 //
 // With plain import paths, network addresses are derived purely through an
 // algorithm. By having an explicit network name, it becomes possible to, for

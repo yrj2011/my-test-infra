@@ -483,7 +483,7 @@ func prowJobStatus(bs buildv1alpha1.BuildStatus) (prowjobv1.ProwJobState, string
 }
 
 // TODO(fejta): knative/build convert package should export "workspace", "home", "/workspace"
-// https://github.com/knative/build/blob/17e8cf8417e1ef3d29bd465d4f45ad19dd3a3f2c/pkg/builder/cluster/convert/convert.go#L39-L65
+// http://github.com/knative/build/blob/17e8cf8417e1ef3d29bd465d4f45ad19dd3a3f2c/pkg/builder/cluster/convert/convert.go#L39-L65
 const (
 	workspaceMountName = "workspace"
 	homeMountName      = "home"

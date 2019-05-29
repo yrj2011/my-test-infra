@@ -13,7 +13,7 @@ import (
 // UsersService handles communication with the user related
 // methods of the GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/users/
+// GitHub API docs: http://developer.github.com/v3/users/
 type UsersService service
 
 // User represents a GitHub user.
@@ -59,7 +59,7 @@ type User struct {
 	SubscriptionsURL  *string `json:"subscriptions_url,omitempty"`
 
 	// TextMatches is only populated from search results that request text matches
-	// See: search.go and https://developer.github.com/v3/search/#text-match-metadata
+	// See: search.go and http://developer.github.com/v3/search/#text-match-metadata
 	TextMatches []TextMatch `json:"text_matches,omitempty"`
 
 	// Permissions identifies the permissions that a user has on a given
@@ -74,7 +74,7 @@ func (u User) String() string {
 // Get fetches a user. Passing the empty string will fetch the authenticated
 // user.
 //
-// GitHub API docs: https://developer.github.com/v3/users/#get-a-single-user
+// GitHub API docs: http://developer.github.com/v3/users/#get-a-single-user
 func (s *UsersService) Get(ctx context.Context, user string) (*User, *Response, error) {
 	var u string
 	if user != "" {
@@ -117,7 +117,7 @@ func (s *UsersService) GetByID(ctx context.Context, id int) (*User, *Response, e
 
 // Edit the authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/users/#update-the-authenticated-user
+// GitHub API docs: http://developer.github.com/v3/users/#update-the-authenticated-user
 func (s *UsersService) Edit(ctx context.Context, user *User) (*User, *Response, error) {
 	u := "user"
 	req, err := s.client.NewRequest("PATCH", u, user)
@@ -147,7 +147,7 @@ type UserListOptions struct {
 //
 // To paginate through all users, populate 'Since' with the ID of the last user.
 //
-// GitHub API docs: https://developer.github.com/v3/users/#get-all-users
+// GitHub API docs: http://developer.github.com/v3/users/#get-all-users
 func (s *UsersService) ListAll(ctx context.Context, opt *UserListOptions) ([]*User, *Response, error) {
 	u, err := addOptions("users", opt)
 	if err != nil {
@@ -171,7 +171,7 @@ func (s *UsersService) ListAll(ctx context.Context, opt *UserListOptions) ([]*Us
 // ListInvitations lists all currently-open repository invitations for the
 // authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/invitations/#list-a-users-repository-invitations
+// GitHub API docs: http://developer.github.com/v3/repos/invitations/#list-a-users-repository-invitations
 func (s *UsersService) ListInvitations(ctx context.Context, opt *ListOptions) ([]*RepositoryInvitation, *Response, error) {
 	u, err := addOptions("user/repository_invitations", opt)
 	if err != nil {
@@ -198,7 +198,7 @@ func (s *UsersService) ListInvitations(ctx context.Context, opt *ListOptions) ([
 // AcceptInvitation accepts the currently-open repository invitation for the
 // authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/invitations/#accept-a-repository-invitation
+// GitHub API docs: http://developer.github.com/v3/repos/invitations/#accept-a-repository-invitation
 func (s *UsersService) AcceptInvitation(ctx context.Context, invitationID int) (*Response, error) {
 	u := fmt.Sprintf("user/repository_invitations/%v", invitationID)
 	req, err := s.client.NewRequest("PATCH", u, nil)
@@ -215,7 +215,7 @@ func (s *UsersService) AcceptInvitation(ctx context.Context, invitationID int) (
 // DeclineInvitation declines the currently-open repository invitation for the
 // authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/invitations/#decline-a-repository-invitation
+// GitHub API docs: http://developer.github.com/v3/repos/invitations/#decline-a-repository-invitation
 func (s *UsersService) DeclineInvitation(ctx context.Context, invitationID int) (*Response, error) {
 	u := fmt.Sprintf("user/repository_invitations/%v", invitationID)
 	req, err := s.client.NewRequest("DELETE", u, nil)

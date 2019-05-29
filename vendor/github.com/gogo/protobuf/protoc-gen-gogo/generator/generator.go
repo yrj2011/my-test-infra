@@ -6,7 +6,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// http://github.com/golang/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -1686,7 +1686,7 @@ func (g *Generator) goTag(message *Descriptor, field *descriptor.FieldDescriptor
 	}
 	packed := ""
 	if (field.Options != nil && field.Options.GetPacked()) ||
-		// Per https://developers.google.com/protocol-buffers/docs/proto3#simple:
+		// Per http://developers.google.com/protocol-buffers/docs/proto3#simple:
 		// "In proto3, repeated fields of scalar numeric types use packed encoding by default."
 		(message.proto3() && (field.Options == nil || field.Options.Packed == nil) &&
 			isRepeated(field) && IsScalar(field)) {

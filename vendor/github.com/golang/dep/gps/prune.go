@@ -306,7 +306,7 @@ func collectUnusedPackagesFiles(fsState filesystemState, unusedPackages map[stri
 func isSourceFile(path string) bool {
 	ext := fileExt(path)
 
-	// Refer to: https://github.com/golang/go/blob/release-branch.go1.9/src/go/build/build.go#L750
+	// Refer to: http://github.com/golang/go/blob/release-branch.go1.9/src/go/build/build.go#L750
 	switch ext {
 	case ".go":
 		return true

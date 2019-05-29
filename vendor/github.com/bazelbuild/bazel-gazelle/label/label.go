@@ -15,7 +15,7 @@ limitations under the License.
 
 // Package label provides utilities for parsing and manipulating
 // Bazel labels. See
-// https://docs.bazel.build/versions/master/build-ref.html#labels
+// http://docs.bazel.build/versions/master/build-ref.html#labels
 // for more information.
 package label
 
@@ -66,7 +66,7 @@ var (
 )
 
 // Parse reads a label from a string.
-// See https://docs.bazel.build/versions/master/build-ref.html#lexi.
+// See http://docs.bazel.build/versions/master/build-ref.html#lexi.
 func Parse(s string) (Label, error) {
 	origStr := s
 

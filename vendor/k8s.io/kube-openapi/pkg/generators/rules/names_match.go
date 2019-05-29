@@ -119,7 +119,7 @@ func (n *NamesMatch) Validate(t *types.Type) ([]string, error) {
 //		github.com/segmentio/go-camelcase
 //		github.com/iancoleman/strcase
 //		github.com/fatih/camelcase
-//	 Please see https://github.com/kubernetes/kube-openapi/pull/83#issuecomment-400842314 for more details
+//	 Please see http://github.com/kubernetes/kube-openapi/pull/83#issuecomment-400842314 for more details
 //	 about why they don't satisfy our need. What we need can be a function that detects an acronym at the
 //	 beginning of a string.
 func namesMatch(goName, jsonName string) bool {

@@ -85,13 +85,13 @@ type BuildSpec struct {
 
 	// NodeSelector is a selector which must be true for the pod to fit on a node.
 	// Selector which must match a node's labels for the pod to be scheduled on that node.
-	// More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+	// More info: http://kubernetes.io/docs/concepts/configuration/assign-pod-node/
 	// +optional
 	NodeSelector map[string]string `json:"nodeSelector,omitempty"`
 
 	// Time after which the build times out. Defaults to 10 minutes.
 	// Specified build timeout should be less than 24h.
-	// Refer Go's ParseDuration documentation for expected format: https://golang.org/pkg/time/#ParseDuration
+	// Refer Go's ParseDuration documentation for expected format: http://golang.org/pkg/time/#ParseDuration
 	// +optional
 	Timeout *metav1.Duration `json:"timeout,omitempty"`
 
@@ -170,7 +170,7 @@ type SourceSpec struct {
 	// Restrictions on the allowed charatcers
 	// Must be a basename (no /)
 	// Must be a valid DNS name (only alphanumeric characters, no _)
-	// https://tools.ietf.org/html/rfc1123#section-2
+	// http://tools.ietf.org/html/rfc1123#section-2
 	// +optional
 	Name string `json:"name,omitempty"`
 
@@ -186,7 +186,7 @@ type GitSourceSpec struct {
 	Url string `json:"url"`
 
 	// Git revision (branch, tag, commit SHA or ref) to clone.  See
-	// https://git-scm.com/docs/gitrevisions#_specifying_revisions for more
+	// http://git-scm.com/docs/gitrevisions#_specifying_revisions for more
 	// information.
 	Revision string `json:"revision"`
 }

@@ -261,7 +261,7 @@ func (p *oidcAuthProvider) idToken() (string, error) {
 		// id_token isn't a required part of a refresh token response, so some
 		// providers (Okta) don't return this value.
 		//
-		// See https://github.com/kubernetes/kubernetes/issues/36847
+		// See http://github.com/kubernetes/kubernetes/issues/36847
 		return "", fmt.Errorf("token response did not contain an id_token, either the scope \"openid\" wasn't requested upon login, or the provider doesn't support id_tokens as part of the refresh response.")
 	}
 
@@ -292,7 +292,7 @@ func (p *oidcAuthProvider) idToken() (string, error) {
 func tokenEndpoint(client *http.Client, issuer string) (string, error) {
 	// Well known URL for getting OpenID Connect metadata.
 	//
-	// https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig
+	// http://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig
 	wellKnown := strings.TrimSuffix(issuer, "/") + "/.well-known/openid-configuration"
 	resp, err := client.Get(wellKnown)
 	if err != nil {
@@ -316,7 +316,7 @@ func tokenEndpoint(client *http.Client, issuer string) (string, error) {
 	// Metadata object. We only care about the token_endpoint, the thing endpoint
 	// we'll be refreshing against.
 	//
-	// https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata
+	// http://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata
 	var metadata struct {
 		TokenURL string `json:"token_endpoint"`
 	}

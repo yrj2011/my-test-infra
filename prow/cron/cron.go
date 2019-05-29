@@ -23,7 +23,7 @@ import (
 	"sync"
 
 	"github.com/sirupsen/logrus"
-	"gopkg.in/robfig/cron.v2" // using v2 api, doc at https://godoc.org/gopkg.in/robfig/cron.v2
+	"gopkg.in/robfig/cron.v2" // using v2 api, doc at http://godoc.org/gopkg.in/robfig/cron.v2
 
 	"k8s.io/test-infra/prow/config"
 )

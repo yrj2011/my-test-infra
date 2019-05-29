@@ -51,7 +51,7 @@ func (d *D) Record(v int) {
 // p is between 0 and 1.
 func (d *D) Percentile(p float64) int {
 	// NOTE: This implementation uses the nearest-rank method.
-	// https://en.wikipedia.org/wiki/Percentile#The_nearest-rank_method
+	// http://en.wikipedia.org/wiki/Percentile#The_nearest-rank_method
 
 	if p < 0 || p > 1 {
 		log.Panicf("Percentile: percentile out of range: %f", p)

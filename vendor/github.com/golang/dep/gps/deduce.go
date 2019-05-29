@@ -320,7 +320,7 @@ type launchpadDeducer struct {
 
 func (m launchpadDeducer) deduceRoot(path string) (string, error) {
 	// TODO(sdboyer) lp handling is nasty - there's ambiguities which can only really
-	// be resolved with a metadata request. See https://github.com/golang/go/issues/11436
+	// be resolved with a metadata request. See http://github.com/golang/go/issues/11436
 	v := m.regexp.FindStringSubmatch(path)
 	if v == nil {
 		return "", fmt.Errorf("%s is not a valid path for a source on launchpad.net", path)

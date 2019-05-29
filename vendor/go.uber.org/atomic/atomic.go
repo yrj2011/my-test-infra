@@ -306,7 +306,7 @@ func (f *Float64) CAS(old, new float64) bool {
 }
 
 // Duration is an atomic wrapper around time.Duration
-// https://godoc.org/time#Duration
+// http://godoc.org/time#Duration
 type Duration struct {
 	v Int64
 }
@@ -347,5 +347,5 @@ func (d *Duration) CAS(old, new time.Duration) bool {
 }
 
 // Value shadows the type of the same name from sync/atomic
-// https://godoc.org/sync/atomic#Value
+// http://godoc.org/sync/atomic#Value
 type Value struct{ atomic.Value }

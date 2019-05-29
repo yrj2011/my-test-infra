@@ -18,7 +18,7 @@ package v1beta1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -131,7 +131,7 @@ func (PodDisruptionBudgetStatus) SwaggerDoc() map[string]string {
 
 var map_PodSecurityPolicy = map[string]string{
 	"":         "PodSecurityPolicy governs the ability to make requests that affect the Security Context that will be applied to a pod and container.",
-	"metadata": "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard object's metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"spec":     "spec defines the policy enforced.",
 }
 
@@ -141,7 +141,7 @@ func (PodSecurityPolicy) SwaggerDoc() map[string]string {
 
 var map_PodSecurityPolicyList = map[string]string{
 	"":         "PodSecurityPolicyList is a list of PodSecurityPolicy objects.",
-	"metadata": "Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard list metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"items":    "items is a list of schema objects.",
 }
 
@@ -191,7 +191,7 @@ func (RunAsUserStrategyOptions) SwaggerDoc() map[string]string {
 var map_SELinuxStrategyOptions = map[string]string{
 	"":               "SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.",
 	"rule":           "rule is the strategy that will dictate the allowable labels that may be set.",
-	"seLinuxOptions": "seLinuxOptions required to run as; required for MustRunAs More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+	"seLinuxOptions": "seLinuxOptions required to run as; required for MustRunAs More info: http://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
 }
 
 func (SELinuxStrategyOptions) SwaggerDoc() map[string]string {

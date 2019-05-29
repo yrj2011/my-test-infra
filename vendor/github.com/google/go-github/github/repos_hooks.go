@@ -17,7 +17,7 @@ import (
 // defined in the rest of the API. Therefore, several types are duplicated
 // here to account for these differences.
 //
-// GitHub API docs: https://help.github.com/articles/post-receive-hooks
+// GitHub API docs: http://help.github.com/articles/post-receive-hooks
 type WebHookPayload struct {
 	After      *string         `json:"after,omitempty"`
 	Before     *string         `json:"before,omitempty"`
@@ -86,7 +86,7 @@ func (h Hook) String() string {
 // CreateHook creates a Hook for the specified repository.
 // Name and Config are required fields.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#create-a-hook
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#create-a-hook
 func (s *RepositoriesService) CreateHook(ctx context.Context, owner, repo string, hook *Hook) (*Hook, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks", owner, repo)
 	req, err := s.client.NewRequest("POST", u, hook)
@@ -105,7 +105,7 @@ func (s *RepositoriesService) CreateHook(ctx context.Context, owner, repo string
 
 // ListHooks lists all Hooks for the specified repository.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#list
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#list
 func (s *RepositoriesService) ListHooks(ctx context.Context, owner, repo string, opt *ListOptions) ([]*Hook, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks", owner, repo)
 	u, err := addOptions(u, opt)
@@ -129,7 +129,7 @@ func (s *RepositoriesService) ListHooks(ctx context.Context, owner, repo string,
 
 // GetHook returns a single specified Hook.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#get-single-hook
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#get-single-hook
 func (s *RepositoriesService) GetHook(ctx context.Context, owner, repo string, id int) (*Hook, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks/%d", owner, repo, id)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -143,7 +143,7 @@ func (s *RepositoriesService) GetHook(ctx context.Context, owner, repo string, i
 
 // EditHook updates a specified Hook.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#edit-a-hook
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#edit-a-hook
 func (s *RepositoriesService) EditHook(ctx context.Context, owner, repo string, id int, hook *Hook) (*Hook, *Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks/%d", owner, repo, id)
 	req, err := s.client.NewRequest("PATCH", u, hook)
@@ -157,7 +157,7 @@ func (s *RepositoriesService) EditHook(ctx context.Context, owner, repo string, 
 
 // DeleteHook deletes a specified Hook.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#delete-a-hook
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#delete-a-hook
 func (s *RepositoriesService) DeleteHook(ctx context.Context, owner, repo string, id int) (*Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks/%d", owner, repo, id)
 	req, err := s.client.NewRequest("DELETE", u, nil)
@@ -169,7 +169,7 @@ func (s *RepositoriesService) DeleteHook(ctx context.Context, owner, repo string
 
 // PingHook triggers a 'ping' event to be sent to the Hook.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#ping-a-hook
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#ping-a-hook
 func (s *RepositoriesService) PingHook(ctx context.Context, owner, repo string, id int) (*Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks/%d/pings", owner, repo, id)
 	req, err := s.client.NewRequest("POST", u, nil)
@@ -181,7 +181,7 @@ func (s *RepositoriesService) PingHook(ctx context.Context, owner, repo string, 
 
 // TestHook triggers a test Hook by github.
 //
-// GitHub API docs: https://developer.github.com/v3/repos/hooks/#test-a-push-hook
+// GitHub API docs: http://developer.github.com/v3/repos/hooks/#test-a-push-hook
 func (s *RepositoriesService) TestHook(ctx context.Context, owner, repo string, id int) (*Response, error) {
 	u := fmt.Sprintf("repos/%v/%v/hooks/%d/tests", owner, repo, id)
 	req, err := s.client.NewRequest("POST", u, nil)

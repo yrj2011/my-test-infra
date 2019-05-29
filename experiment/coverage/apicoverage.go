@@ -63,7 +63,7 @@ func parseOpenAPI(rawdata []byte) apiArray {
 		// Some paths contain "/" at the end of swagger spec, here removes "/" for comparing them easily later.
 		path = strings.TrimRight(path, "/")
 
-		// Standard HTTP methods: https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#path-item-object
+		// Standard HTTP methods: http://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#path-item-object
 		methods := []string{"get", "put", "post", "delete", "options", "head", "patch"}
 		for _, method := range methods {
 			methodSpec, err := pathItem.JSONLookup(method)
@@ -100,7 +100,7 @@ func getOpenAPISpec(url string) apiArray {
 	return parseOpenAPI(bytes)
 }
 
-//   I0919 15:34:14.943642    6611 round_trippers.go:414] GET https://172.27.138.63:6443/api/v1/namespaces/kube-system/replicationcontrollers
+//   I0919 15:34:14.943642    6611 round_trippers.go:414] GET http://172.27.138.63:6443/api/v1/namespaces/kube-system/replicationcontrollers
 var reE2eAPILog = regexp.MustCompile(`round_trippers.go:\d+\] (GET|PUT|POST|DELETE|OPTIONS|HEAD|PATCH) (\S+)`)
 
 func parseE2eAPILog(fp io.Reader) apiArray {

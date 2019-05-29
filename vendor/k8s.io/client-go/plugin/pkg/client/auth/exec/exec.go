@@ -293,7 +293,7 @@ func (a *Authenticator) refreshCredsLocked(r *clientauthentication.Response) err
 		// Input spec disabled for beta due to lack of use. Possibly re-enable this later if
 		// someone wants it back.
 		//
-		// See: https://github.com/kubernetes/kubernetes/issues/61796
+		// See: http://github.com/kubernetes/kubernetes/issues/61796
 		data, err := runtime.Encode(codecs.LegacyCodec(a.group), cred)
 		if err != nil {
 			return fmt.Errorf("encode ExecCredentials: %v", err)

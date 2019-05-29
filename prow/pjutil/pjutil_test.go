@@ -359,7 +359,7 @@ func TestGetLatestProwJobs(t *testing.T) {
 						StartTime:   metav1.Date(2017, time.October, 26, 23, 22, 19, 0, time.UTC),
 						State:       kube.FailureState,
 						Description: "Jenkins job failed.",
-						URL:         "https://openshift-gce-devel.appspot.com/build/origin-ci-test/pr-logs/pull/17061/test_pull_request_origin_extended_networking_minimal/9756/",
+						URL:         "http://openshift-gce-devel.appspot.com/build/origin-ci-test/pr-logs/pull/17061/test_pull_request_origin_extended_networking_minimal/9756/",
 						PodName:     "test_pull_request_origin_extended_networking_minimal-9756",
 						BuildID:     "9756",
 					},
@@ -393,7 +393,7 @@ func TestGetLatestProwJobs(t *testing.T) {
 						StartTime:   metav1.Date(2017, time.October, 26, 22, 22, 19, 0, time.UTC),
 						State:       kube.FailureState,
 						Description: "Jenkins job failed.",
-						URL:         "https://openshift-gce-devel.appspot.com/build/origin-ci-test/pr-logs/pull/17061/test_pull_request_origin_extended_networking_minimal/9755/",
+						URL:         "http://openshift-gce-devel.appspot.com/build/origin-ci-test/pr-logs/pull/17061/test_pull_request_origin_extended_networking_minimal/9755/",
 						PodName:     "test_pull_request_origin_extended_networking_minimal-9755",
 						BuildID:     "9755",
 					},
@@ -483,7 +483,7 @@ func TestNewProwJob(t *testing.T) {
 				Job:  "job",
 				Type: kube.PresubmitJob,
 				Refs: &kube.Refs{
-					Org:  "https://some-gerrit-instance.foo.com",
+					Org:  "http://some-gerrit-instance.foo.com",
 					Repo: "some/invalid/repo",
 					Pulls: []kube.Pull{
 						{Number: 1},

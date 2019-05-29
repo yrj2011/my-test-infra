@@ -2,7 +2,7 @@
 //
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file or at
-// https://developers.google.com/open-source/licenses/bsd.
+// http://developers.google.com/open-source/licenses/bsd.
 
 // Package lint contains a linter for Go source code.
 package lint
@@ -27,7 +27,7 @@ import (
 	"golang.org/x/tools/go/gcexportdata"
 )
 
-const styleGuideBase = "https://golang.org/wiki/CodeReviewComments"
+const styleGuideBase = "http://golang.org/wiki/CodeReviewComments"
 
 // A Linter lints Go source code.
 type Linter struct {
@@ -121,7 +121,7 @@ var (
 )
 
 // isGenerated reports whether the source file is generated code
-// according the rules from https://golang.org/s/generatedcode.
+// according the rules from http://golang.org/s/generatedcode.
 func isGenerated(src []byte) bool {
 	sc := bufio.NewScanner(bytes.NewReader(src))
 	for sc.Scan() {
@@ -613,7 +613,7 @@ func (f *file) lintNames() {
 
 			// Exclude naming warnings for functions that are exported to C but
 			// not exported in the Go API.
-			// See https://github.com/golang/lint/issues/144.
+			// See http://github.com/golang/lint/issues/144.
 			if ast.IsExported(v.Name.Name) || !isCgoExported(v) {
 				check(v.Name, thing)
 			}
@@ -1425,7 +1425,7 @@ func (f *file) lintTimeNames() {
 
 // lintContextKeyTypes checks for call expressions to context.WithValue with
 // basic types used for the key argument.
-// See: https://golang.org/issue/17293
+// See: http://golang.org/issue/17293
 func (f *file) lintContextKeyTypes() {
 	f.walk(func(node ast.Node) bool {
 		switch node := node.(type) {
@@ -1476,7 +1476,7 @@ func (f *file) lintContextArgs() {
 		// Flag any that show up after the first.
 		for _, arg := range fn.Type.Params.List[1:] {
 			if isPkgDot(arg.Type, "context", "Context") {
-				f.errorf(fn, 0.9, link("https://golang.org/pkg/context/"), category("arg-order"), "context.Context should be the first parameter of a function")
+				f.errorf(fn, 0.9, link("http://golang.org/pkg/context/"), category("arg-order"), "context.Context should be the first parameter of a function")
 				break // only flag one
 			}
 		}

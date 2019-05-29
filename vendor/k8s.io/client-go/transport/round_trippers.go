@@ -439,7 +439,7 @@ func headerKeyEscape(key string) string {
 		b := key[i]
 		if shouldEscape(b) {
 			// %-encode bytes that should be escaped:
-			// https://tools.ietf.org/html/rfc3986#section-2.1
+			// http://tools.ietf.org/html/rfc3986#section-2.1
 			fmt.Fprintf(&buf, "%%%02X", b)
 			continue
 		}
@@ -449,7 +449,7 @@ func headerKeyEscape(key string) string {
 }
 
 // legalHeaderKeyBytes was copied from net/http/lex.go's isTokenTable.
-// See https://httpwg.github.io/specs/rfc7230.html#rule.token.separators
+// See http://httpwg.github.io/specs/rfc7230.html#rule.token.separators
 var legalHeaderKeyBytes = [127]bool{
 	'%':  true,
 	'!':  true,

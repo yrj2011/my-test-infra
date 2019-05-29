@@ -277,7 +277,7 @@ func (s *gitSource) listVersions(ctx context.Context) (vlist []PairedVersion, er
 		// Valid `git ls-remote` output should start with hash, be at least
 		// 45 chars long and 40th character should be '\t'
 		//
-		// See: https://github.com/golang/dep/pull/1160#issuecomment-328843519
+		// See: http://github.com/golang/dep/pull/1160#issuecomment-328843519
 		if len(pair) < 45 || pair[40] != '\t' || !s.isValidHash(pair[:40]) {
 			continue
 		}

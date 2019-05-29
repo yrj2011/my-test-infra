@@ -22,7 +22,7 @@ import (
 
 // Metadata declares metadata about the GitHub org.
 //
-// See https://developer.github.com/v3/orgs/#edit-an-organization
+// See http://developer.github.com/v3/orgs/#edit-an-organization
 type Metadata struct {
 	BillingEmail                 *string              `json:"billing_email,omitempty"`
 	Company                      *string              `json:"company,omitempty"`
@@ -46,7 +46,7 @@ type Config struct {
 
 // TeamMetadata declares metadata about the github team.
 //
-// See https://developer.github.com/v3/teams/#edit-team
+// See http://developer.github.com/v3/teams/#edit-team
 type TeamMetadata struct {
 	Description *string  `json:"description,omitempty"`
 	Privacy     *Privacy `json:"privacy,omitempty"`
@@ -64,7 +64,7 @@ type Team struct {
 
 // RepoPermissionLevel is admin, write, read or none.
 //
-// See https://developer.github.com/v3/repos/collaborators/#review-a-users-permission-level
+// See http://developer.github.com/v3/repos/collaborators/#review-a-users-permission-level
 type RepoPermissionLevel string
 
 const (
@@ -102,7 +102,7 @@ func (l *RepoPermissionLevel) UnmarshalText(text []byte) error {
 
 // Privacy is secret or closed.
 //
-// See https://developer.github.com/v3/teams/#edit-team
+// See http://developer.github.com/v3/teams/#edit-team
 type Privacy string
 
 const (

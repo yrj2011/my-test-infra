@@ -36,8 +36,8 @@ var (
 )
 
 const (
-	// Previously: https://tambal.azurewebsites.net/joke/random
-	jokeURL    = realJoke("https://icanhazdadjoke.com")
+	// Previously: http://tambal.azurewebsites.net/joke/random
+	jokeURL    = realJoke("http://icanhazdadjoke.com")
 	pluginName = "yuks"
 )
 

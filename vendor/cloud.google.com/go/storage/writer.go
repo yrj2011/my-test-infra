@@ -58,7 +58,7 @@ type Writer struct {
 	// ProgressFunc can be used to monitor the progress of a large write.
 	// operation. If ProgressFunc is not nil and writing requires multiple
 	// calls to the underlying service (see
-	// https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload),
+	// http://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload),
 	// then ProgressFunc will be invoked after each call with the number of bytes of
 	// content copied so far.
 	//

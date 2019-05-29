@@ -14,7 +14,7 @@ import (
 // OrganizationsService provides access to the organization related functions
 // in the GitHub API.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/
+// GitHub API docs: http://developer.github.com/v3/orgs/
 type OrganizationsService service
 
 // Organization represents a GitHub organization account.
@@ -58,7 +58,7 @@ func (o Organization) String() string {
 	return Stringify(o)
 }
 
-// Plan represents the payment plan for an account. See plans at https://github.com/plans.
+// Plan represents the payment plan for an account. See plans at http://github.com/plans.
 type Plan struct {
 	Name          *string `json:"name,omitempty"`
 	Space         *int    `json:"space,omitempty"`
@@ -85,7 +85,7 @@ type OrganizationsListOptions struct {
 // listing the next set of organizations, use the ID of the last-returned organization
 // as the opts.Since parameter for the next call.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/#list-all-organizations
+// GitHub API docs: http://developer.github.com/v3/orgs/#list-all-organizations
 func (s *OrganizationsService) ListAll(ctx context.Context, opt *OrganizationsListOptions) ([]*Organization, *Response, error) {
 	u, err := addOptions("organizations", opt)
 	if err != nil {
@@ -108,7 +108,7 @@ func (s *OrganizationsService) ListAll(ctx context.Context, opt *OrganizationsLi
 // List the organizations for a user. Passing the empty string will list
 // organizations for the authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/#list-user-organizations
+// GitHub API docs: http://developer.github.com/v3/orgs/#list-user-organizations
 func (s *OrganizationsService) List(ctx context.Context, user string, opt *ListOptions) ([]*Organization, *Response, error) {
 	var u string
 	if user != "" {
@@ -137,7 +137,7 @@ func (s *OrganizationsService) List(ctx context.Context, user string, opt *ListO
 
 // Get fetches an organization by name.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/#get-an-organization
+// GitHub API docs: http://developer.github.com/v3/orgs/#get-an-organization
 func (s *OrganizationsService) Get(ctx context.Context, org string) (*Organization, *Response, error) {
 	u := fmt.Sprintf("orgs/%v", org)
 	req, err := s.client.NewRequest("GET", u, nil)
@@ -156,7 +156,7 @@ func (s *OrganizationsService) Get(ctx context.Context, org string) (*Organizati
 
 // Edit an organization.
 //
-// GitHub API docs: https://developer.github.com/v3/orgs/#edit-an-organization
+// GitHub API docs: http://developer.github.com/v3/orgs/#edit-an-organization
 func (s *OrganizationsService) Edit(ctx context.Context, name string, org *Organization) (*Organization, *Response, error) {
 	u := fmt.Sprintf("orgs/%v", name)
 	req, err := s.client.NewRequest("PATCH", u, org)

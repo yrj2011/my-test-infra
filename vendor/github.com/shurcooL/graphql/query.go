@@ -46,7 +46,7 @@ func queryArguments(variables map[string]interface{}) string {
 		writeArgumentType(&buf, reflect.TypeOf(variables[k]), true)
 		// Don't insert a comma here.
 		// Commas in GraphQL are insignificant, and we want minified output.
-		// See https://facebook.github.io/graphql/October2016/#sec-Insignificant-Commas.
+		// See http://facebook.github.io/graphql/October2016/#sec-Insignificant-Commas.
 	}
 	return buf.String()
 }
@@ -70,7 +70,7 @@ func writeArgumentType(w io.Writer, t reflect.Type, value bool) {
 	default:
 		// Named type. E.g., "Int".
 		name := t.Name()
-		if name == "string" { // HACK: Workaround for https://github.com/shurcooL/githubv4/issues/12.
+		if name == "string" { // HACK: Workaround for http://github.com/shurcooL/githubv4/issues/12.
 			name = "ID"
 		}
 		io.WriteString(w, name)

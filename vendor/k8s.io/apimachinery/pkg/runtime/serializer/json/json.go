@@ -122,7 +122,7 @@ func CaseSensitiveJsonIterator() jsoniter.API {
 // Private copy of jsoniter to try to shield against possible mutations
 // from outside. Still does not protect from package level jsoniter.Register*() functions - someone calling them
 // in some other library will mess with every usage of the jsoniter library in the whole program.
-// See https://github.com/json-iterator/go/issues/265
+// See http://github.com/json-iterator/go/issues/265
 var caseSensitiveJsonIterator = CaseSensitiveJsonIterator()
 
 // gvkWithDefaults returns group kind and version defaulting from provided default

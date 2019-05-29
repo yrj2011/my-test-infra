@@ -47,7 +47,7 @@ import (
 //
 //       Example:
 //       In case of sharedIndexInformer being a consumer
-//       (https://github.com/kubernetes/kubernetes/blob/0cdd940f/staging/
+//       (http://github.com/kubernetes/kubernetes/blob/0cdd940f/staging/
 //       src/k8s.io/client-go/tools/cache/shared_informer.go#L192),
 //       there is no race as knownObjects (s.indexer) is modified safely
 //       under DeltaFIFO's lock. The only exceptions are GetStore() and

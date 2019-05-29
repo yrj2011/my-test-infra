@@ -57,10 +57,10 @@
 //    This set of topics walk you through the process of signing a request using
 //    an access key ID and secret access key.
 //
-// See https://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08 for more information on this service.
+// See http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08 for more information on this service.
 //
 // See iam package documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/iam/
+// http://docs.aws.amazon.com/sdk-for-go/api/service/iam/
 //
 // Using the Client
 //
@@ -69,12 +69,12 @@
 // These clients are safe to use concurrently.
 //
 // See the SDK's documentation for more information on how to use the SDK.
-// https://docs.aws.amazon.com/sdk-for-go/api/
+// http://docs.aws.amazon.com/sdk-for-go/api/
 //
 // See aws.Config documentation for more information on configuring SDK clients.
-// https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
+// http://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
 //
 // See the AWS Identity and Access Management client IAM for more
 // information on creating client for this service.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/iam/#New
+// http://docs.aws.amazon.com/sdk-for-go/api/service/iam/#New
 package iam

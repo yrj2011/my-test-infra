@@ -18,7 +18,7 @@ package v1alpha1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -29,7 +29,7 @@ package v1alpha1
 // AUTO-GENERATED FUNCTIONS START HERE. DO NOT EDIT.
 var map_VolumeAttachment = map[string]string{
 	"":         "VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.\n\nVolumeAttachment objects are non-namespaced.",
-	"metadata": "Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard object metadata. More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"spec":     "Specification of the desired attach/detach volume behavior. Populated by the Kubernetes system.",
 	"status":   "Status of the VolumeAttachment request. Populated by the entity completing the attach or detach operation, i.e. the external-attacher.",
 }
@@ -40,7 +40,7 @@ func (VolumeAttachment) SwaggerDoc() map[string]string {
 
 var map_VolumeAttachmentList = map[string]string{
 	"":         "VolumeAttachmentList is a collection of VolumeAttachment objects.",
-	"metadata": "Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
+	"metadata": "Standard list metadata More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
 	"items":    "Items is the list of VolumeAttachments",
 }
 

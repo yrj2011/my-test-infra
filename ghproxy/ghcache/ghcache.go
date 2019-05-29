@@ -15,12 +15,12 @@ limitations under the License.
 */
 
 // Package ghcache implements an HTTP cache optimized for caching responses
-// from the GitHub API (https://api.github.com).
+// from the GitHub API (http://api.github.com).
 //
 // Specifically, it enforces a cache policy that revalidates every cache hit
 // with a conditional request to upstream regardless of cache entry freshness
 // because conditional requests for unchanged resources don't cost any API
-// tokens!!! See: https://developer.github.com/v3/#conditional-requests
+// tokens!!! See: http://developer.github.com/v3/#conditional-requests
 //
 // It also provides request coalescing and prometheus instrumentation.
 package ghcache

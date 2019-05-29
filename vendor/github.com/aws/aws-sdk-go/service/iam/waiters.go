@@ -23,7 +23,7 @@ func (c *IAM) WaitUntilInstanceProfileExists(input *GetInstanceProfileInput) err
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *IAM) WaitUntilInstanceProfileExistsWithContext(ctx aws.Context, input *GetInstanceProfileInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{
@@ -74,7 +74,7 @@ func (c *IAM) WaitUntilUserExists(input *GetUserInput) error {
 //
 // The context must be non-nil and will be used for request cancellation. If
 // the context is nil a panic will occur. In the future the SDK may create
-// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// sub-contexts for http.Requests. See http://golang.org/pkg/context/
 // for more information on using Contexts.
 func (c *IAM) WaitUntilUserExistsWithContext(ctx aws.Context, input *GetUserInput, opts ...request.WaiterOption) error {
 	w := request.Waiter{

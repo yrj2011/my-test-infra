@@ -81,13 +81,13 @@ func (c ContainerURL) NewPageBlobURL(blobName string) PageBlobURL {
 }
 
 // Create creates a new container within a storage account. If a container with the same name already exists, the operation fails.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/create-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/create-container.
 func (c ContainerURL) Create(ctx context.Context, metadata Metadata, publicAccessType PublicAccessType) (*ContainerCreateResponse, error) {
 	return c.client.Create(ctx, nil, metadata, publicAccessType, nil)
 }
 
 // Delete marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/delete-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/delete-container.
 func (c ContainerURL) Delete(ctx context.Context, ac ContainerAccessConditions) (*ContainerDeleteResponse, error) {
 	if ac.IfMatch != ETagNone || ac.IfNoneMatch != ETagNone {
 		panic("the IfMatch and IfNoneMatch access conditions must have their default values because they are ignored by the service")
@@ -98,7 +98,7 @@ func (c ContainerURL) Delete(ctx context.Context, ac ContainerAccessConditions) 
 }
 
 // GetPropertiesAndMetadata returns the container's metadata and system properties.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/get-container-metadata.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/get-container-metadata.
 func (c ContainerURL) GetPropertiesAndMetadata(ctx context.Context, ac LeaseAccessConditions) (*ContainerGetPropertiesResponse, error) {
 	// NOTE: GetMetadata actually calls GetProperties internally because GetProperties returns the metadata AND the properties.
 	// This allows us to not expose a GetProperties method at all simplifying the API.
@@ -106,7 +106,7 @@ func (c ContainerURL) GetPropertiesAndMetadata(ctx context.Context, ac LeaseAcce
 }
 
 // SetMetadata sets the container's metadata.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/set-container-metadata.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/set-container-metadata.
 func (c ContainerURL) SetMetadata(ctx context.Context, metadata Metadata, ac ContainerAccessConditions) (*ContainerSetMetadataResponse, error) {
 	if !ac.IfUnmodifiedSince.IsZero() || ac.IfMatch != ETagNone || ac.IfNoneMatch != ETagNone {
 		panic("the IfUnmodifiedSince, IfMatch, and IfNoneMatch must have their default values because they are ignored by the blob service")
@@ -116,7 +116,7 @@ func (c ContainerURL) SetMetadata(ctx context.Context, metadata Metadata, ac Con
 }
 
 // GetPermissions returns the container's permissions. The permissions indicate whether container's blobs may be accessed publicly.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/get-container-acl.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/get-container-acl.
 func (c ContainerURL) GetPermissions(ctx context.Context, ac LeaseAccessConditions) (*SignedIdentifiers, error) {
 	return c.client.GetACL(ctx, nil, ac.pointers(), nil)
 }
@@ -177,7 +177,7 @@ func (p *AccessPolicyPermission) Parse(s string) error {
 }
 
 // SetPermissions sets the container's permissions. The permissions indicate whether blobs in a container may be accessed publicly.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/set-container-acl.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/set-container-acl.
 func (c ContainerURL) SetPermissions(ctx context.Context, accessType PublicAccessType, permissions []SignedIdentifier,
 	ac ContainerAccessConditions) (*ContainerSetACLResponse, error) {
 	if ac.IfMatch != ETagNone || ac.IfNoneMatch != ETagNone {
@@ -188,7 +188,7 @@ func (c ContainerURL) SetPermissions(ctx context.Context, accessType PublicAcces
 }
 
 // AcquireLease acquires a lease on the container for delete operations. The lease duration must be between 15 to 60 seconds, or infinite (-1).
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-container.
 func (c ContainerURL) AcquireLease(ctx context.Context, proposedID string, duration int32, ac HTTPAccessConditions) (*ContainerLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, _, _ := ac.pointers()
 	return c.client.Lease(ctx, LeaseActionAcquire, nil, nil, nil, &duration, &proposedID,
@@ -196,28 +196,28 @@ func (c ContainerURL) AcquireLease(ctx context.Context, proposedID string, durat
 }
 
 // RenewLease renews the container's previously-acquired lease.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-container.
 func (c ContainerURL) RenewLease(ctx context.Context, leaseID string, ac HTTPAccessConditions) (*ContainerLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, _, _ := ac.pointers()
 	return c.client.Lease(ctx, LeaseActionRenew, nil, &leaseID, nil, nil, nil, ifModifiedSince, ifUnmodifiedSince, nil)
 }
 
 // ReleaseLease releases the container's previously-acquired lease.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-container.
 func (c ContainerURL) ReleaseLease(ctx context.Context, leaseID string, ac HTTPAccessConditions) (*ContainerLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, _, _ := ac.pointers()
 	return c.client.Lease(ctx, LeaseActionRelease, nil, &leaseID, nil, nil, nil, ifModifiedSince, ifUnmodifiedSince, nil)
 }
 
 // BreakLease breaks the container's previously-acquired lease (if it exists).
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-container.
 func (c ContainerURL) BreakLease(ctx context.Context, period int32, ac HTTPAccessConditions) (*ContainerLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, _, _ := ac.pointers()
 	return c.client.Lease(ctx, LeaseActionBreak, nil, nil, leasePeriodPointer(period), nil, nil, ifModifiedSince, ifUnmodifiedSince, nil)
 }
 
 // ChangeLease changes the container's lease ID.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/lease-container.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/lease-container.
 func (c ContainerURL) ChangeLease(ctx context.Context, leaseID string, proposedID string, ac HTTPAccessConditions) (*ContainerLeaseResponse, error) {
 	ifModifiedSince, ifUnmodifiedSince, _, _ := ac.pointers()
 	return c.client.Lease(ctx, LeaseActionChange, nil, &leaseID, nil, nil, &proposedID, ifModifiedSince, ifUnmodifiedSince, nil)
@@ -227,7 +227,7 @@ func (c ContainerURL) ChangeLease(ctx context.Context, leaseID string, proposedI
 // Marker to start enumeration from the beginning. Blob names are returned in lexicographic order.
 // After getting a segment, process it, and then call ListBlobs again (passing the the previously-returned
 // Marker) to get the next segment.
-// For more information, see https://docs.microsoft.com/rest/api/storageservices/list-blobs.
+// For more information, see http://docs.microsoft.com/rest/api/storageservices/list-blobs.
 func (c ContainerURL) ListBlobs(ctx context.Context, marker Marker, o ListBlobsOptions) (*ListBlobsResponse, error) {
 	prefix, delimiter, include, maxResults := o.pointers()
 	return c.client.ListBlobs(ctx, prefix, delimiter, marker.val, maxResults, include, nil, nil)

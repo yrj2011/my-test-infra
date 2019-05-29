@@ -219,7 +219,7 @@ func NewSourceManager(c SourceManagerConfig) (*SourceMgr, error) {
 
 	// Fix for #820
 	//
-	// Consult https://godoc.org/github.com/nightlyone/lockfile for the lockfile
+	// Consult http://godoc.org/github.com/nightlyone/lockfile for the lockfile
 	// behaviour. It's magic. It deals with stale processes, and if there is
 	// a process keeping the lock busy, it will pass back a temporary error that
 	// we can spin on.

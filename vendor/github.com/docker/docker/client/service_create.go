@@ -99,7 +99,7 @@ func imageDigestAndPlatforms(ctx context.Context, cli DistributionAPIClient, ima
 		platforms = make([]swarm.Platform, 0, len(distributionInspect.Platforms))
 		for _, p := range distributionInspect.Platforms {
 			// clear architecture field for arm. This is a temporary patch to address
-			// https://github.com/docker/swarmkit/issues/2294. The issue is that while
+			// http://github.com/docker/swarmkit/issues/2294. The issue is that while
 			// image manifests report "arm" as the architecture, the node reports
 			// something like "armv7l" (includes the variant), which causes arm images
 			// to stop working with swarm mode. This patch removes the architecture

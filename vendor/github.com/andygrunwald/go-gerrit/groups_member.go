@@ -6,7 +6,7 @@ import (
 
 // ListGroupMembersOptions specifies the different options for the ListGroupMembers call.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#group-members
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#group-members
 type ListGroupMembersOptions struct {
 	// To resolve the included groups of a group recursively and to list all members the parameter recursive can be set.
 	// Members from included external groups and from included groups which are not visible to the calling user are ignored.
@@ -22,7 +22,7 @@ type MembersInput struct {
 // ListGroupMembers lists the direct members of a Gerrit internal group.
 // The entries in the list are sorted by full name, preferred email and id.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#group-members
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#group-members
 func (s *GroupsService) ListGroupMembers(groupID string, opt *ListGroupMembersOptions) (*[]AccountInfo, *Response, error) {
 	u := fmt.Sprintf("groups/%s/members/", groupID)
 
@@ -47,7 +47,7 @@ func (s *GroupsService) ListGroupMembers(groupID string, opt *ListGroupMembersOp
 
 // GetGroupMember retrieves a group member.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#get-group-member
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#get-group-member
 func (s *GroupsService) GetGroupMember(groupID, accountID string) (*AccountInfo, *Response, error) {
 	u := fmt.Sprintf("groups/%s/members/%s", groupID, accountID)
 
@@ -67,7 +67,7 @@ func (s *GroupsService) GetGroupMember(groupID, accountID string) (*AccountInfo,
 
 // AddGroupMember adds a user as member to a Gerrit internal group.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#add-group-member
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#add-group-member
 func (s *GroupsService) AddGroupMember(groupID, accountID string) (*AccountInfo, *Response, error) {
 	u := fmt.Sprintf("groups/%s/members/%s", groupID, accountID)
 
@@ -91,7 +91,7 @@ func (s *GroupsService) AddGroupMember(groupID, accountID string) (*AccountInfo,
 // As response a list of detailed AccountInfo entities is returned that describes the group members that were specified in the MembersInput.
 // An AccountInfo entity is returned for each user specified in the input, independently of whether the user was newly added to the group or whether the user was already a member of the group.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#_add_group_members
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#_add_group_members
 func (s *GroupsService) AddGroupMembers(groupID string, input *MembersInput) (*[]AccountInfo, *Response, error) {
 	u := fmt.Sprintf("groups/%s/members", groupID)
 
@@ -111,7 +111,7 @@ func (s *GroupsService) AddGroupMembers(groupID string, input *MembersInput) (*[
 
 // DeleteGroupMember deletes a user from a Gerrit internal group.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#delete-group-member
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#delete-group-member
 func (s *GroupsService) DeleteGroupMember(groupID, accountID string) (*Response, error) {
 	u := fmt.Sprintf("groups/%s/members/%s'", groupID, accountID)
 	return s.client.DeleteRequest(u, nil)
@@ -120,7 +120,7 @@ func (s *GroupsService) DeleteGroupMember(groupID, accountID string) (*Response,
 // DeleteGroupMembers delete one or several users from a Gerrit internal group.
 // The users to be deleted from the group must be provided in the request body as a MembersInput entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#delete-group-members
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-groups.html#delete-group-members
 func (s *GroupsService) DeleteGroupMembers(groupID string, input *MembersInput) (*Response, error) {
 	u := fmt.Sprintf("groups/%s/members.delete'", groupID)
 

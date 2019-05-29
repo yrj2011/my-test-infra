@@ -819,7 +819,7 @@ func (c *Controller) mergePRs(sp subpool, prs []PullRequest) error {
 				// priority and this is unlikely to be problematic.
 				// Note: We would also need to be able to roll back any merges for the
 				// batch that were already successfully completed before the failure.
-				// Ref: https://github.com/kubernetes/test-infra/issues/10621
+				// Ref: http://github.com/kubernetes/test-infra/issues/10621
 				if _, ok := err.(github.ModifiedHeadError); ok {
 					// This is a possible source of incorrect behavior. If someone
 					// modifies their PR as we try to merge it in a batch then we
@@ -833,7 +833,7 @@ func (c *Controller) mergePRs(sp subpool, prs []PullRequest) error {
 					// specify the base branch sha, only the head sha.
 					// We suspect that github is complaining because we are making the
 					// merge requests too rapidly and it cannot recompute mergability
-					// in time. https://github.com/kubernetes/test-infra/issues/5171
+					// in time. http://github.com/kubernetes/test-infra/issues/5171
 					// We handle this by sleeping for a few seconds before trying to
 					// merge again.
 					log.WithError(err).Warning("Merge failed: Base branch was modified.")
@@ -1244,7 +1244,7 @@ type PullRequest struct {
 		// commit with OID matching HeadRefOID. If we don't find it we have to use an
 		// additional API token. (see the 'headContexts' func for details)
 		// We can't raise this too much or we could hit the limit of 50,000 nodes
-		// per query: https://developer.github.com/v4/guides/resource-limitations/#node-limit
+		// per query: http://developer.github.com/v4/guides/resource-limitations/#node-limit
 	} `graphql:"commits(last: 4)"`
 	Labels struct {
 		Nodes []struct {

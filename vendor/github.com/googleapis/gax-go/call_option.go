@@ -127,7 +127,7 @@ func (bo *Backoff) Pause() time.Duration {
 		bo.Multiplier = 2
 	}
 	// Select a duration between zero and the current max. It might seem counterintuitive to
-	// have so much jitter, but https://www.awsarchitectureblog.com/2015/03/backoff.html
+	// have so much jitter, but http://www.awsarchitectureblog.com/2015/03/backoff.html
 	// argues that that is the best strategy.
 	d := time.Duration(rand.Int63n(int64(bo.cur)))
 	bo.cur = time.Duration(float64(bo.cur) * bo.Multiplier)

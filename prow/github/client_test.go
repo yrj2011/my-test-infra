@@ -424,7 +424,7 @@ func TestListIssueComments(t *testing.T) {
 			if err != nil {
 				t.Fatalf("Didn't expect error: %v", err)
 			}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/someotherpath>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/someotherpath>; rel="next"`, r.Host))
 			fmt.Fprint(w, string(b))
 		} else if r.URL.Path == "/someotherpath" {
 			ics := []IssueComment{{ID: 2}}
@@ -635,7 +635,7 @@ func TestReadPaginatedResults(t *testing.T) {
 			if err != nil {
 				t.Fatalf("Didn't expect error: %v", err)
 			}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/label/bar>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/label/bar>; rel="next"`, r.Host))
 			fmt.Fprint(w, string(b))
 		} else if r.URL.Path == "/label/bar" {
 			objects := []Label{{Name: "bar"}}
@@ -682,7 +682,7 @@ func TestListPullRequestComments(t *testing.T) {
 			if err != nil {
 				t.Fatalf("Didn't expect error: %v", err)
 			}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/someotherpath>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/someotherpath>; rel="next"`, r.Host))
 			fmt.Fprint(w, string(b))
 		} else if r.URL.Path == "/someotherpath" {
 			prcs := []ReviewComment{{ID: 2}}
@@ -718,7 +718,7 @@ func TestListReviews(t *testing.T) {
 			if err != nil {
 				t.Fatalf("Didn't expect error: %v", err)
 			}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/someotherpath>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/someotherpath>; rel="next"`, r.Host))
 			fmt.Fprint(w, string(b))
 		} else if r.URL.Path == "/someotherpath" {
 			reviews := []Review{{ID: 2}}
@@ -1154,10 +1154,10 @@ func TestGetLabels(t *testing.T) {
 		switch r.URL.Path {
 		case "/repos/k8s/kuber/issues/5/labels":
 			labels = []Label{{Name: "issue-label"}}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/someotherpath>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/someotherpath>; rel="next"`, r.Host))
 		case "/repos/k8s/kuber/labels":
 			labels = []Label{{Name: "repo-label"}}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/someotherpath>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/someotherpath>; rel="next"`, r.Host))
 		case "/someotherpath":
 			labels = []Label{{Name: "label2"}}
 		default:
@@ -1689,7 +1689,7 @@ func TestCombinedStatus(t *testing.T) {
 			if err != nil {
 				t.Fatalf("Didn't expect error: %v", err)
 			}
-			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <https://%s/someotherpath>; rel="next"`, r.Host))
+			w.Header().Set("Link", fmt.Sprintf(`<blorp>; rel="first", <http://%s/someotherpath>; rel="next"`, r.Host))
 			fmt.Fprint(w, string(b))
 		} else if r.URL.Path == "/someotherpath" {
 			statuses := CombinedStatus{

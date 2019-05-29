@@ -67,7 +67,7 @@ func init() {
 
 // RegisterFlags registers options for this munger; returns any that require a restart when changed.
 func (fjr *FlakyJobReporter) RegisterFlags() {
-	flag.StringVar(&fjr.flakyJobDataURL, "flakyjob-url", "https://storage.googleapis.com/k8s-metrics/flakes-latest.json", "The url where flaky job JSON data can be found.")
+	flag.StringVar(&fjr.flakyJobDataURL, "flakyjob-url", "http://storage.googleapis.com/k8s-metrics/flakes-latest.json", "The url where flaky job JSON data can be found.")
 	flag.IntVar(&fjr.syncCount, "flakyjob-count", 3, "The number of flaky jobs to try to sync to github.")
 }
 

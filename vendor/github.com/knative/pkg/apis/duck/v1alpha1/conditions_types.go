@@ -58,7 +58,7 @@ const (
 )
 
 // Conditions defines a readiness condition for a Knative resource.
-// See: https://github.com/kubernetes/community/blob/master/contributors/devel/api-conventions.md#typical-status-properties
+// See: http://github.com/kubernetes/community/blob/master/contributors/devel/api-conventions.md#typical-status-properties
 // +k8s:deepcopy-gen=true
 type Condition struct {
 	// Type of condition.

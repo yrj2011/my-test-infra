@@ -6,7 +6,7 @@ import (
 
 // ConfigService contains Config related REST endpoints
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html
 type ConfigService struct {
 	client *Client
 }
@@ -231,7 +231,7 @@ type ChangeConfigInfo struct {
 
 // ListCachesOptions specifies the different output formats.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-caches
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-caches
 type ListCachesOptions struct {
 	// Format specifies the different output formats.
 	Format string `url:"format,omitempty"`
@@ -239,7 +239,7 @@ type ListCachesOptions struct {
 
 // SummaryOptions specifies the different options for the GetSummary call.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-summary
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-summary
 type SummaryOptions struct {
 	// JVM includes a JVM summary.
 	JVM bool `url:"jvm,omitempty"`
@@ -249,7 +249,7 @@ type SummaryOptions struct {
 
 // GetVersion returns the version of the Gerrit server.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-version
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-version
 func (s *ConfigService) GetVersion() (string, *Response, error) {
 	u := "config/server/version"
 	return getStringResponseWithoutOptions(s.client, u)
@@ -257,7 +257,7 @@ func (s *ConfigService) GetVersion() (string, *Response, error) {
 
 // GetServerInfo returns the information about the Gerrit server configuration.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-info
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-info
 func (s *ConfigService) GetServerInfo() (*ServerInfo, *Response, error) {
 	u := "config/server/info"
 
@@ -282,7 +282,7 @@ func (s *ConfigService) GetServerInfo() (*ServerInfo, *Response, error) {
 // * Administrate Server
 // The entries in the map are sorted by cache name.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-caches
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-caches
 func (s *ConfigService) ListCaches(opt *ListCachesOptions) (*map[string]CacheInfo, *Response, error) {
 	u := "config/server/caches/"
 
@@ -311,7 +311,7 @@ func (s *ConfigService) ListCaches(opt *ListCachesOptions) (*map[string]CacheInf
 // * Maintain Server
 // * Administrate Server
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-cache
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-cache
 func (s *ConfigService) GetCache(cacheName string) (*CacheInfo, *Response, error) {
 	u := fmt.Sprintf("config/server/caches/%s", cacheName)
 
@@ -332,7 +332,7 @@ func (s *ConfigService) GetCache(cacheName string) (*CacheInfo, *Response, error
 // GetSummary retrieves a summary of the current server state.
 // The caller must be a member of a group that is granted the Administrate Server capability.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-summary
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-summary
 func (s *ConfigService) GetSummary(opt *SummaryOptions) (*SummaryInfo, *Response, error) {
 	u := "config/server/summary"
 
@@ -359,7 +359,7 @@ func (s *ConfigService) GetSummary(opt *SummaryOptions) (*SummaryInfo, *Response
 // There are two kinds of capabilities: core and plugin-owned capabilities.
 // The entries in the map are sorted by capability ID.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-capabilities
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-capabilities
 func (s *ConfigService) ListCapabilities() (*map[string]ConfigCapabilityInfo, *Response, error) {
 	u := "config/server/capabilities"
 
@@ -390,7 +390,7 @@ func (s *ConfigService) ListCapabilities() (*map[string]ConfigCapabilityInfo, *R
 //
 // The entries in the list are sorted by task state, remaining delay and command.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-tasks
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#list-tasks
 func (s *ConfigService) ListTasks() (*[]TaskInfo, *Response, error) {
 	u := "config/server/tasks"
 
@@ -417,7 +417,7 @@ func (s *ConfigService) ListTasks() (*[]TaskInfo, *Response, error) {
 // * Maintain Server
 // * Administrate Server
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-task
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-task
 func (s *ConfigService) GetTask(taskID string) (*TaskInfo, *Response, error) {
 	u := fmt.Sprintf("config/server/tasks/%s", taskID)
 
@@ -437,7 +437,7 @@ func (s *ConfigService) GetTask(taskID string) (*TaskInfo, *Response, error) {
 
 // GetTopMenus returns the list of additional top menu entries.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-top-menus
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#get-top-menus
 func (s *ConfigService) GetTopMenus() (*[]TopMenuEntryInfo, *Response, error) {
 	u := "config/server/top-menus"
 
@@ -461,7 +461,7 @@ func (s *ConfigService) GetTopMenus() (*[]TopMenuEntryInfo, *Response, error) {
 // The response is “204 No Content”.
 // If the token is invalid or if it’s the token of another user the request fails and the response is “422 Unprocessable Entity”.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#confirm-email
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#confirm-email
 func (s *ConfigService) ConfirmEmail(input *EmailConfirmationInput) (*Response, error) {
 	u := "config/server/email.confirm"
 
@@ -475,7 +475,7 @@ func (s *ConfigService) ConfirmEmail(input *EmailConfirmationInput) (*Response, 
 
 // CacheOperations executes a cache operation that is specified in the request body in a CacheOperationInput entity.
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#cache-operations
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#cache-operations
 func (s *ConfigService) CacheOperations(input *CacheOperationInput) (*Response, error) {
 	u := "config/server/caches/"
 
@@ -494,7 +494,7 @@ func (s *ConfigService) CacheOperations(input *CacheOperationInput) (*Response, 
 // * Maintain Server (any cache including "web_sessions")
 // * Administrate Server (any cache including "web_sessions")
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#flush-cache
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#flush-cache
 func (s *ConfigService) FlushCache(cacheName string, input *CacheOperationInput) (*Response, error) {
 	u := fmt.Sprintf("config/server/caches/%s/flush", cacheName)
 
@@ -521,7 +521,7 @@ func (s *ConfigService) FlushCache(cacheName string, input *CacheOperationInput)
 // * Maintain Server
 // * Administrate Server
 //
-// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-config.html#delete-task
+// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-config.html#delete-task
 func (s *ConfigService) DeleteTask(taskID string) (*Response, error) {
 	u := fmt.Sprintf("config/server/tasks/%s", taskID)
 	return s.client.DeleteRequest(u, nil)

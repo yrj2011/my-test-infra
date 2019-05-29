@@ -32,10 +32,10 @@
 // complete at most one time. If you repeat an operation, it succeeds with a
 // 200 OK response code.
 //
-// See https://docs.aws.amazon.com/goto/WebAPI/elasticloadbalancing-2012-06-01 for more information on this service.
+// See http://docs.aws.amazon.com/goto/WebAPI/elasticloadbalancing-2012-06-01 for more information on this service.
 //
 // See elb package documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/elb/
+// http://docs.aws.amazon.com/sdk-for-go/api/service/elb/
 //
 // Using the Client
 //
@@ -44,12 +44,12 @@
 // These clients are safe to use concurrently.
 //
 // See the SDK's documentation for more information on how to use the SDK.
-// https://docs.aws.amazon.com/sdk-for-go/api/
+// http://docs.aws.amazon.com/sdk-for-go/api/
 //
 // See aws.Config documentation for more information on configuring SDK clients.
-// https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
+// http://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
 //
 // See the Elastic Load Balancing client ELB for more
 // information on creating client for this service.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/elb/#New
+// http://docs.aws.amazon.com/sdk-for-go/api/service/elb/#New
 package elb

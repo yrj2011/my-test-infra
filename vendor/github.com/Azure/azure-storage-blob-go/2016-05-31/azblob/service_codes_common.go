@@ -1,6 +1,6 @@
 package azblob
 
-// https://docs.microsoft.com/en-us/rest/api/storageservices/common-rest-api-error-codes
+// http://docs.microsoft.com/en-us/rest/api/storageservices/common-rest-api-error-codes
 
 const (
 	// ServiceCodeNone is the default value. It indicates that the error was related to the service or that the service didn't return a code.

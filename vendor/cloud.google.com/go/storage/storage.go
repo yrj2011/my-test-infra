@@ -129,7 +129,7 @@ type SignedURLOptions struct {
 
 	// PrivateKey is the Google service account private key. It is obtainable
 	// from the Google Developers Console.
-	// At https://console.developers.google.com/project/<your-project-id>/apiui/credential,
+	// At http://console.developers.google.com/project/<your-project-id>/apiui/credential,
 	// create a service account client ID or reuse one of your existing service account
 	// credentials. Click on the "Generate new P12 key" to generate and download
 	// a new private key. Once you download the P12 file, use the following command
@@ -193,7 +193,7 @@ var (
 )
 
 // sanitizeHeaders applies the specifications for canonical extension headers at
-// https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers.
+// http://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers.
 func sanitizeHeaders(hdrs []string) []string {
 	headerMap := map[string][]string{}
 	for _, hdr := range hdrs {
@@ -241,7 +241,7 @@ func sanitizeHeaders(hdrs []string) []string {
 // SignedURL returns a URL for the specified object. Signed URLs allow
 // the users access to a restricted resource for a limited time without having a
 // Google account or signing in. For more information about the signed
-// URLs, see https://cloud.google.com/storage/docs/accesscontrol#Signed-URLs.
+// URLs, see http://cloud.google.com/storage/docs/accesscontrol#Signed-URLs.
 func SignedURL(bucket, name string, opts *SignedURLOptions) (string, error) {
 	if opts == nil {
 		return "", errors.New("storage: missing required SignedURLOptions")
@@ -337,7 +337,7 @@ func (o *ObjectHandle) ACL() *ACLHandle {
 // of the object.
 // By default, the handle operates on the latest generation. Not
 // all operations work when given a specific generation; check the API
-// endpoints at https://cloud.google.com/storage/docs/json_api/ for details.
+// endpoints at http://cloud.google.com/storage/docs/json_api/ for details.
 func (o *ObjectHandle) Generation(gen int64) *ObjectHandle {
 	o2 := *o
 	o2.gen = gen
@@ -347,7 +347,7 @@ func (o *ObjectHandle) Generation(gen int64) *ObjectHandle {
 // If returns a new ObjectHandle that applies a set of preconditions.
 // Preconditions already set on the ObjectHandle are ignored.
 // Operations on the new handle will only occur if the preconditions are
-// satisfied. See https://cloud.google.com/storage/docs/generations-preconditions
+// satisfied. See http://cloud.google.com/storage/docs/generations-preconditions
 // for more details.
 func (o *ObjectHandle) If(conds Conditions) *ObjectHandle {
 	o2 := *o
@@ -359,7 +359,7 @@ func (o *ObjectHandle) If(conds Conditions) *ObjectHandle {
 // key to encrypt and decrypt the object's contents.
 //
 // Encryption key must be a 32-byte AES-256 key.
-// See https://cloud.google.com/storage/docs/encryption for details.
+// See http://cloud.google.com/storage/docs/encryption for details.
 func (o *ObjectHandle) Key(encryptionKey []byte) *ObjectHandle {
 	o2 := *o
 	o2.encryptionKey = encryptionKey
@@ -718,7 +718,7 @@ type ObjectAttrs struct {
 	// CustomerKeySHA256 is the base64-encoded SHA-256 hash of the
 	// customer-supplied encryption key for the object. It is empty if there is
 	// no customer-supplied encryption key.
-	// See // https://cloud.google.com/storage/docs/encryption for more about
+	// See // http://cloud.google.com/storage/docs/encryption for more about
 	// encryption in Google Cloud Storage.
 	CustomerKeySHA256 string
 
@@ -849,7 +849,7 @@ func (c *contentTyper) ContentType() string {
 //
 // The zero value is an empty set of constraints. Not all conditions or
 // combinations of conditions are applicable to all methods.
-// See https://cloud.google.com/storage/docs/generations-preconditions
+// See http://cloud.google.com/storage/docs/generations-preconditions
 // for details on how these operate.
 type Conditions struct {
 	// Generation constraints.

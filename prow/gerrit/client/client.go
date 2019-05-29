@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // Package client implements a client that can handle multiple gerrit instances
-// derived from https://github.com/andygrunwald/go-gerrit
+// derived from http://github.com/andygrunwald/go-gerrit
 package client
 
 import (
@@ -268,7 +268,7 @@ func (h *gerritInstanceHandler) queryChangesForProject(project string, lastUpdat
 		opt.Start = start
 
 		// The change output is sorted by the last update time, most recently updated to oldest updated.
-		// Gerrit API docs: https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
+		// Gerrit API docs: http://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#list-changes
 		changes, _, err := h.changeService.QueryChanges(opt)
 		if err != nil {
 			// should not happen? Let next sync loop catch up

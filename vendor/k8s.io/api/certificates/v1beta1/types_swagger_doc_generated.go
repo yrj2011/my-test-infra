@@ -18,7 +18,7 @@ package v1beta1
 
 // This file contains a collection of methods that can be used from go-restful to
 // generate Swagger API documentation for its models. Please read this PR for more
-// information on the implementation: https://github.com/emicklei/go-restful/pull/215
+// information on the implementation: http://github.com/emicklei/go-restful/pull/215
 //
 // TODOs are ignored from the parser (e.g. TODO(andronat):... || TODO:...) if and only if
 // they are on one line! For multiple line or blocks that you want to ignore use ---.
@@ -51,7 +51,7 @@ func (CertificateSigningRequestCondition) SwaggerDoc() map[string]string {
 var map_CertificateSigningRequestSpec = map[string]string{
 	"":         "This information is immutable after the request is created. Only the Request and Usages fields can be set on creation, other fields are derived by Kubernetes and cannot be modified by users.",
 	"request":  "Base64-encoded PKCS#10 CSR data",
-	"usages":   "allowedUsages specifies a set of usage contexts the key will be valid for. See: https://tools.ietf.org/html/rfc5280#section-4.2.1.3\n     https://tools.ietf.org/html/rfc5280#section-4.2.1.12",
+	"usages":   "allowedUsages specifies a set of usage contexts the key will be valid for. See: http://tools.ietf.org/html/rfc5280#section-4.2.1.3\n     http://tools.ietf.org/html/rfc5280#section-4.2.1.12",
 	"username": "Information about the requesting user. See user.Info interface for details.",
 	"uid":      "UID information about the requesting user. See user.Info interface for details.",
 	"groups":   "Group information about the requesting user. See user.Info interface for details.",

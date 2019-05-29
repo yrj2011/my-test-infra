@@ -37,7 +37,7 @@ const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 // 0001-01-01T00:00:00Z to 9999-12-31T23:59:59.999999999Z.
 // By restricting to that range, we ensure that we can convert to
 // and from  RFC 3339 date strings.
-// See [https://www.ietf.org/rfc/rfc3339.txt](https://www.ietf.org/rfc/rfc3339.txt).
+// See [http://www.ietf.org/rfc/rfc3339.txt](http://www.ietf.org/rfc/rfc3339.txt).
 //
 // # Examples
 //
@@ -84,7 +84,7 @@ const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 // # JSON Mapping
 //
 // In JSON format, the Timestamp type is encoded as a string in the
-// [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format. That is, the
+// [RFC 3339](http://www.ietf.org/rfc/rfc3339.txt) format. That is, the
 // format is "{year}-{month}-{day}T{hour}:{min}:{sec}[.{frac_sec}]Z"
 // where {year} is always expressed using four digits while {month}, {day},
 // {hour}, {min}, and {sec} are zero-padded to two digits each. The fractional
@@ -96,9 +96,9 @@ const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
 // 01:30 UTC on January 15, 2017.
 //
 // In JavaScript, one can convert a Date object to this format using the
-// standard [toISOString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString]
+// standard [toISOString()](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString]
 // method. In Python, a standard `datetime.datetime` object can be converted
-// to this format using [`strftime`](https://docs.python.org/2/library/time.html#time.strftime)
+// to this format using [`strftime`](http://docs.python.org/2/library/time.html#time.strftime)
 // with the time format spec '%Y-%m-%dT%H:%M:%S.%fZ'. Likewise, in Java, one
 // can use the Joda Time's [`ISODateTimeFormat.dateTime()`](
 // http://joda-time.sourceforge.net/apidocs/org/joda/time/format/ISODateTimeFormat.html#dateTime())

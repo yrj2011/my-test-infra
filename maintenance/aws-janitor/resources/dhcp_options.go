@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// DHCPOptions: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeDhcpOptions
+// DHCPOptions: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeDhcpOptions
 type DHCPOptions struct{}
 
 func (DHCPOptions) MarkAndSweep(sess *session.Session, acct string, region string, set *Set) error {

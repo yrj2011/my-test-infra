@@ -37,7 +37,7 @@ func (c *Client) Listen(n, addr string) (net.Listener, error) {
 }
 
 // Automatic port allocation is broken with OpenSSH before 6.0. See
-// also https://bugzilla.mindrot.org/show_bug.cgi?id=2017.  In
+// also http://bugzilla.mindrot.org/show_bug.cgi?id=2017.  In
 // particular, OpenSSH 5.9 sends a channelOpenMsg with port number 0,
 // rather than the actual port number. This means you can never open
 // two different listeners with auto allocated ports. We work around

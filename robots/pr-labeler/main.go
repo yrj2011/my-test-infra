@@ -55,7 +55,7 @@ type options struct {
 
 func flagOptions() options {
 	o := options{
-		endpoint: flagutil.NewStrings("https://api.github.com"),
+		endpoint: flagutil.NewStrings("http://api.github.com"),
 	}
 	flag.BoolVar(&o.confirm, "confirm", false, "Mutate github if set")
 	flag.StringVar(&o.org, "org", "", "github org")

@@ -38,7 +38,7 @@ import (
 )
 
 const (
-	testInfra = "https://github.com/kubernetes/test-infra/issues"
+	testInfra = "http://github.com/kubernetes/test-infra/issues"
 )
 
 type kubeClient interface {
@@ -177,7 +177,7 @@ func (c *Controller) Sync() error {
 		}
 	}
 	// TODO: Replace the following filtering with a field selector once CRDs support field selectors.
-	// https://github.com/kubernetes/kubernetes/issues/53459
+	// http://github.com/kubernetes/kubernetes/issues/53459
 	var k8sJobs []kube.ProwJob
 	for _, pj := range pjs {
 		if pj.Spec.Agent == kube.KubernetesAgent {

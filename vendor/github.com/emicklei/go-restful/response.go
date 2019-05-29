@@ -110,7 +110,7 @@ func (r *Response) EntityWriter() (EntityReaderWriter, bool) {
 			return entityAccessRegistry.accessorAt(MIME_XML)
 		}
 		// Fallback to whatever the route says it can produce.
-		// https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
+		// http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
 		for _, each := range r.routeProduces {
 			if w, ok := entityAccessRegistry.accessorAt(each); ok {
 				return w, true

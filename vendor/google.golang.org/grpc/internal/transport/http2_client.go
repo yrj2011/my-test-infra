@@ -453,7 +453,7 @@ func (t *http2Client) createAudience(callHdr *CallHdr) string {
 	if pos == -1 {
 		pos = len(callHdr.Method)
 	}
-	return "https://" + host + callHdr.Method[:pos]
+	return "http://" + host + callHdr.Method[:pos]
 }
 
 func (t *http2Client) getTrAuthData(ctx context.Context, audience string) (map[string]string, error) {
@@ -1021,7 +1021,7 @@ func (t *http2Client) handleGoAway(f *http2.GoAwayFrame) {
 		return
 	}
 	// A client can receive multiple GoAways from the server (see
-	// https://github.com/grpc/grpc-go/issues/1387).  The idea is that the first
+	// http://github.com/grpc/grpc-go/issues/1387).  The idea is that the first
 	// GoAway will be sent with an ID of MaxInt32 and the second GoAway will be
 	// sent after an RTT delay with the ID of the last stream the server will
 	// process.

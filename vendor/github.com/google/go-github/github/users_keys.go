@@ -26,7 +26,7 @@ func (k Key) String() string {
 // ListKeys lists the verified public keys for a user. Passing the empty
 // string will fetch keys for the authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/users/keys/#list-public-keys-for-a-user
+// GitHub API docs: http://developer.github.com/v3/users/keys/#list-public-keys-for-a-user
 func (s *UsersService) ListKeys(ctx context.Context, user string, opt *ListOptions) ([]*Key, *Response, error) {
 	var u string
 	if user != "" {
@@ -55,7 +55,7 @@ func (s *UsersService) ListKeys(ctx context.Context, user string, opt *ListOptio
 
 // GetKey fetches a single public key.
 //
-// GitHub API docs: https://developer.github.com/v3/users/keys/#get-a-single-public-key
+// GitHub API docs: http://developer.github.com/v3/users/keys/#get-a-single-public-key
 func (s *UsersService) GetKey(ctx context.Context, id int) (*Key, *Response, error) {
 	u := fmt.Sprintf("user/keys/%v", id)
 
@@ -75,7 +75,7 @@ func (s *UsersService) GetKey(ctx context.Context, id int) (*Key, *Response, err
 
 // CreateKey adds a public key for the authenticated user.
 //
-// GitHub API docs: https://developer.github.com/v3/users/keys/#create-a-public-key
+// GitHub API docs: http://developer.github.com/v3/users/keys/#create-a-public-key
 func (s *UsersService) CreateKey(ctx context.Context, key *Key) (*Key, *Response, error) {
 	u := "user/keys"
 
@@ -95,7 +95,7 @@ func (s *UsersService) CreateKey(ctx context.Context, key *Key) (*Key, *Response
 
 // DeleteKey deletes a public key.
 //
-// GitHub API docs: https://developer.github.com/v3/users/keys/#delete-a-public-key
+// GitHub API docs: http://developer.github.com/v3/users/keys/#delete-a-public-key
 func (s *UsersService) DeleteKey(ctx context.Context, id int) (*Response, error) {
 	u := fmt.Sprintf("user/keys/%v", id)
 

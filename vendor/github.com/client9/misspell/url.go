@@ -4,7 +4,7 @@ import (
 	"regexp"
 )
 
-// Regexp for URL https://mathiasbynens.be/demo/url-regex
+// Regexp for URL http://mathiasbynens.be/demo/url-regex
 //
 // original @imme_emosol (54 chars) has trouble with dashes in hostname
 // @(https?|ftp)://(-\.)?([^\s/?\.#-]+\.?)+(/[^\s]*)?$@iS

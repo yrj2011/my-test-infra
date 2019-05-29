@@ -130,7 +130,7 @@ func (t *Tide) MergeMethod(org, repo string) github.PullRequestMergeType {
 }
 
 // TideQuery is turned into a GitHub search query. See the docs for details:
-// https://help.github.com/articles/searching-issues-and-pull-requests/
+// http://help.github.com/articles/searching-issues-and-pull-requests/
 type TideQuery struct {
 	Orgs          []string `json:"orgs,omitempty"`
 	Repos         []string `json:"repos,omitempty"`

@@ -114,8 +114,8 @@ func TestParseE2eAPILog(t *testing.T) {
 		{
 			Rawdata: bytes.NewReader(
 				[]byte(`
-I0919 15:34:14.943642    6611 round_trippers.go:414] GET https://k8s-api/api/v1/foo
-I0919 15:34:16.943642    6611 round_trippers.go:414] POST https://k8s-api/api/v1/bar
+I0919 15:34:14.943642    6611 round_trippers.go:414] GET http://k8s-api/api/v1/foo
+I0919 15:34:16.943642    6611 round_trippers.go:414] POST http://k8s-api/api/v1/bar
 `)),
 			Expected: apiArray{
 				{Method: "GET", URL: "/api/v1/foo"},
@@ -125,7 +125,7 @@ I0919 15:34:16.943642    6611 round_trippers.go:414] POST https://k8s-api/api/v1
 		{
 			Rawdata: bytes.NewReader(
 				[]byte(`
-I0919 15:34:14.943642    6611 round_trippers.go:414] GET https://k8s-api/api/v1/foo?other
+I0919 15:34:14.943642    6611 round_trippers.go:414] GET http://k8s-api/api/v1/foo?other
 `)),
 			Expected: apiArray{
 				{Method: "GET", URL: "/api/v1/foo"},

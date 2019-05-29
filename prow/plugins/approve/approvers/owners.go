@@ -561,7 +561,7 @@ func (a ApprovedFile) String() string {
 	if strings.HasSuffix(a.filepath, ".md") {
 		fullOwnersPath = a.filepath
 	}
-	link := fmt.Sprintf("https://github.com/%s/%s/blob/%s/%v", a.org, a.repo, a.branch, fullOwnersPath)
+	link := fmt.Sprintf("http://github.com/%s/%s/blob/%s/%v", a.org, a.repo, a.branch, fullOwnersPath)
 	return fmt.Sprintf("- ~~[%s](%s)~~ [%v]\n", fullOwnersPath, link, strings.Join(a.approvers.List(), ","))
 }
 
@@ -570,7 +570,7 @@ func (ua UnapprovedFile) String() string {
 	if strings.HasSuffix(ua.filepath, ".md") {
 		fullOwnersPath = ua.filepath
 	}
-	link := fmt.Sprintf("https://github.com/%s/%s/blob/%s/%v", ua.org, ua.repo, ua.branch, fullOwnersPath)
+	link := fmt.Sprintf("http://github.com/%s/%s/blob/%s/%v", ua.org, ua.repo, ua.branch, fullOwnersPath)
 	return fmt.Sprintf("- **[%s](%s)**\n", fullOwnersPath, link)
 }
 
@@ -622,9 +622,9 @@ Associated issue requirement bypassed by:{{range $index, $approval := .ap.ListNo
 
 {{ end -}}
 
-The full list of commands accepted by this bot can be found [here](https://go.k8s.io/bot-commands?repo={{ .org }}%2F{{ .repo }}).
+The full list of commands accepted by this bot can be found [here](http://go.k8s.io/bot-commands?repo={{ .org }}%2F{{ .repo }}).
 
-The pull request process is described [here](https://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
+The pull request process is described [here](http://git.k8s.io/community/contributors/guide/owners.md#the-code-review-process)
 
 <details {{if (and (not .ap.AreFilesApproved) (not (call .ap.ManuallyApproved))) }}open{{end}}>
 Needs approval from an approver in each of these files:

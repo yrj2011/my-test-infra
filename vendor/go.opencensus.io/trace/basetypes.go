@@ -108,7 +108,7 @@ type Status struct {
 	// Code is a status code.  Zero indicates success.
 	//
 	// If Code will be propagated to Google APIs, it ideally should be a value from
-	// https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto .
+	// http://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto .
 	Code    int32
 	Message string
 }

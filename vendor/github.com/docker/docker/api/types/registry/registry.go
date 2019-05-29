@@ -48,7 +48,7 @@ func (ipnet *NetIPNet) UnmarshalJSON(b []byte) (err error) {
 // {
 //   "Index" : {
 //     "Name" : "docker.io",
-//     "Mirrors" : ["https://registry-2.docker.io/v1/", "https://registry-3.docker.io/v1/"],
+//     "Mirrors" : ["http://registry-2.docker.io/v1/", "http://registry-3.docker.io/v1/"],
 //     "Secure" : true,
 //     "Official" : true,
 //   },

@@ -34,7 +34,7 @@ func Every(interval time.Duration) Limit {
 // Informally, in any large enough time interval, the Limiter limits the
 // rate to r tokens per second, with a maximum burst size of b events.
 // As a special case, if r == Inf (the infinite rate), b is ignored.
-// See https://en.wikipedia.org/wiki/Token_bucket for more about token buckets.
+// See http://en.wikipedia.org/wiki/Token_bucket for more about token buckets.
 //
 // The zero value is a valid Limiter, but it will reject all events.
 // Use NewLimiter to create non-zero Limiters.

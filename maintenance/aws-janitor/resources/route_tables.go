@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// RouteTables: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeRouteTables
+// RouteTables: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeRouteTables
 
 type RouteTables struct{}
 
@@ -42,7 +42,7 @@ func (RouteTables) MarkAndSweep(sess *session.Session, acct string, region strin
 		// association. Given the documentation for the main.association
 		// filter, you'd think we could filter on the Describe, but it
 		// doesn't actually work, see e.g.
-		// https://github.com/aws/aws-cli/issues/1810
+		// http://github.com/aws/aws-cli/issues/1810
 		main := false
 		for _, assoc := range rt.Associations {
 			main = main || *assoc.Main

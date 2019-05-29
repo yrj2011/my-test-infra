@@ -18,7 +18,7 @@ type Tester interface {
 
 // Deployer defines EKS deployer.
 // Satisfies "k8s.io/test-infra/kubetest/main.go" 'deployer' interfaces.
-// Reference https://github.com/kubernetes/test-infra/blob/master/kubetest/main.go.
+// Reference http://github.com/kubernetes/test-infra/blob/master/kubetest/main.go.
 type Deployer interface {
 	Up() error
 	IsUp() error

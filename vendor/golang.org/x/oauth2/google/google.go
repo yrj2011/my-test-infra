@@ -9,9 +9,9 @@
 // accounts.
 //
 // For more information, please read
-// https://developers.google.com/accounts/docs/OAuth2
+// http://developers.google.com/accounts/docs/OAuth2
 // and
-// https://developers.google.com/accounts/docs/application-default-credentials.
+// http://developers.google.com/accounts/docs/application-default-credentials.
 package google // import "golang.org/x/oauth2/google"
 
 import (
@@ -29,17 +29,17 @@ import (
 
 // Endpoint is Google's OAuth 2.0 endpoint.
 var Endpoint = oauth2.Endpoint{
-	AuthURL:  "https://accounts.google.com/o/oauth2/auth",
-	TokenURL: "https://accounts.google.com/o/oauth2/token",
+	AuthURL:  "http://accounts.google.com/o/oauth2/auth",
+	TokenURL: "http://accounts.google.com/o/oauth2/token",
 }
 
 // JWTTokenURL is Google's OAuth 2.0 token URL to use with the JWT flow.
-const JWTTokenURL = "https://accounts.google.com/o/oauth2/token"
+const JWTTokenURL = "http://accounts.google.com/o/oauth2/token"
 
 // ConfigFromJSON uses a Google Developers Console client_credentials.json
 // file to construct a config.
 // client_credentials.json can be downloaded from
-// https://console.developers.google.com, under "Credentials". Download the Web
+// http://console.developers.google.com, under "Credentials". Download the Web
 // application credentials in the JSON format and provide the contents of the
 // file as jsonKey.
 func ConfigFromJSON(jsonKey []byte, scope ...string) (*oauth2.Config, error) {
@@ -84,7 +84,7 @@ func ConfigFromJSON(jsonKey []byte, scope ...string) (*oauth2.Config, error) {
 // JWTConfigFromJSON uses a Google Developers service account JSON key file to read
 // the credentials that authorize and authenticate the requests.
 // Create a service account on "Credentials" for your project at
-// https://console.developers.google.com to download a JSON key file.
+// http://console.developers.google.com to download a JSON key file.
 func JWTConfigFromJSON(jsonKey []byte, scope ...string) (*jwt.Config, error) {
 	var f credentialsFile
 	if err := json.Unmarshal(jsonKey, &f); err != nil {
@@ -161,7 +161,7 @@ func (f *credentialsFile) tokenSource(ctx context.Context, scopes []string) (oau
 // this token source if your program is running on a GCE instance.
 // If no account is specified, "default" is used.
 // Further information about retrieving access tokens from the GCE metadata
-// server can be found at https://cloud.google.com/compute/docs/authentication.
+// server can be found at http://cloud.google.com/compute/docs/authentication.
 func ComputeTokenSource(account string) oauth2.TokenSource {
 	return oauth2.ReuseTokenSource(nil, computeSource{account: account})
 }

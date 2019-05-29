@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// VPCs: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeVpcs
+// VPCs: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeVpcs
 
 type VPCs struct{}
 

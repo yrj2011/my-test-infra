@@ -18,7 +18,7 @@ limitations under the License.
 
 // NOTE: This file is copied from k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/sets/empty.go
 // because in Kubernetes we don't allowed vendor code to import staging code. See
-// https://github.com/kubernetes/kube-openapi/pull/90 for more details.
+// http://github.com/kubernetes/kube-openapi/pull/90 for more details.
 
 package sets
 

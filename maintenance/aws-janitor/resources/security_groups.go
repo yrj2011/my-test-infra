@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 )
 
-// SecurityGroups: https://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeSecurityGroups
+// SecurityGroups: http://docs.aws.amazon.com/sdk-for-go/api/service/ec2/#EC2.DescribeSecurityGroups
 type SecurityGroups struct{}
 
 type sgRef struct {

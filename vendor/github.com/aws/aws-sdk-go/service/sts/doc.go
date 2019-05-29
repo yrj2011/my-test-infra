@@ -31,7 +31,7 @@
 //
 // Endpoints
 //
-// The AWS Security Token Service (STS) has a default endpoint of https://sts.amazonaws.com
+// The AWS Security Token Service (STS) has a default endpoint of http://sts.amazonaws.com
 // that maps to the US East (N. Virginia) region. Additional regions are available
 // and are activated by default. For more information, see Activating and Deactivating
 // AWS STS in an AWS Region (http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html)
@@ -49,10 +49,10 @@
 // on. To learn more about CloudTrail, including how to turn it on and find
 // your log files, see the AWS CloudTrail User Guide (http://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html).
 //
-// See https://docs.aws.amazon.com/goto/WebAPI/sts-2011-06-15 for more information on this service.
+// See http://docs.aws.amazon.com/goto/WebAPI/sts-2011-06-15 for more information on this service.
 //
 // See sts package documentation for more information.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/sts/
+// http://docs.aws.amazon.com/sdk-for-go/api/service/sts/
 //
 // Using the Client
 //
@@ -61,12 +61,12 @@
 // These clients are safe to use concurrently.
 //
 // See the SDK's documentation for more information on how to use the SDK.
-// https://docs.aws.amazon.com/sdk-for-go/api/
+// http://docs.aws.amazon.com/sdk-for-go/api/
 //
 // See aws.Config documentation for more information on configuring SDK clients.
-// https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
+// http://docs.aws.amazon.com/sdk-for-go/api/aws/#Config
 //
 // See the AWS Security Token Service client STS for more
 // information on creating client for this service.
-// https://docs.aws.amazon.com/sdk-for-go/api/service/sts/#New
+// http://docs.aws.amazon.com/sdk-for-go/api/service/sts/#New
 package sts

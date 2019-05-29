@@ -29,7 +29,7 @@ const (
 // during `dep init`
 var exampleTOML = []byte(`# Gopkg.toml example
 #
-# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
+# Refer to http://golang.github.io/dep/docs/Gopkg.toml.html
 # for detailed Gopkg.toml documentation.
 #
 # required = ["github.com/user/thing/cmd/thing"]
@@ -580,10 +580,10 @@ func (dw *DeltaWriter) Write(path string, sm gps.SourceManager, examples bool, l
 		proj, has := projs[pr]
 		if !has {
 			// This shouldn't be reachable, but it's preferable to print an
-			// error and continue rather than panic. https://github.com/golang/dep/issues/1945
+			// error and continue rather than panic. http://github.com/golang/dep/issues/1945
 			// TODO(sdboyer) remove this once we've increased confidence around
 			// this case.
-			fmt.Fprintf(os.Stderr, "Internal error - %s had change code %v but was not in new Gopkg.lock. Re-running dep ensure should fix this. Please file a bug at https://github.com/golang/dep/issues/new!\n", pr, reason)
+			fmt.Fprintf(os.Stderr, "Internal error - %s had change code %v but was not in new Gopkg.lock. Re-running dep ensure should fix this. Please file a bug at http://github.com/golang/dep/issues/new!\n", pr, reason)
 			continue
 		}
 		po := proj.(verify.VerifiableProject).PruneOpts

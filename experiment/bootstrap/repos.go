@@ -52,7 +52,7 @@ func (r *Repo) GitBasePath(ssh bool) string {
 		}
 		return "git@" + path
 	}
-	return "https://" + path
+	return "http://" + path
 }
 
 // PullNumbers converts a Pull's list string into a slice of PR number strings

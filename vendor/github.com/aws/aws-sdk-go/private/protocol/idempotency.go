@@ -65,7 +65,7 @@ func SetIdempotencyToken(v reflect.Value) {
 
 // UUIDVersion4 returns a Version 4 random UUID from the byte slice provided
 func UUIDVersion4(u []byte) string {
-	// https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_.28random.29
+	// http://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_.28random.29
 	// 13th character is "4"
 	u[6] = (u[6] | 0x40) & 0x4F
 	// 17th character is "8", "9", "a", or "b"

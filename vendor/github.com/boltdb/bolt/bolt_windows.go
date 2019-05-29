@@ -18,11 +18,11 @@ var (
 const (
 	lockExt = ".lock"
 
-	// see https://msdn.microsoft.com/en-us/library/windows/desktop/aa365203(v=vs.85).aspx
+	// see http://msdn.microsoft.com/en-us/library/windows/desktop/aa365203(v=vs.85).aspx
 	flagLockExclusive       = 2
 	flagLockFailImmediately = 1
 
-	// see https://msdn.microsoft.com/en-us/library/windows/desktop/ms681382(v=vs.85).aspx
+	// see http://msdn.microsoft.com/en-us/library/windows/desktop/ms681382(v=vs.85).aspx
 	errLockViolation syscall.Errno = 0x21
 )
 
@@ -94,7 +94,7 @@ func funlock(db *DB) error {
 }
 
 // mmap memory maps a DB's data file.
-// Based on: https://github.com/edsrzf/mmap-go
+// Based on: http://github.com/edsrzf/mmap-go
 func mmap(db *DB, sz int) error {
 	if !db.readOnly {
 		// Truncate the database to the size of the mmap.
@@ -130,7 +130,7 @@ func mmap(db *DB, sz int) error {
 }
 
 // munmap unmaps a pointer from a file.
-// Based on: https://github.com/edsrzf/mmap-go
+// Based on: http://github.com/edsrzf/mmap-go
 func munmap(db *DB) error {
 	if db.data == nil {
 		return nil

@@ -83,7 +83,7 @@ const (
 // ValidatingWebhookConfiguration describes the configuration of and admission webhook that accept or reject and object without changing it.
 type ValidatingWebhookConfiguration struct {
 	metav1.TypeMeta `json:",inline"`
-	// Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+	// Standard object metadata; More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
 	// +optional
 	metav1.ObjectMeta `json:"metadata,omitempty" protobuf:"bytes,1,opt,name=metadata"`
 	// Webhooks is a list of webhooks and the affected resources and operations.
@@ -99,7 +99,7 @@ type ValidatingWebhookConfiguration struct {
 type ValidatingWebhookConfigurationList struct {
 	metav1.TypeMeta `json:",inline"`
 	// Standard list metadata.
-	// More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+	// More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
 	// +optional
 	metav1.ListMeta `json:"metadata,omitempty" protobuf:"bytes,1,opt,name=metadata"`
 	// List of ValidatingWebhookConfiguration.
@@ -113,7 +113,7 @@ type ValidatingWebhookConfigurationList struct {
 // MutatingWebhookConfiguration describes the configuration of and admission webhook that accept or reject and may change the object.
 type MutatingWebhookConfiguration struct {
 	metav1.TypeMeta `json:",inline"`
-	// Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+	// Standard object metadata; More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
 	// +optional
 	metav1.ObjectMeta `json:"metadata,omitempty" protobuf:"bytes,1,opt,name=metadata"`
 	// Webhooks is a list of webhooks and the affected resources and operations.
@@ -129,7 +129,7 @@ type MutatingWebhookConfiguration struct {
 type MutatingWebhookConfigurationList struct {
 	metav1.TypeMeta `json:",inline"`
 	// Standard list metadata.
-	// More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+	// More info: http://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
 	// +optional
 	metav1.ListMeta `json:"metadata,omitempty" protobuf:"bytes,1,opt,name=metadata"`
 	// List of MutatingWebhookConfiguration.
@@ -201,7 +201,7 @@ type Webhook struct {
 	// }
 	//
 	// See
-	// https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+	// http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 	// for more examples of label selectors.
 	//
 	// Default to the empty LabelSelector, which matches everything.
@@ -261,7 +261,7 @@ type WebhookClientConfig struct {
 	// webhook. Such installs are likely to be non-portable, i.e., not easy
 	// to turn up in a new cluster.
 	//
-	// The scheme must be "https"; the URL must begin with "https://".
+	// The scheme must be "https"; the URL must begin with "http://".
 	//
 	// A path is optional, and if present may be any string permissible in
 	// a URL. You may use the path to pass an arbitrary string to the
