@@ -148,6 +148,7 @@ func (t *throttler) Wait() {
 
 func (t *throttler) Do(req *http.Request) (*http.Response, error) {
 	t.Wait()
+	logrus.Info("启动hook,http :", t.http)
 	return t.http.Do(req)
 }
 
@@ -462,6 +463,8 @@ func (c *Client) doRequest(method, path, accept string, body interface{}) (*http
 	// http://go-review.googlesource.com/#/c/3210/ fixed it for GET, but not
 	// for POST.
 	req.Close = true
+	logrus.Info("启动hook,Do req:", req)
+	logrus.Info("启动hook,client :", c.client)
 	return c.client.Do(req)
 }
 
