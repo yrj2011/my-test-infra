@@ -660,7 +660,7 @@ func (c *Configuration) setDefaults() {
 		if trigger.TrustedOrg == "" || trigger.JoinOrgURL != "" {
 			continue
 		}
-		c.Triggers[i].JoinOrgURL = fmt.Sprintf("http://github.com/orgs/%s/people", trigger.TrustedOrg)
+		c.Triggers[i].JoinOrgURL = fmt.Sprintf("http://192.168.1.167/orgs/%s/people", trigger.TrustedOrg)
 	}
 	if c.SigMention.Regexp == "" {
 		c.SigMention.Regexp = `(?m)@kubernetes/sig-([\w-]*)-(misc|test-failures|bugs|feature-requests|proposals|pr-reviews|api-reviews)`

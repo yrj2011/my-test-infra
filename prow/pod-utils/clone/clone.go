@@ -91,7 +91,7 @@ func gitCtxForRefs(refs kube.Refs, baseDir string, env []string) gitCtx {
 	g := gitCtx{
 		cloneDir:      PathForRefs(baseDir, refs),
 		env:           env,
-		repositoryURI: fmt.Sprintf("http://github.com/%s/%s.git", refs.Org, refs.Repo),
+		repositoryURI: fmt.Sprintf("http://192.168.1.167/%s/%s.git", refs.Org, refs.Repo),
 	}
 	if refs.CloneURI != "" {
 		g.repositoryURI = refs.CloneURI

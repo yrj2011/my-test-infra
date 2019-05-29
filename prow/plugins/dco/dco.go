@@ -163,7 +163,7 @@ func checkExistingLabels(gc gitHubClient, l *logrus.Entry, org, repo string, num
 // takeAction will take appropriate action on the pull request according to its
 // current state.
 func takeAction(gc gitHubClient, cp commentPruner, l *logrus.Entry, org, repo string, pr github.PullRequest, commitsMissingDCO []github.GitCommit, existingStatus string, hasYesLabel, hasNoLabel, addComment bool) error {
-	targetURL := fmt.Sprintf("http://github.com/%s/%s/blob/master/CONTRIBUTING.md", org, repo)
+	targetURL := fmt.Sprintf("http://192.168.1.167/%s/%s/blob/master/CONTRIBUTING.md", org, repo)
 
 	signedOff := len(commitsMissingDCO) == 0
 
@@ -271,7 +271,7 @@ func handle(gc gitHubClient, cp commentPruner, log *logrus.Entry, org, repo stri
 
 func markdownSHAList(org, repo string, list []github.GitCommit) string {
 	lines := make([]string, len(list))
-	lineFmt := "- [%s](http://github.com/%s/%s/commits/%s) %s"
+	lineFmt := "- [%s](http://192.168.1.167/%s/%s/commits/%s) %s"
 	for i, commit := range list {
 		if commit.SHA == "" {
 			continue

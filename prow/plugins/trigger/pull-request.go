@@ -145,14 +145,14 @@ func welcomeMsg(ghc githubClient, trigger *plugins.Trigger, pr github.PullReques
 	encodedRepoFullName := url.QueryEscape(pr.Base.Repo.FullName)
 	var more string
 	if trigger != nil && trigger.TrustedOrg != "" && trigger.TrustedOrg != org {
-		more = fmt.Sprintf("or [%s](http://github.com/orgs/%s/people) ", trigger.TrustedOrg, trigger.TrustedOrg)
+		more = fmt.Sprintf("or [%s](http://192.168.1.167/orgs/%s/people) ", trigger.TrustedOrg, trigger.TrustedOrg)
 	}
 
 	var joinOrgURL string
 	if trigger != nil && trigger.JoinOrgURL != "" {
 		joinOrgURL = trigger.JoinOrgURL
 	} else {
-		joinOrgURL = fmt.Sprintf("http://github.com/orgs/%s/people", org)
+		joinOrgURL = fmt.Sprintf("http://192.168.1.167/orgs/%s/people", org)
 	}
 
 	var comment string

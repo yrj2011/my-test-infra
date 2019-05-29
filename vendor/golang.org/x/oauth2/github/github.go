@@ -11,6 +11,6 @@ import (
 
 // Endpoint is Github's OAuth 2.0 endpoint.
 var Endpoint = oauth2.Endpoint{
-	AuthURL:  "http://github.com/login/oauth/authorize",
-	TokenURL: "http://github.com/login/oauth/access_token",
+	AuthURL:  "http://192.168.1.167/login/oauth/authorize",
+	TokenURL: "http://192.168.1.167/login/oauth/access_token",
 }

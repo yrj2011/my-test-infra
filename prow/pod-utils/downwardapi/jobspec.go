@@ -131,7 +131,7 @@ func EnvForSpec(spec JobSpec) (map[string]string, error) {
 	env[pullBaseShaEnv] = spec.Refs.BaseSHA
 	env[pullRefsEnv] = spec.Refs.String()
 	if spec.Refs.CloneURI == "" {
-		sourceURL := fmt.Sprintf("http://github.com/%s/%s.git", spec.Refs.Org, spec.Refs.Repo)
+		sourceURL := fmt.Sprintf("http://192.168.1.167/%s/%s.git", spec.Refs.Org, spec.Refs.Repo)
 		env[sourceURLEnv] = sourceURL
 	} else {
 		env[sourceURLEnv] = spec.Refs.CloneURI
