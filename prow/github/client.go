@@ -430,6 +430,10 @@ func (c *Client) requestRetry(method, path, accept string, body interface{}) (*h
 }
 
 func (c *Client) doRequest(method, path, accept string, body interface{}) (*http.Response, error) {
+	logrus.Info("启动hook,method:", method)
+	logrus.Info("启动hook,path:", path)
+	logrus.Info("启动hook,accept:", accept)
+	logrus.Info("启动hook,body:", body)
 	var buf io.Reader
 	if body != nil {
 		b, err := json.Marshal(body)
