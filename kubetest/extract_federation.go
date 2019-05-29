@@ -147,7 +147,7 @@ func ensureFederation() (string, error) {
 		return "", err
 	}
 	defer f.Close()
-	if err := httpRead("https://raw.githubusercontent.com/kubernetes/federation/master/cluster/get-federation.sh", f); err != nil {
+	if err := httpRead("http://raw.githubusercontent.com/kubernetes/federation/master/cluster/get-federation.sh", f); err != nil {
 		return "", err
 	}
 	i, err = f.Stat()
@@ -205,7 +205,7 @@ func setFederationReleaseFromGcs(ci bool, suffix string) error {
 		prefix = "kubernetes-federation-release/release"
 	}
 
-	url := fmt.Sprintf("https://storage.googleapis.com/%v", prefix)
+	url := fmt.Sprintf("http://storage.googleapis.com/%v", prefix)
 	cat := fmt.Sprintf("gs://%v/%v.txt", prefix, suffix)
 	release, err := control.Output(exec.Command("gsutil", "cat", cat))
 	if err != nil {

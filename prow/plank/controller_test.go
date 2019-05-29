@@ -1529,7 +1529,7 @@ func TestJobURL(t *testing.T) {
 					PathStrategy: kube.PathStrategyExplicit,
 				}},
 			}},
-			expected: "https://gubernator.com/build/bucket/pr-logs/pull/org_repo/1",
+			expected: "http://gubernator.com/build/bucket/pr-logs/pull/org_repo/1",
 		},
 	}
 

@@ -83,7 +83,7 @@ func TestUnmarshalClientError(t *testing.T) {
 			name: "requires authentication",
 			body: `{
 				"message": "Requires authentication",
-				"documentation_url": "https://developer.github.com/v3"
+				"documentation_url": "http://developer.github.com/v3"
 			  }`,
 		},
 		{
@@ -93,7 +93,7 @@ func TestUnmarshalClientError(t *testing.T) {
 				"errors": [
 				  "Position is invalid"
 				],
-				"documentation_url": "https://developer.github.com/v3/pulls/reviews/#create-a-pull-request-review"
+				"documentation_url": "http://developer.github.com/v3/pulls/reviews/#create-a-pull-request-review"
 			  }`,
 		},
 	}

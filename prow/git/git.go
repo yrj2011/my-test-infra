@@ -82,7 +82,7 @@ func NewClient() (*Client, error) {
 		logger:    logrus.WithField("client", "git"),
 		dir:       t,
 		git:       g,
-		base:      fmt.Sprintf("https://%s", github),
+		base:      fmt.Sprintf("http://%s", github),
 		repoLocks: make(map[string]*sync.Mutex),
 	}, nil
 }
@@ -138,7 +138,7 @@ func (c *Client) Clone(repo string) (*Repo, error) {
 	base := c.base
 	user, pass := c.getCredentials()
 	if user != "" && pass != "" {
-		base = fmt.Sprintf("https://%s:%s@%s", user, pass, github)
+		base = fmt.Sprintf("http://%s:%s@%s", user, pass, github)
 	}
 	cache := filepath.Join(c.dir, repo) + ".git"
 	if _, err := os.Stat(cache); os.IsNotExist(err) {
@@ -288,7 +288,7 @@ func (r *Repo) Push(repo, branch string) error {
 		return errors.New("cannot push without credentials - configure your git client")
 	}
 	r.logger.Infof("Pushing to '%s/%s (branch: %s)'.", r.user, repo, branch)
-	remote := fmt.Sprintf("https://%s:%s@%s/%s/%s", r.user, r.pass, github, r.user, repo)
+	remote := fmt.Sprintf("http://%s:%s@%s/%s/%s", r.user, r.pass, github, r.user, repo)
 	co := r.gitCommand("push", remote, branch)
 	_, err := co.CombinedOutput()
 	return err

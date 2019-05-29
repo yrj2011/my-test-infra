@@ -36,7 +36,7 @@ import (
 )
 
 var (
-	openAPIFile       = flag.String("openapi", "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json", "URL to openapi-spec of Kubernetes")
+	openAPIFile       = flag.String("openapi", "http://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json", "URL to openapi-spec of Kubernetes")
 	outputCoveredAPIs = flag.Bool("output-covered-apis", false, "Output the list of covered APIs")
 	minCoverage       = flag.Int("minimum-coverage", 0, "This command fails if the number of covered APIs is less than this option ratio(percent)")
 	restLog           = flag.String("restlog", "", "File path to REST API operation log of Kubernetes")

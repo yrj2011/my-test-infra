@@ -31,7 +31,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "minimal ok with jenkins token",
 			input: options{
-				jenkinsURL:       "https://example.com",
+				jenkinsURL:       "http://example.com",
 				jenkinsTokenFile: "secret",
 				github:           flagutil.GitHubOptions{TokenPath: "token"},
 			},
@@ -49,7 +49,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "both jenkins tokens failure",
 			input: options{
-				jenkinsURL:             "https://example.com",
+				jenkinsURL:             "http://example.com",
 				jenkinsTokenFile:       "secret",
 				jenkinsBearerTokenFile: "other",
 				github:                 flagutil.GitHubOptions{TokenPath: "token"},
@@ -59,7 +59,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "all certificate files given",
 			input: options{
-				jenkinsURL:       "https://example.com",
+				jenkinsURL:       "http://example.com",
 				jenkinsTokenFile: "secret",
 				certFile:         "cert",
 				keyFile:          "key",
@@ -71,7 +71,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "missing cacert",
 			input: options{
-				jenkinsURL:       "https://example.com",
+				jenkinsURL:       "http://example.com",
 				jenkinsTokenFile: "secret",
 				certFile:         "cert",
 				keyFile:          "key",
@@ -82,7 +82,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "missing cert",
 			input: options{
-				jenkinsURL:       "https://example.com",
+				jenkinsURL:       "http://example.com",
 				jenkinsTokenFile: "secret",
 				keyFile:          "key",
 				caCertFile:       "cacert",
@@ -93,7 +93,7 @@ func TestOptions_Validate(t *testing.T) {
 		{
 			name: "missing key",
 			input: options{
-				jenkinsURL:       "https://example.com",
+				jenkinsURL:       "http://example.com",
 				jenkinsTokenFile: "secret",
 				certFile:         "cert",
 				caCertFile:       "cacert",

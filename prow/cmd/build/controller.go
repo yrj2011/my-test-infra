@@ -587,7 +587,7 @@ func injectSource(b *buildv1alpha1.Build, pj prowjobv1.ProwJob) error {
 	if srcContainer == nil && pj.Spec.Refs != nil {
 		// lets fall back to vanilla knative source step
 		// lets also clean this up
-		sourceURL := fmt.Sprintf("https://github.com/%s/%s.git", pj.Spec.Refs.Org, pj.Spec.Refs.Repo)
+		sourceURL := fmt.Sprintf("http://github.com/%s/%s.git", pj.Spec.Refs.Org, pj.Spec.Refs.Repo)
 		var revision string
 		if len(pj.Spec.Refs.Pulls) > 0 {
 			revision = pj.Spec.Refs.Pulls[0].SHA

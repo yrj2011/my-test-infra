@@ -226,7 +226,7 @@ func do(o options) error {
 		return fmt.Errorf("describe auth: %v", err)
 	}
 	newCluster := kube.Cluster{
-		Endpoint:             "https://" + d.Endpoint,
+		Endpoint:             "http://" + d.Endpoint,
 		ClusterCACertificate: d.Auth.ClusterCACertificate,
 		ClientKey:            d.Auth.ClientKey,
 		ClientCertificate:    d.Auth.ClientCertificate,

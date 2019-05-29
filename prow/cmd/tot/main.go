@@ -59,7 +59,7 @@ func gatherOptions() options {
 
 	flag.BoolVar(&o.useFallback, "fallback", false, "Fallback to GCS bucket for missing builds.")
 	flag.StringVar(&o.fallbackURI, "fallback-url-template",
-		"https://storage.googleapis.com/kubernetes-jenkins/logs/%s/latest-build.txt",
+		"http://storage.googleapis.com/kubernetes-jenkins/logs/%s/latest-build.txt",
 		"URL template to fallback to for jobs that lack a last vended build number.",
 	)
 

@@ -42,7 +42,7 @@ const (
 
 :memo: **Please follow instructions in the [contributing guide](%s) to update your commits with the DCO**
 
-Full details of the Developer Certificate of Origin can be found at [developercertificate.org](https://developercertificate.org/).
+Full details of the Developer Certificate of Origin can be found at [developercertificate.org](http://developercertificate.org/).
 
 **The list of commits missing DCO signoff**:
 
