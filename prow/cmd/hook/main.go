@@ -116,6 +116,8 @@ func main() {
 		logrus.WithError(err).Fatal("Error starting secrets agent.")
 	}
 
+	logrus.Info("启动hook")
+
 	githubClient, err := o.github.GitHubClient(secretAgent, o.dryRun)
 	if err != nil {
 		logrus.WithError(err).Fatal("Error getting GitHub client.")
