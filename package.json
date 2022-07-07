@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "dialog-polyfill": "^0.4.10",
-    "moment": "^2.22.2"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "@bazel/typescript": "^0.22.0",
